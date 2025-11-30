@@ -16,16 +16,18 @@ The `tito glossary` + `tito translate` workflows implement audited technical tra
 
 ```text
 translate/
-└── louvicourt/
+  <scenario>/
+  <scenario>/
+  ...
 ```
 
-Typical contents:
+Typical contents for a scenario:
 
 ```text
-translate/louvicourt/
+translate/<scenario>/
 ├── kb/           # source documents in the original language
 ├── sessions/     # glossary + translate runs
 └── task*.md      # translation task definitions
 ```
 
-Use these to understand how glossary-driven translation is configured in TITO.
+Scenario names and contents change frequently; use `ls translate/` (or similar) to discover current translation projects.

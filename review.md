@@ -16,11 +16,9 @@ The `tito review` and `tito compile-review` workflows are used for deep audits o
 
 ```text
 review/
-├── antamina/
-├── camsig/
-├── eeri/
-├── hazard/
-└── mse/
+  <scenario>/
+  <scenario>/
+  ...
 ```
 
 Each scenario normally contains:
@@ -31,5 +29,7 @@ review/<scenario>/
 ├── sessions/     # review / compile-review / enhance runs
 └── task*.md      # review and enhance task definitions
 ```
+
+Scenario names and counts are expected to change over time; use the filesystem to discover what is currently present.
 
 Use the `task*.md` files and KB contents to understand the audit questions and adapt them to your own projects.

@@ -40,11 +40,12 @@ The exact filenames vary slightly by workflow, but the pattern `kb + task*.md + 
 ## How to use these examples
 
 1. **Install and configure TITO** following `docs/QUICKSTART.md` in the main repo.
-2. **Open a scenario** here (for example `research/r1`):
+2. **Open any scenario directory** under `research/`, `retrieve/`, `review`, `synthesis/`, `translate/`, etc.:
    - Read `task.md` / `task.prompt.md` to see the prompt used.
    - Inspect `kb/` to understand the knowledge base.
    - Inspect `sessions/run-*/` for raw outputs and compiled artifacts.
 3. **Use the tasks and KB files as templates** for your own projects, adjusting paths, IDs, and KB content as described in the main TITO documentation.
+4. **Remember:** scenario names and counts are intentionally unstable; this repo is not a canonical catalog of examples, just a working set of projects and regression fixtures.
 
 Conceptual explanations of what each workflow type (`research`, `review`, `retrieve`, `glossary`, `translate`, `synthesis`, etc.) does are maintained in the **primary TITO documentation**, not here.
 

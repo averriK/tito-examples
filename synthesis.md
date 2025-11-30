@@ -16,16 +16,18 @@ The `tito synthesis` and `tito compile-synthesis` workflows are used for local-o
 
 ```text
 synthesis/
-└── reitfontein/
+  <scenario>/
+  <scenario>/
+  ...
 ```
 
-The scenario in this repo follows the usual pattern:
+Each scenario normally follows the pattern:
 
 ```text
-synthesis/reitfontein/
+synthesis/<scenario>/
 ├── kb/           # source document(s) to be summarized
 ├── sessions/     # synthesis and compile-synthesis runs
 └── task*.md      # synthesis task definitions
 ```
 
-Use this as a template for setting up your own synthesis projects.
+The set of synthesis scenarios is not fixed; inspect `synthesis/` directly to see what is currently available.

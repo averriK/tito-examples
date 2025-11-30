@@ -16,16 +16,9 @@ For the semantics and CLI options of `tito research` (and `tito compile-research
 
 ```text
 research/
-├── claude/
-├── dedup/
-├── epistemic/
-├── louvicourt/
-├── mmax/
-├── r1/
-├── r2/
-├── r4/
-├── reitfontein/
-└── zotero/
+  <scenario>/
+  <scenario>/
+  ...
 ```
 
 Each scenario follows the usual pattern:
@@ -37,23 +30,10 @@ research/<scenario>/
 └── task*.md      # task / prompt files
 ```
 
-## Scenarios
+The **set of scenarios is intentionally unstable**: examples are added and removed frequently. Do not treat this page as a canonical list; use your git tooling (`ls research/`, `git ls-files`, etc.) to see what exists at any given time.
 
-Short, factual summaries based on the actual `task*.md` files in this repo:
+## How to use this directory
 
-- `research/claude` – investigation of `claude-flow` swarm parameters that are actually implemented and used, with a focus on which flags TITO should rely on.
-- `research/dedup` – methods to identify the same earthquake in both USGS ComCat and ISC Bulletin catalogs without corrupting the database.
-- `research/epistemic` – epistemic uncertainty analysis for the Reitfontein Fault in a PSHA context (logic-tree weights, slip rates, recurrence).
-- `research/louvicourt` – expert peer review questions for a WSP PSHA study used as KB, focusing on seismotectonic setting and record selection.
-- `research/mmax` – evaluation of Mmax = 7.2 for the Reitfontein Fault, including rupture area and consistency with stable continental crust.
-- `research/r1` – benchmark section comparing PSHA models (SRC, SRK, GEM) using logic-tree GMPE definitions stored in KB XML files.
-- `research/r2` – executive summary and recommendations (in English) for epistemic-uncertainty treatment of the Reitfontein Fault.
-- `research/r4` – conclusions and recommendations for correcting PSHA results given issues with Reitfontein Fault assumptions.
-- `research/reitfontein` – completion and improvement of `introduction.md` and `benchmark.md` chapters for the Reitfontein PSHA report.
-- `research/zotero` – Zotero MCP smoke test: verifying Zotero-backed retrieval inside claude-flow with tokenized `[ZOTERO:<key>]` citations.
-
-## How to reuse
-
-1. Read the `task*.md` files to understand the objective and constraints.
-2. Inspect `kb/` and `sessions/run-*/` to see how TITO structures research runs.
-3. Copy and adapt tasks/KBs into your own project as described in the main TITO quick start.
+1. List the current scenarios under `research/`.
+2. For any scenario, read its `task*.md`, `kb/` and `sessions/` contents.
+3. Consult the main TITO docs for how to interpret and reproduce research runs.

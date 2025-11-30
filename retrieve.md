@@ -16,11 +16,9 @@ The `tito retrieve` workflow is used for PDF/DOCX → Markdown ingestion with va
 
 ```text
 retrieve/
-├── antamina/
-├── camsig/
-├── eeri/
-├── louvicourt/
-└── mse/
+  <scenario>/
+  <scenario>/
+  ...
 ```
 
 Each scenario follows the usual pattern:
@@ -31,6 +29,8 @@ retrieve/<scenario>/
 ├── sessions/     # retrieve session logs/results
 └── task*.md      # retrieve task definitions (source documents, constraints)
 ```
+
+The concrete scenario names are not stable; inspect `retrieve/` directly to see which projects are currently stored here.
 
 ## How to use
 
