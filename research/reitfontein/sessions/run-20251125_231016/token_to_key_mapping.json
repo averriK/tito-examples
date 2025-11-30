@@ -1,0 +1,16 @@
+{
+  "KB:reitfontein.md": "@Reitfontein2025",
+  "KB:benchmark.md": "@Benchmark2025",
+  "KB:conclusions.md": "@Conclusions2025",
+  "KB:srkGMPE.md": "@SRKGMPE2025",
+  "KB:psha_deep_south.md": "@PSHADeepSouth2025",
+  "WEB:https://www.researchgate.net/publication/258773069_The_Seismotectonic_Model_of_Southern_Africa": "@Singh2009",
+  "WEB:https://journals.sagepub.com/doi/10.1177/87552930231223995": "@USGS2023NSHM",
+  "DOI:10.1785/0220140091": "@Marzocchi2014",
+  "WEB:https://hazard.openquake.org/gem/models/ZAF/": "@GEM2023ZAF",
+  "WEB:https://www.researchgate.net/figure/Seismic-Hazard-map-of-South-Africa-showing-peak-ground-acceleration-PGA-with-a_fig2_312472292": "@SouthAfricaPGA2025",
+  "WEB:https://docs.openquake.org/oq-engine/3.22/manual/underlying-science/gmpes.html": "@OpenQuakeGMPE2022",
+  "WEB:https://pubs.usgs.gov/publication/70177094": "@Petersen2014USGS",
+  "WEB:https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2019rg000653": "@Stirling2020AGU",
+  "KB:introduction.md": "@Introduction2025"
+}

@@ -1,0 +1,128 @@
+                                                                                                                                                        APPROVED     AH           21494974      5000               0             B10
+PATH: C:\Users\CANC079442\Golder Associates\21494974, Teck Dams1D and 4B Stability Louvicourt - 5000 - SSSHA update\final_report
+
+
+
+
+                                                                                                                                   CLIENT                                         PROJECT
+                                                                                                                                   TECK RESOURCES LTD                             SITE-SPECIFIC SEISMIC HAZARD ASSESSMENT
+                                                                                                                                                                                  LOUVICOURT MINE TAILINGS MANAGEMENT FACILITY
+
+                                                                                                                                                                                  TITLE
+
+                                                                                                                                   CONSULTANT
+                                                                                                                                                                                  SELECTED EARTHQUAKE ACCELERATION TIME HISTORIES
+                                                                                                                                                        YYYY-MM-DD   2024-01-15
+                                                                                                                                                                                  LONG PERIOD RANGE (T* = 1.15 S)
+                                                                                                                                                        DESIGNED     NC
+                                                                                                                                                                                  CHI-CHI TAIWAN, RSN1474, N
+                                                                                                                                                        PREPARED     NC           SCALE FACTOR = 1.512
+                                                                                                                                                        REVIEWED     AH
+                                                                                                                                                                                  PROJECT NO.   PHASE              REV.          FIGURE
+                                                                                                                                                        APPROVED     AH           21494974      5000               0             B11
+PATH: C:\Users\CANC079442\Golder Associates\21494974, Teck Dams1D and 4B Stability Louvicourt - 5000 - SSSHA update\final_report
+
+
+
+
+                                                                                                                                   CLIENT                                         PROJECT
+                                                                                                                                   TECK RESOURCES LTD                             SITE-SPECIFIC SEISMIC HAZARD ASSESSMENT
+                                                                                                                                                                                  LOUVICOURT MINE TAILINGS MANAGEMENT FACILITY
+
+                                                                                                                                                                                  TITLE
+
+                                                                                                                                   CONSULTANT
+                                                                                                                                                                                  SELECTED EARTHQUAKE ACCELERATION TIME HISTORIES
+                                                                                                                                                        YYYY-MM-DD   2024-01-15
+                                                                                                                                                                                  LONG PERIOD RANGE (T* = 1.15 S)
+                                                                                                                                                        DESIGNED     NC
+                                                                                                                                                                                  CHI-CHI TAIWAN, RSN1474, W
+                                                                                                                                                        PREPARED     NC           SCALE FACTOR = 1.512
+                                                                                                                                                        REVIEWED     AH
+                                                                                                                                                                                  PROJECT NO.   PHASE              REV.          FIGURE
+                                                                                                                                                        APPROVED     AH           21494974      5000               0             B12
+PATH: C:\Users\CANC079442\Golder Associates\21494974, Teck Dams1D and 4B Stability Louvicourt - 5000 - SSSHA update\final_report
+
+
+
+
+                                                                                                                                   CLIENT                                         PROJECT
+                                                                                                                                   TECK RESOURCES LTD                             SITE-SPECIFIC SEISMIC HAZARD ASSESSMENT
+                                                                                                                                                                                  LOUVICOURT MINE TAILINGS MANAGEMENT FACILITY
+
+                                                                                                                                                                                  TITLE
+
+                                                                                                                                   CONSULTANT
+                                                                                                                                                                                  SELECTED EARTHQUAKE ACCELERATION TIME HISTORIES
+                                                                                                                                                        YYYY-MM-DD   2024-01-15
+                                                                                                                                                                                  LONG PERIOD RANGE (T* = 1.15 S)
+                                                                                                                                                        DESIGNED     NC
+                                                                                                                                                                                  CHI-CHI TAIWAN-06, RSN3471, E
+                                                                                                                                                        PREPARED     NC           SCALE FACTOR = 1.713
+                                                                                                                                                        REVIEWED     AH
+                                                                                                                                                                                  PROJECT NO.   PHASE              REV.          FIGURE
+                                                                                                                                                        APPROVED     AH           21494974      5000               0             B13
+PATH: C:\Users\CANC079442\Golder Associates\21494974, Teck Dams1D and 4B Stability Louvicourt - 5000 - SSSHA update\final_report
+
+
+
+
+                                                                                                                                   CLIENT                                         PROJECT
+                                                                                                                                   TECK RESOURCES LTD                             SITE-SPECIFIC SEISMIC HAZARD ASSESSMENT
+                                                                                                                                                                                  LOUVICOURT MINE TAILINGS MANAGEMENT FACILITY
+
+                                                                                                                                                                                  TITLE
+
+                                                                                                                                   CONSULTANT
+                                                                                                                                                                                  SELECTED EARTHQUAKE ACCELERATION TIME HISTORIES
+                                                                                                                                                        YYYY-MM-DD   2024-01-15
+                                                                                                                                                                                  LONG PERIOD RANGE (T* = 1.15 S)
+                                                                                                                                                        DESIGNED     NC
+                                                                                                                                                                                  CHI-CHI TAIWAN-06, RSN3471, N
+                                                                                                                                                        PREPARED     NC           SCALE FACTOR = 1.713
+                                                                                                                                                        REVIEWED     AH
+                                                                                                                                                                                  PROJECT NO.   PHASE              REV.          FIGURE
+                                                                                                                                                        APPROVED     AH           21494974      5000               0             B14
+PATH: C:\Users\CANC079442\Golder Associates\21494974, Teck Dams1D and 4B Stability Louvicourt - 5000 - SSSHA update\final_report
+
+
+
+
+                                                                                                                                   CLIENT                                         PROJECT
+                                                                                                                                   TECK RESOURCES LTD                             SITE-SPECIFIC SEISMIC HAZARD ASSESSMENT
+                                                                                                                                                                                  LOUVICOURT MINE TAILINGS MANAGEMENT FACILITY
+
+                                                                                                                                                                                  TITLE
+
+                                                                                                                                   CONSULTANT
+                                                                                                                                                                                  SELECTED EARTHQUAKE ACCELERATION TIME HISTORIES
+                                                                                                                                                        YYYY-MM-DD   2024-01-15
+                                                                                                                                                                                  LONG PERIOD RANGE (T* = 1.15 S)
+                                                                                                                                                        DESIGNED     NC
+                                                                                                                                                                                  BIG BEAR-01 USA, RSN6060, 90
+                                                                                                                                                        PREPARED     NC           SCALE FACTOR = 0.769
+                                                                                                                                                        REVIEWED     AH
+                                                                                                                                                                                  PROJECT NO.   PHASE              REV.          FIGURE
+                                                                                                                                                        APPROVED     AH           21494974      5000               0             B15
+PATH: C:\Users\CANC079442\Golder Associates\21494974, Teck Dams1D and 4B Stability Louvicourt - 5000 - SSSHA update\final_report
+
+
+
+
+                                                                                                                                   CLIENT                                         PROJECT
+                                                                                                                                   TECK RESOURCES LTD                             SITE-SPECIFIC SEISMIC HAZARD ASSESSMENT
+                                                                                                                                                                                  LOUVICOURT MINE TAILINGS MANAGEMENT FACILITY
+
+                                                                                                                                                                                  TITLE
+
+                                                                                                                                   CONSULTANT
+                                                                                                                                                                                  SELECTED EARTHQUAKE ACCELERATION TIME HISTORIES
+                                                                                                                                                        YYYY-MM-DD   2024-01-15
+                                                                                                                                                                                  LONG PERIOD RANGE (T* = 1.15 S)
+                                                                                                                                                        DESIGNED     NC
+                                                                                                                                                                                  BIG BEAR-01 USA, RSN6060, 180
+                                                                                                                                                        PREPARED     NC           SCALE FACTOR = 0.769
+                                                                                                                                                        REVIEWED     AH
+                                                                                                                                                                                  PROJECT NO.   PHASE              REV.          FIGURE
+                                                                                                                                                        APPROVED     AH           21494974      5000               0             B16
+wsp.com

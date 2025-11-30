@@ -1,0 +1,162 @@
+{
+  "mappings": {
+    "[KB:benchmark.md]": {
+      "key": "@Benchmark2025",
+      "metadata": {
+        "author": "Unknown",
+        "title": "PSHA Benchmark Data",
+        "year": "2025",
+        "identifiers": {
+          "kb_file": "benchmark.md"
+        }
+      }
+    },
+    "[KB:introduction.md]": {
+      "key": "@Introduction2025",
+      "metadata": {
+        "author": "Unknown",
+        "title": "PSHA Introduction",
+        "year": "2025",
+        "identifiers": {
+          "kb_file": "introduction.md"
+        }
+      }
+    },
+    "[KB:psha_deep_south.md]": {
+      "key": "@PSHADeepSouth2025",
+      "metadata": {
+        "author": "Seismology Research Centre",
+        "title": "Probabilistic Seismic Hazard Analysis for South Deep Gold Mine",
+        "year": "2025",
+        "identifiers": {
+          "kb_file": "psha_deep_south.md"
+        }
+      }
+    },
+    "[KB:srkGMPE.md]": {
+      "key": "@SRKGMPE2025",
+      "metadata": {
+        "author": "SRK Consulting",
+        "title": "SRK Ground Motion Prediction Equations",
+        "year": "2025",
+        "identifiers": {
+          "kb_file": "srkGMPE.md"
+        }
+      }
+    },
+    "[WEB:https://www.usgs.gov/programs/earthquake-hazards/science/earthquake-hazards-201-technical-qa]": {
+      "key": "@USGSHazards2024",
+      "metadata": {
+        "author": "U.S. Geological Survey",
+        "title": "Earthquake Hazards 201: Technical QA",
+        "year": "2024",
+        "identifiers": {
+          "url": "https://www.usgs.gov/programs/earthquake-hazards/science/earthquake-hazards-201-technical-qa"
+        }
+      }
+    },
+    "[WEB:https://link.springer.com/article/10.1007/s10518-019-00646-9]": {
+      "key": "@Rietbrock2019",
+      "metadata": {
+        "author": "Rietbrock et al.",
+        "title": "Ground motion prediction equations for stable continental regions",
+        "year": "2019",
+        "identifiers": {
+          "url": "https://link.springer.com/article/10.1007/s10518-019-00646-9",
+          "doi": "10.1007/s10518-019-00646-9"
+        }
+      }
+    },
+    "[DOI:10.1193/013013EQS017M]": {
+      "key": "@Atkinson2013",
+      "metadata": {
+        "author": "Atkinson et al.",
+        "title": "Earthquake Ground-Motion Prediction Equations",
+        "year": "2013",
+        "identifiers": {
+          "doi": "10.1193/013013EQS017M"
+        }
+      }
+    },
+    "[WEB:https://www.iaea.org/publications/15729/evaluation-of-probabilistic-seismic-hazard-analysis-psha-for-nuclear-installations-based-on-observational-data]": {
+      "key": "@IAEA2024",
+      "metadata": {
+        "author": "International Atomic Energy Agency",
+        "title": "Evaluation of Probabilistic Seismic Hazard Analysis (PSHA) for Nuclear Installations Based on Observational Data",
+        "year": "2024",
+        "identifiers": {
+          "url": "https://www.iaea.org/publications/15729/evaluation-of-probabilistic-seismic-hazard-analysis-psha-for-nuclear-installations-based-on-observational-data"
+        }
+      }
+    },
+    "[WEB:https://www.globalquakemodel.org/product/global-seismic-hazard-map]": {
+      "key": "@GEMHazardMap2023",
+      "metadata": {
+        "author": "Global Earthquake Model Foundation",
+        "title": "Global Seismic Hazard Map",
+        "year": "2023",
+        "identifiers": {
+          "url": "https://www.globalquakemodel.org/product/global-seismic-hazard-map"
+        }
+      }
+    },
+    "[WEB:https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2019rg000653]": {
+      "key": "@AGU2019",
+      "metadata": {
+        "author": "AGU Publications",
+        "title": "Reviews of Geophysics: Ground Motion Prediction",
+        "year": "2019",
+        "identifiers": {
+          "url": "https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2019rg000653",
+          "doi": "10.1029/2019rg000653"
+        }
+      }
+    },
+    "[WEB:https://link.springer.com/article/10.1007/s12572-022-00325-0]": {
+      "key": "@Springer2022",
+      "metadata": {
+        "author": "Springer",
+        "title": "Seismic hazard assessment methodologies",
+        "year": "2022",
+        "identifiers": {
+          "url": "https://link.springer.com/article/10.1007/s12572-022-00325-0",
+          "doi": "10.1007/s12572-022-00325-0"
+        }
+      }
+    },
+    "[WEB:https://maps.openquake.org/map/global-seismic-hazard-map/]": {
+      "key": "@OpenQuake2023",
+      "metadata": {
+        "author": "OpenQuake Foundation",
+        "title": "Global Seismic Hazard Map",
+        "year": "2023",
+        "identifiers": {
+          "url": "https://maps.openquake.org/map/global-seismic-hazard-map/"
+        }
+      }
+    },
+    "[WEB:https://link.springer.com/article/10.1007/s10518-020-00899-9]": {
+      "key": "@Springer2020",
+      "metadata": {
+        "author": "Springer",
+        "title": "European Seismic Hazard Model",
+        "year": "2020",
+        "identifiers": {
+          "url": "https://link.springer.com/article/10.1007/s10518-020-00899-9",
+          "doi": "10.1007/s10518-020-00899-9"
+        }
+      }
+    }
+  },
+  "summary": {
+    "total_tokens": 13,
+    "unique_keys": 13,
+    "token_types": {
+      "KB": 4,
+      "WEB": 8,
+      "DOI": 1,
+      "ARXIV": 0
+    },
+    "paragraphs_processed": 16
+  }
+}

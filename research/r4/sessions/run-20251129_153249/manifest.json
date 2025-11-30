@@ -1,0 +1,15 @@
+{
+  "id": "R4",
+  "workflow": "research",
+  "source": {
+    "kb_dir": "/Users/averrik/github/tito-examples/research/r4/kb/",
+    "documents": [
+      "benchmark.md",
+      "introduction.md",
+      "reitfontein.md"
+    ]
+  },
+  "outputs": {
+    "markdown": "R4.research.md"
+  }
+}

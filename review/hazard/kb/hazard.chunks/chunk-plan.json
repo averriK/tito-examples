@@ -1,0 +1,17 @@
+[
+
+  {
+    "id": "chunk-001",
+    "title": "Methodology",
+    "file": "/Users/averrik/Cloud/github/tito/examples/review/hazard/kb/hazard.md",
+    "start_line": 1,
+    "end_line": 158
+  },
+  {
+    "id": "chunk-002",
+    "title": "Numerical Implementation in OpenQuake {#sec-hazard_appendix}",
+    "file": "/Users/averrik/Cloud/github/tito/examples/review/hazard/kb/hazard.md",
+    "start_line": 159,
+    "end_line": 175
+  }
+]

@@ -1,0 +1,400 @@
+
+
+
+
+                                                                                                                37
+January 15, 2024                                                                                006-21494974.5000-Rev0
+
+
+
+
+6. The selected suite of ground motions was accepted once the geometric mean of the horizontal components
+   agreed with the target spectrum within the period range of interest and the empirical IMs compared
+   reasonably well with the conditional IM values.
+
+8.1        Ground Motion Selection Criteria
+Ground motion selection criteria used in EATH development are presented in this section.
+
+▪   Target spectrum: The mean UHS for the 1/10,000 AEP.
+
+▪   Conditioning period, T*: For the short fundamental period, TS* was taken as 0.31 s (i.e., the centre of the
+    range 0.25 s to 0.37 s). For the long fundamental period, TL* was taken as 1.15 s.
+
+▪   Period range of interest: For the short fundamental period, a period range of interest of 0.062 s to 0.62 s
+    (i.e., 0.2TS* to 2.0TS*) for scaling of candidate ground motions. For the longer fundamental period, a period
+    range of interest of 0.23 s to 2.3 s (i.e., 0.2TL* to 2.0TL*) was adopted for scaling of candidate ground motions.
+
+▪   Causal parameters: The magnitude and distance used for motion selection and estimation of IMs were
+    selected based on the disaggregation results presented in Section 7.1.3. Figure 17 shows that the largest
+    contribution to the 1/10,000 AEP seismic hazard at the Louvicourt TSF site is from earthquakes with
+    magnitudes of about Mw 6.8 to Mw 7.5 and source-to-site distances of about 100 to 200 km, for both the
+    shorter spectral periods (e.g., 0.2 s) and longer spectral periods (e.g., 1.0 s). Table 6 shows that mean,
+    median, and mode values for the magnitude and distance generally agree at the shorter and longer spectral
+    periods as well. Based on these results, ground motions were selected based on the modal disaggregation
+    scenario of Mw 7.3 and 170 km source-to-site distance.
+
+▪   Secondary IMs:
+
+      ▪ Median and lognormal standard deviation (σ) of the secondary IMs were estimated for the causal
+          parameters listed above using the ground motions models listed in Table 8 and Table 9.
+
+      ▪ AI and CAV were conditioned to the 1/10,000 AEP hazard at each of TS* and TL* following the approach
+          described by Baker et al. (2021). Conditioning involves the use of epsilon (), which is the number of
+          standard deviations for the spectral acceleration at T* to be equal to the hazard level. The  was
+          estimated to be 1.5 for both the short and long fundamental periods, based on the 1/10,000 AEP hazard
+          disaggregations (Table 6).
+
+      ▪ The shaking duration IMs of D5-75 and D5-95 were not conditioned for each of the TS* and TL* because
+          they are period-independent IMs.
+
+      ▪ Table 8 lists the conditional median values of AI and CAV. The unconditional median values of D 5-75 and
+          D5-95 are listed in Table 9. Figure 20 and Figure 21 show the distributions of all secondary IMs.
+
+
+
+
+                                                                                                                   38
+January 15, 2024                                                                              006-21494974.5000-Rev0
+
+
+
+Table 8: Ground Motion and Conditional Correlation Models of AI and CAV for Time History Selection.
+
+ Intensity Measure         Ground Motion          Conditional               Conditional Median Value
+                           Model                  Correlation Model
+                                                                            TS* (0.31 s)        TL* (1.15 s)
+
+ SA (T*)                   See Section 5.2        Not Applicable            0.296 ( = 1.5)     0.122 ( = 1.5)
+
+                           Farhadi and Pezeshk
+ Arias Intensity, AI                              Bradley (2015)            0.098 (m/s)         0.073 (m/s)
+                           (2020)
+ Cumulative Absolute       Farhadi and Pezeshk
+                                                  Bradley (2012)            5.46 (m/s)          5.10 (m/s)
+ Velocity, CAV             (2020)
+
+
+Table 9: Ground Motion Models of D5-75 and D5-95 for Time History Selection.
+
+ Intensity Measure               Ground Motion Model            Median Value (Period-Independent)
+
+ Significant Duration, D5-75     Bommer et al. (2009)           5.66 (s)
+
+ Significant Duration, D5-95     Bommer et al. (2009)           10.50 (s)
+
+
+
+8.2        Candidate Ground Motion Records
+The PEER NGA-West2 database was used to create a catalogue of prospective ground motions ranging in
+magnitude from Mw 6.0 to Mw 7.8 and source-to-site distance from 0 to 200 km for each period range of interest,
+consistent with the disaggregation results. The PEER NGA-East database was also consulted but lacked ground
+motions records with magnitudes greater than Mw 5.85. Relatively loose bounds were used for earthquake
+magnitude and distance because the ground motion selection process explicitly considered secondary IMs. By
+explicitly considering the secondary IMs, it is less important to target specific causal parameters such as
+earthquake magnitude (e.g., Baker et al., 2021). The site parameters, therefore, were not limited in creating the
+prospective ground motion catalogues to increase the number of prospective motions in the catalogue. Similarly,
+while scale factors applied to prospective ground motions were generally kept within the range 0.5 to 4.0, the
+scale factor was considered less important than the comparison of secondary IMs and the fit of selected ground
+motions to the target spectrum.
+
+8.3        Ground Motion Selection Results
+Table 10 and Table 11 list the key parameters of the two suites of eight, two-horizontal-component time histories
+selected for TS and TL, respectively.
+
+Figure 18 and Figure 19 show the geometric means of the suites of selected scaled ground motions compared to
+the target 1/10/000 AEP UHS, respectively. The figures show that the geometric mean of each suite of ground
+motions agrees well with the target spectra because it falls between 90% and 130% of the target spectra within
+the period range of interest.
+
+Table 12 and Table 13 list selected intensity measures for each component for the suites of motions selected for
+TS and TL, respectively. The intensity measures of the suites of selected motions generally agree with the
+theoretical values listed in Table 8 and Table 9. Figure 20 and Figure 21 show the cumulative probability of
+
+
+                                                                                                                  39
+January 15, 2024                                                                              006-21494974.5000-Rev0
+
+
+
+
+empirical and estimated conditional intensity measures for AI, CAV, D5-75, and D5-95. Figure 20 and Figure 21
+show that the IMs of the selected motions are generally well matched to their theoretical values. However, the IMs
+of the scaled motions appear higher relative to the target IMs (i.e., average values of scaled IMs are slightly
+greater than the median of the respective target IMs).
+
+As discussed in Section 8.1, the ground motion selection process focused on selecting motions that matched the
+target spectrum and generally agreed with estimated conditional IMs. Consequently, the selected suites of ground
+motions for TS and TL include records with shorter source-to-site distances than suggested by the magnitude-
+distance-epsilon disaggregation results presented in Section 7.1.3. The shorter source-to-site distances allowed a
+better fit to the target spectrum, while still agreeing with the estimated conditional IMs. The selection of records
+with shorter source-to-site distances is commonly used when applying earthquake ground motions from plate
+boundary areas to intraplate stable continental regions such as that surrounding the Louvicourt TSF site in
+southeast Canada.
+
+A major reason why the source-to-site distances of selected records are shorter than the disaggregation results is
+in part because of the difference between the Louvicourt TSF site condition (VS30 = 1,853 m/s) and the relatively
+less stiff plate boundary ground conditions where the prospective ground motions were recorded. Moderate- to
+high-frequency ground motions are attenuated faster by weaker seismic ground conditions (i.e., lower VS30)
+compared to stiffer ground conditions. Additionally, moderate- to high-frequency ground motions are attenuated
+faster than lower frequency ground motions. To capture the high-frequency (short-period) ground motions
+indicated by the 1/10,000 AEP UHS at the Louvicourt TSF site, records with shorter source-to-site distances were
+required. Some records with larger scale factors were also required to obtain a good match to the target spectrum
+in the shorter period range of interest (notably, RSNs 1833 and 2927 in Table 10). We anticipate that suitable
+candidate ground motions from intraplate conditions would have source-to-site distances that are more consistent
+with the disaggregation results. Regardless, the selected motions have engineering IMs that are consistent with
+the hazard based on intraplate conditions, so we consider that they are suitable for engineering analyses at the
+Louvicourt TSF site.
+
+Appendix A and Appendix B present the selected, scaled EATHs for the short and long period range of interest,
+respectively. Digital records from the EATH development accompany this report.
+
+
+
+
+                                                                                                                  40
+January 15, 2024                                                                        006-21494974.5000-Rev0
+
+
+
+Table 10: Suite of Selected EATHs Scaled for the Short Period Range (0.062 s to 0.62 s) at the Louvicourt TSF Site.
+
+ ID Record          Earthquake      Year          Recording       Source         Earthquake       Source-to-     Site Ground   Scale Factor
+    Sequence        Designation                   Station         Mechanism      Magnitude        Site           Condition
+    Number          or Name                       Name            Type           (Mw)             Distance       (VS30 m/s)
+                                                                                                  (Rrup km)
+
+                    N. Palm                       Cranston       Reverse
+ 1    516                           1986                                         6.06             28             425           1.11
+                    Springs, USA                  Forest Station Oblique
+
+                    N. Palm                       Palm Springs    Reverse
+ 2    530                           1986                                         6.06             11             312           0.95
+                    Springs, USA                  Airport         Oblique
+
+                    Hector Mine,
+ 3    1833                          1999          Snow Creek      Strike Slip    7.13             73             524           8.28
+                    USA
+
+                    Chi-Chi,
+ 4    2927                          1999          TTN040          Strike Slip    6.2              51             728           6.85
+                    Taiwan-04
+
+                    Chi-Chi,
+ 5    3185                          1999          TCU060          Reverse        6.2              56             375           3.19
+                    Taiwan-05
+
+                    Umbria                        Borgo-
+ 6    4347                          1997                          Normal         6                19             519           1.90
+                    Marche, Italy                 Cerreto Torre
+
+
+ 7    5618          Iwate, Japan    2008          IWT010          Reverse        6.9              16             826           0.59
+
+
+                                                  Miyagi Great
+ 8    5773          Iwate, Japan    2008                          Reverse        6.9              41             531           0.80
+                                                  Village
+
+
+
+
+                                                                                                           41
+January 15, 2024                                                                        006-21494974.5000-Rev0
+
+
+
+Table 11: Suite of Selected EATHs Scaled for the Long Period Range (0.23 s to 2.3 s) at the Louvicourt TSF Site.
+
+ ID Record          Earthquake     Year           Recording       Source         Earthquake        Source-to-    Site Ground   Scale Factor
+    Sequence        Designation                   Station Name    Mechanism      Magnitude         Site          Condition
+    Number          or Name                                       Type           (Mw)              Distance      (VS30 m/s)
+                                                                                                   (Rrup km)
+
+                    San                           LA -
+ 1    68            Fernando,      1971           Hollywood       Reverse        6.61              23            316           0.64
+                    USA                           Stor FF
+                                                  Bear Valley
+                    Loma Prieta,                                  Reverse
+ 2    746                          1989           #5 Callens                     6.93              54            391           1.51
+                    USA                                           Oblique
+                                                  Ranch
+
+                    Loma Prieta,                  Hayward City    Reverse
+ 3    774                          1989                                          6.93              55            735           2.67
+                    USA                           Hall - North    Oblique
+
+                    Landers,                      LA - N
+ 4    869                          1992                        Strike Slip       7.28              159           315           2.33
+                    USA                           Westmoreland
+
+                    Big Bear-01,                  Phelan -
+ 5    923                          1992                           Strike Slip    6.46              64            333           2.87
+                    USA                           Wilson Ranch
+
+                    Chi-Chi,                                      Reverse
+ 6    1474                         1999           TCU025                         7.62              53            665           1.51
+                    Taiwan                                        Oblique
+
+                    Chi-Chi,
+ 7    3471                         1999           TCU075          Reverse        6.3               26            573           1.71
+                    Taiwan-06
+
+                                                  North Palm
+                    Big Bear-01,
+ 8    6060                         1992           Springs Fire    Strike Slip    6.46              42            368           0.77
+                    USA
+                                                  Sta #36
+
+
+
+
+                                                                                                           42
+January 15, 2024                                                                        006-21494974.5000-Rev0
+
+
+
+Table 12: Intensity Measures of the Selected Scaled EATHs for the Short Period Range (0.062 s to 0.62 s)
+at the Louvicourt TSF Site.
+
+ ID Earthquake      Scale    Recording      PGV         AI (m/s)     CAV (m/s)   D5-75 (s)       D5-95 (s)
+    Designation     Factor   Component      (cm/s)
+    or Name
+
+
+
+                             225            8.24        0.14         2.03        5.04            7.45
+ 1    516           1.11
+                             315            13.25       0.23         2.61        3.39            5.60
+
+                             180            11.93       0.27         4.87        6.14            14.70
+ 2    530           0.95
+                             270            11.61       0.29         5.25        5.87            17.21
+
+                             90             38.55       0.71         10.23       14.01           23.35
+ 3    1833          8.28
+                             180            24.14       0.62         10.04       15.43           26.78
+
+                             N              15.10       0.29         4.70        6.00            14.13
+ 4    2927          6.85
+                             E              26.50       0.27         4.62        6.75            14.12
+
+                             N              9.72        0.28         5.35        9.84            17.88
+ 5    3185          3.19
+                             E              10.19       0.37         6.09        10.24           16.72
+
+                             0              6.36        0.25         3.69        5.08            9.32
+ 6    4347          1.90
+                             90             8.49        0.24         3.52        4.37            8.74
+
+                             NS             12.92       0.44         8.26        9.28            19.85
+ 7    5618          0.59
+                             EW             15.57       0.44         8.44        7.87            24.62
+
+                             NS             9.21        0.34         6.18        10.02           17.85
+ 8    5773          0.80
+                             EW             11.57       0.47         6.9         7.96            16.86
+January 15, 2024                                                                        006-21494974.5000-Rev0
+
+
+
+Table 13: Intensity Measures of the Selected Scaled EATHs for the Long Period Range (0.23 s to 2.3 s) at
+the Louvicourt TSF Site.
+
+ ID Earthquake      Scale    Recording      PGV         AI (m/s)     CAV (m/s)   D5-75 (s)       D5-95 (s)
+    Designation     Factor   Component      (cm/s)
+    or Name
+
+
+
+                             90             13.86       0.27         4.84        5.25            13.19
+ 1    68            0.64
+                             180            10.81       0.18         4.04        5.10            13.53
+
+                             220            14.00       0.20         4.41        10.82           17.47
+ 2    746           1.51
+                             310            15.43       0.20         4.36        10.97           17.79
+
+                             64             14.98       0.28         5.45        7.53            19.55
+ 3    774           2.67
+                             334            16.15       0.27         4.90        6.69            14.65
+
+                             0              27.55       0.33         6.37        15.26           22.60
+ 4    869           2.33
+                             270            10.91       0.26         5.81        16.48           24.05
+
+                             90             9.16        0.41         8.19        14.66           30.70
+ 5    923           2.87
+                             180            11.62       0.50         8.15        10.19           21.83
+
+                             W              26.12       0.24         4.64        12.71           18.15
+ 6    1474          1.51
+                             N              14.12       0.21         4.36        11.78           14.65
+
+                             N              7.98        0.17         4.66        10.97           24.72
+ 7    3471          1.71
+                             E              13.63       0.39         6.28        8.87            17.04
+
+                             90             10.33       0.24         4.36        8.54            12.89
+ 8    6060          0.77
+                             180            8.99        0.23         4.29        7.50            12.54
+January 15, 2024                                                                   006-21494974.5000-Rev0
+
+
+
+
+Figure 18: Acceleration Response Spectra for Horizontal Geometric Mean and Individual Selected Scaled
+EATHs Compared to the Target Spectrum (Short Period Range). Period Range of Interest Highlighted.
+
+
+
+
+Figure 19: Acceleration Response Spectra for Horizontal Geometric Mean and Individual Selected Scaled
+EATHs Compared to the Target Spectrum (Long Period Range). Period Range of Interest Highlighted.
+January 15, 2024                                                                        006-21494974.5000-Rev0
+
+
+
+
+Figure 20: Cumulative Probability of Scaled (blue) and Conditional (black) AI, CAV, D5-75, and D5-95
+Intensity Measures from the Selected Scaled EATHs (Short Period Range).
+January 15, 2024                                                                         006-21494974.5000-Rev0
+
+
+
+
+Figure 21: Cumulative Probability of Scaled (blue) and Conditional (black) AI, CAV, D 5-75, and D5-95
+Intensity Measures from the Selected Scaled EATHs (Long Period Range).
+January 15, 2024                                                                               006-21494974.5000-Rev0
+
+
+
+
+9.0       CONCLUSIONS
+WSP evaluated the site-specific seismic hazard at the Louvicourt TSF site through probabilistic analysis for AEPs
+of 1/2,475, 1/5,000, and 1/10,000. We implemented the CanadaSHM6 seismic source models for southeastern
+Canada along with the 17 NGA-East GMMs, AA13 standard deviation model, and equally weighted site
+amplification models developed for the CENA region. Results are presented for the Louvicourt TSF site measured
+seismic ground condition with a VS30 = 1,853 m/s.
+
+The results of the probabilistic analysis indicate that:
+
+▪   The site is within a region of generally low historical earthquake activity in southwestern Québec, to the west
+    of the more historically seismically active St. Lawrence and Ottawa-Gatineau areas (Figure 1).
+
+▪   The seismic hazard at the Louvicourt TSF site is relatively low compared to other parts of southeast Canada.
+    For example, the 1/10,000 AEP mean horizontal spectral accelerations (5%-damped) are 0.193 g, 0.350 g,
+    and 0.122 g for PGA, 0.2 s, and 1.0 s spectral periods, respectively (Figure 14).
+
+▪   The dominant contributors to the seismic hazard across all spectral periods evaluated are moderate- to large-
+    magnitude earthquakes (~Mw 6.8 to Mw 7.4) at distances of about 100 km to 200 km from the Louvicourt TSF
+    site (Figure 15, Figure 16, Figure 17, and Table 6).
+
+▪   There are some smaller contributions to the seismic hazard from moderate-magnitude earthquakes (typically
+    Mw <6.0) within about 40 km of the site, particularly at short spectral periods (PGA and 0.2 s), and from
+    moderate- to large-magnitude earthquakes (Mw 6.8 to Mw 7.4) at greater source-to-site distances (about 360
+    km and greater).
+
+▪   The seismic hazard estimate for the Louvicourt TSF site from this SSSHA is higher than indicated in the 2020
+    NBCC (at 1/2,475 AEP) by up to 43%. The primary reason for the higher estimate is our application of more
+    recent GMMs and site amplification models than those used for the 2020 NBCC.
+

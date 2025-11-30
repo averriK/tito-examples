@@ -1,0 +1,6 @@
+## Abstract
+
+This contribution examines the application of the observational method to the construction of a 4 km circular ring dam for the storage of spent brine at a lithium project located in the arid Puna region of Salta province, Argentina. Due to time constraints, construction started before a detailed geotechnical site investigation was completed. A base case design was developed for the most likely soil conditions, using basic geotechnical data derived from previous site investigations. Extra design features, in the form of adjustments in the cross sections compatible with the base case, were specified to accommodate for several conceivable deviations in soil behavior. During construction, a combination of additional geotechnical exploration and observation of the embankment performance allowed for a final design, variable along the ring dam. To reduce the risk of long-term large deformation or failure, a monitoring system was specified, along with a trigger action response plan which informs if additional actions are required. The application of the observational method in this project saved precious time in the development of the facility, without compromising its long-term safety and performance.
+
+**Keywords:** Brine, mine waste, embankment, foundation, lithium.
+

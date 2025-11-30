@@ -1,0 +1,97 @@
+{
+  "mappings": {
+    "DOI:10.1680/geot.1969.19.2.171": {
+      "key": "Peck1969",
+      "type": "article",
+      "author": "Peck, Ralph B.",
+      "title": "Advantages and Limitations of the Observational Method in Applied Soil Mechanics",
+      "journal": "Geotechnique",
+      "year": "1969",
+      "volume": "19",
+      "number": "2",
+      "pages": "171--187",
+      "doi": "10.1680/geot.1969.19.2.171"
+    },
+    "WEB:https://www.nature.com/articles/s43017-022-00387-5": {
+      "key": "Vera2023",
+      "type": "article",
+      "author": "Vera, Maria Lucia and Torres, Walter R. and Galli, Carla I. and Chagnes, Alexandre and Flexer, Victoria",
+      "title": "Environmental Impact of Direct Lithium Extraction from Brines",
+      "journal": "Nature Reviews Earth & Environment",
+      "year": "2023",
+      "volume": "4",
+      "pages": "149--165",
+      "doi": "10.1038/s43017-022-00387-5",
+      "url": "https://www.nature.com/articles/s43017-022-00387-5"
+    },
+    "WEB:https://lithiumharvest.com/knowledge/lithium-extraction/what-is-direct-lithium-extraction/": {
+      "key": "LithiumHarvest2024",
+      "type": "online",
+      "author": "{Lithium Harvest}",
+      "title": "What is Direct Lithium Extraction?",
+      "year": "2024",
+      "url": "https://lithiumharvest.com/knowledge/lithium-extraction/what-is-direct-lithium-extraction/",
+      "urldate": "2025-11-21"
+    },
+    "WEB:http://www.riversimulator.org/farcountry/Lithium/Geology/BestPracticesForRecyclingAndReinjectingLithiumBrine2024Zelandez.pdf": {
+      "key": "Zelandez2024",
+      "type": "online",
+      "author": "Zelandez",
+      "title": "Best Practices for Recycling and Reinjecting Lithium Brine",
+      "year": "2024",
+      "url": "http://www.riversimulator.org/farcountry/Lithium/Geology/BestPracticesForRecyclingAndReinjectingLithiumBrine2024Zelandez.pdf",
+      "urldate": "2025-11-21"
+    },
+    "WEB:https://www.globenewswire.com/news-release/2025/11/10/3184327/0/en/Lithium-Argentina-and-Ganfeng-Announce-PPG-Scoping-Study-Results-and-Stage-1-Environmental-Approval.html": {
+      "key": "LithiumArgentina2025",
+      "type": "online",
+      "author": "{Lithium Argentina}",
+      "title": "Lithium Argentina and Ganfeng Announce PPG Scoping Study Results and Stage 1 Environmental Approval",
+      "year": "2025",
+      "month": "11",
+      "day": "10",
+      "url": "https://www.globenewswire.com/news-release/2025/11/10/3184327/0/en/Lithium-Argentina-and-Ganfeng-Announce-PPG-Scoping-Study-Results-and-Stage-1-Environmental-Approval.html",
+      "urldate": "2025-11-21"
+    },
+    "WEB:https://www.rocscience.com/software/slide2": {
+      "key": "Rocscience2023",
+      "type": "software",
+      "author": "{Rocscience Inc.}",
+      "title": "Slide2 Version 2023 -- 2D Limit Equilibrium Slope Stability Analysis",
+      "year": "2023",
+      "address": "Toronto, Ontario, Canada",
+      "url": "https://www.rocscience.com/software/slide2",
+      "urldate": "2025-11-21"
+    },
+    "WEB:https://www.astm.org": {
+      "key": "ASTM2018",
+      "type": "techreport",
+      "author": "{ASTM International}",
+      "title": "ASTM D2573/D2573M-18: Standard Test Method for Field Vane Shear Test in Saturated Fine-Grained Soils",
+      "year": "2018",
+      "institution": "ASTM International",
+      "address": "West Conshohocken, PA",
+      "url": "https://www.astm.org",
+      "urldate": "2025-11-21"
+    },
+    "WEB:https://www.srk.com/en/publications/operational-control-and-trigger-action-response-plan-tarp-for-a-tailings-storage-facility-tsf": {
+      "key": "SRK2019",
+      "type": "online",
+      "author": "{SRK Consulting}",
+      "title": "Operational Control and Trigger Action Response Plan (TARP) for a Tailings Storage Facility",
+      "year": "2019",
+      "url": "https://www.srk.com/en/publications/operational-control-and-trigger-action-response-plan-tarp-for-a-tailings-storage-facility-tsf",
+      "urldate": "2025-11-21"
+    },
+    "WEB:https://mining.ca/resources/guides-manuals/a-guide-to-the-management-of-tailings-facilities-version-3-1-2019/": {
+      "key": "MAC2019",
+      "type": "techreport",
+      "author": "{Mining Association of Canada}",
+      "title": "A Guide to the Management of Tailings Facilities, Version 3.1",
+      "year": "2019",
+      "institution": "Mining Association of Canada",
+      "url": "https://mining.ca/resources/guides-manuals/a-guide-to-the-management-of-tailings-facilities-version-3-1-2019/",
+      "urldate": "2025-11-21"
+    }
+  }
+}

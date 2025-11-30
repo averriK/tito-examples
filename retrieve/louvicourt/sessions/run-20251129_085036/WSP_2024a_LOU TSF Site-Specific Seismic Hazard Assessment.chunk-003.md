@@ -1,0 +1,7 @@
+# 4.0 SITE-SPECIFIC SEISMIC SOURCE MODEL
+
+In seismic hazard studies, a seismic source model is developed to represent defined seismotectonic regions considered capable of producing moderate to large earthquakes. The seismic source model defines known active and potentially active seismic sources that can contribute to the earthquake ground motions at the site. These sources can be large and/or small areas of historical earthquake epicenters, tectonic terrains, or geophysical regions. Earthquake sources associated with the rupture areas of large historical earthquakes are considered, where applicable, as are faults where there is evidence of surface displacement during the Upper Pleistocene stage of the Pleistocene Epoch (i.e., about the last 126,000 years). The seismic source model is defined in terms of parameters that include source location, source geometry, faulting mechanisms, maximum earthquake magnitudes, probability of existence, and earthquake recurrence models.
+
+The seismic source model implemented for this PSHA is the sixth-generation seismic hazard model of Canada (CanadaSHM6) developed by NRCan to estimate seismic hazard values for the 2020 NBCC. In this study, the CanadaSHM6 seismic source models as described by [@Kolaj2023] are implemented without modification.
+
+As described below, the decision to implement the CanadaSHM6 sources without modification was made following investigation of the suitability of the existing earthquake occurrence rates associated with the sources.

@@ -1,0 +1,62 @@
+title: TITO Examples
+description: Intelligent workflow examples with TITO - Text-based Intelligent Task Orchestrator
+theme: jekyll-theme-cayman
+show_downloads: true
+
+# GitHub repository
+repository: averriK/tito-examples
+github_username: averriK
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Plugins
+plugins:
+  - jekyll-relative-links
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-titles-from-headings
+
+# Plugin settings
+relative_links:
+  enabled: true
+  collections: true
+
+titles_from_headings:
+  enabled: true
+  strip_title: false
+  collections: true
+
+# Collections
+collections:
+  examples:
+    output: true
+    permalink: /:collection/:name
+
+# Navigation
+navigation:
+  - title: Home
+    url: /
+  - title: Research
+    url: /research/
+  - title: Retrieve
+    url: /retrieve/
+  - title: Review
+    url: /review/
+  - title: Synthesis
+    url: /synthesis/
+  - title: Translate
+    url: /translate/
+  - title: Glossary
+    url: /glossary/
+
+# Exclude from processing
+exclude:
+  - .idea
+  - '*.session.json'
+  - 'agent.out'
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor

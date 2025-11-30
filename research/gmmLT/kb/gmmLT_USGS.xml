@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nrml xmlns:gml="http://www.opengis.net/gml" xmlns="http://openquake.org/xmlns/nrml/0.4">
+  <logicTree logicTreeID="GMPE_CEUS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <logicTreeBranchingLevel branchingLevelID="SCC">
+<logicTreeBranchSet branchSetID="SCC"
+          uncertaintyType="gmpeModel"
+          applyToTectonicRegionType="SCC">
+
+        <!-- 17 Sammons (peso total 0.667) -->
+        <logicTreeBranch branchID="Sammons01">
+          <uncertaintyModel>NGAEastUSGSSammons1</uncertaintyModel>
+          <uncertaintyWeight>0.0392352941</uncertaintyWeight>
+        </logicTreeBranch>
+
+        <logicTreeBranch branchID="Sammons02">
+          <uncertaintyModel>NGAEastUSGSSammons2</uncertaintyModel>
+          <uncertaintyWeight>0.0392352941</uncertaintyWeight>
+        </logicTreeBranch>
+
+        <logicTreeBranch branchID="Sammons03">
+          <uncertaintyModel>NGAEastUSGSSammons3</uncertaintyModel>
+          <uncertaintyWeight>0.0392352941</uncertaintyWeight>
+        </logicTreeBranch>
+
+        <logicTreeBranch branchID="Sammons04">
+          <uncertaintyModel>NGAEastUSGSSammons4</uncertaintyModel>
+          <uncertaintyWeight>0.0392352941</uncertaintyWeight>
+        </logicTreeBranch>
+
+        <logicTreeBranch branchID="Sammons05">
+          <uncertaintyModel>NGAEastUSGSSammons5</uncertaintyModel>
+          <uncertaintyWeight>0.0392352941</uncertaintyWeight>
+        </logicTreeBranch>
+
+        <logicTreeBranch branchID="Sammons06">
+          <uncertaintyModel>NGAEastUSGSSammons6</uncertaintyModel>
+          <uncertaintyWeight>0.0392352941</uncertaintyWeight>
+        </logicTreeBranch>
+
+        <logicTreeBranch branchID="Sammons07">
+          <uncertaintyModel>NGAEastUSGSSammons7</uncertaintyModel>
+          <uncertaintyWeight>0.0392352941</uncertaintyWeight>
+        </logicTreeBranch>
+
+        <logicTreeBranch branchID="Sammons08">
+          <uncertaintyModel>NGAEastUSGSSammons8</uncertaintyModel>
+          <uncertaintyWeight>0.0392352941</uncertaintyWeight>
+        </logicTreeBranch>
+
+        <logicTreeBranch branchID="Sammons09">
+          <uncertaintyModel>NGAEastUSGSSammons9</uncertaintyModel>
+          <uncertaintyWeight>0.0392352941</uncertaintyWeight>
+        </logicTreeBranch>
+
+        <logicTreeBranch branchID="Sammons10">
+          <uncertaintyModel>NGAEastUSGSSammons10</uncertaintyModel>
+          <uncertaintyWeight>0.0392352941</uncertaintyWeight>
+        </logicTreeBranch>
+
+        <logicTreeBranch branchID="Sammons11">
+          <uncertaintyModel>NGAEastUSGSSammons11</uncertaintyModel>
+          <uncertaintyWeight>0.0392352941</uncertaintyWeight>
+        </logicTreeBranch>
+
+        <logicTreeBranch branchID="Sammons12">
+          <uncertaintyModel>NGAEastUSGSSammons12</uncertaintyModel>
+          <uncertaintyWeight>0.0392352941</uncertaintyWeight>
+        </logicTreeBranch>
+
+        <logicTreeBranch branchID="Sammons13">
+          <uncertaintyModel>NGAEastUSGSSammons13</uncertaintyModel>
+          <uncertaintyWeight>0.0392352941</uncertaintyWeight>
+        </logicTreeBranch>
+
+        <logicTreeBranch branchID="Sammons14">
+          <uncertaintyModel>NGAEastUSGSSammons14</uncertaintyModel>
+          <uncertaintyWeight>0.0392352941</uncertaintyWeight>
+        </logicTreeBranch>
+
+        <logicTreeBranch branchID="Sammons15">
+          <uncertaintyModel>NGAEastUSGSSammons15</uncertaintyModel>
+          <uncertaintyWeight>0.0392352941</uncertaintyWeight>
+        </logicTreeBranch>
+
+        <logicTreeBranch branchID="Sammons16">
+          <uncertaintyModel>NGAEastUSGSSammons16</uncertaintyModel>
+          <uncertaintyWeight>0.0392352941</uncertaintyWeight>
+        </logicTreeBranch>
+
+        <logicTreeBranch branchID="Sammons17">
+          <uncertaintyModel>NGAEastUSGSSammons17</uncertaintyModel>
+          <uncertaintyWeight>0.0392352941</uncertaintyWeight>
+        </logicTreeBranch>
+
+        <!-- 6 seed models (peso total 0.333) -->
+        <logicTreeBranch branchID="Seed_Graizer16">
+          <uncertaintyModel>NGAEastUSGSSeedGraizer16</uncertaintyModel>
+          <uncertaintyWeight>0.0555</uncertaintyWeight>
+        </logicTreeBranch>
+
+        <logicTreeBranch branchID="Seed_Graizer17">
+          <uncertaintyModel>NGAEastUSGSSeedGraizer17</uncertaintyModel>
+          <uncertaintyWeight>0.0555</uncertaintyWeight>
+        </logicTreeBranch>
+
+        <logicTreeBranch branchID="Seed_Frankel">
+          <uncertaintyModel>NGAEastUSGSSeedFrankel</uncertaintyModel>
+          <uncertaintyWeight>0.0555</uncertaintyWeight>
+        </logicTreeBranch>
+
+        <logicTreeBranch branchID="Seed_YA15">
+          <uncertaintyModel>NGAEastUSGSSeedYA15</uncertaintyModel>
+          <uncertaintyWeight>0.0555</uncertaintyWeight>
+        </logicTreeBranch>
+
+        <logicTreeBranch branchID="Seed_PZCT15_M1SS">
+          <uncertaintyModel>NGAEastUSGSSeedPZCT15_M1SS</uncertaintyModel>
+          <uncertaintyWeight>0.0555</uncertaintyWeight>
+        </logicTreeBranch>
+
+        <logicTreeBranch branchID="Seed_PZCT15_M2ES">
+          <uncertaintyModel>NGAEastUSGSSeedPZCT15_M2ES</uncertaintyModel>
+          <uncertaintyWeight>0.0555</uncertaintyWeight>
+        </logicTreeBranch>
+
+      </logicTreeBranchSet>
+    </logicTreeBranchingLevel>
+
+    <logicTreeBranchingLevel branchingLevelID="bl2">
+            <logicTreeBranchSet uncertaintyType="gmpeModel" branchSetID="ASC_ALL"
+                                applyToTectonicRegionType="ASC">
+
+                <!-- Canada SHM6 ActiveCrust (NGA-West2) -->
+                <logicTreeBranch branchID="ASC_Canada_Abrahamson2014">
+                    <uncertaintyModel>CanadaSHM6_ActiveCrust_AbrahamsonEtAl2014</uncertaintyModel>
+                    <uncertaintyWeight>0.11</uncertaintyWeight>
+                </logicTreeBranch>
+
+                <logicTreeBranch branchID="ASC_Canada_Boore2014">
+                    <uncertaintyModel>CanadaSHM6_ActiveCrust_BooreEtAl2014</uncertaintyModel>
+                    <uncertaintyWeight>0.11</uncertaintyWeight>
+                </logicTreeBranch>
+
+                <logicTreeBranch branchID="ASC_Canada_CampbellBozorgnia2014">
+                    <uncertaintyModel>CanadaSHM6_ActiveCrust_CampbellBozorgnia2014</uncertaintyModel>
+                    <uncertaintyWeight>0.11</uncertaintyWeight>
+                </logicTreeBranch>
+
+                <logicTreeBranch branchID="ASC_Canada_ChiouYoungs2014">
+                    <uncertaintyModel>CanadaSHM6_ActiveCrust_ChiouYoungs2014</uncertaintyModel>
+                    <uncertaintyWeight>0.11</uncertaintyWeight>
+                </logicTreeBranch>
+
+                <!-- GEM África ASC -->
+                <logicTreeBranch branchID="ASC_GEM_Abrahamson2014">
+                    <uncertaintyModel>AbrahamsonEtAl2014</uncertaintyModel>
+                    <uncertaintyWeight>0.11</uncertaintyWeight>
+                </logicTreeBranch>
+
+                <logicTreeBranch branchID="ASC_GEM_ChiouYoungs2014">
+                    <uncertaintyModel>ChiouYoungs2014</uncertaintyModel>
+                    <uncertaintyWeight>0.11</uncertaintyWeight>
+                </logicTreeBranch>
+
+                <!-- Modernos SRK ASC -->
+                <logicTreeBranch branchID="ASC_SRK_Kotha2020">
+                    <uncertaintyModel>KothaEtAl2020</uncertaintyModel>
+                    <uncertaintyWeight>0.11</uncertaintyWeight>
+                </logicTreeBranch>
+
+                <logicTreeBranch branchID="ASC_SRK_Boore2020">
+                    <uncertaintyModel>BooreEtAl2020</uncertaintyModel>
+                    <uncertaintyWeight>0.11</uncertaintyWeight>
+                </logicTreeBranch>
+
+                <logicTreeBranch branchID="ASC_SRK_HassaniAtkinson2020">
+                    <uncertaintyModel>HassaniAtkinson2020Asc</uncertaintyModel>
+                    <uncertaintyWeight>0.12</uncertaintyWeight>
+                </logicTreeBranch>
+
+            </logicTreeBranchSet>
+        </logicTreeBranchingLevel>
+
+        <logicTreeBranchingLevel branchingLevelID="bl3">
+            <logicTreeBranchSet uncertaintyType="gmpeModel" branchSetID="SI_ALL"
+                                applyToTectonicRegionType="Subduction Interface">
+               
+                <!-- Canada SHM6 Interface -->
+                <logicTreeBranch branchID="SI_Canada_Abrahamson2015">
+                    <uncertaintyModel>CanadaSHM6_Interface_AbrahamsonEtAl2015SInter</uncertaintyModel>
+                    <uncertaintyWeight>0.125</uncertaintyWeight>
+                </logicTreeBranch>
+              
+                <logicTreeBranch branchID="SI_Canada_AtkinsonMacias2009">
+                    <uncertaintyModel>CanadaSHM6_Interface_AtkinsonMacias2009</uncertaintyModel>
+                    <uncertaintyWeight>0.125</uncertaintyWeight>
+                </logicTreeBranch>
+                 
+                <logicTreeBranch branchID="SI_Canada_GhofraniAtkinson2014">
+                    <uncertaintyModel>CanadaSHM6_Interface_GhofraniAtkinson2014Cascadia</uncertaintyModel>
+                    <uncertaintyWeight>0.125</uncertaintyWeight>
+                </logicTreeBranch>
+ 
+                <logicTreeBranch branchID="SI_Canada_Zhao2006">
+                    <uncertaintyModel>CanadaSHM6_Interface_ZhaoEtAl2006SInterCascadia</uncertaintyModel>
+                    <uncertaintyWeight>0.125</uncertaintyWeight>
+                </logicTreeBranch>
+
+                <!-- SRK modernos Interface -->
+                <logicTreeBranch branchID="SI_SRK_AbrahamsonGulerce2020">
+                    <uncertaintyModel>AbrahamsonGulerce2020SInter</uncertaintyModel>
+                    <uncertaintyWeight>0.125</uncertaintyWeight>
+                </logicTreeBranch>
+
+                <logicTreeBranch branchID="SI_SRK_Kuehn2020">
+                    <uncertaintyModel>KuehnEtAl2020SInter</uncertaintyModel>
+                    <uncertaintyWeight>0.125</uncertaintyWeight>
+                </logicTreeBranch>
+
+                <logicTreeBranch branchID="SI_SRK_Parker2020">
+                    <uncertaintyModel>ParkerEtAl2020SInter</uncertaintyModel>
+                    <uncertaintyWeight>0.125</uncertaintyWeight>
+                </logicTreeBranch>
+
+                <logicTreeBranch branchID="SI_SRK_Si2020">
+                    <uncertaintyModel>SiEtAl2020SInter</uncertaintyModel>
+                    <uncertaintyWeight>0.125</uncertaintyWeight>
+                </logicTreeBranch>
+                
+            </logicTreeBranchSet>
+        </logicTreeBranchingLevel>
+        
+        
+        <logicTreeBranchingLevel branchingLevelID="bl4">
+            <logicTreeBranchSet uncertaintyType="gmpeModel" branchSetID="SLAB30_ALL"
+                                applyToTectonicRegionType="Subduction IntraSlab30">
+                
+                <!-- Canada SHM6 InSlab30 -->
+                <logicTreeBranch branchID="SLAB30_Canada_Abrahamson2015">
+                    <uncertaintyModel>CanadaSHM6_InSlab_AbrahamsonEtAl2015SSlab30</uncertaintyModel>
+                    <uncertaintyWeight>0.16</uncertaintyWeight>
+                </logicTreeBranch>
+                
+                
+                <logicTreeBranch branchID="SLAB30_Canada_Garcia2005">
+                    <uncertaintyModel>CanadaSHM6_InSlab_GarciaEtAl2005SSlab30</uncertaintyModel>
+                    <uncertaintyWeight>0.14</uncertaintyWeight>
+                </logicTreeBranch>
+
+                <logicTreeBranch branchID="SLAB30_Canada_Zhao2006">
+                    <uncertaintyModel>CanadaSHM6_InSlab_ZhaoEtAl2006SSlabCascadia30</uncertaintyModel>
+                    <uncertaintyWeight>0.14</uncertaintyWeight>
+                </logicTreeBranch>
+
+                <!-- SRK modernos Slab (~30 km) -->
+                <logicTreeBranch branchID="SLAB30_SRK_AbrahamsonGulerce2020">
+                    <uncertaintyModel>AbrahamsonGulerce2020SSlab</uncertaintyModel>
+                    <uncertaintyWeight>0.14</uncertaintyWeight>
+                </logicTreeBranch>
+
+                <logicTreeBranch branchID="SLAB30_SRK_Kuehn2020">
+                    <uncertaintyModel>KuehnEtAl2020SSlab</uncertaintyModel>
+                    <uncertaintyWeight>0.14</uncertaintyWeight>
+                </logicTreeBranch>
+
+                <logicTreeBranch branchID="SLAB30_SRK_Parker2020">
+                    <uncertaintyModel>ParkerEtAl2020SSlab</uncertaintyModel>
+                    <uncertaintyWeight>0.14</uncertaintyWeight>
+                </logicTreeBranch>
+
+                <logicTreeBranch branchID="SLAB30_SRK_Si2020">
+                    <uncertaintyModel>SiEtAl2020SSlab</uncertaintyModel>
+                    <uncertaintyWeight>0.14</uncertaintyWeight>
+                </logicTreeBranch>
+                
+             </logicTreeBranchSet>
+        </logicTreeBranchingLevel>
+                   
+        <logicTreeBranchingLevel branchingLevelID="bl5">
+            <logicTreeBranchSet uncertaintyType="gmpeModel" branchSetID="SLAB55_ALL"
+                                applyToTectonicRegionType="Subduction IntraSlab55">
+                
+                <!-- Canada SHM6 InSlab55 -->
+                <logicTreeBranch branchID="SLAB55_Canada_Abrahamson2015">
+                    <uncertaintyModel>CanadaSHM6_InSlab_AbrahamsonEtAl2015SSlab55</uncertaintyModel>
+                    <uncertaintyWeight>0.16</uncertaintyWeight>
+                </logicTreeBranch>
+                
+                
+                <logicTreeBranch branchID="SLAB55_Canada_Garcia2005">
+                    <uncertaintyModel>CanadaSHM6_InSlab_GarciaEtAl2005SSlab55</uncertaintyModel>
+                    <uncertaintyWeight>0.14</uncertaintyWeight>
+                </logicTreeBranch>
+
+                <logicTreeBranch branchID="SLAB55_Canada_Zhao2006">
+                    <uncertaintyModel>CanadaSHM6_InSlab_ZhaoEtAl2006SSlabCascadia55</uncertaintyModel>
+                    <uncertaintyWeight>0.14</uncertaintyWeight>
+                </logicTreeBranch>
+
+                <!-- SRK modernos Slab (~55 km) -->
+                <logicTreeBranch branchID="SLAB55_SRK_AbrahamsonGulerce2020">
+                    <uncertaintyModel>AbrahamsonGulerce2020SSlab</uncertaintyModel>
+                    <uncertaintyWeight>0.14</uncertaintyWeight>
+                </logicTreeBranch>
+
+                <logicTreeBranch branchID="SLAB55_SRK_Kuehn2020">
+                    <uncertaintyModel>KuehnEtAl2020SSlab</uncertaintyModel>
+                    <uncertaintyWeight>0.14</uncertaintyWeight>
+                </logicTreeBranch>
+
+                <logicTreeBranch branchID="SLAB55_SRK_Parker2020">
+                    <uncertaintyModel>ParkerEtAl2020SSlab</uncertaintyModel>
+                    <uncertaintyWeight>0.14</uncertaintyWeight>
+                </logicTreeBranch>
+
+                <logicTreeBranch branchID="SLAB55_SRK_Si2020">
+                    <uncertaintyModel>SiEtAl2020SSlab</uncertaintyModel>
+                    <uncertaintyWeight>0.14</uncertaintyWeight>
+                </logicTreeBranch>
+
+            </logicTreeBranchSet>
+        </logicTreeBranchingLevel>
+ 
+                
+    </logicTree>
+</nrml>

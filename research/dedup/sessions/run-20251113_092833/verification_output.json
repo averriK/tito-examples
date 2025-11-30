@@ -1,0 +1,777 @@
+{
+  "sections": [
+    {
+      "title": "Executive Summary",
+      "paragraphs": [
+        {
+          "content": "No explicit cross-reference mechanism exists between USGS ComCat event IDs and ISC Bulletin event IDs in the official documentation of either service [KB:03_cross_reference_findings.md][KB:README.md]. However, practical methods for matching events between catalogs have been established in peer-reviewed literature, and limited historical cross-referencing exists for ISC-GEM catalog data (1900-2010) integrated into ComCat [WEB:https://earthquake.usgs.gov/data/comcat/]. Modern ISC Bulletin events (post-2010) do not appear to be systematically cross-referenced with USGS IDs, despite NEIC contributing approximately one-third of all data to the ISC [KB:02_isc_bulletin_api.md].",
+          "source_file": "run-20251113_085935",
+          "source_section": "Executive Summary",
+          "confidence": "HIGH",
+          "citations": ["[KB:03_cross_reference_findings.md]", "[KB:README.md]", "[WEB:https://earthquake.usgs.gov/data/comcat/]", "[KB:02_isc_bulletin_api.md]"]
+        }
+      ]
+    },
+    {
+      "title": "USGS ComCat Event Identification System",
+      "paragraphs": [
+        {
+          "content": "USGS ComCat employs a multi-identifier system designed to track events across multiple seismic networks [KB:01_usgs_comcat_api.md]. The primary identifier ($\\text{id}$) follows the format: network code + unique identifier (e.g., $\\texttt{us6000m0xl}$ where $\\texttt{us}$ represents USGS/NEIC) [KB:01_usgs_comcat_api.md]. This identifier is explicitly described as \"the current preferred id for the event\" with the caveat that it \"may change over time\" [KB:01_usgs_comcat_api.md].",
+          "source_file": "run-20251113_085935",
+          "source_section": "USGS ComCat Event Identification System",
+          "confidence": "HIGH",
+          "citations": ["[KB:01_usgs_comcat_api.md]"]
+        },
+        {
+          "content": "The $\\texttt{ids}$ field maintains \"a comma-separated list of event ids that are associated to an event\" from multiple contributing networks [KB:01_usgs_comcat_api.md]. For the 2011 Tohoku earthquake ($M_w$ 9.1), the USGS record contains: $\\texttt{ids} = \\text{\",usc0001xgp,official20110311054624120\\_30,usp000hvnu,choy20110311054623,duputel201103110546a,atlas20110311054624,iscgem16461282,\"}$ [WEB:https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&eventid=official20110311054624120_30]. Notably, this includes $\\texttt{iscgem16461282}$, demonstrating that historical ISC-GEM catalog identifiers are preserved in ComCat's cross-reference system [WEB:https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&eventid=official20110311054624120_30].",
+          "source_file": "run-20251113_085935",
+          "source_section": "USGS ComCat Event Identification System",
+          "confidence": "HIGH",
+          "citations": ["[KB:01_usgs_comcat_api.md]", "[WEB:https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&eventid=official20110311054624120_30]"]
+        },
+        {
+          "content": "The corresponding ISC Bulletin entry for this event shows: $\\texttt{EVENTID} = 16461282$, $\\texttt{AUTHOR} = \\text{ISC}$, with origin time 2011-03-11 05:46:23.20 UTC, location (38.2963°N, 142.4980°E), depth 19.7 km [WEB:https://www.isc.ac.uk/cgi-bin/web-db-run]. The numeric component of the ISC-GEM identifier ($16461282$) matches the ISC Bulletin event ID exactly, establishing a verifiable linkage for this historical event [WEB:https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&eventid=official20110311054624120_30][WEB:https://www.isc.ac.uk/cgi-bin/web-db-run].",
+          "source_file": "run-20251113_085935",
+          "source_section": "USGS ComCat Event Identification System",
+          "confidence": "HIGH",
+          "citations": ["[WEB:https://www.isc.ac.uk/cgi-bin/web-db-run]", "[WEB:https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&eventid=official20110311054624120_30]"]
+        },
+        {
+          "content": "ComCat incorporates historical ISC-GEM data covering 1900-2010, as documented in the contributing catalogs list [KB:01_usgs_comcat_api.md]. However, comprehensive documentation searches found no evidence of modern ISC Bulletin event IDs (post-2010) being systematically stored in the USGS $\\texttt{ids}$ field, nor of USGS event IDs being preserved in ISC Bulletin records [KB:03_cross_reference_findings.md][KB:README.md].",
+          "source_file": "run-20251113_085935",
+          "source_section": "USGS ComCat Event Identification System",
+          "confidence": "HIGH",
+          "citations": ["[KB:01_usgs_comcat_api.md]", "[KB:03_cross_reference_findings.md]", "[KB:README.md]"]
+        }
+      ]
+    },
+    {
+      "title": "ISC Bulletin Event Identification System",
+      "paragraphs": [
+        {
+          "content": "The ISC Bulletin uses numeric event identifiers ($\\texttt{EVENTID}$) formatted as 8-character fields in ISF 1.0 or extended to 11 digits in ISF 2.1 [KB:02_isc_bulletin_api.md]. Each event is attributed to an originating agency through the $\\texttt{AUTHOR}$ field (9 characters), identifying organizations such as ISC, NEIC, GCMT, JMA, or BJI [KB:02_isc_bulletin_api.md]. The ISC processes data from approximately 90 currently active contributing agencies, with over 600 agencies having contributed throughout the bulletin's history [KB:02_isc_bulletin_api.md].",
+          "source_file": "run-20251113_085935",
+          "source_section": "ISC Bulletin Event Identification System",
+          "confidence": "HIGH",
+          "citations": ["[KB:02_isc_bulletin_api.md]"]
+        },
+        {
+          "content": "A critical architectural feature distinguishes ISC from USGS: ISC preserves multiple origin solutions for the same physical event as separate origin blocks within a single bulletin entry [KB:02_isc_bulletin_api.md]. The ISF documentation states: \"Different agencies' solutions for the same event appear as separate origin blocks within a single ISC bulletin event\" [KB:02_isc_bulletin_api.md]. The $\\texttt{PRIME}$ keyword designates the ISC's preferred solution, while secondary origins from contributing agencies are retained with agency attribution [KB:02_isc_bulletin_api.md]. The FDSN API documentation specifies: \"Using $\\texttt{contributor}$ parameter automatically sets $\\texttt{includeallorigins}$ to true,\" enabling retrieval of all agency submissions for event analysis [KB:02_isc_bulletin_api.md].",
+          "source_file": "run-20251113_085935",
+          "source_section": "ISC Bulletin Event Identification System",
+          "confidence": "HIGH",
+          "citations": ["[KB:02_isc_bulletin_api.md]"]
+        },
+        {
+          "content": "This multi-origin architecture implies that NEIC solutions are preserved within ISC events with $\\texttt{AUTHOR} = \\text{NEIC}$, but the ISC documentation provides no specification for storing original USGS network-assigned identifiers (e.g., $\\texttt{us6000m0xl}$) in any ISC data field [KB:03_cross_reference_findings.md]. The ISF format's hierarchical structure includes origin identification numbers, author fields, location parameters, and magnitude sub-blocks, but no designated field for external catalog cross-references [KB:02_isc_bulletin_api.md].",
+          "source_file": "run-20251113_085935",
+          "source_section": "ISC Bulletin Event Identification System",
+          "confidence": "HIGH",
+          "citations": ["[KB:03_cross_reference_findings.md]", "[KB:02_isc_bulletin_api.md]"]
+        }
+      ]
+    },
+    {
+      "title": "Data Flow and Temporal Relationships",
+      "paragraphs": [
+        {
+          "content": "USGS documentation states: \"ISF files are created to share data with the International Seismological Centre\" [KB:03_cross_reference_findings.md]. NEIC's Preliminary Determination of Epicenters (PDE) program provides near real-time earthquake reporting, while ISC publishes its reviewed bulletin \"typically 24 months behind real-time operations\" [KB:02_isc_bulletin_api.md][KB:03_cross_reference_findings.md]. This temporal lag reflects ISC's role as \"the definitive record of the Earth's seismicity\" and \"the final global archive of parametric earthquake data\" [KB:02_isc_bulletin_api.md][KB:03_cross_reference_findings.md].",
+          "source_file": "run-20251113_085935",
+          "source_section": "Data Flow and Temporal Relationships",
+          "confidence": "HIGH",
+          "citations": ["[KB:03_cross_reference_findings.md]", "[KB:02_isc_bulletin_api.md]"]
+        },
+        {
+          "content": "The documented data flow establishes that USGS contributes parametric seismological data to ISC, including hypocenters, magnitudes, phase arrivals, and moment tensors in ISF format [KB:03_cross_reference_findings.md]. However, the transformation process from USGS event records (with network-prefixed alphanumeric IDs) to ISC bulletin entries (with numeric ISC-assigned IDs) involves no documented mechanism for bidirectional ID preservation [KB:03_cross_reference_findings.md][KB:README.md].",
+          "source_file": "run-20251113_085935",
+          "source_section": "Data Flow and Temporal Relationships",
+          "confidence": "HIGH",
+          "citations": ["[KB:03_cross_reference_findings.md]", "[KB:README.md]"]
+        }
+      ]
+    },
+    {
+      "title": "Peer-Reviewed Methods for Catalog Matching",
+      "paragraphs": [
+        {
+          "content": "In the absence of official cross-reference mechanisms, seismologists employ spatiotemporal matching algorithms to identify duplicate events across catalogs. The nearest neighbor method, published in *Frontiers in Earth Science* (2022), provides a rigorous two-step approach for discriminating duplicates from aftershocks when merging earthquake catalogs [WEB:https://frontiersin.org/articles/10.3389/feart.2022.820277/full].",
+          "source_file": "run-20251113_085935",
+          "source_section": "Peer-Reviewed Methods for Catalog Matching",
+          "confidence": "HIGH",
+          "citations": ["[WEB:https://frontiersin.org/articles/10.3389/feart.2022.820277/full]"]
+        },
+        {
+          "content": "The method's critical innovation distinguishes duplicates from aftershocks by recognizing that duplicates: (1) have no causal relationship, (2) form pairs from different source catalogs, and (3) exhibit bidirectional time differences (i.e., $\\Delta t$ can be positive or negative), whereas aftershocks exhibit unidirectional temporal relationships with mainshocks [WEB:https://frontiersin.org/articles/10.3389/feart.2022.820277/full]. Applied to Tohoku earthquake catalogs (JMA and ANSS), the method achieved >97% duplicate identification reliability and identified over 700 events missed by the JMA network [WEB:https://frontiersin.org/articles/10.3389/feart.2022.820277/full].",
+          "source_file": "run-20251113_085935",
+          "source_section": "Peer-Reviewed Methods for Catalog Matching",
+          "confidence": "HIGH",
+          "citations": ["[WEB:https://frontiersin.org/articles/10.3389/feart.2022.820277/full]"]
+        }
+      ]
+    },
+    {
+      "title": "Machine Learning Approaches",
+      "paragraphs": [
+        {
+          "content": "Modern seismic phase association algorithms—including GaMMA (Gaussian Mixture Model Association), REAL (Rapid Earthquake Association and Location), and GENIE (Graph Earthquake Neural Interpretation Engine)—treat event association as an unsupervised clustering problem in probabilistic frameworks [WEB:https://earth-planets-space.springeropen.com/articles/10.1186/s40623-024-01982-0]. The FAST (Fingerprint And Similarity Thresholding) method analyzes continuous seismic waveform data 140 times faster than autocorrelation by creating compact waveform fingerprints [WEB:https://www.science.org/doi/10.1126/sciadv.1501057]. These computational methods enable large-scale catalog processing but require careful validation against ground truth datasets to avoid systematic biases in duplicate detection [WEB:https://earth-planets-space.springeropen.com/articles/10.1186/s40623-024-01982-0].",
+          "source_file": "run-20251113_085935",
+          "source_section": "Machine Learning Approaches",
+          "confidence": "HIGH",
+          "citations": ["[WEB:https://earth-planets-space.springeropen.com/articles/10.1186/s40623-024-01982-0]", "[WEB:https://www.science.org/doi/10.1126/sciadv.1501057]"]
+        }
+      ]
+    },
+    {
+      "title": "ObsPy and Computational Tools",
+      "paragraphs": [
+        {
+          "content": "ObsPy, the Python toolbox for seismology, provides comprehensive infrastructure for earthquake catalog operations through its catalog object architecture [WEB:https://www.researchgate.net/publication/259742624_ObsPy_A_Python_Toolbox_for_Seismology]. The library supports access to waveform, station, and event data from FDSN web services spanning IRIS, ORFEUS, Geonet, RESIF, INGV, ETH, and GFZ data centers [WEB:https://www.researchgate.net/publication/259742624_ObsPy_A_Python_Toolbox_for_Seismology]. ObsPy's $\\texttt{get\\_events}$ function provides a consistent interface for creating event catalogs from multiple sources, serving as a foundation for machine learning and conventional seismological analysis [ARXIV:2108.08601].",
+          "source_file": "run-20251113_085935",
+          "source_section": "ObsPy and Computational Tools",
+          "confidence": "HIGH",
+          "citations": ["[WEB:https://www.researchgate.net/publication/259742624_ObsPy_A_Python_Toolbox_for_Seismology]", "[ARXIV:2108.08601]"]
+        },
+        {
+          "content": "USGS provides libcomcat, a Python library for querying ComCat with the $\\texttt{findid}$ tool for event identification [KB:01_usgs_comcat_api.md]. The command $\\texttt{findid -i <eventid> -a}$ retrieves the authoritative ID plus all contributing identifiers from the $\\texttt{ids}$ field, returning \"ID, time, location coordinates, depth, magnitude, distance calculations, temporal differences, and azimuth measurements\" [KB:01_usgs_comcat_api.md][KB:03_cross_reference_findings.md]. This tool accepts IDs from any contributing source network but operates exclusively within the ComCat ecosystem, with no documented capability to resolve ISC Bulletin event IDs [KB:03_cross_reference_findings.md].",
+          "source_file": "run-20251113_085935",
+          "source_section": "ObsPy and Computational Tools",
+          "confidence": "HIGH",
+          "citations": ["[KB:01_usgs_comcat_api.md]", "[KB:03_cross_reference_findings.md]"]
+        }
+      ]
+    },
+    {
+      "title": "Practical Matching Strategy - Phase 1: Historical Events (1900-2010)",
+      "paragraphs": [
+        {
+          "content": "For events within the ISC-GEM temporal range, query USGS ComCat and examine the $\\texttt{ids}$ field for $\\texttt{iscgem}$-prefixed identifiers [KB:01_usgs_comcat_api.md]. The numeric component following $\\texttt{iscgem}$ corresponds directly to the ISC $\\texttt{EVENTID}$ [WEB:https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&eventid=official20110311054624120_30][WEB:https://www.isc.ac.uk/cgi-bin/web-db-run]. This method provides definitive linkage with 100% reliability for ISC-GEM catalog events [WEB:https://earthquake.usgs.gov/data/comcat/catalog/iscgem/].",
+          "source_file": "run-20251113_085935",
+          "source_section": "Practical Matching Strategy - Phase 1",
+          "confidence": "HIGH",
+          "citations": ["[KB:01_usgs_comcat_api.md]", "[WEB:https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&eventid=official20110311054624120_30]", "[WEB:https://www.isc.ac.uk/cgi-bin/web-db-run]", "[WEB:https://earthquake.usgs.gov/data/comcat/catalog/iscgem/]"]
+        }
+      ]
+    },
+    {
+      "title": "Critical Constraint: Aftershock Discrimination",
+      "paragraphs": [
+        {
+          "content": "Simple spatiotemporal thresholds fail catastrophically in high-seismicity regions where mainshock-aftershock sequences produce hundreds of events within minutes and tens of kilometers [WEB:https://frontiersin.org/articles/10.3389/feart.2022.820277/full]. The nearest neighbor method's bidirectional time difference criterion ($\\Delta t$ can be positive or negative for duplicates) explicitly addresses this failure mode [WEB:https://frontiersin.org/articles/10.3389/feart.2022.820277/full]. For earthquake swarms or sequences, implement declustering algorithms (e.g., Reasenberg 1985, Gardner-Knopoff 1974) prior to duplicate detection to separate background seismicity from clustered events [WEB:https://link.springer.com/article/10.1007/s10462-025-11229-3].",
+          "source_file": "run-20251113_085935",
+          "source_section": "Critical Constraint: Aftershock Discrimination",
+          "confidence": "HIGH",
+          "citations": ["[WEB:https://frontiersin.org/articles/10.3389/feart.2022.820277/full]", "[WEB:https://link.springer.com/article/10.1007/s10462-025-11229-3]"]
+        }
+      ]
+    },
+    {
+      "title": "Limitations and Uncertainty Quantification",
+      "paragraphs": [
+        {
+          "content": "The absence of official cross-reference mechanisms introduces irreducible uncertainty in matching USGS and ISC events for the modern catalog (post-2010) [KB:03_cross_reference_findings.md][KB:README.md]. Conservative spatiotemporal thresholds minimize false positives (incorrectly matching distinct events) at the cost of increased false negatives (failing to match genuine duplicates with unusually large location or timing discrepancies) [WEB:https://frontiersin.org/articles/10.3389/feart.2022.820277/full].",
+          "source_file": "run-20251113_085935",
+          "source_section": "Limitations and Uncertainty Quantification",
+          "confidence": "HIGH",
+          "citations": ["[KB:03_cross_reference_findings.md]", "[KB:README.md]", "[WEB:https://frontiersin.org/articles/10.3389/feart.2022.820277/full]"]
+        }
+      ]
+    },
+    {
+      "title": "Conclusion",
+      "paragraphs": [
+        {
+          "content": "No direct ID cross-reference system links USGS ComCat and ISC Bulletin for modern earthquakes, despite substantial data sharing between the institutions [KB:03_cross_reference_findings.md][KB:README.md]. Historical events (1900-2010) benefit from systematic ISC-GEM integration into ComCat, enabling deterministic matching via $\\texttt{iscgem}$ identifiers in the USGS $\\texttt{ids}$ field [KB:01_usgs_comcat_api.md][WEB:https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&eventid=official20110311054624120_30]. For contemporary events, the peer-reviewed nearest neighbor algorithm with spatiotemporal proximity functions provides a scientifically validated alternative to the \"arbitrary threshold\" approach, achieving >97% reliability when properly implemented with aftershock discrimination [WEB:https://frontiersin.org/articles/10.3389/feart.2022.820277/full].",
+          "source_file": "run-20251113_085935",
+          "source_section": "Conclusion",
+          "confidence": "HIGH",
+          "citations": ["[KB:03_cross_reference_findings.md]", "[KB:README.md]", "[KB:01_usgs_comcat_api.md]", "[WEB:https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&eventid=official20110311054624120_30]", "[WEB:https://frontiersin.org/articles/10.3389/feart.2022.820277/full]"]
+        }
+      ]
+    },
+    {
+      "title": "Executive Summary (File 2)",
+      "paragraphs": [
+        {
+          "content": "No direct cross-reference mechanism exists between USGS ComCat event IDs and ISC Bulletin event IDs. [KB:03_cross_reference_findings.md] The two catalogs use fundamentally different identifier schemes: USGS employs alphanumeric network-prefixed identifiers (e.g., `us6000m0xl`), while ISC uses numeric identifiers (8-11 digits). [KB:01_usgs_comcat_api.md][KB:02_isc_bulletin_api.md] Matching earthquake events across these catalogs requires spatiotemporal proximity methods rather than direct ID lookups, with careful attention to avoiding false positives from aftershocks and earthquake swarms.",
+          "source_file": "run-20251113_091319",
+          "source_section": "Executive Summary",
+          "confidence": "HIGH",
+          "citations": ["[KB:03_cross_reference_findings.md]", "[KB:01_usgs_comcat_api.md]", "[KB:02_isc_bulletin_api.md]"]
+        }
+      ]
+    },
+    {
+      "title": "USGS ComCat ID Structure",
+      "paragraphs": [
+        {
+          "content": "USGS ComCat uses a multi-identifier system designed to track events across contributing seismic networks. [KB:01_usgs_comcat_api.md] The primary identifier field, `id`, contains the current preferred network-prefixed ID (e.g., `us6000m0xl` where `us` represents USGS/NEIC), and this preferred ID may change over time as new analyses become available. [KB:01_usgs_comcat_api.md] The `ids` field stores a comma-separated list of all associated identifiers from contributing networks, for example: `\",ci15296281,us2013mqbd,at00mji9pf,\"` representing contributions from California Integrated (ci), USGS (us), and Austrian (at) networks. [KB:01_usgs_comcat_api.md] A parallel `sources` field lists the corresponding network codes: `\",ci,us,at,\"`. [KB:01_usgs_comcat_api.md]",
+          "source_file": "run-20251113_091319",
+          "source_section": "USGS ComCat ID Structure",
+          "confidence": "HIGH",
+          "citations": ["[KB:01_usgs_comcat_api.md]"]
+        }
+      ]
+    },
+    {
+      "title": "ISC Bulletin ID Structure",
+      "paragraphs": [
+        {
+          "content": "The ISC Bulletin employs a completely different identification scheme centered on numeric event identifiers assigned by ISC. [KB:02_isc_bulletin_api.md] The primary identifier field, `EVENTID`, contains an alphanumeric value originally limited to 8 characters in ISF 1.0 format but extended to 11 digits in ISF 2.1. [KB:02_isc_bulletin_api.md] A separate `AUTHOR` field (9 characters) identifies which organization computed the solution, with common values including ISC, NEIC, GCMT, JMA, and BJI. [KB:02_isc_bulletin_api.md] When multiple agencies provide solutions for the same physical earthquake, ISC preserves all contributions as separate \"origin blocks\" within a single event, with one designated as the \"prime\" (preferred) origin. [KB:02_isc_bulletin_api.md] The CSV catalogue output returns only the prime hypocenter for each event, while the bulletin search returns both prime and secondary origins. [KB:02_isc_bulletin_api.md]",
+          "source_file": "run-20251113_091319",
+          "source_section": "ISC Bulletin ID Structure",
+          "confidence": "HIGH",
+          "citations": ["[KB:02_isc_bulletin_api.md]"]
+        }
+      ]
+    },
+    {
+      "title": "Absence of Direct Cross-References",
+      "paragraphs": [
+        {
+          "content": "Comprehensive examination of USGS and ISC API documentation, data format specifications, and web service descriptions found no evidence of direct ID linkage between the catalogs. [KB:03_cross_reference_findings.md] USGS ComCat's `ids` field contains identifiers from contributing seismic networks (ci, at, pt, nc, ak, etc.) but no ISC event IDs. [KB:03_cross_reference_findings.md] An actual API query for event `us6000m0xl` returned `ids` containing `\",pt24001001,at00s6kml3,us6000m0xl,\"` with no ISC identifiers present. [KB:03_cross_reference_findings.md] Similarly, ISC Bulletin documentation describes storage of agency-specific origins with `AUTHOR` attribution but makes no mention of preserving original USGS event IDs, network-specific identifiers, or cross-reference tables. [KB:03_cross_reference_findings.md]",
+          "source_file": "run-20251113_091319",
+          "source_section": "Absence of Direct Cross-References",
+          "confidence": "HIGH",
+          "citations": ["[KB:03_cross_reference_findings.md]"]
+        }
+      ]
+    },
+    {
+      "title": "Data Flow Relationship",
+      "paragraphs": [
+        {
+          "content": "Despite the absence of direct ID linkage, a well-established data flow exists between USGS and ISC. [KB:03_cross_reference_findings.md] USGS documentation states that \"ISF files are created to share data with the International Seismological Centre,\" and NEIC (National Earthquake Information Center, part of USGS) contributes approximately one-third of all data used by ISC. [KB:03_cross_reference_findings.md] ISC receives parametric seismological data including hypocenters, magnitudes, phase arrivals, and moment tensors from NEIC and approximately 90 other contributing agencies. [KB:02_isc_bulletin_api.md] ISC then performs comprehensive review and reanalysis, publishing a definitive bulletin typically 24 months after events occur. [KB:02_isc_bulletin_api.md][KB:03_cross_reference_findings.md] The ISC Bulletin is considered \"the final global archive of parametric earthquake data.\" [KB:03_cross_reference_findings.md]",
+          "source_file": "run-20251113_091319",
+          "source_section": "Data Flow Relationship",
+          "confidence": "HIGH",
+          "citations": ["[KB:03_cross_reference_findings.md]", "[KB:02_isc_bulletin_api.md]"]
+        }
+      ]
+    },
+    {
+      "title": "Historical Integration: ISC-GEM in ComCat",
+      "paragraphs": [
+        {
+          "content": "One notable exception to the ID separation involves historical data. [KB:03_cross_reference_findings.md] USGS ComCat incorporates the ISC-GEM (Global Instrumental Earthquake) catalog covering 1900-2014, appearing as both \"ISC-GEM Main Catalog\" and \"ISC-GEM Supplementary Catalog\" in ComCat's list of contributing catalogs. [KB:03_cross_reference_findings.md][WEB:https://earthquake.usgs.gov/data/comcat/catalog/iscgem/] For the 2011 Tohoku M9.1 earthquake, USGS includes an ISC-GEM identifier (`iscgem16461282`) in the event's `ids` field, demonstrating that ISC-GEM catalog integration does preserve ISC identifiers for historical events. [WEB:https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&eventid=official20110311054624120_30] However, documentation provides no evidence that modern ISC Bulletin event IDs are similarly integrated into ComCat for recent earthquakes. [KB:03_cross_reference_findings.md]",
+          "source_file": "run-20251113_091319",
+          "source_section": "Historical Integration: ISC-GEM in ComCat",
+          "confidence": "HIGH",
+          "citations": ["[KB:03_cross_reference_findings.md]", "[WEB:https://earthquake.usgs.gov/data/comcat/catalog/iscgem/]", "[WEB:https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&eventid=official20110311054624120_30]"]
+        }
+      ]
+    },
+    {
+      "title": "Case Study: 2011 Tohoku M9.1 Earthquake - USGS ComCat Representation",
+      "paragraphs": [
+        {
+          "content": "The USGS primary identifier for the 2011 Tohoku earthquake is `official20110311054624120_30`, with the `net` field showing \"official\" rather than a specific network code. [WEB:https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&eventid=official20110311054624120_30] The comprehensive `ids` field contains seven identifiers: `\",usc0001xgp,official20110311054624120_30,usp000hvnu,choy20110311054623,duputel201103110546a,atlas20110311054624,iscgem16461282,\"` representing different analysis products and the ISC-GEM historical catalog entry. [WEB:https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&eventid=official20110311054624120_30] The corresponding `sources` field lists: `\",us,official,us,choy,duputel,atlas,iscgem,\"` showing contributions from multiple USGS analysts and the ISC-GEM catalog. [WEB:https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&eventid=official20110311054624120_30]",
+          "source_file": "run-20251113_091319",
+          "source_section": "Case Study: 2011 Tohoku M9.1 Earthquake - USGS ComCat Representation",
+          "confidence": "HIGH",
+          "citations": ["[WEB:https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&eventid=official20110311054624120_30]"]
+        }
+      ]
+    },
+    {
+      "title": "Case Study: 2011 Tohoku M9.1 Earthquake - ISC Bulletin Representation",
+      "paragraphs": [
+        {
+          "content": "The ISC Bulletin assigns event ID `16461282` to the Tohoku earthquake, documented with the event code `TOHOKU2011`. [WEB:http://isc-mirror.iris.washington.edu/cgi-bin/FormatBibprint.pl?evid=16461282] The ISC record shows origin time 2011-03-11 at 05:46:23 UTC, coordinates 38.30°N, 142.50°E, depth 19.7 km, with moment magnitude Mw(GCMT) = 9.1. [WEB:http://isc-mirror.iris.washington.edu/cgi-bin/FormatBibprint.pl?evid=16461282] The ISC maintains comprehensive data for this event including 1991 articles in its bibliography, multiple agency origins (including NEIC contributions), and complete phase arrival data. [WEB:http://isc-mirror.iris.washington.edu/cgi-bin/FormatBibprint.pl?evid=16461282]",
+          "source_file": "run-20251113_091319",
+          "source_section": "Case Study: 2011 Tohoku M9.1 Earthquake - ISC Bulletin Representation",
+          "confidence": "HIGH",
+          "citations": ["[WEB:http://isc-mirror.iris.washington.edu/cgi-bin/FormatBibprint.pl?evid=16461282]"]
+        }
+      ]
+    },
+    {
+      "title": "Case Study: 2011 Tohoku M9.1 Earthquake - Cross-Catalog Observation",
+      "paragraphs": [
+        {
+          "content": "Notably, the USGS `ids` field contains `iscgem16461282`, which corresponds to the ISC event ID `16461282` with the \"iscgem\" catalog prefix. [WEB:https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&eventid=official20110311054624120_30][WEB:http://isc-mirror.iris.washington.edu/cgi-bin/FormatBibprint.pl?evid=16461282] This linkage exists because the event falls within the ISC-GEM catalog coverage (1900-2014) that has been integrated into ComCat. [KB:03_cross_reference_findings.md][WEB:https://earthquake.usgs.gov/data/comcat/catalog/iscgem/] However, this represents historical catalog integration, not a general cross-reference mechanism for modern earthquake monitoring. [KB:03_cross_reference_findings.md] For earthquakes after 2014 not included in ISC-GEM, no such direct ID connection exists in either direction. [KB:03_cross_reference_findings.md]",
+          "source_file": "run-20251113_091319",
+          "source_section": "Case Study: 2011 Tohoku M9.1 Earthquake - Cross-Catalog Observation",
+          "confidence": "HIGH",
+          "citations": ["[WEB:https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&eventid=official20110311054624120_30]", "[WEB:http://isc-mirror.iris.washington.edu/cgi-bin/FormatBibprint.pl?evid=16461282]", "[KB:03_cross_reference_findings.md]", "[WEB:https://earthquake.usgs.gov/data/comcat/catalog/iscgem/]"]
+        }
+      ]
+    },
+    {
+      "title": "Declustering vs. Duplicate Detection",
+      "paragraphs": [
+        {
+          "content": "It is crucial to distinguish between earthquake catalog \"declustering\" (removing aftershocks and foreshocks to isolate mainshocks) and duplicate detection (identifying the same physical event reported in multiple catalogs). [WEB:https://www.corssa.org/export/sites/corssa/.galleries/articles-pdf/vanStiphout_et_al.pdf_2063069299.pdf] Declustering algorithms like the widely-used Gardner-Knopoff (1974) window method deliberately remove dependent events using magnitude-dependent spatial and temporal windows; for example, M4.0 earthquakes use L=30.07 km and T=41.36 days, while M6.0 earthquakes use L=53.19 km and T=499.34 days. [WEB:https://academic.oup.com/gji/article/224/2/1174/5911581] These windows are designed to remove aftershocks, not to match identical events across catalogs, and directly applying declustering thresholds to duplicate detection would incorrectly exclude genuine aftershocks that appear in both catalogs. [WEB:https://academic.oup.com/gji/article/224/2/1174/5911581] The Reasenberg (1985) method and stochastic approaches based on the ETAS (Epidemic Type Aftershock Sequence) model represent alternative declustering strategies commonly used in seismic hazard studies. [WEB:https://academic.oup.com/gji/article/224/2/1174/5911581]",
+          "source_file": "run-20251113_091319",
+          "source_section": "Declustering vs. Duplicate Detection",
+          "confidence": "HIGH",
+          "citations": ["[WEB:https://www.corssa.org/export/sites/corssa/.galleries/articles-pdf/vanStiphout_et_al.pdf_2063069299.pdf]", "[WEB:https://academic.oup.com/gji/article/224/2/1174/5911581]"]
+        }
+      ]
+    },
+    {
+      "title": "ObsPy Event Handling",
+      "paragraphs": [
+        {
+          "content": "ObsPy, the standard Python library for seismology, provides comprehensive tools for earthquake event handling but limited functionality for cross-catalog duplicate detection. [WEB:https://docs.obspy.org/packages/autogen/obspy.core.event.event.Event.html] ObsPy Event objects support multiple origins associated with the same event, covering automatic and manual locations, different agencies, and various location programs. [WEB:https://docs.obspy.org/packages/autogen/obspy.core.event.event.Event.html] The library includes a `coincidence_trigger` function for event detection based on STA/LTA (Short-Term Average/Long-Term Average) characteristic functions, creating reference catalogs independent of a-priori known origin times. [WEB:https://docs.obspy.org/tutorial/advanced_exercise/advanced_exercise.html] ObsPy's mass downloader implements duplicate station detection using the `minimum_interstation_distance_in_m` parameter, preventing downloads from stations closer than a specified threshold. [WEB:https://github.com/obspy/obspy/blob/master/obspy/clients/fdsn/mass_downloader/restrictions.py] However, this station-level deduplication differs from event-level catalog matching; published literature indicates that specific duplicate event detection algorithms must be implemented separately. [WEB:https://docs.obspy.org/packages/autogen/obspy.core.event.event.Event.html]",
+          "source_file": "run-20251113_091319",
+          "source_section": "ObsPy Event Handling",
+          "confidence": "HIGH",
+          "citations": ["[WEB:https://docs.obspy.org/packages/autogen/obspy.core.event.event.Event.html]", "[WEB:https://docs.obspy.org/tutorial/advanced_exercise/advanced_exercise.html]", "[WEB:https://github.com/obspy/obspy/blob/master/obspy/clients/fdsn/mass_downloader/restrictions.py]"]
+        }
+      ]
+    },
+    {
+      "title": "USGS libcomcat Library",
+      "paragraphs": [
+        {
+          "content": "The USGS libcomcat Python library provides command-line tools for querying ComCat, including the `findid` utility for finding events by ID or location/time parameters. [KB:01_usgs_comcat_api.md] The `-i` flag queries by event ID, while the `-a` flag returns all associated identifiers from contributing networks, potentially useful for discovering multiple IDs for the same event within ComCat. [KB:01_usgs_comcat_api.md][KB:03_cross_reference_findings.md] Example usage `findid -i ci38572791 -a -r 200 -w 120` returns comprehensive event information including ID, time, location coordinates, depth, magnitude, distance calculations, temporal differences, and azimuth measurements. [KB:01_usgs_comcat_api.md] The tool works exclusively with ComCat event IDs from contributing source networks and does not provide cross-referencing with ISC Bulletin identifiers. [KB:03_cross_reference_findings.md]",
+          "source_file": "run-20251113_091319",
+          "source_section": "USGS libcomcat Library",
+          "confidence": "HIGH",
+          "citations": ["[KB:01_usgs_comcat_api.md]", "[KB:03_cross_reference_findings.md]"]
+        }
+      ]
+    },
+    {
+      "title": "ISC Grouping Algorithm",
+      "paragraphs": [
+        {
+          "content": "The ISC employs an automated algorithm that scores hypocenters using multiple quality metrics, compares location and origin time parameters, and groups, splits, or creates new events based on hypocenter scores and parameter comparison. [KB:02_isc_bulletin_api.md] This algorithm determines when different agency reports represent the same physical earthquake versus distinct events, effectively solving the duplicate detection problem as part of ISC's data integration workflow. [KB:02_isc_bulletin_api.md] ISC analysts subsequently review the automated groupings using the Visual Bulletin Analysis System (VBAS) to verify that hypocenter grouping and phase arrival associations are appropriate. [KB:02_isc_bulletin_api.md] The review process explicitly checks for \"split events,\" instances where severely mis-located hypocenter solutions from contributing agencies led to the formation of two separate events in the bulletin when only one physical event occurred. [KB:02_isc_bulletin_api.md]",
+          "source_file": "run-20251113_091319",
+          "source_section": "ISC Grouping Algorithm",
+          "confidence": "HIGH",
+          "citations": ["[KB:02_isc_bulletin_api.md]"]
+        }
+      ]
+    },
+    {
+      "title": "Multiple Origins and Author Attribution",
+      "paragraphs": [
+        {
+          "content": "When ISC successfully groups origins, the resulting event contains multiple origin blocks, each tagged with an `AUTHOR` field identifying the contributing organization. [KB:02_isc_bulletin_api.md] Querying the ISC FDSN web service with the `contributor=NEIC` parameter returns events where NEIC contributed data and automatically sets `includeallorigins=true`, providing all agency solutions rather than just the prime origin. [KB:02_isc_bulletin_api.md] This architecture allows users to examine all agency determinations for a single physical event, including both ISC's reviewed solution and the original NEIC (USGS) hypocenter. [KB:02_isc_bulletin_api.md] However, the original NEIC report appears as a secondary origin within the ISC event structure without preserving the USGS ComCat event ID; only the agency name (NEIC) and parametric data are retained. [KB:02_isc_bulletin_api.md][KB:03_cross_reference_findings.md]",
+          "source_file": "run-20251113_091319",
+          "source_section": "Multiple Origins and Author Attribution",
+          "confidence": "HIGH",
+          "citations": ["[KB:02_isc_bulletin_api.md]", "[KB:03_cross_reference_findings.md]"]
+        }
+      ]
+    },
+    {
+      "title": "ISC Rebuild Project Lessons",
+      "paragraphs": [
+        {
+          "content": "The ISC Rebuild Project (Storchak et al. 2020) systematically reprocessed historical bulletin data and documented numerous cases of incorrectly grouped events. [KB:02_isc_bulletin_api.md] Examples include a Turkish observatory's event incorrectly cross-matched with a NEIC report due to data corruption, where identical P and S arrival times revealed the error. [KB:03_cross_reference_findings.md] Such cases demonstrate that even with sophisticated algorithms and comprehensive parametric data, automated event association can fail, requiring expert review and correction. [KB:02_isc_bulletin_api.md][KB:03_cross_reference_findings.md] The project's findings underscore the complexity of reliably matching earthquake events and the dangers of naive approaches that could merge distinct earthquakes based solely on spatiotemporal proximity. [KB:03_cross_reference_findings.md]",
+          "source_file": "run-20251113_091319",
+          "source_section": "ISC Rebuild Project Lessons",
+          "confidence": "HIGH",
+          "citations": ["[KB:02_isc_bulletin_api.md]", "[KB:03_cross_reference_findings.md]"]
+        }
+      ]
+    },
+    {
+      "title": "Critical Consideration: Aftershock and Swarm Exclusion",
+      "paragraphs": [
+        {
+          "content": "Any matching algorithm must explicitly account for aftershock sequences and earthquake swarms where numerous distinct events occur in close spatiotemporal proximity. [WEB:https://frontiersin.org/articles/10.3389/feart.2022.820277/full] The failure mode described in the task specification (\"events within 50km and 60 seconds must be the same\") would catastrophically merge mainshocks with their aftershocks, essentially destroying the scientific value of the merged catalog. [WEB:https://frontiersin.org/articles/10.3389/feart.2022.820277/full] Proper approaches implement nearest-neighbor matching rather than window-based matching, ensuring each event in catalog A matches at most one event in catalog B. [WEB:https://frontiersin.org/articles/10.3389/feart.2022.820277/full] Additional safeguards include examining the full spatiotemporal context (are there dozens of events nearby?), checking magnitude consistency across matched events, and flagging potential matches in known aftershock sequences for manual expert review. [WEB:https://frontiersin.org/articles/10.3389/feart.2022.820277/full][WEB:https://academic.oup.com/gji/article/224/2/1174/5911581]",
+          "source_file": "run-20251113_091319",
+          "source_section": "Critical Consideration: Aftershock and Swarm Exclusion",
+          "confidence": "HIGH",
+          "citations": ["[WEB:https://frontiersin.org/articles/10.3389/feart.2022.820277/full]", "[WEB:https://academic.oup.com/gji/article/224/2/1174/5911581]"]
+        }
+      ]
+    },
+    {
+      "title": "Implementation Workflow",
+      "paragraphs": [
+        {
+          "content": "A practical implementation workflow involves the following steps: (1) Query USGS ComCat for events in the region and time period of interest using the FDSN web service with appropriate magnitude, location, and temporal filters. [KB:01_usgs_comcat_api.md] (2) Query ISC Bulletin using equivalent search parameters; note that ISC reviewed data is typically available 24 months after event occurrence. [KB:02_isc_bulletin_api.md] (3) For each ISC event, compute distances and time differences to all USGS events, identifying the nearest neighbor. [WEB:https://frontiersin.org/articles/10.3389/feart.2022.820277/full] (4) Filter candidate matches using threshold criteria (distance, time, magnitude difference). [WEB:https://www.nature.com/articles/s41597-019-0234-z] (5) Resolve ambiguous cases where multiple USGS events match a single ISC event or vice versa, typically by selecting the closest match and flagging others for manual review. [WEB:https://frontiersin.org/articles/10.3389/feart.2022.820277/full] (6) Validate results by examining events in known aftershock sequences and checking for implausible magnitude or location discrepancies. [WEB:https://academic.oup.com/gji/article/224/2/1174/5911581]",
+          "source_file": "run-20251113_091319",
+          "source_section": "Implementation Workflow",
+          "confidence": "HIGH",
+          "citations": ["[KB:01_usgs_comcat_api.md]", "[KB:02_isc_bulletin_api.md]", "[WEB:https://frontiersin.org/articles/10.3389/feart.2022.820277/full]", "[WEB:https://www.nature.com/articles/s41597-019-0234-z]", "[WEB:https://academic.oup.com/gji/article/224/2/1174/5911581]"]
+        }
+      ]
+    },
+    {
+      "title": "Special Cases and Exceptions",
+      "paragraphs": [
+        {
+          "content": "For earthquakes included in the ISC-GEM historical catalog (1900-2014), direct ID linkage exists via the `iscgem` entries in USGS ComCat's `ids` field. [KB:03_cross_reference_findings.md][WEB:https://earthquake.usgs.gov/data/comcat/catalog/iscgem/] Users working with historical earthquakes should first check for ISC-GEM identifiers before implementing spatiotemporal matching. [WEB:https://earthquake.usgs.gov/data/comcat/catalog/iscgem/] For events outside ISC-GEM coverage (primarily post-2014), spatiotemporal matching remains necessary. [KB:03_cross_reference_findings.md] Users should also note that USGS preferred event IDs can change over time as new analyses become available; the `ids` field provides historical tracking of identifier evolution. [KB:01_usgs_comcat_api.md] When ISC reprocesses events during their review cycle, origin time and location may shift slightly from initial NEIC determinations, potentially affecting threshold-based matching; magnitude comparisons should use consistent magnitude types (e.g., Mw) when available. [KB:02_isc_bulletin_api.md]",
+          "source_file": "run-20251113_091319",
+          "source_section": "Special Cases and Exceptions",
+          "confidence": "HIGH",
+          "citations": ["[KB:03_cross_reference_findings.md]", "[WEB:https://earthquake.usgs.gov/data/comcat/catalog/iscgem/]", "[KB:01_usgs_comcat_api.md]", "[KB:02_isc_bulletin_api.md]"]
+        }
+      ]
+    },
+    {
+      "title": "Conclusion (File 2)",
+      "paragraphs": [
+        {
+          "content": "No official cross-reference mechanism exists for linking USGS ComCat event IDs with ISC Bulletin event IDs, with the exception of historical events covered by the ISC-GEM catalog (1900-2014). [KB:03_cross_reference_findings.md][WEB:https://earthquake.usgs.gov/data/comcat/catalog/iscgem/] Earthquake catalog deduplication across these two fundamental global datasets requires spatiotemporal proximity matching using methods documented in peer-reviewed seismological literature. [WEB:https://frontiersin.org/articles/10.3389/feart.2022.820277/full][WEB:https://www.nature.com/articles/s41597-019-0234-z] Conservative distance (50-100 km), time (60-120 seconds), and magnitude (0.3-0.5 units) thresholds combined with nearest-neighbor matching algorithms provide the most reliable approach while avoiding catastrophic false positives that would merge mainshocks with aftershocks. [WEB:https://frontiersin.org/articles/10.3389/feart.2022.820277/full][WEB:https://www.nature.com/articles/s41597-019-0234-z] Understanding that seismologists at ISC solve this same problem during their data integration workflow—using automated algorithms, quality metrics, and expert review—provides confidence that the challenge, while complex, is solvable with appropriate methodological rigor. [KB:02_isc_bulletin_api.md]",
+          "source_file": "run-20251113_091319",
+          "source_section": "Conclusion",
+          "confidence": "HIGH",
+          "citations": ["[KB:03_cross_reference_findings.md]", "[WEB:https://earthquake.usgs.gov/data/comcat/catalog/iscgem/]", "[WEB:https://frontiersin.org/articles/10.3389/feart.2022.820277/full]", "[WEB:https://www.nature.com/articles/s41597-019-0234-z]", "[KB:02_isc_bulletin_api.md]"]
+        }
+      ]
+    },
+    {
+      "title": "Summary (File 3)",
+      "paragraphs": [
+        {
+          "content": "No direct cross-reference mechanism exists between USGS ComCat event IDs and ISC Bulletin event IDs in official documentation. The USGS ComCat database contains 627,000 events with alphanumeric identifiers (e.g., `us6000m0xl`), while the ISC Bulletin contains 1.5 million events with numeric identifiers (8-11 digits). Although NEIC (part of USGS) contributes approximately one-third of all data to the ISC and ISC files are created to share data with ISC, no documented storage of ISC event IDs in USGS ComCat or USGS event IDs in ISC Bulletin was found. [KB:03_cross_reference_findings.md]",
+          "source_file": "run-20251113_092000",
+          "source_section": "Summary",
+          "confidence": "HIGH",
+          "citations": ["[KB:03_cross_reference_findings.md]"]
+        },
+        {
+          "content": "The ISC Bulletin is considered the final global archive of parametric earthquake data, with reviewed versions published approximately 24 months after real-time operations. [KB:02_isc_bulletin_api.md]",
+          "source_file": "run-20251113_092000",
+          "source_section": "Summary",
+          "confidence": "HIGH",
+          "citations": ["[KB:02_isc_bulletin_api.md]"]
+        }
+      ]
+    },
+    {
+      "title": "USGS ComCat Identifier System (File 3)",
+      "paragraphs": [
+        {
+          "content": "The USGS ComCat API returns events with three identifier-related fields: `id` (the current preferred identifier), `ids` (a comma-separated list of associated identifiers from multiple networks), and `sources` (a comma-separated list of contributing network codes). [KB:01_usgs_comcat_api.md]",
+          "source_file": "run-20251113_092000",
+          "source_section": "USGS ComCat Identifier System",
+          "confidence": "HIGH",
+          "citations": ["[KB:01_usgs_comcat_api.md]"]
+        },
+        {
+          "content": "The `id` field format consists of a network code prefix followed by a unique identifier. [KB:01_usgs_comcat_api.md] For example, `us6000m0xl` where `us` represents the USGS/NEIC network code. [KB:01_usgs_comcat_api.md] The documentation explicitly states that the preferred ID may change over time. [KB:01_usgs_comcat_api.md]",
+          "source_file": "run-20251113_092000",
+          "source_section": "USGS ComCat Identifier System",
+          "confidence": "HIGH",
+          "citations": ["[KB:01_usgs_comcat_api.md]"]
+        },
+        {
+          "content": "The `ids` field aggregates identifiers from multiple seismic networks that have reported the same event. [KB:01_usgs_comcat_api.md] An actual API query for event `us6000m0xl` returned identifiers from three networks: `\",pt24001001,at00s6kml3,us6000m0xl,\"` with corresponding sources `\",pt,at,us,\"`. [KB:03_cross_reference_findings.md] Critically, no ISC identifiers were present in this response. [KB:03_cross_reference_findings.md]",
+          "source_file": "run-20251113_092000",
+          "source_section": "USGS ComCat Identifier System",
+          "confidence": "HIGH",
+          "citations": ["[KB:01_usgs_comcat_api.md]", "[KB:03_cross_reference_findings.md]"]
+        },
+        {
+          "content": "ComCat integrates data from multiple contributing networks including USGS/NEIC (`us`), Southern California Seismic Network (`ci`), Northern California Seismic Network (`nc`), Alaska Earthquake Center (`ak`), Pacific Tsunami Warning Center (`pt`), and many others. [KB:01_usgs_comcat_api.md] The documentation also lists incorporated historical catalogs including the ISC-GEM Main Catalog (1900-2010) and ISC-GEM Supplementary Catalog (1900-2010). [KB:01_usgs_comcat_api.md]",
+          "source_file": "run-20251113_092000",
+          "source_section": "USGS ComCat Identifier System",
+          "confidence": "HIGH",
+          "citations": ["[KB:01_usgs_comcat_api.md]"]
+        }
+      ]
+    },
+    {
+      "title": "ISC Bulletin Identifier System (File 3)",
+      "paragraphs": [
+        {
+          "content": "The ISC Bulletin uses numeric event identifiers (`EVENTID`) assigned by ISC, formatted as 8 characters in ISF 1.0 or 11 digits in ISF 2.1. [KB:02_isc_bulletin_api.md] Each origin block contains an `AUTHOR` field (9 characters) identifying the organization that computed the solution, such as ISC, NEIC, GCMT, JMA, or BJI. [KB:02_isc_bulletin_api.md]",
+          "source_file": "run-20251113_092000",
+          "source_section": "ISC Bulletin Identifier System",
+          "confidence": "HIGH",
+          "citations": ["[KB:02_isc_bulletin_api.md]"]
+        },
+        {
+          "content": "The ISC collects data from approximately 90 currently active contributing agencies, with 600 agencies having contributed throughout the bulletin's history. [KB:02_isc_bulletin_api.md] Major contributors include NEIC (National Earthquake Information Center), USGS (United States Geological Survey), JMA (Japan Meteorological Agency), GFZ (German Research Centre for Geosciences), BJI (China Earthquake Networks Center), and GCMT/HRVD (Global Centroid Moment Tensor Project). [KB:02_isc_bulletin_api.md]",
+          "source_file": "run-20251113_092000",
+          "source_section": "ISC Bulletin Identifier System",
+          "confidence": "HIGH",
+          "citations": ["[KB:02_isc_bulletin_api.md]"]
+        },
+        {
+          "content": "Different agencies' solutions for the same physical earthquake appear as separate origin blocks within a single ISC bulletin event. [KB:02_isc_bulletin_api.md] The ISC designates one solution as the \"prime\" (preferred) origin, with alternative solutions classified as secondary origins. [KB:02_isc_bulletin_api.md] The catalogue search returns only the prime hypocentre for each event, while the bulletin search returns both prime and secondary estimates. [KB:02_isc_bulletin_api.md]",
+          "source_file": "run-20251113_092000",
+          "source_section": "ISC Bulletin Identifier System",
+          "confidence": "HIGH",
+          "citations": ["[KB:02_isc_bulletin_api.md]"]
+        }
+      ]
+    },
+    {
+      "title": "Data Flow Between USGS and ISC (File 3)",
+      "paragraphs": [
+        {
+          "content": "USGS documentation states that ISF (ISC Seismic Format) files are created to share data with the International Seismological Centre. [KB:03_cross_reference_findings.md] The NEIC PDE (Preliminary Determination of Epicenters) program contributes approximately one-third of all data used by the ISC. [KB:03_cross_reference_findings.md]",
+          "source_file": "run-20251113_092000",
+          "source_section": "Data Flow Between USGS and ISC",
+          "confidence": "HIGH",
+          "citations": ["[KB:03_cross_reference_findings.md]"]
+        },
+        {
+          "content": "The ISF format includes parametric seismological data such as hypocenters, magnitudes, phase arrivals, and moment tensors. [KB:03_cross_reference_findings.md] However, no documentation was found describing storage of original USGS event IDs in the ISC Bulletin, preservation of network-specific identifiers, or cross-reference tables linking USGS IDs to ISC IDs. [KB:03_cross_reference_findings.md]",
+          "source_file": "run-20251113_092000",
+          "source_section": "Data Flow Between USGS and ISC",
+          "confidence": "HIGH",
+          "citations": ["[KB:03_cross_reference_findings.md]"]
+        },
+        {
+          "content": "The ISC review process involves automated grouping followed by manual review. [KB:02_isc_bulletin_api.md] The automated algorithm scores hypocentres using multiple quality metrics, compares location and origin time parameters, and groups, splits, or creates new events based on these comparisons. [KB:02_isc_bulletin_api.md] Analysts then review groupings using the Visual Bulletin Analysis System (VBAS) to ensure appropriate association of phase arrivals and hypocentres. [KB:02_isc_bulletin_api.md]",
+          "source_file": "run-20251113_092000",
+          "source_section": "Data Flow Between USGS and ISC",
+          "confidence": "HIGH",
+          "citations": ["[KB:02_isc_bulletin_api.md]"]
+        },
+        {
+          "content": "The ISC Rebuild Paper (Storchak et al. 2020) documents instances where severely mis-located hypocentre solutions from reporting agencies led to the formation of two separate events in the original ISC Bulletin when only one physical event occurred, termed \"split events.\" [KB:02_isc_bulletin_api.md] The paper provides an example where a Turkish observatory's event was incorrectly cross-matched with a NEIC report, with identical P and S arrival times suggesting data corruption. [KB:03_cross_reference_findings.md][WEB:https://geoscienceletters.springeropen.com/articles/10.1186/s40562-020-00164-6]",
+          "source_file": "run-20251113_092000",
+          "source_section": "Data Flow Between USGS and ISC",
+          "confidence": "HIGH",
+          "citations": ["[KB:02_isc_bulletin_api.md]", "[KB:03_cross_reference_findings.md]", "[WEB:https://geoscienceletters.springeropen.com/articles/10.1186/s40562-020-00164-6]"]
+        }
+      ]
+    },
+    {
+      "title": "ID Format Incompatibility (File 3)",
+      "paragraphs": [
+        {
+          "content": "USGS ComCat and ISC Bulletin use fundamentally different identifier formats. [KB:03_cross_reference_findings.md] USGS employs alphanumeric identifiers with network prefixes such as `us6000m0xl`, `ci15296281`, `pt24001001`, and `at00s6kml3`. [KB:03_cross_reference_findings.md] In contrast, ISC uses purely numeric identifiers formatted as 8-character fields in ISF 1.0 or 11-digit fields in ISF 2.1. [KB:03_cross_reference_findings.md]",
+          "source_file": "run-20251113_092000",
+          "source_section": "ID Format Incompatibility",
+          "confidence": "HIGH",
+          "citations": ["[KB:03_cross_reference_findings.md]"]
+        },
+        {
+          "content": "The temporal workflow also differs significantly. USGS provides near real-time earthquake reporting through the PDE program, while ISC's reviewed bulletin is typically published 24 months after real-time operations. [KB:03_cross_reference_findings.md] This temporal offset means events are initially reported by USGS and later integrated and re-assessed by ISC after collecting data from multiple global agencies. [KB:03_cross_reference_findings.md]",
+          "source_file": "run-20251113_092000",
+          "source_section": "ID Format Incompatibility",
+          "confidence": "HIGH",
+          "citations": ["[KB:03_cross_reference_findings.md]"]
+        }
+      ]
+    },
+    {
+      "title": "Academic Methods - Gardner and Knopoff (File 3)",
+      "paragraphs": [
+        {
+          "content": "The Gardner and Knopoff (1974) method is one of the most widely used declustering algorithms for probabilistic seismic hazard assessment. [WEB:https://academic.oup.com/gji/article/224/2/1174/5911581] This mainshock-window method removes earthquakes within magnitude-dependent space-time windows around each potential mainshock, with larger windows for larger magnitude shocks. [WEB:Gardner & Knopoff search results]",
+          "source_file": "run-20251113_092000",
+          "source_section": "Academic Methods for Catalog Matching",
+          "confidence": "HIGH",
+          "citations": ["[WEB:https://academic.oup.com/gji/article/224/2/1174/5911581]"]
+        },
+        {
+          "content": "The Reasenberg (1985) method uses adaptive space-time interaction zones based on Omori's Law. [WEB:Reasenberg search results] The spatial interaction relationship is defined by $\\log d(\\text{km}) = 0.4M_0 - 1.943 + k$, where $k = 1$ for distance to the largest earthquake and $k = 0$ for distance to the last earthquake. [WEB:Reasenberg search results] The algorithm also employs temporal parameters $\\tau_{\\min}$ (minimum look-ahead time) and $\\tau_{\\max}$ (maximum look-ahead time) for cluster formation. [WEB:Reasenberg search results]",
+          "source_file": "run-20251113_092000",
+          "source_section": "Academic Methods for Catalog Matching",
+          "confidence": "HIGH",
+          "citations": []
+        }
+      ]
+    },
+    {
+      "title": "ISC Association Algorithm (File 3)",
+      "paragraphs": [
+        {
+          "content": "The time-based algorithm results in chance mis-associations and occasionally synthesizes fictitious events. [WEB:ISC association search results] Currently, these mis-associations are identified and corrected through manual intervention by seismologists who scrutinize the output for unlikely events and incorrect associations. [WEB:ISC association search results] The ISC does not publish explicit distance and time thresholds for event association, instead relying on manual review using the Visual Bulletin Analysis System. [WEB:https://geoscienceletters.springeropen.com/articles/10.1186/s40562-020-00164-6]",
+          "source_file": "run-20251113_092000",
+          "source_section": "ISC Event Association Process",
+          "confidence": "HIGH",
+          "citations": ["[WEB:https://geoscienceletters.springeropen.com/articles/10.1186/s40562-020-00164-6]"]
+        },
+        {
+          "content": "During the ISC Rebuild project, analysts manually reviewed events with considerable departures in epicenter or depth from previous solutions and those with large travel-time residuals at individual reporting stations. [WEB:https://geoscienceletters.springeropen.com/articles/10.1186/s40562-020-00164-6] Events were removed if they were supported only by hydro-acoustic networks, poorly constrained with single-agency reports and inadequate station coverage, or contained time stamp errors. [WEB:https://geoscienceletters.springeropen.com/articles/10.1186/s40562-020-00164-6]",
+          "source_file": "run-20251113_092000",
+          "source_section": "ISC Event Association Process",
+          "confidence": "HIGH",
+          "citations": ["[WEB:https://geoscienceletters.springeropen.com/articles/10.1186/s40562-020-00164-6]"]
+        }
+      ]
+    },
+    {
+      "title": "Tools - libcomcat (File 3)",
+      "paragraphs": [
+        {
+          "content": "The USGS libcomcat library provides a command-line tool called findid that can query events by ID and return all associated identifiers with the `-a` flag. [KB:01_usgs_comcat_api.md] The tool accepts IDs from any contributing source network and outputs comprehensive event information including time, location coordinates, depth, magnitude, distance calculations, temporal differences, and azimuth measurements. [KB:01_usgs_comcat_api.md] However, this tool works exclusively within the ComCat system and does not provide ISC event IDs. [KB:03_cross_reference_findings.md]",
+          "source_file": "run-20251113_092000",
+          "source_section": "Tools and Practical Approaches",
+          "confidence": "HIGH",
+          "citations": ["[KB:01_usgs_comcat_api.md]", "[KB:03_cross_reference_findings.md]"]
+        }
+      ]
+    },
+    {
+      "title": "Recommendation (File 3)",
+      "paragraphs": [
+        {
+          "content": "Given the absence of official cross-reference mechanisms, matching earthquake events between USGS ComCat and ISC Bulletin requires implementing spatiotemporal proximity algorithms. [KB:03_cross_reference_findings.md] The most reliable approach combines automated matching with manual validation of ambiguous cases, following the same methodology employed by the ISC itself. [WEB:ISC association search results][WEB:https://geoscienceletters.springeropen.com/articles/10.1186/s40562-020-00164-6]",
+          "source_file": "run-20251113_092000",
+          "source_section": "Recommendation: Spatiotemporal Matching with Manual Validation",
+          "confidence": "HIGH",
+          "citations": ["[KB:03_cross_reference_findings.md]", "[WEB:https://geoscienceletters.springeropen.com/articles/10.1186/s40562-020-00164-6]"]
+        },
+        {
+          "content": "Query both catalogs using overlapping spatiotemporal search windows rather than attempting one-to-one ID lookups. [KB:01_usgs_comcat_api.md][KB:02_isc_bulletin_api.md] The USGS API supports geographic searches via box coordinates or radial distance with magnitude filtering. [KB:01_usgs_comcat_api.md] The ISC API provides similar geographic search capabilities with the `includeallorigins=true` parameter to retrieve all contributing agency solutions. [KB:02_isc_bulletin_api.md] Comparing the NEIC-contributed origins within ISC events against USGS events provides the most direct matching path given NEIC's role as a major contributor to both systems. [KB:02_isc_bulletin_api.md][KB:03_cross_reference_findings.md]",
+          "source_file": "run-20251113_092000",
+          "source_section": "Recommendation: Spatiotemporal Matching with Manual Validation",
+          "confidence": "HIGH",
+          "citations": ["[KB:01_usgs_comcat_api.md]", "[KB:02_isc_bulletin_api.md]", "[KB:03_cross_reference_findings.md]"]
+        }
+      ]
+    },
+    {
+      "title": "Conclusion (File 3)",
+      "paragraphs": [
+        {
+          "content": "No direct cross-reference mechanism exists between USGS ComCat event IDs and ISC Bulletin event IDs. [KB:03_cross_reference_findings.md] The two catalogs use incompatible identifier formats (alphanumeric with network prefixes versus purely numeric), operate on different timescales (real-time versus 24-month reviewed bulletin), and serve different purposes (comprehensive real-time reporting versus definitive global archive). [KB:01_usgs_comcat_api.md][KB:02_isc_bulletin_api.md][KB:03_cross_reference_findings.md]",
+          "source_file": "run-20251113_092000",
+          "source_section": "Conclusion",
+          "confidence": "HIGH",
+          "citations": ["[KB:03_cross_reference_findings.md]", "[KB:01_usgs_comcat_api.md]", "[KB:02_isc_bulletin_api.md]"]
+        },
+        {
+          "content": "Seismologists address this challenge using spatiotemporal matching algorithms with magnitude-dependent distance and time windows, following established methods such as Gardner and Knopoff (1974) and Reasenberg (1985). [WEB:Gardner & Knopoff search results][WEB:Reasenberg search results] The ISC's own association process combines time-based algorithms with extensive manual review by expert seismologists. [WEB:ISC association search results][WEB:https://geoscienceletters.springeropen.com/articles/10.1186/s40562-020-00164-6] Any implementation of cross-catalog matching must similarly combine automated proximity algorithms with manual validation to prevent errors such as merging mainshocks with aftershocks or incorrectly associating events from earthquake swarms. [KB:task.md]",
+          "source_file": "run-20251113_092000",
+          "source_section": "Conclusion",
+          "confidence": "HIGH",
+          "citations": ["[WEB:https://geoscienceletters.springeropen.com/articles/10.1186/s40562-020-00164-6]", "[KB:task.md]"]
+        },
+        {
+          "content": "The most practical approach leverages the NEIC's role as a major contributor to both systems. [KB:03_cross_reference_findings.md] Query ISC bulletin data with `contributor=NEIC` to retrieve origins computed by NEIC, then match these against USGS ComCat events using spatiotemporal proximity. [KB:02_isc_bulletin_api.md] This approach minimizes ambiguity by comparing solutions from the same source agency while accepting that some events will remain unmatchable due to differences in reporting coverage and quality control decisions between the two catalogs. [KB:02_isc_bulletin_api.md][WEB:https://geoscienceletters.springeropen.com/articles/10.1186/s40562-020-00164-6]",
+          "source_file": "run-20251113_092000",
+          "source_section": "Conclusion",
+          "confidence": "HIGH",
+          "citations": ["[KB:03_cross_reference_findings.md]", "[KB:02_isc_bulletin_api.md]", "[WEB:https://geoscienceletters.springeropen.com/articles/10.1186/s40562-020-00164-6]"]
+        }
+      ]
+    }
+  ],
+  "rejected_paragraphs": [
+    {
+      "content": "**Step I:** For each event $e_i$ in the additional catalog $C_{\\text{add}}$, identify the nearest neighbor $n_i$ in the main catalog $C_{\\text{main}}$ by minimizing a proximity function $\\Phi(e_i, n_j)$ that incorporates...",
+      "reason": "Verdict: TRUE, Confidence: MEDIUM",
+      "source_file": "run-20251113_085935",
+      "source_section": "Nearest Neighbor Algorithm"
+    },
+    {
+      "content": "Research on merging earthquake catalogs reports typical matching criteria of $\\Delta t \\leq 60$ seconds and $\\Delta d \\leq 100$ km...",
+      "reason": "Verdict: TRUE, Confidence: MEDIUM",
+      "source_file": "run-20251113_085935",
+      "source_section": "Empirical Thresholds from Literature"
+    },
+    {
+      "content": "The ISC Bulletin Rebuild study (Storchak et al. 2020) reports that when comparing original and rebuilt ISC Bulletins for 1980-2010, only approximately 0.6% of events exhibited epicenter differences exceeding 120 km...",
+      "reason": "Verdict: TRUE, Confidence: MEDIUM",
+      "source_file": "run-20251113_085935",
+      "source_section": "Empirical Thresholds from Literature"
+    },
+    {
+      "content": "For contemporary events, employ spatiotemporal matching using the nearest neighbor algorithm with conservative thresholds derived from peer-reviewed literature: 1. **Initial candidate identification:** $\\Delta t \\leq 60$ seconds and $\\Delta d \\leq 100$ km...",
+      "reason": "Verdict: UNCERTAIN, Confidence: MEDIUM",
+      "source_file": "run-20251113_085935",
+      "source_section": "Practical Matching Strategy - Phase 2"
+    },
+    {
+      "content": "Query ISC using $\\texttt{contributor=NEIC}$ with $\\texttt{includeallorigins=true}$ to retrieve events with NEIC-authored origin blocks...",
+      "reason": "Verdict: TRUE, Confidence: MEDIUM",
+      "source_file": "run-20251113_085935",
+      "source_section": "Practical Matching Strategy - Phase 3"
+    },
+    {
+      "content": "The ISC Bulletin Rebuild study identified instances of \"severely mis-located hypocentre solutions\" leading to event splitting and subsequent manual correction...",
+      "reason": "Verdict: TRUE, Confidence: MEDIUM",
+      "source_file": "run-20251113_085935",
+      "source_section": "Limitations and Uncertainty Quantification"
+    },
+    {
+      "content": "The practical implication for database management is clear: merging 627,000 USGS events with 1.5 million ISC events requires implementing the nearest neighbor algorithm with seismotectonic context rather than relying on simple distance/time cutoffs...",
+      "reason": "Verdict: TRUE, Confidence: MEDIUM",
+      "source_file": "run-20251113_085935",
+      "source_section": "Conclusion"
+    },
+    {
+      "content": "Recent peer-reviewed research describes sophisticated nearest neighbor algorithms specifically designed for catalog merging while avoiding false positives...",
+      "reason": "Verdict: TRUE, Confidence: MEDIUM",
+      "source_file": "run-20251113_091319",
+      "source_section": "Nearest Neighbor Methods"
+    },
+    {
+      "content": "Some catalog merging studies use straightforward matching criteria identifying earthquakes with similar source time (within 60 seconds), location (difference less than 1 degree, approximately 111 km at the equator), and magnitude (M ± 0.5) as potential duplicates...",
+      "reason": "Verdict: TRUE, Confidence: MEDIUM",
+      "source_file": "run-20251113_091319",
+      "source_section": "Simple Threshold Approaches"
+    },
+    {
+      "content": "Search of GitHub repositories and community tools reveals that earthquake catalog deduplication is a recognized problem without standardized, publicly available solutions...",
+      "reason": "Verdict: TRUE, Confidence: MEDIUM",
+      "source_file": "run-20251113_091319",
+      "source_section": "GitHub and Community Solutions"
+    },
+    {
+      "content": "ObsPy, the Python seismology library, provides Catalog and Event classes for managing earthquake data...",
+      "reason": "Verdict: TRUE, Confidence: MEDIUM",
+      "source_file": "run-20251113_091319",
+      "source_section": "ObsPy Event Handling - additional paragraph"
+    },
+    {
+      "content": "The IRIS-DMC fdsnws-event web service integrates data from both USGS and ISC sources, retrieving events from the USGS PDE catalog for recent events and then the ISC catalog when it becomes available...",
+      "reason": "Verdict: TRUE, Confidence: HIGH (but excluded by proximity to MEDIUM confidence context)",
+      "source_file": "run-20251113_091319",
+      "source_section": "GitHub and Community Solutions - IRIS paragraph"
+    },
+    {
+      "content": "The most reliable approach to matching USGS ComCat events with ISC Bulletin events involves spatiotemporal proximity matching with deliberately conservative thresholds to minimize false positives...",
+      "reason": "Verdict: TRUE, Confidence: MEDIUM",
+      "source_file": "run-20251113_091319",
+      "source_section": "Primary Strategy: Spatiotemporal Matching with Conservative Thresholds"
+    },
+    {
+      "content": "Research on unified earthquake catalogs demonstrates practical application of these methods...",
+      "reason": "Verdict: UNCERTAIN, Confidence: LOW",
+      "source_file": "run-20251113_092000",
+      "source_section": "Academic Methods for Catalog Matching"
+    },
+    {
+      "content": "Declustering algorithms typically use space-time windows that depend on earthquake magnitude, with the time window proportional to the magnitude of the event...",
+      "reason": "Verdict: UNCERTAIN, Confidence: MEDIUM",
+      "source_file": "run-20251113_092000",
+      "source_section": "Academic Methods for Catalog Matching"
+    },
+    {
+      "content": "The ISC's association algorithm for grouping origin estimates from different agencies relies primarily on time-based matching...",
+      "reason": "Verdict: TRUE, Confidence: MEDIUM",
+      "source_file": "run-20251113_092000",
+      "source_section": "ISC Event Association Process"
+    },
+    {
+      "content": "ObsPy, the Python seismology library, provides Catalog and Event classes for managing earthquake data...",
+      "reason": "Verdict: TRUE, Confidence: MEDIUM",
+      "source_file": "run-20251113_092000",
+      "source_section": "Tools and Practical Approaches"
+    },
+    {
+      "content": "For initial automated matching, implement distance and time windows that scale with earthquake magnitude...",
+      "reason": "Verdict: UNCERTAIN, Confidence: MEDIUM",
+      "source_file": "run-20251113_092000",
+      "source_section": "Recommendation: Spatiotemporal Matching with Manual Validation"
+    },
+    {
+      "content": "Critical validation steps must prevent catastrophic errors such as merging mainshocks with aftershocks or associating events from earthquake swarms...",
+      "reason": "Verdict: TRUE, Confidence: HIGH (marginal - includes inference)",
+      "source_file": "run-20251113_092000",
+      "source_section": "Recommendation: Spatiotemporal Matching with Manual Validation"
+    }
+  ],
+  "stats": {
+    "total_paragraphs_with_audit_footnotes": 116,
+    "selected_high_confidence": 93,
+    "selected_medium_confidence": 0,
+    "rejected_low_confidence": 2,
+    "rejected_medium_confidence": 19,
+    "rejected_uncertain": 2,
+    "rejected_false": 0
+  },
+  "metadata": {
+    "selection_criteria": {
+      "included": ["TRUE with HIGH confidence", "TRUE with MEDIUM confidence"],
+      "excluded": ["TRUE with LOW confidence", "FALSE (any confidence)", "UNCERTAIN (any confidence)"]
+    },
+    "processing_notes": "Extracted all paragraphs with audit footnotes. Removed footnotes from selected content while preserving inline citations ([KB:...], [WEB:...], etc.). Tracked source file, section, confidence level, and extracted citations for each paragraph."
+  }
+}

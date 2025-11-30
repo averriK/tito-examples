@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nrml xmlns:gml="http://www.opengis.net/gml" xmlns="http://openquake.org/xmlns/nrml/0.4">
+  <logicTree logicTreeID="GMPE_CEUS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <logicTreeBranchingLevel branchingLevelID="SCC">
+<logicTreeBranchSet branchSetID="SCC"
+          uncertaintyType="gmpeModel"
+          applyToTectonicRegionType="Stable Continental Crust">
+
+        <!-- 17 Sammons (peso total 0.667) -->
+        <logicTreeBranch branchID="Sammons01">
+          <uncertaintyModel>NGAEastUSGSSammons1</uncertaintyModel>
+          <uncertaintyWeight>0.0392352941</uncertaintyWeight>
+        </logicTreeBranch>
+
+        <logicTreeBranch branchID="Sammons02">
+          <uncertaintyModel>NGAEastUSGSSammons2</uncertaintyModel>
+          <uncertaintyWeight>0.0392352941</uncertaintyWeight>
+        </logicTreeBranch>
+
+        <logicTreeBranch branchID="Sammons03">
+          <uncertaintyModel>NGAEastUSGSSammons3</uncertaintyModel>
+          <uncertaintyWeight>0.0392352941</uncertaintyWeight>
+        </logicTreeBranch>
+
+        <logicTreeBranch branchID="Sammons04">
+          <uncertaintyModel>NGAEastUSGSSammons4</uncertaintyModel>
+          <uncertaintyWeight>0.0392352941</uncertaintyWeight>
+        </logicTreeBranch>
+
+        <logicTreeBranch branchID="Sammons05">
+          <uncertaintyModel>NGAEastUSGSSammons5</uncertaintyModel>
+          <uncertaintyWeight>0.0392352941</uncertaintyWeight>
+        </logicTreeBranch>
+
+        <logicTreeBranch branchID="Sammons06">
+          <uncertaintyModel>NGAEastUSGSSammons6</uncertaintyModel>
+          <uncertaintyWeight>0.0392352941</uncertaintyWeight>
+        </logicTreeBranch>
+
+        <logicTreeBranch branchID="Sammons07">
+          <uncertaintyModel>NGAEastUSGSSammons7</uncertaintyModel>
+          <uncertaintyWeight>0.0392352941</uncertaintyWeight>
+        </logicTreeBranch>
+
+        <logicTreeBranch branchID="Sammons08">
+          <uncertaintyModel>NGAEastUSGSSammons8</uncertaintyModel>
+          <uncertaintyWeight>0.0392352941</uncertaintyWeight>
+        </logicTreeBranch>
+
+        <logicTreeBranch branchID="Sammons09">
+          <uncertaintyModel>NGAEastUSGSSammons9</uncertaintyModel>
+          <uncertaintyWeight>0.0392352941</uncertaintyWeight>
+        </logicTreeBranch>
+
+        <logicTreeBranch branchID="Sammons10">
+          <uncertaintyModel>NGAEastUSGSSammons10</uncertaintyModel>
+          <uncertaintyWeight>0.0392352941</uncertaintyWeight>
+        </logicTreeBranch>
+
+        <logicTreeBranch branchID="Sammons11">
+          <uncertaintyModel>NGAEastUSGSSammons11</uncertaintyModel>
+          <uncertaintyWeight>0.0392352941</uncertaintyWeight>
+        </logicTreeBranch>
+
+        <logicTreeBranch branchID="Sammons12">
+          <uncertaintyModel>NGAEastUSGSSammons12</uncertaintyModel>
+          <uncertaintyWeight>0.0392352941</uncertaintyWeight>
+        </logicTreeBranch>
+
+        <logicTreeBranch branchID="Sammons13">
+          <uncertaintyModel>NGAEastUSGSSammons13</uncertaintyModel>
+          <uncertaintyWeight>0.0392352941</uncertaintyWeight>
+        </logicTreeBranch>
+
+        <logicTreeBranch branchID="Sammons14">
+          <uncertaintyModel>NGAEastUSGSSammons14</uncertaintyModel>
+          <uncertaintyWeight>0.0392352941</uncertaintyWeight>
+        </logicTreeBranch>
+
+        <logicTreeBranch branchID="Sammons15">
+          <uncertaintyModel>NGAEastUSGSSammons15</uncertaintyModel>
+          <uncertaintyWeight>0.0392352941</uncertaintyWeight>
+        </logicTreeBranch>
+
+        <logicTreeBranch branchID="Sammons16">
+          <uncertaintyModel>NGAEastUSGSSammons16</uncertaintyModel>
+          <uncertaintyWeight>0.0392352941</uncertaintyWeight>
+        </logicTreeBranch>
+
+        <logicTreeBranch branchID="Sammons17">
+          <uncertaintyModel>NGAEastUSGSSammons17</uncertaintyModel>
+          <uncertaintyWeight>0.0392352941</uncertaintyWeight>
+        </logicTreeBranch>
+
+        <!-- 6 seed models (peso total 0.333) -->
+        <logicTreeBranch branchID="Seed_Graizer16">
+          <uncertaintyModel>NGAEastUSGSSeedGraizer16</uncertaintyModel>
+          <uncertaintyWeight>0.0555</uncertaintyWeight>
+        </logicTreeBranch>
+
+        <logicTreeBranch branchID="Seed_Graizer17">
+          <uncertaintyModel>NGAEastUSGSSeedGraizer17</uncertaintyModel>
+          <uncertaintyWeight>0.0555</uncertaintyWeight>
+        </logicTreeBranch>
+
+        <logicTreeBranch branchID="Seed_Frankel">
+          <uncertaintyModel>NGAEastUSGSSeedFrankel</uncertaintyModel>
+          <uncertaintyWeight>0.0555</uncertaintyWeight>
+        </logicTreeBranch>
+
+        <logicTreeBranch branchID="Seed_YA15">
+          <uncertaintyModel>NGAEastUSGSSeedYA15</uncertaintyModel>
+          <uncertaintyWeight>0.0555</uncertaintyWeight>
+        </logicTreeBranch>
+
+        <logicTreeBranch branchID="Seed_PZCT15_M1SS">
+          <uncertaintyModel>NGAEastUSGSSeedPZCT15_M1SS</uncertaintyModel>
+          <uncertaintyWeight>0.0555</uncertaintyWeight>
+        </logicTreeBranch>
+
+        <logicTreeBranch branchID="Seed_PZCT15_M2ES">
+          <uncertaintyModel>NGAEastUSGSSeedPZCT15_M2ES</uncertaintyModel>
+          <uncertaintyWeight>0.0555</uncertaintyWeight>
+        </logicTreeBranch>
+
+      </logicTreeBranchSet>
+    </logicTreeBranchingLevel>
+  </logicTree>
+</nrml>

@@ -1,0 +1,400 @@
+
+
+                                                                                                                                                                                                                                                                 TECK RESOURCES LTD
+
+
+                                                                                                                                                                                                                                                                 PROJECT
+                                                                                                                                                                                                                                                                 SITE-SPECIFIC SEISMIC HAZARD ASSESSMENT
+                                                                                                                                                                                      Kingston                                 1638                              LOUVICOURT MINE TAILINGS MANAGEMENT FACILITY
+                                                                                                                                                                                                                               Mw 6.5
+                                                                                                                                                                                                                                                   Nova Scotia   TITLE
+                                                                                                                                                                        Toronto                                                                                  HISTORICAL EARTHQUAKE EPICENTRES IN REGION
+                                                                                                                                                                                                                                                                 SURROUNDING THE LOUVICOURT TSF SITE IN
+                                                                                                                                                                    Hamilton                                                                                     SOUTHEASTERN CANADA
+                                                                                                                                                                                                                                                                 CONSULTANT                             YYYY-MM-DD          2024-01-15
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                 25mm
+                                                                                                                                                         London                                                                                                                                         DESIGNED            NC
+
+                                                                                                                                                                                                                                                                                                        PREPARED            NC
+
+                                                                                                                                                                                                                                                                                                        REVIEWED            AH
+
+                                                                                                                                                                                                                                                                                                        APPROVED            AH
+
+                                                                                                                                                                                                 UNITED STATES                                                   PROJECT NO.
+                                                                                                                                                                                                                                                                 21494974
+                                                                                                                                                                                                                                                                                     PHASE
+                                                                                                                                                                                                                                                                                     5000
+                                                                                                                                                                                                                                                                                                                     REV.
+                                                                                                                                                                                                                                                                                                                     0
+                                                                                                                                                                                                                                                                                                                                         FIGURE
+                                                                                                                                                                                                                                                                                                                                               1
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                    0
+                                                                                                                                                                                                                                                                      LEGEND
+                                                                                                                                                   79°W        78.5°W         78°W               77.5°W      77°W           76.5°W                    76°W
+                                                                                                                                                                                                                                                                      # Louvicourt TSF Site
+                                                                                                                                                                                                                                                                      *
+                                                                                                                                   49°N                                                                                                                                        100 km Radius
+                                                                                                                                                                                                                                                                      Historical Earthquake Epicentres - SHEEF2010
+
+
+
+
+                                                                                                                                                                                                                                                             49°N
+                                                                                                                                                                                                                                                                      Earthquake Magnitude (Mw)
+                                                                                                                                                                                                                                                                                2.0 - 3.0
+                                                                                                                                                                                                                                                                                3.1 - 4.0
+
+                                                                                                                                                                                                                                                                                4.1 - 5.0
+
+                                                                                                                                                                                                                                                                      Historical Earthquake Epicentres - Post-SHEEF2010
+                                                                                                                                                                                                                                                                      Earthquake Magnitude (Mw)
+                                                                                                                                                                                                                                                                               2.0 - 3.0
+                                                                                                                                                                                                                                                                               3.1 - 4.0
+                                                                                                                                   48.5°N
+
+
+
+
+                                                                                                                                                                                                                                                                               Mapped Bedrock Fault
+                                                                                                                                                                                                                                                                      Geological Provinces
+
+
+
+
+                                                                                                                                                                                                                                                             48.5°N
+                                                                                                                                                                                                                                                                               Grenville Province
+                                                                                                                                                                                                                                                                               Sud Province
+                                                                                                                                                                                                                                                                               Superior Province, Pontiac Sub-Province
+                                                                                                                                                                                                                                                                               Superior Province, Abitibi Sub-Province
+
+
+
+
+                                                                                                                                               d i l l ac - Larde
+                                                                                                                                            Ca                    r     La                    Louvicourt
+                                                                                                                                                                             ke              #
+                                                                                                                                                                                             *
+                                                                                                                                                                                              TSF Site
+
+                                                                                                                                                                                  Fa
+                                                                                                                                                                                       ult
+                                                                                                                                   48°N
+
+
+
+
+                                                                                                                                                                                             Z on e
+
+
+
+
+                                                                                                                                                                                                                                                             48°N
+                                                                                                                                                                                                                                                                                        0                  20                    40
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                       IF THIS MEASUREMENT DOES NOT MATCH WHAT IS SHOWN, THE SHEET SIZE HAS BEEN MODIFIED FROM: ANSI B
+                                                                                                                                                                                                                                                                                                        Kilometres
+
+
+
+                                                                                                                                                                                                                                                                      REFERENCE(S)
+                                                                                                                                                                                                                                                                      1. SHEEF2010 EARTHQUAKES: HALCHUK ET AL. (2015)
+                                                                                                                                                                                                                                                                      2. POST-SHEEF2010 EARTHQUAKES: NRCAN NATIONAL EARTHQUAKE DATABASE (2023)
+                                                                                                                                                                                                                                                                      3. GEOLOGICAL PROVINCES AND REGIONAL FAULTS: SIGEOM
+PATH: C:\Users\CANC079442\Golder Associates\21494974, Teck Dams1D and 4B Stability Louvicourt - 5000 - SSSHA update\final_report
+
+
+
+
+                                                                                                                                                                                                                                                                      4. COORDINATE SYSTEM: NAD 1983 UTM ZONE 18N
+
+                                                                                                                                                                                                                  85°W   80°W          75°W           70°W
+
+
+
+
+                                                                                                                                                                                                              50°N
+                                                                                                                                                                                                                                         Louvicourt                   CLIENT
+                                                                                                                                                                                                                                          TSF Site
+                                                                                                                                   47.5°N
+
+
+
+
+                                                                                                                                                                                                                                                                      TECK RESOURCES LTD
+
+
+
+
+                                                                                                                                                                                                                                                             47.5°N
+                                                                                                                                                                                                                                                                      PROJECT
+                                                                                                                                                                                                                                                                      SITE-SPECIFIC SEISMIC HAZARD ASSESSMENT
+                                                                                                                                                                                                                                #
+                                                                                                                                                                                                                                *                                     LOUVICOURT MINE TAILINGS MANAGEMENT FACILITY
+
+                                                                                                                                                                                                                                                                      TITLE
+                                                                                                                                                                                                                                                                      HISTORICAL EARTHQUAKE EPICENTERS, GEOLOGICAL
+                                                                                                                                                                                                                                                                      PROVINCES, AND MAJOR REGIONAL FAULTS SURROUNDING
+                                                                                                                                                                                                                                                                      THE LOUVICOURT TSF SITE
+                                                                                                                                                                                                              45°N
+
+
+
+
+                                                                                                                                                                                                                                                                      CONSULTANT                             YYYY-MM-DD          2024-01-15
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                     25mm
+                                                                                                                                                                                                                                   0       250        500                                                    DESIGNED            NC
+
+                                                                                                                                                                                                                                                        km                                                   PREPARED            NC
+
+                                                                                                                                                                                                                                                                                                             REVIEWED            AH
+
+                                                                                                                                                                                                                                                                                                             APPROVED            AH
+                                                                                                                                            79°W          78.5°W         78°W                77.5°W        77°W           76.5°W                  76°W                PROJECT NO.           PHASE                         REV.                FIGURE
+                                                                                                                                                                                                                                                                      21494974              5000                          0                       2
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                        0
+                                                                                                                                                                                         LEGEND
+                                                                                                                                            77.7°W   77.6°W            77.5°W
+                                                                                                                                                                                         # Louvicourt TSF Site
+                                                                                                                                                                                         *
+                                                                                                                                                                                                  5 km Radius
+                                                                                                                                                                                                  Regional Fault
+                                                                                                                                                                                         Bedrock Geology
+                                                                                                                                                                                                  Sulfite Rocks
+                                                                                                                                   48.2°N
+
+
+
+
+                                                                                                                                                                                48.2°N
+                                                                                                                                                                                                  Intrusive Rocks
+                                                                                                                                                                                                  Volcanoclastic and Sedimentary Rocks
+                                                                                                                                                                                                  Volcanic Rocks
+
+
+
+
+                                                                                                                                                          Louvicourt
+                                                                                                                                                          TSF Site
+                                                                                                                                                         #
+                                                                                                                                                         *
+
+
+
+
+                                                                                                                                                                                                                                                                             IF THIS MEASUREMENT DOES NOT MATCH WHAT IS SHOWN, THE SHEET SIZE HAS BEEN MODIFIED FROM: ANSI B
+                                                                                                                                                                                                             0      1      2       3        4          5
+                                                                                                                                   48.1°N
+
+
+
+
+                                                                                                                                                                                48.1°N
+PATH: C:\Users\CANC079442\Golder Associates\21494974, Teck Dams1D and 4B Stability Louvicourt - 5000 - SSSHA update\final_report
+
+
+
+
+                                                                                                                                                                                                                           Kilometres
+
+
+                                                                                                                                                                                         REFERENCE(S)
+                                                                                                                                                                                         1. BEDROCK GEOLOGY: SIGÉOM
+                                                                                                                                                                                         2. COORDINATE SYSTEM: WGS 1984 WORLD MERCATOR
+
+
+                                                                                                                                                                                         CLIENT
+                                                                                                                                                                                         TECK RESOURCES LTD
+
+
+                                                                                                                                                                                         PROJECT
+                                                                                                                                                                                         SITE-SPECIFIC SEISMIC HAZARD ASSESSMENT
+                                                                                                                                                                                         LOUVICOURT MINE TAILINGS MANAGEMENT FACILITY
+
+                                                                                                                                                                                         TITLE
+                                                                                                                                                                                         BEDROCK GEOLOGY SURROUNDING THE LOUVICOURT TSF
+                                                                                                                                                                                         SITE
+
+                                                                                                                                                                                         CONSULTANT                            YYYY-MM-DD              2024-01-15
+
+
+
+
+                                                                                                                                                                                                                                                                                                           25mm
+                                                                                                                                                                                                                               DESIGNED                NC
+
+                                                                                                                                                                                                                               PREPARED                NC
+
+                                                                                                                                                                                                                               REVIEWED                AH
+
+                                                                                                                                                                                                                               APPROVED                AH
+
+                                                                                                                                            77.7°W   77.6°W            77.5°W            PROJECT NO.        PHASE                               REV.                FIGURE
+                                                                                                                                                                                         21494974           5000                                0                       3
+
+
+
+
+                                                                                                                                                                                                                                                                                                                              0
+                                                                                                                                                                                                                                                                                                                                                             LEGEND
+                                                                                                                                                                    77.65°W                                                             77.6°W                                Gs
+                                                                                                                                                                                                                                                                                                              77.55°W
+                                                                                                                                                                                                                                                                                                               O                                 O
+                                                                                                                                                                     O                                                                                                                                                                                       # Louvicourt TSF Site
+                                                                                                                                                                                                                                                                                                                                                             *
+                                                                                                                                                                                                         O
+                                                                                                                                                                                                                                                                                                         La                   Tv                                      2 km Radius
+                                                                                                                                             O                                                                   Tb                                                   O
+                                                                                                                                                                                                                                                                                                                                                             Surficial Geology
+                                                                                                                                                                                                                                                                                                                                                                      0 : Organic Silt and Peat
+                                                                                                                                                                                                                            O                                                                                                                                         A : Recent Alluvium
+                                                                                                                                                                                              La                                                                                           Tv                                                                         Lb : Shallow Lake Sediments
+                                                                                                                                                                                                                                                                                                                               Lb
+                                                                                                                                                                                                                                                                                                                                                                      La : Deep Lake Sediments
+                                                                                                                                                                                                                                                                                                                                                                      G : Gravel
+                                                                                                                                                                                                                                                                                                                                                                      Gs : Proglacial Lake Sediments
+                                                                                                                                                                                                                                                                                                                                                         R
+                                                                                                                                                                                                                                                                                                                        La                                            Tb : Till (generally continuous)
+                                                                                                                                                                                                                                                                                                                                        R                             Tv :Till (discontinuous)
+                                                                                                                                                                                                                                                                                                                                                                      R : Bedrock
+                                                                                                                                                                                               A
+                                                                                                                                   48.15°N
+
+
+
+
+                                                                                                                                                                                                                                                                                                                       Tb
+                                                                                                                                                                                                                                                    Tv
+                                                                                                                                                                                                                                                                                                                                                         R
+                                                                                                                                                                                                                                            O                                 O
+
+                                                                                                                                   Lb
+                                                                                                                                                                A                                                                                                                                                                           Tb
+
+
+                                                                                                                                                                                      R
+
+
+                                                                                                                                   A                                                                                       La
+                                                                                                                                                                                                                                                                                                                                                         R
+                                                                                                                                                                                                                                    O
+                                                                                                                                                                                                                                                    Louvicourt
+                                                                                                                                                                                                                                                    TSF Site                                    A
+
+                                                                                                                                                                                                             O
+                                                                                                                                                                                                                                Tv              #
+                                                                                                                                                                                                                                                *
+                                                                                                                                                            G
+                                                                                                                                                                                                                                                                 Tv
+                                                                                                                                                  O
+
+                                                                                                                                                                                                     R
+                                                                                                                                                                                                                                        R                                                                                                                                      0                           1                          2
+                                                                                                                                                                             Tv                                                                                                                                        Tv                   Lb
+                                                                                                                                                      Tv                                                                                                         Tv
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                      IF THIS MEASUREMENT DOES NOT MATCH WHAT IS SHOWN, THE SHEET SIZE HAS BEEN MODIFIED FROM: ANSI B
+                                                                                                                                                                                                                      La                                                                                                                                                                              Kilometres
+
+                                                                                                                                                                                  O
+                                                                                                                                   Lb                                                                                                                                                                                  Tb
+                                                                                                                                                                                                                                                                                                                                                             REFERENCE(S)
+                                                                                                                                                                                          R
+                                                                                                                                    R                                                                                                                                                                                                                        1. SURFICIAL GEOLOGY: VEILLETTE, J.J., PARADIS, S.J. ET THIBAUDEAU, P. (2010)
+                                                                                                                                                                                                                                                                                                                                                             2. COORDINATE SYSTEM: NAD 1983 UTM ZONE 18N
+PATH: C:\Users\CANC079442\Golder Associates\21494974, Teck Dams1D and 4B Stability Louvicourt - 5000 - SSSHA update\final_report
+
+
+
+
+                                                                                                                                                  R
+                                                                                                                                                                                          R                                                              R
+                                                                                                                                                                                                                                                                                                77.8°W        77.7°W        77.6°W    77.5°W
+                                                                                                                                        Tv                                                                                          A                                                                                                                        CLIENT
+                                                                                                                                                           Tb                                                                                                                                                                                                TECK RESOURCES LTD
+                                                                                                                                                                                                                                                                 O
+
+
+
+
+                                                                                                                                                                                                                                                                                  48.2°N
+                                                                                                                                        O                                                                        O
+                                                                                                                                                                              O                                                                                           R                                                                                  PROJECT
+
+                                                                                                                                                                                                                                                                                  Tb
+                                                                                                                                                                                                                                                                                                                                   Louvicourt
+                                                                                                                                                                                                                                                                                                                                          O
+                                                                                                                                                                                                                                                                                                                                                             SITE-SPECIFIC SEISMIC HAZARD ASSESSMENT
+                                                                                                                                                                                                                                                                                                                                                             LOUVICOURT MINE TAILINGS MANAGEMENT FACILITY
+                                                                                                                                                                                                                                                A                                                                                  TSF Site
+                                                                                                                                                                                                    Gs                                                                                                             R          #
+                                                                                                                                                                                                                                                                                                                              *                              TITLE
+                                                                                                                                                                             Gs                                                                                                                                                                              SURFICIAL GEOLOGY SURROUNDING THE LOUVICOURT TSF
+                                                                                                                                                                                                                                                                                  48.1°N
+                                                                                                                                   48.1°N
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                             SITE
+                                                                                                                                                                                                                      Tb                                                                                                                             R       CONSULTANT                                  YYYY-MM-DD            2024-01-15
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    25mm
+                                                                                                                                                                         O                     Lb                                       Tb
+                                                                                                                                                            Tb                                                                                                                                                Tv                                                                                         DESIGNED              NC
+                                                                                                                                                                                                                                                    O                                                                                  Tb
+                                                                                                                                                                                                                                                                                                                                                                                                         PREPARED              NC
+                                                                                                                                             La                                                                                                                               R                                                                                                                           REVIEWED             AH
+
+                                                                                                                                                                                                                                O                                                                                                                                                                        APPROVED              AH
+                                                                                                                                        Lb                                                                                                                                                          R                          Lb                O           PROJECT NO.           PHASE                                REV.                 FIGURE
+                                                                                                                                                                Lb                                                                                                                                                                                           21494974              5000                                 0                        4
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       0
+January 15, 2024                                                                               006-21494974.5000-Rev0
+
+
+
+
+4.0       SITE-SPECIFIC SEISMIC SOURCE MODEL
+In seismic hazard studies, a seismic source model is developed to represent defined seismotectonic regions
+considered capable of producing moderate to large earthquakes. The seismic source model defines known active
+and potentially active seismic sources that can contribute to the earthquake ground motions at the site. These
+sources can be large and/or small areas of historical earthquake epicenters, tectonic terrains, or geophysical
+regions. Earthquake sources associated with the rupture areas of large historical earthquakes are considered,
+where applicable, as are faults where there is evidence of surface displacement during the Upper Pleistocene
+stage of the Pleistocene Epoch (i.e., about the last 126,000 years). The seismic source model is defined in terms
+of parameters that include source location, source geometry, faulting mechanisms, maximum earthquake
+magnitudes, probability of existence, and earthquake recurrence models.
+
+The seismic source model implemented for this PSHA is the sixth-generation seismic hazard model of Canada
+(CanadaSHM6) developed by NRCan to estimate seismic hazard values for the 2020 NBCC. In this study, the
+CanadaSHM6 seismic source models as described by Kolaj et al. (2023) are implemented without modification.

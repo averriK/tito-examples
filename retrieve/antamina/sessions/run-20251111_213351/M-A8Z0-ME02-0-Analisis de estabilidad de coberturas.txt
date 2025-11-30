@@ -1,0 +1,1018 @@
+
+ Análisis de estabilidad de la pila coberturas
+Memo Técnico     Emisión para comentarios
+SRK CONSULTING (ARGENTINA) S.A.     22/08/2025  1 1 Introducción
+GeoSystems Analysis (GeoSystems) tiene a su cargo los estudios de cierre para el Botadero Este
+de la Compañía Minera Antamina S.A. (Antamina). SRK Consulting (Argentina) S.A. fue
+contactada por GeoSystems para analizar la estabilidad de los paneles de prueba que componen
+las alternativas de coberturas a ser emplazadas sobre el Botadero Este.
+1.1 Objetivo
+El objetivo de este documento es evaluar la estabilidad física de las coberturas según las
+configuraciones propuestas por el cliente bajo condiciones estáticas y dinámicas. El desempeño
+en condiciones reales de las coberturas en estos paneles de prueba será evaluado para realizar
+los ajustes necesarios de cara al diseño definitivo de cierre.
+1.2 Alcances
+Este es un estudio de gabinete de ingeniería a nivel básico, basado en la información suministrada
+por GeoSystems y Antamina. El análisis y validación de esta información está fuera del alcance
+del servicio de SRK.
+El alcance del servicio se limita a proporcionar recomendaciones para la caracterización de los
+materiales de cobertura, revisar la amenaza sísmica y realizar un análisis de desempeño de las
+alternativas de cobertura frente a escenarios estáticos y dinámicos. La estabilidad del botadero de
+base se analiza en forma aislada de manera de cuantificar la seguridad del sistema de soporte.
+El efecto de la erosión de la cobertura y el impacto de deformaciones diferidas en el botadero y su
+erosión quedan excluidos de este análisis.
+1.3 Información de referencia
+Los documentos de referencia son:
+1. Piteau, 2022. Evaluación de la Estabilidad Actual del Botadero Este en la Mina Antamina.
+3300-22-M013
+
+SRK Consulting (Argentina) S.A.
+Av. Emilio Civit 404
+Ciudad de Mendoza, Mendoza,
+M5502GVR
+Argentina
+
+Tel: 0810 999 1100
+Intl: (+54) 11 7700 0308 (ext.301)
+
+argentina@srk.com.ar
+http://www.srk.com
+
+Emisión para comentarios
+Memo Técnico
+22/08/2025
+A Iozsef Miskolczi
+De Juan Mussat, Facundo Nicuesa
+Cc Matías Calvente, Pedro Fernández
+Asunto Análisis de estabilidad de la pila coberturas
+Cliente GeoSystems Analysis, Inc.
+Proyecto M-A8Z0
+
+
+ Análisis de estabilidad de la pila coberturas
+Memo Técnico     Emisión para comentarios
+SRK CONSULTING (ARGENTINA) S.A.     22/08/2025  2 2. Stantec, 2024. Plan de manejo de suelo orgánico – Informe análisis de estabilidad física.
+3. Stantec, 2025a. Ingeniería conceptual de pilas de suelo orgánico de la MEIA 2024, Informe
+análisis de estabilidad física – Pilas Cuña Norte 1 y 2.
+4. Stantec, 2025b. Ingeniería de pilas de suelo orgánico de MEIA, Reporte factual de
+investigaciones geotécnicas
+5. Hawley, Hogarth, Cunning y Haynes, 2017. Guidelines for Mine Waste Dump and Stockpile
+Design
+6. Golder, 2016. Actualización del análisis de peligro sísmico determinístico y probabilístico –
+puerto y presa de relaves
+7. GeoSystems Analysis, Inc, 2024. Slope Stability Evaluation of Closure Alternatives for
+Antamina Mine East Waste Rock Facility
+8. Sorensen, K. K., and Okkels, N. (2013). "Correlation between Drained Shear Strength and
+Plasticity Index of Undisturbed Overconsolidated Clays," Proceedings, 18th International
+Conference on Soil Mechanics and Geotechnical Engineering, Paris, Presses des Ponts, Vol.
+1, 423–428.
+9. JCSS. 2006. Probabilistic Model Code. Copenhagen, Denmark: The Joint Committee on
+Structural Safety. ISBN 978-3-909386-79-6.
+10. Behrens, W. 2008. Stability Assessment of Mineral Capping-Systems for Landfills including the
+use of Trisoplast. Trisoplast Mineral Liners.
+11. Golder Associates Perú S.A. (Golder). 2021. Informe de Interpretación de Ensayos de
+Laboratorio, Proyecto Almacenamiento Eco-Estable de Desmonte y Relaves – Commingling.
+Etapa: Estudio Conceptual.
+12. Howell, G.C., and A.H. Kirsten. 2016. Interface Shear: Towards understanding the significance
+in Geotechnical Structures. Proceedings of the first Southern African Geotechnical Conference.
+13. Electric Power Research Institute. (1990). Manual on estimating soil properties for foundation
+design (EPRI EL-6800, Project 1493-6, Final Report). Electric Power Research Institute.
+2 Descripción del problema
+El proyecto piloto de coberturas se ubica dentro del Botadero Este de la mina Antamina, en el
+recuadro que se detalla en la Figura 2-1. La Figura 2-2 presenta el diseño para el reperfilado del
+botadero y la disposición de los paneles de cobertura. El área de estudio comprende cinco taludes
+principales con una altura aproximada de 80 metros y pendientes variables entre 1.7V:1.0H y
+2.2V:1.0H.
+Si bien el diseño actual no contempla la ejecución de bermas intermedias, SRK recomienda tener
+en cuenta la ejecución de estas por cuestiones de estabilidad, seguridad y constructibilidad.
+El movimiento de suelos previsto para la ejecución del proyecto implica un volumen estimado de
+excavación y relleno de aproximadamente 25.000 m³. En estos taludes se aplicarán cinco
+tipologías de cobertura diferentes con el objetivo de evaluar en campo su desempeño y realizar los
+ajustes necesarios para el futuro diseño definitivo de cierre. En la Figura 2-3 se muestra un corte
+típico de uno de los taludes.
+
+ Análisis de estabilidad de la pila coberturas
+Memo Técnico     Emisión para comentarios
+SRK CONSULTING (ARGENTINA) S.A.     22/08/2025  3
+Figura 2-1: Vista aérea de la Mina Antamina y el área bajo estudio
+
+
+Figura 2-2: Paneles de prueba y secciones típicas en el Botadero Este
+
+
+ Análisis de estabilidad de la pila coberturas
+Memo Técnico     Emisión para comentarios
+SRK CONSULTING (ARGENTINA) S.A.     22/08/2025  4
+Figura 2-3: Detalle Sección 1
+2.1 Coberturas de prueba
+Se evaluó la estabilidad de las alternativas de coberturas A, B, D, I, J, que se describen a
+continuación y representan en la Figura 2-4.
+ Alternativa A – 0.3 m de suelo orgánico sobre el relleno de desmonte; alternativamente
+(sección 6) se contempla la colocación de geoceldas como elemento de soporte y refuerzo;
+ Alternativa B – 0.5 m de suelo orgánico sobre 0.15 m de arena de drenaje y 0.3 m de arcilla
+compactada;
+ Alternativa D – 0.3 m de suelo orgánico sobre 0.3 m de arena de drenaje y una geomembrana
+texturizada de HDPE/LLDPE;
+ Alternativa I – 0.5 m de suelo orgánico sobre 0.15 m de arena de drenaje y 75 mm de una
+capa de Trisoplast compactado;
+ Alternativa J – 0.3 m de suelo orgánico sobre 0.15 m de arena de drenaje y 0.3 m de relaves;
+
+Figura 2-4: Tipologías de coberturas de prueba según los materiales
+
+
+ Análisis de estabilidad de la pila coberturas
+Memo Técnico     Emisión para comentarios
+SRK CONSULTING (ARGENTINA) S.A.     22/08/2025  5 2.2 Secciones de análisis
+La Figura 2-5 presenta la distribución de las coberturas de prueba a lo largo del Botadero Este. A
+partir de esta, se definieron seis secciones representativas de análisis. A saber,
+ Sección 1 – Cobertura tipo A en pendientes 1.7:1 y tipo D en bancos y pendientes 2.2:1.
+ Sección 2 – Cobertura tipo A en pendiente 2:1 y tipo B en bancos.
+ Sección 3 - Cobertura tipo A en pendiente 1.7:1 y tipo B en bancos y pendientes 2.2:1.
+ Sección 4 - Cobertura tipo A en pendiente 1.7:1 y tipo I en bancos y pendientes 2.2:1.
+ Sección 5 - Cobertura tipo A en pendiente 1.7:1 y tipo J en bancos y pendientes 2.2:1.
+ Sección 6 – Cobertura tipo A en pendientes 1.7:1 con implementación de geoceldas.
+Los esquemas de coberturas y pendientes se respaldan en el Adjunto 1.
+
+Figura 2-5: Distribución de paneles de prueba según tipos de coberturas, ángulos de
+taludes y bermas en el Botadero Este
+2.3 Materiales
+Las propiedades de los materiales utilizados para las coberturas fueron derivados de los reportes
+previos de depósitos orgánicos y botaderos [1, 3, 4, 7], proporcionados por el cliente y revisados
+por SRK únicamente a partir de bibliografía de referencia. La caracterización de los materiales se
+fundamenta principalmente en los resultados de ensayos de laboratorio y estudios geotécnicos
+presentados en dichos informes, así como en valores típicos reportados en literatura técnica para
+materiales similares, cuando la información específica no estuvo disponible.
+Los resultados de los ensayos complementarios de corte directo realizados sobre muestras
+extraídas de terraplenes de prueba no han sido considerados para la selección de los parámetros
+
+ Análisis de estabilidad de la pila coberturas
+Memo Técnico     Emisión para comentarios
+SRK CONSULTING (ARGENTINA) S.A.     22/08/2025  6 geotécnicos empleados en el análisis de estabilidad. Esto se debe a que los valores obtenidos
+presentaron inconsistencias significativas respecto a lo esperable para los materiales evaluados
+(arenas con cohesión elevada, suelos finos y orgánicos con ángulos de fricción internos
+atípicamente altos), probablemente asociadas a limitaciones en la preparación de muestras,
+ejecución de los ensayos o en la documentación de estos. Por lo tanto, cualquier interpretación
+adicional de estos resultados debería ser respaldada por ensayos complementarios específicos.
+Por último, cabe destacar que estos parámetros constituyen la base para las verificaciones de
+estabilidad y el análisis comparativo de las distintas alternativas de cobertura propuestas en este
+estudio, y que SRK no realizó una validación independiente de estos.
+2.3.1 Suelo orgánico
+El suelo orgánico disponible proviene de acopios existentes en el sitio y presenta una
+granulometría variable, con contenido de finos entre 22% y 91%, y un contenido de gravas que
+varía entre 0 y 35%. Su plasticidad es moderada a alta, con índices de plasticidad entre 19 y 26 y
+límites líquidos de 56% a 63%.
+El estudio preliminar de alternativas de cierre [7] indica la presencia de dos tipos de materiales: un
+suelo orgánico fino, con un ángulo de fricción interna de 25° y cohesión de 1 kPa, y otro de
+naturaleza más gruesa, con un ángulo de fricción de 30° y cohesión de 0.5 kPa. Los pesos
+unitarios adoptados son de 16.5 kN/m³ y 17 kN/m³, respectivamente. Estos valores de peso
+unitario y cohesión se encuentran dentro del rango esperado [9]. Asimismo, de acuerdo con
+Sorensen & Okkels [8], los ángulos de fricción utilizados se encuentran dentro del rango esperable
+para suelos con los índices de plasticidad reportados, estimándose entre 23° y 30°, para índices
+de 26 y 19 respectivamente.
+2.3.2 Arcillas
+Las arcillas propuestas como material de cubierta presentan una alta variabilidad mineralógica,
+mostrando límites líquidos entre 33 y 125 y un índice de plasticidad entre 13 y 96, lo que indica la
+presencia de minerales de alta plasticidad (como montmorillonita). Para su utilización, en el
+estudio preliminar [7] se plantea la compactación al 95% de densidad máxima según el ensayo
+Proctor estándar. Sin embargo, estos suelos exhiben comportamientos muy diversos según su
+plasticidad: los suelos con índice de plasticidad menor a 15 o 20, probablemente puedan
+compactarse adecuadamente, pero los materiales con plasticidad mayor, en cambio, son
+incompatibles con ese grado de compactación y, de ser necesario su empleo en zonas inclinadas,
+deberán ser estabilizados, tal como se señala en las recomendaciones. Dado que la estabilización
+puede ser antieconómica, se sugiere reservar los materiales de mayor plasticidad para bermas y
+sectores horizontales donde los requerimientos de compacidad y resistencia sean menores.
+Para las condiciones de estabilidad pico se utilizan parámetros representativos de una arcilla
+compactada: ángulo de fricción de 22° y cohesión de 5 kPa; para grandes deformaciones, los
+valores son de 22° y 2 kPa, respectivamente.
+Se reconoce que estos valores pueden variar en función del tiempo debido a procesos de
+hinchamiento o ablandamiento. El peso unitario considerado es 17 kN/m³. Estos valores de peso
+unitario y cohesión se encuentran dentro del rango esperado [9]. Asimismo, de acuerdo con
+Sorensen & Okkels [8], los ángulos de fricción adoptados se encuentran dentro del rango
+esperable para arcillas con los índices de plasticidad reportados, estimándose ángulos de fricción
+entre 17° y 27°, para índices entre 96 y 13 respectivamente.
+2.3.3 Arenas
+La arena utilizada en las cubiertas corresponde a arena limpia colocada con una compactación
+baja o nula, aunque una ligera compactación adicional puede ocurrir tras la colocación del suelo
+orgánico superior. Estas arenas aseguran una adecuada permeabilidad y son también utilizadas
+como material de cama bajo geomembranas. El material se caracteriza como no cohesivo, típico
+
+ Análisis de estabilidad de la pila coberturas
+Memo Técnico     Emisión para comentarios
+SRK CONSULTING (ARGENTINA) S.A.     22/08/2025  7 de arenas para drenaje, y su resistencia se basa únicamente en la fricción interna. El estudio
+preliminar de alternativas de cierre [7] considera un ángulo de fricción de 34°, cohesión nula, peso
+unitario húmedo de 18.5 kN/m³ y saturado de 20.8 kN/m³. Sin embargo, SRK considera que este
+ángulo de fricción puede resultar elevado para un material colocado sin un control de
+compactación y recomienda adoptar un valor de 31º, aproximadamente igual al ángulo de fricción
+interna a volumen constante [13].
+2.3.4 Trisoplast
+El Trisoplast es un material compuesto por arena, bentonita y un polímero, diseñado para tener
+baja permeabilidad y cierta resistencia estructural. La interacción del polímero con la bentonita y la
+arena genera una estructura tipo gel, aportando cohesión al ensamblado granular. El material es
+compactado al 95% de su densidad relativa y se emplea como barrera en la cubierta. Los
+parámetros resistentes del material han sido provistos por el proveedor y han sido verificados
+mediante ensayos de laboratorio en otros estudios de análisis de estabilidad publicados [10].
+Para el análisis se consideran un ángulo de fricción interna de 30° y una cohesión de 10 kPa, junto
+a un peso unitario de 16.6 kN/m³, valores que reflejan su comportamiento de tipo "arena
+cementada" con cohesión aportada por su estructura interna.
+2.3.5 Mezcla de relaves y roca triturada ( commingled tailings )
+Las mezclas de relaves y roca triturada corresponden a combinaciones de materiales con
+granulometría predominantemente gruesa, usando proporciones de entre 4:1 y 1:1 (roca de
+desmonte:relave), y considerando relaves filtrados, en pasta y ciclonados. Los parámetros
+resistentes del material han sido determinados por Golder [11] a través de ensayos triaxiales, los
+cuales muestran que bajo 100 kPa de confinamiento el material se comporta como un material
+granular puro en las condiciones del sistema de cubierta, con cohesión despreciable y ángulos de
+fricción internos entre 41.5° y 43°. El peso unitario estimado es de 19.0 kN/m³, y la capacidad de
+resistencia proviene de la fricción entre partículas de roca y relave.
+Para el análisis se considera un ángulo de fricción con un valor medio de 42º. Si bien este valor
+medio puede considerarse algo elevado para este tipo de suelos, especialmente en las mezclas
+con proporciones 1:1, en el análisis de sensibilidad se evaluaron también casos con un ángulo de
+37.8º, valor que resulta más adecuado para dichas condiciones.
+2.3.6 Relleno de desmonte ( waste rock )
+El relleno de desmonte está conformado por material de roca ocupando un rango amplio de
+granulometría, presentando una envolvente de resistencia no lineal y dependencia del nivel de
+confinamiento. Para los análisis de estabilidad a baja profundidad, se adopta una función de
+resistencia no lineal definida por Antamina (Figura 2-6), sin presencia de cohesión, respaldado por
+ensayos previos y observaciones de campo [1]. Su peso unitario es de 19.6 kN/m³.
+
+ Análisis de estabilidad de la pila coberturas
+Memo Técnico     Emisión para comentarios
+SRK CONSULTING (ARGENTINA) S.A.     22/08/2025  8
+Figura 2-6:  Función de resistencia no lineal para roca de desmonte - Antamina [1]
+2.3.7 Interfaz geomembrana y arena
+La interacción entre la geomembrana texturizada de HDPE/LLDPE y la arena drenante determina
+la resistencia por fricción y adhesión en la interfaz, influyendo en la estabilidad ante deslizamientos
+superficiales. El ángulo de fricción interna de la interfaz es 31° y la adhesión es 1 kPa en
+condiciones de esfuerzo pico; en condiciones de grandes deformaciones, el ángulo de fricción
+disminuye a 26°, manteniéndose la adhesión en 1 kPa. Estos valores se han determinado
+mediante ensayos específicos y representan un comportamiento intermedio entre el material
+granular puro y la interfaz de materiales sintéticos [12]. Para el diseño ejecutivo, estos valores
+asumidos deberán ser validados o ajustados de acuerdo con las especificaciones del proveedor.
+2.3.8 Resumen de parámetros geotécnicos
+La Tabla 2-1 resume los parámetros geotécnicos considerados para las verificaciones de
+estabilidad. SRK considera que la información disponible sobre los materiales no resulta suficiente
+para adoptar valores característicos en los cálculos de estabilidad y por este motivo, se definieron
+rangos de propiedades para cada material, construidos a partir de los parámetros característicos
+presentados en los informes previos y un desvío estándar [9]. En este contexto, se adoptaron
+variaciones del ±10% para el ángulo de fricción interna y ±25% para la cohesión, con el fin de
+reflejar de manera más realista la dispersión esperada en las propiedades geotécnicas de los
+materiales involucrados.
+Tabla 2-1: Propiedades materiales utilizados en el análisis de estabilidad físico de las
+coberturas. Valores característicos.
+Material Peso unit. ( 𝜸′)
+[kN/m³] Ángulo de
+fricción
+efectivo ( 𝝓′) [deg] Cohesión (c ′)
+[kPa]
+Suelo orgánico
+fino
+(fine topsoil) 16.5 25 1
+Suelo orgánico
+grueso ( coarse
+topsoil) 17 30 0.5
+Arena 20.8 31 0
+Arcilla
+compactada
+(pico) 17 22 5
+
+ Análisis de estabilidad de la pila coberturas
+Memo Técnico     Emisión para comentarios
+SRK CONSULTING (ARGENTINA) S.A.     22/08/2025  9 Material Peso unit. ( 𝜸′)
+[kN/m³] Ángulo de
+fricción
+efectivo ( 𝝓′) [deg] Cohesión (c ′)
+[kPa]
+Arcilla
+compactada
+(residual)  17 22 2
+Trisoplast, 95%
+Densidad de
+compactación  16.6 30 10
+Mezcla de
+relaves y roca
+triturada
+(commingled
+tailings) 2.06 42 0
+Relleno de
+desmonte
+(waste rock) 19.6 Función de resis-
+tencia no lineal 1
+Interfaz
+geomembrana y
+arena (pico)   0 (interfaz) 31 1
+Interfaz
+geomembrana y
+arena (residual)  0 (interfaz) 26 1
+1 (Piteau, 2022)
+2.4 Criterios de diseño
+Para la evaluación de la estabilidad se siguieron los lineamientos adoptados por Piteau [1] y
+Stantec [2], basados en los criterios definidos en [6]. Los factores de seguridad (FoS) mínimos
+recomendados se indican en la Tabla 2-1:
+Tabla 2-2: Factores de seguridad mínimos
+Condición  𝑭𝒐𝑺𝒎𝒊𝒏
+Estabilidad  superficial  de coberturas . Condición est ática 1.30
+Estabilidad global de taludes . Condición estática  1.50
+Condición de carga extrema (sismo). Pseudo -estático.  1.00
+Además de los factores de seguridad considerados en el análisis determinístico, en este estudio
+se ha tomado en cuenta la probabilidad de falla (PoF) como criterio complementario de aceptación
+del diseño. De acuerdo con lo recomendado por Hawley et al [5], cuando los datos disponibles
+presentan baja confiabilidad y las consecuencias asociadas a una eventual falla son moderadas o
+bajas, resulta apropiado aceptar valores de PoF máxima de 10%, en correspondencia con factores
+de seguridad mayores a 1.3 (intervalo verde en Figura 2-7). La adopción de este criterio permite
+una evaluación más realista de la seguridad, incorporando la incertidumbre inherente a los
+parámetros empleados en el análisis de estabilidad.
+
+ Análisis de estabilidad de la pila coberturas
+Memo Técnico     Emisión para comentarios
+SRK CONSULTING (ARGENTINA) S.A.     22/08/2025  10
+Figura 2-7: Relación entre el factor de seguridad y la probabilidad de falla admisible [5].
+Según lo establecido por Piteau [1] en el diseño preliminar, las consecuencias asociadas a la falla
+de la cobertura se consideran bajas y la confianza en las propiedades de los materiales es baja a
+moderada. Esta apreciación se refuerza por el hecho de que la reparación de posibles daños en la
+cobertura puede ser realizada con relativa facilidad. Este enfoque está en línea con los criterios de
+Hawley et al [5], que clasifican como moderada la consecuencia de falla en botaderos con
+pendientes globales menores a 30° y alturas inferiores a 250 m, o con pendientes iguales al
+ángulo de reposo de menos de 100 m de altura, siempre que no exista infraestructura crítica
+aguas abajo, acceso irrestricto o bien existan medidas robustas de mitigación y contención para
+proteger elementos sensibles ante un evento de inestabilidad.
+La definición final del nivel de consecuencia y, por ende, la probabilidad de falla admisible debe
+ser determinada y asumida en conjunto con Compañía Minera Antamina de acuerdo con sus
+estándares internos, su nivel de tolerancia al riesgo y los objetivos de manejo ambiental y
+operacional del sitio.
+2.5 Métodos de análisis
+2.5.1 Estabilidad superficial de cobertura
+La estabilidad de las diferentes alternativas para el sistema de cubierta fue evaluada utilizando
+métodos de estabilidad de taludes por equilibrio límite. En este tipo de análisis, se compara la
+resistencia de los materiales del suelo frente a las fuerzas gravitacionales que pueden provocar
+inestabilidad en el talud.
+Se utilizó el procedimiento del talud infinito para el análisis de la cobertura dado que, cuando la
+cobertura es de un espesor reducido en comparación con la longitud de la pendiente, se puede
+
+ Análisis de estabilidad de la pila coberturas
+Memo Técnico     Emisión para comentarios
+SRK CONSULTING (ARGENTINA) S.A.     22/08/2025  11 suponer que el talud es " infinito", lo que implica que la resistencia que aporta el pie del talud es
+mínima y se puede despreciar. Este método considera que cualquier posible deslizamiento ocurre
+de manera paralela a la cara de la pendiente, lo que simplifica considerablemente el análisis.
+Esta metodología es aplicable sin caer en supuestos conservadores siempre que la altura vertical
+del talud sea al menos 30 veces mayor que el espesor de la cobertura.
+Para llevar a cabo los cálculos determinísticos, se utilizó una hoja de cálculo en Excel, donde se
+detallaron los datos intermedios y resultados obtenidos. Además de considerar los valores medios
+de los parámetros geotécnicos, se realizó un análisis de sensibilidad en el que se variaron de
+manera aislada la cohesión y el ángulo de fricción interna según los porcentajes indicados. Toda la
+información relacionada con este proceso se encuentra detallada en el Adjunto 2 del informe.
+De manera complementaria, se realizó una evaluación probabilística de la estabilidad de taludes,
+con el objetivo de incorporar explícitamente la incertidumbre asociada a la variabilidad de los
+parámetros resistentes de los materiales de las coberturas. A continuación, se presentan los
+aspectos más relevantes de este análisis, cuyo calculo detallado puede encontrarse en el Adjunto
+3.
+Se llevaron a cabo simulaciones de Monte Carlo con un total de 10.000 muestras. En cada
+simulación se variaron aleatoriamente los valores del ángulo de fricción interna y la cohesión de
+los diferentes suelos presentes, tomando como base la caracterización mecánica realizada. Los
+parámetros de fricción y cohesión se definieron mediante distribuciones normales truncadas,
+utilizando como valores medios aquellos obtenidos de la caracterización mecánica de cada
+material. Los desvíos estándar se fijaron como fracción del valor medio: un 10% para el ángulo de
+fricción interna y un 25% para la cohesión, en concordancia con lo considerado para el análisis de
+sensibilidad. Asimismo, se establecieron límites mínimos y máximos para evitar la simulación de
+valores no representativos del comportamiento de los diferentes tipos de suelo.
+En particular, se hizo un análisis separado para dos tipos de suelo orgánico (topsoil), diferenciados
+según su contenido de finos, a fin de evaluar el desempeño de cada uno en distintas secciones y
+configuraciones de coberturas.
+Tabla 2-3: Propiedades materiales utilizadas en el análisis probabilístico.
+
+Material Peso
+unitario
+(kN/m3) Ángulo de
+fricción (º)
+(mín) Ángulo de
+fricción (º)
+(medio) Ángulo de
+fricción (º)
+(máx) Ángulo de
+fricción (º)
+(desvío) Cohesión
+(kPa)
+(medio) Cohesión
+(kPa)
+(desvío)
+TOPSOIL-F 16.5 20 25 27 2.5 1 0.250
+TOPSOIL-G 17.0 25 30 32 3.0 0 0.125
+ARENA 20.8 28 31 34 3.1 0 0.000
+ARCILLA 17.0 18 22 26 2.2 2 0.500
+GEOMEMBRANA 0.0 21 26 31 2.6 1 0.250
+TRISOPLAST 16.6 24 30 36 3.0 10 2.500
+RELAVES 20.6 37 42 47 4.2 0 0.000
+
+
+ Análisis de estabilidad de la pila coberturas
+Memo Técnico     Emisión para comentarios
+SRK CONSULTING (ARGENTINA) S.A.     22/08/2025  12 2.5.2 Estabilidad global del talud
+Para el análisis de la estabilidad del talud de global, los factores de seguridad se determinaron
+mediante métodos de equilibrio límite utilizando el software especializado Slide2 de Rocscience,
+En particular, se analizaron posibles mecanismos de falla tanto circulares como poligonales,
+empleando los métodos de Spencer y Morgenstern-Price, que permiten evaluar de manera precisa
+la estabilidad ante deslizamientos complejos.
+En la modelación, se asumió que el extremo este del depósito de residuos (East WRF) está
+fundado sobre materiales de roca base con mayor resistencia que la propia roca de desecho. Por
+este motivo, no se consideraron posibles superficies de deslizamiento profundas que atraviesen la
+fundación, ya que se espera que el mayor potencial de inestabilidad se encuentre restringido a la
+masa de waste rock.
+Para este informe se seleccionó una sección representativa con la mayor pendiente proyectada
+(1.7H:1V) y una altura total de 50 metros, configurando el escenario más crítico para la evaluación
+de la estabilidad.
+
+
+ Análisis de estabilidad de la pila coberturas
+Memo Técnico     Emisión para comentarios
+SRK CONSULTING (ARGENTINA) S.A.     22/08/2025  13 3 Verificación geotécnica
+3.1 Estabilidad superficial de coberturas
+En la Tabla 3-1 se presentan los factores de seguridad mínimos, probabilidad de falla y la capa en
+la que se produce la falla. Debido a la variabilidad de los parámetros de suelo considerados en el
+análisis de sensibilidad, se presentan los valores medios y el rango de los resultados de los FoS
+determinados.
+En el Adjunto 2  y Adjunto 3 se detallan los cálculos para todas las capas, respectivamente. Como
+se puede apreciar, algunos valores de FoS no alcanzan los valores mínimos requeridos indicados
+en la Tabla 2-2, pero todas las probabilidades de falla asociadas se encuentran por debajo del
+10%.
+Tabla 3-1: Factores de seguridad de estabilidad superficial de coberturas.
+Caso Pendiente
+(1V:xH) Cobertura Factor de seguridad
+PoF (%) Capa débil
+Mínimo Medio Máximo
+Sección 1  1.7:1 A 1.06 1.17 1.28 8.10 Topsoil
+2.2:1 D 1.16 1.37 1.49 0.06 Interfaz
+geomembrana
+Sección 2  2:1 A 1.24 1.37 1.49 0.40 Topsoil
+Sección 3  1.7:1 A 1.06 1.17 1.28 8.10 Topsoil
+2.2:1 B 1.08 1.18 1.28 5.13 Arcilla
+Sección 4  1.7:1 A 1.06 1.17 1.28 8.10 Topsoil
+2.2:1 I 1.20 1.32 1.44 0.35 Topsoil
+Sección 5  1.7:1 A 1.06 1.17 1.28 8.10 Topsoil
+2.2:1 J 1.36 1.51 1.63 0.03 Topsoil
+Sección 6  1.7:1 A 1.06 1.17 1.28 8.1 Topsoil
+Del análisis realizado, se observa que en dos casos los factores de seguridad obtenidos no
+cumplen con el valor mínimo recomendado de 1.3 para los valores medios. Específicamente, estas
+situaciones corresponden al uso de suelo orgánico sobre pendientes de 1.7:1 y suelos finos sobre
+pendientes de 2.2:1. Cabe destacar que todos los factores de seguridad obtenidos resultan
+mayores a la unidad para todo el rango de parámetros materiales considerados, como puede
+también verse en mayor detalle en la Figura 3-1 y Figura 3-2. Para mayor claridad, se excluyen de
+los gráficos las capas con mezcla de relaves y Trisoplast, con factores de seguridad mayores a
+1.70 para todos los casos.
+
+ Análisis de estabilidad de la pila coberturas
+Memo Técnico     Emisión para comentarios
+SRK CONSULTING (ARGENTINA) S.A.     22/08/2025  14
+Figura 3-1: Factores de seguridad calculados para distintos ángulos de fricción (ϕ).
+
+Figura 3-2: Factores de seguridad calculados para distintos valores de cohesión (c).
+En cuanto a la evaluación probabilística de la estabilidad, en la mayoría de las configuraciones los
+resultados obtenidos muestran valores de PoF menores al 1%, lo que representa una muy baja
+probabilidad de falla bajo la variabilidad considerada para los parámetros resistentes. Las únicas
+excepciones se registraron en dos situaciones puntuales:
+ Para el suelo orgánico (topsoil) en la capa superficial de taludes con pendiente 1.7:1
+(Secciones 1, 3, 4, 5 y 6 – Cobertura tipo A),
+ Y para la arcilla utilizada en taludes de pendiente 2.2:1 (Sección 3 – Cobertura tipo B).
+
+ Análisis de estabilidad de la pila coberturas
+Memo Técnico     Emisión para comentarios
+SRK CONSULTING (ARGENTINA) S.A.     22/08/2025  15 Incluso en estos casos, los valores de PoF se mantuvieron en niveles aceptablemente bajos, con
+probabilidades de falla entre el 5% y el 10%.
+3.2 Estabilidad global de taludes
+Como aproximación, la verificación de estabilidad global del talud se verificó para la pendiente
+máxima de 1.7:1 y una altura de 50 m considerando un único material de relleno ( waste rock ).
+Mediante los métodos de equilibrio límite de Morgenstern-Price y Spencer se analizaron fallas
+circulares y poligonales y se determinó un coeficiente de seguridad mínimo de 1.60, el cual
+satisface los valores indicados en la Tabla 2-2.
+
+Figura 3-3 : Superficies de falla y FS mínimo. Caso estático.
+
+
+
+ Análisis de estabilidad de la pila coberturas
+Memo Técnico     Emisión para comentarios
+SRK CONSULTING (ARGENTINA) S.A.     22/08/2025  16 4 Recomendaciones
+Las recomendaciones presentadas a continuación se fundamentan tanto en los resultados del
+análisis determinístico y de sensibilidad como en los hallazgos derivados de la evaluación
+probabilística de estabilidad.
+El análisis desarrollado sobre las alternativas de coberturas y sus respectivas condiciones de
+estabilidad ha permitido identificar que la mayoría de las alternativas evaluadas cumplen
+adecuadamente con los criterios mínimos de seguridad determinísticos, salvo en ciertos casos
+donde la configuración de material y pendiente resulta más exigente: el suelo orgánico en taludes
+más inclinados y los suelos finos en pendientes intermedias.
+A partir de ello, se profundizó el estudio incorporando un enfoque probabilístico, que permitió
+evaluar la influencia de la variabilidad de los parámetros geotécnicos. El análisis probabilístico
+permitió estimar la probabilidad de falla (PoF) de cada alternativa, aportando una visión más
+realista del desempeño esperado bajo condiciones de incertidumbre.
+En la mayoría de las configuraciones evaluadas, la PoF resultó menor al 1%, confirmando un nivel
+de seguridad elevado. Las únicas excepciones se observaron en coincidencia con los casos en
+donde análisis determinístico determinó FS menores a los requeridos en la Tabla 2-2. En estos
+casos, la PoF se encuentra entre el 5 y el 10%. Estas probabilidades pueden considerarse
+aceptables dentro del criterio de diseño adoptado para consecuencias de falla moderadas,
+conforme a lo recomendado por guías internacionales (por ejemplo, Hawley et al. [5]). La definición
+final del nivel de consecuencia y, por ende, la probabilidad de falla admisible debe ser determinada
+y asumida en conjunto con Compañía Minera Antamina de acuerdo con sus estándares internos,
+su nivel de tolerancia al riesgo y los objetivos de manejo ambiental y operacional del sitio.
+En función de los resultados integrados de los distintos enfoques de análisis, se establece el
+siguiente ranking de desempeño para las alternativas de cobertura, ordenado según los criterios
+de estabilidad superficial alcanzados en los distintos escenarios evaluados:
+1. Coberturas multicapas con materiales compuestos (arenas limpias, mezclas de relaves,
+desmonte, geomembranas y Trisoplast): muestran el mayor margen de seguridad y respuesta
+estable ante solicitaciones estáticas.
+2. Coberturas con arenas: mantienen valores de seguridad satisfactorios y presentan baja
+sensibilidad ante variaciones en la geometría del talud.
+3. Coberturas con suelos finos o arcillas: el desempeño es adecuado solo cuando se emplean
+materiales seleccionados y pendientes moderadas.
+4. Coberturas con suelo orgánico en pendientes pronunciadas: muestran los menores factores de
+seguridad y probabilidades de falla más altas, requiriendo optimización en su diseño y control
+en su ejecución. El nivel de riesgo se encuadra dentro de los márgenes definidos por las guías
+y criterios adoptados, pero debe confirmarse según la gestión de riesgo interna.
+En el caso particular de la arcilla, se recomienda su uso primordialmente en aquellas situaciones
+donde las condiciones de impermeabilidad lo demanden expresamente, dado que sus propiedades
+pueden variar considerablemente con el tiempo y las condiciones de humedad. Para maximizar el
+desempeño de las arcillas (y materiales similares), se sugiere realizar ensayos de Casagrande
+para determinar su índice de plasticidad. De este modo, podrá seleccionarse preferentemente para
+los taludes expuestos el material con menor plasticidad (idealmente índice de plasticidad por
+debajo de 20), reservando los suelos de mayor plasticidad para zonas de bermas donde sea
+posible aplicar una compactación controlada.
+Finalmente, se recomienda contar con una caracterización de los volúmenes de cada uno de los
+materiales de cobertura, lo cual permitirá una planificación de la ejecución y una optimización de
+recursos en función de la seguridad requerida. Considerando que estos taludes piloto permitirán
+observar y medir el desempeño real de las alternativas, sumado a los factores de seguridad
+reducidos y la amplia variabilidad de los materiales empleados, se recomienda su ejecución
+acompañada por un riguroso monitoreo en campo. Esto permitirá recolectar información clave para
+
+ Análisis de estabilidad de la pila coberturas
+Memo Técnico     Emisión para comentarios
+SRK CONSULTING (ARGENTINA) S.A.     22/08/2025  17
+futuras etapas de diseño y realizar ajustes en caso de desviaciones respecto a los objetivos
+previstos.
+
+SRK Consulting (Argentina) S.A.
+
+
+
+
+
+
+
+Facundo A. Nicuesa
+Consultor
+
+
+
+
+
+
+
+
+Juan Mussat
+Consultor Senior
+
+
+
+
+ SRK CONSULTING (ARGENTINA) S.A.     22/08/2025  18   Adjunto 1 Esquemas de secciones y coberturas
+ SRK CONSULTING (ARGENTINA) S.A.     22/08/2025  19
+Figura A. 1: Esquema de coberturas y pendientes de sección 1
+
+
+Figura A. 2: Esquema de coberturas y pendientes de sección 2
+
+
+ SRK CONSULTING (ARGENTINA) S.A.     22/08/2025  20
+Figura A. 3: Esquema de coberturas y pendientes de sección 3
+
+Figura A. 4: Esquema de coberturas y pendientes de sección 4
+
+
+ SRK CONSULTING (ARGENTINA) S.A.     22/08/2025  21
+Figura A. 5: Esquema de coberturas y pendientes de sección 5
+
+Figura A. 6: Esquema de coberturas y pendientes de sección 6
+ SRK CONSULTING (ARGENTINA) S.A.     22/08/2025  22   Adjunto 2 Estabilidad de coberturas
+ SRK CONSULTING (ARGENTINA) S.A.     22/08/2025  23 En este apartado se detallan los cálculos para la determinación de los factores de seguridad del mecanismo de
+falla plana infinita de las coberturas. Dado que la altura de la pendiente es mayor a 30 veces el espesor de la capa
+de cobertura, no resulta conservador considerar un mecanismo de falla plana infinita. De acuerdo con esto, se
+realiza la verificación de estabilidad de un bloque de cobertura de 1 m de longitud. Cuando existe más de una
+capa de material, el peso de las capas superiores se suma al de la inferior en la verificación de cada una de las
+capas.
+
+Siendo:
+ Longitud del bloque de suelo: 𝐿 = 1 𝑚
+ Espesor de la capa: 𝑇
+ Peso específico suelo: 𝜌௦
+ Peso del bloque de suelo: 𝑊 = 𝜌 ௦ ⋅𝐿⋅𝑇⋅1 𝑚
+ Ángulo del talud: β
+ Fuerza paralela a la superficie de falla: 𝐹௣= 𝑊 ⋅sin (𝛽)
+ Fuerza normal a la superficie de falla: 𝐹௡= 𝑊 ⋅cos (𝛽)
+ Fuerza de rozamiento: 𝐹௥= 𝐹௡⋅tan(𝜑)+𝑐
+ Factor de seguridad: 𝐹𝑆 =ிೝ
+ி೛
+
+De acuerdo con lo expuesto en la tabla de parámetros materiales, se consideraron diferentes valores
+característicos como se detalla a continuación:
+Suelo orgánico ( topsoil):
+1. Suelo orgánico con alto contenido de finos
+2. Suelo orgánico con bajo contenido de finos
+Arena:
+1. Húmeda
+2. Saturada
+Arcilla
+1. Cohesión pico
+2. Cohesión residual
+
+
+
+SRK CONSULTING (ARGENTINA) S.A.     22/08/2025  24 DETERMINACIÓN DE FACTORES DE SEGURIDAD PARA FALLA PLANA. VALORES MEDIOS.
+Sección Cobertura Material T (m)  Pendiente
+(1V:xH) Pendiente
+(deg) Peso
+unitario
+(kN/m³) Ángulo de
+fricción
+(°) Cohesión
+o
+Adhesión
+(kPa) Peso del
+bloque W
+(kN/m) Fp (kN/m) Fn (kN/m) Fr (kN/m) FS
+Parámetros      1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2
+1 A TOPSOIL 0.3 1.7 30.47 16.5  17 25 30 1 0.5 4.95 5.10 2.51  2.59 4.27 4.40 2.99 3.04 1.19  1.17
+D TOPSOIL 0.3 2.2 24.44 16.5  17 25 30 1 0.5 4.95 5.10 2.05  2.11 4.51 4.64 3.10 3.18 1.51  1.51
+ARENA 0.15 2.2 24.44 18.5  20.8 31 31 0 0 7.73 8.22 3.20  3.40 7.03 7.48 4.23 4.50 1.32  1.32
+GEOMEMB  0 2.2 24.44 0 0 31 26 1 1 7.73 8.22 3.20  3.40 7.03 7.48 5.23 4.65 1.63  1.37
+ARENA 0.15 2.2 24.44 18.5  20.8 31 31 0 0 10.50  11.34 4.34 4.69 9.56 10.32  5.74 6.20 1.32  1.32
+2 A TOPSOIL 0.3 2 26.57 16.5  17 25 30 1 0.5 4.95 5.10 2.21  2.28 4.43 4.56 3.06 3.13 1.38  1.37
+3 A TOPSOIL 0.3 1.7 30.47 16.5  17 25 30 1 0.5 4.95 5.10 2.51  2.59 4.27 4.40 2.99 3.04 1.19  1.17
+B TOPSOIL 0.5 2.2 24.44 16.5  17 25 30 1 0.5 8.25 8.50 3.41  3.52 7.51 7.74 4.50 4.97 1.32  1.41
+ARENA 0.15 2.2 24.44 18.5  20.8 31 31 0 0 11.03  11.62 4.56 4.81 10.04 10.58 6.03 6.36 1.32  1.32
+ARCILLA 0.3 2.2 24.44 17 17 22 22 5 2 16.13  16.72 6.67 6.92 14.68 15.22 10.93 8.15 1.64  1.18
+4 A TOPSOIL 0.3 1.7 30.47 16.5  17 25 30 1 0.5 4.95 5.10 2.51  2.59 4.27 4.40 2.99 3.04 1.19  1.17
+I TOPSOIL 0.5 2.2 24.44 16.5  17 25 30 1 0.5 8.25 8.50 3.41  3.52 7.51 7.74 4.50 4.97 1.32  1.41
+ARENA 0.15 2.2 24.44 18.5  20.8 31 31 0 0 11.03  11.62 4.56 4.81 10.04 10.58 6.03 6.36 1.32  1.32
+TRISOPL 0.07 2.2 24.44 16.6  16.6 30 30 10 10 12.19  12.78 5.04 5.29 11.09 11.64 16.41 16.72 3.25 3.16
+5 A TOPSOIL 0.3 1.7 30.47 16.5  17 25 30 1 0.5 4.95 5.10 2.51  2.59 4.27 4.40 2.99 3.04 1.19  1.17
+J TOPSOIL 0.3 2.2 24.44 16.5  17 25 30 1 0.5 4.95 5.10 2.05  2.11 4.51 4.64 3.10 3.18 1.51  1.51
+ARENA 0.15 2.2 24.44 18.5  20.8 31 31 0 0 7.73 8.22 3.20  3.40 7.03 7.48 4.23 4.50 1.32  1.32
+RELAVES 0.3 2.2 24.44 20.6  20.6 42 42 0 0 13.91  14.40 5.75 5.96 12.66 13.11 11.40 11.80 1.98 1.98
+6 A TOPSOIL 0.3 1.7 30.47 16.5  17 25 30 1 0.5 4.95 5.10 2.51  2.59 4.27 4.40 2.99 3.04 1.19  1.17
+
+
+SRK CONSULTING (ARGENTINA) S.A.     22/08/2025  25 DETERMINACIÓN DE FACTORES DE SEGURIDAD PARA FALLA PLANA. ÁNGULO DE FRICCIÓN MÍNIMO.
+Sección Cobertura Material T (m)  Pendiente
+(1V:xH) Pendiente
+(deg) Peso
+unitario
+(kN/m³) Ángulo de
+fricción
+(°) Cohesión
+o
+Adhesión
+(kPa) Peso del
+bloque W
+(kN/m) Fp (kN/m) Fn (kN/m) Fr (kN/m) FS
+Parámetros      1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2
+1 A TOPSOIL 0.3 1.7 30.47 16.5 17 22.5  27 1 0.5 4.95 5.10 2.51  2.59 4.27 4.40 2.77 2.74 1.10  1.06
+D TOPSOIL 0.3 2.2 24.44 16.5 17 22.5  27 1 0.5 4.95 5.10 2.05  2.11 4.51 4.64 2.87 2.87 1.40  1.36
+ARENA 0.15 2.2 24.44 18.5 20.8 27.9 27.9 0 0 7.73 8.22 3.20  3.40 7.03 7.48 3.72 3.96 1.16  1.16
+GEOMEMB  0 2.2 24.44 0 0 27.9  23.4 1 1 7.73 8.22 3.20  3.40 7.03 7.48 4.72 4.24 1.48  1.25
+ARENA 0.15 2.2 24.44 18.5 20.8 27.9 27.9 0 0 10.50  11.34 4.34 4.69 9.56 10.32  5.06 5.47 1.16  1.16
+2 A TOPSOIL 0.3 2 26.57 16.5 17 22.5  27 1 0.5 4.95 5.10 2.21  2.28 4.43 4.56 2.83 2.82 1.28  1.24
+3 A TOPSOIL 0.3 1.7 30.47 16.5 17 22.5  27 1 0.5 4.95 5.10 2.51  2.59 4.27 4.40 2.77 2.74 1.10  1.06
+B TOPSOIL 0.5 2.2 24.44 16.5 17 22.5  27 1 0.5 8.25 8.50 3.41  3.52 7.51 7.74 4.11 4.44 1.20  1.26
+ARENA 0.15 2.2 24.44 18.5 20.8 27.9 27.9 0 0 11.03  11.62 4.56 4.81 10.04 10.58 5.31 5.60 1.16  1.16
+ARCILLA 0.3 2.2 24.44 17 17 19.8  19.8 5 2 16.13  16.72 6.67 6.92 14.68 15.22 10.29 7.48 1.54  1.08
+4 A TOPSOIL 0.3 1.7 30.47 16.5 17 22.5  27 1 0.5 4.95 5.10 2.51  2.59 4.27 4.40 2.77 2.74 1.10  1.06
+I TOPSOIL 0.5 2.2 24.44 16.5 17 22.5  27 1 0.5 8.25 8.50 3.41  3.52 7.51 7.74 4.11 4.44 1.20  1.26
+ARENA 0.15 2.2 24.44 18.5 20.8 27.9 27.9 0 0 11.03  11.62 4.56 4.81 10.04 10.58 5.31 5.60 1.16  1.16
+TRISOPL 0.07 2.2 24.44 16.6 16.6 27 27 10 10 12.19  12.78 5.04 5.29 11.09 11.64 15.65 15.93 3.10 3.01
+5 A TOPSOIL 0.3 1.7 30.47 16.5 17 22.5  27 1 0.5 4.95 5.10 2.51  2.59 4.27 4.40 2.77 2.74 1.10  1.06
+J TOPSOIL 0.3 2.2 24.44 16.5 17 22.5  27 1 0.5 4.95 5.10 2.05  2.11 4.51 4.64 2.87 2.87 1.40  1.36
+ARENA 0.15 2.2 24.44 18.5 20.8 27.9 27.9 0 0 7.73 8.22 3.20  3.40 7.03 7.48 3.72 3.96 1.16  1.16
+RELAVES 0.3 2.2 24.44 20.6 20.6 37.8 37.8 0 0 13.91  14.40 5.75 5.96 12.66 13.11 9.82 10.17  1.71 1.71
+6 A TOPSOIL 0.3 1.7 30.47 16.5 17 22.5  27 1 0.5 4.95 5.10 2.51  2.59 4.27 4.40 2.77 2.74 1.10  1.06
+
+
+
+SRK CONSULTING (ARGENTINA) S.A.     22/08/2025  26 DETERMINACIÓN DE FACTORES DE SEGURIDAD PARA FALLA PLANA. ÁNGULO DE FRICCIÓN MÁXIMO.
+Sección Cobertura Material T (m)  Pendiente
+(1V:xH) Pendiente
+(deg) Peso
+unitario
+(kN/m³) Ángulo de
+fricción
+(°) Cohesión
+o
+Adhesión
+(kPa) Peso del
+bloque W
+(kN/m) Fp (kN/m) Fn (kN/m) Fr (kN/m) FS
+Parámetros      1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2
+1 A TOPSOIL 0.3 1.7 30.47 16.5 17 27.5  33 1 0.5 4.95 5.10 2.51  2.59 4.27 4.40 3.22 3.35 1.28  1.30
+D TOPSOIL 0.3 2.2 24.44 16.5 17 27.5  33 1 0.5 4.95 5.10 2.05  2.11 4.51 4.64 3.35 3.52 1.63  1.67
+ARENA 0.15 2.2 24.44 18.5 20.8 34.1 34.1 0 0 7.73 8.22 3.20  3.40 7.03 7.48 4.76 5.07 1.49  1.49
+GEOMEMB  0 2.2 24.44 0 0 34.1  28.6 1 1 7.73 8.22 3.20  3.40 7.03 7.48 5.76 5.08 1.80  1.49
+ARENA 0.15 2.2 24.44 18.5 20.8 34.1 34.1 0 0 10.50  11.34 4.34 4.69 9.56 10.32  6.47 6.99 1.49  1.49
+2 A TOPSOIL 0.3 2 26.57 16.5 17 27.5  33 1 0.5 4.95 5.10 2.21  2.28 4.43 4.56 3.30 3.46 1.49  1.52
+3 A TOPSOIL 0.3 1.7 30.47 16.5 17 27.5  33 1 0.5 4.95 5.10 2.51  2.59 4.27 4.40 3.22 3.35 1.28  1.30
+B TOPSOIL 0.5 2.2 24.44 16.5 17 27.5  33 1 0.5 8.25 8.50 3.41  3.52 7.51 7.74 4.91 5.53 1.44  1.57
+ARENA 0.15 2.2 24.44 18.5 20.8 34.1 34.1 0 0 11.03  11.62 4.56 4.81 10.04 10.58 6.80 7.16 1.49  1.49
+ARCILLA 0.3 2.2 24.44 17 17 24.2  24.2 5 2 16.13  16.72 6.67 6.92 14.68 15.22 11.60 8.84 1.74  1.28
+4 A TOPSOIL 0.3 1.7 30.47 16.5 17 27.5  33 1 0.5 4.95 5.10 2.51  2.59 4.27 4.40 3.22 3.35 1.28  1.30
+I TOPSOIL 0.5 2.2 24.44 16.5 17 27.5  33 1 0.5 8.25 8.50 3.41  3.52 7.51 7.74 4.91 5.53 1.44  1.57
+ARENA 0.15 2.2 24.44 18.5 20.8 34.1 34.1 0 0 11.03  11.62 4.56 4.81 10.04 10.58 6.80 7.16 1.49  1.49
+TRISOPL 0.07 2.2 24.44 16.6 16.6 33 33 10 10 12.19  12.78 5.04 5.29 11.09 11.64 17.20 17.56 3.41 3.32
+5 A TOPSOIL 0.3 1.7 30.47 16.5 17 27.5  33 1 0.5 4.95 5.10 2.51  2.59 4.27 4.40 3.22 3.35 1.28  1.30
+J TOPSOIL 0.3 2.2 24.44 16.5 17 27.5  33 1 0.5 4.95 5.10 2.05  2.11 4.51 4.64 3.35 3.52 1.63  1.67
+ARENA 0.15 2.2 24.44 18.5 20.8 34.1 34.1 0 0 7.73 8.22 3.20  3.40 7.03 7.48 4.76 5.07 1.49  1.49
+RELAVES 0.3 2.2 24.44 20.6 20.6 46.2 46.2 0 0 13.91  14.40 5.75 5.96 12.66 13.11 13.20 13.67 2.29 2.29
+6 A TOPSOIL 0.3 1.7 30.47 16.5 17 27.5  33 1 0.5 4.95 5.10 2.51  2.59 4.27 4.40 3.22 3.35 1.28  1.30
+
+
+
+SRK CONSULTING (ARGENTINA) S.A.     22/08/2025  27 DETERMINACIÓN DE FACTORES DE SEGURIDAD PARA FALLA PLANA. COHESIÓN MÍNIMA.
+Sección Cobertura Material T (m)  Pendiente
+(1V:xH) Pendiente
+(deg) Peso
+unitario
+(kN/m³) Ángulo de
+fricción
+(°) Cohesión
+o
+Adhesión
+(kPa) Peso del
+bloque W
+(kN/m) Fp (kN/m) Fn (kN/m) Fr (kN/m) FS
+Parámetros      1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2
+1 A TOPSOIL 0.3 1.7 30.47 16.5 17 25 30 0.75  0.38 4.95 5.10 2.51  2.59 4.27 4.40 2.74 2.91 1.09  1.13
+D TOPSOIL 0.3 2.2 24.44 16.5 17 25 30 0.75  0.38 4.95 5.10 2.05  2.11 4.51 4.64 2.85 3.06 1.39  1.45
+ARENA 0.15 2.2 24.44 18.5 20.8 31 31 0 0.00  7.73 8.22 3.20  3.40 7.03 7.48 4.23 4.50 1.32  1.32
+GEOMEMB  0 2.2 24.44 0 0 31 26 0.75  0.75 7.73 8.22 3.20  3.40 7.03 7.48 4.98 4.40 1.56  1.29
+ARENA 0.15 2.2 24.44 18.5 20.8 31 31 0 0.00  10.50 11.34 4.34 4.69 9.56 10.32  5.74 6.20 1.32  1.32
+2 A TOPSOIL 0.3 2 26.57 16.5 17 25 30 0.75  0.38 4.95 5.10 2.21  2.28 4.43 4.56 2.81 3.01 1.27  1.32
+3 A TOPSOIL 0.3 1.7 30.47 16.5 17 25 30 0.75  0.38 4.95 5.10 2.51  2.59 4.27 4.40 2.74 2.91 1.09  1.13
+B TOPSOIL 0.5 2.2 24.44 16.5 17 25 30 0.75  0.38 8.25 8.50 3.41  3.52 7.51 7.74 4.25 4.84 1.25  1.38
+ARENA 0.15 2.2 24.44 18.5 20.8 31 31 0 0.00  11.03 11.62 4.56 4.81 10.04 10.58 6.03 6.36 1.32  1.32
+ARCILLA 0.3 2.2 24.44 17 17 22 22 3.75  1.50 16.13 16.72 6.67 6.92 14.68 15.22 9.68 7.65 1.45  1.11
+4 A TOPSOIL 0.3 1.7 30.47 16.5 17 25 30 0.75  0.38 4.95 5.10 2.51  2.59 4.27 4.40 2.74 2.91 1.09  1.13
+I TOPSOIL 0.5 2.2 24.44 16.5 17 25 30 0.75  0.38 8.25 8.50 3.41  3.52 7.51 7.74 4.25 4.84 1.25  1.38
+ARENA 0.15 2.2 24.44 18.5 20.8 31 31 0 0.00  11.03 11.62 4.56 4.81 10.04 10.58 6.03 6.36 1.32  1.32
+TRISOPL 0.07 2.2 24.44 16.6 16.6 30 30 7.5 7.50  12.19 12.78 5.04 5.29 11.09 11.64 13.91 14.22 2.76 2.69
+5 A TOPSOIL 0.3 1.7 30.47 16.5 17 25 30 0.75  0.38 4.95 5.10 2.51  2.59 4.27 4.40 2.74 2.91 1.09  1.13
+J TOPSOIL 0.3 2.2 24.44 16.5 17 25 30 0.75  0.38 4.95 5.10 2.05  2.11 4.51 4.64 2.85 3.06 1.39  1.45
+ARENA 0.15 2.2 24.44 18.5 20.8 31 31 0 0.00  7.73 8.22 3.20  3.40 7.03 7.48 4.23 4.50 1.32  1.32
+RELAVES 0.3 2.2 24.44 20.6 20.6 42 42 0 0.00  13.91 14.40 5.75 5.96 12.66 13.11 11.40 11.80 1.98 1.98
+6 A TOPSOIL 0.3 1.7 30.47 16.5 17 25 30 0.75  0.38 4.95 5.10 2.51  2.59 4.27 4.40 2.74 2.91 1.09  1.13
+
+
+
+SRK CONSULTING (ARGENTINA) S.A.     22/08/2025  28 DETERMINACIÓN DE FACTORES DE SEGURIDAD PARA FALLA PLANA. COHESIÓN MÁXIMA.
+Sección Cobertura Material T (m)  Pendiente
+(1V:xH) Pendiente
+(deg) Peso
+unitario
+(kN/m³) Ángulo de
+fricción
+(°) Cohesión
+o
+Adhesión
+(kPa) Peso del
+bloque W
+(kN/m) Fp (kN/m) Fn (kN/m) Fr (kN/m) FS
+Parámetros      1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2
+1 A TOPSOIL 0.3 1.7 30.47 16.5 17 25 30 1.25  0.63 4.95 5.10 2.51  2.59 4.27 4.40 3.24 3.16 1.29  1.22
+D TOPSOIL 0.3 2.2 24.44 16.5 17 25 30 1.25  0.63 4.95 5.10 2.05  2.11 4.51 4.64 3.35 3.31 1.64  1.57
+ARENA 0.15 2.2 24.44 18.5 20.8 31 31 0 0.00  7.73 8.22 3.20  3.40 7.03 7.48 4.23 4.50 1.32  1.32
+GEOMEMB  0 2.2 24.44 0 0 31 26 1.25  1.25 7.73 8.22 3.20  3.40 7.03 7.48 5.48 4.90 1.71  1.44
+ARENA 0.15 2.2 24.44 18.5 20.8 31 31 0 0.00  10.50 11.34 4.34 4.69 9.56 10.32  5.74 6.20 1.32  1.32
+2 A TOPSOIL 0.3 2 26.57 16.5 17 25 30 1.25  0.63 4.95 5.10 2.21  2.28 4.43 4.56 3.31 3.26 1.50  1.43
+3 A TOPSOIL 0.3 1.7 30.47 16.5 17 25 30 1.25  0.63 4.95 5.10 2.51  2.59 4.27 4.40 3.24 3.16 1.29  1.22
+B TOPSOIL 0.5 2.2 24.44 16.5 17 25 30 1.25  0.63 8.25 8.50 3.41  3.52 7.51 7.74 4.75 5.09 1.39  1.45
+ARENA 0.15 2.2 24.44 18.5 20.8 31 31 0 0.00  11.03 11.62 4.56 4.81 10.04 10.58 6.03 6.36 1.32  1.32
+ARCILLA 0.3 2.2 24.44 17 17 22 22 6.25  2.50 16.13 16.72 6.67 6.92 14.68 15.22 12.18 8.65 1.83  1.25
+4 A TOPSOIL 0.3 1.7 30.47 16.5 17 25 30 1.25  0.63 4.95 5.10 2.51  2.59 4.27 4.40 3.24 3.16 1.29  1.22
+I TOPSOIL 0.5 2.2 24.44 16.5 17 25 30 1.25  0.63 8.25 8.50 3.41  3.52 7.51 7.74 4.75 5.09 1.39  1.45
+ARENA 0.15 2.2 24.44 18.5 20.8 31 31 0 0.00  11.03 11.62 4.56 4.81 10.04 10.58 6.03 6.36 1.32  1.32
+TRISOPL 0.07 2.2 24.44 16.6 16.6 30 30 12.5  12.5 12.19 12.78 5.04 5.29 11.09 11.64 18.91 19.22 3.75 3.63
+5 A TOPSOIL 0.3 1.7 30.47 16.5 17 25 30 1.25  0.63 4.95 5.10 2.51  2.59 4.27 4.40 3.24 3.16 1.29  1.22
+J TOPSOIL 0.3 2.2 24.44 16.5 17 25 30 1.25  0.63 4.95 5.10 2.05  2.11 4.51 4.64 3.35 3.31 1.64  1.57
+ARENA 0.15 2.2 24.44 18.5 20.8 31 31 0 0.00  7.73 8.22 3.20  3.40 7.03 7.48 4.23 4.50 1.32  1.32
+RELAVES 0.3 2.2 24.44 20.6 20.6 42 42 0 0.00  13.91 14.40 5.75 5.96 12.66 13.11 11.40 11.80 1.98 1.98
+6 A TOPSOIL 0.3 1.7 30.47 16.5 17 25 30 1.25  0.63 4.95 5.10 2.51  2.59 4.27 4.40 3.24 3.16 1.29  1.22
+
+
+ SRK CONSULTING (ARGENTINA) S.A.     22/08/2025  29
+
+
+
+
+  Adjunto 3 Estabilidad de coberturas - Análisis
+probabilístico
+ SRK CONSULTING (ARGENTINA) S.A.     22/08/2025  30 Se realizó una evaluación probabilística de la estabilidad de las coberturas considerando la variabilidad de los
+parámetros resistentes de los materiales constituyentes. Para ello, se llevaron a cabo simulaciones Monte Carlo
+con un total de 10.000 muestras, en las cuales se variaron el ángulo de fricción interna y la cohesión de los
+distintos suelos presentes en las capas.
+Los parámetros de fricción y cohesión fueron simulados según una distribución normal truncada, con las
+siguientes características:
+ valores medios iguales a los obtenidos de la caracterización mecánica de los materiales,
+ desvío estándar como fracciones del valor medio: un 10% para el ángulo de fricción y un 25% para la
+cohesión,
+ se definieron límites mínimos y máximos razonables para acotar los valores simulados conforme al
+comportamiento esperado para cada tipo de suelo.
+Se analizaron de manera diferenciada dos tipos de suelo orgánico (topsoil), en función del contenido de finos,
+evaluando su comportamiento en distintas secciones y coberturas.
+La probabilidad de falla (PoF) fue calculada para cada caso, obteniéndo valores menores al 1% en la mayoría de
+las configuraciones. Las excepciones correspondieron a los siguientes casos particulares:
+ topsoil (capa superficial) en taludes de 1.7:1 (Secciones 1, 3, 4, 5 y 6 – Cobertura A),
+ arcilla en taludes de 2.2:1 (Sección 3 – Cobertura B).
+Aún en estos casos, el valor de PoF se sitúa en el rango del 5% al 10%. Estas situaciones fueron analizadas con
+mayor detalle en el desarrollo del estudio.
+
+ SRK CONSULTING (ARGENTINA) S.A.     22/08/2025  31 Materiales
+Propiedades materiales utilizadas en el análisis probabilístico
+
+Material Peso
+unitario
+(kN/m3) Ángulo de
+fricción (º)
+(mín) Ángulo de
+fricción (º)
+(medio) Ángulo de
+fricción (º)
+(máx) Ángulo de
+fricción (º)
+(desvío) Cohesión
+(kPa)
+(medio) Cohesión
+(kPa)
+(desvío)
+TOPSOIL-F 16.5 20 25 27 2.5 1 0.250
+TOPSOIL-G 17.0 25 30 32 3.0 0 0.125
+ARENA 20.8 28 31 34 3.1 0 0.000
+ARCILLA 17.0 18 22 26 2.2 2 0.500
+GEOMEMBRANA  0.0 21 26 31 2.6 1 0.250
+TRISOPLAST 16.6 24 30 36 3.0 10 2.500
+RELAVES 20.6 37 42 47 4.2 0 0.000
+
+Figura A. 7: Distribución de densidad del ángulo de fricción considerado.
+
+
+ SRK CONSULTING (ARGENTINA) S.A.     22/08/2025  32
+Figura A. 8: Distribución de densidad de cohesión. Se excluyen materiales friccionales (c = 0) y Trisoplast.
+
+
+ SRK CONSULTING (ARGENTINA) S.A.     22/08/2025  33 Resultados
+Determinación de probabilidad de falla de coberturas. Suelo orgánico con alto contenido de finos.
+Sección Cobertura Capa Material Espesor
+(m) Pendiente
+1V:xH Pendiente (º) FS
+(determinístico)  FS
+(medio) PoF
+1 A 1 TOPSOIL-F 0.30 1.7 30.47 1.19 1.164 8.1 %
+1 D 1 TOPSOIL-F 0.30 2.2 24.44 1.51 1.479 0.03 %
+1 D 2 ARENA 0.15 2.2 24.44 1.32 1.324 0 %
+1 D 3 GEOMEMBRANA 0.00 2.2 24.44 1.37 1.375 0.05 %
+1 D 4 ARENA 0.15 2.2 24.44 1.32 1.324 0 %
+2 A 1 TOPSOIL-F 0.30 2.0 26.57 1.38 1.353 0.4 %
+3 A 1 TOPSOIL-F 0.30 1.7 30.47 1.19 1.164 8.1 %
+3 B 1 TOPSOIL-F 0.50 2.2 24.44 1.32 1.283 0.35 %
+3 B 2 ARENA 0.15 2.2 24.44 1.32 1.324 0 %
+3 B 3 ARCILLA 0.30 2.2 24.44 1.18 1.183 4.81 %
+4 A 1 TOPSOIL-F 0.30 1.7 30.47 1.19 1.164 8.1 %
+4 I 1 TOPSOIL-F 0.50 2.2 24.44 1.32 1.283 0.35 %
+4 I 2 ARENA 0.15 2.2 24.44 1.32 1.324 0 %
+4 I 3 TRISOPLAST 0.07 2.2 24.44 3.20 3.202 0 %
+5 A 1 TOPSOIL-F 0.30 1.7 30.47 1.19 1.164 8.1 %
+5 J 1 TOPSOIL-F 0.30 2.2 24.44 1.51 1.479 0.03 %
+5 J 2 ARENA 0.15 2.2 24.44 1.32 1.324 0 %
+5 J 3 RELAVES 0.30 2.2 24.44 1.98 1.992 0 %
+6 A 1 TOPSOIL-F 0.30 1.7 30.47 1.164 1.164 8.1 %
+
+
+ SRK CONSULTING (ARGENTINA) S.A.     22/08/2025  34 Determinación de probabilidad de falla de coberturas. Suelo orgánico con bajo contenido de finos.
+Sección Cobertura Capa Material Espesor
+(m) Pendiente
+1V:xH Pendiente
+(º) FS
+(determinístico)  FS (medio) PoF
+1 A 1 TOPSOIL-G 0.30 1.7 30.47 1.17 1.139 5.77 %
+1 D 1 TOPSOIL-G 0.30 2.2 24.44 1.51 1.461 0 %
+1 D 2 ARENA 0.15 2.2 24.44 1.32 1.324 0 %
+1 D 3 GEOMEMBRANA 0.00 2.2 24.44 1.37 1.370 0.06 %
+1 D 4 ARENA 0.15 2.2 24.44 1.32 1.324 0 %
+2 A 1 TOPSOIL-G 0.30 2.0 26.57 1.37 1.332 0 %
+3 A 1 TOPSOIL-G 0.30 1.7 30.47 1.17 1.139 5.77 %
+3 B 1 TOPSOIL-G 0.50 2.2 24.44 1.41 1.366 0 %
+3 B 2 ARENA 0.15 2.2 24.44 1.32 1.324 0 %
+3 B 3 ARCILLA 0.30 2.2 24.44 1.18 1.179 5.13 %
+4 A 1 TOPSOIL-G 0.30 1.7 30.47 1.17 1.139 5.77 %
+4 I 1 TOPSOIL-G 0.50 2.2 24.44 1.41 1.366 0 %
+4 I 2 ARENA 0.15 2.2 24.44 1.32 1.324 0 %
+4 I 3 TRISOPLAST 0.07 2.2 24.44 3.16 3.164 0 %
+5 A 1 TOPSOIL-G 0.30 1.7 30.47 1.17 1.139 5.77 %
+5 J 1 TOPSOIL-G 0.30 2.2 24.44 1.51 1.461 0 %
+5 J 2 ARENA 0.15 2.2 24.44 1.32 1.324 0 %
+5 J 3 RELAVES 0.30 2.2 24.44 1.98 1.992 0 %
+6 A 1 TOPSOIL-G 0.30 1.7 30.47 1.17 1.139 5.77 %
+
+
+ SRK CONSULTING (ARGENTINA) S.A.     22/08/2025  35 Sección 1,3,4,5,6 - Cobertura A - Fine Topsoil
+
+Capa Material Espesor
+(m) Pendiente
+1V:xH Pendiente
+(º) Peso
+Unitario
+(kN/m3) Ángulo de
+fricción (º)
+(medio) Cohesión
+(kN/m2)
+(medio) FS_mu PoF
+1 TOPSOIL-F  0.3 1.7 30.47 16.5 24.2 1 1.16 8.1 %
+
+Figura A. 9: Histograma y densidad de probabilidad de FS. Sec. 1,3,4,5,6 - Cob. A - Fine Topsoil
+
+ SRK CONSULTING (ARGENTINA) S.A.     22/08/2025  36 Sección 1,3,4,5,6 - Cobertura A - Coarse Topsoil
+
+Capa Material Espesor
+(m) Pendiente
+1V:xH Pendiente
+(º) Peso
+Unitario
+(kN/m3) Ángulo de
+fricción (º)
+(medio) Cohesión
+(kN/m2)
+(medio) FS_mu PoF
+1 TOPSOIL-G  0.3 1.7 30.47 17 29.1 0.5 1.14 5.77 %
+
+Figura A. 10: Histograma y densidad de probabilidad de FS. Sec. 1,3,4,5,6 - Cob. A - Coarse Topsoil
+
+ SRK CONSULTING (ARGENTINA) S.A.     22/08/2025  37 Sección 3 - Cobertura B - Fine Topsoil
+Capa Material Espesor (m)  Pendiente
+1V:xH Pendiente (º)  Peso Unitario
+(kN/m3) Ángulo de
+fricción (º)
+(medio) Cohesión
+(kN/m2)
+(medio) FS_mu PoF
+1 TOPSOIL-F 0.50 2.2 24.44 16.5 24.2 1 1.28 0.35 %
+2 ARENA 0.15 2.2 24.44 20.8 31.0 0 1.32 0 %
+3 ARCILLA 0.30 2.2 24.44 17.0 22.0 2 1.18 4.81 %
+
+Figura A. 11: Histograma y densidad de probabilidad de FS. Sec. 3 - Cob. B - Fine Topsoil
+
+
+ SRK CONSULTING (ARGENTINA) S.A.     22/08/2025  38
+Figura A. 12: Densidad de probabilidad de FS. Sec. 3 - Cob. B - Fine Topsoil
+
+ SRK CONSULTING (ARGENTINA) S.A.     22/08/2025  39 Sección 3 - Cobertura B - Coarse Topsoil
+Capa Material Espesor
+(m) Pendiente
+1V:xH Pendiente
+(º) Peso
+Unitario
+(kN/m3) Ángulo de
+fricción (º)
+(medio) Cohesión
+(kN/m2)
+(medio) FS_mu PoF
+1 TOPSOIL-G  0.50 2.2 24.44 17.0 29.1 0.5 1.37 0 %
+2 ARENA 0.15 2.2 24.44 20.8 31.0 0.0 1.32 0 %
+3 ARCILLA 0.30 2.2 24.44 17.0 22.0 2.0 1.18 5.13 %
+
+Figura A. 13: Histograma y densidad de probabilidad de FS. Sec. 3 - Cob. B - Coarse Topsoil
+
+
+ SRK CONSULTING (ARGENTINA) S.A.     22/08/2025  40
+Figura A. 14: Densidad de probabilidad de FS. Sec. 3 - Cob. B - Coarse Topsoil
+
+
+
+ SRK CONSULTING (ARGENTINA) S.A.     22/08/2025  41
+
+Registro de distribución de SRK
+
+Numero de  informe: M-A8Z0-ME02
+Numero de revisión:  0
+Fecha: 22/08/2025
+
+Detalles de la distribución del documento
+Nombre/Titulo  Empresa  Autorizado por
+Iozsef Miskolczi GeoSysytems Analysis Juan Mussat
+Jaime Banuelos GeoSysytems Analysis Juan Mussat
+
+
+Firma de aprobación:
+
+
+Detalles de la revisión del documento
+Revisión  Fecha Revisado por  Cambios
+0 22/8/25 Juan Mussat Emisión para comentarios
+
+
+
+
+
+Este documento está protegido por los derechos de autor de SRK Consulting (Argentina) S.A. No puede ser
+reproducido ni transmitido de ninguna forma ni por ningún medio a ninguna persona sin el permiso escrito del
+titular de los derechos de autor, SRK.
+
