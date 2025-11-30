@@ -26,60 +26,9 @@ tito-examples/
 └── translate/     # Technical documentation translation
 ```
 
-## 🚀 Featured examples
-
-### Research
-- **r1-r4**: Research series on specific topics
-- **louvicourt**: Seismic hazard analysis for mines
-- **reitfontein**: Seismic evaluation of mining projects
-- **epistemic**: Epistemic uncertainty research
-- **gmmLT**: Ground Motion Model Logic Trees
-
-### Retrieve
-- **louvicourt**: Information extraction from seismic hazard studies
-- **antamina**: Mining documentation processing
-- **camsig**: Seismic catalog data retrieval
-
-### Review
-- **hazard**: Seismic hazard assessment review
-- **camsig**: Seismic catalog documentation improvement
-
-### Synthesis
-- **reitfontein**: Complete seismic evaluation synthesis
-
-### Translate
-- **louvicourt**: Technical studies translation to Spanish
-
 ## 📖 Documentation
 
 Visit the [complete documentation](https://averrik.github.io/tito-examples/) to see detailed examples, session results, and usage guides.
-
-## 🔍 Example structure
-
-Each example typically contains:
-```
-example/
-├── kb/                          # Knowledge base (input files)
-├── sessions/                    # Execution sessions
-│   └── run-YYYYMMDD_HHMMSS/    # Individual session
-│       ├── agent.out           # Execution log
-│       ├── *.session.json      # Session configuration
-│       └── *.compile.*.md      # Compiled result
-└── task.*.md                   # Task definition
-```
-
-## 🛠️ Typical usage
-
-1. Review the example in the corresponding directory
-2. Examine the configuration in `*.session.json`
-3. Review the task in `task.*.md`
-4. Explore compiled results in `sessions/run-*/`
-
-## 📋 Requirements
-
-- Python 3.8+
-- TITO framework (installation and configuration per official docs)
-- LLM API access (OpenAI, Anthropic, etc.)
 
 ## 🤝 Contributing
 
