@@ -1,58 +1,61 @@
-# TITO Examples
+# tito-examples
 
-[![GitHub Pages](https://img.shields.io/badge/docs-GitHub%20Pages-blue)](https://averrik.github.io/tito-examples/)
+This repository contains **end-to-end workflow runs and artifacts generated with TITO (Truth-Informed Technical Output)**.
 
-This repository contains usage examples of **TITO** (Text-based Intelligent Task Orchestrator), demonstrating different workflows for intelligent technical documentation processing.
+TITO itself lives in the main project:
+- GitHub: https://github.com/averriK/tito
+- Quick start guide: [`docs/QUICKSTART.md`](https://github.com/averriK/tito/blob/main/docs/QUICKSTART.md)
 
-## 🎯 What is TITO
+This `tito-examples` repo does **not** contain the CLI implementation. It is a companion repository that stores concrete projects and their outputs.
 
-TITO is an AI agent-based task orchestration system that enables:
-- **Automated research**: deep analysis of technical topics
-- **Information retrieval**: extraction and processing of documents
-- **Enhanced review**: critical analysis and content improvement
-- **Synthesis**: consolidation of multiple sources
-- **Translation**: contextual translation of technical documentation
-- **Glossaries**: automatic generation of terminology
+## What is TITO?
 
-## 📁 Repository structure
+TITO is a Bash CLI that orchestrates `claude-flow` for **multi-agent technical document generation with audited claims and traceable sources**. Every workflow run produces structured sessions under `sessions/run-*/` plus user-facing compiled reports.
 
-```
+For a full description of features, commands and workflows, always refer to the main [`tito`](https://github.com/averriK/tito) README and docs.
+
+## Repository layout
+
+```text
 tito-examples/
-├── glossary/      # Technical glossary generation examples
-├── research/      # Automated research on specific topics
-├── retrieve/      # PDF/Word document extraction and processing
-├── review/        # Technical content review and improvement
-├── synthesis/     # Multi-source information consolidation
-└── translate/     # Technical documentation translation
+├── glossary/   # glossary workflow runs (when present)
+├── research/   # research workflow runs
+├── retrieve/   # retrieve workflow runs
+├── review/     # review workflow runs
+├── synthesis/  # synthesis workflow runs
+└── translate/  # translate workflow runs
 ```
 
-## 📖 Documentation
+Each scenario directory under these folders typically looks like:
 
-Visit the [complete documentation](https://averrik.github.io/tito-examples/) to see detailed examples, session results, and usage guides.
+```text
+<workflow>/<scenario>/
+├── kb/           # knowledge base for the scenario
+├── sessions/     # one or more `run-YYYYMMDD_HHMMSS` execution folders
+└── task*.md      # task / prompt files for TITO
+```
 
-## 🤝 Contributing
+The exact filenames vary slightly by workflow, but the pattern `kb + task*.md + sessions/` is consistent across the examples in this repository.
 
-This repository serves as an examples reference. To contribute:
-1. Fork the repository
-2. Create a branch for your example (`git checkout -b feature/new-example`)
-3. Add your example following the existing structure
-4. Commit and push (`git commit -am 'Add: new example'`)
-5. Create a Pull Request
+## How to use these examples
 
-## 📄 License
+1. **Install and configure TITO** following `docs/QUICKSTART.md` in the main repo.
+2. **Open a scenario** here (for example `research/r1`):
+   - Read `task.md` / `task.prompt.md` to see the prompt used.
+   - Inspect `kb/` to understand the knowledge base.
+   - Inspect `sessions/run-*/` for raw outputs and compiled artifacts.
+3. **Use the tasks and KB files as templates** for your own projects, adjusting paths, IDs, and KB content as described in the main TITO documentation.
 
-MIT License - see LICENSE file for details
+Conceptual explanations of what each workflow type (`research`, `review`, `retrieve`, `glossary`, `translate`, `synthesis`, etc.) does are maintained in the **primary TITO documentation**, not here.
 
-## 👤 Author
+## GitHub Pages
 
-**averriK**
-- GitHub: [@averriK](https://github.com/averriK)
+GitHub Pages for this repository are published at:
 
-## 🔗 Useful links
+- https://averrik.github.io/tito-examples/
 
-- [Examples documentation](https://averrik.github.io/tito-examples/)
-- [TITO Framework](https://github.com/averriK/tito) (if applicable)
+The site provides a simple index of the example workflows and links back to the primary TITO docs.
 
----
+## License
 
-*Last updated: November 2025*
+MIT License — see `LICENSE` in this repository.

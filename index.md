@@ -1,129 +1,92 @@
 ---
 layout: default
-title: TITO Examples - Home
+title: TITO examples gallery
 ---
 
-# TITO Examples
+# TITO examples gallery
 
-Welcome to the **TITO** (Text-based Intelligent Task Orchestrator) examples collection, an AI agent-based task orchestration system for intelligent technical documentation processing.
+This site hosts **example workflow runs** for [TITO](https://github.com/averriK/tito) (Truth-Informed Technical Output).
 
-## 🎯 Overview
+TITO itself (CLI, installation, architecture, and full docs) lives in the main repo and its GitHub Pages site. This `tito-examples` site is intentionally minimal: it only indexes example projects and their artifacts.
 
-This site documents real-world TITO usage examples across different domains:
+## Core TITO documentation
+
+- Main repository: https://github.com/averriK/tito
+- Quick start guide: [`docs/QUICKSTART.md`](https://github.com/averriK/tito/blob/main/docs/QUICKSTART.md)
+
+For workflow semantics (what `research`, `review`, `retrieve`, `glossary`, `translate`, `synthesis`, etc. actually do) always rely on the main TITO documentation.
+
+## Workflow galleries
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin: 30px 0;">
 
 <div style="border: 1px solid #e1e4e8; border-radius: 6px; padding: 16px;">
 <h3>🔬 Research</h3>
-<p>Automated research on complex technical topics with deep analysis and bibliographic synthesis.</p>
-<a href="research/">View examples →</a>
+<p>Example projects using the <code>tito research</code> workflow over KB documents and tasks.</p>
+<a href="research/">Browse research examples →</a>
 </div>
 
 <div style="border: 1px solid #e1e4e8; border-radius: 6px; padding: 16px;">
 <h3>📥 Retrieve</h3>
-<p>Intelligent information extraction from PDF, Word, and other unstructured sources.</p>
-<a href="retrieve/">View examples →</a>
+<p>Example runs of the <code>tito retrieve</code> workflow for PDF/DOCX → Markdown ingestion.</p>
+<a href="retrieve/">Browse retrieve examples →</a>
 </div>
 
 <div style="border: 1px solid #e1e4e8; border-radius: 6px; padding: 16px;">
 <h3>✏️ Review</h3>
-<p>Critical review and improvement of technical content with contextual suggestions.</p>
-<a href="review/">View examples →</a>
+<p>Deep review and audit examples built with <code>tito review</code> (often paired with compile-review/enhance).</p>
+<a href="review/">Browse review examples →</a>
 </div>
 
 <div style="border: 1px solid #e1e4e8; border-radius: 6px; padding: 16px;">
 <h3>🔗 Synthesis</h3>
-<p>Information consolidation from multiple sources into coherent documents.</p>
-<a href="synthesis/">View examples →</a>
+<p>Local-only audited synthesis examples built with <code>tito synthesis</code> / <code>tito compile-synthesis</code>.</p>
+<a href="synthesis/">Browse synthesis examples →</a>
 </div>
 
 <div style="border: 1px solid #e1e4e8; border-radius: 6px; padding: 16px;">
 <h3>🌐 Translate</h3>
-<p>Contextual translation of technical documentation preserving specialized terminology.</p>
-<a href="translate/">View examples →</a>
+<p>Audited translation workflows that use glossary+translate skills on KB documents.</p>
+<a href="translate/">Browse translate examples →</a>
 </div>
 
 <div style="border: 1px solid #e1e4e8; border-radius: 6px; padding: 16px;">
 <h3>📖 Glossary</h3>
-<p>Automatic generation of technical glossaries with contextual definitions.</p>
-<a href="glossary/">View examples →</a>
+<p>Domain glossary extraction workflows (when present), built with <code>tito glossary</code>.</p>
+<a href="glossary/">Browse glossary examples →</a>
 </div>
 
 </div>
 
-## 🚀 Featured examples
+## Repository layout
 
-### Seismic hazard assessment (Louvicourt)
-- **Research**: [Deep seismic hazard analysis](research/#louvicourt)
-- **Retrieve**: [Technical study data extraction](retrieve/#louvicourt)
-- **Translate**: [Translation to Spanish](translate/#louvicourt)
-
-### Mining projects (Reitfontein)
-- **Research**: [Mine seismic evaluation](research/#reitfontein)
-- **Synthesis**: [Assessment synthesis](synthesis/#reitfontein)
-
-### Ground Motion Models
-- **Research**: [GMM Logic Trees](research/#gmmlt)
-- **Research**: [Epistemic uncertainty](research/#epistemic)
-
-## 📊 Statistics
-
-This repository contains:
-- **12+** research examples
-- **5** retrieve examples
-- **4** review examples
-- **1** synthesis example
-- **1** translate example
-- **1** glossary example
-
-## 🔍 How to use this site
-
-1. **Browse by workflow type**: Use the top navigation to explore examples by category
-2. **Review complete sessions**: Each example includes execution sessions with full logs
-3. **Examine results**: The `*.compile.*.md` files contain consolidated results
-4. **Adapt to your case**: Use the `*.session.json` configurations as templates
-
-## 📖 Example structure
-
-Each example follows this structure:
-
-```
-example/
-├── kb/                          # Knowledge base (input documents)
-├── sessions/                    # Execution sessions
-│   └── run-YYYYMMDD_HHMMSS/    # Execution timestamp
-│       ├── agent.out           # Complete agent log
-│       ├── *.session.json      # Session configuration
-│       └── *.compile.*.md      # Compiled result
-└── task.*.md                   # Task definition
+```text
+tito-examples/
+├── glossary/
+├── research/
+├── retrieve/
+├── review/
+├── synthesis/
+└── translate/
 ```
 
-## 🛠️ Technology
+Each scenario directory typically contains:
 
-TITO uses:
-- AI agents (LLMs: GPT-4, Claude, etc.)
-- Natural language processing
-- Structured information extraction
-- Knowledge synthesis and consolidation
-- JSON-configurable workflows
+```text
+<workflow>/<scenario>/
+├── kb/           # knowledge base for the scenario
+├── sessions/     # one or more `run-YYYYMMDD_HHMMSS` execution folders
+└── task*.md      # task / prompt files for TITO
+```
 
-## 🤝 Contributing
+The exact structure can vary a bit per workflow, but `kb + task*.md + sessions/` is the standard pattern.
 
-Have an interesting TITO usage example? Contribute to the repository:
+## Using these examples
 
-1. Fork the [repository](https://github.com/averriK/tito-examples)
-2. Add your example following the existing structure
-3. Create a Pull Request with detailed description
+1. **Install TITO** following the quick start guide in the main repo.
+2. **Open a scenario** (for example `research/r1`, `research/claude`, or `retrieve/louvicourt`).
+3. Read the `task*.md` files and the contents of `kb/` to understand the problem setup.
+4. Inspect `sessions/run-*/` to see how TITO structures sessions and compiled outputs.
+5. Use these as blueprints when designing your own tasks and KBs.
 
-## 📄 License
-
-MIT License
-
-## 👤 Contact
-
-**averriK**
-- GitHub: [@averriK](https://github.com/averriK)
-
----
-
-*Last updated: November 2025*
+This site is intentionally conservative: it describes only what is actually present in the repository and delegates all workflow semantics to the primary TITO documentation.
