@@ -12,7 +12,7 @@
 
 # Jonathan P. Stewart
 
-## (cA°) CRC Press
+## (cA) CRC Press
 
 Taylor & Francis Group
 
