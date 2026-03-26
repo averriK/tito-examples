@@ -1,0 +1,8 @@
+## SLOT 5: Slip-Rate Data and Moment Balance
+
+Activity rates for fault sources with available slip-rate data are in principle derived from seismic-moment balance, where the seismic moment rate $\dot{M}_0$ is related to the shear modulus $\mu$, fault area $A$, and long-term slip rate $S$:^[Confidence: HIGH, Rationale: The seismic-moment balance equation and symbol definitions are as specified in the TASK_FILE framing for SLOT 5; the formulation is standard in PSHA fault-source characterisation and requires no external verification.]
+
+$$\dot{M}_0 = \mu\, A\, S$$
+
+The IND source model contains no fault sources. The complete source inventory consists exclusively of 108 areal seismogenic zones and 443,089 spatially distributed point sources in two smoothed-seismicity grids; no fault-source XML files are present, and no slip-rate data are specified for any source [KB:source_model.md][KB:site_sources.md]. Accordingly, the number of sources with slip-rate data is zero, and no slip-rate range can be reported for this model. Recurrence parameters for all area sources are instead derived from seismological catalogue statistics via Gutenberg-Richter fitting, as documented in the source-model XML files and the implementation report [-@Nath2012][-@GEM_IND] [KB:source_model.md].^[Confidence: HIGH, Rationale: The absence of fault sources is stated explicitly in KB:site_sources.md ("No fault sources are included in the IND source model") and is consistent with the source type enumeration in KB:source_model.md, which lists only areaSource and pointSource. The catalogue-based recurrence derivation is confirmed in KB:source_model.md and attributed to Nath and Thingbaijam (2012) via preserved citekeys.]
+

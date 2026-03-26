@@ -1,0 +1,13 @@
+{
+  "id": "I1",
+  "workflow": "research",
+  "source": {
+    "kb_dir": "/Users/averrik/github/tito-examples/research/iduapriem/kb",
+    "documents": [
+      "louvicourt.md"
+    ]
+  },
+  "outputs": {
+    "primary": "I1.research.md"
+  }
+}

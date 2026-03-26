@@ -1,0 +1,13 @@
+{
+  "id": "L5",
+  "workflow": "research",
+  "source": {
+    "kb_dir": "/Users/averrik/github/tito-examples/research/louvicourt-B/kb",
+    "documents": [
+      "output.md"
+    ]
+  },
+  "outputs": {
+    "markdown": "L5.research.md"
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "agents": {
+    "agent-1773656293496-kq6rw3": {
+      "agentId": "agent-1773656293496-kq6rw3",
+      "agentType": "worker",
+      "status": "terminated",
+      "health": 1,
+      "taskCount": 0,
+      "config": {
+        "workflow": "session-prompt",
+        "stageProfile": "prompt",
+        "sessionId": "run-20260316_071813",
+        "topology": "hierarchical"
+      },
+      "createdAt": "2026-03-16T10:18:13.498Z",
+      "domain": "general",
+      "model": "haiku",
+      "modelRoutedBy": "router"
+    },
+    "agent-1773656382463-yfwjkf": {
+      "agentId": "agent-1773656382463-yfwjkf",
+      "agentType": "researcher",
+      "status": "terminated",
+      "health": 1,
+      "taskCount": 0,
+      "config": {
+        "workflow": "research",
+        "stageProfile": "research",
+        "sessionId": "run-20260316_071942",
+        "topology": "mesh",
+        "model": "sonnet"
+      },
+      "createdAt": "2026-03-16T10:19:42.463Z",
+      "domain": "research",
+      "model": "sonnet",
+      "modelRoutedBy": "explicit"
+    },
+    "agent-1773656383482-dqor6h": {
+      "agentId": "agent-1773656383482-dqor6h",
+      "agentType": "researcher",
+      "status": "terminated",
+      "health": 1,
+      "taskCount": 0,
+      "config": {
+        "workflow": "research",
+        "stageProfile": "research",
+        "sessionId": "run-20260316_071943",
+        "topology": "mesh",
+        "model": "sonnet"
+      },
+      "createdAt": "2026-03-16T10:19:43.482Z",
+      "domain": "research",
+      "model": "sonnet",
+      "modelRoutedBy": "explicit"
+    },
+    "agent-1773656384509-8lpajj": {
+      "agentId": "agent-1773656384509-8lpajj",
+      "agentType": "researcher",
+      "status": "terminated",
+      "health": 1,
+      "taskCount": 0,
+      "config": {
+        "workflow": "research",
+        "stageProfile": "research",
+        "sessionId": "run-20260316_071944",
+        "topology": "mesh",
+        "model": "sonnet"
+      },
+      "createdAt": "2026-03-16T10:19:44.509Z",
+      "domain": "research",
+      "model": "sonnet",
+      "modelRoutedBy": "explicit"
+    },
+    "agent-1773658541656-g9uuem": {
+      "agentId": "agent-1773658541656-g9uuem",
+      "agentType": "compiler",
+      "status": "terminated",
+      "health": 1,
+      "taskCount": 0,
+      "config": {
+        "workflow": "compile-research",
+        "stageProfile": "compile_resume",
+        "sessionId": "run-20260316_075541",
+        "topology": "hierarchical",
+        "model": "sonnet"
+      },
+      "createdAt": "2026-03-16T10:55:41.656Z",
+      "domain": "synthesis",
+      "model": "sonnet",
+      "modelRoutedBy": "explicit"
+    }
+  },
+  "version": "3.0.0"
+}

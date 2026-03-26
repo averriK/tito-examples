@@ -1,0 +1,144 @@
+COMPILE-PROMPT WORKFLOW (CONSENSUS SLOTS/CONSTRAINTS FROM PROMPT SESSIONS)
+
+You will compile a single canonical prompt file `T3.compile.prompt.md` from multiple
+`prompt` sessions for the same `id`. Each session-level prompt was produced by
+`workflows/prompt.session.md` from the same `TASK_FILE` and may contain
+hallucinated or incomplete SLOTS/CONSTRAINTS.
+
+Your job is to:
+- Read the list of prompt session files from MANIFEST.
+- Compare and group similar SLOTS across sessions.
+- Build a **single** SLOTS/CONSTRAINTS structure that faithfully reflects the
+  original `TASK_FILE`, minimizing omissions and hallucinated work items.
+
+All decisions must be based only on the content of the prompt session outputs
+and, if needed, the original TASK_FILE; do not introduce new requirements or
+constraints from external knowledge.
+
+Inputs (absolute paths provided):
+- TASK_FILE: /c/front_door/projects/WQD/research/task.research.md                # Original task, may be "/dev/null".
+- SESSION_DIR: /c/front_door/projects/WQD/research/sessions/run-20260112_231637
+- SESSIONS_DIR: /c/front_door/projects/WQD/research/sessions
+- FORMAT_RULES: /c/front_door/tools/tito/rules/format.compile.md
+- AUDIT_RULES: /c/front_door/tools/tito/rules/audit.md      # Optional: may be empty for now.
+- MANIFEST: /c/front_door/projects/WQD/research/sessions/run-20260112_231637/manifest.json # CLI-provided manifest with prompt
+                                         # session sources + outputs.
+
+Data sources (local only):
+- Read ONLY the prompt files listed in MANIFEST.sessions[].path.
+- You MUST NOT perform any additional Glob/ls over SESSIONS_DIR; MANIFEST is
+  the single source of truth for prompt inputs.
+- If TASK_FILE != "/dev/null", you MAY read it once as ground truth for the
+  user requirements, but you MUST NOT modify it.
+
+Goal:
+Produce ONE canonical prompt file written to the manifest-defined output:
+- Read MANIFEST first.
+- Write to: /c/front_door/projects/WQD/research/sessions/run-20260112_231637/<MANIFEST.outputs.primary>
+
+This file MUST:
+- Contain a `## SLOTS` section with `### SLOT N: <short title>` headings.
+- Contain a `## CONSTRAINTS` section for global constraints.
+- Preserve the intent and coverage of the original TASK_FILE as well as
+  reasonably possible, given the session prompts.
+- Avoid introducing slots/constraints that cannot be justified by any of the
+  session prompts AND (when TASK_FILE is available) by the text of TASK_FILE.
+
+Method:
+
+1) Read MANIFEST and discover sources
+- Read MANIFEST from /c/front_door/projects/WQD/research/sessions/run-20260112_231637/manifest.json.
+- Parse conceptually its `sessions[]` and `outputs.primary` fields.
+- Treat MANIFEST.sessions[] as the complete list of prompt session files.
+- For each entry, resolve the absolute path using SESSION_DIR as base.
+
+2) Read prompt sessions and extract SLOTS/CONSTRAINTS
+- For each prompt file in MANIFEST.sessions[]:
+  - Read the full file.
+  - Locate the `## SLOTS` section and enumerate all headings of the form
+    `### SLOT N: <title>` and their associated description paragraphs.
+  - Locate the `## CONSTRAINTS` section and collect each bullet `- ...`.
+- Build an internal list of:
+  - Slots: {session_id, slot_index, title, body_text}.
+  - Constraints: {session_id, text}.
+
+3) (Optional) Use TASK_FILE as ground truth
+- If TASK_FILE != "/dev/null", read it once to understand:
+  - The explicit requirements, questions, subtasks, and outputs requested.
+  - Any explicit global constraints (language, formatting bans, etc.).
+- Do NOT try to fully re-normalize TASK_FILE here; use it only as a reference
+  to:
+  - Detect obvious omissions (requirements with no corresponding slot).
+  - Detect obviously unsupported slots (work items with no trace in TASK_FILE).
+
+4) Group SLOTS across sessions
+- Group slots into clusters representing the same underlying work item:
+  - Use both the slot titles and a coarse semantic comparison of the
+    description paragraphs.
+  - Be conservative: only merge slots when it is clear they refer to the same
+    work item; otherwise keep them separate.
+- For each cluster, record:
+  - All titles proposed.
+  - All description texts proposed.
+  - In how many sessions the cluster appears.
+
+5) Select and synthesize canonical SLOTS
+- For each slot cluster:
+  - Prefer titles that are:
+    - Closest to the wording of TASK_FILE (when available), or
+    - Most frequent across prompts.
+  - Synthesize a single description paragraph that:
+    - Uses only information present in the cluster's descriptions and (if
+      needed) in TASK_FILE.
+    - Does not introduce new goals or extra work items not clearly present in
+      TASK_FILE.
+    - Preserves all essential sub-points associated with this work item
+      without unnecessary verbosity.
+- Ordering:
+  - Preserve, as far as possible, the natural order of work items implied by
+    TASK_FILE (e.g., by scanning TASK_FILE and ordering clusters according to
+    where their supporting text appears).
+  - If TASK_FILE is "/dev/null", infer a reasonable order from the majority
+    order across sessions.
+
+6) Select and synthesize canonical CONSTRAINTS
+- Collect all constraint bullets from all sessions.
+- When TASK_FILE is available:
+  - Treat TASK_FILE as ground truth for constraints.
+  - For each candidate constraint, check whether it corresponds to a clear
+    statement in TASK_FILE.
+- Merge obviously equivalent constraints into a single bullet, preferring the
+  clearest wording.
+- Exclude constraints that cannot be matched to TASK_FILE when TASK_FILE is
+  present, or that conflict with TASK_FILE.
+- Discard any candidate constraint that talks about tools, workflows, or
+  execution policies (how the pipeline should run) instead of user-level
+  requirements or document-wide properties.
+- Order constraints in a stable, reasonable way (e.g., language, format,
+  length, then other policy constraints).
+
+7) Assemble canonical prompt
+- Create a new markdown document in memory with:
+
+  ## SLOTS
+  ### SLOT 1: <title>
+  <description>
+  ### SLOT 2: <title>
+  <description>
+  ...
+
+  ## CONSTRAINTS
+  - <constraint 1>
+  - <constraint 2>
+  ...
+
+- Apply FORMAT_RULES (if a non-empty path was provided) to adjust style,
+  notation, and basic formatting, without changing the meaning of any slot or
+  constraint.
+- Do NOT add audit footnotes or citations in this workflow.
+
+8) Write output
+- Read MANIFEST and treat `outputs.primary` as the only valid output filename.
+- Use the Write tool to save the canonical prompt to:
+  /c/front_door/projects/WQD/research/sessions/run-20260112_231637/<MANIFEST.outputs.primary>
+- Do not write any other files from this workflow.

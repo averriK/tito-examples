@@ -1,0 +1,13 @@
+{
+  "id": "T3",
+  "workflow": "research",
+  "source": {
+    "kb_dir": "/c/front_door/projects/WQD/research/kb",
+    "documents": [
+      "T2.retrieve.md"
+    ]
+  },
+  "outputs": {
+    "primary": "T3.research.md"
+  }
+}

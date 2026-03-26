@@ -1,0 +1,137 @@
+RUNTIME ORCHESTRATION PLAN (authoritative runtime context)
+- Workflow key: session-prompt
+- Stage agent/config profile: prompt
+- Runtime split: orchestrator=ruflo-mcp; executor=claude via stdin-objective
+- Orchestrator runtime identity: ruflo
+- Resolved orchestrator profile: agent_type=worker; domain=general; model_pref=inherit; topology=hierarchical
+- Resolved executor profile: model=opus; effort=max; permission_mode=bypassPermissions; allowed_tools=Bash Read Write Edit MultiEdit Glob Grep WebSearch WebFetch mcp__ruflo__memory_usage mcp__ruflo__memory_store mcp__ruflo__memory_retrieve mcp__ruflo__memory_search
+- Requested coordination mode: auto
+- Requested strategy: auto
+- Requested agent budget: auto
+- Requested internal parallel fan-out: 0
+- Session ordinal / fan-out: 1/1
+- Effective internal parallel fan-out: 0
+- Fan-out policy: no-internal-fanout-requested
+- Parallelism note: No internal orchestration fan-out was requested for this session.
+- If requested mode/strategy/agent budget are explicit, treat them as binding execution guidance for how you decompose and coordinate the work inside this session.
+- Executor contract: Claude Code CLI receives this objective via stdin and must emit only the manifest-defined artifact(s).
+- Agents file: agents.json
+- Executor output capture: best-effort-text; persisted=false
+- If memory tools are available, you MAY use them only as shared cache/state under namespace 'tito.gmm'; never cite memory as evidence and never replace the underlying source citations with cache references.
+- MCP server banner: claude-flow 3.0.0 (reported by the MCP handshake; do not confuse it with the effective runtime identity above)
+- Orchestrator runtime session: swarm_id=swarm-1773656293495; task_id=task-1773656293499-1udl6b; agent_id=agent-1773656293496-kq6rw3; task_status=active
+PROMPT WORKFLOW (TASK → SLOT-BASED STRUCTURED PROMPT, WITH COVERAGE CHECK)
+
+You will read a free-form TASK_FILE and produce a normalized prompt document with
+a fixed SLOTS + CONSTRAINTS layout. Your job is not only to restructure the task
+but also to **make explicit which parts of TASK_FILE are covered by each slot**,
+so that downstream workflows (research, synthesis, compile) can trust that no
+requirement was silently dropped or invented.
+
+Inputs (absolute paths provided):
+- TASK_FILE: /Users/averrik/Cloud/github/tools/ruflo-tito/tests/real/gmm/tasks/task.gmm.md
+- KB_DIR (optional):          # Not used for evidence in this workflow
+- SESSION_DIR: /Users/averrik/Cloud/github/tools/ruflo-tito/tests/real/gmm/sessions/run-20260316_071813
+- FORMAT_RULES: /usr/local/libexec/tito/rules/format.session.md   # rules/format.session.md (style only)
+- AUDIT_RULES: /usr/local/libexec/tito/rules/audit.md     # rules/audit.md (paragraph footnotes)
+- MANIFEST: /Users/averrik/Cloud/github/tools/ruflo-tito/tests/real/gmm/sessions/run-20260316_071813/manifest.json   # CLI-provided manifest (authoritative I/O)
+
+Goal:
+Produce ONE markdown file representing the structured prompt.
+Output filename is controlled by MANIFEST:
+  /Users/averrik/Cloud/github/tools/ruflo-tito/tests/real/gmm/sessions/run-20260316_071813/<MANIFEST.outputs.primary>
+Do NOT derive output filenames from TASK_FILE or workflow names.
+
+The structured prompt MUST:
+- Contain a `## SLOTS` section with one slot per **explicit work item** in
+  TASK_FILE (questions, subtasks, requested outputs).
+- Contain a `## CONSTRAINTS` section for true global constraints only.
+- Preserve the original intent and ordering of TASK_FILE.
+- Include lightweight audit-style notes that make it clear which parts of
+  TASK_FILE justify each slot and whether any requirements appear partially or
+  not covered.
+
+Method:
+1) Read TASK_FILE and extract requirements
+   - Read TASK_FILE once, end to end.
+   - Identify every explicit work item the user is asking for:
+     - Questions (e.g. bullets starting with "- ?" or similar constructs).
+     - Subtasks or numbered items.
+     - Requested outputs or deliverables.
+   - For each work item, derive a short internal identifier in your reasoning
+     (e.g. REQ-001, REQ-002, ...) but DO NOT expose these IDs in the final
+     markdown.
+   - Identify explicit **global** constraints (language, style, length,
+     document-wide formatting constraints) that clearly apply to the entire
+     downstream workflow, not just to a single question.
+
+2) Build SLOTS section (one slot per requirement)
+   - Under the heading `## SLOTS`, create **at least one slot per explicit work
+     item** you identified in TASK_FILE.
+   - You MUST NOT merge clearly separate bullets/questions from TASK_FILE into a
+     single slot unless they are obvious rephrasings of the same requirement.
+   - Preserve the original ordering of work items: SLOT 1 should correspond to
+     the earliest requirement in TASK_FILE, SLOT 2 to the next, and so on.
+   - For each slot, add a heading:
+     - `### SLOT N: <short title>` where N is 1-based and `<short title>` is
+       derived from the wording of the underlying requirement (no new goals).
+   - Under each slot heading, add a short description that:
+     - Uses only information from TASK_FILE.
+     - Makes explicit what needs to be done for that requirement.
+     - Does **not** introduce new objectives or sub-goals that are not clearly
+       implied by TASK_FILE.
+   - If a single requirement in TASK_FILE naturally decomposes into several
+     tightly-coupled sub-steps, you may either:
+     - Keep them in a single slot description (recommended), or
+     - Create multiple slots that all refer to the same underlying requirement.
+     In both cases, do not invent new work items.
+
+3) Build CONSTRAINTS section (true globals only)
+   - Add a heading `## CONSTRAINTS`.
+   - Under it, list only **global** constraints as `- ...` bullets, such as:
+     - Language / locale requirements for the entire output.
+     - Document-wide structural rules (e.g. "no headings", "no bullet lists
+       anywhere").
+     - Global length/formatting constraints that apply to every slot.
+   - Do **not** move slot-specific instructions (e.g. "include case studies when
+     answering this particular question") into the global CONSTRAINTS list;
+     keep them inside their corresponding slot descriptions.
+   - Constraints MUST be paraphrases of explicit, document-wide requirements
+     stated in TASK_FILE. Do not invent new constraints, and do not describe
+     tools, workflows, or implementation details here.
+
+4) Internal coverage and hallucination check (audit-style)
+   - Using AUDIT_RULES conceptually, perform a brief coverage check **within the
+     prompt itself**, treating TASK_FILE as the only evidence source:
+     - For each slot, verify that you can justify it by quoting or paraphrasing
+       specific parts of TASK_FILE.
+     - If a slot cannot be clearly justified by TASK_FILE, you MUST revise or
+       drop it; do not keep unsupported slots.
+     - For any explicit requirement in TASK_FILE that still feels only
+       partially covered by the SLOTS/CONSTRAINTS you wrote, refine the
+       corresponding slot description until coverage is clear.
+   - You MAY add short audit-style notes as footnotes or trailing sentences
+     inside the slot descriptions (e.g. "This slot covers the questions about X
+     and Y in the task text"), but you MUST NOT introduce external citations or
+     reference external sources.
+5) Final duplicate / overlap sweep across slots
+   - Before writing the final prompt, compare every slot against every other slot.
+   - If two slots are obvious duplicates or materially overlap in what they ask
+     the downstream workflows to do, you MUST resolve that conflict before
+     finalizing the prompt:
+     - Merge them if they are simply two phrasings of the same work item, or
+     - Rewrite the slot descriptions so each slot has a clearly distinct scope.
+   - Do NOT keep two separate slots that ask substantially the same underlying
+     question unless TASK_FILE clearly distinguishes them by subject, scope, or
+     target entity.
+   - If you cannot clearly disambiguate the overlap using only TASK_FILE, STOP
+     and surface the conflict instead of emitting an ambiguous prompt.
+
+6) Apply formatting rules and write output file
+   - If FORMAT_RULES is a non-empty path, you MUST read and apply those rules to
+     adjust style and basic formatting of the prompt (headings, lists, spacing),
+     without changing the meaning of any slot or constraint.
+   - Read MANIFEST and use `outputs.primary` as the only valid output filename.
+   - Use Write tool to save the structured prompt to:
+     /Users/averrik/Cloud/github/tools/ruflo-tito/tests/real/gmm/sessions/run-20260316_071813/<MANIFEST.outputs.primary>
+   - Confirm: "Structured prompt written to /Users/averrik/Cloud/github/tools/ruflo-tito/tests/real/gmm/sessions/run-20260316_071813/<MANIFEST.outputs.primary>"

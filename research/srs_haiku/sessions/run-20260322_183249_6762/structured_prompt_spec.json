@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "task_file": "/Users/averrik/Cloud/github/tools/ruflo-tito/tests/real/srs_haiku/md/task.srs.prompt.md",
+  "slot_count": 1,
+  "constraint_count": 2,
+  "slots": [
+    {"ordinal": 1, "title": "Extension of the error minimization formulation with unit-sum weight constraint", "instruction": "The error minimization problem formulated in the knowledge base (kb/) is to be extended to the case where the logic-tree branch weights satisfy the normalization condition $\\sum_{k=1}^{N} w_k = 1$. The extended formulation adopts the following hypotheses, carried over from the KB formulation:\n\n- The problem is cast as a generalization of a constrained linear regression problem.\n- All weights are bounded below by zero: $w_k \\geq 0$ for all $k = 1, \\ldots, N$.\n- The final derivation step incorporates the unit-sum constraint $\\sum_{k=1}^{N} w_k = 1$ as an additional equality condition on the optimization.\n\n\n\nThe formulation builds upon the existing KB error minimization framework and extends it to the fully constrained optimization problem enforcing both non-negativity and normalization simultaneously.\n\n**Coverage**: This slot addresses the sole explicit question in TASK_FILE (lines 24-25), which requests extending the KB error minimization formulation to the unit-sum case under the three stated hypotheses. No sub-requirements from the question are omitted, and no additional objectives are introduced."}
+  ],
+  "constraints": [
+    "Output language: English.",
+    "Document style: professional engineering methodology."
+  ]
+}

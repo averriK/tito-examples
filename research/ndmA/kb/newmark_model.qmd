@@ -1,0 +1,149 @@
+
+## Newmark-based Sliding-Block Models {#sec-newmark_appendix}
+
+A suite of predictive models have been developed to estimate earthquake-induced permanent displacements in slopes and embankments using the sliding-block framework originally proposed by Newmark. These models range from fully empirical formulations based on observed seismic records to semi-empirical approaches that incorporate site-specific dynamic parameters and statistical regression. Each method implements a distinct combination of input parameters—such as yield acceleration, ground motion intensity measures, and spectral ordinates—to quantify the relationship between seismic demand and slope performance. The following sections present the principal displacement models currently recognized in the technical literature, with explicit definitions of parameters, functional forms, and associated uncertainties for engineering application. The general notation for all models is the following:
+
+* $D$: permanent displacement [cm].
+* $k_y$: yield-acceleration ratio $=a_y/g$.
+* $PGA$: peak ground acceleration [g]; $PGV$: peak ground velocity [cm s$^{-1}$].
+* $T_n$: fundamental period of the sliding mass [s]; $S_a$ is evaluated at a model-specific period.
+* All dispersions $\sigma$ are one‐standard-deviation values in natural-log space unless stated otherwise.
+
+
+### Bray & Macedo [-@BrayMacedo2017]
+
+Flexible-Block (compliant) Model. Subduction earthquakes
+
+$$
+\mu_{\ln D}=a_0+a_1\ln S_a+a_2(\ln S_a)^2
+$$
+
+with
+
+$$
+\begin{aligned}
+a_0 &=
+\begin{cases}
+-5.864+0.550\,M_w-9.421\,T_n-3.353\ln k_y-0.390(\ln k_y)^2, & T_n<0.1\\
+-6.896+0.550\,M_w+3.081\,T_n-0.803\,T_n^{2}-3.353\ln k_y-0.390(\ln k_y)^2, & T_n\ge 0.1
+\end{cases}\\
+a_1 &= 3.060+0.538\ln k_y,\qquad 
+a_2 = -0.225 .
+\end{aligned}
+$$
+
+$$\sigma_{\ln D}=0.73$$
+
+
+* $k_y=a_y/g$: yield-acceleration ratio (dimensionless).
+* $S_a$: spectral acceleration at the fundamental period $T_n$ [g].
+* $T_n$: fundamental period of the sliding mass [s].
+* $M_w$: moment magnitude.
+
+### Bray & Macedo [-@BrayMacedo2019]
+
+Flexible-Block (compliant) Model. Shallow-crustal earthquakes.  Same functional form as above, with coefficients
+
+$$
+\begin{aligned}
+a_0 &=
+\begin{cases}
+-4.551+0.607\,M_w-9.690\,T_n-2.491\ln k_y-0.245(\ln k_y)^2,&T_n<0.1\\
+-5.894+0.607\,M_w+3.152\,T_n-0.910\,T_n^{2}-2.491\ln k_y-0.245(\ln k_y)^2,&T_n\ge0.1
+\end{cases}\\
+&\quad+\;
+\begin{cases}
+0,&PGV\le115\;\text{cm/s}\\
+\ln PGV-4.75,&PGV>115\;\text{cm/s}
+\end{cases}\\
+a_1 &= 2.703+0.344\ln k_y,\qquad a_2=-0.089 .
+\end{aligned}
+$$
+
+$$\sigma_{\ln D}=0.74$$
+
+
+* $PGV$: peak ground velocity [cm s$^{-1}$]; if not supplied it is estimated from $PGA$.
+* $S_a$: spectral acceleration at $1.3\,T_n$ [g].
+* Remaining symbols as in the 2017 model.
+
+### Bray & Travasarou [-@BrayTravasarou2007]
+
+Flexible-Block (compliant) Model.
+
+$$
+\mu_{\ln D} = -1.10 - 2.83\ln k_y - 0.333(\ln k_y)^2
+            + 0.566\ln k_y\ln S_a + 3.04\ln S_a - 0.244(\ln S_a)^2
+            + 0.278(M_w-7).
+$$
+
+$$\sigma_{\ln D}=0.66$$
+
+* $S_a$: spectral acceleration at $1.5\,T_n$ [g].
+
+
+
+### Jibson [-@Jibson2007]
+
+Rigid-Block Model.
+$$
+\mu_{\ln D}= \left[\,0.561\log_{10}AI - 3.833\log_{10}(k_y/PGA)-1.474\right]\;\ln10 .
+$$
+
+$\sigma_{\log_{10}D}=0.616\;\;(\sigma_{\ln D}=0.616\ln10)$.&#x20;
+
+* $AI$: Arias intensity [m s$^{-1}$]; estimated from $PGA$ if not provided.
+* $r=k_y/PGA$ expresses slide strength relative to intensity.
+
+
+
+### Saygili & Rathje [-@SaygiliRathje2008]
+
+Rigid-Block Model. Multi-parameter model. Requires $AI$ and $PGA$
+$$
+\mu_{\ln D}=2.39-5.24r-18.78r^{2}+42.01r^{3}-29.15r^{4}
+            -1.56\ln PGA +1.38\ln AI,\qquad r=\tfrac{k_y}{PGA}.
+$$
+
+$$\sigma_{\ln D}=0.46+0.56\,r$$ 
+(increases as the slope becomes “weaker”)
+
+### Ambraseys & Menu [-@AmbraseysMenu1988] – rigid sliding block
+
+Rigid-Block Model.
+
+$$
+\mu_{\log_{10}D}=0.90+\log_{10} \left[(1-r)^{2.53}\,r^{-1.09}\right],\qquad r=\tfrac{k_y}{PGA}.
+$$
+
+$$\sigma_{\log_{10}D}=0.30\;\;(\sigma_{\ln D}=0.30\ln10)$$
+
+
+
+### Yegian et al. [-@Yegian1991]
+
+Rigid-Block Model.
+$$
+\mu_{\log_{10}D}=0.22-10.12\,r+16.38\,r^{2}-11.48\,r^{3},\qquad r=\tfrac{k_y}{PGA}.
+$$
+
+$\sigma_{\log_{10}D}=0.45\;\;(\sigma_{\ln D}=0.45\ln10)$$
+
+
+
+## Shear stiffness parameters for gravels, sands and fines
+
+The shear moduli $G(z)$ of an arbitrary layer at depth $z$ can be estimated in terms of the void ratio $e_o$ and the octahedral stresses $\sigma_o(z)$ from [@eq-SM], where $p_{ref}$ is a reference pressure, $A$, $C_e$, and $n$ are material-dependent constants and $e_0$ is the void ratio of the material, and $\sigma_o(z)$ is the octahedral stress at depth $z$ [@Ishihara1997].
+
+$$G(z,e_o)\approx A \frac{(C_e-1)^2}{1+e_o} \left(\frac{\sigma'_o(z)}{p_{ref}} \right)^n$$ {#eq-SM2}
+```{r include=TRUE,eval=TRUE,echo=FALSE}
+#| label: tbl-ish1
+#| tbl-cap: "Shear stiffness parameters for gravels, sands and fines. Source: Ishihara [-@Ishihara1997]"
+DT <- dsra::ShearModelParameters[,-c("ModelID","GroupID","UN")] |> setnames(,old=c("NameID","AuthorID"),new=c("Material","Author")) |> setcolorder(c("Material","Author","A","Ce","n","emin","emax"))
+
+TBL <- DT |> buildTable(library="flextable",font.size.body = FONT.SIZE.BODY,font.size.header = FONT.SIZE.HEADER) |>
+flextable::set_table_properties(layout = "autofit")
+
+
+TBL 
+```

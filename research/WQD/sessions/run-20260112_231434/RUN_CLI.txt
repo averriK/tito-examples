@@ -1,0 +1,3 @@
+EXECUTION: claude-flow swarm [OBJECTIVE_true] --strategy analysis
+OBJECTIVE_FILE: /c/front_door/projects/WQD/research/sessions/run-20260112_231434/objective.txt
+OBJECTIVE_BYTES: 6098

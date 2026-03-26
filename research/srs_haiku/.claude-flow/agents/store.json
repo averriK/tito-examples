@@ -1,0 +1,40 @@
+{
+  "agents": {
+    "agent-1774214854574-xk5vdz": {
+      "agentId": "agent-1774214854574-xk5vdz",
+      "agentType": "worker",
+      "status": "terminated",
+      "health": 1,
+      "taskCount": 0,
+      "config": {
+        "workflow": "session-prompt",
+        "stageProfile": "prompt",
+        "sessionId": "run-20260322_182734",
+        "topology": "hierarchical"
+      },
+      "createdAt": "2026-03-22T21:27:34.578Z",
+      "domain": "general",
+      "model": "haiku",
+      "modelRoutedBy": "router"
+    },
+    "agent-1774215170037-l6yrgw": {
+      "agentId": "agent-1774215170037-l6yrgw",
+      "agentType": "researcher",
+      "status": "terminated",
+      "health": 1,
+      "taskCount": 0,
+      "config": {
+        "workflow": "research",
+        "stageProfile": "research",
+        "sessionId": "run-20260322_183249_6762",
+        "topology": "mesh",
+        "model": "sonnet"
+      },
+      "createdAt": "2026-03-22T21:32:50.037Z",
+      "domain": "research",
+      "model": "sonnet",
+      "modelRoutedBy": "explicit"
+    }
+  },
+  "version": "3.0.0"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "spec",
+  "workflow": "compile-prompt",
+  "sessions": [
+    { "path": "../run-20260322_171238/spec.prompt.md" }
+  ],
+  "outputs": {
+    "primary": "spec.compile.prompt.md"
+  }
+}

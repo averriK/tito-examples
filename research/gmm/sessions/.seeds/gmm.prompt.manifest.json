@@ -1,0 +1,7 @@
+{
+  "id": "gmm",
+  "workflow": "prompt",
+  "outputs": {
+    "primary": "gmm.prompt.md"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "id": "gmm",
+  "workflow": "compile-prompt",
+  "sessions": [
+    { "path": "../run-20260316_071813/gmm.prompt.md" }
+  ],
+  "outputs": {
+    "primary": "gmm.compile.prompt.md"
+  }
+}

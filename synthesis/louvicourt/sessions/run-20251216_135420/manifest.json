@@ -1,0 +1,11 @@
+{
+  "id": "L5",
+  "workflow": "compile-synthesis",
+  "sessions": [
+    { "path": "../run-20251216_135157/L5.synthesis.md" }
+  ],
+  "outputs": {
+    "markdown": "L5.compile.synthesis.md",
+    "biblatex": "biblatex.bib"
+  }
+}

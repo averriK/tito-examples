@@ -1,0 +1,23 @@
+{
+  "tasks": {
+    "task-1774490576329-jxbyy3": {
+      "taskId": "task-1774490576329-jxbyy3",
+      "type": "refactor",
+      "description": "TITO workflow retrieve.clean (profile=format_rules, executor=claude, run_id=kramer2024, session=run-20260325_230234)",
+      "priority": "normal",
+      "status": "active",
+      "progress": 5,
+      "assignedTo": [
+        "agent-1774490576328-yrse5g"
+      ],
+      "tags": [
+        "retrieve.clean",
+        "format_rules"
+      ],
+      "createdAt": "2026-03-26T02:02:56.329Z",
+      "startedAt": null,
+      "completedAt": null
+    }
+  },
+  "version": "3.0.0"
+}

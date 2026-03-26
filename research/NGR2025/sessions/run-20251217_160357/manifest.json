@@ -1,0 +1,11 @@
+{
+  "id": "R0",
+  "workflow": "compile.research",
+  "sessions": [
+    { "path": "../run-20251217_160045/R0.research.md" }
+  ],
+  "outputs": {
+    "markdown": "R0.compile.research.md",
+    "biblatex": "biblatex.bib"
+  }
+}

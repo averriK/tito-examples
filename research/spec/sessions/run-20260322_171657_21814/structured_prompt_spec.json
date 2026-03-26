@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "task_file": "/Users/averrik/Cloud/github/tools/ruflo-tito/tests/real/spec/md/task.spec.prompt.md",
+  "slot_count": 7,
+  "constraint_count": 4,
+  "slots": [
+    {"ordinal": 1, "title": "Summary of spectral-content-modifying record selection methodologies", "instruction": "Provide a concise summary of seismic record selection methodologies that modify spectral content so that a linear combination of recorded spectra approximates a given target spectrum. The summary should distinguish the principal approaches (time-domain matching, frequency-domain matching, and selection-by-combination methods) and characterize their respective effects on ground motion properties."},
+    {"ordinal": 2, "title": "Minimum record count and origin of the 7- and 11-record thresholds in seismic standards", "instruction": "Determine the minimum number of spectra required for spectral matching under the linear-combination approach described in SLOT 1. Explain the theoretical or empirical basis for the minimum record counts of 7 and 11 recommended by seismic design standards such as ASCE 7 for nonlinear structural analysis."},
+    {"ordinal": 3, "title": "Classical linear regression formulation for spectral matching weights (RMSE)", "instruction": "Formulate the spectral matching problem as a classical linear regression problem in which the weights $w_k$ minimize the global root-mean-square error (RMSE) between the weighted linear combination of candidate spectra and the target spectrum $\\mathbf{y}$. The formulation must employ the notation established in the Context and Notation section ($m$ candidates, $n$ periods, vector $\\mathbf{y}$, weights $w_k$)."},
+    {"ordinal": 4, "title": "Reformulation of the regression problem in log-log space", "instruction": "Reformulate the linear regression problem from SLOT 3 in $\\log(S_a)$-$\\log(T_n)$ space, exploiting the observation that spectral functions are smoother in logarithmic coordinates. Maintain consistency with the notation from the Context section and relate the log-log formulation explicitly to the original-space formulation of SLOT 3."},
+    {"ordinal": 5, "title": "Non-negative weight constraint extension with R implementation", "instruction": "The unconstrained regression from SLOTS 3-4 may yield negative weights, which lack physical interpretability as scaling factors for ground motion records. Extend the regression formulation to enforce strictly non-negative weights ($w_k \\geq 0$ for all $k$). Address whether standard Ridge regression can directly accommodate a positivity constraint on the coefficients. Provide a working code example in R that implements the non-negative least squares solution."},
+    {"ordinal": 6, "title": "Bounded weight constraints ($w_{\\min} \\leq w_k \\leq w_{\\max}$) with Ridge/Lasso feasibility analysis", "instruction": "Beyond the non-negativity constraint of SLOT 5, impose box constraints $w_{\\min} \\leq w_k \\leq w_{\\max}$ on the weights, where $w_{\\min}$ and $w_{\\max}$ are user-specified bounds, to prevent excessively large or small scaling factors. Discuss whether Ridge or Lasso regression can enforce such box constraints on the coefficients. Provide a code example demonstrating the bounded-weight solution."},
+    {"ordinal": 7, "title": "Convex optimization generalization with standard R libraries", "instruction": "Generalize the spectral matching problem as a convex optimization problem that subsumes the previous formulations (unconstrained, non-negative, and bounded weights) as special cases. Propose an explicit loss function formulation for the general case. Provide implementation examples using standard R optimization libraries (e.g., CVXR, quadprog, or equivalent)."}
+  ],
+  "constraints": [
+    "The output document must be written entirely in English, in a professional engineering methodology style.",
+    "All mathematical expressions must use LaTeX notation and follow the conventions established in the Context and Notation section (candidate set size $m$, period mesh size $n$, objective vector $\\mathbf{y} \\in \\mathbb{R}^n$, weights $w_k$).",
+    "All code examples (required by SLOTS 5, 6, and 7) must be implemented in the R programming language.",
+    "Existing bibliographic citations ([@Green2005], [@Akkar2010]) must be preserved in the output."
+  ]
+}

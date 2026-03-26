@@ -1,0 +1,99 @@
+    {
+      "id": "slot-01",
+      "ordinal": 1,
+      "title": "SSM Overview and Source Census",
+      "sources": [
+        { "path": "slot_sources/slot-01.run-20260316_114914.md" },
+        { "path": "slot_sources/slot-01.run-20260316_114915.md" },
+        { "path": "slot_sources/slot-01.run-20260316_114916.md" }
+      ],
+      "output_path": "ssm1C.compile.research.slot-01.md"
+    },
+    {
+      "id": "slot-02",
+      "ordinal": 2,
+      "title": "Source-Model Logic Tree Structure",
+      "sources": [
+        { "path": "slot_sources/slot-02.run-20260316_114914.md" },
+        { "path": "slot_sources/slot-02.run-20260316_114915.md" },
+        { "path": "slot_sources/slot-02.run-20260316_114916.md" }
+      ],
+      "output_path": "ssm1C.compile.research.slot-02.md"
+    },
+    {
+      "id": "slot-03",
+      "ordinal": 3,
+      "title": "Earthquake Recurrence Parameters",
+      "sources": [
+        { "path": "slot_sources/slot-03.run-20260316_114914.md" },
+        { "path": "slot_sources/slot-03.run-20260316_114915.md" },
+        { "path": "slot_sources/slot-03.run-20260316_114916.md" }
+      ],
+      "output_path": "ssm1C.compile.research.slot-03.md"
+    },
+    {
+      "id": "slot-04",
+      "ordinal": 4,
+      "title": "Magnitude-Frequency Distribution Types",
+      "sources": [
+        { "path": "slot_sources/slot-04.run-20260316_114914.md" },
+        { "path": "slot_sources/slot-04.run-20260316_114915.md" },
+        { "path": "slot_sources/slot-04.run-20260316_114916.md" }
+      ],
+      "output_path": "ssm1C.compile.research.slot-04.md"
+    },
+    {
+      "id": "slot-05",
+      "ordinal": 5,
+      "title": "Slip-Rate Data and Moment Balance",
+      "sources": [
+        { "path": "slot_sources/slot-05.run-20260316_114914.md" },
+        { "path": "slot_sources/slot-05.run-20260316_114915.md" },
+        { "path": "slot_sources/slot-05.run-20260316_114916.md" }
+      ],
+      "output_path": "ssm1C.compile.research.slot-05.md"
+    },
+    {
+      "id": "slot-06",
+      "ordinal": 6,
+      "title": "Maximum Magnitude Characterisation",
+      "sources": [
+        { "path": "slot_sources/slot-06.run-20260316_114914.md" },
+        { "path": "slot_sources/slot-06.run-20260316_114915.md" },
+        { "path": "slot_sources/slot-06.run-20260316_114916.md" }
+      ],
+      "output_path": "ssm1C.compile.research.slot-06.md"
+    },
+    {
+      "id": "slot-07",
+      "ordinal": 7,
+      "title": "Seismogenic Depth Parameters",
+      "sources": [
+        { "path": "slot_sources/slot-07.run-20260316_114914.md" },
+        { "path": "slot_sources/slot-07.run-20260316_114915.md" },
+        { "path": "slot_sources/slot-07.run-20260316_114916.md" }
+      ],
+      "output_path": "ssm1C.compile.research.slot-07.md"
+    },
+    {
+      "id": "slot-08",
+      "ordinal": 8,
+      "title": "Local Sources and Site Interrogation",
+      "sources": [
+        { "path": "slot_sources/slot-08.run-20260316_114914.md" },
+        { "path": "slot_sources/slot-08.run-20260316_114915.md" },
+        { "path": "slot_sources/slot-08.run-20260316_114916.md" }
+      ],
+      "output_path": "ssm1C.compile.research.slot-08.md"
+    },
+    {
+      "id": "slot-09",
+      "ordinal": 9,
+      "title": "Smoothed-Seismicity Nearest Point Sources",
+      "sources": [
+        { "path": "slot_sources/slot-09.run-20260316_114914.md" },
+        { "path": "slot_sources/slot-09.run-20260316_114915.md" },
+        { "path": "slot_sources/slot-09.run-20260316_114916.md" }
+      ],
+      "output_path": "ssm1C.compile.research.slot-09.md"
+    }

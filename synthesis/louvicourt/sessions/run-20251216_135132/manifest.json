@@ -1,0 +1,10 @@
+{
+  "id": "L5",
+  "workflow": "compile-prompt",
+  "sessions": [
+    { "path": "../run-20251216_135105/L5.prompt.md" }
+  ],
+  "outputs": {
+    "prompt": "L5.prompt.md"
+  }
+}

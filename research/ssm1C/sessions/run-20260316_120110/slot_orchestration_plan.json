@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "workflow": "compile-research",
+  "session_id": "run-20260316_120110",
+  "structured_prompt_task_file": "/Users/averrik/Cloud/github/tools/ruflo-tito/tests/real/ssm1C/md/task.ssm.prompt.md",
+  "structured_prompt_spec_file": "/Users/averrik/Cloud/github/tools/ruflo-tito/tests/real/ssm1C/sessions/run-20260316_120110/structured_prompt_spec.json",
+  "coordination_mode": "slot-aware-compile-units",
+  "single_writer_policy": "session-compiler-assembles-final-artifacts",
+  "session_writer_role": "session_compiler",
+  "slot_worker_role": "slot_compiler",
+  "handoff_contract": "Slot workers may read only the manifest-declared sources for their assigned slot as evidence and may emit only that slot-local compiled output; anti-overlap coordination happens only through the predeclared shared-memory keys, and only the session compiler may assemble the manifest-defined final document and bibliography.",
+  "memory_namespace_root": "tito.ssm1C",
+  "memory_coordination_policy": "shared-memory-overlap-smoothing",
+  "memory_read_contract": "Before finalizing a slot, slot_compiler may read coordination notes under tito.ssm1C.global.* and sibling tito.ssm1C.slot-XX.coverage keys only to avoid duplicate definitions, repeated openings, and scope drift; never treat memory as evidence.",
+  "memory_write_contract": "Each slot_compiler writes concise coordination notes only under its own namespace (tito.ssm1C.slot-XX.coverage and tito.ssm1C.slot-XX.handoff); only session_compiler may write global smoothing/assembly notes under tito.ssm1C.global.*.",
+  "progress_marker_format": "SLOT_PROGRESS: slot-XX :: <phase>; PHASE_PROGRESS: assembly :: <phase>",
+  "slot_count": 9,
+  "slots": [
+    {"ordinal": 1, "title": "SSM Overview and Source Census", "memory_namespace_label": "slot-01", "memory_namespace": "tito.ssm1C.slot-01", "writer_role": "session_compiler", "worker_role": "slot_compiler"},
+    {"ordinal": 2, "title": "Source-Model Logic Tree Structure", "memory_namespace_label": "slot-02", "memory_namespace": "tito.ssm1C.slot-02", "writer_role": "session_compiler", "worker_role": "slot_compiler"},
+    {"ordinal": 3, "title": "Earthquake Recurrence Parameters", "memory_namespace_label": "slot-03", "memory_namespace": "tito.ssm1C.slot-03", "writer_role": "session_compiler", "worker_role": "slot_compiler"},
+    {"ordinal": 4, "title": "Magnitude-Frequency Distribution Types", "memory_namespace_label": "slot-04", "memory_namespace": "tito.ssm1C.slot-04", "writer_role": "session_compiler", "worker_role": "slot_compiler"},
+    {"ordinal": 5, "title": "Slip-Rate Data and Moment Balance", "memory_namespace_label": "slot-05", "memory_namespace": "tito.ssm1C.slot-05", "writer_role": "session_compiler", "worker_role": "slot_compiler"},
+    {"ordinal": 6, "title": "Maximum Magnitude Characterisation", "memory_namespace_label": "slot-06", "memory_namespace": "tito.ssm1C.slot-06", "writer_role": "session_compiler", "worker_role": "slot_compiler"},
+    {"ordinal": 7, "title": "Seismogenic Depth Parameters", "memory_namespace_label": "slot-07", "memory_namespace": "tito.ssm1C.slot-07", "writer_role": "session_compiler", "worker_role": "slot_compiler"},
+    {"ordinal": 8, "title": "Local Sources and Site Interrogation", "memory_namespace_label": "slot-08", "memory_namespace": "tito.ssm1C.slot-08", "writer_role": "session_compiler", "worker_role": "slot_compiler"},
+    {"ordinal": 9, "title": "Smoothed-Seismicity Nearest Point Sources", "memory_namespace_label": "slot-09", "memory_namespace": "tito.ssm1C.slot-09", "writer_role": "session_compiler", "worker_role": "slot_compiler"}
+  ]
+}

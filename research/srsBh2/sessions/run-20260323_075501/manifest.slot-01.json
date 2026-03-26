@@ -1,0 +1,26 @@
+{
+  "id": "srsBh2",
+  "workflow": "compile-research",
+  "inputs": {
+    "structured_prompt_spec": "structured_prompt_spec.json"
+  },
+  "slots": [
+    {
+      "id": "slot-01",
+      "ordinal": 1,
+      "title": "Extend weight formulation with sum-to-1 constraint",
+      "sources": [
+        { "path": "slot_sources/slot-01.run-20260323_075138.md" },
+        { "path": "slot_sources/slot-01.run-20260323_075139.md" },
+        { "path": "slot_sources/slot-01.run-20260323_075140.md" },
+        { "path": "slot_sources/slot-01.run-20260323_075141.md" },
+        { "path": "slot_sources/slot-01.run-20260323_075142.md" }
+      ],
+      "output_path": "srsBh2.compile.research.slot-01.md"
+    }
+  ],
+  "outputs": {
+    "primary": "srsBh2.compile.research.md",
+    "biblatex": "biblatex.bib"
+  }
+}

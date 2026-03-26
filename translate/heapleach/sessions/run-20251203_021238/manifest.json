@@ -1,0 +1,11 @@
+{
+  "id": "heapleach-es",
+  "workflow": "compile-translate",
+  "sessions": [
+    { "path": "../run-20251203_021041/heapleach-es.translate.md" }
+  ],
+  "outputs": {
+    "markdown": "heapleach-es.compile.translate.md",
+    "biblatex": "biblatex.bib"
+  }
+}

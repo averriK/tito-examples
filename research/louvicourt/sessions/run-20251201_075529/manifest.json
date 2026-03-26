@@ -1,0 +1,10 @@
+{
+  "id": "L4",
+  "workflow": "compile-prompt",
+  "sessions": [
+    { "path": "../run-20251201_075441/L4.prompt.session.md" }
+  ],
+  "outputs": {
+    "prompt": "L4.prompt.md"
+  }
+}

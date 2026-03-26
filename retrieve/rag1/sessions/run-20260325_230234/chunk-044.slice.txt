@@ -1,0 +1,400 @@
+t k x °( ) − = i ( , ) (C.67c) u x t A e T t
+
+Stress‑strain and strain‑displacement relationships can be used to relate the stress amplitudes to the displacement amplitudes:
+
+∂ ( , ) u x t t k x ( ) ω − I σ = = − i ( , ) (C.68a) x t M ik M A e I i ∂ x
+
+∂ ( , ) u x t t k x ( ) ω + R σ = = + i ( , ) (C.68b) x t M ik M A e R r ∂ x
+
+∂ ( , ) u x t t k x ( ) ω − T σ = = − i ( , ) (C.68c) x t M ik M A e T t ∂ x
+
+From these, the stress amplitudes are related to the displacement amplitudes by
+
+σ = −ik M A i (C.69a) i
+
+σ = +ik M A r (C.69b) r
+
+σ = −ik M A t (C.69c) t
+
+At the interface (x = 0), both compatibility of displacements and continuity of stresses must be ­satisfied. The former requires that
+
++ = (0, ) (0, ) (0, )
+
+### (C.70)
+
+u t u t u t I R T
+
+and the latter that
+
+σ + σ = σ (0, ) (0, ) (0, )
+
+### (C.71)
+
+t t t I R T
+
+Substituting Equations (C.67) and (C.66) into Equations (C.70) and (C.71), respectively, indicates that
+
++ = t
+
+### (C.72)
+
+A A A i r
+
+σ + σ = σ t
+
+### (C.73)
+
+i r
+
+at the interface. Substituting Equations (C.69) into Equation (C.73) and using the relationship kM = ωρv, gives −ρ1v1 Ai + ρ1v1 Ar = −ρ2v2 At = −ρ2v2 (Ai + Ar )
+
+### (C.74)
+
+Appendix C
+
+Equation (C.74) can be rearranged to relate the displacement amplitude of the reflected wave to that of the incident wave:
+
+ρ − ρ − ρ ρ / v v v v
+
+#### 1 1
+
+1 1 = = i
+
+### (C.75)
+
+A v A v A r i ρ + ρ + ρ ρ / v v
+
+#### 1 1
+
+1 1 The displacement amplitude of the transmitted wave can be similarly derived as:
+
+ρ v
+
+#### 1 1
+
+= = i
+
+### (C.76)
+
+A v A v A t i + + ρ ρ ρ ρ / v v
+
+#### 1 1
+
+1 1 Remember that the product of the mass density and the wave propagation velocity is the specific impedance of the material. Equations (C.75) and (C.76) indicate that the partitioning of energy at the interface depends only on the ratio of the specific impedances of the materials on either side of α = ° ° the interface. Defining the impedance ratio as / , the displacement amplitudes of the v v
+
+#### 1 1
+
+z reflected and transmitted waves are
+
+− α z = i
+
+### (C.77)
+
+A A r + α z
+
+= i
+
+### (C.78)
+
+A A t + α z
+
+After evaluating the effect of the interface on the displacement amplitudes of the reflected and transmitted waves, its effect on stress amplitudes can be investigated. From Equations (C.69)
+
+σ i = − (C.79a) A i ik M
+
+σ r = (C.79b) A r ik M
+
+σ t = − (C.79c) A t ik M
+
+Substituting Equations (C.79) into Equations (C.77) and (C.78) and rearranging gives
+
+− ° z σ = σ i
+
+### (C.80)
+
+r + ° z
+
+° z σ = σ i
+
+### (C.81)
+
+t + ° z
+
+The importance of the impedance ratio in determining the nature of reflection and transmission at interfaces can clearly be seen. Equations (C.77), (C.78), (C.80), and (C.81) indicate that fundamen‑ tally different types of behavior occur when the impedance ratio is less than or greater than 1. When the impedance ratio is less than 1, an incident wave can be thought of as approaching a “softer” material. For this case, the reflected wave will have a smaller stress amplitude than the incident wave and its sign will be reversed (an incident compression pulse will be reflected as a tensile pulse, and vice versa). If the impedance ratio is greater than 1, the incident wave is approaching a Appendix C
+
+### TABLE C.1
+
+Influence of Impedance Ratio on Displacement and Stress Amplitudes of Reflected and
+
+### Transmitted Waves
+
+### Displacement Amplitudes
+
+### Stress Amplitudes
+
+### Impedance Ratio, αz
+
+### Incident
+
+### Reflected
+
+### Transmitted
+
+### Incident
+
+### Reflected
+
+### Transmitted
+
+σi −σi 2Ai Ai Ai σi −3σi/5 2σi/5 ¼ 3Ai/5 8Ai/5 Ai σi −σi/3 2σi/3 ½ Ai/3 4Ai/3 Ai σi σi Ai Ai σi σi/3 4σi/3 −Ai/3 2Ai/3 Ai σi 3σi/5 8σi/5 −3Ai/5 2Ai/5 Ai σi σi 2σi ∞ −Ai Ai
+
+“stiffer” material in which the stress amplitude of the transmitted wave will be greater than that of the incident wave and the stress amplitude of the reflected wave will be less than, but of the same sign, as that of the incident wave. The displacement amplitudes are also affected by the impedance ratio. The displacement amplitude of a wave transmitted from a stiffer material into a softer material will be greater than that of the incident wave. The relative stress and displacement amplitudes of reflected and transmitted waves at boundaries with several different impedance ratios are illustrated in Table 5.1. and α = ∞ α = The cases of are of particular interest. An impedance ratio of zero implies that z z σ = the incident wave is approaching a “free end” across which no stress can be transmitted ( ). To t satisfy this zero stress boundary condition, the displacement of the boundary (the transmitted dis‑ = placement) must be twice the displacement amplitude of the incident wave ( i). The reflected A A t wave has the same amplitude as the incident wave but is of the opposite polarity (σ = − σ i). In other r words, a free end will reflect a compression wave as a tension wave of identical amplitude and shape and a tension wave as an identical compression wave. An infinite impedance ratio implies that the incident wave is approaching a “fixed end” at which no displacement can occur (ur = 0). In that case, σ = σ the stress at the boundary is twice that of the incident wave ( i) and the reflected wave has t the same amplitude and polarity as the incident wave (Ar = −Ai). The case of αz = 1, in which the impedances on each side of the boundary are equal, is also of interest. Equations (C.77), (C.78), (C.80), and (C.81) indicate that no reflected wave is produced and that the transmitted wave has, as expected, the same amplitude and polarity as the incident wave. In other words, all of the elastic energy of the wave crosses the boundary unchanged and travels away, never to return. Another way of looking at a boundary with an impedance ratio of unity is as a boundary between two identical, semi‑infinite rods. A harmonic wave traveling in the positive x‑direction (Figure C.15a) would impose an axial force [see Equation (C.5)] on the boundary:
+
+= σ = ρ 
+
+### (C.82)
+
+F A v Au x m
+
+This axial force is identical to that which would exist if the semi‑infinite rod on the right side of the boundary were replaced by a dashpot (Figure C.15b) of coefficient c = ρvmA. In other words, the dashpot would absorb all the elastic energy of the incident wave, so the response of the rod on the left would be identical for both cases illustrated in Figure C.15. This result has important implica‑ tions for ground response and soil‑structure interaction analyses (Chapters 7 and 8), where the replacement of a semi‑infinite domain by discrete elements such as dashpots can provide tremen‑ dous computational efficiencies. Appendix C
+
+FIGURE C.15 (a) Harmonic wave traveling along two connected semi‑infinite rods; (b) semi‑infinite rod attached to dashpot. With proper selection of dashpot coefficient, response in semi‑infinite rod on left will be identical for both cases.
+
+### C.4.2 Three‑Dimensional Case: Inclined Waves
+
+In general, waves will not approach interfaces at 90° angles as they did in Section C.4.1. The ori‑ entation of an inclined body wave can strongly influence the manner in which energy is reflected and transmitted across an interface. Fermat’s principle defines the propagation time of a seismic pulse between two arbitrary points A and B as the minimum travel time along any continuous path that connects A and B. The path that produces the minimum travel time is called a ray path, and its direction is often represented by a vector called a ray. A wavefront is defined as a surface of equal travel time, consequently, a ray path must (in an isotropic material) be perpendicular to the wavefront as illustrated in Figure C.16. Snell considered the change of direction of ray paths at interfaces between materials with different wave propagation velocities. Using Fermat’s principle, Snell showed that
+
+sin i = constant
+
+### (C.83)
+
+v where i is the angle between the ray path and the normal to the interface and v is the velocity of the wave (p‑ or s‑wave) of interest. This relationship holds for both reflected and transmitted waves. It indicates that the transmitted wave will be refracted (except when i = 0) when the wave propagation velocities are different on each side of the interface. Consider the case of two half‑spaces of different elastic materials in contact with each other. As for the previous case, the requirements of equilibrium and compatibility and the theory of elasticity can be used to determine the nature and distribution of energy among the reflected and transmitted waves for the cases of an incident p‑wave, an incident SV­ wave, and an incident SH‑wave. The types of waves produced by incident p‑, SV‑, and SH‑waves are shown in Figure C.17. Since incident p‑ and SV‑waves involve particle motion perpendicular to the plane of the interface; they will each produce both reflected and refracted p‑ and SV‑waves. An incident SH‑wave does not
+
+FIGURE C.16 Ray path, ray, and wavefront for (a) plane wave and (b) curved wavefront. Appendix C
+
+FIGURE C.17 Reflected and refracted rays resulting from incident (a) p‑wave, (b) SV­ wave, and (c) SH‑wave.
+
+involve particle motion perpendicular to the interface; consequently, only SH‑waves are reflected and refracted. The directions and relative amplitudes of the waves produced at the interface depend on both the direction and amplitude of the incident wave. Using Snell’s law and the requirements of equilibrium and compatibility, these directions and amplitudes can be determined. Using the nota‑ tion of Richter (1958):
+
+### Wave Type
+
+### Velocity
+
+### Amplitude
+
+### Angle with Normal
+
+Incident p U A a Incident s V B b Reflected p U C c Reflected s V D d Refracted p Y E e Refracted s Z F f
+
+The directions of all waves are easily related to the direction of the incident wave using Snell’s law:
+
+sin sin sin sin sin sin a b c d e f = = = = =
+
+### (C.84)
+
+U V U V Y Z Since incident and reflected waves travel through the same material, a = c and b = d, which shows that the angle of incidence is equal to the angle of reflection for both p‑ and s‑waves. The angle of refraction is uniquely related to the angle of incidence by the ratio of the wave velocities of the materials on each side of the interface. Snell’s law indicates that waves traveling from higher‑velocity materials into lower‑velocity materials will be refracted closer to the normal to the interfaces. In other words, waves propagating upward through horizontal layers of successively lower velocity (as is common near the Earth’s surface) will be refracted closer and closer to a verti‑ cal path (Figure C.18). This phenomenon is relied upon heavily by many of the methods of ground response analysis presented in Chapter 7. The critical angle of incidence, ic, is defined as that which produces a refracted wave that travels parallel to the interface (e or f = 90°). Therefore,
+
+U V − − = = sin sin
+
+### (C.85)
+
+i c Y Z The concept of critical refraction is used in the interpretation of seismic refraction tests (Section 6.5.2.1). Assuming that the incident wave is simple harmonic, satisfaction of the requirements of equilib‑ rium and compatibility at the interface give rise to the following systems of simultaneous equations Appendix C
+
+FIGURE C.18 Refraction of an SH‑wave ray path through a series of successively softer (lower v,) layers. Note that orientation of ray path becomes closer to vertical as the ground surface is approached. Reflected rays are not shown.
+
+(Richter, 1958), which allow the amplitudes of the reflected and refracted waves (C, D, E, and F) to be expressed in terms of the amplitude of the incident p‑wave (A).
+
+− + − + = ( )sin cos sin cos A C a D b E e F f
+
++ + − − = ( )cos sin cos sin A C a D b E e F f
+
+U U D U Z Z     − = − + + + ( )sin 2 cos2 sin 2 cos2 A C a b
+
+### EK
+
+e FK f     V V Y V Z
+
+### D V
+
+### EK Y
+
+FK Z − − + + − = ( )cos2 sin 2 cos2 sin(2 )
+
+### (C.86)
+
+A C b b f f U U U
+
+where K = ρ1/ρ2 (the subscripts 1 and 2 refer to materials 1 and 2, respectively). Note that the ampli‑ tudes are functions of the angle of incidence, the velocity ratio, and the density ratio. Figure C.19 shows the variation of amplitude with angle of p‑wave incidence for the following conditions: U = 8.000, Y = 2.003, K = 0.606, and ν = 0.25. The sensitivity of the reflected and refracted wave amplitudes to the angle of incidence is apparent. SV‑waves are neither reflected nor refracted at angles of incidence of 0° and 90°, but can carry the majority of the wave energy away from the interface at intermediate angles. For an incident SV‑wave, both SV‑ and p‑waves are reflected and refracted. The equilibrium/ compatibility equations relating the relative amplitudes are
+
++ + − − = ( )sin cos cos sin B D b C a E e F f
+
+− + + − = ( )cos sin sin cos B D b C a E e F f
+
+### C V
+
+### EK Z
+
+FK Z + − + − = ( )cos2 sin 2 sin 2 cos2 B D b a e f U
+
+### VY
+
+V
+
+### C U
+
+### EK Y
+
+FK Z − − + + + = ( )sin 2 cos2 cos2 sin 2
+
+### (C.87)
+
+B D b b f f V V V Appendix C
+
+FIGURE C.19 Ratio of amplitudes of (a) reflected p‑wave, (b) reflected SV‑wave, (c) refracted p‑wave, and (d) refracted SV‑wave to amplitude of incident p‑wave versus angle of incidence.
+
+which produce the amplitude behavior shown in Figure C.20. For angles of incidence greater than sin−1 (V/U), about 36° in Figure C.20a, no p‑wave can be reflected, so the incident wave energy must be carried away by the remaining waves. A more detailed discussion of this phenomenon can be found in McCamy et al. (1962). An incident SH‑wave involves no particle motion perpendicular to the interface; consequently, it cannot produce p‑waves (C = E = 0) or SV‑waves. The equilibrium/compatibility equations are considerably simplified and easily solved as
+
+cos
+
+### K Z
+
+f − cos V b = B D cos f
+
+### K Z
+
++ cos V b
+
+### (C.88)
+
+cos
+
+### K Z
+
+f   −   cos V b = + F B   cos f
+
+### K Z
+
++     cos V b The preceding results show that the interaction of stress waves with boundaries can be quite com‑ plicated. As seismic waves travel away from the source of an earthquake, they invariably encounter heterogeneities and discontinuities in the Earth’s crust. The creation of new waves and the reflection Appendix C
+
+FIGURE C.20 Ratio of amplitudes of (a) reflected p‑wave, (b) reflected SV‑wave, (c) refracted p‑wave, and (d) refracted SV‑wave to amplitude of incident SV‑wave versus angle of incidence.
+
+and refraction of ray paths by these heterogeneities cause seismic waves to reach a site by many dif‑ ferent paths. Since the paths have different lengths, the motion at the site is spread out in time by this wave‑scattering effect. Scattering effects are discussed in more detail in Section C.5.3.
+
+### C.5 ATTENUATION OF STRESS WAVES
+
+The preceding sections have considered only the propagation of waves in linear elastic materials. In a homogeneous linear elastic material, stress waves travel indefinitely without change in amplitude. This type of behavior cannot occur, however, in real materials. The amplitudes of stress waves in real materials, such as those that comprise the Earth, attenuate with distance. This attenuation can be attributed to two sources, one of which involves the materials through which the waves travel and the other the geometry of the wave propagation problem.
+
+### C.5.1 Material Damping
+
+In real materials, part of the elastic energy of a traveling wave is converted to heat. The conversion is accompanied by a decrease in the amplitude of the wave. Viscous damping, by virtue of its math‑ ematical convenience, is often used to represent this dissipation of elastic energy. For the purposes of viscoelastic wave propagation, soils are usually modeled as Kelvin‑Voigt solids (i.e., materials whose resistance to shearing deformation is the sum of an elastic part and a viscous part). A thin element of a Kelvin‑Voigt solid can be illustrated as in Figure C.21. Appendix C
+
+FIGURE C.21 Thin element of a Kelvin‑Voigt solid subjected to horizontal shearing. Total resistance to shearing deformation is given by the sum of an elastic (spring) component and a viscous (dashpot) component.
+
+The stress‑strain relationship for a Kelvin‑Voigt solid in shear can be expressed as
+
+η ° ∂ τ = γ +
+
+### (C.89)
+
+G ∂ t where τ = σxz is the shear stress, x is the shear strain, and η is the viscosity of the mate‑ γ = ∂ ∂ / u rial. Thus the shear stress is the sum of an elastic part (proportional to strain) and a viscous part (proportional to strain rate). For a harmonic shear strain of the form
+
+γ = γ ω sin t
+
+### (C.90)
+
+the shear stress will be
+
+τ = γ ω + ωηγ ω sin cos t
+
+### (C.91)
+
+G t
+
+Together, Equations (C.90) and (C.91) show that the stress‑strain loop of a Kelvin‑Voigt solid is elliptical. The elastic energy dissipated in a single cycle is given by the area of the ellipse, or
+
++ π ω
+
+#### 2 /
+
+t ∂ γ ∫ ∆ = ° ηωγ = π
+
+### (C.92)
+
+W t dt ∂ t which indicates that the dissipated energy is proportional to the frequency of loading. Real soils, however, dissipate elastic energy hysteretically, by the slippage of grains with respect to each other. As a result, their energy dissipation characteristics are insensitive to frequency. For discrete Kelvin‑Voigt systems (Section B.6.1), the damping ratio, ξ was shown to be related to the area within the force‑displacement (or, equivalently, the stress‑strain) loop as shown in Figure C.22. Since the peak energy stored in the cycle is
+
+FIGURE C.22 Relationship between hysteresis loop and damping ratio. Appendix C
+
+= γ
+
+### (C.93)
+
+W G
+
+Then
+
+π ηω ηωγ ξ = = G
+
+### (C.94)
+
+π γ G
+
+To eliminate frequency dependence while maintaining the convenience of the viscoelastic for‑ mulation, Equation (C.94) is often rearranged to produce an equivalent viscosity that is inversely proportional to frequency. The use of this equivalent viscosity ensures that the damping ratio is independent of frequency:
+
+G η = ξ
+
+### (C.95)
+
+°
+
+A Kelvin‑Voigt solid for vertically propagating SH‑waves may be represented by a stack of infini‑ tesimal elements of the type shown schematically in Figure C.21. The one­ dimensional equation of motion for vertically propagating SH‑waves can be written as
+
+∂ = ∂ ° u xz ρ
+
+### (C.96)
+
+∂ dt z
+
+Substituting Equation (C.89) into (C.96) with τ = σxz and γ = ∂ ∂, and differentiating the right side / u z allows the wave equation to be expressed as
+
+∂ ∂ ∂ u u u ρ = + η t
+
+### (C.97)
+
+G ∂ ∂ dt dz z
+
+For harmonic waves, the displacements can be written as
+
+° = U z ei t ( , ) ( )
+
+### (C.98)
+
+u z t
+
+where U(z) is the depth-varying amplitude of a standing wave of frequency ω. Substituting this expression into the wave equation (C.97) yields the ordinary differential equation
+
+d U + ωη = − ρω ( ) U
+
+### (C.99)
+
+G i dz
+
+G d U = − ρω * U
+
+### (C.100)
+
+dz where G* = G + iωη is the complex shear modulus. The complex shear modulus is analogous to the complex stiffness described in Section B.6.3. Using Equation (C.95) to eliminate frequency depen‑ dence, the complex shear modulus can also be expressed as G* = G(l + 2iξ). This equation of motion has the solution i(ωt−k z) + Be i(ωt+k z) * * u z t = Ae ( , )
+
+### (C.101)
+
+where A and B depend on the boundary conditions, k* = ω / ρ/G * is the complex wave number, and time dependence has been added by multiplying the displacement terms by eiωt. It can be shown (after Kolsky, 1963) that k* is given by Appendix C
+
+= + * ik
+
+### (C.102)
+
+k k
+
+where ( ) ρω ξ = + + k ( ) ξ + G
+
+( ) ρω ξ = + − k ( ) ξ + G
+

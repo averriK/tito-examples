@@ -1,0 +1,14 @@
+{
+  "id": "I1",
+  "workflow": "compile-research",
+  "sessions": [
+    { "path": "../run-20251226_135543/I1.research.md" },
+    { "path": "../run-20251226_135544/I1.research.md" },
+    { "path": "../run-20251226_135545/I1.research.md" },
+    { "path": "../run-20251226_135546/I1.research.md" }
+  ],
+  "outputs": {
+    "primary": "I1.compile.research.md",
+    "biblatex": "biblatex.bib"
+  }
+}

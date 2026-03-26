@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "workflow": "research",
+  "session_id": "run-20260316_071944",
+  "structured_prompt_task_file": "/Users/averrik/Cloud/github/tools/ruflo-tito/tests/real/gmm/md/task.gmm.prompt.md",
+  "structured_prompt_spec_file": "/Users/averrik/Cloud/github/tools/ruflo-tito/tests/real/gmm/sessions/run-20260316_071944/structured_prompt_spec.json",
+  "coordination_mode": "slot-aware-session-local",
+  "single_writer_policy": "session-writer-only-final-artifact",
+  "session_writer_role": "session_writer",
+  "slot_worker_role": "slot_researcher",
+  "handoff_contract": "Slot workers may gather evidence and draft slot-local notes, but only the session writer may emit manuscript paragraphs into the manifest-defined primary output.",
+  "memory_namespace_root": "tito.gmm",
+  "memory_coordination_policy": "",
+  "memory_read_contract": "",
+  "memory_write_contract": "",
+  "progress_marker_format": "",
+  "slot_count": 8,
+  "slots": [
+    {"ordinal": 1, "title": "Definitions, notation, and equations for the GMM framework", "memory_namespace_label": "slot-01", "memory_namespace": "tito.gmm.slot-01", "writer_role": "session_writer", "worker_role": "slot_researcher"},
+    {"ordinal": 2, "title": "Definition of GMM/GMPE in the context of PSHA", "memory_namespace_label": "slot-02", "memory_namespace": "tito.gmm.slot-02", "writer_role": "session_writer", "worker_role": "slot_researcher"},
+    {"ordinal": 3, "title": "Epistemic uncertainty and ground-motion logic trees", "memory_namespace_label": "slot-03", "memory_namespace": "tito.gmm.slot-03", "writer_role": "session_writer", "worker_role": "slot_researcher"},
+    {"ordinal": 4, "title": "Active Shallow Crust (ASC) - GMPEs and logic tree", "memory_namespace_label": "slot-04", "memory_namespace": "tito.gmm.slot-04", "writer_role": "session_writer", "worker_role": "slot_researcher"},
+    {"ordinal": 5, "title": "Stable Continental Crust (SCC) - GMPEs and logic tree", "memory_namespace_label": "slot-05", "memory_namespace": "tito.gmm.slot-05", "writer_role": "session_writer", "worker_role": "slot_researcher"},
+    {"ordinal": 6, "title": "Subduction Interface (SIF) - GMPEs and logic tree", "memory_namespace_label": "slot-06", "memory_namespace": "tito.gmm.slot-06", "writer_role": "session_writer", "worker_role": "slot_researcher"},
+    {"ordinal": 7, "title": "Subduction Intraslab (SIS) - GMPEs and logic tree", "memory_namespace_label": "slot-07", "memory_namespace": "tito.gmm.slot-07", "writer_role": "session_writer", "worker_role": "slot_researcher"},
+    {"ordinal": 8, "title": "Basis for equally weighted logic tree branches", "memory_namespace_label": "slot-08", "memory_namespace": "tito.gmm.slot-08", "writer_role": "session_writer", "worker_role": "slot_researcher"}
+  ]
+}

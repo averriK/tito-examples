@@ -1,0 +1,39 @@
+{
+  "id": "srs_haiku5",
+  "workflow": "compile-research",
+  "inputs": {
+    "structured_prompt_spec": "structured_prompt_spec.json"
+  },
+  "slots": [
+    {
+      "id": "slot-01",
+      "ordinal": 1,
+      "title": "Constrained linear regression formulation of the weight calibration error minimization problem",
+      "sources": [
+        { "path": "slot_sources/slot-01.run-20260322_200018.md" },
+        { "path": "slot_sources/slot-01.run-20260322_200019.md" },
+        { "path": "slot_sources/slot-01.run-20260322_200020.md" },
+        { "path": "slot_sources/slot-01.run-20260322_200021.md" },
+        { "path": "slot_sources/slot-01.run-20260322_200022.md" }
+      ],
+      "output_path": "srs_haiku5.compile.research.slot-01.md"
+    },
+    {
+      "id": "slot-02",
+      "ordinal": 2,
+      "title": "Extension incorporating the weight normalization equality constraint",
+      "sources": [
+        { "path": "slot_sources/slot-02.run-20260322_200018.md" },
+        { "path": "slot_sources/slot-02.run-20260322_200019.md" },
+        { "path": "slot_sources/slot-02.run-20260322_200020.md" },
+        { "path": "slot_sources/slot-02.run-20260322_200021.md" },
+        { "path": "slot_sources/slot-02.run-20260322_200022.md" }
+      ],
+      "output_path": "srs_haiku5.compile.research.slot-02.md"
+    }
+  ],
+  "outputs": {
+    "primary": "srs_haiku5.compile.research.md",
+    "biblatex": "biblatex.bib"
+  }
+}

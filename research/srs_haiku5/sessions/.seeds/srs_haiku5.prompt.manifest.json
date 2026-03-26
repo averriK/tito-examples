@@ -1,0 +1,7 @@
+{
+  "id": "srs_haiku5",
+  "workflow": "prompt",
+  "outputs": {
+    "primary": "srs_haiku5.prompt.md"
+  }
+}

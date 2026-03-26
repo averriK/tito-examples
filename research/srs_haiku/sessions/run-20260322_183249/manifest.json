@@ -1,0 +1,10 @@
+{
+  "id": "srs_haiku",
+  "workflow": "compile-prompt",
+  "sessions": [
+    { "path": "../run-20260322_182734/srs_haiku.prompt.md" }
+  ],
+  "outputs": {
+    "primary": "srs_haiku.compile.prompt.md"
+  }
+}

@@ -1,0 +1,907 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tbx style="dca" xmlns:xcs="urn:iso:std:iso:30042:ed-2">
+  <text>
+    <body>
+      <!-- SOLUTIONS AND PROCESS FLUIDS -->
+      <termEntry id="T0001">
+        <langSet xml:lang="es">
+          <tig>
+            <term>solución rica</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+          <tig>
+            <term>solución embarazada</term>
+            <termNote type="administrativeStatus">forbiddenTerm</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="en">
+          <tig>
+            <term>pregnant solution</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+          <tig>
+            <term>PLS</term>
+            <termNote type="administrativeStatus">admittedTerm</termNote>
+          </tig>
+          <tig>
+            <term>Pregnant Leached Solution</term>
+            <termNote type="administrativeStatus">admittedTerm</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+
+      <termEntry id="T0002">
+        <langSet xml:lang="es">
+          <tig>
+            <term>solución barren</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+          <tig>
+            <term>solución pobre</term>
+            <termNote type="administrativeStatus">admittedTerm</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="en">
+          <tig>
+            <term>barren solution</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+
+      <termEntry id="T0003">
+        <langSet xml:lang="es">
+          <tig>
+            <term>solución cianurada</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="en">
+          <tig>
+            <term>cyanide solution</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+
+      <termEntry id="T0004">
+        <langSet xml:lang="es">
+          <tig>
+            <term>solución lixiviada</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="en">
+          <tig>
+            <term>leached solution</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+
+      <!-- INFRASTRUCTURE AND FACILITIES -->
+      <termEntry id="T0005">
+        <langSet xml:lang="es">
+          <tig>
+            <term>sistema de lixiviación en valle</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+          <tig>
+            <term>SLV</term>
+            <termNote type="administrativeStatus">admittedTerm</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="en">
+          <tig>
+            <term>valley leach system</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+
+      <termEntry id="T0006">
+        <langSet xml:lang="es">
+          <tig>
+            <term>pila de lixiviación</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="en">
+          <tig>
+            <term>heap leach pad</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+          <tig>
+            <term>leach pad</term>
+            <termNote type="administrativeStatus">admittedTerm</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+
+      <termEntry id="T0007">
+        <langSet xml:lang="es">
+          <tig>
+            <term>área de almacenamiento de solución rica</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+          <tig>
+            <term>AASR</term>
+            <termNote type="administrativeStatus">admittedTerm</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="en">
+          <tig>
+            <term>pregnant solution storage area</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+
+      <termEntry id="T0008">
+        <langSet xml:lang="es">
+          <tig>
+            <term>pileta de contingencias</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="en">
+          <tig>
+            <term>contingency pond</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+
+      <termEntry id="T0009">
+        <langSet xml:lang="es">
+          <tig>
+            <term>sentina</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="en">
+          <tig>
+            <term>sump</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+
+      <termEntry id="T0010">
+        <langSet xml:lang="es">
+          <tig>
+            <term>dropbox</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+          <tig>
+            <term>cámara colectora</term>
+            <termNote type="administrativeStatus">admittedTerm</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="en">
+          <tig>
+            <term>dropbox</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+
+      <termEntry id="T0011">
+        <langSet xml:lang="es">
+          <tig>
+            <term>canal portatuberías</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="en">
+          <tig>
+            <term>pipe corridor</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+
+      <!-- PROCESS OPERATIONS -->
+      <termEntry id="T0012">
+        <langSet xml:lang="es">
+          <tig>
+            <term>lixiviación</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="en">
+          <tig>
+            <term>leaching</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+
+      <termEntry id="T0013">
+        <langSet xml:lang="es">
+          <tig>
+            <term>lixiviación en pilas</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="en">
+          <tig>
+            <term>heap leaching</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+          <tig>
+            <term>heap leach</term>
+            <termNote type="administrativeStatus">admittedTerm</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+
+      <termEntry id="T0014">
+        <langSet xml:lang="es">
+          <tig>
+            <term>riego</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="en">
+          <tig>
+            <term>irrigation</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+
+      <termEntry id="T0015">
+        <langSet xml:lang="es">
+          <tig>
+            <term>apilamiento</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="en">
+          <tig>
+            <term>stacking</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+
+      <termEntry id="T0016">
+        <langSet xml:lang="es">
+          <tig>
+            <term>rebombeo</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+          <tig>
+            <term>reimpulsión</term>
+            <termNote type="administrativeStatus">admittedTerm</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="en">
+          <tig>
+            <term>repumping</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+          <tig>
+            <term>booster pumping</term>
+            <termNote type="administrativeStatus">admittedTerm</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+
+      <termEntry id="T0017">
+        <langSet xml:lang="es">
+          <tig>
+            <term>colección de solución</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="en">
+          <tig>
+            <term>solution collection</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+
+      <termEntry id="T0018">
+        <langSet xml:lang="es">
+          <tig>
+            <term>recirculación</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="en">
+          <tig>
+            <term>recirculation</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+
+      <!-- EQUIPMENT AND SYSTEMS -->
+      <termEntry id="T0019">
+        <langSet xml:lang="es">
+          <tig>
+            <term>sistema de colección de solución rica</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+          <tig>
+            <term>SCSR</term>
+            <termNote type="administrativeStatus">admittedTerm</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="en">
+          <tig>
+            <term>pregnant solution collection system</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+
+      <termEntry id="T0020">
+        <langSet xml:lang="es">
+          <tig>
+            <term>sistema de recolección y recuperación de filtraciones</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+          <tig>
+            <term>SRRF</term>
+            <termNote type="administrativeStatus">admittedTerm</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="en">
+          <tig>
+            <term>leak collection and recovery system</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+          <tig>
+            <term>LCRS</term>
+            <termNote type="administrativeStatus">admittedTerm</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+
+      <termEntry id="T0021">
+        <langSet xml:lang="es">
+          <tig>
+            <term>sistema de subdrenaje</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="en">
+          <tig>
+            <term>underdrainage system</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+
+      <termEntry id="T0022">
+        <langSet xml:lang="es">
+          <tig>
+            <term>bomba de turbina vertical</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="en">
+          <tig>
+            <term>vertical turbine pump</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+
+      <termEntry id="T0023">
+        <langSet xml:lang="es">
+          <tig>
+            <term>estación de rebombeo</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="en">
+          <tig>
+            <term>booster station</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+          <tig>
+            <term>pumping station</term>
+            <termNote type="administrativeStatus">admittedTerm</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+
+      <!-- MATERIALS AND LINERS -->
+      <termEntry id="T0024">
+        <langSet xml:lang="es">
+          <tig>
+            <term>geomembrana</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="en">
+          <tig>
+            <term>geomembrane</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+
+      <termEntry id="T0025">
+        <langSet xml:lang="es">
+          <tig>
+            <term>polietileno de alta densidad</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+          <tig>
+            <term>PEAD</term>
+            <termNote type="administrativeStatus">admittedTerm</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="en">
+          <tig>
+            <term>high-density polyethylene</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+          <tig>
+            <term>HDPE</term>
+            <termNote type="administrativeStatus">admittedTerm</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+
+      <termEntry id="T0026">
+        <langSet xml:lang="es">
+          <tig>
+            <term>polietileno de baja densidad</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+          <tig>
+            <term>PEBD</term>
+            <termNote type="administrativeStatus">admittedTerm</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="en">
+          <tig>
+            <term>low-density polyethylene</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+          <tig>
+            <term>LDPE</term>
+            <termNote type="administrativeStatus">admittedTerm</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+
+      <termEntry id="T0027">
+        <langSet xml:lang="es">
+          <tig>
+            <term>polietileno de baja densidad lineal</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+          <tig>
+            <term>LLDPE</term>
+            <termNote type="administrativeStatus">admittedTerm</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="en">
+          <tig>
+            <term>linear low-density polyethylene</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+          <tig>
+            <term>LLDPE</term>
+            <termNote type="administrativeStatus">admittedTerm</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+
+      <termEntry id="T0028">
+        <langSet xml:lang="es">
+          <tig>
+            <term>geotextil</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="en">
+          <tig>
+            <term>geotextile</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+
+      <termEntry id="T0029">
+        <langSet xml:lang="es">
+          <tig>
+            <term>geocompuesto</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="en">
+          <tig>
+            <term>geocomposite</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+
+      <termEntry id="T0030">
+        <langSet xml:lang="es">
+          <tig>
+            <term>sistema de revestimiento</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="en">
+          <tig>
+            <term>liner system</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+
+      <!-- MONITORING AND INSTRUMENTATION -->
+      <termEntry id="T0031">
+        <langSet xml:lang="es">
+          <tig>
+            <term>caudalímetro</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="en">
+          <tig>
+            <term>flowmeter</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+
+      <termEntry id="T0032">
+        <langSet xml:lang="es">
+          <tig>
+            <term>piezómetro</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="en">
+          <tig>
+            <term>piezometer</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+
+      <termEntry id="T0033">
+        <langSet xml:lang="es">
+          <tig>
+            <term>medidor de nivel</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="en">
+          <tig>
+            <term>level sensor</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+
+      <!-- HYDRAULIC STRUCTURES -->
+      <termEntry id="T0034">
+        <langSet xml:lang="es">
+          <tig>
+            <term>tubería ranurada</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="en">
+          <tig>
+            <term>slotted pipe</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+          <tig>
+            <term>perforated pipe</term>
+            <termNote type="administrativeStatus">admittedTerm</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+
+      <termEntry id="T0035">
+        <langSet xml:lang="es">
+          <tig>
+            <term>tubería de venteo</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+          <tig>
+            <term>tubería de aireación</term>
+            <termNote type="administrativeStatus">admittedTerm</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="en">
+          <tig>
+            <term>vent pipe</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+
+      <termEntry id="T0036">
+        <langSet xml:lang="es">
+          <tig>
+            <term>canal de contingencia</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="en">
+          <tig>
+            <term>contingency channel</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+
+      <termEntry id="T0037">
+        <langSet xml:lang="es">
+          <tig>
+            <term>válvula mariposa</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="en">
+          <tig>
+            <term>butterfly valve</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+
+      <termEntry id="T0038">
+        <langSet xml:lang="es">
+          <tig>
+            <term>vertedero</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="en">
+          <tig>
+            <term>spillway</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+
+      <!-- WATER MANAGEMENT -->
+      <termEntry id="T0039">
+        <langSet xml:lang="es">
+          <tig>
+            <term>aguas contactadas</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="en">
+          <tig>
+            <term>contact water</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+
+      <termEntry id="T0040">
+        <langSet xml:lang="es">
+          <tig>
+            <term>aguas superficiales</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="en">
+          <tig>
+            <term>surface water</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+
+      <termEntry id="T0041">
+        <langSet xml:lang="es">
+          <tig>
+            <term>filtración</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+          <tig>
+            <term>fuga</term>
+            <termNote type="administrativeStatus">admittedTerm</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="en">
+          <tig>
+            <term>seepage</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+          <tig>
+            <term>leak</term>
+            <termNote type="administrativeStatus">admittedTerm</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+
+      <termEntry id="T0042">
+        <langSet xml:lang="es">
+          <tig>
+            <term>infiltración</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="en">
+          <tig>
+            <term>infiltration</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+
+      <termEntry id="T0043">
+        <langSet xml:lang="es">
+          <tig>
+            <term>crecida máxima probable</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+          <tig>
+            <term>CMP</term>
+            <termNote type="administrativeStatus">admittedTerm</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="en">
+          <tig>
+            <term>probable maximum flood</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+          <tig>
+            <term>PMF</term>
+            <termNote type="administrativeStatus">admittedTerm</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+
+      <termEntry id="T0044">
+        <langSet xml:lang="es">
+          <tig>
+            <term>precipitación máxima probable</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+          <tig>
+            <term>PMP</term>
+            <termNote type="administrativeStatus">admittedTerm</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="en">
+          <tig>
+            <term>probable maximum precipitation</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+          <tig>
+            <term>PMP</term>
+            <termNote type="administrativeStatus">admittedTerm</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+
+      <!-- DESIGN AND ENGINEERING -->
+      <termEntry id="T0045">
+        <langSet xml:lang="es">
+          <tig>
+            <term>factor de seguridad</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+          <tig>
+            <term>FS</term>
+            <termNote type="administrativeStatus">admittedTerm</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="en">
+          <tig>
+            <term>factor of safety</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+          <tig>
+            <term>safety factor</term>
+            <termNote type="administrativeStatus">admittedTerm</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+
+      <termEntry id="T0046">
+        <langSet xml:lang="es">
+          <tig>
+            <term>ingeniero de registro</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+          <tig>
+            <term>EoR</term>
+            <termNote type="administrativeStatus">admittedTerm</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="en">
+          <tig>
+            <term>engineer of record</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+          <tig>
+            <term>EOR</term>
+            <termNote type="administrativeStatus">admittedTerm</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+
+      <termEntry id="T0047">
+        <langSet xml:lang="es">
+          <tig>
+            <term>relación de dimensiones estándar</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+          <tig>
+            <term>SDR</term>
+            <termNote type="administrativeStatus">admittedTerm</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="en">
+          <tig>
+            <term>standard dimension ratio</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+          <tig>
+            <term>SDR</term>
+            <termNote type="administrativeStatus">admittedTerm</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+
+      <!-- OPERATIONAL TERMS -->
+      <termEntry id="T0048">
+        <langSet xml:lang="es">
+          <tig>
+            <term>celda de riego</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="en">
+          <tig>
+            <term>irrigation cell</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+
+      <termEntry id="T0049">
+        <langSet xml:lang="es">
+          <tig>
+            <term>tasa de riego</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="en">
+          <tig>
+            <term>irrigation rate</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+
+      <termEntry id="T0050">
+        <langSet xml:lang="es">
+          <tig>
+            <term>caudal nominal</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+        </langSet>
+        <langSet xml:lang="en">
+          <tig>
+            <term>nominal flow rate</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+
+    </body>
+  </text>
+</tbx>

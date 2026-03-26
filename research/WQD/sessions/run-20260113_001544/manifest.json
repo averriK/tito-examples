@@ -1,0 +1,13 @@
+{
+  "id": "T3",
+  "workflow": "compile-research",
+  "sessions": [
+    { "path": "../run-20260112_231849/T3.research.md" },
+    { "path": "../run-20260112_231850/T3.research.md" },
+    { "path": "../run-20260112_231852/T3.research.md" }
+  ],
+  "outputs": {
+    "primary": "T3.compile.research.md",
+    "biblatex": "biblatex.bib"
+  }
+}

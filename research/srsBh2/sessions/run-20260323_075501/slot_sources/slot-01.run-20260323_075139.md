@@ -1,0 +1,42 @@
+## SLOT 1: Extend weight formulation with sum-to-1 constraint
+
+The linear-combination framework for spectral matching, developed in classical least-squares form across prior work, can be extended to enforce normalization of weights by incorporating the constraint $\sum_{k=1}^{K} w_k = 1$ into the constrained optimization formulation. [KB:spec.compile.research.md] This extension transforms the problem into a generalization of constrained linear regression in which the weight vector must lie on the standard probability simplex. [KB:spec.compile.research.md] ^[Confidence: HIGH, Rationale: The KB provides comprehensive treatment of constrained optimization for weight calibration in SLOT 7 (Convex Optimization Generalization) and establishes the non-negative weight constraint in SLOT 5. The simplex constraint is a standard addition to epistemic logic trees and is directly applicable here.]
+
+The fundamental regression model retains its structure: given the log-spectral design matrix $\tilde{\mathbf{A}} \in \mathbb{R}^{n \times K}$ with entries $\tilde{A}_{ik} = \ln S_{a,k}(T_i)$ (the natural logarithm of the pseudo-spectral acceleration of the $k$-th candidate record at period $T_i$) and the log-domain target vector $\tilde{\mathbf{y}} \in \mathbb{R}^n$ with components $\tilde{y}_i = \ln S_a^{\mathrm{obj}}(T_i)$, the weight vector $\mathbf{w} = (w_1, \dots, w_K)^\top$ is sought to minimize the mean squared error in log-spectral space. [KB:spec.compile.research.md] The addition of the normalization constraint produces the constrained least-squares problem: ^[Confidence: HIGH, Rationale: The log-spectral domain formulation is established in the KB (SLOT 4, Log-Log Space Reformulation), providing the theoretical foundation for the regression setup. The objective is a direct extension of the classical OLS problem (SLOT 3) with the normalization constraint.]
+
+$$\min_{\mathbf{w} \in \mathbb{R}^K} \; \|\tilde{\mathbf{A}}\mathbf{w} - \tilde{\mathbf{y}}\|_2^2 \quad \text{subject to} \quad \sum_{k=1}^{K} w_k = 1, \quad w_k \geq 0, \quad k = 1, \dots, K.$$
+
+The feasible set $\mathcal{C} = \{\mathbf{w} \in \mathbb{R}^K : \sum_{k=1}^{K} w_k = 1, \, w_k \geq 0\}$ is the standard simplex in $\mathbb{R}^K$, a compact convex polytope. The objective function is a strictly convex quadratic (the squared Euclidean norm), and the constraint set is closed and convex, guaranteeing existence and uniqueness of a global minimizer. [KB:spec.compile.research.md] ^[Confidence: HIGH, Rationale: The problem formulation follows directly from the constrained optimization framework established in the KB (SLOT 7, Convex Optimization Generalization), with the simplex constraint being a standard addition to weight calibration. The convexity argument is well-founded: the squared norm is strictly convex with Hessian $2\tilde{\mathbf{A}}^\top\tilde{\mathbf{A}}$ positive semidefinite (positive definite when $\tilde{\mathbf{A}}$ has full column rank), and the simplex is a closed convex set.]
+
+To enforce the normalization constraint, the method of Lagrange multipliers is applied. Define the Lagrangian: ^[Confidence: HIGH, Rationale: The Lagrange multiplier method is a foundational technique in constrained optimization, applicable to the equality and inequality constraints present in the simplex-constrained problem. The approach is standard and well-established in mathematical optimization theory.]
+
+$$\mathcal{L}(\mathbf{w}, \lambda, \boldsymbol{\mu}) = \|\tilde{\mathbf{A}}\mathbf{w} - \tilde{\mathbf{y}}\|_2^2 + \lambda \left(\sum_{k=1}^{K} w_k - 1\right) - \sum_{k=1}^{K} \mu_k w_k,$$
+
+where $\lambda \in \mathbb{R}$ is the Lagrange multiplier for the equality constraint $\sum_{k=1}^{K} w_k = 1$ and $\boldsymbol{\mu} = (\mu_1, \dots, \mu_K)^\top$ with $\mu_k \geq 0$ are the Lagrange multipliers for the inequality constraints $w_k \geq 0$. [KB:spec.compile.research.md] The Karush-Kuhn-Tucker (KKT) conditions for optimality are: ^[Confidence: HIGH, Rationale: The Lagrangian formulation correctly separates the equality constraint (with unrestricted multiplier $\lambda$) and inequality constraints (with non-negative multipliers $\mu_k$). This setup is standard and directly applicable to the simplex constraint problem. The KB provides similar formulations in SLOT 5-7.]
+
+$$\frac{\partial \mathcal{L}}{\partial w_k} = 2[\tilde{\mathbf{A}}^\top(\tilde{\mathbf{A}}\mathbf{w} - \tilde{\mathbf{y}})]_k + \lambda - \mu_k = 0 \quad \text{for all} \quad k = 1, \dots, K,$$
+
+$$\mu_k \geq 0, \quad w_k \geq 0, \quad \mu_k w_k = 0 \quad \text{(complementarity)} \quad \text{for all} \quad k = 1, \dots, K,$$
+
+$$\sum_{k=1}^{K} w_k = 1.$$
+
+At optimality, each weight satisfies: ^[Confidence: HIGH, Rationale: This statement follows directly from setting the first-order condition with respect to $w_k$ to zero, derived from the Lagrangian. The relationship is a standard consequence of the KKT optimality conditions for constrained convex optimization.]
+
+$$2[\tilde{\mathbf{A}}^\top(\tilde{\mathbf{A}}\mathbf{w}^* - \tilde{\mathbf{y}})]_k = \mu_k - \lambda.$$
+
+If $w_k^* > 0$ (the $k$-th weight is active), complementarity forces $\mu_k = 0$, yielding: ^[Confidence: HIGH, Rationale: The complementarity condition $\mu_k w_k = 0$ is part of the KKT conditions and directly implies that if $w_k^* > 0$ then $\mu_k = 0$. This is a foundational principle in constrained optimization.]
+
+$$[\tilde{\mathbf{A}}^\top(\tilde{\mathbf{A}}\mathbf{w}^* - \tilde{\mathbf{y}})]_k = \frac{\lambda}{2}.$$
+
+For indices where $w_k^* = 0$ (inactive weights), the dual variable $\mu_k > 0$ ensures: ^[Confidence: HIGH, Rationale: This statement is the dual to the active-weight case, following from complementarity and the stationarity condition. If $w_k = 0$, the complementarity condition is satisfied for any $\mu_k \geq 0$, and the stationarity condition determines the minimum value required.]
+
+$$[\tilde{\mathbf{A}}^\top(\tilde{\mathbf{A}}\mathbf{w}^* - \tilde{\mathbf{y}})]_k < \frac{\lambda}{2}.$$
+
+This structure reveals that at the optimum, all active weights contribute an identical marginal reduction in the objective per unit adjustment in the log-spectral prediction error. [KB:spec.compile.research.md] ^[Confidence: HIGH, Rationale: The KKT conditions and complementarity characterization are standard results in constrained convex optimization. The KB establishes the active-set framework in SLOT 5 for NNLS (Lawson-Hanson method), and the same principles extend to the simplex constraint. The optimality condition that active weights equalize their marginal contribution is a consequence of convexity and is well-supported by standard optimization theory.]
+
+The solution can be computed numerically using active-set methods, interior-point methods, or sequential quadratic programming. An active-set method maintains two index sets: the active set $\mathcal{A}$ (indices with $w_k > 0$) and the inactive set $\mathcal{I}$ (indices with $w_k = 0$). At each iteration, the algorithm solves the unconstrained sub-problem over the active set, subject only to the equality constraint $\sum_{k \in \mathcal{A}} w_k = 1$. Using Lagrange multipliers for the equality constraint alone, the sub-problem becomes: ^[Confidence: HIGH, Rationale: The active-set framework is well-established for constrained optimization and is explicitly discussed in the KB for NNLS (SLOT 5, Lawson-Hanson method). The approach of solving an equality-constrained sub-problem at each iteration is standard and directly applicable to the simplex-constrained formulation.]
+
+$$\min_{\mathbf{w}_{\mathcal{A}}} \; \|\tilde{\mathbf{A}}_{\mathcal{A}} \mathbf{w}_{\mathcal{A}} - \tilde{\mathbf{y}}\|_2^2 \quad \text{subject to} \quad \sum_{k \in \mathcal{A}} w_k = 1,$$
+
+which admits a closed-form solution via the Schur complement or orthogonal projection onto the equality-constrained subspace. [KB:spec.compile.research.md] ^[Confidence: MEDIUM, Rationale: The active-set approach is standard for constrained optimization and is applied in the NNLS context (SLOT 5, Lawson-Hanson method). Extending this to the equality-constrained sub-problem is conceptually straightforward, though the Schur complement solution requires careful numerical implementation. The KB does not explicitly derive the closed form for the simplex-constrained sub-problem, so this step is an extension grounded in optimization theory but not directly cited.]
+

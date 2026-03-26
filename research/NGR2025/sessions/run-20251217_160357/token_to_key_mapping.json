@@ -1,0 +1,26 @@
+{
+  "mappings": {
+    "[KB:Mmax.research.compile.1.md]": "@SRC2025",
+    "[KB:Mmax.research.compile.2.md]": "@SouthDeep2025",
+    "[WEB:https://www.researchgate.net/publication/281460177_Paleoseismicity_of_Two_Historically_Quiescent_Faults_in_Australia_Implications_for_Fault_Behavior_in_Stable_Continental_Regions]": "@Clark2015"
+  },
+  "paragraphs": [
+    {
+      "section": "## Evidence of Reitfontein Fault activity in the last 35,000 years",
+      "text": "No geological or geomorphological evidence exists to demonstrate neotectonic activity on the Reitfontein Fault within the last 35,000 years [@SouthDeep2025]. Active faults are conventionally defined as structures known to have produced historical earthquakes or shown evidence of movement in the last 35,000 years [@SRC2025]. The Reitfontein Fault is at least 2.0 Ga old and has accommodated both normal and oblique reverse movement in the geological past, but the fault has only been associated with minor present-day seismic activity according to Singh et al. (2009) [@SouthDeep2025]. The current crustal stress regime in South Africa was established sometime in the last 40 to 11 million years [@SRC2025]. The characterization as a reportedly active fault with an assigned slip rate of 1 m/Myr represents a conservative engineering assumption rather than empirical evidence of neotectonic displacement [@SouthDeep2025]. In stable continental regions like South Africa, faults may exhibit episodic behavior with recurrence intervals of thousands to hundreds of thousands of years between ground-rupturing events [@SRC2025; @Clark2015].",
+      "citations": [
+        "@SouthDeep2025",
+        "@SRC2025",
+        "@Clark2015"
+      ]
+    },
+    {
+      "section": "## Fault activity classification",
+      "text": "Based on all findings, the Reitfontein Fault is best classified as a paleoseismic fault with minor present-day activity rather than a neotectonic structure. A neotectonic fault is defined as one that has hosted displacement under conditions imposed by the current crustal stress regime and therefore may move again in the future, with active faults conventionally defined as structures known to have produced historical earthquakes or shown evidence of movement in the last 35,000 years [@SouthDeep2025; @SRC2025]. The Reitfontein Fault does not meet these criteria, as there is no known geological or geomorphological evidence to suggest neotectonic activity on this structure [@SouthDeep2025]. The fault is at least 2.0 Ga old and has accommodated both normal and oblique reverse movement in the geological past, but the characterization as a reportedly active fault with an assigned slip rate of 1 m/Myr represents a conservative engineering assumption rather than empirical evidence [@SouthDeep2025]. The minor present-day seismic activity associated with the fault according to Singh et al. (2009) likely represents stress perturbations from mining operations or minor reactivation events rather than evidence of capability for large-magnitude rupture [@SRC2025]. In stable continental regions, faults may exhibit episodic behavior with recurrence intervals of thousands to hundreds of thousands of years between ground-rupturing events, and the 150-year instrumental record captures only a small fraction of possible events in regions with such long recurrence intervals [@SRC2025]. Paleoseismic evidence from stable continental regions globally indicates that prehistoric earthquakes may have greatly exceeded maximum observed instrumental magnitudes, with studies identifying normal fault scarps interpreted as having failed in large ($M_w > 7$) earthquakes [@SRC2025]. The Reitfontein Fault therefore represents a structure with paleoseismic potential that cannot be conclusively demonstrated as inactive under the current stress regime, justifying its inclusion in PSHA studies with conservative assumptions appropriate for safety-critical infrastructure, while recognizing that empirical evidence of Holocene activity is absent [@SouthDeep2025; @SRC2025].",
+      "citations": [
+        "@SouthDeep2025",
+        "@SRC2025"
+      ]
+    }
+  ]
+}

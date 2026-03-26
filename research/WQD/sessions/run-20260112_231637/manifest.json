@@ -1,0 +1,12 @@
+{
+  "id": "T3",
+  "workflow": "compile-prompt",
+  "sessions": [
+    { "path": "../run-20260112_231431/T3.prompt.md" },
+    { "path": "../run-20260112_231433/T3.prompt.md" },
+    { "path": "../run-20260112_231434/T3.prompt.md" }
+  ],
+  "outputs": {
+    "primary": "T3.compile.prompt.md"
+  }
+}

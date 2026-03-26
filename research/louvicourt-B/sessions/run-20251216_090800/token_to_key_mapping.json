@@ -1,0 +1,77 @@
+{
+  "mappings": {
+    "[KB:output.md]": "LouvicourtPSHA2024"
+  },
+  "metadata": {
+    "[KB:output.md]": {
+      "key": "LouvicourtPSHA2024",
+      "type": "kb",
+      "source": "output.md",
+      "title": "Probabilistic Seismic Hazard Assessment for Louvicourt Tailings Storage Facility",
+      "author": "Technical Report",
+      "year": "2024",
+      "description": "PSHA report analyzing seismic hazard for the Louvicourt TSF site using CanadaSHM6 source model, NGA-East ground motion models, and site-specific conditions with Vs30 of 1,853 m/s. Includes hazard calculations for multiple return periods (1/2,475, 1/5,000, 1/10,000 years), disaggregation analysis, ground motion selection, and comparison with 2020 NBCC values.",
+      "location": "Southeastern Canada (48.135°N, 77.595°W)",
+      "software": "OpenQuake 3.16.3",
+      "key_topics": [
+        "CanadaSHM6 seismic source model",
+        "NGA-East ground motion models",
+        "Site-specific PSHA",
+        "Ground motion selection",
+        "PEER NGA-West2 database",
+        "Spectral matching",
+        "Secondary intensity measures",
+        "NBCC comparison"
+      ]
+    }
+  },
+  "summary": {
+    "total_unique_tokens": 1,
+    "kb_tokens": 1,
+    "web_tokens": 0,
+    "doi_tokens": 0,
+    "arxiv_tokens": 0,
+    "zotero_tokens": 0,
+    "total_occurrences": 9,
+    "tokens_by_section": {
+      "selected_paragraphs": 5,
+      "rejected_paragraphs": 4
+    }
+  },
+  "citation_statistics": {
+    "paragraphs_with_citations": 9,
+    "average_citations_per_paragraph": 1.0,
+    "citation_distribution": {
+      "[KB:output.md]": {
+        "occurrences": 9,
+        "sections": [
+          "SLOT 1: Identify point sources for Louvicourt site in CanadaSHM6",
+          "SLOT 2: Determine maximum magnitude (Mmax) for source zone",
+          "SLOT 3: Determine PGA range for 1/10,000 year return period",
+          "SLOT 4: Compare PGA values with NBCC Canada",
+          "SLOT 5: Summarize spectral matching methodologies",
+          "SLOT 6: Investigate PEER NGA spectral matching methodology",
+          "SLOT 7: Verify magnitude ranges for rare event selection",
+          "SLOT 8: Explain spectral matching drift at short periods",
+          "SLOT 9: Validate recommendation to relax magnitude constraints"
+        ]
+      }
+    }
+  },
+  "validation": {
+    "all_keys_unique": true,
+    "all_keys_match_pattern": true,
+    "pattern": "^[A-Za-z][A-Za-z0-9]{2,64}$",
+    "keys_list": [
+      "LouvicourtPSHA2024"
+    ]
+  },
+  "notes": [
+    "All citations in the verification_output.json reference the same knowledge base source: output.md",
+    "The citation key 'LouvicourtPSHA2024' was derived from the project name (Louvicourt), document type (PSHA), and inferred year (2024)",
+    "The source document is a comprehensive PSHA technical report for the Louvicourt Tailings Storage Facility site",
+    "The document uses CanadaSHM6 seismic source model and NGA-East ground motion models",
+    "Citations appear in both selected (5) and rejected (4) paragraphs across all 9 slots",
+    "All citations reference the same source, so only one BibLaTeX entry will be required in Step 3"
+  ]
+}

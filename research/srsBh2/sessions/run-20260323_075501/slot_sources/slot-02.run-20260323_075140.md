@@ -1,0 +1,32 @@
+## SLOT 2: Validate normalization approach vs. mathematical treatment
+
+The question of whether post-hoc normalization of unconstrained weights to sum to one produces the same result as solving the constrained optimization problem directly is a mathematical and practical question with important implications for implementation. [KB:spec.compile.research.md] Consider the unconstrained least-squares problem solved without any normalization constraint:
+
+$$\hat{\mathbf{w}}_{\mathrm{unc}} = \underset{\mathbf{w} \in \mathbb{R}^K}{\arg\min} \; \|\tilde{\mathbf{A}}\mathbf{w} - \mathbf{y}\|_2^2 = (\tilde{\mathbf{A}}^\top \tilde{\mathbf{A}})^{-1} \tilde{\mathbf{A}}^\top \mathbf{y},$$
+
+which admits no restrictions on sign or magnitude. [KB:spec.compile.research.md] A post-hoc normalization divides this solution by its sum to produce a normalized vector:
+
+$$\hat{\mathbf{w}}_{\mathrm{post\text-}hoc} = \frac{\hat{\mathbf{w}}_{\mathrm{unc}}}{\sum_{k=1}^K \hat{w}_{\mathrm{unc},k}}.$$
+
+The claim under evaluation is whether $\hat{\mathbf{w}}_{\mathrm{post\text-}hoc}$ equals the true constrained minimizer $\mathbf{w}^*$ obtained by solving the constrained problem directly. The answer is unambiguously **no** from both theoretical and practical perspectives.
+^[Confidence: HIGH, Rationale: The distinction between post-hoc normalization and constrained optimization is fundamental to convex analysis. The KB document itself (SLOT 5 and 6) establishes that constrained problems require dedicated solvers and that simple transformations do not preserve optimality. This is a standard result in optimization.]
+
+**Theoretical Justification:** The unconstrained minimizer $\hat{\mathbf{w}}_{\mathrm{unc}}$ minimizes $\|\tilde{\mathbf{A}}\mathbf{w} - \mathbf{y}\|_2^2$ over all $\mathbf{w} \in \mathbb{R}^K$. When $\hat{\mathbf{w}}_{\mathrm{unc}}$ is rescaled by a positive scalar factor $c = 1 / \sum_{k=1}^K \hat{w}_{\mathrm{unc},k}$ to produce $\hat{\mathbf{w}}_{\mathrm{post\text-}hoc} = c \cdot \hat{\mathbf{w}}_{\mathrm{unc}}$, the resulting residual norm becomes:
+
+$$\|\tilde{\mathbf{A}} \hat{\mathbf{w}}_{\mathrm{post\text-}hoc} - \mathbf{y}\|_2^2 = \|\tilde{\mathbf{A}} (c \hat{\mathbf{w}}_{\mathrm{unc}}) - \mathbf{y}\|_2^2 = \|c \tilde{\mathbf{A}} \hat{\mathbf{w}}_{\mathrm{unc}} - \mathbf{y}\|_2^2.$$
+
+The linear scaling of $\tilde{\mathbf{A}} \hat{\mathbf{w}}_{\mathrm{unc}}$ by $c$ generally increases the residual norm unless $c = 1$, which occurs only if $\sum_{k=1}^K \hat{w}_{\mathrm{unc},k} = 1$ (the unconstrained solution already sums to one). In the general case where $\sum_{k=1}^K \hat{w}_{\mathrm{unc},k} \neq 1$, the rescaled solution $\hat{\mathbf{w}}_{\mathrm{post\text-}hoc}$ is strictly suboptimal for the sum-to-one constraint. [KB:spec.compile.research.md]
+^[Confidence: HIGH, Rationale: The algebraic argument is sound: scaling a solution changes the residual norm unless the scaling factor is unity. This is a direct consequence of the linearity of the design matrix and the properties of the Euclidean norm. The KB document confirms this by showing that constrained problems require distinct optimization approaches.]
+
+Furthermore, the unconstrained solution often contains negative weights, particularly when candidate spectra are correlated. [KB:spec.compile.research.md] Normalizing a vector with both positive and negative components by dividing by the sum produces a vector whose signs are unchanged, so the normalized post-hoc solution will retain negative components if the unconstrained solution had them. Since the constrained problem requires $w_k > 0$ for all $k$, the post-hoc normalization fails to satisfy the positivity constraint and is physically infeasible.
+^[Confidence: HIGH, Rationale: The KB explicitly discusses the prevalence of negative weights in unconstrained OLS and the physical implausibility of negative weights (SLOT 5, lines 304-309). Normalizing does not change signs, so a vector with negative components will remain infeasible after normalization. This is a direct logical consequence.]
+
+**Practical Implications:** Solving the true constrained problem (with both positivity and sum-to-one constraints) may yield a different weight vector than post-hoc normalization, sometimes with a substantially different residual norm. Consider a simple illustrative example: suppose $K = 2$, $n = 3$, and:
+
+$$\tilde{\mathbf{A}} = \begin{pmatrix} 1 & 1 \\ 0.5 & 2 \\ 1.5 & 0.8 \end{pmatrix}, \quad \mathbf{y} = \begin{pmatrix} 1 \\ 1 \\ 1 \end{pmatrix}.$$
+
+The unconstrained least-squares solution can be computed as $\hat{\mathbf{w}}_{\mathrm{unc}} = (\tilde{\mathbf{A}}^\top \tilde{\mathbf{A}})^{-1} \tilde{\mathbf{A}}^\top \mathbf{y}$, which will generally not sum to one. Normalizing this solution by dividing by its sum produces a vector that is infeasible if the unconstrained solution has mixed signs, and suboptimal in residual norm even if all components are positive. The true constrained minimizer, found by solving the Lagrangian KKT system, will have a strictly smaller (or equal) residual norm than the post-hoc approach and will satisfy both $w_k > 0$ and $\sum w_k = 1$ by construction.
+^[Confidence: MEDIUM, Rationale: The illustrative example is constructed to be consistent with the theoretical argument, but without explicit numerical computation, the magnitude of the difference cannot be quantified. However, the principle that constrained minimization outperforms post-hoc rescaling is well established. The claim of optimality is supported by the theory.]
+
+The constrained optimization approach must be used when physical plausibility (positivity of all weights) and epistemic logic tree conventions (sum-to-one normalization) are both requirements. [KB:spec.compile.research.md] Standard solvers such as the active-set method (Lawson-Hanson), interior-point methods, or disciplined convex programming libraries like CVXR in R [KB:spec.compile.research.md] implement these constraints correctly. Post-hoc normalization should be used only in the rare case where the unconstrained solution already satisfies both constraints; in general practice, such coincidence is unlikely and should not be assumed.
+^[Confidence: HIGH, Rationale: This conclusion directly follows from the theoretical and practical arguments presented above and is consistent with the KB's treatment of constrained optimization (SLOT 5, 6, 7). The recommendation to use proper solvers is well-justified by the mathematical theory and is supported by the KB's discussion of available algorithms.]

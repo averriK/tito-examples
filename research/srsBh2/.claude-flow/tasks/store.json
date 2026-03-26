@@ -1,0 +1,181 @@
+{
+  "tasks": {
+    "task-1774263063635-ptjg1b": {
+      "taskId": "task-1774263063635-ptjg1b",
+      "type": "feature",
+      "description": "TITO workflow session-prompt (profile=prompt, executor=claude, run_id=srsBh2, session=run-20260323_075103)",
+      "priority": "normal",
+      "status": "completed",
+      "progress": 100,
+      "assignedTo": [
+        "agent-1774263063631-qedd9j"
+      ],
+      "tags": [
+        "session-prompt",
+        "prompt"
+      ],
+      "createdAt": "2026-03-23T10:51:03.635Z",
+      "startedAt": null,
+      "completedAt": "2026-03-23T10:51:37.185Z",
+      "result": {
+        "success": true,
+        "summary": "Workflow session-prompt completed: srsBh2.prompt.md"
+      }
+    },
+    "task-1774263098571-nhlnml": {
+      "taskId": "task-1774263098571-nhlnml",
+      "type": "research",
+      "description": "TITO workflow research (profile=research, executor=claude, run_id=srsBh2, session=run-20260323_075138)",
+      "priority": "normal",
+      "status": "completed",
+      "progress": 100,
+      "assignedTo": [
+        "agent-1774263098570-jbqacc"
+      ],
+      "tags": [
+        "research",
+        "research"
+      ],
+      "createdAt": "2026-03-23T10:51:38.571Z",
+      "startedAt": null,
+      "completedAt": "2026-03-23T10:53:18.011Z",
+      "result": {
+        "success": true,
+        "summary": "Workflow research completed: srsBh2.research.md"
+      }
+    },
+    "task-1774263099622-w2gend": {
+      "taskId": "task-1774263099622-w2gend",
+      "type": "research",
+      "description": "TITO workflow research (profile=research, executor=claude, run_id=srsBh2, session=run-20260323_075139)",
+      "priority": "normal",
+      "status": "completed",
+      "progress": 100,
+      "assignedTo": [
+        "agent-1774263099621-ou5j15"
+      ],
+      "tags": [
+        "research",
+        "research"
+      ],
+      "createdAt": "2026-03-23T10:51:39.622Z",
+      "startedAt": null,
+      "completedAt": "2026-03-23T10:55:01.135Z",
+      "result": {
+        "success": true,
+        "summary": "Workflow research completed: srsBh2.research.md"
+      }
+    },
+    "task-1774263100748-j5lgwp": {
+      "taskId": "task-1774263100748-j5lgwp",
+      "type": "research",
+      "description": "TITO workflow research (profile=research, executor=claude, run_id=srsBh2, session=run-20260323_075140)",
+      "priority": "normal",
+      "status": "completed",
+      "progress": 100,
+      "assignedTo": [
+        "agent-1774263100747-z0tc2d"
+      ],
+      "tags": [
+        "research",
+        "research"
+      ],
+      "createdAt": "2026-03-23T10:51:40.748Z",
+      "startedAt": null,
+      "completedAt": "2026-03-23T10:52:59.746Z",
+      "result": {
+        "success": true,
+        "summary": "Workflow research completed: srsBh2.research.md"
+      }
+    },
+    "task-1774263101805-d8owet": {
+      "taskId": "task-1774263101805-d8owet",
+      "type": "research",
+      "description": "TITO workflow research (profile=research, executor=claude, run_id=srsBh2, session=run-20260323_075141)",
+      "priority": "normal",
+      "status": "completed",
+      "progress": 100,
+      "assignedTo": [
+        "agent-1774263101804-2egmtx"
+      ],
+      "tags": [
+        "research",
+        "research"
+      ],
+      "createdAt": "2026-03-23T10:51:41.805Z",
+      "startedAt": null,
+      "completedAt": "2026-03-23T10:54:45.944Z",
+      "result": {
+        "success": true,
+        "summary": "Workflow research completed: srsBh2.research.md"
+      }
+    },
+    "task-1774263102780-l1at2x": {
+      "taskId": "task-1774263102780-l1at2x",
+      "type": "research",
+      "description": "TITO workflow research (profile=research, executor=claude, run_id=srsBh2, session=run-20260323_075142)",
+      "priority": "normal",
+      "status": "completed",
+      "progress": 100,
+      "assignedTo": [
+        "agent-1774263102779-zkc93a"
+      ],
+      "tags": [
+        "research",
+        "research"
+      ],
+      "createdAt": "2026-03-23T10:51:42.780Z",
+      "startedAt": null,
+      "completedAt": "2026-03-23T10:53:16.592Z",
+      "result": {
+        "success": true,
+        "summary": "Workflow research completed: srsBh2.research.md"
+      }
+    },
+    "task-1774263301639-76ne85": {
+      "taskId": "task-1774263301639-76ne85",
+      "type": "refactor",
+      "description": "TITO workflow compile-research (profile=compile_resume, executor=claude, run_id=srsBh2, session=run-20260323_075501)",
+      "priority": "normal",
+      "status": "completed",
+      "progress": 100,
+      "assignedTo": [
+        "agent-1774263301639-fcfan1"
+      ],
+      "tags": [
+        "compile-research",
+        "compile_resume"
+      ],
+      "createdAt": "2026-03-23T10:55:01.639Z",
+      "startedAt": null,
+      "completedAt": "2026-03-23T10:58:03.512Z",
+      "result": {
+        "success": true,
+        "summary": "Workflow compile-research completed: srsBh2.compile.research.md"
+      }
+    },
+    "task-1774263483888-0bux2m": {
+      "taskId": "task-1774263483888-0bux2m",
+      "type": "refactor",
+      "description": "TITO workflow compile-research (profile=compile_resume, executor=claude, run_id=srsBh2, session=run-20260323_075501)",
+      "priority": "normal",
+      "status": "completed",
+      "progress": 100,
+      "assignedTo": [
+        "agent-1774263483888-6qirss"
+      ],
+      "tags": [
+        "compile-research",
+        "compile_resume"
+      ],
+      "createdAt": "2026-03-23T10:58:03.888Z",
+      "startedAt": null,
+      "completedAt": "2026-03-23T11:00:59.032Z",
+      "result": {
+        "success": true,
+        "summary": "Workflow compile-research completed: srsBh2.compile.research.md"
+      }
+    }
+  },
+  "version": "3.0.0"
+}

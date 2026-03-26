@@ -1,0 +1,18 @@
+## SLOT 1: Definitions, notation, and equations for the GMM framework
+
+A ground-motion prediction equation expresses the logarithm of a ground-motion intensity measure as a function of seismological source, path, and site predictor variables. The standard form is
+
+$$\ln Y = \mu_{\ln Y}(M, \mathbf{R}, \mathbf{\theta}_{\text{site}}, \mathbf{\theta}_{\text{rup}}) + \varepsilon \, \sigma_{\text{T}}$$
+
+where $Y$ is the scalar intensity measure of interest (commonly peak ground acceleration, PGA, or pseudo-spectral acceleration, $SA(T)$, at oscillator period $T$); $\mu_{\ln Y}$ is the median prediction expressed in natural-log units; $\varepsilon$ is a standard-normal residual; and $\sigma_{\text{T}}$ is the total standard deviation of $\ln Y$.^[Confidence: HIGH, Rationale: The log-normal form of GMPE prediction with additive normal residual is standard in the ground-motion literature and consistent with NGA-West2 model documentation and OpenQuake Engine conventions [WEB:https://docs.openquake.org/oq-engine/current/manual/].]
+
+The total aleatory variability is partitioned into two orthogonal components:
+
+$$\sigma_{\text{T}}^2 = \tau^2 + \phi^2$$
+
+where $\tau$ is the between-event (inter-event) standard deviation, representing systematic source-to-source variability in median ground motion, and $\phi$ is the within-event (intra-event) standard deviation, representing record-to-record variability for a given event. Both components are themselves functions of magnitude and, in some models, of distance or spectral period.^[Confidence: HIGH, Rationale: The tau/phi decomposition of total sigma is universal across NGA-West2 and NGA-Sub GMPEs and is documented in OpenQuake hazardlib model specifications. No contradictions with KB content.]
+
+Distance predictor variables vary among GMPEs and must be computed consistently in the hazard engine. The three most common metrics in the models considered here are $R_{JB}$, the Joyner-Boore distance (shortest horizontal distance from the site to the surface projection of the rupture plane); $R_{\text{rup}}$, the closest three-dimensional distance from the site to the rupture plane; and $R_x$, the horizontal distance from the site to the surface projection of the top edge of the rupture measured perpendicular to the fault strike. In OpenQuake hazardlib, each GSIM declares which distance metrics it requires, and the engine computes these from the rupture geometry automatically.^[Confidence: HIGH, Rationale: Distance metric definitions are standard in GMPE literature and consistent with OpenQuake hazardlib GSIM attribute conventions documented in the KB source files [KB:gmmLT_ASC.md][KB:gmmLT_SIF.md].]
+
+The magnitude predictor is moment magnitude $M_w$ throughout the models compiled here. Rupture geometry parameters include $\delta$ (fault dip angle), $\lambda$ (rake angle, characterising faulting style), $Z_{tor}$ (depth to the top of the rupture plane), $W$ (along-dip rupture width), and $Z_h$ (hypocentral depth). Site condition is characterised primarily by $V_{S30}$, the time-averaged shear-wave velocity in the uppermost 30 m. Basin depth parameters used by certain models include $Z_{1.0}$ (depth to the $V_S = 1.0$ km/s horizon) and $Z_{2.5}$ (depth to the $V_S = 2.5$ km/s horizon). For subduction models, a binary flag for back-arc site classification is also required by some implementations.^[Confidence: HIGH, Rationale: All listed parameters are derived directly from the hazardlib GSIM attribute declarations in the KB documents [KB:gmmLT_ASC.md][KB:gmmLT_SCC.md][KB:gmmLT_SIF.md][KB:gmmLT_SIS.md]. No external source needed for parameter names.]
+

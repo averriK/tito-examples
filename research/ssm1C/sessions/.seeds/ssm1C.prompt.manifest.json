@@ -1,0 +1,7 @@
+{
+  "id": "ssm1C",
+  "workflow": "prompt",
+  "outputs": {
+    "primary": "ssm1C.prompt.md"
+  }
+}

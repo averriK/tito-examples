@@ -1,0 +1,31 @@
+[
+
+  {
+    "id": "chunk-001",
+    "title": "Distribution List",
+    "file": "/Users/averrik/github/tito-examples/redact/louvicourt/kb/LV.retrieve.md",
+    "start_line": 16,
+    "end_line": 21
+  },
+  {
+    "id": "chunk-002",
+    "title": "Table of Contents",
+    "file": "/Users/averrik/github/tito-examples/redact/louvicourt/kb/LV.retrieve.md",
+    "start_line": 22,
+    "end_line": 108
+  },
+  {
+    "id": "chunk-003",
+    "title": "EXECUTIVE SUMMARY",
+    "file": "/Users/averrik/github/tito-examples/redact/louvicourt/kb/LV.retrieve.md",
+    "start_line": 109,
+    "end_line": 141
+  },
+  {
+    "id": "chunk-004",
+    "title": "1.0 INTRODUCTION",
+    "file": "/Users/averrik/github/tito-examples/redact/louvicourt/kb/LV.retrieve.md",
+    "start_line": 142,
+    "end_line": 185
+  }
+]

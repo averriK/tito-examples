@@ -1,0 +1,107 @@
+COMPILE RESEARCH WORKFLOW (VERIFIED CONTENT SELECTION, BIBLIOGRAPHY GENERATION)
+
+You will compile a clean final document from research/rag sessions by selecting only verified content. Do NOT perform any web research. Use only local session outputs with audit footnotes.
+
+Inputs (absolute paths provided):
+- TASK_FILE: /c/front_door/projects/WQD/research/task.research.prompt.md
+- SESSION_DIR: /c/front_door/projects/WQD/research/sessions/run-20260113_001544
+- SESSIONS_DIR: /c/front_door/projects/WQD/research/sessions
+- FORMAT_RULES: /c/front_door/tools/tito/rules/format.compile.md
+- CITATIONS_RULES: /c/front_door/tools/tito/rules/citations.compile.md
+- BIBLATEX_RULES: /c/front_door/tools/tito/rules/biblatex.md  # Required: defines BibLaTeX entry generation rules
+- MANIFEST: /c/front_door/projects/WQD/research/sessions/run-20260113_001544/manifest.json   # CLI-provided manifest with session sources + outputs
+
+Data sources (local only):
+- Read ONLY the session files listed in MANIFEST.sessions[].path.
+- You MUST NOT perform any additional Glob/ls over SESSIONS_DIR; MANIFEST is
+  the single source of truth for inputs.
+
+Goal:
+Produce ONE clean, non-redundant document containing only paragraphs whose audit `Confidence` is HIGH.
+
+Write the results to the manifest-defined outputs:
+- Clean compiled document: /c/front_door/projects/WQD/research/sessions/run-20260113_001544/<MANIFEST.outputs.primary>
+- Bibliography (when present): /c/front_door/projects/WQD/research/sessions/run-20260113_001544/<MANIFEST.outputs.biblatex>
+
+Policy (verification-based compilation):
+- SELECT paragraphs based on the audit footnote **Confidence** field:
+-  * Include: paragraphs whose `Confidence: HIGH`.
+-  * Exclude: paragraphs whose `Confidence` is MEDIUM or LOW (insufficient or ambiguous evidence), regardless of any `Verdict` text that may appear in legacy footnotes.
+- CONVERT all inline citations from TOKEN format to [@Key]
+- REMOVE all audit footnotes (but extract their citations for bibliography)
+- TREAT the selected paragraphs as evidence, not as text to copy verbatim:
+  * You MUST aggressively deduplicate. If multiple paragraphs from different sessions express the same conclusion or numerical claim (even with different wording), treat them as one evidence cluster and write a single fused paragraph for that cluster.
+  * It is forbidden to restate the same conclusion multiple times with different wording. Use any extra paragraphs only as additional evidence and citations backing the single canonical statement.
+  * You may rephrase, merge, split, and reorder content for clarity and consensus, but you must NOT introduce factual claims that are not supported by at least one selected paragraph with `Confidence: HIGH`.
+- GENERATE complete biblatex.bib with all cited sources
+
+EXECUTION CONSTRAINT (CRITICAL - Race Condition Mitigation):
+You MUST process steps SEQUENTIALLY. Do NOT spawn parallel Task agents for dependent steps.
+Each step below depends on outputs from prior steps. Complete each step fully before proceeding.
+If a file required by a step does not exist yet, WAIT or implement retry logic with sleep.
+
+Method:
+1) Discover sources from MANIFEST
+   - Read MANIFEST once from /c/front_door/projects/WQD/research/sessions/run-20260113_001544/manifest.json.
+   - Parse conceptually its `sessions[]` and `outputs` fields; no hace falta
+     reescribir el JSON.
+   - Treat MANIFEST.sessions[] as the complete, ordered list of research
+     session files to compile.
+
+3) STEP 1 - Verification + selection (in memory):
+   - For each paragraph in source documents:
+     * Parse the audit footnote in the form `^[Confidence: ..., Rationale: ...]` (or the legacy `Verdict+Confidence+Rationale` form, ignoring any `Verdict` label).
+     * Apply selection criteria based on **Confidence only** (select `Confidence: HIGH`; treat any `Verdict` text as diagnostic metadata, not as an additional gate).
+     * Track selected vs rejected paragraphs in memory.
+
+4) STEP 2 - Citation consolidation pass:
+   - For each selected paragraph:
+     * Extract all inline citations: [KB:...], [WEB:...], [DOI:...], [ARXIV:...], and any existing [@Key].
+     * Remove audit footnotes BUT extract citations from Rationale for bibliography.
+     * Convert all TOKEN citations to [@Key] format.
+     * Preserve all other content including LaTeX math notation.
+     * CODE BLOCKS: do NOT convert citation tokens inside Markdown code blocks (fenced or indented); treat them as literal code.
+   - Maintain an internal mapping from TOKEN citations to `@Key` (in memory).
+
+5) STEP 3 - Bibliography generation:
+   - Using BIBLATEX_RULES, generate complete BibLaTeX entries for every @Key.
+   - Extract metadata from original [WEB:], [DOI:], [ARXIV:], [KB:] tokens.
+   - Include citations from both paragraph content AND audit footnote Rationale.
+
+6) STEP 4 - Assembly pass:
+   - If TASK_FILE is not "/dev/null", READ it once to recover the intended high-level structure (sections/SLOTS/headings and their order). Otherwise, infer a reasonable section outline from the headings present in the selected paragraphs (#, ##, ###).
+   - BEFORE writing prose, build a brief outline listing each section/question and the distinct conclusions that must appear in the final document.
+   - For each section/question in that outline:
+     * Cluster selected paragraphs into groups that express the same or very similar conclusions (same classification, same numerical values, same parameter recommendations, same benchmark comparisons, etc.), even if the wording differs across sessions.
+     * For each cluster, write a single fused paragraph (or very small group of paragraphs) that expresses those conclusions once, aggregating all relevant [@Key] citations from the supporting paragraphs.
+     * After writing the fused paragraph(s) for a cluster, drop the remaining paragraphs in that cluster from the final prose; they are evidence only.
+   - Do NOT produce output that looks like "session 1 answer + session 2 answer + session 3 answer" or any other concatenation of whole session outputs. The compiled text must read as if a single author wrote it once, with no repeated explanations of the same point.
+   - Maintain logical flow and transitions between sections and clusters (e.g., background/context → parameterisation/details → benchmarks/implications), so the document reads as a coherent chapter rather than a patchwork of separate answers.
+
+7) STEP 5 - Post-process:
+   - Apply FORMAT_RULES: professional voice, LaTeX math, consistent structure
+   - Do NOT add audit footnotes to compiled document
+
+8) STEP 6 - Write final output files:
+   - Read MANIFEST and treat `outputs.primary` as the only valid compiled-document output path.
+   - Save/write the clean document to: /c/front_door/projects/WQD/research/sessions/run-20260113_001544/<MANIFEST.outputs.primary>
+     * Content: clean document with verified content and [@Key] citations
+   - If `outputs.biblatex` is present in MANIFEST:
+     - Save/write the bibliography to: /c/front_door/projects/WQD/research/sessions/run-20260113_001544/<MANIFEST.outputs.biblatex>
+       * Content: full BibLaTeX database with all cited sources
+   - After writing, confirm the exact file paths you wrote.
+
+Constraints:
+- No web access. Local sessions only.
+- Do NOT use MCP helpers/integrations in this workflow; treat session files and
+  manifest data as plain local inputs.
+- SELECT based on the audit footnote `Confidence` field only (include `Confidence: HIGH`, exclude `Confidence: MEDIUM` or `LOW`).
+- If code blocks are present in selected content, preserve them verbatim and do not insert anything inside them; place any required annotations outside the block.
+- CONVERT citations from TOKEN format to [@Key].
+- GENERATE complete biblatex.bib with all sources (from both paragraphs and audit Rationale).
+- MUST create both output files; do not just emit text.
+
+Selection criteria summary:
+- ✓ Include: paragraphs whose audit footnote has `Confidence: HIGH` (regardless of any `Verdict` text in legacy runs).
+- ✗ Exclude: paragraphs whose audit footnote has `Confidence: MEDIUM`.
+- ✗ Exclude: paragraphs whose audit footnote has `Confidence: LOW`.

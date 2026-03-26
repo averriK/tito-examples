@@ -1,0 +1,10 @@
+[
+  {
+    "source_term": "pregnant solution",
+    "target_term": "solución rica",
+    "domains": ["hydrometallurgy", "heap_leaching"],
+    "evidence_tokens": ["[TBX:T0001]"],
+    "verdict": "TRUE",
+    "confidence": "HIGH"
+  }
+]

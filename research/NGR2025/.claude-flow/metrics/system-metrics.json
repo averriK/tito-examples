@@ -1,0 +1,98 @@
+[
+  {
+    "timestamp": 1766005468425,
+    "memoryTotal": 51539607552,
+    "memoryUsed": 50159386624,
+    "memoryFree": 1380220928,
+    "memoryUsagePercent": 97.3220189412435,
+    "memoryEfficiency": 2.677981058756501,
+    "cpuCount": 14,
+    "cpuLoad": 0.5087541852678571,
+    "platform": "darwin",
+    "uptime": 179656
+  },
+  {
+    "timestamp": 1766005498426,
+    "memoryTotal": 51539607552,
+    "memoryUsed": 50083282944,
+    "memoryFree": 1456324608,
+    "memoryUsagePercent": 97.17435836791992,
+    "memoryEfficiency": 2.825641632080078,
+    "cpuCount": 14,
+    "cpuLoad": 0.45298549107142855,
+    "platform": "darwin",
+    "uptime": 179686
+  },
+  {
+    "timestamp": 1766005528426,
+    "memoryTotal": 51539607552,
+    "memoryUsed": 50701189120,
+    "memoryFree": 838418432,
+    "memoryUsagePercent": 98.37325414021811,
+    "memoryEfficiency": 1.6267458597818916,
+    "cpuCount": 14,
+    "cpuLoad": 0.37486049107142855,
+    "platform": "darwin",
+    "uptime": 179716
+  },
+  {
+    "timestamp": 1766005558427,
+    "memoryTotal": 51539607552,
+    "memoryUsed": 49897340928,
+    "memoryFree": 1642266624,
+    "memoryUsagePercent": 96.81358337402344,
+    "memoryEfficiency": 3.1864166259765625,
+    "cpuCount": 14,
+    "cpuLoad": 0.38912527901785715,
+    "platform": "darwin",
+    "uptime": 179746
+  },
+  {
+    "timestamp": 1766005588428,
+    "memoryTotal": 51539607552,
+    "memoryUsed": 50384519168,
+    "memoryFree": 1155088384,
+    "memoryUsagePercent": 97.75883356730142,
+    "memoryEfficiency": 2.241166432698577,
+    "cpuCount": 14,
+    "cpuLoad": 0.324951171875,
+    "platform": "darwin",
+    "uptime": 179776
+  },
+  {
+    "timestamp": 1766005618428,
+    "memoryTotal": 51539607552,
+    "memoryUsed": 50145574912,
+    "memoryFree": 1394032640,
+    "memoryUsagePercent": 97.29522069295248,
+    "memoryEfficiency": 2.7047793070475166,
+    "cpuCount": 14,
+    "cpuLoad": 0.29624720982142855,
+    "platform": "darwin",
+    "uptime": 179806
+  },
+  {
+    "timestamp": 1766005648429,
+    "memoryTotal": 51539607552,
+    "memoryUsed": 50274271232,
+    "memoryFree": 1265336320,
+    "memoryUsagePercent": 97.5449244181315,
+    "memoryEfficiency": 2.455075581868499,
+    "cpuCount": 14,
+    "cpuLoad": 0.298583984375,
+    "platform": "darwin",
+    "uptime": 179836
+  },
+  {
+    "timestamp": 1766005678431,
+    "memoryTotal": 51539607552,
+    "memoryUsed": 50482675712,
+    "memoryFree": 1056931840,
+    "memoryUsagePercent": 97.94928232828775,
+    "memoryEfficiency": 2.050717671712249,
+    "cpuCount": 14,
+    "cpuLoad": 0.27134486607142855,
+    "platform": "darwin",
+    "uptime": 179866
+  }
+]

@@ -1,0 +1,410 @@
+[
+  {
+    "source_term": "solución rica",
+    "target_term": "pregnant solution",
+    "domains": ["heap leaching", "mining"],
+    "evidence_tokens": ["[TBX:T0001]"],
+    "confidence": "HIGH",
+    "verdict": "TBX-governed"
+  },
+  {
+    "source_term": "solución barren",
+    "target_term": "barren solution",
+    "domains": ["heap leaching", "mining"],
+    "evidence_tokens": ["[TBX:T0002]"],
+    "confidence": "HIGH",
+    "verdict": "TBX-governed"
+  },
+  {
+    "source_term": "sistema de lixiviación en valle",
+    "target_term": "valley leach system",
+    "domains": ["heap leaching", "mining"],
+    "evidence_tokens": ["[TBX:T0005]"],
+    "confidence": "HIGH",
+    "verdict": "TBX-governed"
+  },
+  {
+    "source_term": "área de almacenamiento de solución rica",
+    "target_term": "pregnant solution storage area",
+    "domains": ["heap leaching", "mining"],
+    "evidence_tokens": ["[TBX:T0007]"],
+    "confidence": "HIGH",
+    "verdict": "TBX-governed"
+  },
+  {
+    "source_term": "pileta de contingencias",
+    "target_term": "contingency pond",
+    "domains": ["heap leaching", "mining", "water management"],
+    "evidence_tokens": ["[TBX:T0008]"],
+    "confidence": "HIGH",
+    "verdict": "TBX-governed"
+  },
+  {
+    "source_term": "sentina",
+    "target_term": "sump",
+    "domains": ["heap leaching", "mining", "infrastructure"],
+    "evidence_tokens": ["[TBX:T0009]"],
+    "confidence": "HIGH",
+    "verdict": "TBX-governed"
+  },
+  {
+    "source_term": "dropbox",
+    "target_term": "dropbox",
+    "domains": ["heap leaching", "mining", "infrastructure"],
+    "evidence_tokens": ["[TBX:T0010]"],
+    "confidence": "HIGH",
+    "verdict": "TBX-governed"
+  },
+  {
+    "source_term": "canal portatuberías",
+    "target_term": "pipe corridor",
+    "domains": ["heap leaching", "mining", "infrastructure"],
+    "evidence_tokens": ["[TBX:T0011]"],
+    "confidence": "HIGH",
+    "verdict": "TBX-governed"
+  },
+  {
+    "source_term": "lixiviación en pilas",
+    "target_term": "heap leaching",
+    "domains": ["heap leaching", "mining"],
+    "evidence_tokens": ["[TBX:T0013]"],
+    "confidence": "HIGH",
+    "verdict": "TBX-governed"
+  },
+  {
+    "source_term": "rebombeo",
+    "target_term": "repumping",
+    "domains": ["heap leaching", "mining", "operations"],
+    "evidence_tokens": ["[TBX:T0016]"],
+    "confidence": "HIGH",
+    "verdict": "TBX-governed"
+  },
+  {
+    "source_term": "sistema de recolección y recuperación de filtraciones",
+    "target_term": "leak collection and recovery system",
+    "domains": ["heap leaching", "mining", "environmental"],
+    "evidence_tokens": ["[TBX:T0020]"],
+    "confidence": "HIGH",
+    "verdict": "TBX-governed"
+  },
+  {
+    "source_term": "geomembrana",
+    "target_term": "geomembrane",
+    "domains": ["heap leaching", "mining", "liner systems"],
+    "evidence_tokens": ["[TBX:T0024]"],
+    "confidence": "HIGH",
+    "verdict": "TBX-governed"
+  },
+  {
+    "source_term": "polietileno de alta densidad",
+    "target_term": "high-density polyethylene",
+    "domains": ["heap leaching", "mining", "materials"],
+    "evidence_tokens": ["[TBX:T0025]"],
+    "confidence": "HIGH",
+    "verdict": "TBX-governed"
+  },
+  {
+    "source_term": "PEAD",
+    "target_term": "HDPE",
+    "domains": ["heap leaching", "mining", "materials"],
+    "evidence_tokens": ["[TBX:T0025]"],
+    "confidence": "HIGH",
+    "verdict": "TBX-governed"
+  },
+  {
+    "source_term": "vertedero",
+    "target_term": "spillway",
+    "domains": ["heap leaching", "mining", "water management"],
+    "evidence_tokens": ["[TBX:T0038]"],
+    "confidence": "HIGH",
+    "verdict": "TBX-governed"
+  },
+  {
+    "source_term": "filtración",
+    "target_term": "seepage",
+    "domains": ["heap leaching", "mining", "environmental"],
+    "evidence_tokens": ["[TBX:T0041]"],
+    "confidence": "HIGH",
+    "verdict": "TBX-governed"
+  },
+  {
+    "source_term": "SLV",
+    "target_term": "VLS",
+    "domains": ["heap leaching", "mining"],
+    "evidence_tokens": ["[TBX:T0005]"],
+    "confidence": "HIGH",
+    "verdict": "TBX-governed (acronym)"
+  },
+  {
+    "source_term": "AASR",
+    "target_term": "PSSA",
+    "domains": ["heap leaching", "mining"],
+    "evidence_tokens": ["[TBX:T0007]"],
+    "confidence": "HIGH",
+    "verdict": "TBX-governed (acronym)"
+  },
+  {
+    "source_term": "SRRF",
+    "target_term": "LCRS",
+    "domains": ["heap leaching", "mining", "environmental"],
+    "evidence_tokens": ["[TBX:T0020]"],
+    "confidence": "HIGH",
+    "verdict": "TBX-governed (acronym)"
+  },
+  {
+    "source_term": "apilamiento",
+    "target_term": "heap",
+    "domains": ["heap leaching", "mining"],
+    "evidence_tokens": ["[TBX:T0013]"],
+    "confidence": "HIGH",
+    "verdict": "TBX-governed (contextual)"
+  },
+  {
+    "source_term": "planta de procesos",
+    "target_term": "process plant",
+    "domains": ["mining", "metallurgy"],
+    "evidence_tokens": [],
+    "confidence": "HIGH",
+    "verdict": "standard industry term"
+  },
+  {
+    "source_term": "caudal",
+    "target_term": "flow rate",
+    "domains": ["hydraulics", "water management"],
+    "evidence_tokens": [],
+    "confidence": "HIGH",
+    "verdict": "standard technical term"
+  },
+  {
+    "source_term": "riego",
+    "target_term": "irrigation",
+    "domains": ["heap leaching", "mining"],
+    "evidence_tokens": [],
+    "confidence": "HIGH",
+    "verdict": "standard heap leaching term"
+  },
+  {
+    "source_term": "celda",
+    "target_term": "cell",
+    "domains": ["heap leaching", "mining"],
+    "evidence_tokens": [],
+    "confidence": "HIGH",
+    "verdict": "standard heap leaching term"
+  },
+  {
+    "source_term": "fase",
+    "target_term": "phase",
+    "domains": ["heap leaching", "mining"],
+    "evidence_tokens": [],
+    "confidence": "HIGH",
+    "verdict": "standard project term"
+  },
+  {
+    "source_term": "tubería",
+    "target_term": "pipeline",
+    "domains": ["infrastructure", "engineering"],
+    "evidence_tokens": [],
+    "confidence": "HIGH",
+    "verdict": "standard technical term"
+  },
+  {
+    "source_term": "bomba",
+    "target_term": "pump",
+    "domains": ["engineering", "mechanical"],
+    "evidence_tokens": [],
+    "confidence": "HIGH",
+    "verdict": "standard technical term"
+  },
+  {
+    "source_term": "válvula",
+    "target_term": "valve",
+    "domains": ["engineering", "mechanical"],
+    "evidence_tokens": [],
+    "confidence": "HIGH",
+    "verdict": "standard technical term"
+  },
+  {
+    "source_term": "caudalímetro",
+    "target_term": "flowmeter",
+    "domains": ["instrumentation", "engineering"],
+    "evidence_tokens": [],
+    "confidence": "HIGH",
+    "verdict": "standard technical term"
+  },
+  {
+    "source_term": "escurrimiento",
+    "target_term": "runoff",
+    "domains": ["hydrology", "water management"],
+    "evidence_tokens": [],
+    "confidence": "HIGH",
+    "verdict": "standard hydrological term"
+  },
+  {
+    "source_term": "cuenca",
+    "target_term": "basin",
+    "domains": ["hydrology", "water management"],
+    "evidence_tokens": [],
+    "confidence": "HIGH",
+    "verdict": "standard hydrological term"
+  },
+  {
+    "source_term": "subcuenca",
+    "target_term": "sub-basin",
+    "domains": ["hydrology", "water management"],
+    "evidence_tokens": [],
+    "confidence": "HIGH",
+    "verdict": "standard hydrological term"
+  },
+  {
+    "source_term": "canal",
+    "target_term": "canal",
+    "domains": ["hydraulics", "water management"],
+    "evidence_tokens": [],
+    "confidence": "HIGH",
+    "verdict": "standard technical term"
+  },
+  {
+    "source_term": "pileta",
+    "target_term": "pond",
+    "domains": ["water management", "mining"],
+    "evidence_tokens": [],
+    "confidence": "HIGH",
+    "verdict": "standard water management term"
+  },
+  {
+    "source_term": "drenaje",
+    "target_term": "drainage",
+    "domains": ["hydrology", "engineering"],
+    "evidence_tokens": [],
+    "confidence": "HIGH",
+    "verdict": "standard technical term"
+  },
+  {
+    "source_term": "subdrenaje",
+    "target_term": "subdrainage",
+    "domains": ["hydrology", "engineering"],
+    "evidence_tokens": [],
+    "confidence": "HIGH",
+    "verdict": "standard technical term"
+  },
+  {
+    "source_term": "agua subterránea",
+    "target_term": "groundwater",
+    "domains": ["hydrology", "environmental"],
+    "evidence_tokens": [],
+    "confidence": "HIGH",
+    "verdict": "standard hydrological term"
+  },
+  {
+    "source_term": "nivel freático",
+    "target_term": "water table",
+    "domains": ["hydrology", "environmental"],
+    "evidence_tokens": [],
+    "confidence": "HIGH",
+    "verdict": "standard hydrological term"
+  },
+  {
+    "source_term": "pozo",
+    "target_term": "well",
+    "domains": ["hydrology", "engineering"],
+    "evidence_tokens": [],
+    "confidence": "HIGH",
+    "verdict": "standard technical term"
+  },
+  {
+    "source_term": "monitoreo",
+    "target_term": "monitoring",
+    "domains": ["environmental", "operations"],
+    "evidence_tokens": [],
+    "confidence": "HIGH",
+    "verdict": "standard technical term"
+  },
+  {
+    "source_term": "contingencia",
+    "target_term": "contingency",
+    "domains": ["operations", "safety"],
+    "evidence_tokens": [],
+    "confidence": "HIGH",
+    "verdict": "standard operational term"
+  },
+  {
+    "source_term": "evento meteorológico",
+    "target_term": "meteorological event",
+    "domains": ["meteorology", "operations"],
+    "evidence_tokens": [],
+    "confidence": "HIGH",
+    "verdict": "standard meteorological term"
+  },
+  {
+    "source_term": "precipitación",
+    "target_term": "precipitation",
+    "domains": ["meteorology", "hydrology"],
+    "evidence_tokens": [],
+    "confidence": "HIGH",
+    "verdict": "standard meteorological term"
+  },
+  {
+    "source_term": "derretimiento",
+    "target_term": "snowmelt",
+    "domains": ["meteorology", "hydrology"],
+    "evidence_tokens": [],
+    "confidence": "HIGH",
+    "verdict": "standard hydrological term"
+  },
+  {
+    "source_term": "cota",
+    "target_term": "elevation",
+    "domains": ["surveying", "engineering"],
+    "evidence_tokens": [],
+    "confidence": "HIGH",
+    "verdict": "standard surveying term"
+  },
+  {
+    "source_term": "talud",
+    "target_term": "slope",
+    "domains": ["geotechnical", "engineering"],
+    "evidence_tokens": [],
+    "confidence": "HIGH",
+    "verdict": "standard geotechnical term"
+  },
+  {
+    "source_term": "berma",
+    "target_term": "berm",
+    "domains": ["geotechnical", "engineering"],
+    "evidence_tokens": [],
+    "confidence": "HIGH",
+    "verdict": "standard geotechnical term"
+  },
+  {
+    "source_term": "revestimiento",
+    "target_term": "liner / lining",
+    "domains": ["heap leaching", "mining", "environmental"],
+    "evidence_tokens": [],
+    "confidence": "HIGH",
+    "verdict": "standard liner system term"
+  },
+  {
+    "source_term": "zanja",
+    "target_term": "trench",
+    "domains": ["construction", "engineering"],
+    "evidence_tokens": [],
+    "confidence": "HIGH",
+    "verdict": "standard construction term"
+  },
+  {
+    "source_term": "infiltración",
+    "target_term": "infiltration",
+    "domains": ["hydrology", "environmental"],
+    "evidence_tokens": [],
+    "confidence": "HIGH",
+    "verdict": "standard hydrological term"
+  },
+  {
+    "source_term": "efluente",
+    "target_term": "effluent",
+    "domains": ["environmental", "water management"],
+    "evidence_tokens": [],
+    "confidence": "HIGH",
+    "verdict": "standard environmental term"
+  }
+]

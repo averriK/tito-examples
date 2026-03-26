@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tbx style="dca" xmlns:xcs="urn:iso:std:iso:30042:ed-2">
+  <text>
+    <body>
+      <!-- Minimal concept used by translate demo: pregnant solution / solución rica -->
+      <termEntry id="T0001">
+        <langSet xml:lang="en">
+          <tig>
+            <term>pregnant solution</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+        </langSet>
+
+        <langSet xml:lang="es">
+          <tig>
+            <term>solución rica</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+          <tig>
+            <term>solución embarazada</term>
+            <termNote type="administrativeStatus">forbiddenTerm</termNote>
+          </tig>
+        </langSet>
+
+        <langSet xml:lang="pt">
+          <tig>
+            <term>solução rica</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+        </langSet>
+
+        <langSet xml:lang="fr">
+          <tig>
+            <term>solution riche</term>
+            <termNote type="administrativeStatus">preferredTerm</termNote>
+          </tig>
+        </langSet>
+      </termEntry>
+    </body>
+  </text>
+</tbx>

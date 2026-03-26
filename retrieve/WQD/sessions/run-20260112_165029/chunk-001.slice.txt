@@ -1,0 +1,400 @@
+
+
+ALCA NCE
+Determinación de nuevos valores de referencia de
+calidad de agua para el cierre de la mina Veladero
+MINERA ANDINA DEL SOL S.R.L.
+NOVIEMBRE DE 2025
+
+
+PAGINA 1 DE 16 CONTENIDO
+1. INTRODUCCIÓN  ................................ ................................ ................................ ................................ ...... 2
+2. ALCANCE  ................................ ................................ ................................ ................................ .................  3
+3. MODALIDAD/DESCRIPCIÓN DEL SERVICIO  ................................ ................................ ........................  4
+3.1. ANÁLISIS DE DATOS  ................................ ................................ ................................ ................................ . 4
+3.2. PROCESAMIENTO DE DATOS  ................................ ................................ ................................ .....................  5
+3.3. DEFINICIÓN DE ESCENARIOS Y PROYECCIÓN DE VALORES  ................................ ................................ ..........  5
+3.4. PUNTOS DE MONITOREO A EVALUAR  ................................ ................................ ................................ .........  6
+3.5. PARÁMETROS QUE EVALUAR  ................................ ................................ ................................ ....................  6
+3.6. ENTREGABLES  ................................ ................................ ................................ ................................ .........  7
+3.7. REUNIÓN DE PARTIDA  ................................ ................................ ................................ ..............................  9
+3.8. ELABORACIÓN Y REVISIÓN DE BORRADORES  ................................ ................................ .............................  9
+3.9. ELABORACIÓN DEL REPORTE FINAL  ................................ ................................ ................................ ...........  9
+4. CONDICIONES ECONÓMICAS Y DE FACTURACIÓN  ................................ ................................ ........  11
+4.1. VALOR Y ESTRUCTURA DE PAGOS  ................................ ................................ ................................ ...........  11
+4.2. CERTIFICACIÓN  ................................ ................................ ................................ ................................ ..... 12
+5. PRESENTACIÓN DE LA PROPUESTA  ................................ ................................ ................................ . 13
+5.1. PROPUESTA TÉCNICA  ................................ ................................ ................................ .............................  13
+5.2. PROPUESTA ECONÓMICA ................................ ................................ ................................ ........................  14
+6. RESPONSABILIDADES  ................................ ................................ ................................ .........................  15
+6.1. RESPONSABILIDADES DE VELADERO  ................................ ................................ ................................ ....... 15
+6.2. RESPONSABILIDADES DEL CONTRATISTA  ................................ ................................ ................................ . 15
+7. PENALIDADES OPERATIVAS  ................................ ................................ ................................ ..............  16
+
+
+
+PAGINA 2 DE 16 1. INTRODUCCIÓN
+El presente documento establece los términos, condiciones y el alcance técni co del servicio "Determinación de
+nuevos valores de referencia de calidad de agua para el cierre de la mina Veladero".
+Este servicio será requerido por la Gerencia de Medioambiente de Minera Andina del Sol S.R.L. (MAS), em-
+presa operada bajo un Joint Venture entre Barrick Gold Corporation y Shandong Gold.  Su objetivo principal es
+actualizar los valores de referencia de calidad de agua superficial para la etapa de cierre de la mina , mediante
+el análisis histórico y estadístico de los puntos de monitoreo SW-3 (aguas arriba)  y LA-7 (punto de cumpli-
+miento), integrando escenarios de variabilidad hidrológica y cambio climático.
+La mina Veladero está ubicada en el departamento de Iglesia, provincia de San Juan, Repúbli ca Argentina, a
+una altitud aproximada de 4.400 m s.n.m. y a 358 km de la ciudad de San Juan. Se local iza en un ambiente de
+alta montaña caracterizado por condiciones climáticas severas, que incluyen fu ertes vientos, variaciones tér-
+micas extremas y acumulaciones significativas de nieve. Estas condiciones pueden afectar la ejecución de
+actividades en terreno durante cualquier época del año. Se presenta la Imagen 1 de referencia con la localiza-
+ción de la operación
+El presente alcance detalla las actividades, metodologías y responsabilidades necesarias para la ejecución del
+servicio.
+
+Imagen 1. Localización de la Mina Veladero.
+
+
+
+PAGINA 3 DE 16 2. ALCANCE
+Minera Andina del Sol S.R.L. (MAS), a través de la Gerencia de Medioambiente y en cumplimiento de los
+procedimientos internos aplicables, requiere la contratación de un servicio de gab inete para la elaboración de
+un informe técnico de determinación de nuevos valores de referencia de calidad de agua super ficial.
+El servicio comprenderá el análisis histórico y estadístico de los puntos de mon itoreo SW-3 (aguas arriba de la
+operación) y LA-7 (punto de cumplimiento), mediante el procesamiento de parámetros fís ico-químicos y la eva-
+luación de su comportamiento en distintos escenarios hidrológicos. Los valores de r eferencia resultantes de-
+berán ser aplicables a la etapa de cierre de la mina Veladero, considerando es cenarios de variabilidad climática
+y cambio climático proyectado para la cuenca, e incluyendo valores de referencia diferenci ados para cada
+escenario hidrológico (seco, normal y húmedo).
+Las presentes bases técnicas establecen los requerimientos mínimos que deberá cumplir el  adjudicatario para
+el desarrollo del servicio, el cual se ejecutará exclusivamente a partir de la informa ción y bases de datos hidro-
+químicas provistas por MAS. No se prevé la ejecución de actividades de campo.
+
+
+
+PAGINA 4 DE 16 3. MODALIDAD/DESCRIPCIÓN DEL SERVICIO
+Los valores de referencia de concentración de Mina Veladero, tanto en fracción t otal como disuelta, se basan
+en los valores medidos durante el período de línea de base. En los últimos años, l os registros obtenidos para
+diversos parámetros analizados muestran desviaciones que tienden a superar los v alores de referencia histó-
+ricos, observándose además una relación estacional asociada al caudal de los cauces.
+Para verificar los cambios en la química del agua superficial, es necesario c omparar las concentraciones de
+cada parámetro en cada punto de monitoreo desde el inicio de la operación, teniend o como referencia la con-
+centración máxima del período de línea de base. No obstante, será el consultor q uien proponga y justifique la
+metodología más adecuada para esta evaluación.
+La concentración de solutos en los arroyos que drenan la zona de Veladero varía con el tiempo en respuesta
+a factores como la litología, los cambios climáticos y estacionales, las variacion es de caudal, los usos del suelo
+y las condiciones fisicoquímicas del sistema. Por ello, para caracterizar adec uadamente la calidad de agua,
+resulta esencial comprender los patrones estacionales y espaciales de los principales ani ones, cationes y me-
+tales traza. En términos generales:
+Las concentraciones más bajas de parámetros disueltos y las mayores cargas en suspensión (concentraciones
+totales) se registran durante períodos de mayores caudales.
+• Las concentraciones más altas se observan en períodos de menor caudal.
+• Estos patrones deben caracterizarse a lo largo de ciclos anuales completos.
+Asimismo, el comportamiento de los analitos superficiales y subterráneos en perí odos húmedos, secos y nor-
+males puede presentar diferencias marcadas. En el contexto de cambio climático y consideran do que el cierre
+de la operación coincidirá con escenarios de mayor probabilidad de sequía prolongad a, se requiere que el
+análisis justifique la variación existente y la potencial variación futura de los  valores de referencia para cada
+parámetro en cada punto de monitoreo.
+Por lo expuesto, Veladero requiere nuevos valores de referencia ajustados a cada condición hidrológica (pe-
+riodos húmedos, secos y normales), que permitan una comparación objetiva y apl icable durante la etapa de
+cierre.
+Para explicar los cambios observados en la química del agua y proponer nuevos valores de referencia aplica-
+bles a la etapa de cierre, el adjudicatario deberá realizar, como mínimo, las si guientes actividades de análisis
+y procesamiento de datos
+3.1. A NÁLISIS DE DATOS
+• Revisión y procesamiento inicial de datos hidroquímicos provistos por MAS, verifican do consistencia,
+continuidad temporal y calidad de la información.
+
+
+PAGINA 5 DE 16 • Consideración de estudios de cambio climático relevantes para la zona:
+o Estudios realizados previamente por MAS.
+o Estudios de terceros con aplicabilidad hidroclimática para la cuenca De las Taguas.
+• Desarrollo de estadísticas descriptivas para cada parámetro y punto de monitoreo, inc luyendo medidas
+de tendencia central, dispersión y rangos observados.
+• Evaluación de correlaciones entre parámetros y variables hidrológicas (por ejemplo, caudal o
+precipitación), con el objetivo de identificar relaciones funcionales relevantes.
+• Identificación de valores atípicos (outliers) mediante enfoques estadísticos univariado s y multivariados.
+3.2. P ROCESAMIENTO DE DATOS
+• Conversión y homogeneización de unidades, asegurando consistencia entre series históricas.
+• Corrección de codificación de entidades para garantizar un procesamiento adecuado ( nombres de
+parámetros, fracciones, puntos de muestreo).
+• Agrupamiento de resultados por estación de monitoreo, parámetro, fracción (total o disu elta) y
+escenario hidrológico (seco, normal, húmedo).
+• Eliminación de entidades vacías o registros sin datos válidos, asociados a fechas donde no fue posible
+obtener muestras.
+• Eliminación o corrección de resultados negativos para parámetros cuyo rango admisible es
+estrictamente positivo (ej.: metales, cianuros).
+Una vez organizado el conjunto de datos, se deberá proceder a su subdivisión en poblaci ones homogéneas
+para permitir el análisis estadístico comparativo. Los datos deberán evaluarse utilizando estadísticas descripti-
+vas, correlaciones y análisis de tendencia para cada grupo.
+Los valores atípicos deberán ser identificados, graficados y evaluados según los siguien tes criterios:
+• Determinar si representan errores analíticos o de transcripción → en cuyo caso deben corregirse o
+descartarse.
+• Determinar si corresponden a variación natural del sistema, especialmente para  puntos ubicados aguas
+arriba (p. ej., SW-3).
+• Señalar gráficamente su presencia, utilizando un color diferencial para fracción total y disue lta.
+• Evaluar su efecto sobre las estadísticas finales y justificar su inclusión o exclusión.
+Todos los datos calificados como "evento" deberán permanecer en la base global, pe ro no deberán utilizarse
+para evaluar la variación natural respecto de la línea de base, salvo justificación técni ca expresa.
+3.3. D EFINICIÓN DE ESCENARIOS Y PROYECCIÓN DE VALORES
+El adjudicatario deberá realizar una proyección de los valores esperados para ca da parámetro, considerando
+escenarios de:
+
+
+PAGINA 6 DE 16 • Calentamiento global,
+• Variabilidad climática,
+• Eventos extremos previstos para la zona.
+Con base en dicha proyección, se deberán definir umbrales objetivos para clasi ficar cada período como seco,
+normal o húmedo, justificando:
+• La variable seleccionada (por ejemplo, precipitación, caudal o ambas).
+• El método estadístico aplicado (por ejemplo, percentiles, distribución de  frecuencias, o índices
+hidrológicos).
+• Los valores específicos de corte adoptados para cada condición.
+Estos límites serán necesarios para establecer valores de referencia diferenciados por escenario hidrológico,
+asegurando comparaciones consistentes para la etapa de cierre.
+3.4. P UNTOS DE MONITOREO A EVALUAR
+Los puntos incluidos en el presente análisis corresponden a dos estaciones superficiales ubicadas sobre el río
+De las Taguas, las cuales forman parte del sistema de monitoreo de calidad de agua superficial de la operación
+Veladero:
+• SW-3: punto superficial ubicado aguas arriba de la operación Veladero, utiliz ado como referencia para
+caracterizar la calidad natural del sistema.
+• LA-7: punto superficial ubicado aguas abajo de la operación, definido como  punto de cumplimiento y
+estación de control regulatorio.
+Ambos puntos cuentan con series históricas extensas de parámetros físico-químicos , las cuales serán utiliza-
+das como base para el análisis estadístico y la determinación de nuevos valores de referencia aplicabl es a los
+distintos escenarios hidrológicos futuros.
+3.5. P ARÁMETROS QUE EVALUAR
+El análisis deberá considerar todos los parámetros físico-químicos, compuestos químicos, especies de cianuro
+y metales (en fracción total y disuelta) históricamente monitoreados en los puntos  SW-3 y LA-7. La selección
+final de parámetros estará condicionada por la disponibilidad de datos validados  y la existencia de valores de
+línea de base. Cada parámetro deberá ser evaluado en función de su variabilidad temporal, s u relación con el
+caudal y su respuesta ante los distintos escenarios hidrológicos establecidos para la etapa de c ierre.
+Parámetros de campo:  pH; Conductividad eléctrica; Temperatura; Oxígeno disuelto; Turbidez; % S alinidad;
+Potencial óxido-reducción (ORP).
+
+
+PAGINA 7 DE 16 Parámetros fisicoquímicos: Color; Demanda Bioquímica de Oxígeno (DBO ₅); Demanda Química de Oxígeno
+(DQO); pH de laboratorio; Conductividad eléctrica de laboratorio; Oxígeno disuelto de la boratorio; Relación de
+Absorción; Sólidos Totales Disueltos; Sólidos Totales Suspendidos; Sóli dos Sedimentables (10 minutos / 2
+horas)
+Compuestos químicos:  Aceites y grasas; Alcalinidad de bicarbonato como CaCO ₃; Alcalinidad total como
+CaCO ₃; Amonio; Cloro; Cloro residual; Cloruros; Dureza total como CaCO ₃; Detergentes / Sustancias Activas
+al Azul de Metileno (SAAM); Fenoles; Fosfatos; Fósforo de fosfato; Fluorur os; Organoclorados; Organofosfo-
+rados; Hidrocarburos Totales de Petróleo (TPH); Nitratos (NO ₃⁻); Nitritos (NO ₂⁻); Nitrógeno amoniacal; Nitró-
+geno de nitratos; Nitrógeno Kjeldahl; Nitrógeno total; Sílice amorfo; Sóli dos solubles en éter etílico; Sulfuros;
+Sulfatos
+Cianuros:  Cianato (ion); Cianuro total; Cianuro libre; Cianuro WAD; Tiocianato
+Metales fracción total:  Aluminio; Amonio; Antimonio; Arsénico; Bario; Berilio; Bismuto; Boro; Cadmio; Calcio;
+Cobalto; Cobre; Cromo; Cromo hexavalente; Hierro; Litio; Magnesio; Manganeso; Mercurio; Mol ibdeno; Níquel;
+Oro; Paladio; Plata; Plomo; Potasio; Selenio; Sodio; Titanio; Uranio; Vanadio; Zin c.
+Metales fracción disuelta:  Aluminio; Antimonio; Arsénico; Boro; Cadmio; Calcio; Cobalto; Cobre; Hierro; Litio;
+Magnesio; Manganeso; Mercurio; Níquel; Plomo; Potasio; Selenio; Sodio; Titanio; Uranio; Zinc .
+Tal como se detalla en el presente documento, la evaluación de estos parámetr os deberá realizarse conside-
+rando su relación con los caudales y con las condiciones hidrológicas fut uras, incluyendo escenarios secos,
+normales y húmedos.
+3.6. E NTREGABLES
+El servicio solicitado consiste exclusivamente en la ejecución de trabaj o de gabinete y culminará con la pre-
+sentación de un informe técnico integral, elaborado en base a la información hidroquímica provis ta por MAS.
+El informe deberá incluir, como mínimo:
+• Descripción detallada de las tareas realizadas, indicando los criterios técni cos y consideraciones
+aplicadas en cada etapa.
+• Metodología empleada para el procesamiento, depuración, análisis estadístico y c lasificación
+hidrológica de los datos.
+• Resultados obtenidos, presentados mediante tablas, gráficos, análisis comparativ os y evaluación de
+escenarios hidrológicos (seco, normal, húmedo).
+• Conclusiones técnicas, justificando los nuevos valores de referencia propuestos para cada parámetro,
+punto de monitoreo, fracción y escenario.
+
+
+
+PAGINA 8 DE 16 ENTREGABLE CENTRAL OBLIGATORIO
+El informe deberá incluir una tabla matriz comparativa, que constituirá el entregabl e técnico principal. Esta tabla
+deberá incluir, para ambos puntos de monitoreo (SW-3 y LA-7):
+• Nuevos valores de referencia propuestos para cada parámetro.
+• Unidades de medida estandarizadas.
+• Valores diferenciados por fracción total y disuelta, cuando corresponda.
+• Valores definidos en función del caudal o de la distribución de caudales , según la metodología
+adoptada.
+• Umbrales utilizados para clasificar los escenarios (seco, normal, húmedo).
+La tabla deberá permitir una lectura comparativa directa, clara y trazable entre puntos y escenarios. La tabla
+matriz deberá ser entregada obligatoriamente en formato editable (Excel), para permitir s u revisión, auditoría y
+validación por parte de MAS.
+3.6.1. F ORMATOS DE ENTREGA
+El adjudicatario deberá entregar:
+• El informe técnico final en formato digital cerrado (PDF), debidamente firmado.
+• Todas las tablas, matrices, bases de datos y anexos en formato editable (Excel u otro formato abierto
+acordado con MAS).
+Estos formatos deberán garantizar la integridad del contenido para presentación ante auto ridades competentes
+y permitir su utilización operativa por parte del equipo de Medioambiente.
+3.6.2. E NTREGA DE DOCUMENTACIÓN
+Formato electrónico: el adjudicatario deberá entregar copias digitales cerradas del informe final y de todas las
+tablas y anexos, debidamente firmadas. Estos archivos deberán ser aptos para su imp resión y presentación
+ante autoridades competentes.
+Idioma del documento: todo el contenido (texto, tablas, gráficos, figuras, anexos y planos) de berá estar elabo-
+rado en idioma español, en cumplimiento con los requerimientos regulatorios y para asegurar la comprensión
+integral de todas las partes involucradas.
+3.6.3. P LAZOS DE ENTREGA
+Primer borrador del informe técnico: dentro de los 30 días corridos de recibida  la información completa por
+parte de MAS.
+
+
+PAGINA 9 DE 16 Versión final del informe: dentro de los 10 días corridos posteriores a recibi r las observaciones formales del
+Comitente.
+3.7. R EUNIÓN DE PARTIDA
+El adjudicatario deberá participar en una reunión de partida (kick-off), la cual  se realizará de manera virtual.
+Todos los costos asociados a esta instancia serán asumidos por el adjudicatario.
+Durante la reunión, el adjudicatario deberá presentar:
+• El plan de trabajo propuesto, con etapas, hitos y cronograma preliminar.
+• La metodología a implementar, incluyendo los criterios técnicos de análisis y procesamie nto de datos.
+• El equipo profesional asignado al servicio, detallando experiencia, formación ac adémica y funciones
+específicas.
+• La acreditación profesional del personal que cuente con matrícula habilitante en el colegio o consejo
+correspondiente.
+MAS podrá solicitar precisiones adicionales o ajustes al plan inicial an tes de autorizar el inicio formal de las
+actividades.
+3.8. E LABORACIÓN Y REVISIÓN DE BORRADORES
+Una vez recibida la información técnica completa por parte de MAS, el adjudicatario deberá elaborar un primer
+borrador del informe técnico, el cual será remitido al área de Medioambiente para s u revisión. El plazo para la
+entrega de este primer borrador no deberá exceder los 30 días corridos desde la recepción de la informaci ón.
+En caso de que MAS emita observaciones o comentarios, el adjudicatario deberá preparar un segundo borra-
+dor, ajustado conforme a las indicaciones recibidas. Este segundo borrador deberá ser presentado en un plazo
+máximo de 10 días corridos desde la devolución del primer borrador con comentarios.
+Ambas versiones serán sometidas a revisión técnica por parte del área de Medioa mbiente, con el fin de validar
+su consistencia, metodología y contenido antes de autorizar la elaboración del informe final.
+3.9. E LABORACIÓN DEL REPORTE FINAL
+Una vez completada la revisión del segundo borrador, MAS comunicará al adj udicatario las modificaciones
+finales necesarias para garantizar la precisión, coherencia técnica y adecuación del informe a los requisitos
+establecidos en estas bases.
+El adjudicatario deberá incorporar todas las correcciones solicitadas y elaborar la versión fin al del informe téc-
+nico, la cual deberá ser entregada en un plazo máximo de 7 días corridos co ntados desde la devolución del
+segundo borrador con observaciones.
+
+
+PAGINA 10 DE 16 La versión final deberá presentarse en formato digital cerrado (PDF), debidamente firma da, e incluir todas las
+tablas, matrices y anexos en formato editable. El informe final deberá incluir todas las correccion es aprobadas
+por MAS y será considerado válido una vez obtenida la conformidad técnica del área de Medioam biente.
+
+
+
+PAGINA 11 DE 16 4. CONDICIONES ECONÓMICAS Y DE FACTURACIÓN
+Las ofertas deberán ser enviadas por el sistema ARIBA siguiendo el detalle de en vío de propuestas proporcio-
+nnado por MAS. Cada oferta debe ser clara y completa, cumpliendo con todos los requisitos est ablecidos.
+4.1. V ALOR Y ESTRUCTURA DE PAGOS
+La propuesta económica deberá presentarse considerando el costo asociado al único informe técnico final a
+entregar, que constituye el producto central del servicio. La oferta deberá detallar el va lor total correspondiente
+a la elaboración de este informe, conforme a los requerimientos establecidos en estas bases técni cas.
+El pago se efectuará una vez entregado y aprobado el informe final por parte del área de Medioambiente de
+MAS. La aprobación estará sujeta a la revisión técnica y a la verificación del cumplimiento inte gral del alcance
+definido en el presente documento.
+Con la aprobación del informe final, el adjudicatario deberá emitir el infor me de certificación, el cual servirá
+como respaldo para la verificación del cumplimiento del servicio y para la autoriz ación del procesamiento del
+pago.
+El pago quedará condicionado a la conformidad técnica del informe final por parte d e MAS, a la recepción del
+informe de certificación debidamente completado y al cumplimiento de todas las condiciones contractuales y
+administrativas aplicables.
+A continuación, se presentan los aspectos a considerar:
+• Forma de pago: Los pagos se realizarán mediante transferencia bancaria a los 30 días desde la fecha
+de procesamiento de la factura en el sistema ARIBA, independientemente de la fecha  de emisión de la
+factura. Antes de emitir la factura, será necesario que la certificación del serv icio a facturar sea
+aprobada y firmada por el área usuaria y Supply Chain.
+• Moneda: Indicar claramente la moneda en la que se realizará la facturación y el pago.
+• Ajustes: Detallar cualquier ajuste aplicable a la tarifa, como cambios en los costos operativos, inflación,
+u otros factores relevantes. En caso de corresponder, enviar la fórmula polinómica para calc ular dichos
+ajustes. Es importante resaltar que cualquier ajuste deberá contar con la aprobació n previa del área de
+Supply Chain.
+• Otros ítems: Incluir cualquier otro ítem necesario para una transparencia com pleta de la tarifa, como
+impuestos, seguros y otros cargos adicionales.
+Nota:  Veladero no realiza adelantos de contrato en ninguna circunstancia.
+
+
+PAGINA 12 DE 16 4.2. C ERTIFICACIÓN
+Con la remisión de cada informe final aprobado, el proveedor de servicios deberá adjuntar un informe de certi-
+ficación, el cual documentará en forma detallada las tareas efectivamente realiza das, con el objetivo de garan-
+tizar la trazabilidad técnica y el cumplimiento de los compromisos establecidos en la propuesta adjudicada.
+Este informe de certificación deberá incluir, como mínimo:
+• Identificación del informe correspondiente.
+• Tarifa aplicada, conforme a la estructura de pagos acordada.
+MAS revisarán y aprobarán el informe de certificación antes de procesar el pago correspondiente. La cert ifica-
+ción deberá estar aprobada y firmada por los responsables de Medioambiente para la emisión de la HES (Hoja
+de Entrada de Servicio).
+Las certificaciones deberán cerrarse el día 24 de cada mes.
+El plazo para el pago de facturas será de treinta (30) días corridos, contados a par tir de la fecha de presentación
+de la factura junto con la certificación aprobada.
+
+
+
+PAGINA 13 DE 16 5. PRESENTACIÓN DE LA PROPUESTA
+La presentación de las propuestas deberá realizarse a través de la plataforma ARIBA, confo rme a los procedi-
+mientos y plazos establecidos para esta licitación.
+Cada oferente deberá presentar dos documentos diferenciados:
+• Propuesta técnica global: deberá describir en detalle la metodología de tra bajo, el equipo profesional
+propuesto, el enfoque de análisis de datos, las herramientas y criterios estadíst icos a aplicar, así como
+el cumplimiento de todos los requisitos técnicos establecidos en estas ba ses. La propuesta deberá
+acreditar la experiencia del equipo, justificar la idoneidad del método selec cionado y demostrar la
+capacidad del oferente para desarrollar el servicio conforme a los estándares exigidos por MAS.
+• Una propuesta económica global, estructurada por informe, que detalle los costos asoci ados a cada
+uno de los productos solicitados, conforme a lo indicado en el apartado "Valor y estructura de pagos ".
+5.1. P ROPUESTA TÉCNICA
+La propuesta técnica deberá incluir una descripción detallada del enfoque metodológ ico que el oferente aplicará
+para la elaboración del informe técnico final. Deberá especificar los procedim ientos de análisis y procesamiento
+de datos, las herramientas y software a utilizar, los criterios estadísticos propuestos y el cronograma est imado
+para la ejecución del trabajo.
+El oferente podrá incorporar sugerencias metodológicas o enfoques complementarios, siempre qu e cuenten
+con una justificación técnica adecuada y sean coherentes con los objetivos del servicio. No se admitirán modi-
+fications respecto de los puntos de monitoreo definidos por MAS ni de los  requisitos mínimos establecidos en
+estas bases, los cuales son de cumplimiento obligatorio y no negociable.
+La propuesta técnica debe incluir los siguientes ítems descritos en el alcance:
+• Antecedentes de trabajos similares: breve descripción de experiencias previas relevantes y
+comparables con los servicios solicitados, haciendo especial énfasis en aquellos vinculados a
+monitoreos de seguimiento de calidad hídrica y cumplimiento ambiental, en con textos operativos y/o
+bajo marcos regulatorios similares.
+• Currículum Vitae del equipo técnico: presentación del CV de todos los integrantes del  equipo
+propuesto, detallando su formación, experiencia y el rol específico que desempeñarán en el proyecto.
+Se valorará positivamente la inclusión de profesionales con residencia en la provinci a de San Juan.
+Una vez adjudicadas las tareas, cualquier modificación del equipo deberá contar  con el consentimiento
+expreso de ambas partes.
+• Descripción de métodos y procedimientos: explicación clara y detallada de las  técnicas que se
+aplicarán en gabinete para el análisis e interpretación de los datos, incluyen do herramientas
+informáticas, criterios de validación y normas técnicas de referencia.
+
+
+PAGINA 14 DE 16 • Cronograma de trabajo: presentación de un cronograma preliminar con el detalle de las actividades
+previstas, incluyendo hitos principales, fechas estimadas de entrega de informes y  recursos asignados.
+5.2. P ROPUESTA ECONÓMICA
+La propuesta económica deberá presentarse con una estructura tarifaria clara, detallada y transparente , espe-
+cificando los costos asociados a la elaboración de cada informe final.
+Deberá incluir además la estructura de pagos propuesta, indicando que la facturación se r ealizará una vez
+entregado y aprobado el informe técnico final por parte de MAS, incorporando los ajus tes que correspondan
+conforme a las condiciones contractuales vigentes.
+Adicionalmente, se deberá presentar una fórmula polinómica de actualización, con l os índices adecuados para
+el ajuste anual de precios. La no presentación de dicha fórmula se interpretará como una renuncia expresa por
+parte del oferente a la posibilidad de solicitar reajustes económicos en el futuro.
+
+
+
+PAGINA 15 DE 16 6. RESPONSABILIDADES
+Durante la ejecución del servicio, tanto MAS como el Contratista adjudicado  asumirán las responsabilidades
+que se detallan a continuación, con el objetivo de asegurar la correcta prestación del servicio y el cumplimiento
+de los compromisos técnicos, operat ivos y contractuales establecidos en el presente documento.
+6.1. R ESPONSABILIDADES DE VELADERO
+MAS  se compromete a:
+• Proporcionar acceso a la información: MAS garantizará el acceso oportuno a toda la información
+necesaria para la elaboración del informe técnico, asegurando que el adjudicatario disponga de los
+datos requeridos para ejecutar el servicio conforme a lo establecido en estas bases.
+• Pago de honorarios: MAS se compromete a pagar los honorarios acordados según lo estipulado en el
+contrato, siguiendo la estructura de pagos basada en la entrega y aprobación del informe final.
+• Se establecerá un responsable por MAS (responsable del contrato) y un respo nsable por el oferente,
+quienes actuarán como contactos principales y enlaces para el manejo e intercambio de la información.
+Estos responsables serán los puntos de contacto para resolver cualquier duda, coordinar  actividades
+y asegurar el cumplimiento de los plazos establecidos.
+6.2. R ESPONSABILIDADES DEL CONTRATISTA
+El contratista se compromete a:
+• Realizar los servicios acordados: Ejecutar los servicios acordados con el debido cuida do y
+profesionalismo, cumpliendo con los estándares de calidad y los plazos establecidos en el con trato.
+• Entregar informes integrados y verificados: Los reportes deben tener integración de l a información y
+verificación de los contenidos. Con redacción clara y detallada y en conformidad con la normat iva.
+• Mantener la confidencialidad: Proteger la confidencialidad de toda la informació n proporcionada por
+MAS, asegurando que no se divulgue ni se utilice para fines no autorizados. El contratista deberá firmar
+un acuerdo de confidencialidad si así lo requiere MAS.
+• Contratación de mano de obra local: Considerar la contratación de mano de obra local  en la medida de
+lo posible, lo cual será valorado positivamente por MAS.
+
+

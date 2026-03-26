@@ -1,0 +1,10 @@
+{
+  "id": "srsBh2",
+  "workflow": "compile-prompt",
+  "sessions": [
+    { "path": "../run-20260323_075103/srsBh2.prompt.md" }
+  ],
+  "outputs": {
+    "primary": "srsBh2.compile.prompt.md"
+  }
+}

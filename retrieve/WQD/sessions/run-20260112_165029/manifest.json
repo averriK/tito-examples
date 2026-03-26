@@ -1,0 +1,22 @@
+{
+  "id": "T2",
+  "source": {
+    "basename": "T2.retrieve.extract"
+  },
+  "chunks": [
+    {
+      "id": "chunk-001",
+      "slice_path": "chunk-001.slice.txt",
+      "clean_md_path": "chunk-001.md"
+    },
+    {
+      "id": "chunk-002",
+      "slice_path": "chunk-002.slice.txt",
+      "clean_md_path": "chunk-002.md"
+    }
+  ],
+  "outputs": {
+    "primary": "T2.retrieve.md",
+    "biblatex": "biblatex.bib"
+  }
+}

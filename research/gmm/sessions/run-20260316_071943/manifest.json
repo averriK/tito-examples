@@ -1,0 +1,20 @@
+{
+  "id": "gmm",
+  "workflow": "research",
+  "source": {
+    "kb_dir": "/Users/averrik/Cloud/github/tools/ruflo-tito/tests/real/gmm/kb",
+    "documents": [
+      "gmmLT_ASC.md",
+      "gmmLT_SCC.md",
+      "gmmLT_SIF.md",
+      "gmmLT_SIS.md"
+    ]
+  },
+  "orchestration": {
+    "structured_prompt_spec": "structured_prompt_spec.json",
+    "slot_orchestration_plan": "slot_orchestration_plan.json"
+  },
+  "outputs": {
+    "primary": "gmm.research.md"
+  }
+}

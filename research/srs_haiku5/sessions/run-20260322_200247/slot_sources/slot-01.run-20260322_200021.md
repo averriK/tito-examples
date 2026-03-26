@@ -1,0 +1,28 @@
+## SLOT 1: Constrained linear regression formulation of the weight calibration error minimization problem
+
+The weight calibration problem for an epistemic logic tree is formulated as a constrained linear regression in which the decision variables are the branch weights $w_k$ of the logic tree. The objective is to minimize prediction error between the weighted linear combination of ground-motion predictions from the $N$ candidate GMPEs and a reference ground-motion model or empirical target. [KB:spec.compile.research.md]^[Confidence: HIGH, Rationale: The constrained linear regression framework is directly generalizable from the spectral record-selection problem in the KB, which minimizes prediction error via weighted linear combinations with non-negativity constraints.]
+
+The design matrix $\mathbf{A} \in \mathbb{R}^{n \times N}$ contains the predictions of the $N$ candidate GMPEs at $n$ evaluation points (e.g., spectral periods, magnitude-distance bins, or site condition classes). Each entry is defined as follows: ^[Confidence: HIGH, Rationale: The design matrix structure is directly analogous to the spectral design matrix in the KB, adapted to GMPE predictions. This establishes the algebraic foundation for the regression formulation.]
+
+$$A_{ij} = \lambda_I^{(j)}(x_i),$$
+
+where $\lambda_I^{(j)}(x_i)$ denotes the mean annual exceedance rate (or spectral acceleration, or other ground-motion intensity measure) predicted by the $j$-th GMPE at evaluation point $x_i$, with $i = 1, \dots, n$ and $j = 1, \dots, N$. [KB:spec.compile.research.md]^[Confidence: HIGH, Rationale: This notation mirrors the spectral design matrix from the KB, adapted to the hazard-rate or intensity-measure domain for GMPE combination. The structure is consistent with standard linear regression where each column represents a model and each row represents an observation point.]
+
+The target vector $\mathbf{b} \in \mathbb{R}^n$ contains the reference or observed ground-motion intensity values at the same evaluation points, with components $b_i$ representing the target intensity at point $x_i$. The weighted linear combination of GMPE predictions is $\hat{\mathbf{b}} = \mathbf{A}\mathbf{w}$, where $\mathbf{w} = (w_1, \dots, w_N)^\top$ is the vector of branch weights. [@OpenQuakeEngine]^[Confidence: HIGH, Rationale: The weighted combination of branch predictions is the standard mechanism within PSHA logic trees for aggregating model alternatives, as established in the task context.]
+
+The objective function is the residual sum of squares (RSS), measuring the total squared deviation between the weighted combination of GMPE predictions and the target values across all evaluation points: ^[Confidence: HIGH, Rationale: The RSS objective is the standard loss function in least-squares regression, directly analogous to the spectral matching formulation in the KB and well-founded in optimization theory.]
+
+$$\min_{\mathbf{w} \in \mathbb{R}^N} \;\|\mathbf{A}\mathbf{w} - \mathbf{b}\|_2^2.$$
+
+The objective is a strictly convex quadratic function with Hessian $2\mathbf{A}^\top\mathbf{A}$, which is positive semidefinite (and positive definite when $\mathbf{A}$ has full column rank). [KB:spec.compile.research.md]^[Confidence: HIGH, Rationale: Convexity of the quadratic objective function is a standard property in least-squares regression, allowing unique global optimality.]
+
+The decision variables are the branch weights $\mathbf{w}$, which in principle can take any real value in the unconstrained formulation. However, physical plausibility and the interpretation of weights as contributions to the ensemble probability distribution require that each weight be non-negative. The non-negativity constraint reflects the fact that negative weights would imply subtraction or negation of a GMPE prediction, a construct with no physical meaning in the context of model combination. [KB:spec.compile.research.md]^[Confidence: HIGH, Rationale: Non-negativity constraints are justified by physical plausibility in both the spectral record-selection problem (KB) and the GMPE weight-calibration problem; negative weights cannot be meaningfully interpreted as model contributions.]
+
+The constrained optimization problem is thus formulated as follows: ^[Confidence: HIGH, Rationale: The explicit inclusion of the non-negativity constraints is essential for physical plausibility and is directly supported by the KB's treatment of NNLS in the spectral matching context.]
+
+$$\min_{\mathbf{w} \in \mathbb{R}^N} \;\|\mathbf{A}\mathbf{w} - \mathbf{b}\|_2^2 \quad \text{subject to} \quad w_k \geq 0, \quad k = 1, \dots, N.$$
+
+The feasible region is the non-negative orthant in $\mathbb{R}^N$, a closed convex cone. The strictly convex quadratic objective over this convex feasible set guarantees a unique global minimiser (when $\mathbf{A}$ has full column rank). [KB:spec.compile.research.md]^[Confidence: HIGH, Rationale: The uniqueness of the solution for strictly convex quadratic programs over convex feasible regions is a fundamental result in convex optimization theory, directly applicable here.]
+
+This formulation establishes the mathematical foundation for weight calibration: an objective function that minimizes prediction error, decision variables representing branch weights, and inequality bound constraints enforcing non-negativity. The resulting weights form the basis upon which the normalization extension in SLOT 2 is constructed. [KB:spec.compile.research.md]^[Confidence: HIGH, Rationale: The formulation presented is a direct generalization of the NNLS approach in the KB, adapted from the spectral record-selection problem to the GMPE weight-calibration problem with consistent mathematical structure.]
+

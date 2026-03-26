@@ -1,0 +1,103 @@
+PROMPT WORKFLOW (TASK → SLOT-BASED STRUCTURED PROMPT, WITH COVERAGE CHECK)
+
+You will read a free-form TASK_FILE and produce a normalized prompt document with
+a fixed SLOTS + CONSTRAINTS layout. Your job is not only to restructure the task
+but also to **make explicit which parts of TASK_FILE are covered by each slot**,
+so that downstream workflows (research, synthesis, compile) can trust that no
+requirement was silently dropped or invented.
+
+Inputs (absolute paths provided):
+- TASK_FILE: /c/front_door/projects/WQD/research/task.research.md
+- KB_DIR (optional):          # Not used for evidence in this workflow
+- SESSION_DIR: /c/front_door/projects/WQD/research/sessions/run-20260112_231434
+- FORMAT_RULES: /c/front_door/tools/tito/rules/format.session.md   # rules/format.session.md (style only)
+- AUDIT_RULES: /c/front_door/tools/tito/rules/audit.md     # rules/audit.md (paragraph footnotes)
+- MANIFEST: /c/front_door/projects/WQD/research/sessions/run-20260112_231434/manifest.json   # CLI-provided manifest (authoritative I/O)
+
+Goal:
+Produce ONE markdown file representing the structured prompt.
+Output filename is controlled by MANIFEST:
+  /c/front_door/projects/WQD/research/sessions/run-20260112_231434/<MANIFEST.outputs.primary>
+Do NOT derive output filenames from TASK_FILE or workflow names.
+
+The structured prompt MUST:
+- Contain a `## SLOTS` section with one slot per **explicit work item** in
+  TASK_FILE (questions, subtasks, requested outputs).
+- Contain a `## CONSTRAINTS` section for true global constraints only.
+- Preserve the original intent and ordering of TASK_FILE.
+- Include lightweight audit-style notes that make it clear which parts of
+  TASK_FILE justify each slot and whether any requirements appear partially or
+  not covered.
+
+Method:
+1) Read TASK_FILE and extract requirements
+   - Read TASK_FILE once, end to end.
+   - Identify every explicit work item the user is asking for:
+     - Questions (e.g. bullets starting with "- ?" or similar constructs).
+     - Subtasks or numbered items.
+     - Requested outputs or deliverables.
+   - For each work item, derive a short internal identifier in your reasoning
+     (e.g. REQ-001, REQ-002, ...) but DO NOT expose these IDs in the final
+     markdown.
+   - Identify explicit **global** constraints (language, style, length,
+     document-wide formatting constraints) that clearly apply to the entire
+     downstream workflow, not just to a single question.
+
+2) Build SLOTS section (one slot per requirement)
+   - Under the heading `## SLOTS`, create **at least one slot per explicit work
+     item** you identified in TASK_FILE.
+   - You MUST NOT merge clearly separate bullets/questions from TASK_FILE into a
+     single slot unless they are obvious rephrasings of the same requirement.
+   - Preserve the original ordering of work items: SLOT 1 should correspond to
+     the earliest requirement in TASK_FILE, SLOT 2 to the next, and so on.
+   - For each slot, add a heading:
+     - `### SLOT N: <short title>` where N is 1-based and `<short title>` is
+       derived from the wording of the underlying requirement (no new goals).
+   - Under each slot heading, add a short description that:
+     - Uses only information from TASK_FILE.
+     - Makes explicit what needs to be done for that requirement.
+     - Does **not** introduce new objectives or sub-goals that are not clearly
+       implied by TASK_FILE.
+   - If a single requirement in TASK_FILE naturally decomposes into several
+     tightly-coupled sub-steps, you may either:
+     - Keep them in a single slot description (recommended), or
+     - Create multiple slots that all refer to the same underlying requirement.
+     In both cases, do not invent new work items.
+
+3) Build CONSTRAINTS section (true globals only)
+   - Add a heading `## CONSTRAINTS`.
+   - Under it, list only **global** constraints as `- ...` bullets, such as:
+     - Language / locale requirements for the entire output.
+     - Document-wide structural rules (e.g. "no headings", "no bullet lists
+       anywhere").
+     - Global length/formatting constraints that apply to every slot.
+   - Do **not** move slot-specific instructions (e.g. "include case studies when
+     answering this particular question") into the global CONSTRAINTS list;
+     keep them inside their corresponding slot descriptions.
+   - Constraints MUST be paraphrases of explicit, document-wide requirements
+     stated in TASK_FILE. Do not invent new constraints, and do not describe
+     tools, workflows, or implementation details here.
+
+4) Internal coverage and hallucination check (audit-style)
+   - Using AUDIT_RULES conceptually, perform a brief coverage check **within the
+     prompt itself**, treating TASK_FILE as the only evidence source:
+     - For each slot, verify that you can justify it by quoting or paraphrasing
+       specific parts of TASK_FILE.
+     - If a slot cannot be clearly justified by TASK_FILE, you MUST revise or
+       drop it; do not keep unsupported slots.
+     - For any explicit requirement in TASK_FILE that still feels only
+       partially covered by the SLOTS/CONSTRAINTS you wrote, refine the
+       corresponding slot description until coverage is clear.
+   - You MAY add short audit-style notes as footnotes or trailing sentences
+     inside the slot descriptions (e.g. "This slot covers the questions about X
+     and Y in the task text"), but you MUST NOT introduce external citations or
+     reference external sources.
+
+5) Apply formatting rules and write output file
+   - If FORMAT_RULES is a non-empty path, you MUST read and apply those rules to
+     adjust style and basic formatting of the prompt (headings, lists, spacing),
+     without changing the meaning of any slot or constraint.
+   - Read MANIFEST and use `outputs.primary` as the only valid output filename.
+   - Use Write tool to save the structured prompt to:
+     /c/front_door/projects/WQD/research/sessions/run-20260112_231434/<MANIFEST.outputs.primary>
+   - Confirm: "Structured prompt written to /c/front_door/projects/WQD/research/sessions/run-20260112_231434/<MANIFEST.outputs.primary>"

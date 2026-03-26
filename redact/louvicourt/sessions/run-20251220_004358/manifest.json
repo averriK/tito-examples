@@ -1,0 +1,12 @@
+{
+  "id": "r3",
+  "workflow": "compile-redact",
+  "sessions": [
+    { "path": "../run-20251220_004111/r3.redact.md" },
+    { "path": "../run-20251220_004112/r3.redact.md" },
+    { "path": "../run-20251220_004113/r3.redact.md" }
+  ],
+  "outputs": {
+    "markdown": "r3.compile.redact.md"
+  }
+}

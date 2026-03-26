@@ -1,0 +1,17 @@
+{
+  "id": "srsBh2",
+  "workflow": "research",
+  "source": {
+    "kb_dir": "/Users/averrik/Cloud/github/tools/ruflo-tito/tests/real/srsBh2/kb",
+    "documents": [
+      "spec.compile.research.md"
+    ]
+  },
+  "orchestration": {
+    "structured_prompt_spec": "structured_prompt_spec.json",
+    "slot_orchestration_plan": "slot_orchestration_plan.json"
+  },
+  "outputs": {
+    "primary": "srsBh2.research.md"
+  }
+}

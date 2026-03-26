@@ -1,0 +1,14 @@
+{
+  "id": "R0",
+  "workflow": "research",
+  "source": {
+    "kb_dir": "/Users/averrik/github/tito-examples/research/NGR2025/kb",
+    "documents": [
+      "Mmax.research.compile.1.md",
+      "Mmax.research.compile.2.md"
+    ]
+  },
+  "outputs": {
+    "markdown": "R0.research.md"
+  }
+}

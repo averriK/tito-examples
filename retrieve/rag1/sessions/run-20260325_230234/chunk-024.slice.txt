@@ -1,0 +1,400 @@
+Combining expressions for the flexible base (Equation 8.6) and fixed‑base (Equation 8.3) natural periods, the period ratio can be expressed as
+
+   T k h = + + (8.7) m k   T m k k x yy
+
+which simplifies into the classical period lengthening expression (Veletsos and Meek, 1974):
+
+ T k kh = + + (8.8) T k k x yy
+
+For consistency with SSI literature, the subscript “0” is dropped from the vibration periods in Equations (8.7) and (8.8). Note that T T / goes to 1.0 as kx and kyy go to infinity (i.e., the fixed‑base case), but is otherwise always greater than 1.0, indicating that the fundamental period of the soil‑structure system will be greater than that of the fixed‑base system. Equation (8.8) can be applied to multi‑degree‑of‑freedom structures by taking the height, h, as the height of the center of mass for the first‑mode shape (usually about two‑thirds of the overall structure height). In such cases, period lengthening applies mainly to the first‑mode period because higher modes produce relatively limited base shear and moment in most cases. Geotechnical Earthquake Engineering
+
+The dimensionless parameters controlling period lengthening of a rectangular structure with base dimensions 2B × 2L are: h h B m ° , , , , and ρ V T B L BLh s s where h is the structure height (or height to the center of mass of the first‑mode shape), ρs is the soil mass density, and ν is the Poisson’s ratio of the soil. Note that it is common in SSI to denote B and L as the half‑dimensions of rectangular foundations with B ≤ L, which is different than the full dimensions commonly used in foundation engineering. To the extent that h/T0 quantifies the stiffness of the superstructure, the term h/(VsT0) represents the structure‑to‑soil stiffness ratio. The term h/ T0 has units of velocity, and will be larger for stiff lateral force resisting systems, such as shear walls, and smaller for flexible structural systems, such as moment frames. The shear wave velocity, Vs, is closely related to soil shear modulus, G, being = ρ (Eq. 6.76). For typical building structures on soil and weathered rock computed from G V s s sites, h/(VsT0) is less than 0.1 for moment frame structures, and between approximately 0.1 and 0.5 for shear wall and braced frame structures (Stewart et al., 1999b). Period lengthening increases markedly with increasing structure‑to‑soil stiffness ratio, which is the most important parameter controlling inertial SSI effects. The structure aspect ratio, h/B, and foundation aspect ratio, B/L describe the geometry of the soil‑structure system. The mass ratio, m/(ρs4BLh), is the ratio of structure mass to the mass of soil in a volume extending to a depth equal to the structure height, h, below the foundation plan area. Equation (8.8) shows that period lengthening has no fundamental dependence on mass. The mass ratio term was introduced so that period lengthening could be related to easily recognizable charac‑ teristics such as structural first‑mode period, T0, and soil shear wave velocity, Vs, rather than struc‑ tural stiffness, k, and soil shear modulus, G. The effect of mass ratio is modest, and it is commonly taken as 0.15 (Veletsos and Meek, 1974). Using models for the stiffness of rectangular foundations (of half‑width, B; half‑length, L) resting on a homogeneous isotropic half‑space with shear wave velocity, Vs, computed period lengthening ratios are shown for the special case of a square footing (L = B) in Figure 8.6a. All other factors being equal, period lengthening increases with the structure aspect ratio (i.e., increasing h/B), due to increased rocking caused by increased overturning moments. This implies that inertial SSI effects would be more significant in tall buildings, which is actually not the case. Tall buildings typically have low h/(VsT0) ratios, which have a greater influence on inertial SSI effects. Hence, period length‑ ening in tall buildings is near unity. For a fixed structure aspect ratio, period lengthening decreases modestly with increasing foundation aspect ratio (i.e., increasing B/L) due to increased foundation size (and therefore stiffness) normal to the direction of loading. In addition to period lengthening, system behavior is also affected by damping associated with soil‑foundation interaction. The contribution of soil‑foundation interaction to system damping is referred to as foundation damping, ξf. This damping has contributions from soil hysteresis (hysteretic damping) and radiation of energy, in the form of stress waves, away from the foundation (radiation damping). The flexible‑base system damping, ξ0 is related to ξf and fixed‑base structural damping ξi as:
+
+ξ = ξ + ξ (8.9) ( ) f i n 
+
+### T T
+
+The fixed base structural damping depends on structural system type and configuration (ATC, 2010), but is often taken by default as 5%. Observations from case studies have shown that ξf ranges from approximately 0% to 25% (Stewart et al., 1999b). The exponent, n, on the period lengthening term in Equation (8.9) is 3 for ideally viscous material damping and is 2 otherwise (Givens et al., 2016). Use of n = 2 is recommended. Soil–Structure Interaction
+
+ξ( )
+
+### FIGURE 8.6 Plot of period lengthening ratio ( T
+
+) and foundation damping f versus / T ­structure‑to‑soil‑stiffness ratio for square foundations (L = B) and varying structure aspect ratios, h/B. In this plot, ν = 0.33, B/L = 1.0, hysteretic soil damping ξs = 0, mass ratio = 0.15, and exponent n = 2 (see Equations 8.9 and 8.10). (Figure modified from NIST, 2012.)
+
+### Example 8.1
+
+Consider the simple structure in Figure E8.1 on a square foundation, L/B = 1.0. Find the fixed‑base period (T0), flexible‑base period (T), and flexible‑base damping ratio (ξ0).
+
+FIGURE E8.1 Soil-structure system considered in Example 8.1.
+
+### Solution:
+
+= =0.34 sec. The fixed base period is computed from Equation (8.3) as 2π / T m k Period lengthening can be evaluated from Figure 8.6 if the structure‑to‑soil stiffness ratio and ( ) 0 = 0.35. The struc‑ structure aspect ratio are known. The structure‑to‑soil stiffness ratio is / h V T s  / = 1.0. From Figure 8.6, period lengthening T T ture aspect ratio is h B is found to be 1.5 (by con‑  ). The foundation damping ξ f = 0.2. vention, the “0” subscript is dropped from the periods in T T Geotechnical Earthquake Engineering
+
+The flexible‑base period can then be computed as  T × =
+
+##### 0.51 sec.
+
+T T The flexible‑base damping is computed using Equation (8.9) as ξ i ξ = ξ + = 0.22. ( ) f  / T T
+
+In this example, the period is appreciably lengthened and the damping increases by more than a factor of four. Most building structures do not have such large effects of inertial interaction.
+
+Givens et al. (2016) derived analytical models for foundation damping, while also explaining dif‑ ferences between foundation damping equations presented in prior studies (Veletsos and Nair, 1975; Bielak, 1975; Roesset, 1980; Wolf, 1985; Maravas et al., 2014). A suitable solution for the foundation damping ratio, ξf, for most applications is given by: ( ) ( ) ξ = ξ + ξ + ξ + ξ (8.10) ( ) ( ) f x s yy s n n   * *
+
+### T T
+
+### T T
+
+x yy
+
+where ξs is soil hysteretic damping ratio (Section 6.6.4 and Table 8.1), ξx and ξyy are damping ratios related to radiation damping from translational and rotational modes (described further in Section
+
+- are complex‑valued fictitious
+- and Tyy
+8.3.2), and n should generally be taken as 2. The periods Tx vibration periods for foundation vibration (their amplitude, as used in Equation (8.10), would repre‑ sent actual system period if the superstructure were rigid and the respective foundation vibrations were the only available degrees of freedom of a fictitious SDOF system):
+
+m mh = = * * 2π 2π (8.11) T T x yy * * k k x yy
+
+- (where j refers to the x or yy indices) is the amplitude of a complex‑valued
+In Equation (8.11), k j impedance function, as described further in Section 8.3.2. Figure 8.6b shows that foundation damping, ξf, increases with increasing structure‑to‑soil‑stiff‑ ness ratio, h/(VsT0) and decreases with increasing structure aspect ratio, h/B. The decrease of ξf with aspect ratio indicates that lateral movements of the foundation (which dominate at low h/B) dissipate energy into soil more efficiently than foundation rocking (which dominates at high h/B). The radiation damping terms, ξx and ξyy, are reduced significantly when a stiff bedrock layer is encountered at moderate or shallow depths, as described further in Section 8.3.2.2. Analysis procedures for T T and ξf similar to those described above have been validated relative / to observations from instrumented buildings shaken by earthquakes (Stewart et al., 1999a, b). These case studies confirm the analytical finding that the single most important parameter controlling the significance of inertial interaction is h/(VsT0), and that inertial SSI effects are generally negligible for h/(VsT0) < 0.1, which occurs in flexible structures, such as moment frame buildings, located on competent soil or rock. Conversely, inertial SSI effects tend to be significant for stiff structures, such as shear wall or braced frame buildings, located on softer soils. Many of the early advances in understanding and analysis of SSI, in fact, came from the nuclear power industry where stiff struc‑ tures must be designed for extremely high performance standards. Soil–Structure Interaction
+
+FIGURE 8.7 Illustration of effects of period lengthening and change of damping on fundamental mode spec‑ tral acceleration from which base shear is evaluated. Solid curve represents spectrum for fixed‑base damping ratio. Dashed curve represents spectrum at increased damping ratio associated with a flexible‑base case.
+
+The effect of inertial SSI on the peak base shear that develops in a structure is illustrated in Figure 8.7. Because base shear for elastic response is commonly computed based on first‑mode spectral acceleration, the figure depicts the variation in spectral acceleration versus normalized period on a log scale. The spectra are drawn for two effective damping ratios corresponding to flexi‑ ble‑base (ξ0) and fixed‑base (ξi) conditions. The spectral acceleration for a flexible‑base structure, Sa, is obtained by entering the spectrum (dashed curve) drawn for damping ratio ξ0 at the ­corresponding elongated period, T. The fixed‑base counterpart is obtained using the spectral acceleration for the fixed‑base period (indicated without the ~ symbol) and the fixed‑base damping. The effect of SSI on base shear is influenced by the slope of the spectrum. Base shear tends to increase when the slope is positive and decrease when the slope is negative. Case A represents buildings with relatively long periods (e.g., TA in Figure 8.7) on the descending portion of the spectrum; use of ( ) A (flexible base Sa ordinate) in lieu of the fixed base ordinate typically results in reduced base shear demand. Case B represents a short‑period structure ( TB in Figure 8.7) on the ascending branch of the spectrum where, despite the effects of increased damping, period lengthening causes inertial SSI to increase the base shear.
+
+### Example 8.2
+
+The structure described in Example 8.1 is subject to design ground motions with the response spectra shown in Figure E8.2. Note that the spectra are provided for two damping ratios corre‑ sponding to fixed‑ and flexible‑base conditions. What is the change in the design spectral accel‑ eration that would be achieved by considering inertial soil–structure interaction (SSI)? Geotechnical Earthquake Engineering
+
+FIGURE E8.2 Effect of period lengthening and foundation damping on the first-mode spectral acceleration.
+
+### Solution:
+
+From Example 8.1, the fixed‑ and flexible‑base natural periods of the system were 0.34 and 0.51 sec, respectively. As shown by the solid dot in the plot, the fixed‑based spectral acceleration is 0.49g for the fixed‑base case, in which the damping ratio is 5%. For the flexible‑base case, the spectrum is drawn at a higher damping ratio of 22% and the spectral acceleration at 0.51 sec (open circle) is 0.29g. Hence, the design ground motions are decreased by about 40%, with most of the reduction resulting from the damping increase.
+
+###### 8.3.2 Shallow Foundations
+
+The stiffness and damping associated with foundation interaction with supporting soils is a funda‑ mental consideration in SSI analysis. This sections describes the factors controlling this interaction and presents models that are used in applications.
+
+### 8.3.2.1 Stiffness and Damping for Rigid Foundations and Uniform Soils
+
+The notion of a complex stiffness that simultaneously represented the stiffness and damping char‑ acteristics of an SDOF oscillator is introduced in Section B.6.3. In analogous fashion, complex impedance functions can be used to represent the frequency‑dependent stiffness and damping characteristics of soil‑foundation interaction. Classical solutions for the complex‑valued impedance function can be written as (Luco and Westmann, 1971; Veletsos and Wei, 1971):
+
+= + ω * (8.12) k k i c j j j
+
+- denotes the complex‑valued impedance function for a particular mode of foundation vibra‑
+where k j tion indicated by index j (e.g., x or yy), and kj and cj denote the frequency‑dependent foundation stiffness and dashpot coefficients, respectively. The dashpot with coefficient c represents the effects of damping associated with soil‑foundation interaction. An alternative form for Equation (8.12) is ( ) = + ξ * (8.13) k k i j j j Soil–Structure Interaction
+
+where: ° c j ξ = (8.14) j k j which is defined for kj > 0. An advantage of using ξj over cj is that ξj can be interpreted as a fraction of critical damping (damping ratio) in the classical sense when a mass is attached to the complex spring and the system oscillates at resonance (Clough and Penzien, 1993). The imaginary part of the complex impedance is related to phase difference between harmonic excitation and response at a given frequency, a feature that is usually associated with damping (Section B.6.3). The phase angle, ϕj, between force and (lagged) displacement is (Clough and Penzien, 1993; Wolf, 1985): ( ) − φ = ° tan (8.15) j j The angle ϕj is also known as a loss angle. For example, if ξj is 10%, peak harmonic displacement will lag peak force by 11.3° or 0.197 radians. The corresponding time shift between force and dis‑ ∆= φ ω placement depends on oscillation frequency as j . t To help conceptualize the physical meaning of the complex‑valued and frequency‑dependent foun‑ dation stiffness, it is useful to consider characteristics of foundation load‑deformation responses as measured in field tests. Figure 8.8a shows the configuration of a simple test structure resting on soft soil, which was subjected to cyclic forces over a range of frequencies by a shaker mounted on the top slab. Figure 8.8b shows the relationship between foundation rotation and base moment, which can be evaluated for any point in time as the difference between the moment applied by the shaker force and the moments that develop from inertial forces in top and bottom slabs. The “loops” in this figure show the evolution of foundation rotation with base moment over several cycles of shaking; hence time is advancing as one moves along the loops in a clockwise fashion. Figure 8.8c of the figure shows a similar result for the base shear‑displacement response. Careful interpretation of the rounded tips of the loops in both figures show that the peak load (on y‑axis) occurs before the peak deformation (on x‑axis) – this offset in time between load and response is a result of damping, and can be assessed either as a time‑ or frequency‑shift per Equation (8.15). Complex numbers are used in the formulation of the stiffness to capture this damping‑induced phase shift. With regard to frequency dependence, the loops in Figure 8.8 demonstrate a decrease of secant stiffness as frequency increases from 6 to 7.5 Hz as well as an increase in the relative “fatness” of the loops (which is related to damping; Section 6.6.4). Models for the kj and ξj terms, described below, are intended to capture these features of foundation response.
+
+FIGURE 8.8 (a) Configuration of test structure used for cyclic forced vibration testing of SSI effects (box on roof slab represents shaker, arrows represent measured displacements and rotations); (b) base moment – foundation rotation response at two frequencies (6 Hz is near the system resonance); (c) base ­ shear – foundation displacement response at same frequencies as in (b). (Adapted from data in Tileylioglu et al., 2011.) Geotechnical Earthquake Engineering
+
+### Example 8.3
+
+Derive the foundation stiffnesses in translation and rotation in response to 6 Hz harmonic loading from the recorded responses of the test structure foundation in Figure 8.8.
+
+### Solution:
+
+The stiffnesses can be measured from the slopes of lines drawn through the tips of the force‑­ displacement and moment‑rotation loops, as shown in Figure E8.3. 3kN ( ) = For the translation case, this slope is ω = × 1.0 10 kN/m kx − × 3.0
+
+#### 10 m
+
+12kN‑m ( ) = For the rotation case, this slope is ω = × 3.6 10 kN‑m/rad kyy − × 3.3
+
+#### 10 rad
+
+FIGURE E8.3 Secant stiffness measurement for Example 8.3.
+
+Many impedance function solutions are available for rigid circular or rectangular foundations located on the surface of, or embedded within, a uniform, elastic, or visco‑elastic half‑space. In the case of a rigid rectangular foundation resting on the surface of a half‑space with shear wave velocity Vs, Pais and Kausel (1988), Gazetas (1991), and Mylonakis et al. (2006) summarize impedance solu‑ tions in the literature and present equations for the stiffness and damping terms in Equation (8.12). Solutions for the 2‑D case, in which excitation is in the y‑direction (parallel to the “short” dimension of the footing) are given by Gazetas and Roesset (1976) and Jakub and Roesset (1977). These solutions describe translational stiffness and damping along axes x, y, and z, and rotational stiffness and damping around those axes (denoted xx, yy, and zz) as shown in Figure 8.9a. For mode j,
+
+FIGURE 8.9 Geometry and axis orientations for rectangular foundations (a) at the ground surface and (b) embedded to depth H. (Adapted from NIST, 2012.) Soil–Structure Interaction
+
+the stiffness, kj, is represented as the product of the static (zero frequency) stiffness of the footing resting on the surface, Kj, a dynamic stiffness modifier, αj, and an embedment modifier, ηj:
+
+= α η j (8.16) k K j j j
+
+( ) ( ) ( ) = ν , α = f B L a
+
+#### 0 , and η
+
+= f B L H m where / , / , / , / ; each of these functions are K GB f B L B j j j provided below in Tables 8.2 and 8.3a. In these functions, parameters G and ν are the shear modulus and Poisson’s ratio of the soil, m = 1 for translation of a rectangular foundation for the general 3D case (m = 0 for the 2D case corresponding to excitation in y‑direction for long footing, i.e., →° ), L and m = 3 for rotation of a rectangular foundation for the general 3D case (m = 2 for the 2D case). The shear modulus, G, is evaluated using an equivalent‑linear approach and as such should reflect the effects of modulus reduction with shear strain amplitude. Approximate adjustment factors for different site classes at different PGA levels are shown in Table 8.1. The maximum (or small strain) shear modulus, Gmax, is calculated from shear wave velocity (Vs) = ρ (Eq. 6.76). An average value of Vs is generally computed across an effective profile as G V max s s depth, zp, as described in Section 8.3.2.2. Dynamic stiffness modifiers, αj, are related to dimensionless frequency a0: ω B = (8.17) a Vs which can be physically interpreted as the ratio of B to approximately one‑sixth (actually 1/2π) of the seismic wavelength for frequency ω. For time domain analysis, a single frequency must be selected to evaluate a0‑dependent foundation spring and dashpot coefficients; this can be taken
+
+### TABLE 8.1
+
+### Values of Shear Modulus Reduction and Hysteretic Soil Damping for Various NEHRP
+
+### Site Classes (Section 7.3.3.1) and Shaking Amplitudes
+
+### Vs Reduction Factor = G
+
+### Value of ξs
+
+G
+
+### Value of G∕Gmax
+
+/
+
+### max
+
+### PGA (g)
+
+### PGA (g)
+
+### PGA (g)
+
+### Site Class
+
+### ≤0.1
+
+### 0.4
+
+### ≥0.8
+
+### ≤0.1
+
+### 0.4
+
+### ≥0.8
+
+### ≤0.1
+
+### 0.4
+
+### ≥0.8
+
+A 1.00 1.00 1.00 1.00 1.00 1.00 na na na B 1.00 0.97 0.95 1.00 0.95 0.90 na na na BC 0.98 0.92 0.86 0.97 0.84 0.73 na na na C 0.97 0.87 0.77 0.95 0.75 0.60 0.01 0.03 0.05 CD 0.96 0.79 0.50 0.92 0.62 0.25 0.01 0.05 0.09 D 0.95 0.71 0.32 0.90 0.50 0.10 0.02 0.07 0.15 DE 0.86 0.40 0.18 0.73 0.16 0.03 0.03 0.12 0.20 E 0.77 0.22 * 0.60 0.05 * 0.05 0.20 * F * * * * * * * * *
+
+Source: Table modified from NIST (2012) and BSSC (2020a). PGA denotes the peak horizontal acceleration for the free‑field, ground surface conditions. Note: Use straight line interpolation for intermediate values of PGA. *, should be evaluated from site‑specific analysis; na, values not specified (use of foundation damping not recommended). Geotechnical Earthquake Engineering
+
+as the frequency anticipated to dominate the structural response. In most cases, this will be the first‑mode flexible‑base frequency. Table 8.2 provides expressions for static foundation stiffness, Kj, and embedment factors, ηj, for three translational and three rotational degrees of freedom for rigid rectangular footings (Pais and Kausel, 1988; NIST, 2012). Similar equations were provided by Gazetas (1991) and Mylonakis et al. (2006). Due to the additional normal and shear stresses that develop on the sides of the foundation, embedment increases static foundation stiffness and as a result the embedment factors in Table 8.2 only increase the static stiffness. Solutions for the 2D case are also given in Table 8.2 for one trans‑ lational degree of freedom (along y‑axis) and one rotational degree of freedom (xx) (Gazetas and Roesset, 1976; Jakub and Roesset, 1977). Equations for dynamic stiffness modifiers, αj, and radiation damping ratios, ξj, for rigid foot‑ ings located at the ground surface are provided in Table 8.3a. The frequency dependence of these quantities is an outcome of representing the soil mass supporting the footing with discrete spring and dashpot elements. Due to its distributed mass, the medium actually has an infinite number of degrees of freedom, each with mass and associated dynamic effects. The ‘condensation’ of the dynamic response of that medium to discrete elements requires that their properties be fre‑ quency‑dependent (i.e., to incorporate wave propagation phenomena into spring and dashpot values). This frequency dependence would disappear for massless soil, as a0 would become zero (because 0 in Equation 8.17), causing αj = 1, and ξj = 0. = max ρ →∞ as ρ ° V G s s s Radiation damping ratios for embedded footings are provided in Table 8.3b. Dynamic stiffness modifiers are insensitive to embedment, so values for embedded foundations are the same as values given in Table 8.3a for footings located at the ground surface (i.e., α = α ). , , j emb j sur Figure 8.10 shows the variation of dynamic stiffness modifiers with dimensionless frequency for rigid footings located at the ground surface. In the case of translational stiffness, dynamic stiff‑ ness modifiers (αx, αy) are essentially unity, regardless of frequency or foundation aspect ratio. For rotational stiffness, however, dynamic stiffness modifiers for rocking (αxx, αyy) degrade markedly with frequency, but are relatively insensitive to aspect ratio. Figure 8.10 also shows the variation of radiation damping vs frequency for translation (ξx, ξy) and rotation (ξxx, ξyy). Translational radiation damping is only modestly affected by the direction of shaking or the aspect ratio of the foundation. The modest increase of translational damping with aspect ratio is a result of the increased founda‑ tion size (i.e., the foundation becomes larger as aspect ratio increases). In contrast, rotational radiation damping is strongly sensitive to the direction of shaking and the aspect ratio of the foundation. Rotational damping is largely controlled by 180-degree out-of-phase vertical cyclic displacements at the edges of the foundation (assuming no separation between soil and footing). The levels of radiation damping in rotation can be influenced by destructive interfer‑ ence of waves emanating from the ends of the rotating foundation (in effect, the phase shift can cause the waves to “cancel out” each other, reducing radiation damping). This effect is strong for small aspect ratios, producing low levels of rotational radiation damping. As aspect ratio increases, the ends of the foundation are located further apart, and energy radiating into the soil from each end of the foundation experiences less destructive interference, thus increasing damping. At low frequencies (a0 < 1 to 2), damping from rotation is generally smaller than damping from ­translation, although the trend reverses as frequency increases and foundations become relatively oblong. The practical significance of this effect is that translational deformation modes in the foundation, while often relatively unimportant from the perspective of overall structural system flexibility, can be the dominant source of foundation damping. When used to calculate the dashpot coefficient, cj (Equation 8.14), the ξj term should be taken as the sum of radiation damping for the appropriate vibration mode (Table 8.3) and hysteretic damping (ξs) (from ground response analysis or Table 8.1). Soil–Structure Interaction
+
+Source: Solutions for rectangular foundations adapted from Pais and Kausel (1988), as given by NIST (2012). Solutions for 2D case apply for shaking in y‑direction
+
+### (T8.2.1‑2)
+
+### (T8.2.2‑2)
+
+### (T8.2.3‑2)
+
+### (T8.2.4‑2)
+
+### (T8.2.5‑2)
+
+### (T8.2.6‑2)
+
+### (T8.2.7‑2)
+
+### (T8.2.8‑2)
+
+        
+
+### Embedment Modifier
+
+H B      H B   0.8         0.8 ) H B  B      B 0.9 Elastic Solutions for Static Stiffness of Rigid Footings at the Ground Surface and Embedded to depth H   H B / /  L   1.6 L B     1.6 ( H B +    + 1.34 soil / H B 0.25 0.35   L soil 0.35 H z  / + z B L 1.32   / +   + + L + + + 0.25 0.33   + H B H B     1.3   H B + +     H B Notes: Axes should be oriented such that L ≥ B. G = shear modulus (reduced for large strain problems, e.g., Table 8.1). 1.0 + + 1.0   + + 1.0 1.0 +    y η                  = = = = η = η = η = ° yy xx xx zz y y x z η η η η η
+
+### (T8.2.1‑1)
+
+### (T8.2.2‑1)
+
+### (T8.2.3‑1)
+
+### (T8.2.4‑1)
+
+### (T8.2.5‑1)
+
+### (T8.2.6‑1)
+
+### (T8.2.7‑1)
+
+### (T8.2.8‑1)
+
+and are adapted from Gazetas and Roesset (1976) and Jakub and Roesset (1977).    1.6
+
+### Surface Solution
+
++  B L       0.27 4.06         2.4 0.8 1.6     0.8 + + + + soil + B 2.4 2.45 0.65 0.65 + 0.75 z       soil  B L     B   B L B L B B L L + z B L   °    3.73       4.25   3.2 6.8 6.8 + 3.1 ) ν             
+
+### GB
+
+   −    ν ν ν ν ν G ν
+
+#### 2 1
+
+GB
+
+### GB
+
+GB
+
+### GB
+
+GB GB − − 2.1 − π − − ( − = = = = = = = = xx sur xx sur yy sur zz sur x sur y sur y sur z sur , , , , , , , , K K K K K K K K
+
+Translation along y‑axis: 2D case Rocking about x‑axis: 2D case Translation along y‑axis Translation along x‑axis Translation along z‑axis Rocking about y‑axis Rocking about x‑axis
+
+### Degree of Freedom
+
+Torsion about z‑axis
+
+### TABLE 8.2
+
+Geotechnical Earthquake Engineering
+
+Dynamic Stiffness Modifiers and Radiation Damping Ratios for Rigid Surface Foundations (Pais and Kausel 1988, NIST 2012)
+
+### (T8.3.4‑2)
+
+### (T8.3.5‑2)
+
+### (T8.3.6‑2)
+
+### (T8.3.1‑2)
+
+### (T8.3.2‑2)
+
+### (T8.3.3‑2)
+
+    yy α zz a   ° a xx
+
+### Radiation Damping
+
+   α          a          a        a +    +  a a  )  + 0.7 ) − B  a ) B / ) ) − B a L B / B 0.4 ) 1.8 B L ( 1.4 / / + ( /   L    L  
+
+#### 1 1.75
+
+/ L ( x y L )( ) z α ° ° ( B − a a )( a / 3 2.2 / + / 3 +        L             ° ) (   )   ) )    ° GB     GB     ) GB     ( ) ) B 4 / 3     B B   ( xx sur / yy sur zz sur / / / / / L
+
+### GB
+
+### GB
+
+,
+
+### GB
+
+, x sur L y sur L z sur , ( ( ( ( , K K , K , ° K K K       ( ( (                                     = = = = = = yy xx zz y x z ξ ξ ξ ξ ξ ξ
+
+Notes: Orient axes such that L ≥ B. Hysteretic damping (ξs) is additive to radiation damping.
+
+### (T8.3.1‑1)
+
+### (T8.3.2‑1)
+
+### (T8.3.3‑1)
+
+### (T8.3.4‑1)
+
+### (T8.3.5‑1)
+
+### (T8.3.6‑1)
+
+### Surface Stiffness Modifiers
+
+              a a a )               a ) + + − a a  − B )  + + B B a /  − )  / B L   0.4 ) B L ) / B a 0.2 − 1.4 / 0.01 L 0.55 / 0.8 0.03 L / B L ( L ( − / 0.33 ( + L + 2.4 + − 0.4 ( 0.55 0.6 0.33 +   +     (   (                        − −        − − 1.0 1.0 1.0 1.0 1.0 1.0 2.5 = = = α = α = = ≤ yy xx zz y x z α α α α ψ
+
+#### 2 ) ,
+
+ν − / (1 ) Translation along x‑axis Translation along y‑axis Translation along z‑axis ν − Rocking about y‑axis Rocking about x‑axis
+
+### Degree of Freedom
+
+#### 2 1
+
+Torsion about z‑axis (
+
+### TABLE 8.3A
+
+= ψ ; s
+
+### B V
+
+/ ω = a Soil–Structure Interaction
+
+### (T8.3.1‑3)
+
+### (T8.3.2‑3)
+
+### (T8.3.3‑3)
+
+### (T8.3.4‑3)
+
+### (T8.3.5‑3)
+
+### (T8.3.6‑3)
+
+  yy α a          xx α zz a a α a yy + f   yy     f   a a xx   +  f H B ) xx B f     /  yy emb L   °
+
+### GB
+
+( , H B + + K B   L   )    B   xx emb   Radiation Damping Ratios for Embedded Rigid Foundations (Pais and Kausel 1988, NIST 2012) + /
+
+### GB
+
+, L B L K ) (   + + °     B a  
+
+### Radiation Damping
+
+/   H     ( + B L °   + a )   ° B +   B L ) / B  0.4 H    B L / a ) ( L ° +   + ( B  zz −  H B f / B L 2.2  L +       (  zz emb  = + H B GB a , xx ) +  f  +   B K
+
+#### 1 ;
+
+H B   yy a /   ) f z    H + α +      − a y ) ( α xx    x α B a f    H B yy emb a  B     B / L   
+
+### GB
+
+1.8 ,        L     /   )      xx emb ( K B  L
+
+#### 1 1.75
+
+B  L )
+
+### GB
+
+ ( ) B , /   B H B   ° L K / ° / + + + L   L   + ) ° ° B ) + )( ) GB = + ) +  GB / GB B ° yy  H H B ( ( / f / H B ) ) )( /
+
+##### 0.7 ;
+
+H +   / B B Notes: Hysteretic damping (ξs) is additive to radiation damping. z emb y emb B   x emb ) ( / / , +  / ) , H H  , K L H K B B L K ( ( B ( − ( ( + + (     B / 1.4       B  B L ) ) / )
+
+#### 4 / 3
+
+#### 4 / 3
+
+4 / 3 / / ( L L L ° (    ( ( ( +                                 = = = = = = = yy xx zz y x z ξ ξ ξ ξ ξ ξ zz f ; 2.5 ≤ ψ
+
+#### 2 ) ,
+
+ν − /(1 αemb = αsur; from Table 8.3a ) Translation along y‑axis Translation along x‑axis Translation along z‑axis ν − Rocking about y‑axis Rocking about x‑axis
+
+### Degree of Freedom
+
+#### 2 1
+
+Torsion about z‑axis (
+
+### TABLE 8.3B
+
+= ψ ; s
+
+### B V
+
+/ ω = a Geotechnical Earthquake Engineering
+
+FIGURE 8.10 Plot of dynamic stiffness modifiers and damping ratios versus dimensionless frequency, for rect‑ angular footings supported on the surface of a homogeneous half‑space, with zero hysteretic damping, and ν = 0.33: (a) x‑direction (long dimension of footing); and (b) y‑direction (short dimension). (Figure from NIST, 2012.)
+
+### Example 8.4
+
+The foundation for which the responses were measured in Example 8.3 has plan dimensions of 4.06 × 4.06 m. The site at which these measurements were made has an average velocity of 198 m/s and mass density of 1,800 kg/m3 over the applicable depth range for impedance calcu‑ lations. Calculate the predicted foundation stiffnesses for the test structure for linear conditions using the relations in Table 8.2.
+
+### Solution:
+
+For foundation stiffness calculations, it is best to start with the static stiffness of the foundations and then to make the dynamic adjustment per Equation (8.16). ( ) = ν m , with equa‑ Static stiffnesses are computed using expressions of the form / , K GB f B L j tions for specific vibration modes j provided in Table 8.2. For the case of horizontal translation, the loading direction is taken in the x‑direction (because the foundation is square, it could have equivalently been taken as the y‑direction). From Table 8.2, = ρ and taking ν = 0.3 (surficial materials are sandy), and using G Vs s
+
+    0.65 0.65 (1800 kg/m )(198 m/sec) (2.03 m) 6.8 2.03 m   GB L   + = = + 6.8 2.4 2.4 K        , x sur − ν − 0.3 2.03 m B     = × 7.8 10 kN/m For the case of rotation caused by excitation in the x‑direction, the rotation is about the yy‑axis (Figure 8.9). From Table 8.2,
+
+    2.4 2.4 (1800 kg/m )(198 m/sec) (2.03 m) 3.73 2.03 m   GB L   + = = + 3.73 0.27 0.27 K        , yy sur − ν − 0.3 2.03 m B     kN‑m = × 3.4 rad Soil–Structure Interaction
+
+The dynamic modifiers depend on dimensionless frequency. From Equation (8.17), 0 = × × = . Then, from Table 8.3, 2π 2.03 m 6Hz /198 m/s 0.39 a
+

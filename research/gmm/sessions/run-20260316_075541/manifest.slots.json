@@ -1,0 +1,88 @@
+    {
+      "id": "slot-01",
+      "ordinal": 1,
+      "title": "Definitions, notation, and equations for the GMM framework",
+      "sources": [
+        { "path": "slot_sources/slot-01.run-20260316_071942.md" },
+        { "path": "slot_sources/slot-01.run-20260316_071943.md" },
+        { "path": "slot_sources/slot-01.run-20260316_071944.md" }
+      ],
+      "output_path": "gmm.compile.research.slot-01.md"
+    },
+    {
+      "id": "slot-02",
+      "ordinal": 2,
+      "title": "Definition of GMM/GMPE in the context of PSHA",
+      "sources": [
+        { "path": "slot_sources/slot-02.run-20260316_071942.md" },
+        { "path": "slot_sources/slot-02.run-20260316_071943.md" },
+        { "path": "slot_sources/slot-02.run-20260316_071944.md" }
+      ],
+      "output_path": "gmm.compile.research.slot-02.md"
+    },
+    {
+      "id": "slot-03",
+      "ordinal": 3,
+      "title": "Epistemic uncertainty and ground-motion logic trees",
+      "sources": [
+        { "path": "slot_sources/slot-03.run-20260316_071942.md" },
+        { "path": "slot_sources/slot-03.run-20260316_071943.md" },
+        { "path": "slot_sources/slot-03.run-20260316_071944.md" }
+      ],
+      "output_path": "gmm.compile.research.slot-03.md"
+    },
+    {
+      "id": "slot-04",
+      "ordinal": 4,
+      "title": "Active Shallow Crust (ASC) - GMPEs and logic tree",
+      "sources": [
+        { "path": "slot_sources/slot-04.run-20260316_071942.md" },
+        { "path": "slot_sources/slot-04.run-20260316_071943.md" },
+        { "path": "slot_sources/slot-04.run-20260316_071944.md" }
+      ],
+      "output_path": "gmm.compile.research.slot-04.md"
+    },
+    {
+      "id": "slot-05",
+      "ordinal": 5,
+      "title": "Stable Continental Crust (SCC) - GMPEs and logic tree",
+      "sources": [
+        { "path": "slot_sources/slot-05.run-20260316_071942.md" },
+        { "path": "slot_sources/slot-05.run-20260316_071943.md" },
+        { "path": "slot_sources/slot-05.run-20260316_071944.md" }
+      ],
+      "output_path": "gmm.compile.research.slot-05.md"
+    },
+    {
+      "id": "slot-06",
+      "ordinal": 6,
+      "title": "Subduction Interface (SIF) - GMPEs and logic tree",
+      "sources": [
+        { "path": "slot_sources/slot-06.run-20260316_071942.md" },
+        { "path": "slot_sources/slot-06.run-20260316_071943.md" },
+        { "path": "slot_sources/slot-06.run-20260316_071944.md" }
+      ],
+      "output_path": "gmm.compile.research.slot-06.md"
+    },
+    {
+      "id": "slot-07",
+      "ordinal": 7,
+      "title": "Subduction Intraslab (SIS) - GMPEs and logic tree",
+      "sources": [
+        { "path": "slot_sources/slot-07.run-20260316_071942.md" },
+        { "path": "slot_sources/slot-07.run-20260316_071943.md" },
+        { "path": "slot_sources/slot-07.run-20260316_071944.md" }
+      ],
+      "output_path": "gmm.compile.research.slot-07.md"
+    },
+    {
+      "id": "slot-08",
+      "ordinal": 8,
+      "title": "Basis for equally weighted logic tree branches",
+      "sources": [
+        { "path": "slot_sources/slot-08.run-20260316_071942.md" },
+        { "path": "slot_sources/slot-08.run-20260316_071943.md" },
+        { "path": "slot_sources/slot-08.run-20260316_071944.md" }
+      ],
+      "output_path": "gmm.compile.research.slot-08.md"
+    }

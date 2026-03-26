@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "task_file": "/Users/averrik/Cloud/github/tools/ruflo-tito/tests/real/srsBh2/md/task.srs.prompt.md",
+  "slot_count": 2,
+  "constraint_count": 4,
+  "slots": [
+    {"ordinal": 1, "title": "Extend weight formulation with sum-to-1 constraint", "instruction": "Extend the problem formulation for minimizing error in weight calibration (referenced from kb/ files) to incorporate the constraint that weights must sum to unity. The extension should:\n\n- Treat the problem as a generalization of constrained linear regression\n- Maintain the hypothesis that weights are bounded and greater than zero ($w_k > 0$)\n- Incorporate the final constraint that $\\sum w_k = 1$\n- Provide the mathematical formulation with appropriate Lagrange multipliers or alternative methods for enforcing the normalization constraint\n\n**Coverage:** Directly addresses TASK_FILE lines 24 (first explicit question).\n\n---"},
+    {"ordinal": 2, "title": "Validate normalization approach vs. mathematical treatment", "instruction": "Determine whether the formulation from kb/*.md (positive weights) can be solved simply by normalizing weights to sum to one, or whether this approach requires distinct mathematical treatment. The response should:\n\n- Evaluate the mathematical validity of post-hoc normalization\n- Identify whether any theoretical or practical issues arise from normalization vs. constrained optimization\n- Provide justification (theoretical or empirical) for the conclusion\n\n**Coverage:** Directly addresses TASK_FILE lines 26-27 (second explicit question).\n\n---"}
+  ],
+  "constraints": [
+    "**Language and Style:** Document in English using professional engineering methodology and technical notation. All mathematical expressions must use LaTeX format ($...$, $$...$$).",
+    "**Mathematical Framework:** Weights are constrained to be positive ($w_k > 0$) and must sum to unity ($\\sum_{k=1}^{N} w_k = 1$). All formulations must respect epistemic logic tree conventions in probabilistic seismic hazard analysis.",
+    "**External References:** Responses must reference or cite formulations from kb/*.md files where applicable and available, noting any assumptions or conditions from those sources.",
+    "**Context:** The weight calibration problem is set in the context of combining multiple ground motion prediction equations (GMPEs) in a logic tree framework for epistemic uncertainty representation in probabilistic seismic hazard analysis (PSHA)."
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "L5",
+  "workflow": "synthesis",
+  "source": {
+    "kb_dir": "/Users/averrik/github/tito-examples/synthesis/louvicourt/kb",
+    "documents": [
+      "document.md"
+    ]
+  },
+  "outputs": {
+    "markdown": "L5.synthesis.md"
+  }
+}

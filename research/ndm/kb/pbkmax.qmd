@@ -1,0 +1,14 @@
+
+The performance-based seismic coefficient $k_{\max}$ is established as the minimum horizontal acceleration required to satisfy a prescribed displacement performance objective under the combined effects of ground motion variability, model dispersion, and site-specific uncertainty. This framework links the allowable permanent displacement threshold $D_n^{\star}$ directly to the statistical distribution of predicted displacements $D_n$ for the full set of seismic hazard and material scenarios considered in the project. Let $D_n$ denote the random variable representing the Newmark-type displacement, incorporating all aleatory and epistemic uncertainties as characterized in the preceding sections. The allowable displacement $D_n^{\star}$ is specified as a design criterion for permanent ground deformations under seismic loading. For a given yield acceleration $k_y$, the exceedance probability for the displacement threshold is given by
+
+$$
+p(k_y) = \mathbb{P}[D_n(k_y) > D_n^{\star}],
+$$
+
+where $D_n(k_y)$ is the distribution of predicted displacements conditional on the selected value of $k_y$. The distribution $D_n(k_y)$ reflects both the variability in ground motion parameters (such as $\mathrm{PGA}$, $S_a(T_s)$, or other relevant intensity measures required by the selected predictive model) and the model-specific uncertainty in displacement prediction. The performance-based seismic coefficient $k_{\max}$ for a target exceedance probability $p$ is defined by the implicit relationship $p = p(k_{\max})$, or, equivalently, as the infimum $k_{\max}$ of $k_y$ for which the probability of exceeding the allowable displacement is controlled at the specified level, under the combined statistical effects of hazard, site response, and displacement model variability.
+
+$$k_{\max}(p\,|\,D_n^{\star}) = \inf \left\{ k_y : \mathbb{P}[D_n(k_y) > D_n^{\star}] \leq p \right\}$$ {#eq-kmax}
+
+ For any given $p$, the coefficient $k_{\max}$ represents the lowest value of $k_y$ for which the probability of exceeding the allowable displacement is controlled at the specified level, under the combined statistical effects of hazard, amplification, and displacement model variability. Displacement values below a numerical threshold are floored at $10^{-16}$ m to maintain well-defined logarithmic operations within the displacement models. Expression [-@eq-kmax] links the seismic coefficient $k_{\max}$ to the site-specific hazard, the displacement-based design objective, and the full statistical characterization of both ground motion and material uncertainty. 
+
+Performance-based seismic coefficients are reported across service levels (AEP 1/100 to 1/10,000) for different geometry and material scenarios representative of tailings storage facilities (TSF) and waste rock dumps (WRD). The figures and tables below show the performance-based seismic coefficients $k_{max}$ (in units of gravity 'g').
