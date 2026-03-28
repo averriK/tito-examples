@@ -1,0 +1,161 @@
+
+
+## Distance Probability Density Function for the Circular Areal Source
+
+A site located at the center of a circular areal source of radius $R$ with uniformly distributed seismicity is considered. The source occupies a disk-shaped region in the horizontal plane, and earthquake epicenters may originate at any location within this disk with equal probability per unit area. Under the uniform seismicity assumption, the areal density of seismicity is constant at $\rho = 1/(\pi R^2)$, so the probability that an earthquake originates within any sub-region is proportional to that sub-region's area [@Baker2013].
+
+The differential area element at distance $r$ from the central site, in a thin annulus of radial thickness $dr$, equals the circumference times the thickness:
+
+$$dA(r) = 2\pi r\, dr$$
+
+Since seismicity is spatially uniform, the probability that an earthquake originates within this annular ring equals the ratio of the ring area to the total disk area $\pi R^2$:
+
+$$dP = \frac{2\pi r\, dr}{\pi R^2} = \frac{2r}{R^2}\, dr$$
+
+This probability element directly identifies the probability density function for source-to-site distance [@Baker2013]:
+
+$$f_R(r) = \frac{2r}{R^2}, \qquad 0 \leq r \leq R$$
+
+The cumulative distribution function $F_R(r)$, representing the probability that source-to-site distance is less than or equal to $r$, is obtained by integrating the density over $[0, r]$:
+
+$$F_R(r) = \int_0^r f_R(u)\, du = \int_0^r \frac{2u}{R^2}\, du = \frac{r^2}{R^2}, \qquad 0 \leq r \leq R$$
+
+The result satisfies the boundary conditions of a valid CDF: $F_R(0) = 0$ and $F_R(R) = R^2/R^2 = 1$. The density $f_R(r)$ is monotonically increasing in $r$, reflecting the geometric fact that the circular source contains more area at larger epicentral distances from the central site; the probability of occurrence at very small distances is correspondingly small, approaching zero as $r \to 0$ [@Baker2013].
+
+Under the uniform seismicity assumption, earthquake locations are spatially independent of earthquake magnitude, so the conditional distance distribution given magnitude reduces to the unconditional form:
+
+$$f_{R|M}(r|m) = f_R(r) = \frac{2r}{R^2}$$
+
+This independence property carries through to all subsequent integrals, and $f_R(r)$ is used explicitly in the particularized hazard formulation (Slot 2) and the magnitude-distance disaggregation (Slot 4).
+
+---
+
+## Particularized Annual Exceedance Rate for the Single Circular Source
+
+Particularization of the general hazard integral to the single circular areal source requires explicit specification of four components: the annual occurrence rate, the magnitude probability density function, the conditional exceedance probability, and the distance PDF derived in Slot 1. Starting from @eq-hazard-integral in `kb/hazard.qmd`, and reducing the source summation to the single circular source, the annual exceedance rate takes the form :
+
+$$\lambda_I(i^*) = \nu_0 \int_{M_{\min}}^{M_{\max}} \int_0^R P\!\left[I > i^* \mid m, r\right] f_M(m)\, f_R(r)\, dr\, dm$$
+
+The four components are developed in turn below.
+
+**Component (i): Annual occurrence rate.** The Gutenberg-Richter recurrence law specifies $\log_{10} N(M) = a - bM$, where $N(M)$ is the mean annual number of earthquakes at or above magnitude $M$. Evaluating at the engineering minimum magnitude $M_{\min}$, consistent with @eq-branch-rate in `kb/uncertainty_model.qmd`, yields :
+
+$$\nu_0 = 10^{a - b\,M_{\min}}$$
+
+where $a$ and $b$ are the Gutenberg-Richter activity rate and slope parameters, respectively.
+
+**Component (ii): Truncated Gutenberg-Richter magnitude PDF.** Consistent with @eq-branch-pdf in `kb/uncertainty_model.qmd`, the magnitude density is normalized over the support $[M_{\min}, M_{\max}]$ by dividing the Gutenberg-Richter density by its integral over the magnitude range. Evaluating the denominator and canceling the common factor $10^a$ yields the simplified closed form [@Kramer1996]:
+
+$$f_M(m) = \frac{b\ln 10\; 10^{-b(m - M_{\min})}}{1 - 10^{-b(M_{\max}-M_{\min})}}, \qquad M_{\min} \leq m \leq M_{\max}$$
+
+This expression integrates to unity over $[M_{\min}, M_{\max}]$, confirming proper normalization.
+
+**Component (iii): Conditional exceedance probability.** No specific GMPE is assumed. The ground-motion intensity $I$ is treated as lognormally distributed with median $\hat{\eta}_I(m, r)$ and logarithmic standard deviation $\sigma_{\ln I}$, consistent with @eq-branch-exc in `kb/uncertainty_model.qmd`. Under reference rock conditions, the conditional probability of exceeding intensity $i^*$ given an event of magnitude $m$ at distance $r$ is [@Kramer1996]:
+
+$$P\!\left[I > i^* \mid m, r\right] = 1 - \Phi\!\left(\frac{\ln i^* - \ln\hat{\eta}_I(m, r)}{\sigma_{\ln I}}\right)$$
+
+where $\Phi(\cdot)$ is the standard normal CDF. The argument of $\Phi$ is the signed number of logarithmic standard deviations by which $i^*$ lies above the median prediction; when $i^* = \hat{\eta}_I(m,r)$ the exceedance probability equals exactly 0.5.
+
+**Component (iv): Particularized double integral.** Substituting $f_R(r) = 2r/R^2$ from Slot 1 together with $\nu_0$, $f_M(m)$, and $P[I>i^*|m,r]$ into the general hazard integral, and noting the spatial independence $f_{R|M}(r|m) = f_R(r)$ for the uniform source, the particularized annual exceedance rate for the single circular areal source is [@Baker2013]:
+
+$$\lambda_I(i^*) = \nu_0 \int_{M_{\min}}^{M_{\max}} \int_0^R \left[1 - \Phi\!\left(\frac{\ln i^* - \ln\hat{\eta}_I(m, r)}{\sigma_{\ln I}}\right)\right] \frac{b\ln 10\; 10^{-b(m-M_{\min})}}{1 - 10^{-b(M_{\max}-M_{\min})}} \cdot \frac{2r}{R^2}\, dr\, dm$$
+
+with $\nu_0 = 10^{a - b\,M_{\min}}$. Factoring out the geometric constant, this expression may equivalently be written:
+
+$$\lambda_I(i^*) = \frac{2\nu_0}{R^2} \int_{M_{\min}}^{M_{\max}} \int_0^R \left[1 - \Phi\!\left(\frac{\ln i^* - \ln\hat{\eta}_I(m, r)}{\sigma_{\ln I}}\right)\right] f_M(m)\; r\, dr\, dm$$
+
+For a general GMPE $\hat{\eta}_I(m,r)$, this double integral does not admit a closed-form solution, and numerical quadrature over the rectangle $[M_{\min}, M_{\max}] \times [0, R]$ is required. The integrand is non-negative throughout the domain, approaches zero as $r \to 0$ (because $f_R(r) \to 0$), and decays to zero as $i^*$ grows large relative to $\hat{\eta}_I(m, r)$ [@Baker2013].
+
+---
+
+## Maximum Credible Earthquake Ground-Motion Intensity
+
+> Confidence: MIXED -- This SLOT includes HIGH-confidence content plus selected MEDIUM-confidence structured details preserved to avoid dropping essential structure during compilation.
+
+The maximum credible earthquake (MCE) at the site is defined by the largest magnitude the source can produce, $M_{\max}$, occurring at source-to-site distance $r$. The objective is to determine the ground-motion intensity $i^*_{\text{MCE}}$ such that its annual exceedance probability equals a prescribed target AEP. The AEP relation from @eq-aep in `kb/hazard.qmd` links the annual exceedance rate to the annual exceedance probability under the Poisson occurrence assumption :
+
+$$\text{AEP} = P_{1\text{yr}}[I > i^*] = 1 - \exp\!\left[-\lambda_I(i^*)\right]$$
+
+For a target return period $T_R$, the corresponding multi-year exceedance probability is:
+
+$$P_{T_R}[I > i^*] = 1 - \exp\!\left[-\lambda_I(i^*)\, T_R\right]$$
+
+where $T_R = 1/\lambda_I(i^*)$ defines the return period as the reciprocal of the annual exceedance rate. Solving for the rate corresponding to the target AEP yields :
+
+$$\lambda_I(i^*_{\text{MCE}}) = -\ln\!\left(1 - \text{AEP}\right) = -\ln\!\left(1 - \frac{1}{T_R}\right) \approx \frac{1}{T_R}, \qquad T_R \gg 1$$
+
+The approximation $-\ln(1-1/T_R) \approx 1/T_R$ holds for large return periods, as noted in the footnote to @eq-aep in `kb/hazard.qmd`. This relation defines $i^*_{\text{MCE}}$ implicitly as the intensity level on the hazard curve at which the annual exceedance rate equals the target value; because the full hazard integral (Slot 2) requires numerical evaluation, the inversion of the hazard curve to recover $i^*_{\text{MCE}}$ likewise requires numerical methods .
+
+For the MCE scenario specifically, the ground motion is conditioned on an event of magnitude $M_{\max}$ at distance $r$. The intensity $I$ is lognormal with median $\hat{\eta}_I(M_{\max}, r)$ and logarithmic standard deviation $\sigma_{\ln I}$, consistent with @eq-branch-exc in `kb/uncertainty_model.qmd`, and the conditional exceedance probability is :
+
+$$P\!\left[I > i^* \mid M_{\max}, r\right] = 1 - \Phi\!\left(\frac{\ln i^* - \ln\hat{\eta}_I(M_{\max}, r)}{\sigma_{\ln I}}\right)$$
+
+Setting this probability equal to the target AEP and inverting the normal CDF relationship yields a closed-form expression for the MCE intensity :
+
+$$\Phi\!\left(\frac{\ln i^*_{\text{MCE}} - \ln\hat{\eta}_I(M_{\max}, r)}{\sigma_{\ln I}}\right) = 1 - \text{AEP}$$
+
+$$i^*_{\text{MCE}} = \hat{\eta}_I(M_{\max}, r)\cdot\exp\!\left[\sigma_{\ln I}\cdot\Phi^{-1}\!\left(1 - \text{AEP}\right)\right]$$
+
+For $\text{AEP} = 1/T_R$:
+
+$$i^*_{\text{MCE}} = \hat{\eta}_I(M_{\max}, r)\cdot\exp\!\left[\sigma_{\ln I}\cdot\Phi^{-1}\!\!\left(1 - \frac{1}{T_R}\right)\right]$$
+
+The factor $\varepsilon^*_{\text{MCE}} = \Phi^{-1}(1 - 1/T_R)$ is the number of logarithmic standard deviations above the median at which $i^*_{\text{MCE}}$ lies; for large $T_R$ this quantity is positive and increases monotonically with $T_R$, consistent with the expectation that rarer ground-motion levels correspond to above-median GMPE residuals [@McGuire1995].
+
+The representative distance $r$ for the MCE scenario requires explicit specification in any application. A geometrically exact choice for the circular source is the mean epicentral distance, obtained by integrating $r$ against the distance PDF from Slot 1:
+
+$$\bar{r} = \int_0^R r\, f_R(r)\, dr = \int_0^R \frac{2r^2}{R^2}\, dr = \frac{2R}{3}$$
+
+A conservative bound is obtained by taking $r \to 0^+$. Alternatively, the modal magnitude-distance scenario from disaggregation (Slot 4) provides a hazard-consistent choice; the selection criterion must be stated explicitly in any specific application .
+
+---
+
+## Joint Magnitude-Distance Disaggregation for the Circular Source
+
+Hazard disaggregation decomposes the total annual exceedance rate $\lambda_I(i^*)$ into contributions from individual scenario bins defined by magnitude, distance, and GMPE residual, producing the conditional distribution over seismic scenarios given that intensity $i^*$ is exceeded. The disaggregation framework from `kb/disaggregation.qmd` (@eq-disagg-rate, @eq-disagg-bin, @eq-disagg-prob) is particularized below for the single circular areal source with $N_S = 1$, occurrence rate $\nu_0 = 10^{a - b\,M_{\min}}$, magnitude PDF $f_M(m)$ from Slot 2, and distance PDF $f_R(r) = 2r/R^2$ from Slot 1  [@BazzurroCornell1999].
+
+A key quantity in the disaggregation is the critical GMPE residual threshold for scenario $(m, r)$, defined as the minimum residual for which the ground-motion intensity exceeds $i^*$. Inverting @eq-branch-exc from `kb/uncertainty_model.qmd` gives  :
+
+$$\varepsilon^*(m, r) = \frac{\ln i^* - \ln\hat{\eta}_I(m, r)}{\sigma_{\ln I}}$$
+
+Exceedance of $i^*$ from a scenario $(m, r)$ is possible only when the realized residual $\varepsilon \geq \varepsilon^*(m, r)$; scenarios for which $\varepsilon^*(m,r)$ is large contribute little to the hazard at intensity level $i^*$.
+
+**Formulation (a): Disaggregation by rate contribution (M-R plane).** Integrating @eq-disagg-rate over $\varepsilon$ from $\varepsilon^*(m,r)$ to $+\infty$ yields the conditional exceedance probability $1-\Phi(\varepsilon^*(m,r))$, collapsing the three-dimensional expression to the M-R plane. For the single circular source, the joint exceedance rate for magnitude bin $m_k$ and distance bin $r_j$, following @eq-disagg-bin, is  :
+
+$$\lambda_{k,j}(i^*) = \nu_0 \int_{m_k} \int_{r_j} \left[1 - \Phi\!\left(\varepsilon^*(m, r)\right)\right] f_M(m)\cdot \frac{2r}{R^2}\, dr\, dm$$
+
+The fraction of $\lambda_I(i^*)$ attributable to bin $(m_k, r_j)$, consistent with @eq-disagg-prob in `kb/disaggregation.qmd`, is  :
+
+$$\theta_{k,j} = \frac{\lambda_{k,j}(i^*)}{\lambda_I(i^*)}$$
+
+The weights satisfy $\sum_k \sum_j \theta_{k,j} = 1$ by construction. Substituting the circular source PDFs from Slots 1 and 2, the fully expanded expression is:
+
+$$\theta_{k,j} = \frac{\displaystyle\int_{m_k}\!\int_{r_j} \left[1-\Phi\!\left(\dfrac{\ln i^* - \ln\hat{\eta}_I(m,r)}{\sigma_{\ln I}}\right)\right] \dfrac{b\ln 10\; 10^{-b(m-M_{\min})}}{1-10^{-b(M_{\max}-M_{\min})}}\cdot\dfrac{2r}{R^2}\, dr\, dm}{\displaystyle\int_{M_{\min}}^{M_{\max}}\!\int_0^R \left[1-\Phi\!\left(\dfrac{\ln i^* - \ln\hat{\eta}_I(m,r)}{\sigma_{\ln I}}\right)\right] \dfrac{b\ln 10\; 10^{-b(m-M_{\min})}}{1-10^{-b(M_{\max}-M_{\min})}}\cdot\dfrac{2r}{R^2}\, dr\, dm}$$
+
+Both the numerator and denominator require numerical integration for a general GMPE. The modal scenario $(m_k^*, r_j^*)$ is the bin for which $\theta_{k,j}$ attains its maximum value, identifying the magnitude-distance combination that contributes most to hazard at intensity $i^*$  [@BazzurroCornell1999].
+
+**Formulation (b): Disaggregation including the GMPE residual dimension.** For the full three-dimensional $(M, R, \varepsilon)$ disaggregation, the differential exceedance rate follows from @eq-disagg-rate in `kb/disaggregation.qmd` with $N_S = 1$, $\nu_s = \nu_0$, $f_{M,s}(m) = f_M(m)$, and $f_{R|M,s}(r|m) = 2r/R^2$  :
+
+$$\Delta\lambda_I(i^*, m_k, r_j, \varepsilon) = \mathbf{1}_{\{\varepsilon \geq \varepsilon^*(m_k, r_j)\}}\cdot\phi(\varepsilon)\cdot f_M(m_k)\cdot\frac{2r_j}{R^2}\cdot\nu_0$$
+
+where $\phi(\cdot)$ is the standard normal PDF and $\mathbf{1}_{\{\cdot\}}$ is the indicator function enforcing the exceedance condition. Integrating over the bin $\varepsilon_\ell = [\varepsilon_\ell^{\rm lo}, \varepsilon_\ell^{\rm hi}]$ following @eq-disagg-bin  [@BazzurroCornell1999]:
+
+$$\lambda_{k,j,\ell}(i^*) = \nu_0 \int_{m_k}\!\int_{r_j}\!\int_{\varepsilon_\ell} \mathbf{1}_{\{\varepsilon \geq \varepsilon^*(m,r)\}}\, \phi(\varepsilon)\, f_M(m)\cdot\frac{2r}{R^2}\, d\varepsilon\, dr\, dm$$
+
+The inner integral over $\varepsilon$ admits a closed-form evaluation:
+
+$$\int_{\varepsilon_\ell} \mathbf{1}_{\{\varepsilon \geq \varepsilon^*(m,r)\}}\,\phi(\varepsilon)\,d\varepsilon = \Phi\!\left(\varepsilon_\ell^{\rm hi}\right) - \Phi\!\left(\max\!\left(\varepsilon_\ell^{\rm lo},\, \varepsilon^*(m,r)\right)\right), \quad \varepsilon_\ell^{\rm hi} > \varepsilon^*(m,r)$$
+
+and equals zero when $\varepsilon_\ell^{\rm hi} \leq \varepsilon^*(m,r)$. The remaining integrals over $m$ and $r$ within each bin require numerical quadrature. The joint conditional probability attributable to bin $(m_k, r_j, \varepsilon_\ell)$, from @eq-disagg-prob, is  :
+
+$$\theta_{k,j,\ell} = P\!\left[M \in m_k,\, R \in r_j,\, \varepsilon \in \varepsilon_\ell \mid I > i^*\right] = \frac{\lambda_{k,j,\ell}(i^*)}{\lambda_I(i^*)}$$
+
+The completeness condition $\sum_k \sum_j \sum_\ell \theta_{k,j,\ell} = 1$ holds by construction. The marginal distributions over magnitude, distance, and residual are obtained by summing $\theta_{k,j,\ell}$ over the remaining indices, consistent with @eq-disagg-marginal-M, @eq-disagg-marginal-R, and @eq-disagg-marginal-eps in `kb/disaggregation.qmd`  :
+
+$$P\!\left[M \in m_k \mid I > i^*\right] = \sum_{j}\sum_{\ell}\, \theta_{k,j,\ell}$$
+
+$$P\!\left[R \in r_j \mid I > i^*\right] = \sum_{k}\sum_{\ell}\, \theta_{k,j,\ell}$$
+
+$$P\!\left[\varepsilon \in \varepsilon_\ell \mid I > i^*\right] = \sum_{k}\sum_{j}\, \theta_{k,j,\ell}$$
+
+For the circular source, the distance PDF $f_R(r) = 2r/R^2$ concentrates probability at larger distances, while the GMPE attenuates exceedance probability with increasing distance. The marginal $P[R \in r_j \mid I > i^*]$ is modulated by these competing effects; the resulting distribution is generally peaked at some intermediate distance and requires numerical evaluation for any specific GMPE  [@BazzurroCornell1999].
