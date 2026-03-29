@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "workflow": "compile-research",
+  "session_id": "run-20260329_135437",
+  "structured_prompt_task_file": "/home/averri/github/tools/tito-examples/research/pshaB/md/task.hint.prompt.md",
+  "structured_prompt_spec_file": "/home/averri/github/tools/tito-examples/research/pshaB/sessions/run-20260329_135437/structured_prompt_spec.json",
+  "coordination_mode": "slot-aware-compile-units",
+  "single_writer_policy": "session-compiler-assembles-final-artifacts",
+  "session_writer_role": "session_compiler",
+  "slot_worker_role": "slot_compiler",
+  "handoff_contract": "Slot workers may read only the manifest-declared sources for their assigned slot as evidence and may emit only that slot-local compiled output; anti-overlap coordination happens only through the predeclared shared-memory keys, and only the session compiler may assemble the manifest-defined final document and bibliography.",
+  "memory_namespace_root": "tito",
+  "memory_coordination_policy": "shared-memory-overlap-smoothing",
+  "memory_read_contract": "Before finalizing a slot, slot_compiler may read coordination notes under tito.global.* and sibling tito.slot-XX.coverage keys only to avoid duplicate definitions, repeated openings, and scope drift; never treat memory as evidence.",
+  "memory_write_contract": "Each slot_compiler writes concise coordination notes only under its own namespace (tito.slot-XX.coverage and tito.slot-XX.handoff); only session_compiler may write global smoothing/assembly notes under tito.global.*.",
+  "progress_marker_format": "SLOT_PROGRESS: slot-XX :: <phase>; PHASE_PROGRESS: assembly :: <phase>",
+  "slot_count": 2,
+  "slots": [
+    {"ordinal": 1, "title": "Derivation of the particularized annual exceedance rate in epsilon form", "memory_namespace_label": "slot-01", "memory_namespace": "tito.slot-01", "writer_role": "session_compiler", "worker_role": "slot_compiler"},
+    {"ordinal": 2, "title": "Canonical hazard equations for MCE and disaggregation", "memory_namespace_label": "slot-02", "memory_namespace": "tito.slot-02", "writer_role": "session_compiler", "worker_role": "slot_compiler"}
+  ]
+}

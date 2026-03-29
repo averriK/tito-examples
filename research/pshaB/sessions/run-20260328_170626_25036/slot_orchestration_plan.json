@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "workflow": "research",
+  "session_id": "run-20260328_170626_25036",
+  "structured_prompt_task_file": "/home/averri/github/tools/tito-examples/research/pshaB/md/task.hint.prompt.md",
+  "structured_prompt_spec_file": "/home/averri/github/tools/tito-examples/research/pshaB/sessions/run-20260328_170626_25036/structured_prompt_spec.json",
+  "coordination_mode": "slot-aware-session-local",
+  "single_writer_policy": "session-writer-only-final-artifact",
+  "session_writer_role": "session_writer",
+  "slot_worker_role": "slot_researcher",
+  "handoff_contract": "Slot workers may gather evidence and draft slot-local notes, but only the session writer may emit manuscript paragraphs into the manifest-defined primary output.",
+  "memory_namespace_root": "tito.pshaB_hive",
+  "memory_coordination_policy": "",
+  "memory_read_contract": "",
+  "memory_write_contract": "",
+  "progress_marker_format": "",
+  "slot_count": 2,
+  "slots": [
+    {"ordinal": 1, "title": "Derivation of the particularized annual exceedance rate in epsilon form", "memory_namespace_label": "slot-01", "memory_namespace": "tito.pshaB_hive.slot-01", "writer_role": "session_writer", "worker_role": "slot_researcher"},
+    {"ordinal": 2, "title": "Canonical hazard equations for MCE and disaggregation", "memory_namespace_label": "slot-02", "memory_namespace": "tito.pshaB_hive.slot-02", "writer_role": "session_writer", "worker_role": "slot_researcher"}
+  ]
+}

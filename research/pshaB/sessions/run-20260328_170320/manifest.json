@@ -1,0 +1,7 @@
+{
+  "id": "pshaB_hive",
+  "workflow": "prompt",
+  "outputs": {
+    "primary": "pshaB_hive.prompt.md"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "id": "pshaB_claude",
+  "workflow": "prompt",
+  "outputs": {
+    "primary": "pshaB_claude.prompt.md"
+  }
+}

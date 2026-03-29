@@ -1,0 +1,10 @@
+{
+  "id": "pshaB_claude",
+  "workflow": "compile-prompt",
+  "sessions": [
+    { "path": "../run-20260328_152850/pshaB_claude.prompt.md" }
+  ],
+  "outputs": {
+    "primary": "pshaB_claude.compile.prompt.md"
+  }
+}

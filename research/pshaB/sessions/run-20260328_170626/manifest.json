@@ -1,0 +1,10 @@
+{
+  "id": "pshaB_hive",
+  "workflow": "compile-prompt",
+  "sessions": [
+    { "path": "../run-20260328_170320/pshaB_hive.prompt.md" }
+  ],
+  "outputs": {
+    "primary": "pshaB_hive.compile.prompt.md"
+  }
+}
