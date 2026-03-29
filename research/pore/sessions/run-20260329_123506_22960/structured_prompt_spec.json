@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "task_file": "/Users/averrik/github/tools/tito-examples/research/pore/md/task.pore.prompt.md",
+  "slot_count": 2,
+  "constraint_count": 2,
+  "slots": [
+    {"ordinal": 1, "title": "Analytical closed-form solutions for seismic site response in terms of accelerations", "instruction": "For a homogeneous, fine-grained, saturated stratum of thickness $H_s$, with depth-variable shear modulus $G_o(z)$ reaching its maximum at the base ($G_o = G(z=0)$), resting on rock, and subjected to base accelerations $a_g(t)$: investigate and compile the various analytical (closed-form) formulations of site response that express instantaneous accelerations $a(z,t)$ at different points within the stratum."},
+    {"ordinal": 2, "title": "Closed-form shear strain equations derived from the acceleration field", "instruction": "Starting from the instantaneous acceleration field $a(z,t)$ at any point in the stratum, derive the closed-form equations for shear strains $\\gamma(z,t)$, defined as the derivative of the response with respect to depth $z$."}
+  ],
+  "constraints": [
+    "The output document language is English.",
+    "The document follows professional engineering methodology style."
+  ]
+}

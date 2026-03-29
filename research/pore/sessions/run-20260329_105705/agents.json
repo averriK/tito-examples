@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "workflow": "compile-research",
-  "phase": "executor-starting",
-  "phase_detail": "Claude executor launched; waiting for the manifest-defined artifact(s).",
-  "updated_at_epoch": 1774792626,
+  "phase": "executor-finished",
+  "phase_detail": "Executor process exited; parsing transcript and validating the manifest-defined output.",
+  "updated_at_epoch": 1774793784,
   "orchestrator_backend": "ruflo-mcp",
   "orchestrator_status": "active",
   "orchestrator_runtime_active": true,
@@ -26,9 +26,9 @@
   "executor_output_format": "text",
   "executor_transcript_mode": "best-effort-text",
   "executor_transcript_persisted": false,
-  "executor_transcript_bytes": 0,
+  "executor_transcript_bytes": 1947,
   "expected_output_file": "X1.compile.research.md",
-  "expected_output_exists": false,
-  "expected_output_bytes": 0,
+  "expected_output_exists": true,
+  "expected_output_bytes": 18066,
   "validation_passed": false
 }
