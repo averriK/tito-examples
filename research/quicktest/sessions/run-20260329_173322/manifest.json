@@ -1,0 +1,11 @@
+{
+  "id": "qt1",
+  "workflow": "compile-research",
+  "sessions": [
+    { "path": "../run-20260329_173236_3574/qt1.research.md" }
+  ],
+  "outputs": {
+    "primary": "qt1.compile.research.md",
+    "biblatex": "biblatex.bib"
+  }
+}
