@@ -1,16 +1,26 @@
+DOCUMENT IN ENGLISH (PROFESSIONAL ENGINEERING METHODOLOGY STYLE)
 
-## SLOT 5: Ensemble Numerical Model
+El objetivo de este analisis es armar un documento que organice de manera lógica el hilo de la metodología de coficentes sismicos basdos en performance
 
-The Newmark displacement model employed in this framework is a weighted ensemble of seven individual predictive relationships: three flexible-block formulations -- Bray and Travasarou (2007) [@BrayTravasarou2007], Bray, Macedo, and Travasarou (2017) [@BrayEtAl2017], and Bray and Macedo (2019) [@BrayMacedo2019] -- and four rigid-block formulations -- Jibson (2007) [@Jibson2007], Saygili and Rathje (2008) [@SaygiliRathje2008], Ambraseys and Menu (1988) [@AmbraseysMenu1988], and Yegian et al. (1991) [@Yegian1991]. No model was excluded from the ensemble. Rather than relying on a single preferred regression, all seven relationships are retained and their results aggregated through a logic-tree weighting scheme, thereby representing epistemic uncertainty in model choice as a formal component of the probabilistic analysis. [@KBnewmark][@KBuncertaintymodel]
+En la carpeta KB/newmark.md existe una metodología detallada para la estimación de desplazamientos de Newmark y el cálculo de coeficientes sísmicos basados en performance.
+Además, en KB también existe una metodología para estimar el periodo fundamental de un talud, que es un parámetro clave para los métodos del bloque flexible de Newmark
 
-The weighting strategy assigns greater influence to more recent models on the basis that they were calibrated against substantially larger and more comprehensive ground-motion databases, providing improved regression accuracy and reduced systematic bias relative to earlier, smaller-sample formulations. Logic-tree weights are assigned prior to aggregation, maintaining explicit separation between epistemic model uncertainty and aleatory ground-motion variability throughout the simulation. [@KBnewmark][@KBuncertaintymodel]
 
-Ground-motion intensity measures required by each model are drawn from the empirical quantile distributions produced by the probabilistic seismic hazard analysis. For each oscillator period, the PSHA hazard fractiles -- typically the 2nd, 5th, 16th, 50th, 84th, 95th, and 98th percentiles and the mean -- form the empirical distribution of $\mathrm{IM}$ at that period. For each Monte Carlo realization, a uniform random variable $p \in (0,1)$ is mapped through a piecewise quantile function $Q_{\mathrm{IM}}(p)$ to obtain the corresponding intensity measure value; spectral ordinates not explicitly tabulated in the hazard output are obtained by logarithmic interpolation in period. When site hazard is provided at reference-rock conditions ($v_{\mathrm{ref}} = 760$ m/s), period-dependent site amplification factors are applied with amplification model uncertainty propagated as an independent lognormal variable with parameters determined by the site-response model [@Stewart2020][@Hashash2020]. Inter-period correlation of spectral ordinates across the simultaneously sampled period vector is preserved using the Baker and Jayaram (2009) [@BakerJayaram2009] exponential decay model. [@KBnewmark][@KBuncertaintymodel][@KBsitemodel]
+Pregunta:  genera una introducción que proponga un método general para estimación probabilística de coeficientes sísmicos basados en performance
 
-For each Monte Carlo realization and for each model in the ensemble, log-displacement is computed as:
+Pregunta: Presenta las bases y la historia del análisis de coeficientes sísmicos, partiendo desde Macdisi Seed. 
 
-$$\ln D = \mu_{\ln D}(\mathrm{IM},\,k_y,\,T_n,\,M_w) + \epsilon\,\sigma_{\ln D}$$
+Pregunta: Luego, prepara un capítulo donde presentes la estructura funcional probabilística de cada método de estimación de Dn.
 
-Model-specific aleatory uncertainty is represented by the regression standard deviation $\sigma_{\ln D}$, which is constant for all models except Saygili and Rathje (2008), whose standard deviation varies with the ratio $r = k_y/\mathrm{PGA}$. A standard normal deviate $\epsilon$ is drawn independently for each model in each realization, preserving independence of aleatory variability across models and preventing artificial reduction of total uncertainty through averaging. The ensemble prediction for each scenario is formed as a weighted sum of individual model contributions in accordance with the assigned logic-tree weights. Quantiles of interest -- including the median, 84th percentile, and 95th percentile -- are computed directly from the assembled empirical distribution across all models and realizations. Displacement values below a numerical threshold are floored at $10^{-16}$ m to maintain well-defined logarithmic operations. [@KBnewmark][@KBuncertaintymodel][@KBpbkmax]
+Pregunta: Luego presenta en detalle los métodos de estimación del desplazamiento de Newman. 
 
-The performance-based seismic coefficient $k_{\max}$ is derived from the assembled ensemble by identifying, for a given target exceedance probability $p$ and allowable displacement $D_n^{\star}$, the minimum yield acceleration $k_y$ at which the estimated exceedance probability $\hat{p}(k_y) = \hat{\mathbb{P}}[D_n(k_y) > D_n^{\star}]$ satisfies $\hat{p}(k_y) \leq p$. This calculation is performed for each combination of material scenario, slope geometry, and service level, producing $k_{\max}$ values tabulated across the range of return periods from AEP $1/100$ to AEP $1/10{,}000$. These tabulated results directly inform the selection of the pseudo-static horizontal seismic coefficient for use in limit-equilibrium stability calculations under performance-based seismic design criteria applicable to tailings storage facilities and waste rock dumps. [@KBpbkmax]
+Pregunta: Agrega  métodos otros más modernos posteriores a Bray 2019, como Saragoni y otros. Luego explicas cómo.r el periodo fundamental de cada talud, 
+
+Pregunta: Para poder explicar eso, debes explicar primero como estimar la rigidez máxima en la base (módulo de corte Go o Vs0) mediante Ishihara y otros. 
+
+Pregunta: , resume el modelo de ensamblado considerando modeloso de bloque flexible y explica para que casos se debe usar, 
+
+
+Pregunta:  resume el ensamble de métodos de bloque rígido y explica para que tipo de taludes se debe usar
+
+
