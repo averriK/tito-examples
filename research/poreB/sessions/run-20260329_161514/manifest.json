@@ -1,0 +1,10 @@
+{
+  "id": "poreB",
+  "workflow": "compile-prompt",
+  "sessions": [
+    { "path": "../run-20260329_161208/poreB.prompt.md" }
+  ],
+  "outputs": {
+    "primary": "poreB.compile.prompt.md"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "poreB",
+  "workflow": "research",
+  "source": {
+    "kb_dir": "/home/averri/github/tools/tito-examples/research/poreB/kb",
+    "documents": [
+      "models.md"
+    ]
+  },
+  "orchestration": {
+    "structured_prompt_spec": "structured_prompt_spec.json",
+    "slot_orchestration_plan": "slot_orchestration_plan.json"
+  },
+  "outputs": {
+    "primary": "poreB.research.md"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "id": "poreB",
+  "workflow": "prompt",
+  "outputs": {
+    "primary": "poreB.prompt.md"
+  }
+}

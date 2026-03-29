@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "task_file": "/home/averri/github/tools/tito-examples/research/poreB/md/task.poreB.prompt.md",
+  "slot_count": 1,
+  "constraint_count": 3,
+  "slots": [
+    {"ordinal": 1, "title": "Numerical R algorithm for instantaneous shear strain history", "instruction": "Implement in R a numerical algorithm that, given a base acceleration time history $a_g(t)$, estimates the instantaneous shear strain history $\\gamma(z, t)$ at any depth within the stratum. The algorithm derives $\\gamma(z, t)$ from the instantaneous acceleration field $a(z, t)$, which is itself obtained from the base excitation through the analytical site response formulations documented in KB/. The implementation must employ the closed-form solutions available in KB/ for computing the acceleration response at arbitrary depths and then obtain the corresponding shear strain histories from those accelerations."}
+  ],
+  "constraints": [
+    "The output document is to be written in English, following a professional engineering methodology style.",
+    "All R code must use `data.table()` for data manipulation.",
+    "All R code must avoid snake_case naming convention."
+  ]
+}

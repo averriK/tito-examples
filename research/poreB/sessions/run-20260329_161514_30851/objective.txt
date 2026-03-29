@@ -1,0 +1,12 @@
+MANIFEST:        /home/averri/github/tools/tito-examples/research/poreB/sessions/run-20260329_161514_30851/manifest.json
+TASK:            /home/averri/github/tools/tito-examples/research/poreB/md/task.poreB.prompt.md
+OUTPUT:          /home/averri/github/tools/tito-examples/research/poreB/sessions/run-20260329_161514_30851/poreB.research.md
+KB:              /home/averri/github/tools/tito-examples/research/poreB/kb
+WORKFLOW:        /usr/local/libexec/tito/workflows/research.session.md
+FORMAT_RULES:    /usr/local/libexec/tito/rules/format.session.md
+CITATIONS_RULES: /usr/local/libexec/tito/rules/citations.research.md
+AUDIT_RULES:     /usr/local/libexec/tito/rules/audit.md
+
+Read WORKFLOW, FORMAT_RULES, CITATIONS_RULES, and AUDIT_RULES.
+Then execute the research workflow using TASK and KB.
+Write the full manuscript to OUTPUT.

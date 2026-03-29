@@ -1,0 +1,11 @@
+{
+  "id": "poreB",
+  "workflow": "compile-research",
+  "sessions": [
+    { "path": "../run-20260329_161514_30851/poreB.research.md" }
+  ],
+  "outputs": {
+    "primary": "poreB.compile.research.md",
+    "biblatex": "biblatex.bib"
+  }
+}
