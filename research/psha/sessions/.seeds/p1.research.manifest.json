@@ -1,0 +1,20 @@
+{
+  "id": "p1",
+  "workflow": "research",
+  "source": {
+    "kb_dir": "/Users/averrik/github/tools/tito-examples/research/psha/kb",
+    "documents": [
+      "disaggregation.qmd",
+      "hazard.qmd",
+      "site.qmd",
+      "uncertainty_model.qmd"
+    ]
+  },
+  "orchestration": {
+    "structured_prompt_spec": "structured_prompt_spec.json",
+    "slot_orchestration_plan": "slot_orchestration_plan.json"
+  },
+  "outputs": {
+    "primary": "p1.research.md"
+  }
+}

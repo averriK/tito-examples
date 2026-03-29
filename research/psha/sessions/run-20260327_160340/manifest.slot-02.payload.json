@@ -1,0 +1,10 @@
+    {
+      "id": "slot-02",
+      "ordinal": 2,
+      "title": "Particularized annual exceedance rate for the single circular source",
+      "sources": [
+        { "path": "slot_sources/slot-02.run-20260327_154102_8022.md" },
+        { "path": "slot_sources/slot-02.run-20260327_154521.md" }
+      ],
+      "output_path": "p1.compile.research.slot-02.md"
+    }

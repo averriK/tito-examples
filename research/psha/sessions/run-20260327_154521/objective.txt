@@ -1,0 +1,138 @@
+RUNTIME CONTEXT
+- Workflow: research
+- Session: 1/2
+- Model: sonnet
+- Effort: high
+- Parallel sessions: 2 sessions running concurrently for this workflow. Use ruflo memory tools (mcp__ruflo__memory_*) to share findings and avoid duplicate work across sessions.
+- Executor contract: Claude Code CLI receives this objective via stdin and must emit only the manifest-defined artifact(s).
+- Memory tools available under namespace 'tito.p1'; use only as cache, never cite memory as evidence.
+- Structured prompt detected: true
+- Structured prompt spec file: /Users/averrik/github/tools/tito-examples/research/psha/sessions/run-20260327_154521/structured_prompt_spec.json
+- Structured prompt slots: 4
+- Structured prompt global constraints: 5
+- Treat each SLOT in the structured prompt spec as a primary work unit if you coordinate internally; preserve the global CONSTRAINTS across all slots.
+
+- Structured prompt slot summary: 1) Distance probability density function for the circular areal source; 2) Particularized annual exceedance rate for the single circular source; 3) Maximum credible earthquake ground-motion intensity; 4) Joint magnitude-distance disaggregation for the circular source
+RESEARCH ORCHESTRATOR (UNIFIED: KB + WEB)
+
+You will complete a one-pass research workflow using local KB and/or external sources. Do not invent citations.
+
+Inputs (absolute paths provided):
+- TASK_FILE: /Users/averrik/github/tools/tito-examples/research/psha/md/task.psha.prompt.md
+- KB_DIR (optional): /Users/averrik/github/tools/tito-examples/research/psha/kb
+- SESSION_DIR: /Users/averrik/github/tools/tito-examples/research/psha/sessions/run-20260327_154521
+- FORMAT_RULES: /usr/local/libexec/tito/rules/format.session.md
+- CITATIONS_RULES: /usr/local/libexec/tito/rules/citations.research.md
+- AUDIT_RULES: /usr/local/libexec/tito/rules/audit.md
+- MANIFEST: /Users/averrik/github/tools/tito-examples/research/psha/sessions/run-20260327_154521/manifest.json   # CLI-provided manifest with KB documents + outputs
+
+Goal:
+Produce ONE final publication-ready document saved to the manifest-defined output:
+- Read MANIFEST first.
+- Write the final manuscript to:
+  /Users/averrik/github/tools/tito-examples/research/psha/sessions/run-20260327_154521/<MANIFEST.outputs.primary>
+Do NOT derive output filenames from the workflow filename or from TASK_FILE.
+
+Structured prompts and slots:
+- If TASK_FILE contains `## SLOTS` and `## CONSTRAINTS`, treat it as a structured prompt produced by the `prompt` workflow.
+- Parse the slot headings (e.g., `### SLOT 1: ...`, `### SLOT 2: ...`) and treat each slot as a separate top-level section in your output.
+- For each slot, answer only that slot's instructions within its section; do not mix content from different slots.
+- When TASK_FILE constraints include phrases like "No bullet points anywhere in the document" or "No subheadings or subsections within slots", you MUST obey them strictly:
+  * Do not use bullet lists; write only flowing paragraphs.
+  * Inside each slot section, do not introduce additional `###` subheadings or nested headings; keep only the slot heading and paragraphs.
+
+Method:
+1) KB scan / targeted extraction (if KB_DIR provided):
+   - Read TASK_FILE to understand scope, questions, and any explicit references
+     to KB documents (e.g. `Documents: foo.md, bar.md` or file names mentioned
+     in SLOTS/CONSTRAINTS).
+   - Read MANIFEST once from /Users/averrik/github/tools/tito-examples/research/psha/sessions/run-20260327_154521/manifest.json y parsea
+     conceptualmente sus campos `source.documents` y `outputs` (no hace falta
+     reescribir el JSON).
+   - Treat `source.documents` as the complete list of candidate KB `.md` files
+     under KB_DIR; you MUST NOT perform any additional Glob/ls sobre KB_DIR.
+   - Do **NOT** blindly read the full contents of every `.md` file:
+     * Prefer documents that are explicitly referenced in TASK_FILE (by
+       filename or via `Documents:`) for the current slot.
+     * Only read a KB file when you actually need information from it.
+   - When reading a KB file, you MUST respect context/token limits:
+     * Never load more than a safe slice (e.g. a few thousand tokens) from a
+       single file in a single read operation.
+     * For large `.md` files, first skim structure (headings, table of
+       contents, section titles) using a small prefix of the file.
+     * Then, read only the specific sections you need (by heading/line ranges),
+       instead of the entire file at once.
+   - If MANIFEST.source.documents is empty, STOP and emit an explicit error.
+   - Note: PDF/DOCX files must be pre-processed with the `retrieve` workflow
+     first into `.md` under KB_DIR.
+   - From the subset of actually-read KB content, extract facts, parameters,
+     tables, methods, definitions, and quantitative results.
+   - Type each statement: (a) factual/parametric, (b) evaluative/benchmark,
+     (c) methodological.
+
+2) External research pass (WEB + ZOTERO):
+   - After using the KB to answer the TASK_FILE as far as possible, perform an
+     external research pass on those questions or subtopics where the KB does
+     not fully answer the task or where the TASK_FILE explicitly requests
+     external references or benchmarks.
+   - Build short, focused queries that capture each question/subtopic.
+   - For each query:
+     * Search the web and fetch authoritative sources using whatever browsing
+       capability is available in your runtime.
+     * If a Zotero integration/library is available, query it with the **same**
+       search string to obtain canonical metadata (title, year, DOI/URL).
+   - Preference ladder for citations in the final manuscript:
+     DOI > ARXIV > institutional WEB (avoid generic non-peer-reviewed sites).
+   - Cuando Zotero devuelva un DOI/URL confiable, úsalo como fuente primaria
+     ([DOI:...]/[WEB:...]) y considera añadir opcionalmente `[ZOTERO:item_key]`
+     para marcar que también existe en tu biblioteca local.
+
+3) Draft assembly:
+   - Assemble complete draft answering TASK_FILE questions based on steps (1)-(2)
+   - Place inline tokens at sentence end:
+     * [KB:filename.md] for KB sources (only .md files)
+     * [DOI:...] / [ARXIV:...] / [WEB:...] for external sources
+     * [ZOTERO:item_key] for Zotero library sources (if used)
+
+4) Post-processing (apply rules from disk):
+  - Open and read the files at FORMAT_RULES, CITATIONS_RULES, and AUDIT_RULES.
+  - Apply FORMAT_RULES to the draft to enforce math notation, professional tone, character-level hygiene, and de-duplication as specified there (do not add structural conventions beyond what the TASK_FILE and KB already imply).
+  - Apply CITATIONS_RULES to enforce citation token types, placement, and coverage.
+  - If a cited KB passage you retain already contains visible `[@Key]` citekeys, preserve those `[@Key]` citekeys verbatim adjacent to the retained claim; do not collapse them to a bare `[KB:filename.md]` token only.
+  - Append paragraph-level audit footnotes using AUDIT_RULES (footnote format, hallucination taxonomy, and confidence levels).
+  - Standalone display math blocks (for example `$$...$$`) are not paragraphs for audit purposes, but any prose paragraph that introduces or interprets them still needs its own audit footnote before the blank line.
+  - Mandatory final block sweep before save:
+    * Re-read the full draft as blank-line-separated Markdown blocks.
+    * Every prose block MUST already end with exactly one `^[Confidence: ..., Rationale: ...]` footnote before the next blank line.
+    * A prose block that ends with a colon before a display equation is still a prose block and MUST keep its own footnote; do not let a later footnote after the equation “cover” it.
+    * Correct pattern: `Lead-in claim...^[Confidence: ...]` + blank line + `$$...$$` + blank line + `Interpretation...^[Confidence: ...]`.
+    * Do NOT claim success until this sweep finds zero prose blocks without audit footnotes.
+  - Evidence rule for the audit step in this workflow: Base your audit judgment only on the paragraph's content and its in-text citations present in the document (`[KB:/WEB:/DOI:/ARXIV:/ZOTERO:]`). Do not invent sources or fetch new ones during this audit step. If evidence is insufficient or ambiguous, your `Rationale` MUST say so explicitly and you SHOULD set `Confidence: LOW`. Treat KB documents as authoritative for this audit step.
+  - Citation style in this workflow: KEEP token citations visible in the final output ([KB:filename.md], [DOI:...], [ARXIV:...], [WEB:...], [ZOTERO:...]); do not convert to [@key] unless explicitly requested; build REFERENCES.BIB only if [@key] citations are present.
+  - If any file cannot be read, STOP and emit an explicit error noting which path failed.
+
+5) Write final manuscript:
+   - Read MANIFEST and treat `outputs.primary` as the only valid output filename.
+   - Save/write the full document to: /Users/averrik/github/tools/tito-examples/research/psha/sessions/run-20260327_154521/<MANIFEST.outputs.primary>
+   - File must contain full manuscript with all content, citations, and audit footnotes
+   - After saving, confirm: "Manuscript written to /Users/averrik/github/tools/tito-examples/research/psha/sessions/run-20260327_154521/<MANIFEST.outputs.primary>"
+
+External capabilities (if available):
+- Web browsing/search: MUST be used as part of the external research pass to extend the answer beyond the KB (find additional authoritative sources, fill aspects that KB does not cover, and provide benchmarks explicitly requested in TASK_FILE).
+- Zotero integration/library: best-effort helper. This workflow MUST always
+  attempt Zotero lookups as described above when available, but it MUST NOT
+  depend on them to complete; Zotero unavailability MUST be treated as
+  non-fatal, skipping Zotero results and relying on KB + web browsing/search
+  only.
+- Orchestrator memory tool: when available, MUST be used as shared cache for web search results to avoid repeating searches already done by parallel sessions. BEFORE performing any WebSearch, you MUST check memory for prior results on the same topic. After finding any new web result, you MUST store a brief summary with the source URL in memory. Do NOT cite memory as evidence; always cite the underlying sources as `[WEB:...]` / `[DOI:...]` / `[ARXIV:...]`.
+
+Constraints:
+- Read ONLY .md files from KB_DIR (PDF/DOCX must be pre-processed with retrieve first)
+- Do NOT call MCP helpers other than optional Zotero and an optional orchestrator memory tool used strictly as shared cache/state.
+- If you include Markdown code blocks in the output, treat them as opaque: do not place citations or audit footnotes inside the block; place any required audit footnote immediately after the closing fence.
+- Prioritize KB (if provided); use externals for gaps, validation, benchmarks
+- MUST create the output file; do not just emit text
+- Do not invent citations. Use only sources from KB, Zotero, or discovered via web browsing/search
+- Keep citations in the `[KB:...]`, `[DOI:...]`, `[ARXIV:...]`, `[WEB:...]`, `[ZOTERO:...]` token form; do not convert any citation to [@Key].
+- Preserve existing visible `[@Key]` citekeys that already appear in retained KB passages.
+- Do not create any separate bibliography file in this workflow (no `biblatex.bib` here).

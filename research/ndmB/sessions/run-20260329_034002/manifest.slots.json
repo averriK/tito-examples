@@ -1,0 +1,87 @@
+    {
+      "id": "slot-01",
+      "ordinal": 1,
+      "title": "Introduction - General Probabilistic Method for Performance-Based Seismic Coefficients",
+      "sources": [
+        { "path": "slot_sources/slot-01.run-20260329_032213_14355.md" },
+        { "path": "slot_sources/slot-01.run-20260329_032213_22066.md" }ℹ️  compile-research: prepared slot-01 (2 source(s))
+
+      ],
+      "output_path": "X2.compile.research.slot-01.md"
+    },
+    {
+      "id": "slot-02",
+      "ordinal": 2,
+      "title": "Foundations and History of Seismic Coefficient Analysis",
+      "sources": [
+        { "path": "slot_sources/slot-02.run-20260329_032213_14355.md" },
+        { "path": "slot_sources/slot-02.run-20260329_032213_22066.md" }ℹ️  compile-research: prepared slot-02 (2 source(s))
+
+      ],
+      "output_path": "X2.compile.research.slot-02.md"
+    },
+    {
+      "id": "slot-03",
+      "ordinal": 3,
+      "title": "Probabilistic Functional Structure of Newmark Displacement Estimation Methods",
+      "sources": [
+        { "path": "slot_sources/slot-03.run-20260329_032213_14355.md" },
+        { "path": "slot_sources/slot-03.run-20260329_032213_22066.md" }ℹ️  compile-research: prepared slot-03 (2 source(s))
+
+      ],
+      "output_path": "X2.compile.research.slot-03.md"
+    },
+    {
+      "id": "slot-04",
+      "ordinal": 4,
+      "title": "Detailed Newmark Displacement Estimation Methods",
+      "sources": [
+        { "path": "slot_sources/slot-04.run-20260329_032213_14355.md" }ℹ️  compile-research: prepared slot-04 (1 source(s))
+
+      ],
+      "output_path": "X2.compile.research.slot-04.md"
+    },
+    {
+      "id": "slot-05",
+      "ordinal": 5,
+      "title": "Modern Methods Post-Bray (2019) and Fundamental Period Estimation",
+      "sources": [
+        { "path": "slot_sources/slot-05.run-20260329_032213_14355.md" },
+        { "path": "slot_sources/slot-05.run-20260329_032213_22066.md" }ℹ️  compile-research: prepared slot-05 (2 source(s))
+
+      ],
+      "output_path": "X2.compile.research.slot-05.md"
+    },
+    {
+      "id": "slot-06",
+      "ordinal": 6,
+      "title": "Maximum Base Stiffness Estimation (Shear Modulus and Shear Wave Velocity)",
+      "sources": [
+        { "path": "slot_sources/slot-06.run-20260329_032213_14355.md" },
+        { "path": "slot_sources/slot-06.run-20260329_032213_22066.md" }ℹ️  compile-research: prepared slot-06 (2 source(s))
+
+      ],
+      "output_path": "X2.compile.research.slot-06.md"
+    },
+    {
+      "id": "slot-07",
+      "ordinal": 7,
+      "title": "Flexible Block Assembly Model and Applicability",
+      "sources": [
+        { "path": "slot_sources/slot-07.run-20260329_032213_14355.md" },
+        { "path": "slot_sources/slot-07.run-20260329_032213_22066.md" }ℹ️  compile-research: prepared slot-07 (2 source(s))
+
+      ],
+      "output_path": "X2.compile.research.slot-07.md"
+    },
+    {
+      "id": "slot-08",
+      "ordinal": 8,
+      "title": "Rigid Block Assembly Methods and Applicability",
+      "sources": [
+        { "path": "slot_sources/slot-08.run-20260329_032213_14355.md" },
+        { "path": "slot_sources/slot-08.run-20260329_032213_22066.md" }ℹ️  compile-research: prepared slot-08 (2 source(s))
+
+      ],
+      "output_path": "X2.compile.research.slot-08.md"
+    }

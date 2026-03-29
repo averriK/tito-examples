@@ -1,0 +1,22 @@
+    {
+      "id": "slot-01",
+      "ordinal": 1,
+      "title": "Closed-form analytical solutions for the seismic site acceleration response",
+      "sources": [
+        { "path": "slot_sources/slot-01.run-20260329_103134_31003.md" },
+        { "path": "slot_sources/slot-01.run-20260329_103134_24526.md" }ℹ️  compile-research: prepared slot-01 (2 source(s))
+
+      ],
+      "output_path": "X1.compile.research.slot-01.md"
+    },
+    {
+      "id": "slot-02",
+      "ordinal": 2,
+      "title": "Closed-form equations for seismic shear strains derived from the acceleration field",
+      "sources": [
+        { "path": "slot_sources/slot-02.run-20260329_103134_31003.md" },
+        { "path": "slot_sources/slot-02.run-20260329_103134_24526.md" }ℹ️  compile-research: prepared slot-02 (2 source(s))
+
+      ],
+      "output_path": "X1.compile.research.slot-02.md"
+    }

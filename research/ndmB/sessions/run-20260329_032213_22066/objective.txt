@@ -1,0 +1,12 @@
+MANIFEST:        /Users/averrik/github/tools/tito-examples/research/ndmB/sessions/run-20260329_032213_22066/manifest.json
+TASK:            /Users/averrik/github/tools/tito-examples/research/ndmB/md/task.ndm.prompt.md
+OUTPUT:          /Users/averrik/github/tools/tito-examples/research/ndmB/sessions/run-20260329_032213_22066/X2.research.md
+KB:              /Users/averrik/github/tools/tito-examples/research/ndmB/kb
+WORKFLOW:        /usr/local/libexec/tito/workflows/research.session.md
+FORMAT_RULES:    /usr/local/libexec/tito/rules/format.session.md
+CITATIONS_RULES: /usr/local/libexec/tito/rules/citations.research.md
+AUDIT_RULES:     /usr/local/libexec/tito/rules/audit.md
+
+Read WORKFLOW, FORMAT_RULES, CITATIONS_RULES, and AUDIT_RULES.
+Then execute the research workflow using TASK and KB.
+Write the full manuscript to OUTPUT.

@@ -1,0 +1,7 @@
+{
+  "id": "pshaB_codex",
+  "workflow": "prompt",
+  "outputs": {
+    "primary": "pshaB_codex.prompt.md"
+  }
+}

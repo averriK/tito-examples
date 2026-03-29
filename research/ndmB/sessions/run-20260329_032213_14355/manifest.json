@@ -1,0 +1,19 @@
+{
+  "id": "X2",
+  "workflow": "research",
+  "source": {
+    "kb_dir": "/Users/averrik/github/tools/tito-examples/research/ndmB/kb",
+    "documents": [
+      "newmark.md",
+      "periods.md",
+      "site.md"
+    ]
+  },
+  "orchestration": {
+    "structured_prompt_spec": "structured_prompt_spec.json",
+    "slot_orchestration_plan": "slot_orchestration_plan.json"
+  },
+  "outputs": {
+    "primary": "X2.research.md"
+  }
+}

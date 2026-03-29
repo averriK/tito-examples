@@ -1,0 +1,10 @@
+{
+  "id": "pshaB_codex",
+  "workflow": "compile-prompt",
+  "sessions": [
+    { "path": "../run-20260328_151408/pshaB_codex.prompt.md" }
+  ],
+  "outputs": {
+    "primary": "pshaB_codex.compile.prompt.md"
+  }
+}

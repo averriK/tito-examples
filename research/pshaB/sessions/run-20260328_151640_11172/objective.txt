@@ -1,0 +1,12 @@
+MANIFEST:        /Users/averrik/Cloud/github/tools/tito-examples/research/pshaB/sessions/run-20260328_151640_11172/manifest.json
+TASK:            /Users/averrik/Cloud/github/tools/tito-examples/research/pshaB/md/task.hint.prompt.md
+OUTPUT:          /Users/averrik/Cloud/github/tools/tito-examples/research/pshaB/sessions/run-20260328_151640_11172/pshaB_codex.research.md
+KB:              /Users/averrik/Cloud/github/tools/tito-examples/research/pshaB/kb
+WORKFLOW:        /Users/averrik/Cloud/github/tools/tito/workflows/research.session.md
+FORMAT_RULES:    /Users/averrik/Cloud/github/tools/tito/rules/format.session.md
+CITATIONS_RULES: /Users/averrik/Cloud/github/tools/tito/rules/citations.research.md
+AUDIT_RULES:     /Users/averrik/Cloud/github/tools/tito/rules/audit.md
+
+Read WORKFLOW, FORMAT_RULES, CITATIONS_RULES, and AUDIT_RULES.
+Then execute the research workflow using TASK and KB.
+Write the full manuscript to OUTPUT.

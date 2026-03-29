@@ -1,0 +1,11 @@
+{
+  "id": "pshaB_hive_local_20260329b",
+  "workflow": "compile-research",
+  "sessions": [
+    { "path": "../run-20260329_023928/pshaB_hive_local_20260329b.research.md" }
+  ],
+  "outputs": {
+    "primary": "pshaB_hive_local_20260329b.compile.research.md",
+    "biblatex": "biblatex.bib"
+  }
+}

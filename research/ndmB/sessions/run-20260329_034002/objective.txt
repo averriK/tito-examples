@@ -1,0 +1,150 @@
+RUNTIME CONTEXT
+- Workflow: compile-research
+- Session: 1/1
+- Model: sonnet
+- Effort: max
+- Executor contract: Claude Code CLI receives this objective via stdin and must emit only the manifest-defined artifact(s).
+- Memory tools available under namespace 'tito.X2'; use only as cache, never cite memory as evidence.
+- Structured prompt detected: true
+- Structured prompt spec file: /Users/averrik/github/tools/tito-examples/research/ndmB/sessions/run-20260329_034002/structured_prompt_spec.json
+- Structured prompt slots: 8
+- Structured prompt global constraints: 5
+- Treat each SLOT in the structured prompt spec as a primary work unit if you coordinate internally; preserve the global CONSTRAINTS across all slots.
+
+- Structured prompt slot summary: 1) Introduction - General Probabilistic Method for Performance-Based Seismic Coefficients; 2) Foundations and History of Seismic Coefficient Analysis; 3) Probabilistic Functional Structure of Newmark Displacement Estimation Methods; 4) Detailed Newmark Displacement Estimation Methods; ... (+4 more)
+
+- Slot-aware orchestration: true
+- Slot orchestration plan file: /Users/averrik/github/tools/tito-examples/research/ndmB/sessions/run-20260329_034002/slot_orchestration_plan.json
+- Slot coordination mode: slot-aware-compile-units
+- Single-writer policy: session-compiler-assembles-final-artifacts
+- Session writer role: session_compiler
+- Slot worker role: slot_compiler
+- Slot handoff contract: Slot workers may read only the manifest-declared sources for their assigned slot as evidence and may emit only that slot-local compiled output; anti-overlap coordination happens only through the predeclared shared-memory keys, and only the session compiler may assemble the manifest-defined final document and bibliography.
+- Slot memory namespace root: tito.X2
+- Slot memory namespaces: 8
+
+- Slot shared-memory coordination: shared-memory-overlap-smoothing
+- Slot shared-memory reads: Before finalizing a slot, slot_compiler may read coordination notes under tito.X2.global.* and sibling tito.X2.slot-XX.coverage keys only to avoid duplicate definitions, repeated openings, and scope drift; never treat memory as evidence.
+- Slot shared-memory writes: Each slot_compiler writes concise coordination notes only under its own namespace (tito.X2.slot-XX.coverage and tito.X2.slot-XX.handoff); only session_compiler may write global smoothing/assembly notes under tito.X2.global.*.
+- Slot progress marker format: SLOT_PROGRESS: slot-XX :: <phase>; PHASE_PROGRESS: assembly :: <phase>
+
+- Slot memory namespace summary: 1) tito.X2.slot-01 (Introduction - General Probabilistic Method for Performance-Based Seismic Coefficients); 2) tito.X2.slot-02 (Foundations and History of Seismic Coefficient Analysis); 3) tito.X2.slot-03 (Probabilistic Functional Structure of Newmark Displacement Estimation Methods); 4) tito.X2.slot-04 (Detailed Newmark Displacement Estimation Methods); ... (+4 more)
+COMPILE RESEARCH WORKFLOW (SLOT-BASED VERIFIED MERGE)
+
+You will compile a clean final document from multiple research sessions by processing canonical SLOT units under the slot-aware orchestration plan. Do NOT perform any web research. Use only local slot sources with audit footnotes.
+
+Inputs (absolute paths provided):
+- TASK_FILE: /Users/averrik/github/tools/tito-examples/research/ndmB/md/task.ndm.prompt.md
+- SESSION_DIR: /Users/averrik/github/tools/tito-examples/research/ndmB/sessions/run-20260329_034002
+- SESSIONS_DIR: /Users/averrik/github/tools/tito-examples/research/ndmB/sessions
+- FORMAT_RULES: /usr/local/libexec/tito/rules/format.compile.md
+- CITATIONS_RULES: /usr/local/libexec/tito/rules/citations.compile.md
+- BIBLATEX_RULES: /usr/local/libexec/tito/rules/biblatex.md
+- MANIFEST: /Users/averrik/github/tools/tito-examples/research/ndmB/sessions/run-20260329_034002/manifest.json
+
+Data sources (local only):
+- Read MANIFEST first.
+- If MANIFEST.inputs.structured_prompt_spec is present, read ONLY that file to recover canonical slot order/titles.
+- In slot-based mode, read ONLY the files declared in `MANIFEST.slots[].sources[].path`.
+- You MUST NOT perform any additional Glob/ls over SESSIONS_DIR.
+
+Goal:
+Produce:
+- one compiled output per slot in canonical order; and
+- one final compiled document plus one consolidated BibLaTeX bibliography.
+
+Write the final results to the manifest-defined outputs:
+- Clean compiled document: /Users/averrik/github/tools/tito-examples/research/ndmB/sessions/run-20260329_034002/<MANIFEST.outputs.primary>
+- Bibliography: /Users/averrik/github/tools/tito-examples/research/ndmB/sessions/run-20260329_034002/<MANIFEST.outputs.biblatex>
+
+Policy (verification-based slot compilation):
+- SLOT COMPLETENESS (CRITICAL):
+  * If MANIFEST.slots[] is present, you MUST process every slot entry in order.
+  * You MUST emit one `## SLOT N: ...` section per slot.
+  * You MUST NOT silently drop slots.
+- SELECT content blocks based on the audit footnote `Confidence` field:
+  * Default: include ONLY `Confidence: HIGH`.
+  * Fallback: if a slot has ZERO `Confidence: HIGH` blocks across all of its sources, you MAY include `Confidence: MEDIUM` blocks for that slot.
+  * Structured-detail exception: if HIGH-confidence prose exists but an important list/table/code block exists only at MEDIUM, you MAY preserve that MEDIUM structured block for that slot, but you MUST emit the required `Confidence: MIXED` note immediately below the slot heading.
+  * Never include `Confidence: LOW` paragraphs.
+- EVIDENCE SIGNALING:
+  * If a slot uses only MEDIUM fallback material, insert:
+    > Confidence: MEDIUM — No HIGH-confidence evidence was available for this SLOT; content below is included with limited confidence.
+  * If a slot mixes HIGH-confidence prose with selected MEDIUM structured details, insert:
+    > Confidence: MIXED — This SLOT includes HIGH-confidence content plus selected MEDIUM-confidence structured details preserved to avoid dropping essential structure during compilation.
+  * If a slot has no HIGH and no MEDIUM evidence, still emit the slot heading and insert:
+    > Confidence: LOW — No HIGH/MEDIUM evidence was available for this SLOT; no reliable content could be compiled.
+- REMOVE all per-paragraph audit footnotes from compiled outputs.
+- CONVERT inline TOKEN citations to [@Key].
+- Treat the selected blocks as evidence, not as text to concatenate:
+  * Deduplicate aggressively inside the active slot.
+  * When multiple slot variants express the same conclusion with different wording, fuse them into one canonical slot answer.
+  * Preserve tables, lists, and code blocks when they carry unique structure.
+- OVERLAP CONTROL:
+  * Treat other slots' content only through the canonical slot map and the shared-memory coordination contract described in the orchestration preamble.
+  * Do NOT import other slots' evidence or claims from memory.
+  * Use shared memory only to avoid redundant definitions, repeated openings, and scope drift across similar slots.
+  * If another slot already “owns” a generic definition or introductory framing, compress any necessary repetition to the minimum bridge sentence needed for local readability.
+- If memory tools are available in your runtime, use the shared namespace described in the orchestration preamble as cache/handoff only. Never cite memory as evidence.
+- PROGRESS LOGGING:
+  * Emit plain-text progress markers while you work:
+    - `SLOT_PROGRESS: slot-XX :: reading_sources`
+    - `SLOT_PROGRESS: slot-XX :: writing_output`
+    - `PHASE_PROGRESS: assembly :: <phase>`
+  * Keep these progress markers concise and operational; do not emit long explanations.
+
+Method:
+1) Read MANIFEST and determine mode
+   - Read /Users/averrik/github/tools/tito-examples/research/ndmB/sessions/run-20260329_034002/manifest.json once.
+   - If `MANIFEST.slots[]` exists, treat it as the authoritative slot list.
+   - Use `MANIFEST.inputs.structured_prompt_spec` as the canonical slot order/title source when present.
+
+2) Read structured prompt spec (slot-based mode)
+   - Read the declared structured prompt spec once.
+   - Treat its slot ordinals/titles as authoritative.
+
+3) Process slots under slot-aware coordination
+   - Slot workers may run independently/parallel, but every emitted slot output must stay scoped to its own slot and respect the canonical slot order for final assembly.
+   - For EACH slot in `MANIFEST.slots[]`:
+     * Emit `SLOT_PROGRESS: slot-XX :: reading_sources` before reading evidence.
+     * Read ONLY that slot's declared `sources[].path` files.
+     * Consult shared-memory coordination notes (if present) only to see which definitions/openings were already claimed by sibling slots and what overlap handoffs they left behind.
+     * Parse audit footnotes and select content according to the policy above.
+     * Build one canonical answer for that slot only.
+     * Do NOT import content or evidence from other slots.
+     * Do NOT anchor the slot to a single session if the other variants contribute distinct supported details.
+     * Avoid repeating generic definitions or global framing that another slot already covered unless the slot would otherwise become unclear.
+     * Convert citations from TOKEN form to [@Key].
+     * Remove per-paragraph audit footnotes while preserving all supporting citations needed for bibliography generation.
+     * Self-check before writing: verify that every factual claim in the canonical answer can be traced to at least one selected source paragraph. If a claim cannot be traced, remove it.
+     * Emit `SLOT_PROGRESS: slot-XX :: writing_output` immediately before writing the slot result.
+     * Write the slot result to the slot's declared `output_path` under /Users/averrik/github/tools/tito-examples/research/ndmB/sessions/run-20260329_034002.
+     * After writing, store a concise shared-memory coordination note for this slot describing: scope actually covered, definitions introduced, repetition intentionally avoided, and any handoff needed for related slots.
+
+4) Assemble final document
+   - Emit `PHASE_PROGRESS: assembly :: reading_slot_outputs` before assembly.
+   - After all slot outputs exist, assemble the final compiled document in canonical slot order, incorporating each slot output exactly once as the basis for the final document.
+   - The `session_compiler` may read slot outputs plus shared-memory coordination notes to smooth transitions and trim redundant openings/definitions across adjacent or similar slots.
+   - Preserve evidence boundaries and canonical slot ownership while smoothing; do not fall back to whole-session concatenation.
+   - The final document must read like a single coherent chapter with no repeated slot answers and no whole-session concatenation.
+
+5) Generate bibliography
+   - Generate complete BibLaTeX entries for every cited `@Key` appearing in the compiled slot outputs.
+   - Extract metadata from the original TOKEN citations preserved in the selected slot evidence.
+   - Include citations referenced in audit Rationale when they support retained content.
+
+6) Post-process and write outputs
+   - Emit `PHASE_PROGRESS: assembly :: writing_final_outputs` before the final write.
+   - Apply FORMAT_RULES for professional voice, LaTeX math, and consistent structure.
+   - Save the assembled document to /Users/averrik/github/tools/tito-examples/research/ndmB/sessions/run-20260329_034002/<MANIFEST.outputs.primary>.
+   - Save the bibliography to /Users/averrik/github/tools/tito-examples/research/ndmB/sessions/run-20260329_034002/<MANIFEST.outputs.biblatex>.
+   - Confirm the exact file paths you wrote.
+
+Constraints:
+- No web access. Local inputs only.
+- Do NOT use MCP helpers/integrations other than optional shared memory cache/state under the predeclared namespace.
+- The compiled outputs must NOT contain any `^[Confidence: ...]` footnotes.
+- If code blocks are present in selected content, preserve them verbatim and never insert annotations inside them.
+- MUST emit the progress markers defined above so runtime logging can expose slot/fase activity.
+- MUST create the slot output files declared in `MANIFEST.slots[].output_path`.
+- MUST create both final output files (`outputs.primary` and `outputs.biblatex`).

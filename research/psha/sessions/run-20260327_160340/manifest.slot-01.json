@@ -1,0 +1,23 @@
+{
+  "id": "p1",
+  "workflow": "compile-research",
+  "inputs": {
+    "structured_prompt_spec": "structured_prompt_spec.json"
+  },
+  "slots": [
+    {
+      "id": "slot-01",
+      "ordinal": 1,
+      "title": "Distance probability density function for the circular areal source",
+      "sources": [
+        { "path": "slot_sources/slot-01.run-20260327_154102_8022.md" },
+        { "path": "slot_sources/slot-01.run-20260327_154521.md" }
+      ],
+      "output_path": "p1.compile.research.slot-01.md"
+    }
+  ],
+  "outputs": {
+    "primary": "p1.compile.research.md",
+    "biblatex": "biblatex.bib"
+  }
+}

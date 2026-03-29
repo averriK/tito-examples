@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "workflow": "compile-research",
+  "session_id": "run-20260329_034002",
+  "structured_prompt_task_file": "/Users/averrik/github/tools/tito-examples/research/ndmB/md/task.ndm.prompt.md",
+  "structured_prompt_spec_file": "/Users/averrik/github/tools/tito-examples/research/ndmB/sessions/run-20260329_034002/structured_prompt_spec.json",
+  "coordination_mode": "slot-aware-compile-units",
+  "single_writer_policy": "session-compiler-assembles-final-artifacts",
+  "session_writer_role": "session_compiler",
+  "slot_worker_role": "slot_compiler",
+  "handoff_contract": "Slot workers may read only the manifest-declared sources for their assigned slot as evidence and may emit only that slot-local compiled output; anti-overlap coordination happens only through the predeclared shared-memory keys, and only the session compiler may assemble the manifest-defined final document and bibliography.",
+  "memory_namespace_root": "tito.X2",
+  "memory_coordination_policy": "shared-memory-overlap-smoothing",
+  "memory_read_contract": "Before finalizing a slot, slot_compiler may read coordination notes under tito.X2.global.* and sibling tito.X2.slot-XX.coverage keys only to avoid duplicate definitions, repeated openings, and scope drift; never treat memory as evidence.",
+  "memory_write_contract": "Each slot_compiler writes concise coordination notes only under its own namespace (tito.X2.slot-XX.coverage and tito.X2.slot-XX.handoff); only session_compiler may write global smoothing/assembly notes under tito.X2.global.*.",
+  "progress_marker_format": "SLOT_PROGRESS: slot-XX :: <phase>; PHASE_PROGRESS: assembly :: <phase>",
+  "slot_count": 8,
+  "slots": [
+    {"ordinal": 1, "title": "Introduction - General Probabilistic Method for Performance-Based Seismic Coefficients", "memory_namespace_label": "slot-01", "memory_namespace": "tito.X2.slot-01", "writer_role": "session_compiler", "worker_role": "slot_compiler"},
+    {"ordinal": 2, "title": "Foundations and History of Seismic Coefficient Analysis", "memory_namespace_label": "slot-02", "memory_namespace": "tito.X2.slot-02", "writer_role": "session_compiler", "worker_role": "slot_compiler"},
+    {"ordinal": 3, "title": "Probabilistic Functional Structure of Newmark Displacement Estimation Methods", "memory_namespace_label": "slot-03", "memory_namespace": "tito.X2.slot-03", "writer_role": "session_compiler", "worker_role": "slot_compiler"},
+    {"ordinal": 4, "title": "Detailed Newmark Displacement Estimation Methods", "memory_namespace_label": "slot-04", "memory_namespace": "tito.X2.slot-04", "writer_role": "session_compiler", "worker_role": "slot_compiler"},
+    {"ordinal": 5, "title": "Modern Methods Post-Bray (2019) and Fundamental Period Estimation", "memory_namespace_label": "slot-05", "memory_namespace": "tito.X2.slot-05", "writer_role": "session_compiler", "worker_role": "slot_compiler"},
+    {"ordinal": 6, "title": "Maximum Base Stiffness Estimation (Shear Modulus and Shear Wave Velocity)", "memory_namespace_label": "slot-06", "memory_namespace": "tito.X2.slot-06", "writer_role": "session_compiler", "worker_role": "slot_compiler"},
+    {"ordinal": 7, "title": "Flexible Block Assembly Model and Applicability", "memory_namespace_label": "slot-07", "memory_namespace": "tito.X2.slot-07", "writer_role": "session_compiler", "worker_role": "slot_compiler"},
+    {"ordinal": 8, "title": "Rigid Block Assembly Methods and Applicability", "memory_namespace_label": "slot-08", "memory_namespace": "tito.X2.slot-08", "writer_role": "session_compiler", "worker_role": "slot_compiler"}
+  ]
+}

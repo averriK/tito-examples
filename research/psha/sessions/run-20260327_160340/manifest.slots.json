@@ -1,0 +1,30 @@
+    {
+      "id": "slot-01",
+      "ordinal": 1,
+      "title": "Distance probability density function for the circular areal source",
+      "sources": [
+        { "path": "slot_sources/slot-01.run-20260327_154102_8022.md" },
+        { "path": "slot_sources/slot-01.run-20260327_154521.md" }
+      ],
+      "output_path": "p1.compile.research.slot-01.md"
+    },
+    {
+      "id": "slot-02",
+      "ordinal": 2,
+      "title": "Particularized annual exceedance rate for the single circular source",
+      "sources": [
+        { "path": "slot_sources/slot-02.run-20260327_154102_8022.md" },
+        { "path": "slot_sources/slot-02.run-20260327_154521.md" }
+      ],
+      "output_path": "p1.compile.research.slot-02.md"
+    },
+    {
+      "id": "slot-03",
+      "ordinal": 3,
+      "title": "Maximum credible earthquake ground-motion intensity",
+      "sources": [
+        { "path": "slot_sources/slot-03.run-20260327_154102_8022.md" },
+        { "path": "slot_sources/slot-03.run-20260327_154521.md" }
+      ],
+      "output_path": "p1.compile.research.slot-03.md"
+    }

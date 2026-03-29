@@ -1,0 +1,7 @@
+Drafted the PSHA circular-source manuscript with epsilon-form hazard equations and canonical MCE/disaggregation formulations, including required KB citations and paragraph-level audit footnotes.  
+- Added SLOT 1 epsilon-form hazard integral with constants factored and explicit numerical quadrature notes in `/Users/averrik/Cloud/github/tools/tito-examples/research/pshaB/sessions/run-20260328_151640_11172/pshaB_codex.research.md`.  
+- Added SLOT 2 MCE and disaggregation equations in epsilon form, including closed-form conditional MCE expressions and bin-level disaggregation rates in `/Users/averrik/Cloud/github/tools/tito-examples/research/pshaB/sessions/run-20260328_151640_11172/pshaB_codex.research.md`.  
+
+Manuscript written to /Users/averrik/Cloud/github/tools/tito-examples/research/pshaB/sessions/run-20260328_151640_11172/pshaB_codex.research.md
+
+If you want tweaks, I can 1) adjust notation to match a specific GMPE convention, 2) add a brief preface on parameter definitions, or 3) tighten the audit rationales.
