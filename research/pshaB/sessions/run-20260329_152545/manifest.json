@@ -1,0 +1,35 @@
+{
+  "id": "pshaB_test2",
+  "workflow": "compile-research",
+  "inputs": {
+    "structured_prompt_spec": "structured_prompt_spec.json"
+  },
+  "slots": [
+    {
+      "id": "slot-01",
+      "ordinal": 1,
+      "title": "Derivation of the particularized annual exceedance rate in epsilon form",
+      "sources": [
+        { "path": "slot_sources/slot-01.run-20260328_151640_11172.md" },
+        { "path": "slot_sources/slot-01.run-20260328_170626_25036.md" },
+        { "path": "slot_sources/slot-01.run-20260329_023928.md" }
+      ],
+      "output_path": "pshaB_test2.compile.research.slot-01.md"
+    },
+    {
+      "id": "slot-02",
+      "ordinal": 2,
+      "title": "Canonical hazard equations for MCE and disaggregation",
+      "sources": [
+        { "path": "slot_sources/slot-02.run-20260328_151640_11172.md" },
+        { "path": "slot_sources/slot-02.run-20260328_170626_25036.md" },
+        { "path": "slot_sources/slot-02.run-20260329_023928.md" }
+      ],
+      "output_path": "pshaB_test2.compile.research.slot-02.md"
+    }
+  ],
+  "outputs": {
+    "primary": "pshaB_test2.compile.research.md",
+    "biblatex": "biblatex.bib"
+  }
+}

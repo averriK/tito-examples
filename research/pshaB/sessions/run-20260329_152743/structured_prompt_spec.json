@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "task_file": "/home/averri/github/tools/tito-examples/research/pshaB/md/task.hint.prompt.md",
+  "slot_count": 2,
+  "constraint_count": 5,
+  "slots": [
+    {"ordinal": 1, "title": "Derivation of the particularized annual exceedance rate in epsilon form", "instruction": "This slot covers the derivation of the particularized annual exceedance rate $\\lambda_I(i^*)$ for the single circular areal source, starting from the general hazard integral. The derivation uses the distance probability density function $f_R(r)$ appropriate for the circular source geometry (as derived in a prior step) together with the magnitude probability density function $f_M(m)$, and the source parameters $a$, $b$, and $M_{\\max}$. Because the ground motion prediction model may constitute an arbitrary ensemble, the hazard integral is reformulated in terms of the variable $\\varepsilon$, recognizing that the complementary standard normal cumulative distribution term $1 - \\Phi(\\cdot)$ corresponds to a probability density function with unit mean and standard deviation $\\sigma$. All constant terms are factored outside the integral to expose the core expression as a convolution of the standard normal probability density function with the magnitude distribution function. The final result is a well-posed integral expressed in terms of $\\varepsilon$, with explicit integration limits $R_{\\min}$, $R_{\\max}$, $M_{\\min}$, and $M_{\\max}$."},
+    {"ordinal": 2, "title": "Canonical hazard equations for MCE and disaggregation", "instruction": "This slot covers the presentation of the hazard equations for the single circular areal source in canonical form, expressed in terms of $\\varepsilon$, for two distinct applications: (a) the Maximum Considered Earthquake (MCE) determination and (b) seismic hazard disaggregation. Both formulations are expressed in terms of a normalized normal probability density function associated with the ground motion prediction equations."}
+  ],
+  "constraints": [
+    "The output document is in English, following a professional engineering methodology style.",
+    "All derivations employ notation consistent with the documents in `kb/`.",
+    "Expressions take closed-form analytical form wherever possible; any step requiring numerical integration is identified explicitly.",
+    "No specific ground motion prediction equation (GMPE) is assumed; exceedance probabilities are expressed generically in terms of the median ground motion $\\hat{\\eta}_I(m,r)$ and the logarithmic standard deviation $\\sigma_{\\ln I}$.",
+    "No site effects are included; the analysis applies to reference rock conditions."
+  ]
+}
