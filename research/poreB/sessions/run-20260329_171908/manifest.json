@@ -1,0 +1,7 @@
+{
+  "id": "poreB_noorch",
+  "workflow": "prompt",
+  "outputs": {
+    "primary": "poreB_noorch.prompt.md"
+  }
+}

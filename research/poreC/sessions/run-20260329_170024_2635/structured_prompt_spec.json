@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "task_file": "/home/averri/github/tools/tito-examples/research/poreC/md/task.poreC.prompt.md",
+  "slot_count": 5,
+  "constraint_count": 2,
+  "slots": [
+    {"ordinal": 1, "title": "Numerical strategies for estimating maximum shear strain during a seismic event", "instruction": "Identify and describe the numerical strategies available for estimating the maximum shear strain throughout the duration of a seismic event in a 1D site-response context. Specifically address the RMS-based approach and the max-max approach, together with any other relevant strategies recognized in earthquake geotechnical engineering. For each strategy, present the advantages and disadvantages."},
+    {"ordinal": 2, "title": "Empirical methods for pore pressure increment from PGA and earthquake magnitude", "instruction": "Provide a concise reference summary of empirical methods that estimate the pore pressure increment from peak ground acceleration (PGA) and earthquake magnitude. This slot serves as background context; a brief overview of each method and its key parameters is sufficient. Detailed derivation or extended discussion is not required."},
+    {"ordinal": 3, "title": "Numerical implementation strategies for pore pressure estimation from instantaneous shear strain", "instruction": "Describe the strategies for numerical implementation - whether closed-form analytical solutions or numerical methods - that, given a base acceleration history $a_g(t)$, permit estimation of pore pressure or excess pore pressure at a point within the fine-grained stratum. The estimation is to be derived from the instantaneous shear strain $\\gamma(z,t)$ and the geotechnical properties of the material. Address both analytical and computational approaches to this problem."},
+    {"ordinal": 4, "title": "Available R and Python libraries for advanced constitutive pore pressure models and 1D site response integration", "instruction": "Identify available libraries in R and Python for analyzing pore pressure increment through advanced constitutive models such as PM4Sand. Describe how these algorithms can be integrated into the workflow of a 1D site response analysis, considering both instantaneous-shear-strain-based and RMS-based approaches as input to the constitutive model."},
+    {"ordinal": 5, "title": "Failure extent criteria and global failure definition in 1D liquefaction analysis", "instruction": "In a 1D liquefaction problem analyzed via instantaneous shear strains, address the following interconnected sub-questions: (a) the criteria for defining the spatial extent of zones where excess pore pressures exceed critical thresholds and the factor of safety drops below unity; (b) whether point failure (a single depth exceeding the threshold) is equivalent to failure of a proportion of the stratum thickness (e.g., 30%); (c) whether failure in deep zones carries the same engineering significance as failure in shallow zones; and (d) the design and analysis criteria for liquefaction potential that define global failure of a stratum."}
+  ],
+  "constraints": [
+    "The output document must be written in English.",
+    "The document must follow a professional engineering methodology style."
+  ]
+}

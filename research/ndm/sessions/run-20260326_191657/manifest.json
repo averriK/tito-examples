@@ -1,0 +1,10 @@
+{
+  "id": "smokedbg4",
+  "workflow": "compile-prompt",
+  "sessions": [
+    { "path": "../run-20260326_191525/smokedbg4.prompt.md" }
+  ],
+  "outputs": {
+    "primary": "smokedbg4.compile.prompt.md"
+  }
+}

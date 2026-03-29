@@ -1,0 +1,7 @@
+{
+  "id": "X1",
+  "workflow": "prompt",
+  "outputs": {
+    "primary": "X1.prompt.md"
+  }
+}

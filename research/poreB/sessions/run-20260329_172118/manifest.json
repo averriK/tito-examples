@@ -1,0 +1,10 @@
+{
+  "id": "poreB_noorch",
+  "workflow": "compile-prompt",
+  "sessions": [
+    { "path": "../run-20260329_171908/poreB_noorch.prompt.md" }
+  ],
+  "outputs": {
+    "primary": "poreB_noorch.compile.prompt.md"
+  }
+}

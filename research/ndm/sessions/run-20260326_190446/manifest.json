@@ -1,0 +1,7 @@
+{
+  "id": "smokefix",
+  "workflow": "prompt",
+  "outputs": {
+    "primary": "smokefix.prompt.md"
+  }
+}

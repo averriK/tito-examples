@@ -1,0 +1,400 @@
+
+µy ° g(µX1 ,µX2 , ,µXn )
+
+### (D.78)
+
+Appendix D
+
+and
+
+n n ∑
+
+# 1 ∑
+
+∂ ∂ g g ° ≈ ( , )
+
+### (D.79)
+
+Cov X X Y i j ∂ ∂ x x i j = = i j
+
+Separating the variances (found on the diagonal of the covariance matrix) and using the correlation coefficient (Equation D.34)
+
+n n ∑ ∑ ∑   ∂ ∂ ∂ g g g ° ≈ ° + ( , ) Cov X X  Y X i j ∂ ∂ ∂ i x x x i i j = ≠ i j i
+
+### (D.80)
+
+n n n ∑ ∑ ∑   ∂ ∂ ∂ g g g σ ρ ° ° = +  , X
+
+### X X
+
+X X ∂ ∂ ∂ i i j i j x x x i i j = = ≠ i i j i where ρx x j is the correlation coefficient as described in Section D.6.4. For the case of indepen‑ i dent variables, the off‑diagonal terms of the covariance matrix are zero, so the expression for the ­variance simplifies to
+
+n n ∑ ∑     ∂ + ∆ − −∆ ( ) ( ) g g x x g x x i i i i ° ≈ ° ° ≈
+
+### (D.81)
+
+    Y X X ∂ ∆ i i x x i i = = i i
+
+The second part of Equation (D.81) uses a central difference approximation to the gradient where Δxi is some small increment of xi. With this approach, the FOSM method requires 2n + 1 response function evaluations to obtain the first two moments of Y. For the previous case of five input vari‑ ables, a total of 11 (rather than 3 million for direct integration) function evaluations would be required. Note the similarity of Equation (D.81) to Equation (D.66b). In both cases, the uncertainty in the computed response depends on the uncertainty of the input variable and on the sensitivity of the response to the input variable. In this case, each input variable contributes to σy in relative amounts that are easily identified. The FOSM method can be used to identify which variables are more and less important from the standpoint of response model uncertainty. Note that all partial derivatives are taken at the mean value of each input variable so the problem is “linearized” about the mean, which means that the FOSM approximation is most accurate for the “middle” of the distribution and is less accurate at the tails; the low probabilities of failure used in typical design scenarios, however, mean that the tails of the distributions are the regions of greatest interest. For design purposes, therefore, FOSM techniques have limited utility. Other approximate techniques, such as the first‑order reliability method (FORM), which linearizes the problem in the region of interest, can be more useful for design purposes.
+
+### D.9.3.3 Monte Carlo Simulation
+
+Another approach to the propagation of uncertainty is to use randomization techniques such as Monte Carlo simulation (MCS). Randomization involves the generation of multiple sets, or “realizations,” of all random variables used as inputs to the problem of interest. The input variables are simulated in a series of “realizations” that match desired probability distributions (and, if necessary, desired covariances between correlated input variables). The problem is then solved deterministically for each realization. The resulting response variable values can be collected in a histogram which, as the number of simulations increases, eventually approximates the PDF of the response variable. The distribution of the response variable, therefore, reflects the distributions of the input variables and the sensitivities of the response to each of the input variables. The computed response values can be analyzed statistically, either by computation of their moments or by fitting a distribution to them. Appendix D
+
+A relatively small number of simulations may be required to obtain a reasonably accurate estimate of the mean or median response, but many more may be required to adequately characterize the tails of the distribution. Recognizing that hundreds, if not thousands, of simulations are typically performed in Monte Carlo analyses and that Student’s t‑distribution closely approximates the nor‑ mal distribution for more than about 50 samples, Equation (D.43) can be rearranged and put in the form
+
+  z s − α /2 x = *
+
+### (D.82)
+
+n   − ( ) L U
+
+where z is the standard normal variate and L and U are the lower and upper values of the confidence = − = + interval, i.e., sx and sx. On this basis, the minimum number of simula‑ L x z U x z − α − α /2 /2 tions required to provide 100(1 − α)% confidence that μx is between L and U is the next integer greater than n*. Simulation of Single Variables The process of simulating a single random variable is best illustrated graphically. In order to ensure that the simulated values follow the desired distribution, a set of random numbers, ui, between 0 and 1 are generated. These values are then assigned as CDF values for the random variable being = simulated, i.e., FX(xi) = ui. Solving for − ( ) i produces simulated X values with the desired x u F i X distribution. Figure D.14 illustrates this process for a generically distributed random variable. The reason why more simulations are required to accurately represent the tails of the distribution are apparent from the figure. For example, normally distributed random variables can be generated easily in Excel using the statement
+
+### =NORMINV(RAND(), mean,stdev)
+
+FIGURE D.14 Simulation of distributed random variable values using random numbers, U, and CDF of target distribution. As the number of random numbers increases, histogram of target values approaches PDF of target distribution. Appendix D
+
+where mean is the mean value of the variable and stdev is its standard deviation. A lognormally distributed random variable can be generated using
+
+### =LOGNORM.INV(RAND(),σln x,σln x)
+
+where σln x and σln x are the mean and standard deviation of ln x. Simulation of Multiple, Independent Random Variables When the response is affected by more than one random variable, simulation of each random vari‑ able is required. If the random variables are independent, the simulation process can be performed individually as described in the preceding section. Before proceeding with the Monte Carlo simula‑ tions, checking the random variables for unintended correlation is advisable. Simulation of Two Correlated Random Variables It is often necessary to generate randomized pairs of variables with some desired level of correla‑ tion. This can be accomplished relatively easily. Assume it is desired to generate multiple realiza‑ tions of two random variables, X and Y, which have means, μx and μy, standard deviations, σx and σy, and a correlation coefficient, ρxy. N pairs of properly correlated values of X and Y can be obtained from the following steps:
+
+1. Generate N pairs of uncorrelated standard normal (μ = 0, σ = 1) random variables, ε1 and ε2.
+1. Define ε3 as a linear combination of ε1 and ε2 using
+ε = ρ ε + − ρ ε . xy xy
+
+1. Then compute
+= µ + ° ε X x x
+
+= µ + ° ε Y y y
+
+X and Y will then approach their desired respective means, standard deviations, and correlation coefficient as N becomes large. Discrete Representation of Continuous Distributions In some cases, it is computationally convenient to represent continuous probability density func‑ tions by “equivalent” discrete PMFs. The equivalence of the two representations is generally evalu‑ ated in terms of differences in their statistical moments. Discrete approximations of continuous ­distributions are most commonly represented by a set of weights assigned to specific values of the variable of interest. Miller and Rice (1983) used Gaussian quadrature to solve for the weights and values of different numbers of discrete points representing common distributions, as shown in Table D.2. Appendix D
+
+### TABLE D.2
+
+### Values and Associated Weighting Factors for Discrete Approximation
+
+### of Continuous Distributions (from Miller and Rice, 1983)
+
+### Value, x or z
+
+### Weight, wx or wz
+
+### Distribution
+
+### Number of Values
+
+0.211325 0.500000 0.788675 0.500000 0.112702 0.277778 Uniform 0.500000 0.444444 { } = 0.887298 0.277778 x ≤ ≤ x 0.069432 0.173927 0.330009 0.326073 0.669991 0.326073 0.930568 0.173927 −1.000000 0.500000 0.500000 1.000000 −1.732051 0.166667 Standard Normal 0.666667 0.000000 { } = − /2 e z z −1.732051 0.166667 π −2.334414 0.045876 −∞≤ ≤∞ z −0.741964 0.454124 0.454124 0.741964 0.045876 2.334414 0.585768 0.853553 3.414214 0.146447 0.415775 0.711093 Exponential 2.294280 0.278518 { } = − e x x 6.289945 0.010389 0.322548 0.603154 ≥ x 1.745761 0.357419 4.536620 0.038888 9.395071 0.000539
+
+### REFERENCES
+
+Abrahamson, N.A. and Bommer, J.I. (2005). “Probability and uncertainty in seismic hazard analysis,” Earthquake Spectra, Vol. 21, No. 2, pp. 603–617. Ang, A.H.‑S. and Tang, W.J. (2007). Probability Concepts in Engineering: Emphasis on Applications in Civil & Environmental Engineering, Wiley, New York, 406 pp. Baecher, G.B. and Christian, J.C. (2003). Reliability and Statistics in Geotechnical Engineering, Wiley, New York, 616 pp. Baker, J.W., Bradley, B.A., and Stafford, P.J. (2021). Seismic Hazard and Risk Analysis, Cambridge University Press, Cambridge, UK, 581 pp. Benjamin, J.R. and Cornell, C.A. (2014). Probability, Statistics, and Decision for Civil Engineers, Dover Publications, Minneola, NY, 704 pp. Der Kiureghian, A. and Ditlevsen, O. (2009). “Aleatory or epistemic? Does it matter?,” Structural Safety, Vol. 31, pp. 105–112. Faber, M.H. (2005). “On the treatment of uncertainties and probabilities in engineering decision analysis,” Journal of Offshore Mechanics and Arctic Engineering, Vol. 127, No. 8, pp. 243–248. Fenton, G.A. and Griffiths, D.V. (2008). Risk Assessment in Geotechnical Engineering, Wiley, New York, 480 pp. Marzocchi, W. and Jordan, T.H. (2014). “Testing for ontological errors in probabilistic forecasts of natural systems,” Proceedings of the National Academy of Sciences, Vol. 111, pp. 11973–11978. Appendix D
+
+Miller, A.C. and Rice, T.R. (1983). “Discrete approximations of probability distributions,” Management Science, Vol. 29, No. 3, pp. 352–362. Pate‑Cornell, M.E. (1996). “Uncertainties in risk analysis: Six levels of treatment,” Reliability Engineering and System Safety, Vol. 54, No. 2–3, pp. 95–111. Phoon, K.K. and Kulhawy, F.H. (1999). “Characterization of geotechnical variability,” Canadian Geotechnical Journal, Vol. 36, pp. 612–624. Stafford, P.J. (2015). “Chapter 4: Variability and uncertainty in empirical ground‑motion prediction for proba‑ bilistic hazard and risk analyses,” in A. Ansal, ed., Perspectives on European Earthquake Engineering and Seismology, Springer Cham, Heidelberg, pp. 97–128.
+
+# Taylor & Francis
+
+# Taylor & Francis Group
+
+## http://taylorandfrancis.com
+
+# Index
+
+Note: Bold page numbers refer to tables and italic page numbers refer to figures.
+
+Bessel function 579, 580 abutment, for bridges 594–596 Between‑event term see event term acceleration histories 67, 68, 75, 76, 78, 478, 584 between‑event variability 126–129, 518–519 accelerometer 68–74 bio‑augmentation 889 data acquisition and digitization 73–74 biological techniques 889 instrument configurations 69–70 blasting 869–873, 873 system dynamics 70–73, 72 blind fault 44, 45 active earth pressure see lateral earth pressure blind reverse fault see blind fault active fault 181, 182 body wave magnitude 58 active pile length 565–566, 585–586 body waves 27–28, 28, 961 active tectonic region 41 bonded particle analysis 851–852 aftershock 52, 53, 187, 667 bored pile see pile foundations age effects 642, 691, 693 boundary conditions 473, 481, 496–497, 961–964, aleatory variability 129, 129–131, 245, 266–267, 488, 489,
+
+### 517–520, 523, 1016
+
+974–975, 984–985
+
+### components 129, 129, 518–519, 518, 523
+
+bracketed duration see duration bridges ground motion 129–131, 517–520 abutments response to lateral spreading 596–598 single station standard deviations 519, 519–520 response to ground motions 594–596 site response 520, 520 broadband seismometer see seismometer Alquist‑Priolo Act 24 buildings, seismic response analysis including SSI alteration of ground motion (liquefaction) 719, 719–720 displacement‑based method 591–593 amplification factor 435–436, 445 equivalent lateral force analysis 589–590 amplitude, of ground motion 67, 71, 85, 110 response history analysis 593–594 analog accelerometer 69, 71, 73–74, 75, 77–79, 78–79 response spectrum analysis 590–591 anchored bulkheads 600–602 anelastic attenuation 101, 103, 114–116, 115, 137 calibration 140–143, 738, 837 anisotropy 376 California Strong Motion Instrumentation Program 80 apparent propagation velocity 157, 577–579, 843
+
+### Canterbury (New Zealand) earthquakes 22
+
+areal extent of densification 878, 881 cantilever walls 599, 601, 601 Arias intensity 94, 97, 123, 126, 130 capacity 23, 249–252, 267–271, 563, 576–577, aseismic movement 33, 41, 51, 53 576–577, 595 asperities 51, 52 Caracas earthquake 429, 429 at‑rest earth pressure see lateral earth pressure CDF see cumulative distribution function (CDF) attenuation relationship see ground motion model cellular containment 885–886 Atterberg limits 337, 667
+
+### centrifuge tests 364, 366, 366, 367
+
+### autocorrelation 260, 261, 262, 489
+
+characteristic earthquake 189–193, 189–190, 210 characteristic earthquake model see characteristic backbone curve 321–323, 322, 368–373, 376–378, 379, earthquake 385–386, 487 characteristic site period 432, 991 bandwidth 93
+
+### Charleston 20
+
+baseline drift see baseline error
+
+### Chi‑Chi (Taiwan) earthquake 4, 14, 22
+
+baseline error 73–74, 77–79
+
+### Chile earthquake 19, 21, 58, 59
+
+basement walls 594, 600 clay‑like behavior 644, 645, 646, 756 base shear 543, 547, 549, 589–591, 619 clays base slab averaging 577–581 compressibility 293–294, 294 basin edge effects see basin effects cyclic loading 316–317 basin effects 104, 107, 118, 120–121, 121, 140, 428, shearing behavior 300–303 497–502, 991–992 CMS see conditional mean spectrum Bay Area Rapid Transit (BART) system 886 coarse‑grained soil 285, 286 Bayes’ Theorem 999–1000
+
+### coefficient of variation (COV) 372, 407, 1005
+
+beam‑on‑nonlinear Winkler foundation see macro‑element cohesion 282, 283, 604–605, 608, 1006, 1013 models compaction grouting 877, 877–878 Becker penetration test (BPT) 342–343, 342–344, 891 compaction piles 880, 880 bedrock within motion 444 complementary event 994 bender element test 355, 358, 358 complex impedance ratio 452 bending moment 597, 601, 601 Index
+
+loading characterization 756 complex stiffness see impedance function resistance characterization 756–757, 757 compliant sliding block system 917 cyclic strain approach 697–700 compound event 994 earthquake loading 697–698 compressibility 284, 292, 961 liquefaction potential evaluation 700 of clays 293–294, 294 liquefaction resistance 698–700, 699 of intermediate soils 295, 682 cyclic strain‑based pore pressure model 705 of sands 294, 294–295, 295 cyclic strength curve 657 and saturation 667–668, 693, 888–889 cyclic stress approach 671–697 of soil mixtures 295–296 earthquake loading 675–680 compressibility ratio 621 framework 674, 674–675 compressive stress 291–296 in situ test parameters 681–684 computed tomography (CT) see geotomography liquefaction resistance 684–696 conditional mean spectrum see conditional spectrum non‑triggering implications 696, 696 conditional probability 997–999 simplified method 696–697 conditional spectrum 220, 221, 221 cyclic stress‑based pore pressure model 704 cone penetration test (CPT) 303, 344–351 cyclic stress ratio (CSR) 655, 657, 660, 661, 662, 672, 673, resistance 890–891
+
+### 676–679, 680
+
+consolidation 280, 293, 660–661, 740–741 cyclic torsional shear test 363 constitutive models 323, 475–476, 706–708, 738, 832–837 cyclic triaxial test 320, 359–362 continental collision 38 continental drift 31–41, 32 damage measures (DMs) 23, 234–235, 238, 252–254 continuous distribution 1009–1015 damage model 238 continuous random variable 1001–1003
+
+### damage probability matrix 252, 253
+
+convection 35, 35 damage state 235 convection currents, in mantle see convection damped soil core, of earth 29, 29, 32–33, 36, 38–41 on elastic bedrock 451–455 corner frequency on rigid bedrock 445–450 ground motion filtering 76, 76, 78, 79 damping ratio 71, 387, 388, 389, 390–393, 391, 463, 484– source parameter 101, 135, 136
+
+### 488, 492, 544–549, 545, 551, 552, 554–555,
+
+### correction factors 338, 339–340, 350
+
+### 556–557, 558–559, 560–561, 565, 566, 568,
+
+co‑seismic stability hazards 796–798, 798 569, 572, 923, 930, 935, 937–939 Coulomb earth pressure theory 605–609 database 78, 83–84, 126, 127, 669–671 coupled compliant sliding block analysis 817 deaggregation see disaggregation coupling 290, 368, 541 decision variable (DV) 23, 235, 238, 239 CPT see cone penetration test (CPT) deconvolution 459–461 critical damping coefficient 549, 923 decoupled sliding block analysis 816–817 critical state 298–300, 299 see steady state of deformation deep foundations see pile foundations critical void ratio 298 deep soil mixing 884, 884–885 cross‑hole test 333–335, 891 degradation index 317 CRR see cyclic resistance ratio degradation ratio 403 crushable soils 711 demand‑and‑capacity‑factor (DCFD) 268–270 crust, of earth 29, 29, 32–33, 36, 38–41 densification 869–878 crustal damping 103, 121
+
+### density screen 667, 667
+
+CSR see cyclic stress ratio
+
+### cumulative absolute velocity 97, 124, 125–126, 126
+
+depth reduction factor 676–677 desaturation 888–889 cumulative distribution function (CDF) 188, 190, 1001, design basis earthquake (DBE) 195 1001, 1002, 1002 design ground motion 3, 176, 250 cyclic degradation 313, 317, 382, 383, 402–406 deterministic methods, of ground motion simulation 133, cyclic direct simple shear test 362–363 138–140 cyclic liquefaction 638, 638, 639, 651–653, 653, 664 deterministic seismic hazard analysis (DSHA) cyclic mobility 319, 656, 706, 731 193–196, 194 cyclic resistance ratio (CRR) 655, 672, 673, 684–687, deviator stress 282, 290, 359–360, 655 756–757 digitization 73–77 age adjustment 691–693
+
+### effective stress adjustment 689, 689, 689
+
+digitizer 75–76
+
+### loading cycles 688, 688, 688
+
+dilatancy 290–291, 306, 308, 310–311, 394, 396, 399, 475, 706, 708, 707, 707 saturation adjustment 693–696, 694, 695 dimensionless frequency 551, 565, 565, 585, 585 static shear stress adjustment 690–691, 691 dip‑slip movement 43–44, 44, 782–785 cyclic response model 321–323 Dirac delta function 933–934 cyclic softening 402, 640, 755–759 direct analysis, of soil‑structure system 539 cyclic resistance ratio 756–757, 757 directionality 148–150, 827–828 cyclic stress ratio 756 direct loss 23, 235 definition 636 Index
+
+### liquefaction resistance 702, 702–703, 703
+
+disaggregation 214–216, 215, 218–220 low‑strain material damping 484 discontinuous deformation analysis (DDA) 850
+
+### material damping 105, 118, 137, 369, 387, 484, 546,
+
+discrete Fourier transform (DFT) 913 551, 979–982 discrete probability matrix 238–239, 252–254 scattering 484–486 discretization 834 stiffness and damping behaviors 487–488 discrete random variable 1001 energy flux 988 dispersion curve 327 engineering demand parameter (EDP) 23, 84, 85, 207, 234, displacement‑based procedures 591–593 244, 257–258 displacement‑related pseudostatic analyses 830–832 epicenter 42, 43, 56–57, 56 dissipated energy‑based pore pressure model 705, 706 epicentral distance 42, 198 distance screen 666, 666–667 episodic tremor and slip (ETS) 37–38, 40 distinct element analysis 848–850 epistemic uncertainty 1016–1017 distributed deformations 783, 827, 834 ground response 488–489 Doppler effect 145, 145–146 ground response model error 492–493 double‑corner model 136, 136–137 non‑ergodic site response 521–522 downdrag 744, 749–751 probabilistic seismic hazard analysis 210–214, down‑hole test 330–332, 331, 891 213, 245 downtime 24, 235
+
+### site‑to‑site variability 518, 518, 518–519, 522
+
+drainage 668 epsilon, of ground motion 96, 131–132, 132, 202, 214–215, conditions 284 218, 219–221, 219 screen 668 equivalent lateral force analysis, for buildings 589–590 drained loading 284, 300 equivalent linear soil model 321 drilled shaft see pile foundations equivalent linear site response analysis 463, 477–480 dry pluviation 354 ergodic DSHA see deterministic seismic hazard analysis approach 434
+
+### (DSHA)
+
+models, site response 511–516 ductility 940–941 Eurocode 8, 509 demand 573, 941 European Macroseismic Scale (EMS‑98) 60 of oscillator 96–97, 97, 573
+
+### event term 127, 129, 129, 514, 518; see also between‑event
+
+Duhamel integral 934–935, 939 variability duration, of ground motion 67, 90, 93–97, 94–95, 123,
+
+### 124, 125, 130–131, 133–135, 146, 154–155,
+
+exponential distribution 1014–1015 extended Masing model 322, 322 217–220
+
+### Duzce earthquake 22
+
+factor of safety 665, 673, 673, 800–802 DV see decision variable failure mechanism 600–602 dynamic compaction 874–876 failure modes dynamic rupture model 139 of retaining walls 600–602 of rock block failure 844, 847–848 Earth, internal structure 27–31, 29 of slopes 792–795, 801, 837 earthquake energy release 61–62 of surface faulting 782–788 earthquake engineering 1–25, 232–238
+
+### earthquake intensity 59–61, 60, 61, 86, 87, 88
+
+failure surface 800–802, 801 fast Fourier transform (FFT) 913–914 earthquake, location 56–57 fault dip angle 98, 114–116 earthquake rate 180, 186–189, 187, 191–193, 196, 199–200, fault displacement hazard analysis 786–788 202–203 avoidance 789–790 earthquake‑resistant design 176 diversion 791–792 earth-retaining structures 11, 599–602 engineered fill 790–791, 791 EDP see engineering demand parameter (EDP) fault movement effective shear strain 464, 464, 465
+
+### effective stress adjustment 681, 681, 686
+
+dip‑slip 43–44 moment tensor 48–50 efficiency 248, 821, 826, 826 oblique 47–48 efficiency factor, for pile groups 567, 568, 569 source inversion 50 ejecta 722, 721, 742–743 strike‑slip 44–47, 46 elasticity 289–290 fault rupture 3, 98, 138–139, 145–147, 183, 198–199, elastic rebound 50–54, 52, 179
+
+### El Centro 21
+
+782–786 damage 4, 782, 788–789 electrodynamic seismometer 69–71, 70, 74, 76
+
+### embedment effects 551–552, 553, 557, 581–583, 583
+
+faults 41–50, 176–179, 177–179, 180–183, 181, 182, 188, 189, 192–193 empirical Green’s function 140 displacement 782–792 en echelon faults 783 geometry 42, 42 energy dissipation 700–703, 937–938 segments 181–182, 182 relationship to earthquake loading 701 strike 98, 150–151 kappa 486–487 Fermat’s principle 975 liquefaction potential evaluation 703 Index
+
+geometric spreading see geometric attenuation fictitious depth see finite fault parameter geophone 70 fine‑grained soil 285, 353 geophysical tests 325, 326, 326, 891–892 fines content 309, 663 geospatial approach 708–709 adjustment 681 GeoTech Tools 867 effects on liquefaction see liquefaction, triggering, geotomography 334 behavior of susceptible soils global positioning system (GPS) 50, 72 finite fault 98–102, 99, 115–116, 133, 138 Global Seismographic Network 79 parameter 102, 102, 115–116 GMMs see ground motion models (GMMs) first order second moment (FOSM) reliability method
+
+### Good Friday earthquake 14, 19, 21, 636
+
+1024–1025 grain size distribution 285 fixed‑base structure 538, 542, 542–543 gravelly soils 709 flat instrument response 74, 76 gravity walls 599–601 flexibility ratio 621 Green’s function 139–140 flexible‑base 542–545, 542, 545 gross sliding 297 fling step 145, 147–148, 149, 155–156, 155 ground displacement 71 flow liquefaction 6 ground failure 288, 313 flow failures 9, 10, 636, 637
+
+### flow slide deformation 840–843, 842, 843
+
+ground motion 1, 19–23, 67, 234 aleatory variability of 129–131, 517–520 stability analysis 731, 839–840 amplification 987–991 triggering 646–651, 722–723 factors affecting 98–107 flow liquefaction surface (FLS) 647–650 free‑field vs. foundation‑level 538 cyclic loading 649–650, 650 intensity measures see intensity measures (IMs) monotonic loading 647–649, 647–649 measurement 68–84 FLS see flow liquefaction surface models 107–132 fluid injection 54–55
+
+### focal mechanism 48, 49, 101, 107, 111, 112–113, 114,
+
+modification 217, 222–223 near‑fault 145–156 114, 116 polarization 148–150 focusing see basin effects pulse‑like 147–148, 152–156 foot wall 43, 47, 47 recordings see measurement force‑balance accelerometer see accelerometer selection 218–222 foreshock 51–52, 187 simulations 132–145 fossil faults 39 spatial distribution in near‑fault regions 150–152 foundation capacity 563, 576–577, 576–577, 595 spatial variability 156–160 foundation damping 544, 545, 546 spectra 88–93, 89, 92, 134–137, 136 foundation input motion 540, 577–588, 613 variations between tectonic regimes 121–123 foundation settlement 744–751, 877 ground motion instrument networks see ground motion deep foundations 748–751, 749–751 networks shallow foundations 744–748, 745–747 ground motion models (GMMs) 107–132 Foundex Becker penetration test (FBPT) 342–343
+
+### for amplitude parameters 110–123, 112–113, 114–115,
+
+Fourier series 88–90, 909–914, 910, 931 122–123 Fourier amplitude spectrum 75–76, 75–77, 88–90, 89, data attributes and dispersion 126–132 90, 93, 133–135, 136, 468, 912, 914 historical development 108–110 Fourier phase spectrum 89, 89–90, 157 other intensity measures (not solely amplitude fracking 54 parameters) 123–126 fragility curve 242, 253 for spectral accelerations see for amplitude parameters Franki method 879
+
+### ground motion networks 79–80, 81, 82, 83
+
+free‑face model 732
+
+### local arrays 80, 82, 83
+
+free‑field ground motion 538–542 surface networks 79–80 free‑field settlement 740–742
+
+### vertical arrays 80, 83
+
+free surface effect 451, 452, 989 ground motion prediction equation see ground motion frequency content, of ground motion 67, 88–91, 435, 448, model 719, 914–916 ground motion representation theorem 139 frequency‑dependent site response approach 469 ground oscillation 638, 720 friction angle 282, 283, 283, 301, 301, 303, 304, 306 ground response analysis 313, 442, 443–493, 515–517, functional recovery 235, 255 675–677 layered soil, on elastic rock 455–459 gamma rays 324 ground‑slope model 733 gap element 570–571 groundwater level lowering 888 GEER Association 19 group effects see pile groups gel‑push sampling 354
+
+### geologic considerations 177–179, 189, 439, 440, 441,
+
+group velocity 970–971 grouting 881–883 641–642, 714–715, 799 compaction 877 geometric attenuation 101–102, 102, 114, 137, 140 intrusion 883, 883 geometric mean, of ground motion 86 Index
+
+dispersion 129–131 jet 885 duration parameters 93–94 permeation 882, 882–883 efficiency 84, 248 Gutenberg‑Richter recurrence law 186–188, 187, 200 frequency content parameters 88–93 ground motion 234 Haiti earthquake 12 hybrid scalar 95–97 125–126 halfspace 451, 451, 453, 454, 544, 550, 582 mixed scalar 823–825 hanging wall 43, 114, 116–117, 116–117, 143, 144, 147–148 predictability 84, 248 harmonic motion, simple scalar 822, 822, 823 complex notation 906, 907 sufficiency 84, 248–249 trigonometric notation 903–906, 905, 906 vector 95, 825–826 tripartite plot 907, 908 interbedded soils 710, 711 hazard integrals 200–201, 216 interface event 36, 38, 41 hazard maps 209 interface flow failure 724 HEA see horizontal equivalent acceleration (HEA) Interferometric Synthetic Aperture Radar (InSAR) 50 healing front 146
+
+### Hebgen Lake 19, 21
+
+intermediate soils 308–309, 319–320 compressibility 295 high‑cut filter see low‑pass filter cyclic loading 319–320 high‑pass filter 78–79, 78–79 shearing behavior 308–309 high‑strain element test 358–363 intra‑slab event 36, 41 high‑strain field test 337–352
+
+### historical earthquakes 19, 20–22
+
+intrusion grouting 883, 883 inverse discrete Fourier transform (IDFT) 913 Hooke’s law 957, 958 inversion 329 horizontal equivalent acceleration (HEA) 807–808, 808 IRIS Data Management Center 79, 80 Husid plot 94, 95 isoseismal map 61, 61 hybrid scalar IM 95, 96–97, 125–126 isoseisms 61 hybrid simulation procedure see deterministic methods, of
+
+### Izmit earthquake 22
+
+ground motion simulation hydraulic fill 642–643, 643 Japanese Meteorological Agency magnitude 58 hydraulic fracturing see fracking jet grouting 885 Hyogo‑ken Nanbu earthquake 11, 15 jointly distributed random variable 1003 hypocenter (focus) 42, 47, 47, 100, 216 joint mean rate density 208 hypocentral (focal) depth 42, 56, 57 joint normal distribution 1015 hypocentral distance 42, 57
+
+### Kahrmanamaras (Turkey‑Syria) earthquake 22
+
+### impedance function 540–541, 541, 548–569, 554–555,
+
+### 556–557, 560–561, 565, 567–568, 569
+
+kappa 486–487 for site attenuation 137–138 impedance ratio 452, 453, 454, 457, 973, 974, 974 Kelvin‑Voigt 456, 570–572, 571, 979, 980 IMs see intensity measures (IMs)
+
+### Kik‑net arrays 80, 83
+
+inactive fault 182 kinematic interaction 538–542, 577–588 Inangabua earthquake 61 application of transfer function 586–588 indirect loss 235 base slab averaging 577–581 induced seismicity 54–56 embedment effects 581–583 inelasticity 289–290 pile foundation 583–586 inelastic spectra 96–97, 97 kinematic seismic earth pressure 613–619 inertial force 806, 806, 919 kinematic source model 139 inertial interaction see soil‑structure interaction (inertial Kobe (Hyogo‑Ken Nambu) earthquake 21, interaction) 499–500, 602 inertial seismic earth pressure 619 Kocaeli earthquake 46–47, 47 initial effective stress 656–658, 660 effects on liquefaction see liquefaction, triggering, laboratory testing, for soil improvement 890 behavior of susceptible soils lagged coherency 158–159, 158, 577–581, 579 initial liquefaction 319, 652–653 lagged distance 262 initial shear stress 661–663, 684 Lamé constant 958 effects on liquefaction see liquefaction, triggering, lateral displacement index (LDI) 736 behavior of susceptible soils lateral earth pressure input motions 480–484, 497
+
+### active 602–607, 603, 607
+
+in‑situ density 353 at rest 603–604, 603 in‑situ testing 890–891
+
+### passive 595–598, 596, 603, 603, 607, 607–610,
+
+instrumented Becker test (iBPT) 343–344, 344 608–610 instrument response 74, 75 seismic 610–619, 612, 615–616 intensity measures (IMs) 23, 67, 84, 95–97, 176, 200–203, lateral spreading 6, 12, 596–598, 597, 638, 638, 731–739, 207–209, 214–217, 234, 238 amplitude parameters 85–88 left‑lateral movement 44, 46 combinations of 95–96 Index
+
+lognormal distribution 108, 131, 202, 208, 244–250, lifeline hazards 11–15 1012–1014, 1013 Light Detection and Ranging (LIDAR) 177, 179
+
+### Loma Prieta earthquake 15, 16, 21, 24, 48, 61, 429–430,
+
+limit equilibrium analysis 800–802 430, 449 limit state longitudinal waves 951–953, 952 for design 249–252, 269 loss angle 549 for seismic earth pressure 611, 612 loss model 238, 245, 248, 254–255 linearity 288–289 Love waves 28, 29, 499, 967–969 linear threshold shear strain 297, 298 low‑cut filter see high‑pass filter liquefaction 3–7, 249, 636–763, 888 low‑pass filter 76–78, 76 consequences 713–752 low‑strain element test 355–358 geologic considerations 714–715 low‑strain field test 325–337 ground motion alteration 719–720 LPI see liquefaction, consequences, manifestation severity lateral spreading 6, 731–759 indicators manifestation severity indicators 715–719 lumped mass model 470, 470–471 residual strength 724–731 sand boils 8–10, 720–722 macro‑element models 564, 569–572, 574, 576, 577 settlement 739–751 magnetic anomalies 36, 36–37, 39 cyclic liquefaction 638–639, 651–697 magnitude cyclic softening 402–406, 755–759 maximium 183–184 flow liquefaction 636–637, 646–651, 722–724 minimum 183 other factors 663–664 probability density functions for 188–191, 189 probabilistic liquefaction hazard analysis (PLHA) saturation 58, 58, 111 751–755
+
+### magnitude‑area scaling relationships 183–184, 184
+
+for consequences 753–755 magnitude‑recurrence 186–187, 187 for triggering 752–753 magnitude scaling factor 678, 679, 679 soil density effects on liquefaction see liquefaction, mantle, of earth 29, 29–31, 31 triggering, behavior of susceptible soils Masing rules 322, 322, 487, 488 susceptibility 641–646 mass ratio 544 compositional indicators 643–646 material damping see energy dissipation, material geological indicators 641–643 damping historical indicators 641 material point method 843 triggering 651–713
+
+### Maule (Chile) earthquake 21
+
+behavior of susceptible soils 656–664 maximum component, of ground motion 85–86 criteria 652–653 maximum credible earthquake (MCE) 195 crushable soils 711 maximum magnitude model 188–189, 189 cyclic strain approach 697–700 maximum probable earthquake (MPE) 195 cyclic stress approach 671–697 maximum shear modulus, Gmax 369, 370, 373 effective stress response analysis approach 703–708 mean hazard 213–214, 213
+
+### mean period 93, 123–125, 124, 125
+
+empirical prediction 664–671 energy dissipation approach 700–703 mean shear wave velocity (VS30) see time‑averaged shear geospatial approach 708–709 wave velocity gravelly soils 709–710 mean squared error 222 historical perspective 653–655 median component, of ground motion 86, 150 interlayered soils 710–711 mesh locking 834–836
+
+### Mexico City earthquake 5, 21, 431–432, 432
+
+laboratory testing 655 near‑fault motions 713 microbially induced calcite precipitation (MICP) 889 parametric uncertainty 687–696 microseismic activity 67 simplified method 676–677 mine tailings 711–713, 712, 713 tailings 711–713 mitigation 24–25 liquefaction potential index see liquefaction, of fault displacement hazards 789–792 consequences, manifestation severity indicators of ground failure hazards 867–892 liquefaction resistance see liquefaction, triggering mixed effects regression procedure 129 liquefaction severity number see liquefaction, mixed scalar intensity measures 818–820, 820, 823–825 consequences, manifestation severity indicators modal analysis see response spectrum analysis liquid limit 286, 644, 667 model uncertainty 265–266, 492–493, 493 lithosphere 29, 30, 35 mode shape 447, 947–948 load amplitude effects on liquefaction see liquefaction, mode superposition 947–948
+
+### modified Mercalli intensity (MMI) 60, 60, 61
+
+triggering, behavior of susceptible soils load and resistance factor design 267–268 modulus reduction curve 369, 369, 376–378, 379, 380, 381, local boundary 496 381–382, 384, 385 local ground response 103–106 Mohorovicie discontinuity 30 local (Richter) magnitude 58 Mohr circle 276–284, 277, 278, 281, 283, 360 logic tree 210–212, 211 Mohr‑Coulomb failure criterion 282–284, 283 Index
+
+multiple blocks 848–852 moist tamping 354 single blocks 846, 845–848, 847–848 moment balance 191, 200 Nyquist frequency 74, 90 moment of inertia 559, 584, 615, 621
+
+### moment magnitude 58, 58, 59, 59, 101, 111, 183, 184
+
+oblique slip movement 47, 47–48 moment tensor 48–50, 49 off‑fault areal sources see source zones Monte Carlo simulation (MCS) 259, 260, 488, omega‑square model 134, 136, 138 1025–1027 one‑dimensional ground response analysis multi‑channel analysis of surface waves (MASW) 330 comparison of types 476–480 multi‑dimensional ground response analyses 493–497 energy dissipation 484–488 basin effects 497–502 equivalent linear approximation 463–469 topographic effects 502–511 input motions 480–484 two‑ and three‑dimension 493–497 linear analyses 444–463 multi‑dimensional stress‑deformation 834–836 nonlinear analyses 469–476 multiple‑block analyses 848–852 variability and uncertainty 488–493 multiple‑block rock slopes one‑dimensional wave propagation 951–955, 952 bonded particle analysis 851–852 ontological uncertainty 1017 discontinuous deformation analysis 850 operating basis earthquake (OBE) 195 distinct element method 848–850, 851 ordinary standard bridges (OSB) 595 multiple‑degree‑of‑freedom (MDOF) system 944–945 organic soils 286–287, 383–384, 390, 392 equations of motion 945–946 outcrop motion 481–482 mode superposition method 947–948 overconsolidation ratio (OCR) 293, 301, 302, 405–407 response spectrum analysis 948–949 undamped free vibration 946–947 paleoliquefaction 641 multiplication rule 998 paleoseismology 177 municipal solid waste 384, 390 Pangaea 31 Parseval’s theorem 90, 468 natural frequency, of oscillator 71, 542–543, 542 passive earth pressure see lateral earth pressure, passive natural period, of oscillator see natural frequency path effects, on ground motion 98, 101–103, 107, 114–117, near‑fault ground motion 145–156, 216–217, 713 132, 135–137, 136, 139–140 physical processes 145–148 PBEE see performance‑based earthquake engineering polarization 148–150
+
+### (PBEE)
+
+pulse‑like motions and effects 152–156 peak acceleration see peak ground acceleration spatial distribution 150–152
+
+### New Madrid earthquake 20
+
+peak ground acceleration (PGA) 85–87, 86, 87, 108–110, 435 Next Generation Attenuation (NGA) 77–78, 83–84,
+
+### 112–113, 127
+
+peak ground displacement (PGD) 85, 88 peak ground strain 159 NGA see Next Generation Attenuation (NGA)
+
+### Niigata earthquake 8, 9, 11, 21, 636, 639, 719–720
+
+peak ground velocity (PGV) 85, 87–88, 159 PEER triple integral 243 noise 74–79 perfectly matched layer 497 digitization 75–76 performance 25, 232 high‑frequency 74–77 components 233–235 low‑frequency 77–79 criteria 235–237 non‑ergodic site response 434, 511–522 prediction 237–246 aleatory variability of ground motion 517–520 performance‑based design 232–233, 246–255 epistemic uncertainty 492–493, 521–522 damage‑level implementation 252–254 mean site response 513–517 ground motion intensity 248–249 nonlinear effective stress analysis 474, 480, 703 loss‑level implementation 254–255 advanced constitutive models 706–708, 707, 707 response‑level implementation 249–252 cyclic response models 321–323 scalar and vector approaches 246–248 pore pressure models 474, 704–706, 706 performance‑based earthquake engineering (PBEE) 232, nonlinearity 288–289, 368 233, 236, 246 nonlinear site response 118 performance criteria 235–237 analysis 469–477, 479, 480 period lengthening 543–545, 545, 547, 590 non‑planar failure surfaces 828 permeation grouting 882, 882–883 nonplastic silts 308–309
+
+### normal distribution 1010, 1010–1012, 1011
+
+Peru earthquake 5, 13 PGA see peak ground acceleration (PGA) normal fault 43, 44 PGD see peak ground displacement (PGD) North Anatolian fault 40, 46, 47, 50 PGV see peak ground velocity (PGV) Northern California Seismic Network 80
+
+### Northridge earthquake 10, 21, 67–68, 91, 499, 500, 504
+
+phase transformation 304, 305, 656 phase velocity 970–971 nuclear structures, SSI 598–599 physical damage 234–235 nucleation point, of fault rupture 198 piezoelectric bender element 358, 358 number of cycles, of ground motion 93–94 pile driving analyzer (PDA) 342 numerical stability evaluation Index
+
+Bayes’ Theorem 999–1000 pile foundations 563–572, 583–586, 585, 596–598, central tendency measures 1004 597–598, 744, 747–751, 749–751 conditional 997–999 pile groups 563–564, 564, 567–569, 569 confidence intervals 1007–1008 planning 24, 24 continuous distribution 1009–1015 plasticity 286, 287, 288, 643–645, 645 dispersion measures 1004–1005 plasticity‑based macro‑element model 576 of events 996–1000 plasticity index 286 Poisson model 191–193, 200–201, 208, 1009 plastic limit 286 Poisson rate see Poisson model plastic spring 570–571, 571, 576 symmetry measures 1005 plate boundaries total probability theorem 241–242, 999 spreading ridge 35–36, 36 uniform distribution 1008–1010 subduction zone 36–38, 38 of unions and intersections 996, 996–997 transform faults 38–40, 40 probability density function (PDF) 183, 186, 188, 190, 198, plate tectonics 32–35, 33–35, 177, 179 201, 1001–1003 PMF see probability mass function (PMF) probability mass function (PMF) 149, 1001, 1001, Poisson distribution 1009 1002, 1002 Poisson source model see time‑independent source model probable loss (PL) 255 Poisson’s ratio 327, 544, 551, 621, 966, 970 probable maximum loss (PML) 254–255 policy 24, 24, 25 progressive failure 723, 802, 802, 840 pore pressure generation 314, 315, 318, 474 propagation of fault movement 788 pore pressure model 704–706, 706 propagation of uncertainty 266, 1017–1028 cyclic strains 705 pseudo‑acceleration 611, 611, 612 cyclic stresses 704 pseudo‑reference strain 378 dissipated energy 705, 706 pseudo‑spectral acceleration see spectral acceleration pore pressure ratio 318, 647 pseudostatic coefficient 804, 809, 831 pore pressure redistribution 839–840 pseudostatic stability analysis 806 post‑seismic stability analysis 839–843 PSHA see probabilistic seismic hazard analysis (PSHA) flow slide deformations 840–843 pulse period 93, 153–154, 153 flow slide stability 839–840 pushover analysis see displacement‑based procedures power spectra 90, 158 pushover curve see displacement‑based procedures power spectral density see power spectra preconsolidation pressure 293 quality factor see crustal damping predictability 84, 97, 130, 248 quarter wavelength method see square root impedance prediction of performance method closed‑form approach 244–246 quasi‑steady state 305, 305–307, 649 discrete approach 238–240, 239 integral approach 240–244
+
+### radiation damping 451, 452, 544, 546, 552, 554–555,
+
+predominant period 92, 92 556–557, 557–561, 560–561, 982–983 pressuremeter test (PMT) 351–352, 352 radiation pattern 135, 146, 147, 147 principal fault 782, 783 rake angle 47, 47 principal stresses 278–279 Ramberg‑Osgood model 322 probabilistic response analyses rammed aggregate piers 881, 881 aleatory variability 266–267, 1016–1017 randomization 259–263, 489–492, 491, 1025–1028 input motions 263–265 random variable model uncertainty 211, 265–266, 687 continuous 1001–1003 randomization of input parameters 259–263, discrete 1001 1025–1028 functions 1020–1028 scalar intensity measure 263–264 jointly distributed 1003 vector intensity measure 264–265, 821, 825–826 random vibration theory approach 467–469 vector response, damage, and loss 266, 821, 825–826, Rankine earth pressure theory 598, 604‑605, 605, 852–854 607–608, 608 probabilistic seismic hazard analysis (PSHA) 196–217, rapid impact compaction 876, 876–877 524–525 rate dependence 314, 316, 376, 402, 406 disaggregation 214–215 rate effects 828–829 earthquake rates 199–200 ratio of response spectra 586, 587 epistemic uncertainty 210–214 Rayleigh damping 484, 948 finite time periods 208–209 Rayleigh wave 28, 29, 327–330, 499, 962–964 independent variables, distributions of 198–199 displacement amplitude 965–966 near‑fault effects 216–217 velocity 965 scalar 200–207 ray path 975, 975 vector 207–208 recurrence interval 186, 191–193 probability recurrent liquefaction 641 association measures 1005–1006 reference strain 378 axioms 995 Index
+
+sand boils 6, 8, 638, 639, 720–722 refraction microtremor (ReMi) test 330 sand‑like behavior 644, 645, 646 reinforced soil walls 599
+
+### San Fernando earthquake 6, 6, 7, 10, 21
+
+reinforcement techniques
+
+### San Francisco earthquake 15, 16, 21, 58, 59, 430, 431
+
+compaction piles 880, 880 Santa Barbara earthquake 9 rammed aggregate piers 881, 881 saturation 667–668, 688, 693–695 stone columns 878, 878–880, 879 saturation screen 667–668 relative density 309, 310, 311, 394–395, 658–659 scalar hazard analysis 96 relative dilatancy index 311 scalar intensity measures 818–819, 822 relative state parameter index 311, 396–397 scaled backbone approach 212 reliability‑based design 267–271 scattering see wave scattering closed‑form solution 270–271 screening procedures 666–668 demand and capacity factors 268–270
+
+### density screen 667, 667
+
+load and resistance factors 267–268 distance screen 666, 666–667 reservoir‑induced earthquake 55
+
+### residual strength 722, 725–731, 726, 726, 727, 728,
+
+drainage screen 668 saturation screen 667–668 729, 840 shear strain screen 667 resonance 443, 444, 926, 988–989 secant shear modulus 369 resonance effects 104, 105, 988–991 seiche 15–19 resonant column test 355, 355–358 seismic compression 318, 394, 397–400 response history analyses 67, 217, 222–223, 593–594 seismic cone test 332 response model 237 seismic cross‑hole test 333–335 response spectra 939–940; see also spectral acceleration seismic deformation 33 response spectral matching 222–223 seismic demand 267–271 response spectrum analysis, for buildings 589–591 seismic down‑hole (up‑hole) test 330–332, 331 retaining structures see earth retaining structures seismic earth pressure see lateral earth pressure, seismic retaining walls see earth retaining structures seismic energy 61, 62 return period of ground motion 203, 240 seismic gap 53, 53 reverse fault 43–44, 45, 783–784 seismic hazard 2, 867 right‑lateral movement 44, 46, 46, 48, 783–784 analysis 67, 98, 176, 522, 524 rigid base see fixed base curves 200, 203, 204, 525 rigid block analysis seismic input 67, 93 behavior 815, 815–816, 816
+
+### seismic moment 57, 135, 138, 184, 184, 185, 186, 191
+
+decoupled procedure 816–817 seismic reflection test 326–327 mechanics 811–813, 811–814, 815 seismic refraction test 326–327 rigid block displacements 818 seismic risk 2 mixed scalar IMs 819–820, 820 seismic safety evaluation earthquake 195 scalar IMs 818–819 seismic stability analysis 803–839 vector IMs 821, 821 displacement 838–839 rigid foundation 538, 541–542, 541 pseudostatic 804–810 rigid system 917 sliding block 810–832 rise time 98–99, 100, 123, 146, 148 stress‑deformation 832–838 risk‑targeted maximum considered earthquake 195, 250 seismic waves 27–28, 28–29, 31, 951–987 rock outcropping motion 444 seismometer 68–73 rock slope failure types 844 data acquisition and digitization 73–74 rock slope stability 844–852 instrument configurations 69–70 empirical evaluation 845, 845 system dynamics 70–73, 72 numerical evaluation 845–852 semivariogram 262, 262 root‑mean‑square (rms) value 467–468 sensitivity analysis 1018–1020 Rossi‑Forel (RF) scale 60 sensors see accelerometers, seismometers rupture directivity effect 145–147, 147, 216 settlement due to ejecta 742–743 pulse characterization 153 settlement due to instability 743–744 rupture front 100, 146, 146, 147 shadow zone 31, 31 rupture velocity 100, 138 shaking table tests 364–365, 365 shallow foundation 548–563, 744–748, 745–747 safe shutdown earthquake (SSE) 195 capacity 563 Sammon’s map 212, 212 flexible structural elements 559–563, 561–562 sample disturbance 324, 353, 355, 379, 407, 654, 890 nonlinear models for 572–577 sample space 994 non‑uniform soil 558–559 San Andreas fault 39–40, 42, 43, 44, 46, 48, 51, 53, 53,
+
+### stiffness and damping 548–558, 553–555, 556, 557
+
+178, 188, 215 uniform soil 548–558 sand shear strain 464, 464–467 compressibility 294, 294–295, 295 shear strength 282–284, 301–306, 351, 369, 385–386, cyclic loading 317–319 401–408, 724–791, 800–802 shearing behavior 303–308 Index
+
+landslide monitoring 799 shear stress 279, 281, 282 pseudostatic 804–810, 830–832 cyclic 311–320 rock slopes 844–852 dilative and contractive behavior 290, 290 sliding block analysis 810–830 static 296–311
+
+### shear wave velocity 326–329, 332, 335, 336, 368, 371, 372,
+
+static 800–803
+
+### 373, 375, 437, 551, 566, 613, 652, 671, 672, 684,
+
+slowness 371 Snell’s law 103, 976 686, 687, 692, 961
+
+### soil behavior type index 346, 347, 347–349, 646
+
+signal‑to‑noise ratio 74 soil classification 284–288 significant duration see duration soil density 324–325, 368, 656, 658, 659, 660, 667 single‑degree‑of‑freedom (SDOF) system 69–71, 72, 91, soil fabric 324, 353–354, 654 218, 219, 542, 542, 917–918 soil hysteretic damping see material damping equation of motion 918–921 soil improvement 867–868, 868 general loading 932–935 applicability 867–868, 868 harmonic loading 925–930 biological techniques 889 linear 921–925 densification techniques 869–878 nonlinear 941–944 drainage techniques 887–889 periodic loading 930–932 grain size characteristics 868, 868 single station variability see aleatory variability, single grouting techniques 881–883 station standard deviation mixing techniques 883–887 site classification 436–441
+
+### geology‑based 439, 440–441
+
+reinforcement techniques 878–881
+
+### geotechnical‑based 439–441, 441
+
+verification techniques 890–892
+
+### VS30‑based 436–439, 438, 439, 551
+

@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "tool": "pdf2md",
+  "started_at_utc": "2026-03-26T17:56:02Z",
+  "finished_at_utc": "2026-03-26T17:56:20Z",
+  "duration_ms": 18224,
+  "input_kind": "pdf",
+  "input_path": "/data/github/tools/tito-examples/retrieve/rag1/kb/Kramer and Stewart - 2024 - Geotechnical Earthquake Engineering.pdf",
+  "input_size_bytes": 29411703,
+  "page_count": 1061,
+  "timings_ms": {
+    "prepare_pdf_ms": 544,
+    "ocr_ms": 12722,
+    "extract_text_ms": 4700
+  },
+  "metrics": {
+    "raw_text_bytes": 0,
+    "raw_text_lines": 0,
+    "tables_count": 0
+  },
+  "md_out": "/data/github/tools/tito-examples/retrieve/rag1/sessions/.hydrate/Kramer_and_Stewart_-_2024_-_Geotechnical_Earthquake_Engineering.pdf/md/Kramer_and_Stewart_-_2024_-_Geotechnical_Earthquake_Engineering.retrieve.md",
+  "outputs": {
+    "text_md": "/data/github/tools/tito-examples/retrieve/rag1/sessions/.hydrate/Kramer_and_Stewart_-_2024_-_Geotechnical_Earthquake_Engineering.pdf/md/Kramer_and_Stewart_-_2024_-_Geotechnical_Earthquake_Engineering.retrieve.md"
+  },
+  "toolchain": {
+    "python": {
+      "executable": "/usr/local/libexec/pdf2md/.venv/bin/python",
+      "version": "3.12.3"
+    },
+    "platform": "Linux-6.8.0-106-generic-x86_64-with-glibc2.39",
+    "commands": {
+      "qpdf": {
+        "path": "/usr/bin/qpdf",
+        "version": "qpdf version 11.9.0"
+      },
+      "ocrmypdf": {
+        "path": null,
+        "version": null
+      },
+      "tesseract": {
+        "path": "/usr/bin/tesseract",
+        "version": "tesseract 5.3.4"
+      }
+    },
+    "python_packages": {
+      "PyMuPDF": "1.27.2.2",
+      "pdfplumber": "0.11.9",
+      "pandas": "3.0.1",
+      "ocrmypdf": "17.3.0",
+      "python-docx": "1.2.0"
+    }
+  }
+}

@@ -1,0 +1,400 @@
+im r f f r d dr M R R m >
+
+### is obtained from the GMM and fM(m) and fR(r) are the probability density
+
+where [ | , ] P IM im r functions for magnitude and source‑site distance, respectively. Note that if m and r are not inde‑ pendent, the integration would take place across the joint probability density function, fM,R(m, r). The individual components of Equation (4.23) are, for virtually all realistic PSHAs, sufficiently complicated that the integrals cannot be evaluated analytically. Numerical integration, which can be performed by a variety of different techniques, is therefore required. One approach, used here for simplicity and clarity rather than efficiency, is to divide the possible ranges of magnitude and distance into NM and NR segments, respectively. The probability of exceedance can then be esti‑ mated as
+
+N N
+
+# ∑∑
+
+R M [ ] > ≈ > = = = =     M m M m [ | ] | , (4.24) P IM im E
+
+### P IM
+
+im R r P P R r j k j k = = k j where mj = Mmin + (j‑0.5)(Mmax − Mmin)/NM and rk = rmin+(k − 0.5)(rmax − rmin)/NR. This is equivalent to assuming that each source is capable of generating only NM different earthquakes of magnitude, mj, at only NR different source‑to‑site distances, rk. The three components on the right side of Equation 4.24 are illustrated graphically for a single {M, R} pair in Figure 4.16. The accuracy of
+
+FIGURE 4.16 Schematic illustration of main components of PSHA probability calculations. Products of terms in boxes are summed over all combinations of M and R (in Equation 4.24) to obtain P[IM > im | E]. Geotechnical Earthquake Engineering
+
+this simple numerical integration procedure increases with increasing NM and NR. More refined methods of numerical integration (e.g., Bradley et al., 2009) will provide greater accuracy for the same values of NM and NR. Equation (4.23) provides the conditional probability required to compute a hazard curve. However, a refinement of the conditional probability calculation provides useful insight into the role of ground motion variability. Since IMs are found to be lognormally distributed, the probability of
+
+### exceeding a specific value, im, for a given m‑r pair can be expressed as
+
+  µ − ln im m ln | , IM r m > =
+
+### −Φ
+
+[ | , ]  (4.25) P IM im r  ° m ln | ,
+
+### IM
+
+r
+
+where μlnIM|m,r and σlnIM|m,r are the median and standard deviation of IM from a GMM in natural log units conditional on magnitude m and distance r. Defining term “epsilon” as the number of logarithmic standard deviations by which the natural log of im exceeds the logarithmic mean for
+
+### that m‑r pair,
+
+− µ ln im m ln | ,
+
+### IM
+
+r ε = (4.26a) σ m ln | ,
+
+### IM
+
+r
+
+the conditional probability of exceeding im, which appears in Equations (4.23) and (4.24), can be written more compactly as
+
+ε[ ] m > =
+
+### −Φ
+
+[ | , ] (4.26b)
+
+### P IM
+
+im r
+
+Epsilon, ε, describes how “unusual” the value of im is – highly positive values represent particularly strong motions, highly negative values represent particularly weak motions, and values near zero represent typical (median‑level) motions. Utilizing the parameter, ε, the probability of exceeding im conditional on the occurrence of earthquake event E in Equation (4.23) can alternatively be written as
+
+# M ∫∫∫
+
+[ ] m m m > = > ° ° ° | [ | , , ] ( , , ) (4.27) P IM im E
+
+### P IM
+
+im r f r d dr d ° , ,
+
+### M R
+
+° R Note that the probability term in the integrand is now binary, taking on values of 1.0 if the inequal‑ ity is true and 0.0 if it is not for each combination of m, r, and ε, because of the specification of ε. With an additional integral, this form appears to be more complicated than that of Equation (4.23), however, it allows convenient characterization of the values of ε that contribute to the exceedance probability at different levels of im, which is useful for a subsequent application (disaggregation, Section 4.4.3.5). Equations (4.23) and (4.27) describe the probability of exceeding a specified IM level (im) given that an earthquake has occurred on a particular source. The rate at which im is exceeded, which can be thought of as a rate of a certain subset of events that produce ground motions that exceed im, is also of interest. The mean annual rate of ground motion exceedance is given by
+
+### λIM (im) = λMmin P[IM > im | E]
+
+(4.28)
+
+where λMmin = λM (Mmin ) is the mean annual rate of earthquakes that exceed the minimum mag‑ nitude, Mmin. The conditional probability, P[IM > im | E], can be obtained from either Equation (4.23) or, more commonly in current practice, Equation (4.27). If the site of interest is in a region of NS potential earthquake sources, each having its own rate of earthquakes, λi, with magnitudes m > Mmin, and the occurrences of earthquakes on the various Seismic Hazard Analysis
+
+sources are statistically independent, the total average exceedance rate for the site can be obtained by adding the rates from each of the sources N ∑ S ° ° ° m m m λ = λ > ε ε ε ( ) [ | , , ] ( , , ) (4.29) im
+
+### P IM
+
+im r f r d dr d ε , , IM i
+
+### M R
+
+= i M ε R Integrating numerically, the average exceedance rate can then be estimated as
+
+N N N S M R ∑ ∑ ∑ m m m ° ≈ ° > ∆ ∆ ( ) [ | , ] ( ) ( ) (4.30) im
+
+### P IM
+
+im r f f r r j j IM i k M R k = = = i j k where mj, rk, Δm, and Δr are defined as before. Note that Eq. (4.30) returns to the im exceedance probability represented as a real number and not a 0.0 or 1.0 binary. An equivalent but more com‑ pact form of Equation (4.30) utilizing Eq. (4.26b) to replace the probability of exceedance term can be written as N N N ∑ ∑ ∑ S M R [ ] ( ) m m ° ≈ °
+
+### −Φ
+
+ε ∆ ∆ ( ) ( ) ( ) (4.31a) im f f r r j IM i M R k = = = i j k which is also equivalent to N N N ∑ ∑ ∑ S M R [ ] ( ) M
+
+### mj
+
+° ≈ °
+
+### −Φ
+
+ε = = ( ) ( ) ( ) (4.31b) im P P R r IM i k = = = i j k
+
+When rate calculations of the type given by Equation (4.31) are carried out for a range of IM ­levels (as given by im) for a given IM, the resulting plot of im against rate of exceedance is termed a seismic hazard curve. Hazard curves for peak ground acceleration are shown in Figure 4.17 for several regions in the US. For any particular hazard curve, relatively low values of IM (i.e., weak levels of shaking) occur relatively frequently and relatively high values of IM (strong shaking) will occur more rarely. The return period of a particular intensity value, im, is the reciprocal of its mean annual rate of exceedance, i.e.
+
+TR im = λIM (im) ( ) (4.32)
+
+Accordingly, areas of high hazard have short return periods for a given ground motion level, whereas areas of lower hazard have longer return periods. As shown in Figure 4.17, areas near plate boundaries (coastal California, Seattle) are high‑haz‑ ard, meaning high exceedance rates for a given IM. In contrast, stable continental regions (central and eastern North America) have relatively low hazard. Slopes of hazard curves are also regionally variable. As one moves to the right on a hazard curve (increasing IM), both the earthquake rate and conditional ground motion exceedance probability (Equation 4.23) change. In areas with low rates of seismicity and sources that are modeled with Gutenberg‑Richter magnitude‑frequency distribu‑ tions, increasing ground motions are associated with rarer, larger magnitude earthquakes (decreas‑ ing λm), and higher conditional probability terms (P) (because larger earthquakes produce higher IMs). These counter‑acting effects can produce relatively flat hazard curves, as in stable continental regions near faults or in seismic zones with a history of large but low‑recurrence rate earthquakes (Memphis, Charleston). In contrast, if moving right on the hazard curve does not appreciably change magnitude, which can occur if hazard is dominated by relatively high‑rate characteristic events, then λm remains nearly constant, and the P term controls the hazard curve slope, which is relatively steep. This occurs near plate boundaries where earthquake rates can be relatively high relative to much of the λIM range in the plot. Geotechnical Earthquake Engineering
+
+FIGURE 4.17 Hazard curves for Sa(0.2 sec) at rock site conditions (VS30 = 760 m/s) at various locations across the US (using 2018 seismic hazard model from USGS, Petersen et al., 2020).
+
+### Example 4.4
+
+Consider the site and fault in Figure E4.4a with the indicated location coordinates and, using the fault parameters shown in the figure, compute a seismic hazard curve for PGA.
+
+FIGURE E4.4A Position of site relative to linear fault and fault parameters for Example 4.4
+
+### Solution:
+
+The PSHA can be performed by applying the four previously described steps:
+
+1. This step involves the identification and characterization of earthquake sources, includ‑
+ing the characterization of the probability distribution and recurrence rates of the full range of earthquake magnitudes that each source is capable of producing. To simplify the calculation, four magnitude bins are considered as shown in the table below. Using the mid‑magnitude in each bin, the probability density using a truncated exponential model is computed using Equation (4.9).
+
+( ) − β −
+
+### m M
+
+β e
+
+### min
+
+( ) = m
+
+### min
+
+f M β( ) − − M M − e
+
+### max
+
+( ) β = ⋅ where . The corresponding probability masses for each rupture size are ln 10 b ( ) ( ) =
+
+### m (where the bin width, dm = 0.5).
+
+m m computed as P f d M Seismic Hazard Analysis
+
+### fM(m)
+
+### P(m)
+
+### Magnitude Bin
+
+### Mid‑Value
+
+5.0–5.5 5.25 1.254 0.627 5.5–6.0 5.75 0.445 0.223 6.0–6.5 6.25 0.158 0.079 6.5–7.0 6.75 0.056 0.028
+
+These results are summarized in the portion of Table E4.4 marked as Step 1.
+
+1. The second step considers alternative rupture locations within the source, which control
+the rupture distances that must be considered in hazard calculations. A uniform prob‑ ability distribution is assigned to hypocenter locations along the fault as parameterized by the normalized position coordinate h as shown in Figure 4.15. Six bins of h are con‑ sidered along with their probability masses in the table below.
+
+h
+
+### P(h)
+
+0.083 0.167 0.250 0.167 0.417 0.167 0.583 0.167 0.750 0.167 0.917 0.167
+
+Distance calculations are affected by rupture size (length in this case) and hypocenter location h as shown in Figure 4.15. As indicated in the text below Equation (4.20), loga‑ ( ) = − m (Lrup in km; from Wells rithmic mean rupture length is taken as 0.74 3.55 log Lrup and Coppersmith, 1994). Table E4.4 shows distances calculated for the six realizations of h for each magnitude, each of which has a unique Lrup (to simplify the calculations, uncertainty in rupture dimensions is not considered in this example). The probability R ( )) for each distance is computed using Equation mass (related to the distance PDF, f r (4.21) adapted to probability masses as ( ) ( ) ( ) ( ) = = = 
+
+### P R
+
+r f r dr P P h R rup
+
+These results are provided in the portion of Table E4.4 marked as Step 2.
+
+1. For each magnitude and distance combination, median ground motions (denoted
+### µ m
+
+) are computed using the simple Campbell (1981) GMM in Equation (3.25). These | ,r are shown in the Part 3 portion of Table E4.4. As indicated in Example 4.3, the use of the Campbell model is for illustrative purposes only – it is a simple model that can be relatively easily applied to illustrate the steps in PSHA.
+
+1. The probability calculation begins by computing the epsilon (ε ) value corresponding to
+a particular target ground motion level (im) for each magnitude and distance combina‑ tion using Equation (4.26a). A target ground motion level of 0.1g is used in Table E4.4. This value of ε is used with standard normal CDF table (Table D.1) to compute FIM ε( ). FIM ε( ) is the probability that ε is exceeded, which is equivalent to the − The value 1 probability that the target ground motion im is exceeded for the particular m and r com‑ bination. The combined probability (integrand in Equation 4.23) is then computed. The summation provides the condition probability that IM > im given that an earthquake has occurred (Equation 4.23), which is 0.281 for the target im value. The mean annual rate of ground motion exceedance is computed using Equation ( ) ( ) λ = = λ > = × = (4.28) as . This result rep‑ 0.1 | 0.03 0.281 0.0084/year im g
+
+### P IM
+
+im E
+
+### Mmin
+
+IM resents one point on a PGA seismic hazard curve as shown in Figure E4.4b. Repeating this calculation for many values of im provides the entire hazard curve. Geotechnical Earthquake Engineering
+
+##### 0.2234 P = 1 – exp(–λIM × Δt)
+
+, ) r where Δt = 30 years m
+
+### Mmin
+
+im λ = ∑× > Σ 0.0084 0.0425 0.0425 0.0084 0.0007 0.0000 0.0155 0.0293 0.0293 0.0155 0.0037 0.0006 0.0114 0.0126 0.0126 0.0114 0.0069 0.0027 0.0046 0.0046 0.0046 0.0046 0.0045 0.0037 P r P PGA
+
+### IM
+
+) ( ) ( λ
+
+### 0.2809
+
+### 0.0084
+
+m ( P
+
+#### 1 − FIM (ε)
+
+### Step 4
+
+0.081 0.406 0.406 0.081 0.006 0.000 0.417 0.790 0.790 0.417 0.099 0.016 0.869 0.959 0.959 0.869 0.523 0.206 0.994 0.994 0.994 0.994 0.963 0.796
+
+### FIM (ε)
+
+0.919 0.594 0.594 0.919 0.994 1.000 0.583 0.210 0.210 0.583 0.901 0.984 0.131 0.041 0.041 0.131 0.477 0.794 0.006 0.006 0.006 0.006 0.037 0.204
+
+### ε (im = 0.1g)
+
+−0.807 −0.807 −1.123 −1.743 −1.743 −1.123 −0.057 −2.526 −2.536 −2.536 −2.526 −1.785 −0.827 1.400 0.237 0.237 1.400 2.489 3.331 0.210 0.210 1.287 2.134 0.821
+
+0.372 0.372 0.372 0.372 0.372 0.372
+
+### σlnPGA
+
+0.372 0.372 0.372 0.372 0.372 0.372 0.372 0.372 0.372 0.372 0.372 0.372 0.372 0.372 0.372 0.372 0.372 0.372
+
+### Step 3
+
+r , m 0.0594 0.0916 0.0916 0.0594 0.0396 0.0290 0.0925 0.1350 0.1350 0.0925 0.0620 0.0452 0.1518 0.1912 0.1912 0.1518 0.1021 0.0737 0.2559 0.2568 0.2568 0.2559 0.1942 0.1360 PGA
+
+### Calculations for Mean Annual Rate of Exceeding PGA Value of 0.1g
+
+ln µ
+
+0.1667 0.1667 0.1667 0.1667 0.1667 0.1667 0.1667 0.1667 0.1667 0.1667 0.1667 0.1667 0.1667 0.1667 0.1667 0.1667 0.1667 0.1667 0.1667 0.1667 0.1667 0.1667 0.1667 0.1667
+
+### P(r)
+
+### r(h,L)
+
+17.14 10.74 10.74 17.14 25.92 35.36 15.98 10.30 10.30 15.98 24.59 33.97 13.49 10.00 10.00 13.49 21.52 30.73 10.06 10.00 10.00 10.06 14.92 23.32
+
+0.167 0.167 0.167 0.167 0.167 0.167 0.167 0.167 0.167 0.167 0.167 0.167 0.167 0.167 0.167 0.167 0.167 0.167 0.167 0.167 0.167 0.167 0.167 0.167
+
+### P(h)
+
+### Step 2
+
+0.083 0.250 0.417 0.583 0.750 0.917 0.083 0.250 0.417 0.583 0.750 0.917 0.083 0.250 0.417 0.583 0.750 0.917 0.083 0.250 0.417 0.583 0.750 0.917 h
+
+### P(Lrup)
+
+1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0
+
+### Lrup (km)
+
+2.16 2.16 2.16 2.16 2.16 2.16 5.07 5.07 5.07 5.07 5.07 5.07 11.89 11.89 11.89 11.89 11.89 11.89 27.86 27.86 27.86 27.86 27.86 27.86
+
+### TABLE E4.4
+
+0.627 0.627 0.627 0.627 0.627 0.627 0.223 0.223 0.223 0.223 0.223 0.223 0.079 0.079 0.079 0.079 0.079 0.079 0.028 0.028 0.028 0.028 0.028 0.028
+
+### P(m)
+
+### Step 1
+
+5.25 5.25 5.25 5.25 5.25 5.25 5.75 5.75 5.75 5.75 5.75 5.75 6.25 6.25 6.25 6.25 6.25 6.25 6.75 6.75 6.75 6.75 6.75 6.75 m Seismic Hazard Analysis
+
+FIGURE E4.4B Hazard curve derived for Example 4.4, with the point computed in Table E4.4 marked.
+
+### 4.4.3.2 Vector PSHA
+
+As discussed in Section 1.6, earthquake engineers use IMs to predict the seismic response of systems of interest and characterize that response in terms of engineering demand parameters, or EDPs. Because no single IM captures all of the ground motion characteristics that influence response, there will always be some uncertainty in EDP for a given IM (i.e., in EDP|IM). That uncertainty can often be reduced, however, with the addition of more information about the ground motions. For example, it would seem logical (and will be discussed in Chapter 5) that the permanent displacement of an unstable slope could be predicted more accurately if both the amplitude and duration of an earth‑ quake motion are known rather than just the amplitude. The joint rates of exceedance of multiple IMs can be predicted using vector PSHA. Bazzurro and Cornell (2002) described a procedure for evaluating the mean annual joint rate of occurrence of the elements of a vector of ground motion IMs. The procedure is more easily understood by consider‑ ing a scalar PSHA expressed in a different form. As shown in Section 4.4.3.1, the mean annual rate of exceedance of some value of a scalar IM = im for a given source can be expressed (noting that, despite the boldface notation, magnitude is a scalar quantity) as
+
+# min ∫∫
+
+m m m ° = ° > ( ) [ | , ] ( , ) (4.33) im
+
+### P IM
+
+im r f r d dr M , IM
+
+### M R
+
+M R m > The conditional probability [ | , ] is the complementary cumulative distribution ­function, P IM im r m m = − ( | , ) ( | , ) . Differentiating the expression for the mean rate of exceedance in G im r F im r IM IM Equation (4.33) with respect to IM produces the mean rate density
+
+# min ∫∫
+
+m m m = ° ( ) ( | , ) ( , ) (4.34) MRD im f im r f r d dr M , IM
+
+### IM
+
+### M R
+
+M R
+
+where
+
+    µ − ln im m m ln | , IM r   = − ( | , ) (4.35) exp f im r   IM σ π σ im   m m   ln | , ln | , IM r
+
+### IM
+
+r
+
+for a lognormally distributed IM. Geotechnical Earthquake Engineering
+
+Considering the case where two IMs, IM1 and IM2, are of interest at a particular site, the joint mean rate density can be expressed as
+
+# min ∫∫
+
+m m m = ° ( , ) ( , | , ) ( , ) (4.36) MRD im im f im im r f r d dr M , , ,
+
+### IM IM
+
+### IM IM
+
+M R M R m is the joint PDF of IM1 and IM2 conditional upon M = m and R = r. where ( , | , ) f im im r ,
+
+### IM IM
+
+As indicated in Section D.5.3 of Appendix D, a joint PDF can also be written in conditional form, i.e., as
+
+m m m = ( , | , ) ( | , ) ( | , , ) (4.37) f im im r f im r f im im r , |
+
+### IM IM
+
+### IM
+
+### IM
+
+### IM
+
+Note that the first term on the right side of Equation (4.37) is the conditional PDF of a single IM (as appeared on the right side of the scalar PSHA expression in Equation 4.33). Assuming that IM1 and IM2 are jointly lognormal (a reasonable assumption given that they are each marginally lognormal), the conditional distribution comprising the second term on the right side of Equation (4.37) will also be lognormal. The conditional distribution can then be expressed as
+
+    − µ ln im m ln | , , IM im r m   = − exp ( | , , ) (4.38) f im im r   | IM IM σ σ π im   m   m ln | , , IM im r ln | , , IM im r
+
+The logarithmic mean and standard deviation of the conditional distribution are (Benjamin and Cornell, 1970) σ ( ) m ln | ,
+
+### IM
+
+r µ = µ + ° − µ ln (4.39a) im m m m ln | , , ln | , 1,2 ln | , IM im r
+
+### IM
+
+r IM r σ m ln | ,
+
+### IM
+
+r
+
+and
+
+° σ = σ − (4.39b) m m ln | , , ln | , IM im r
+
+### IM
+
+r 1,2
+
+ρ is the correlation coefficient for the natural logarithms of IM1 and IM2 and σ where and m 1,2 ln | , IM r σ are obtained from the GMM. m ln | , IM r Substituting Equations (4.38) and (4.39) into Equation (4.37), the joint mean rate density function can be obtained. Computing this function, therefore, requires the availability of GMMs for each IM and the correlations between both IMs in the vector (e.g., Baker and Jayaram, 2008; Bradley, 2011). By integrating over the IM values, a corresponding joint mean rate of exceedance surface (the multi‑dimensional analog to the one‑dimensional curve obtained for a scalar IM) is obtained as: ) = ∫ ∫ ( ( ) ( ) ( ) ° = , , MRE im im
+
+### MRD
+
+im im d im d im , , ,
+
+### IM IM
+
+### IM IM
+
+### IM IM
+
+### IM
+
+### IM
+
+where the mean rate density in the integrand is given in Equation (4.36).
+
+### 4.4.3.3 Finite Time Periods
+
+The IM exceedance rates described in Section 4.4.3.1 can be combined with the Poisson model (Section D.7.1.2) to estimate the probability of exceeding a particular IM level (im) in a finite time interval. From Equation (D.48), the probability of exceedance of im in a time period, Δt, is P[N ≥ 1] = 1−e−λIM (im)∆t (4.40) Seismic Hazard Analysis
+
+( ) − ° ∆ in a Taylor series shows that − im t Expanding 1 e IM
+
+≥ ≈ λ ∆ [ 1] ( ) (4.41)
+
+### P N
+
+im t
+
+### IM
+
+( )∆ (or, equivalently, small values of λ ∆ for small values of /t TR ) that are normally of interest im t IM for design. This result is often used to approximate the annual (Δt = 1 yr) probability of exceedance as being equal to λIM. Hazard maps show the spatial variation of a given IM at a particular probability level; the exam‑ ple in Figure 4.18 applies for the IM of Sa(0.2 sec), VS30 = 760 m/s site condition, and the 2% prob‑ ability of exceedance in 50‑year hazard level. Finally, as shown in Figure 4.19, a uniform hazard spectrum (UHS) can be defined for a given site by computing hazard curves for spectral accelera‑ tions at multiple periods and plotting the spectral accelerations vs. period for a given exceedance rate. All ordinates of the UHS, therefore, have the same return period, i.e., the same probability of exceedance in a particular period of time.
+
+FIGURE 4.18 Shaded map of Sa(0.2 sec) spectral acceleration (expressed as a percentage of gravity) with 2% probability of exceedance in 50 years for rock sites with VS30 = 760 m/s. (Petersen et al., 2020; used with permission of SAGE Publications, Ltd.)
+

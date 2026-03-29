@@ -1,0 +1,400 @@
+### Sourceb
+
+### Data
+
+Europe Global Global Global Global Global Global Global Global Global Japan Italy
+
+NGAW2: Boore et al. (2014) NGAE: Goulet et al. (2021a) NGAW2: Abrahamson et al. NGAS: Kuehn et al. (2023) NGAS: Parker et al. (2022) NGAW2: Chiou & Youngs NGAS: Abrahamson et al. Local: Bindi et al. (2011) GEM: Zhao et al. (2006) NGAS: Abrahamson & NGAW2: Campbell & NGAW2: Idriss (2014) Akkar et al. (2014) Bozorgnia (2014) Gülerce (2022)
+
+### TABLE 3.4
+
+### Referencea
+
+(2014) (2014) (2018) Strong Ground Motion Characterization and Prediction
+
+### Period
+
+### PGA‑10
+
+### PGA‑10
+
+### PGA‑10
+
+### Range
+
+h F = style of faulting factor; W = fault width; rgn = regional flag; Zhypo = focal depth, Ztor = depth to top of rupture; δ = fault dip; var R = various distance metrics, used for hanging wall
+
+### Comp.i
+
+D50 D50 ns f Cat. = site categories; Rock = reference rock (typically VS = 3.0 km/s in SCRs); VS30 = 30 m time‑averaged shear wave velocity; zx = depth to shear wave velocity of x km/s. terms; DPP = direct point parameter (used for near‑fault effects); Zt = subduction zone source type (interface, intra‑slab); arc = flag for back‑arc or forearc region. a GEM = models recommended for Global Earthquake Model (Stewart et al. 2015). NGAW2, NGAE, NGAS = NGA‑West2, NGA‑East, NGA‑Subduction GMMs.
+
+### Other Para.h
+
+e Rrup = rupture distance (closest distance between site and source); RJB = surface projection distance; Rhypo = hypocenter distance. See Figure 3.36 for definitions. F ‑ ‑
+
+### Response
+
+### Model
+
+### Site
+
+NL ‑‑ L
+
+### Parametersf
+
+### Site
+
+Rock VS30 VS30 i Component of horizontal motion (Section 3.3.1.1). gm = geometric mean; D50 = median component; ns = not stated.
+
+### R typee
+
+b Sims = Computed ground motions from simulations; CENA = Data from Central and Eastern North America. c ME = mixed effects; 2-s = two-step procedure; EW = all date points weighted equally; NS = not specified. Rrup Rrup RJB
+
+### Selected GMMs for Horizontal‑Component PGA, PGV, and Sa at 5% Damping
+
+d n = normal‑slip; r = reverse‑slip; ss = strike‑slip; f = subduction interface; s = subduction intra‑slab.
+
+### R Range
+
+0–1,200 0–1,000 0–400
+
+### (km)
+
+### M Ranged
+
+3–8.5 3–8.5 4–8
+
+### Regression
+
+### Methodc
+
+g NL = site effect is nonlinear; L = site effect is linear. EW ME ME
+
+Sims, CENA Sims, CENA
+
+### Sourceb
+
+### Data
+
+CENA
+
+### TABLE 3.4 (Continued)
+
+Hassani and Atkinson (2015) Pezeshk et al. (2018) Boore (2018, 2020)
+
+### Referencea
+
+Geotechnical Earthquake Engineering
+
+FIGURE 3.31 Effects of magnitude on median ground motions for active tectonic regions. Site condition is rock with VS30 = 760 m/s (Boore et al., 2014 GMM). Note the relatively strong sensitivity of the low‑frequency IM (Sa(3.0)) to magnitude and the low sensitivity of PGA to M at short distances.
+
+FIGURE 3.32 Effect of focal mechanism on median active tectonic region ground motions from the Boore et al. (2014) GMM.
+
+depth effects on IMs are less well resolved than the other source metrics. The effects of fault dip angle are also difficult to resolve relative to focal mechanism effects and are modeled differently in current active tectonic region GMMs.
+
+### 3.5.2.2 Scaling with Path Parameters
+
+The principal path parameter used in GMMs is source‑site distance. An additional path‑related effect considered in some GMMs is the position of the site of interest over the hanging wall of dip‑ ping faults. Distance Scaling: Ground motions usually decrease with increasing distance from the fault due to geometric spreading and anelastic attenuation effects (Section 3.4.2). The principal parameter used to capture these effects is source‑site distance, which can be measured in a variety of ways. The most widely used distance measures in GMMs, however, are the rupture distance (Rrup) and the closest distance to the horizontal projection of the fault to the ground surface (RJB), as shown in Figure 3.33. A typical function for a relatively simple path term is as follows: Strong Ground Motion Characterization and Prediction
+
+FIGURE 3.33 Depth and site‑to‑source distance measures used in GMMs.
+
+( ) = + + M ln (3.27) F c c R c R P
+
+where R is typically the vector sum (Equation 3.18) or sum of either Rrup or RJB (depending on the GMM) and the finite fault term, h. Figure 3.34 shows the variation of PGA and Sa(3.0) with distance RJB for M 5, 6, 7, and 8 strike‑slip earthquakes and VS30 = 760 m/s. For these conditions, rupture distance (Rrup) matches RJB when the rupture is shallow, and very similar results are obtained using alternate GMMs that use Rrup as the distance parameter (Gregor et al., 2014). Figure 3.34 illustrates several of the key attributes of distance attenuation introduced in Section 3.4.2:
+
+FIGURE 3.34 Effect of magnitude and distance on median ground motions using Boore et al. (2014) GMM. Vertically‑dipping strike‑slip earthquakes, VS30 = 760 m/s. Distance RJB is interchangeable with Rrup for these conditions when the rupture depth is shallow. Geotechnical Earthquake Engineering
+
+- At close distances (RJB < ∼ 5–10 km), ground motions saturate with distance (the IM‑RJB
+curve is nearly horizontal) at all periods. This effect is modeled using the finite fault term, h, which may be period or magnitude‑dependent in different GMMs. The insensitivity of ground motions to distance at very close distance is caused by the relatively low likelihood that the closest point on the fault (from which Rrup and RJB are measured) is generating the seismic waves that control ground motion amplitudes. In effect, the site is subject to waves generated on many nearby sections of the fault, so IMs are not directly related to the closest distance.
+
+- Beyond the near‑fault saturation zone (RJB > ∼ 5–10 km), the IM‑RJB relationship transitions
+to a nearly constant slope (in log‑log space) that represents the effects of geometric spread‑ ing [controlled by the (c1 + c2M) term in Equation 3.27]. For high‑frequency IMs, geo‑ metric spreading controls the variation with distance for distances between about 10 and 70 km. Moreover, the rate of geometric spreading is magnitude‑dependent, with smaller magnitudes producing faster attenuation (i.e., steeper IM‑RJB slopes). For low‑frequency IMs, the rate of geometric spreading is independent of magnitude.
+
+- For high‑frequency IMs, anelastic attenuation steepens the distance attenuation beyond
+about 70–80 km (modeled by the c3R term in Equation 3.27). This effect is not observed at low frequencies.
+
+Hanging Wall Effects: The hanging wall of a dip‑slip fault (Section 2.4.2.1) lies above the dip‑ ping fault plane, as shown in Figure 3.35. Consider two sites located equally far from the closest point on the fault plane but located on the hanging and foot walls (labeled as “HW site” and “FW site” in Figure 3.35). The hanging wall site is closer to other portions of the fault and hence experi‑ ences stronger ground motions than the foot wall site. This hanging wall effect occurs principally in moderate‑ to high‑frequency IMs and is generally absent for oscillator periods greater than about 3–4 sec. These effects are included in some of the active tectonic region GMMs listed in Table 3.4. The simplest approach for modeling hanging wall effects is implicit to the use of the RJB dis‑ tance metric; as shown in Figure 3.33, RJB is zero on the hanging wall over the surface projection of the fault. As shown in Figure 3.36, the zero RJB condition gives rise to higher‑amplitude ground motions for a positive Rx than for the same value of negative Rx. More complex models derived in part from finite fault simulations by Donahue and Abrahamson (2014) are used in the Abrahamson et al. (2014), Campbell and Bozorgnia (2014), and Chiou and Youngs (2014) GMMs. Those models allow for various effects including different rates of distance attenuation for positive and negative Rx (perpendicular to the fault strike) and in the strike‑parallel direction (measured by Ry), as well as effects of fault dip angle (δ), Ztor, focal mechanism (normal or reverse), and magnitude. As shown
+
+FIGURE 3.35 Schematic depiction of hanging wall and footwall of dipping fault. The HW site and FW site are drawn to have identical rupture distance (Rrup). The distance parameters and transition zone indicated in the figure are used in simulation‑based hanging wall correction factors by Donahue and Abrahamson (2014). Distance Ry is measured from the center of the fault in the along‑strike direction. Strong Ground Motion Characterization and Prediction
+
+FIGURE 3.36 Peak accelerations and hanging wall effect above M 7 reverse‑slip earthquake with Ztor = 0. Top frame shows profiles of PGA at Ry = 0 from various models using simulation‑based hanging wall term as compared to profile from RJB‑based hanging wall term. Middle frame shows hanging wall effect as expressed by ratio of hanging wall to footwall motions for common horizontal distance from top of rupture (Rx). The simulation‑based models that are shown are Abrahamson et al. (2014), Campbell and Bozorgnia (2014), and Chiou and Youngs (2014).
+
+in Figure 3.36, the hanging wall effect is strongest over the bottom portion of the dipping fault and extends well beyond the surface projection of the fault in the positive Rx direction (i.e., Rx > Wcosδ). Although the RJB‑based hanging wall effect is similar to those from simulation‑based models for the case shown in Figure 3.36, there are other cases (e.g., buried ruptures) where the differences are larger. Large model‑to‑model variability indicates substantial epistemic uncertainty, which occurs because the available data are too limited to constrain the models. This large epistemic uncertainty is an important consideration for sites near dipping faults.
+
+### 3.5.2.3 Scaling with Site Parameters
+
+The principal site parameter used in most modern GMMs is the time‑averaged shear wave velocity in the upper 30 m, VS30, which was defined in Equation (3.23). Exceptions include GMMs in which site conditions are represented by discrete categories (e.g., soft soil, firm soil, rock), which are cor‑ related with VS30, and GMMs that apply only for rock conditions (common for stable continental regions). Some GMMs also consider sediment depth parameters (zx), which are defined as the depth to Vs = x (typical values of x are 1.0 and 2.5 km/s) in order to better model site response for low‑­ frequency motions, whose wavelengths are much greater than 30 m. VS30‑scaling: As described in Section 3.4.3.1, VS30 is a site parameter that can be used with site response models in GMMs to provide first‑order estimates of impedance and damping effects. Most contemporary GMMs use nonlinear site response models, meaning that the site amplification is a Geotechnical Earthquake Engineering
+
+function of the ground motion amplitude for a reference (rock) site condition. The site response, FS, in Equation (3.24) has, in general, two components: = + nl (3.28) F F F S lin
+
+where Flin and Fnl represent the linear and nonlinear site responses, respectively. The linear site response term can be expressed as:
+
+°  V S = ln (3.29) F c   lin V ref
+
+where Vref is the velocity for the reference condition (typical values are 760 m/s or ∼1,000 m/s) and c is the slope of the linear site amplification term as a function of VS30 (in semi‑log space, as depicted in Figure 3.37a). Parameter c is a negative number, and the larger its absolute value, the stronger the amplification for soft sites. Typical values of c for active tectonic regions worldwide are given in Figure 3.37b. The largest amplification (indicated by lowest, i.e., most negative value of c) occurs at relatively long periods (peak between 0.4 and 4 sec), which reflects the predominance of deep sediment sites (with long predominant periods and significant basin effects) in the databases used to regress the c terms and the correlation of VS30 with the average properties of deeper sediments. The nonlinear term, Fnl, changes the site amplification for conditions where shaking induces strains that are sufficiently large to decrease the stiffness and increase the damping of the soil. The increased damping reduces the amplification, so Fnl is usually negative. Equations for Fnl have been derived from one-dimensional ground response simulations (Walling et al., 2008; Kamai et al., 2014b; Section 7.5), from data analyses (Choi and Stewart, 2005), and from combinations of simu‑ lations and data analysis (Seyhan and Stewart, 2014). A simple expression that captures the main features of Fnl is:
+
+  + x f IMr = ln (3.30) F f   nl f
+
+where f2 and f3 are illustrated in Figure 3.38a for the case where xIMr = PGA. In Equation (3.30), xIMr is the ground motion for a reference (rock) site condition (usually taken from a GMM applied for a high VS30 value such as 760 m/s); xIMr may be parameterized with various IMs – PGA is common, as is Sa at the same spectral period for which Fnl is being evaluated. The parameter f2 quantifies the degree of site nonlinearity and is typically negative. The parameter f3 forces Fnl to zero as xIMr goes to zero and corresponds to the approximate acceleration differentiating linear amplification at low xIMr (where the Fnl trend is flat) to nonlinear amplification at higher xIMr (where the Fnl trend is sloped). High absolute values of f2 and low values of f3 indicate high levels of nonlinearity.
+
+FIGURE 3.37 (a) Illustration of parameters in linear site response model, Vref and c (the results shown apply to PGA); (b) trend of c vs period for active tectonic regions (ATRs). Strong Ground Motion Characterization and Prediction
+
+Typical features of a complete site amplification model (including linear and nonlinear terms) are shown in Figure 3.38b. Plots of amplification [exp(FS)] against VS30 for Sa(3.0) reflect linear response (i.e., the amplification is independent of xIMr), whereas the corresponding plots for PGA amplifica‑ tion bend downward as xIMr increases for low VS30 sites (indicating nonlinearity). Similar behavior is revealed in the plots of amplification [exp(FS)] against xIMr, which are flat for Sa(3.0) and follow the characteristic nonlinear shape in Figure 3.38a for PGA amplification. Amplification factors for spectra acceleration of soil profiles with VS30 = 270 m/s and VS30 = 560 m/s are shown in Figure 3.39. The amplification can be seen to be period‑dependent for both cases, but also to be much higher and more strongly period‑dependent for the softer profile. The low‑period (high frequency) amplification decreases with increasing input motion amplitude, but much more strongly for the softer profile since it exhibits much greater nonlinearity than the stiffer profile. For both cases, the curves converge and approach amplification factors of 1.0 at longer periods where the ground motion wavelengths become long relative to the soil profile thickness and the entire soil profile essentially translates back and forth with the underlying rock as a nearly rigid body.
+
+FIGURE 3.38 (a) Illustration of parameters f2 and f3 in nonlinear site response model (for xIMr = PGA); (b) trends of amplification factor (=exp[Fs]) against VS30 and xIMr.
+
+FIGURE 3.39 Variation of site amplification with period for (a) stiff soil (VS30 = 560 m/s) and (b) relatively soft soil (VS30 = 270 m/s) conditions and input peak accelerations ranging from 0.1 to 0.4g. Geotechnical Earthquake Engineering
+
+### Example 3.4
+
+Consider a site with VS30 = 250 m/s. What levels of site amplification of PGA would be expected for this site if the reference level of shaking (for rock) is 0.001g or 0.5g?
+
+### Solution:
+
+The linear site response can be computed using the site VS30 and the model in Equation (3.29). ≈ Using VS30 = 250 m/s and c = −0.6 (from Figure 3.37b with (0.01)
+
+### PGA
+
+Sa ), Flin is computed as
+
+   
+
+##### 0.6 ln 250 m/sec
+
+V ( ) S = = = − ln 0.667 F c   lin
+
+#### 760 m/sec
+
+V ref
+
+Then, the amplification in arithmetic units is exp(0.667) = 1.95. For the weak input motion level, there is no nonlinearity so the PGA site amplification is 1.95. For the stronger input motion level, the total site amplification can be obtained graphically from the lower part of Figure 3.38b, which is reproduced below with a linear‑axis for the ordinate and = 0.5 x g a narrower range of amplification. At , the amplification is read as 1.10 in arithmetic IMr units and FS = 0.095 in ln units. Subtracting the linear amplification term from the total amplifica‑ tion (in ln units), the corresponding nonlinear term in ln units is (Figure E3.4)
+
+= − = − = − 0.095 (0.667) 0.572 F F F nl S lin
+
+FIGURE E3.4 Expanded version of PGA amplification from Figure 3.38b.
+
+Basin Depth Scaling: As discussed in Section 3.4.3.2, particular combinations of incident wave directions and sedimentary basin structure can give rise to ground motion amplification from dif‑ ferent mechanisms than those causing ground response. This sort of amplification is commonly referred to as basin effects. While basin effects can be estimated with relatively complex threedimensional simulations (Day et al., 2008; Wang and Jordan, 2014), it is important to recognize that basin effects are already included to some degree in empirical, or semi‑empirical, VS30‑based site response models such as those illustrated in Figures 3.37–3.39. Because the VS30‑based models do not depend on basin‑related independent variables, the amplification they provide reflects an aver‑ age level of basin amplification for the VS30 values associated with the empirical data set used to derive the amplification model. To discriminate conditions giving rise to relatively weak or strong basin effects given a particular VS30, the site response relationship of Equation (3.28) can be adjusted with an additional term in which the independent variable is basin depth:
+
+( ) = + + x (3.31) F F F F z S lin nl z
+
+where Fz represents the basin term; this term is zero for GMMs that do not include basin effects. Depth is represented by the vertical distance from the ground surface to a shear wave velocity iso‑ surface having VS = x km/s, which is denoted zx (typical parameters used in GMMs are z1.0 and z2.5; Table 3.4). Strong Ground Motion Characterization and Prediction
+
+FIGURE 3.40 (a) Illustration of the correlation between VS30 and basin depth z1 for Japan and California (Chiou and Youngs, 2014) and examples of sites with positive and negative δz1; (b) example basin amplification term Fz, showing dependence on depth differential δz1 (Boore et al., 2014).
+
+It is important to recognize that zx is negatively correlated with VS30 for a given geologic region; sites having lower VS30 values tend to have larger depths. Accordingly, the Fz(zx) term in Equation (3.31) should modify the average basin effect for depths zx different from the average depth expected for the site’s VS30. In other words, if the site has the same depth as the average depth conditional on the site’s VS30, Fz(zx) should be zero. This conceptual understanding of the basin depth term is applied by replac‑ ing zx in Equation (3.31) with the differential between the depth and the expected value given VS30: µ ( ) δ = − (3.32) z z V x x zx S
+
+where μzx (VS30) is the mean value of depth given VS30. Figure 3.40a shows example relationships between z1 and VS30 using data from Japan and California (Chiou and Youngs, 2014). Figure 3.40b shows an example of the Fz term when parameterized using δz1 (Boore et al., 2014). There is no effect of basin depth at short periods in the Boore et al. (2014) model. For long‑period IMs, unusu‑ ally shallow sites (δzx < 0) have negative Fz terms (indicating weaker than average ground motions) whereas deep sites (δzx > 0) experience amplified shaking.
+
+### 3.5.2.4 Variations of Ground Motions between Tectonic Regimes
+
+Most continental regions globally can be associated with active tectonic regions, subduction zones, or stable continental regions (Section 2.3.3; García et al., 2012). One reason for classifying these dif‑ ferent regimes is that characteristics of ground motions differ between regions and different GMMs are used for applications in different regimes. The ground motion scaling relationships shown in previous sections apply for active tectonic regions. Additional GMMs applicable to subduction zones and stable continental regions are listed in Table 3.4. The same general trends hold for other regimes (ground motions increase with increas‑ ing magnitude, decreasing distance, and decreasing site stiffness), although there are some impor‑ tant differences in the trends that are found in subduction zones and stable continental regions. Figures 3.41 and 3.42 show the scaling of ground motions with Rrup for stable continental region and interface subduction zone events, respectively, with the active tectonic region results shown in the background for reference. For stable continental regions (Figure 3.41), near‑fault high‑frequency IMs are stronger than those for active tectonic regions due to higher stress drops. Distance attenua‑ tion rates are generally considered to be faster than those for active tectonic regions for the distance range controlled by shear waves (up to approximately 50 km), then a flattening occurs in the longer distance range controlled by surface waves. Anelastic attenuation effects are small for the distance range shown because of lower crustal damping (higher Q) in stable continental regions, which also contributes to the reduced distance attenuation rate for distances beyond 50 km. The differences Geotechnical Earthquake Engineering
+
+FIGURE 3.41 Effect of magnitude and distance on median ground motions for stable continental regions using Yenier and Atkinson (2015) GMM. Active tectonic region IMs from Boore et al. (2014) shown for com‑ parison with RJB converted to Rrup (Kaklamanos et al., 2011). Site condition is 760 m/s (site correction from Stewart et al., 2020 applied to adjust 3,000 m/s reference condition in Yenier and Atkinson model).
+
+between active and stable regions are smaller at long periods for conditions often critical for hazard
+
+### analyses (M 5–7, distance < 50 km).
+
+For interface subduction events (Figure 3.42), ground motion amplitudes are similar to those for active tectonic regions for magnitudes of 7 or less, but are stronger for M 8 (the subduction models also extend to M 9, which is beyond the range for the active tectonic regions). This indicates stron‑ ger magnitude‑scaling at large magnitudes for interface subduction events relative to active region events. Distance attenuation rates are only modestly different from those for active tectonic regions. As shown in Figure 3.43, there are notable differences between ground motions within subduction zones from interface and slab sources, with slab events having high frequency IMs with stronger amplitudes at the closest distances and faster attenuation rates. The faster attenuation likely results from the large depth of these events, which causes the seismic waves to travel through the upper
+
+FIGURE 3.42 Effect of magnitude and distance on median ground motions for interface subduction zone earthquakes using the Parker et al. (2022) global GMM. Subduction zone results not shown for distances <25 km because interface events occur in offshore areas and near‑fault data are unavailable. Active tectonic region IMs from Boore et al. (2014) shown for comparison with RJB converted to Rrup (Kaklamanos et al., 2011). Rock site conditions, VS30 = 760 m/s. Strong Ground Motion Characterization and Prediction
+
+FIGURE 3.43 Effect of magnitude and distance on median ground motions for interface and slab subduction zone earthquakes using the Parker et al. (2022) global GMM. The slab model results are plotted for hypocen‑ tral depth of and minimum distance of 60 km. Rock site conditions, VS30 = 760 m/s.
+
+mantle, which is softened by high heat and hence has lower Q (higher damping), before passing into the crust and toward the ground surface.
+
+###### 3.5.3 Other Intensity Measures
+
+Sections 3.3.2–3.3.3 describe IMs for the frequency content and duration of ground motion that are used in engineering applications, along with several hybrid scalar parameters such as Arias inten‑ sity (IA) and cumulative absolute velocity (CAV). As with amplitude parameters, GMMs are avail‑ able that describe the effects of magnitude, distance, and site condition on these IMs.
+
+### 3.5.3.1 Duration
+
+Table 3.5 lists several GMMs for duration. Most models were developed for significant duration, as defined in Section 3.3.3. GMMs for duration use one of two general function types. One type takes the natural log of duration as a sum (in natural log units) of source, path, and site terms similar to Equation (3.24) (Bommer et al., 2009; Lee and Green, 2014; Bora et al., 2014). The second type is based on physical principles in which duration is the sum, in arithmetic units, of a source duration and path duration (Boore and Thompson, 2014; Afshari and Stewart, 2016). The source duration is related to the time for slip to occur across the fault surface, which in turn is related to both rise time and the ratio of fault dimension to rupture speed. Source duration is given as a function of M. Path duration accounts for the separation of p‑ and s‑waves in time, which increases with distance from the fault. Figure 3.44 shows the variation of significant duration with M, Rrup, and VS30 for active tec‑ tonic regions using the Afshari and Stewart (2016) model. Duration increases strongly with mag‑ nitude, which is a source duration effect. Duration increases steadily with distance, reflecting the path‑spreading effect, and is also marginally higher for soil sites than for rock sites. Duration at soil sites is lower for stable continental regions than for active tectonic regions (Lee and Green, 2014), which is consistent with the higher stress drop in stable continental regions.
+
+### 3.5.3.2 Mean Period
+
+Table 3.5 lists a single GMM for mean period by Rathje et al. (2004). Figure 3.45 shows that the variation of mean period with magnitude and distance follows similar trends to those for dura‑ tion – strong magnitude‑dependence, steady increase with distance, and higher values for soil sites Geotechnical Earthquake Engineering
+
+### Comp.h
+
+### D50
+
+gm gm gm arb gm arb vs
+
+F, W, Zhypo, δ,
+
+### Other Para.g
+
+var R, rgn Ztor ‑ ‑ ‑ ‑ ‑
+
+### Site Termf
+
+NL
+
+### NL
+
+L L L L ‑ Controlled by GMM for reference IM
+
+### Parameterse
+
+VS30, z2.5 VS30, z1
+
+### Site
+
+Cat. Cat. VS30
+
+### VS30
+
+‑
+
+g F = style of faulting factor; Ztor = depth to top of rupture; δ = fault dip; var R = various distance metrics, used for hanging wall terms. h Component of horizontal motion considered. gm = geometric mean; arb = arbitrary component; vs = vector sum; D50 = RotD50. e Cat. = various site categories; VS30 = time‑averaged shear wave velocity in upper 30 m; zx = depth to shear wave velocity of x km/s. Rrup, RJB
+
+### R Typed
+
+Rrup Rrup Rrup Rrup Rrup Rrup
+
+### R Range
+
+0–400 0–200 0–500 0–500 0–200 0–100 5–550
+
+### (km)
+
+d Rrup = rupture distance (closest distance between site and source); RJB = surface projection distance. 4.5–7.6 4.8–7.9 4.7–7.6
+
+### Range
+
+### Hybrid Scalar
+
+3–7.9 3–7.9
+
+### Selected GMMs for Duration, Frequency Content, and Hybrid Scalar IMs
+
+### Mean Period
+
+3–8 5–8 M
+
+### Duration
+
+c ME = mixed effects; subj = subjective fit (by hand); IM cor = correlation with Sa and PGA. a ATR = active tectonic regions; SCR = stable continental regions; SZ = subduction zones.
+
+### Regression
+
+### Methodc
+
+IM cor subj ME ME
+
+### ME
+
+ME ME ME
+
+### Sourceb
+
+Global Global Global Global Global Global CENA
+
+### CENA
+
+### Data
+
+### Tectonic
+
+### Regimea
+
+b CENA = Data from Central and Eastern north America. SCR ATR
+
+### SCR
+
+ATR ATR ATR ATR
+
+### SZ
+
+f NL = site effect is nonlinear; L = site effect is linear. Afshari and Stewart (2016), D5‑95, D5‑75, D20-80 Campbell & Bozorgnia (2019), IA, CAV Farhadi and Pezeskh (2020), IA, CAV Boore and Thompson (2014), D5‑95 Lee and Green (2014), D5‑95, D5‑75 Bommer et al. (2009), D5‑95, D5‑75 Macedo et al. (2019), IA Rathje et al. (2004), Tm
+
+### Reference and IM
+
+### TABLE 3.5
+
+Strong Ground Motion Characterization and Prediction
+
+FIGURE 3.44 Variation of median significant duration (5%–95%) with magnitude, distance, and site condi‑ tion as given by the Afshari and Stewart (2016) GMM.
+
+FIGURE 3.45 Variation of median values of mean period (Tm) with magnitude, distance, and site condition as given by the Rathje et al. (2004) GMM.
+
+than for rock sites. These trends in the frequency content of ground motion are consistent with fac‑ tors previously identified as affecting Sa in Section 3.5.2.
+
+### 3.5.3.3 Hybrid Scalar IMs
+
+As shown in Table 3.5, Campbell and Bozorgnia (2019) have presented GMMs for CAV and IA using identical functional forms (but with different coefficients) to those for their 2014 model for Sa (Campbell and Bozorgnia, 2014). As shown in Figure 3.46, although these hybrid scalar parameters reflect the combined influence of amplitude, duration, and frequency content, their scaling relation‑ ships have similarities to those for short‑period Sa – modest variation with magnitude for M > 6.5 and steady decrease of the IMs with distance due to geometrical spreading (the GMMs do not include an anelastic attenuation term). The much faster attenuation of IA as compared to CAV results from IA being more sensitive to high‑frequency components of the ground motion, which have relatively fast distance attenuation. Although not shown in Figure 3.46, the site response models Geotechnical Earthquake Engineering
+
+FIGURE 3.46 Variation of median cumulative absolute velocity (CAV) and Arias Intensity (IA) with mag‑ nitude and distance for strike‑slip faults and VS30 = 760 m/s as given by the Campbell and Bozorgnia (2019) GMMs.
+
+are significantly nonlinear for soft soils, which is also similar to high‑frequency IMs. As shown in Table 3.5, some GMMs for hybrid scalar parameters have been developed as conditional models (e.g., Macedo et al., 2019), in which the IM of interest is regressed against other IMs (typically Sa). When such models are applied, it is necessary to consider both the variability and uncertainty in the unconditioned models and in the conditional model using the total probability theorem. For these reasons, conditional models are currently not widely utilized in practice.
+
+###### 3.5.4 Ground Motion Data Attributes and Dispersion
+
+Whenever possible, GMMs are developed in part using statistical analysis of recorded ground motion data (i.e., empirical data) from earthquakes. Despite ever increasing amounts of ground motion data, databases remain unevenly sampled and sparse for some conditions that are of engi‑ neering interest. As a result, empirical data may need to be supplemented with physical constraints or with simulated ground motions to guide GMM development, particularly for stable continental regions where tectonic earthquakes occur relatively infrequently. This section describes attributes of currently available data, major sources of variability in the data, the modeling of data dispersion in GMMs, and characteristics of data near the extremes of the data ranges.
+
+### 3.5.4.1 Data Distributions
+
+The availability of ground motion data over the range of magnitude and distance that are relevant for engineering applications is strongly dependent on tectonic regime. Figure 3.47 shows the avail‑ ability of recordings in magnitude‑distance space for the three regimes. The horizontal ‘lines’ of dots are in most cases single events that were recorded by many instruments at different distances. The approximate data ranges are 0–400 km and M 3–7.9 for active tectonic regions, 10–2,000 km and M 4.0–9.0 for subduction zones, and 30–1,000 km and M < 6 for stable continental regions. Despite the large number of recordings in each regime, the data are poorly sampled in three respects. Table 3.6 summarizes these sampling issues and the means by which they are dealt with in GMM development. When selecting from among alternate GMMs to use for a given project, the manner by which they address these data sampling issues should be considered.
+
+### 3.5.4.2 Between‑ and Within‑Event Variability
+
+Quantifying uncertainty in predicted ground motions is extremely important for seismic hazard analyses (Chapter 4). Some of the uncertainty in predicted motions comes from variations of ground motions among the recordings of an individual earthquake (within‑event variability), and some Strong Ground Motion Characterization and Prediction
+
+FIGURE 3.47 Distribution of ground motion recordings in (a) active tectonic regions (source: Ancheta et al., 2014); (b) subduction zones, including interface and slab events (source: Mazzoni et al., 2022); (c) stable con‑ tinental regions (source: Goulet et al., 2021b). These data were gathered and synthesized for NGA projects (NGA‑West2, NGA‑Subduction and NGA‑East).
+
+comes from variations between different earthquakes (between‑event variability). Ground motion variability can be partitioned into within‑ and between‑event components, which are commonly denoted δW and ηE, respectively. Figure 3.48 shows how data for two earthquakes with the same magnitude compare to the mean prediction from a GMM. Data for Event i is systematically higher than the model, while data for Event j is lower. The between‑event variability ηE is approximately the mean offset of the respective events from the model (positive for i, negative for j). Within‑event variability δW comprises the remaining variability for a given data point. These two components, when taken together, sum to the total residual δlnIM, ( ) δ = η
+
+### + W
+
+δ ik (3.33) ln ,
+
+### IM
+
+E i ik
+
+In Equation (3.33), index i refers to the event and index k to the site. When considering a GMM for use in hazard analyses, it is important to identify whether these two sources of variability were properly considered in the model regression. Considering both sources of ground motion variability affects data weighting in regression analysis. The two extremes are (1) if between‑event variability is negligible, each recording can be weighted equally and (2) if Geotechnical Earthquake Engineering
+
+### TABLE 3.6
+
+Ground Motion Data Sampling Problems and the Manner in Which They Are Addressed in
+
+### GMMs
+
+### Problem
+
+### Description
+
+### Significance and How Addressed
+
+(1) Data are sparse for magnitude‑distance ranges of GMMs are commonly regressed over the engineering interest. In the case of active tectonic magnitude and distance range of the available
+
+### regions, there are currently no data for M > 7.9
+
+data. However, applications often require a
+
+### events, despite M 8+ earthquakes often controlling
+
+larger range, particularly for larger magnitude the outcome of seismic hazard analyses (e.g., in and closer distances, which requires much of coastal California). The problem is most extrapolation of the model. This is best acute for stable continental regions, for which data accomplished by using equations for source, are largely absent for M > 6 and distance < 30 km. path, or site effects with a physical basis and constraining model coefficients based on physical considerations and/or simulations. For stable continental regions, where data are especially sparse, GMMs are based largely on simulated ground motions with empirical constraint for conditions where data are available. (2) The data are unevenly distributed geographically. For Certain attributes of GMMs exhibit regional example, the active tectonic region inventory is variability, such as constant terms and
+
+### dominated by California data for M < 5.0, yet
+
+path‑ and site‑scaling. Capturing these effects contains no data from California for M > 7.3. in GMMs is complicated by the uneven Moreover, there are many regions, particularly in geographic sampling of data. One approach to developing nations, for which data are absent this problem is to develop GMMs using only altogether. local data sets. While this approach addresses the regionalization issue, it exacerbates Problem 1 by placing a strong geographic constraint on the data. An alternative is to use a broader database and have region‑specific coefficients where needed. (3) The data sets are dominated by a few well‑recorded When important magnitude and/or distance events, particularly at the upper end of the ranges of data sets are dominated by a few magnitude range for each regime. For example, the well‑recorded earthquakes, the result is sparse active tectonic region data set has only three events sampling of between‑event variability. It is
+
+### with M > 7.5 (1999 M 7.6 Chi Chi Taiwan, 2002 M
+
+unknown whether the few available samples
+
+##### 7.9 Denali Alaska, 2008 M 7.9 Wenchuan China)
+
+represent mean behavior, or if they are biased and the subduction zone data set has two events relative to the global mean that would be
+
+### with M > 8.5 (2010 M 8.8 Maule Chile and 2011 M
+
+observed if there were many more recorded 9.0 Tohoku Japan). events. This is addressed by considering within‑event variability and between‑event variability (Section 3.5.4.2) in the regressions used to develop GMMs.
+
+within‑event variability is negligible, each event can be weighted equally. In reality, both sources of variability are significant, and regression procedures that address this issue include:
+
+- Two‑Step Regression Procedure (Joyner and Boore, 1993, 1994): All data are weighted
+equally to regress components of the model related to distance attenuation and site effects. Data for each event are then “corrected” to a common distance (typically 1 km) and site Strong Ground Motion Characterization and Prediction
+

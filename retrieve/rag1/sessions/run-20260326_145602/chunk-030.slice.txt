@@ -1,0 +1,400 @@
+
+The potential for triggering of liquefaction has also been correlated to shear wave velocity. There are a number of attractive features to this approach – shear wave velocity is commonly measured, it can be measured from the ground surface using techniques such as SASW and MASW, it can be measured in materials, such as gravelly and cobbly soils, for which conventional penetration test‑ ing is difficult, and shear wave velocity is related to shear modulus, which relates ground motion amplitude to shear strain amplitude, which fundamentally controls pore pressure development. The drawbacks are that shear wave velocity describes the very low‑strain characteristics of the soil, which, although correlated to higher‑strain behavior, may not accurately represent the characteris‑ tics of the soil at the strain levels associated with triggering of liquefaction. Shear wave velocities are known to be relatively insensitive to relative density, a characteristic of critical importance in determining the contractiveness of a soil and also to be influenced by particle size in granular soils. Many methods of shear wave velocity measurement have significant uncertainty and provide lim‑ ited spatial resolution since they average velocities over significant depth intervals and/or horizontal distance ranges. Shear wave velocity is also insensitive to the presence of fines, at least up to the limiting fines content, which is typically about 35% (Section 6.3). An early Vs‑based procedure in the cyclic stress‑based approach to evaluation of liquefaction potential (Andrus and Stokoe, 2000; Andrus et al., 2004) took the same basic form as the penetra‑ tion resistance‑based procedures with a magnitude‑adjusted CSR and an effective stress‑adjusted, Vs‑based CRR that is also adjusted for age. The procedure indicated an upper bound of Vs1 = 215 m/ sec for clean sands (FC ≤5%) decreasing linearly to 200 m/sec for FC ≥35%. A subsequent model derived from an expanded database of 422 liquefaction case histories was developed (Kayen et al.,
+
+1. by making shear wave velocity measurements at sites in the SPT (Cetin et al., 2004) and
+Liquefaction and Cyclic Softening
+
+FIGURE 9.44 Median standardized cyclic resistance ratio according to Kayen et al. (2013) compared to M7.5 curve of Andrus and Stokoe (2000).
+
+CPT (Moss et al., 2006) catalogs. In that model, CSR is defined as in Section 9.5.4.2 (with rd from Equation 9.12), and the standardized CRR can be taken as,
+
+( ) ( )   2.8011 − − + + − Φ 5.2726 0.0073 0.0028 0.4809 FC P V s L = exp (9.28) CRR   std 1.946   where Vs1 = corrected shear wave velocity (Equation 9.21) and FC = fines content in percent. Unlike the Andrus and Stokoe relationship, the Kayen et al. (2013) CRR relationship (Figure 9.44) does not imply a specific upper bound Vs1 value above which liquefaction does not occur. Uncertainty in CRR There are many sources of uncertainty in a liquefaction hazard evaluation, and in the calcula‑ tion of liquefaction potential using the cyclic stress approach. The total uncertainty can be divided into parametric uncertainty, i.e., uncertainties in the values of the parameters that go into the calculations, and model dispersion, which results from the inability of the model to accurately and completely represent the physical system of interest (Section D.8). Parametric uncertainty can be evaluated by considering the uncertainties in parameters in all of the case histories in the database upon which the liquefaction procedure was developed (Cetin et al., 2002, 2004). The developers of the CPT‑ and SPT‑based models described in the preceding sections did not feel that individual case history data was sufficient to characterize paramet‑ ric uncertainty, so those models do not account explicitly for parametric uncertainty, e.g., uncertainty in CPT tip resistance, or any of the adjustment factors that affect CSR and CRR. σ = 0.2 given above represents model disper‑ Accordingly, the standard deviation term of lnCRR sion that includes contributions from both model uncertainty and irreducible model variability. For application to a particular site, the influences of both parametric uncertainty and model dispersion should be carefully considered to form a more complete picture of the total uncer‑ tainty (e.g., Figure 9.42b) in evaluation of the triggering of liquefaction.
+
+Site‑Specific Cyclic Resistance Ratio Adjustment Factors = The standardized CRR values (i.e., CRR ) presented in the preced‑
+
+### CRR
+
+= σ ′ = α = 7.5,
+
+#### 1 atm,
+
+0, , std M young sat v σ °0 = 1 atm, and τstatic = 0 for young, saturated
+
+### ing section apply to the specific conditions of M = 7.5,
+
+v soils, which rarely exist in a given element of soil at a particular site. Deviations from standard conditions are accounted for using CRR adjustment factors so that a site‑ and layer‑specific CRR can be expressed as
+
+= ° ° ° ° ° (9.29) CRR
+
+### CRR
+
+K K K K K σ α σ α ′ , , , , M age sat std N DR S v Geotechnical Earthquake Engineering
+
+where KΝ, Kσ, Kα, KDR, and KS are adjustments for number of loading cycles, effective stress, initial shear stress, diagenetic processes (e.g., age, cementation, stress history), and saturation, respec‑ tively, which are described in the following sections.
+
+Number of Loading Cycles Adjustment Boulanger and Idriss (2014) considered soils of different density to be affected differently by number of loading cycles (note that the slopes of the curves in Figure 9.26 are not equal) and proposed a MSF that combined loading and resistance effects. Using the approach described in the preceding section on magnitude adjustment for cyclic stress ratio, the density‑dependent effect of number of loading cycles on resistance can be described by an adjust‑ ment factor, KN = MSFBI/MSFL, which can be defined as indicated in Table 9.6 and shown graphi‑ cally in Figure 9.45. The value of KN can be seen to reflect differences in the sensitivity of CRR to magnitude (as a proxy for number of loading cycles) for soils with CPT and SPT resistances other than 105 or 15, respectively. Table 9.6 also provides an expression for MSFmax when laboratory test‑ ing has established the value of the b‑parameter for a specific soil. In the case of the VS‑based model of Kayen et al. (2013), and most other liquefaction triggering models in the literature, KN = 1.0 (i.e., the magnitude adjustment is made in the demand parameter through the MSFL term (Table 9.2).
+
+FIGURE 9.45 Magnitude adjustment factor for cyclic resistance ratio. Kinks in curves at low magnitude are due to limiting values in original Boulanger and Idriss relationship.
+
+### TABLE 9.6
+
+### Magnitude Adjustments to CRR for CPT‑ and SPT‑Based
+
+### Liquefaction Potential Evaluation Procedures
+
+### Procedure
+
+### Reference Condition
+
+### Adjustment Factor
+
+### M = 7.5
+
+CPT +   qc Ncs = ≤ 2.2 1.09
+
+### MSF
+
+ qc1Ncs = 105 max ( ) +  
+
+### M = 7.5
+
+SPT N 1 60 = ≤ cs 2.2 1.09
+
+### MSF
+
+ max (N1)60,cs = 15 31.5
+
+### M=7.5
+
+Lab MSFmax = 0.65(20)b ≤ 2.2 b = 0.144 Liquefaction and Cyclic Softening
+
+{ } [ ] ( ) + − − − M min 1
+
+#### 1 8.64exp(
+
+/4) 1.325 ,2.2
+
+### MSF
+
+max = (9.30) K N + − M 0.5803 2.7368exp( /4)
+
+Effective Stress Adjustment As shown in Section 6.4.3.2, soils tend to become more contractive with increasing effective confining stress. Based on laboratory data and a relative state parameter index‑based framework, and assuming a reference effective stress of 1 atm, Boulanger and Idriss (2014) proposed the effective stress adjustment factor for CPT‑ and SPT‑based procedures given in Table 9.7. A similar factor is available for the Vs‑based model from Kayen et al. (2013); that factor, however, was obtained from data regression and is close to 1.0, which implies much less sensitivity to effective stress than is generally observed in laboratory tests. For the CPT‑ and SPT‑based models, the upper bound on Kσ was a modeling decision made by Boulanger and Idriss (2014) motivated by a lack of data at low effective stress levels (below about 0.4 atm) but is inconsistent with expected soil behavior. The variation of Kσ with vertical effective stress is illustrated in Figure 9.46.
+
+### TABLE 9.7
+
+### Effective Stress Adjustments to CRR for CPT‑, SPT‑, and
+
+### VS‑Based Liquefaction Potential Evaluation Procedures
+
+### Procedure
+
+### Reference Condition
+
+### Adjustment Factor
+
+σ( ) σ °0 v = 1 atm CPT (9.31a) = − ≤ ′ ln 1.1 K C P σ σ v a where = ≤ 0.3 C σ − 0.264 37.3 8.27( ) qc Ncs σ( ) σ °0 v = 1 atm = − ≤ ′ SPT ln 1.1 (9.31b) K C P σ σ v a where = ≤ 0.3 C σ ( ) − 18.9 2.55 N 1 60 cs σ( ) − 0.0099 σ °0 v = 1 atm = ′ Vs (9.31c) K p σ v a
+
+FIGURE 9.46 Effective stress adjustment for CRR (after Boulanger and Idriss, 2014). KEA13 indicates a relationship inferred from Kayen et al. (2013.) Geotechnical Earthquake Engineering
+
+Static Shear Stress Adjustment The presence of an initial, static shear stress can affect pore pressure generation in liquefaction‑susceptible soils as discussed in Section 9.5.2.4. Laboratory studies show that pore pressures increase more rapidly when shear stress reversals occur, i.e., when the soil goes through an instant in which no shear stress exists. When a transient cyclic shear stress history is added to an existing static shear stress, fewer stress reversals may occur than would if the static shear stress did not exist; if the static shear stress is greater than the peak cyclic shear stress, no stress reversal will occur and initial liquefaction (zero effective stress) cannot occur. For very loose soils, however, increasing shear stress tends to bring the effective stress path closer to the FLS where pore pressures tend to increase more quickly. Thus increased static shear stress can tend to reduce the liquefaction resistance of very loose soils while it increases the liquefaction resistance of denser soils (Figure 9.47a). The initial shear stress is usually characterized in terms of a static shear stress ratio, ° h α = (9.32) σ ′0 v Adjustments for the effects of initial static shear stresses depend on the level of static stress and the state of the soil. Using cyclic simple shear test data (Vaid and Finn, 1979; Boulanger et al., 1991). Boulanger (2003) developed an expression for the adjustment factor, Kα, as a function of the relative state parameter index (Section 6.4.3.6),
+
+− ξ   R = + exp (9.33) K a b   α c where
+
+( ) ( ) = + α − α − − α 634exp 632exp a ( ) = − + α + α + exp
+
+##### 1.11 12.3
+
+1.31ln( 0.0001) b
+
+= + α + α 0.138 0.126 2.52 c
+
+FIGURE 9.47 Static shear stress adjustment factor for CRR of sands expressed in terms of: (a) relative density (Harder and Boulanger, 2007 with permission of MCEER) and (b) relative state parameter index (Boulanger, 2003 with permission of ASCE). Liquefaction and Cyclic Softening
+
+which is illustrated in Figure 9.47b. The value of Kα can be computed from CPT and SPT resis‑ tances using the correlations ( ) ξ = − − 0.086 0.334 (9.34a) Q ( ) R tn   ° + ′ ln 100 1 K v − Q   P a and
+
+( ) N 1 60 ξ = − (9.34b) ( ) R   ° + ′ ln 100 1 K v − Q   P a The adjustment factor for static shear stress is, compared to other adjustment factors, based on a limited amount of laboratory test data.
+
+Age Adjustment Liquefaction has been observed to occur more frequently in younger soil depos‑ its such as man‑made fills and Holocene natural deposits than in older (e.g., Pleistocene and older) deposits (Youd and Hoose, 1977; Youd and Perkins, 1978; Obermeier et al., 1990; Lewis et al., 1999). Mechanisms such as cementation (chemical precipitation), particle reorientation under weak shaking in small earthquakes or other vibrations and increased lateral stresses may play roles in increased liquefaction resistance, but the actual mechanisms are not well understood (Mitchell, 1986, 2008; Schmertmann, 1991). Laboratory investigations of age effects are difficult because of the time involved and the difficulty of replicating aging mechanisms in the laboratory, but limited laboratory testing has shown that liquefaction resistance increases with age (Figure 9.48). Using both field and laboratory test data, Hayati and Andrus (2009) proposed the use of an age‑related deposit resistance adjustment factor, KDR, intended to account for diagenetic processes (e.g., age, cemen‑ tation, stress history) that affect low‑strain behavior but are destroyed by larger strain deformations.
+
+### DR =
+
++ 0.13log 0.83 (9.35) K t
+
+where t is time since deposition (or last critical disturbance) in years. This relation gives a value of KDR = 1.0 at a reference time of 23 years, which was considered appropriate since many
+
+FIGURE 9.48 Relationship between strength gain and age. (Modified from Arango et al., 2000 with per‑ mission of Elsevier Science and Technology Journals). Strength gain factor is relative to strengths obtained from laboratory tests performed very shortly after specimen preparation except for that of Hayati and Andrus (2009) where the inclusion of laboratory data suggested a reference age of 23 years. Geotechnical Earthquake Engineering
+
+liquefaction case histories are associated with deposits with ages of 1–100 years at the time of shaking. The deposit resistance factor is then applied to the reference‑age CRR as
+
+= (9.36)
+
+### CRR
+
+### CRR K
+
+aged ref
+
+### DR
+
+Since the actual age of a soil deposit is usually unknown, and because it can be reset to zero after liquefaction caused by a previous earthquake, Hayati and Andrus (2009) proposed that the value of KDR could be obtained from shear wave velocity measurements. Since the aging processes thought to increase liquefaction resistance also tend to increase shear wave velocity, and available shear wave velocity correlations are based primarily on “young” sands, the measured to estimated veloc‑ ity ratio, MEVR, defined as
+
+V 1, s measured = (9.37)
+
+### MEVR
+
+V 1, s estimated was taken as an indicator of age with Vs estimated obtained by correlation to CPT or SPT resistance 1, using Equation (6.77). The value of MEVR can then be used to estimate KDR as
+
+### DR =
+
+° − 1.08 0.08 (9.38) K
+
+### MEVR
+
+Schneider and Moss (2011) introduced the notion of a normalized rigidity index,
+
+G max = 0.75 Q (9.39) K G tn q t where Gmax = maximum shear modulus (typically obtained from measured shear wave velocity), qt is given in Equation (6.53) and has the same units as Gmax, and Qtn is as defined in Equation (6.61). Soils that are very stiff at low strain levels relative to their penetration resistance (which is mobilized at high strain levels) tend to have high KG values. Schneider and Moss (2011) showed laboratory and field data indicating that older soils exhibited higher KG values than younger soils (Figure 9.49); Holocene sands tended to have KG values in the range of 110–330 (with a median of
+
+1. and aged, cemented, and calcareous sands had values of 330–1,100. Based on frozen samples
+of Holocene and Pleistocene soils (Roy, 2008), Schneider and Moss (2011) postulated that soils with higher KG values (e.g., Pleistocene sands, which had a median KG = 408) had a higher liquefaction resistance than Holocene sands for qc1N values less than about 150. Robertson (2016) proposed a modified version of the normalized rigidity index,
+
+FIGURE 9.49 Correlations between normalized cone tip resistance and maximum shear modulus mea‑ sured in seismic cone tests for various soil deposits. (Schneider and Moss, 2008 with permission of Emerald Publishing Limited.) Liquefaction and Cyclic Softening
+
+FIGURE 9.50 Proposed chart for identifying soils with microstructure. (Robertson, 2016 with permission of P.K. Robertson.)
+
+G max = 0.75 Q (9.40) * K G tn q n where qn = qt − σv. Robertson used the term microstructure to describe post‑depositional parti‑ cle‑scale features such as cementation, secondary compression, thixotropy, cold welding, and par‑ ticle reorientation that tend to increase with the age of a soil deposit and found that soils with
+
+- values greater than 330 and soils without had lower KG
+- values (Figure 9.50).
+microstructure had KG
+
+- should be related and Robertson
+Since they depend on essentially the same factors, MEVR and KG suggested that
+
+*
+
+### K G
+
+= (9.41)
+
+### MEVR
+
+While laboratory studies and empirical evidence leave little question that liquefaction resistance increases with age, the data used to quantify that effect are still sufficiently sparse that the age cor‑ rection is not commonly used in practice. It could be used in a logic tree framework, however, with a weighting factor interpreted as a subjective probability (i.e., a degree‑of‑belief) that will likely approach 1.0 as further evidence of age effects is brought to light.
+
+Saturation Adjustment Seasonal or tidal fluctuations in groundwater level, or the generation of gases due to decaying organic material, can lead to zones of soil that are not completely saturated below the water table. As discussed in Section 6.2.4, the air bubbles that exist in the voids of par‑ tially saturated soils are so much more compressible than the water in the voids that the air/water mixture has a very high composite compressibility. The tendency for contraction of the soil skel‑ eton, therefore, is accommodated by simple compression of the air bubbles, which occurs without producing significant pore pressure. Cyclic triaxial tests on silty sands from Japan (Tsukamoto et al., 2014) showed that they gener‑ ated pore pressure during the tests, but that their liquefaction resistances increased quickly when the degree of saturation dropped below 100% (Figure 9.51). Zhang et al. (2016) used laboratory data from tests on Toyoura sand and Nevada sand, along with a constitutive model, to investigate the effects of saturation on liquefaction resistance and developed a design chart for those soils Geotechnical Earthquake Engineering
+
+FIGURE 9.51 Variation of cyclic resistance ratio with degree of saturation for Inage sand and Urayasu sand. (Tsukamoto et al., 2014 with permission of Y. Tsukamoto.)
+
+FIGURE 9.52 Proposed design chart for liquefaction resistance of unsaturated sand. (Zhang et al., 2016 with permission of ASCE.)
+
+(Figure 9.52). These laboratory results give an indication of the sensitivity of liquefaction resistance to degree of saturation. The propagation of p‑waves through saturated sands occurs through the porewater rather than the softer soil skeleton (Section 6.5.2). As indicated in Section 6.5.2, the p‑wave velocity of water (at 20°C) is 1,460 m/sec, so measured p‑wave velocities lower than that value can indicate partial saturation. Laboratory tests on five liquefiable soils with mean grain sizes ranging from 0.04 to 1.25 mm and relative densities from 40% to 100% indicated (Hossain et al., 2013) that partial satura‑ tion increased liquefaction resistance by a saturation adjustment factor
+
+ ( ) { } ( ) ( )   − + 0.03 1.31 exp 2.85 M D D B D   r r r  < for 1,400 m/sec V   − − 2 1.95ln( /100 1.3) V + CRR 0.95 p e   p unsat = = K  S CRR  sat ≥ 1.0 for 1,400 m/sec V  p   (9.42)
+
+    = − − ( / ) 3.5 ( / )
+
+#### 4 / 3
+
+where B (Kokusho, 2000a). This adjustment, shown in V V V V p s p s Figure 9.53, is similar to that of Ishihara et al. (2001). Data from clean and silty sands from Christchurch (Baki et al., 2023) showed generally consistent behavior at p‑wave velocities greater than 500 and 750 m/sec, respectively; the resistance of the silty sand increased very quickly at Liquefaction and Cyclic Softening
+
+FIGURE 9.53 Variation of saturation adjustment factor, KS, with p‑wave velocity for M8 event.
+
+p‑wave velocities lower than 750 m/sec. As in the case of the age adjustment, the saturation adjust‑ ment is not explicitly used in typical current practice, as measurements of both Vp and Vs are not commonly available, and it is generally conservative to assume that all soils below the water table are saturated. In critical situations, or where the costs associated with the assumption of saturation are excessive, a saturation adjustment supported by field measurements can provide a more accurate indication of liquefaction potential.
+
+### Example 9.4
+
+A 4‑m‑thick layer of dense clayey sand fill with a moist unit weight of 21.5 kN/m3 is underlain by a natural layer of silty sand at 4–5 m depth at a level‑ground site. The silty sand has an average qc1Ncs value of 120 and a dry unit weight of 17.5 kN/m3. Groundwater was encountered at the bot‑ tom of the fill. Historical records indicate that the silty sand layer was deposited during a flood 100 years ago; recent tests indicate that the p‑wave velocity of the layer is 1,420 m/sec. Compute the expected cyclic resistance ratio of the silty sand layer when subjected to ground motion with a peak ground surface acceleration of 0.34g from a M6.8 earthquake.
+
+### Solution:
+
+Calculating the vertical total and effective stress at the center of the silty sand layer, the dry unit weight of 17.5 kN/m3 corresponds to a saturated unit weight of 20.6 kN/m3 and a buoyant unit weight of 10.8 kN/m3 so the vertical stresses are ( ) ( ) ( ) ( ) σ = + = 4 m
+
+##### 21.5 kN/m
+
+##### 0.5 m
+
+##### 20.6 kN/m
+
+96.3 kPa v ( ) ( ) ( ) ( ) σ ′ = + = 4 m
+
+##### 21.5 kN/m
+
+##### 0.5 m 10.8 kN/m
+
+91.4 kPa v
+
+From Equation (9.26), the median standardized cyclic resistance ratio is 0.209 (see calculation in Example 9.2). The CRR value for the actual conditions in the silty sand layer is calculated using the standardized values and the applicable adjustment factors. For this case, adjustments are needed for number of loading cycles, overburden stress, initial static shear stress, diagenetic (age‑related) factors, and saturation. The number of cycles correction is computed from Equation (9.30). The magnitude correction, using the decoupled version of MSFBI, is expressed in terms of the number of cycles adjustment factor, KN. From Table 9.6, it is calculated as,
+
++   qc Ncs +   = = = 1.09 1.09 1.386 MSF   max Geotechnical Earthquake Engineering
+
+Then [ ] [ ] ( ) ( ) + − − − + − − − 1 8.64exp( / 4) 1.325 1.386 1 8.64exp( 6.8 / 4) 1.325 MSF M max = = = 1.016 K N + − + − 0.5803 2.7368exp( / 4) 0.5803 2.7368exp( 6.8 / 4) M The overburden adjustment factor (Table 9.7) can be computed as σ( ) ( ) ′ ln P ln 91.4 kPa / 101.3 kPa vo a = − = − = 1.013 K ( ) σ 0.264 − 0.264 − 37.3 8.27(120) 37.3 8.27 q c Ncs
+
+The site is level, so the static shear stress adjustment factor, Kα = 1.0. With no information other than the estimated age of the layer, the age‑related adjustment factor (Equation 9.38) can be esti‑ = + = + = mated as . Finally, the saturation adjustment factor 0.13log 0.83 0.13log(100) 0.83 1.09 K t D (Equation 9.42), KS = 1.0 since Vp > 1,400 m/sec. Therefore, the cyclic resistance ratio is
+
+( )( )( )( )( )( ) = ⋅ ⋅ ⋅ ⋅ ⋅ = = 0.209 1.016 1.013 1.0 1.09 1.0 0.234 CRR CRR K K K K K σ τ σ α , ' , , , M age saturation std N
+
+### DR
+
+S v static
+
+### 9.5.4.5 Implications of Non‑Triggering
+
+As seen in laboratory and physical model tests, shear strains and deformations remain relatively small until pore pressures become very high and liquefaction is initiated. If liquefaction is not initi‑ ated, i.e., if FSL > 1.0, some pore pressure may still exist at the end of shaking, and its dissipation may lead to some degree of settlement. The amount of excess pore pressure at level‑ground sites can be estimated from laboratory tests as shown in Figure 9.54. Other procedures for estimation of pore pressure generation are based on cyclic stresses (Park and Ahn, 2013) cyclic strains (Dobry et al., 1982; Matasovic and Vucetic, 1993; Cetin and Bilge, 2012) and dissipated energy (Polito et al., 2008).
+
+### 9.5.4.6 Limitations of the Simplified Method
+
+The simplified method for evaluation of liquefaction potential has been widely and successfully used in engineering practice for over 50 years. It has been updated a number of times as large earthquakes have occurred and produced valuable case histories and as new research, tests, and
+
+FIGURE 9.54 Relationship between residual excess pore pressure ratio and factor of safety against liquefac‑ tion for level‑ground sites. (After Marcuson and Hynes, 1990.) Liquefaction and Cyclic Softening
+
+interpretive tools have advanced understanding of its basic mechanics. It remains limited, however, by a number of factors including: (a) the binary representation of triggering by the presence or absence of surface manifestation to represent the complex mechanical and hydraulic phenomena that occur beneath the surface during and after earthquake shaking, (b) the characterization of loading by a PGA value expected to have occurred in the absence of any pore pressure generation, a magnitude value that is loosely correlated to duration or number of loading cycles because path and site effects are not directly considered, and by the generic (i.e., ergodic) representation of the variation of shear stress with depth, (c) the historical characterization of case history sites by a single critical layer when multiple layers may contribute to the development, or prevention, of sur‑ face manifestation, and (d) the implicit assumption, in both case history interpretation and forward prediction, that all layers act independently of each other. Most of these limitations are relics of the available data and measurement, interpretation, and computational capabilities that existed when the simplified method was first developed. Advances in strong motion instrumentation, field reconnaissance tools, ground motion modeling, site charac‑ terization, constitutive modeling, (nonlinear, effective stress) ground response analysis, and data‑ base management allow improved characterization and interpretation of liquefaction case histories and should pave the way for improved empirical triggering models in the near future.
+
+###### 9.5.5 Cyclic Strain Approach
+
+As discussed in Section 9.5.2.2, stress‑controlled cyclic tests showed that the CRR used to char‑ acterize liquefaction resistance in the cyclic stress approach was sensitive to a variety of in situ factors (age, soil fabric, prior shaking history, etc.) that could not be replicated in reconstituted laboratory test specimens. Subsequent strain‑controlled testing showed that the volumetric strain of dry sands (Silver and Seed, 1971; Youd, 1972; Martin et al., 1975) and pore pressure genera‑ tion in saturated sand (Dobry and Ladd, 1980; Dobry et al., 1982; Cetin and Bilge, 2012) were not significantly affected by those factors. These observations led to the now widespread recognition that pore pressures in liquefiable soils are more closely related to shear strain amplitude than shear stress amplitude. In an effort to develop a more robust approach to the liquefaction problem, Dobry and Ladd (1980) and Dobry et al. (1982) described an approach that used cyclic strains rather than cyclic stresses to characterize earthquake‑induced loading and liquefaction resistance. The cyclic strain approach has both advantages and disadvantages relative to the cyclic stress approach.
+
+### 9.5.5.1 Characterization of Earthquake Loading
+
+In the cyclic strain approach, earthquake‑induced loading is expressed in terms of the amplitude of a series of equivalent constant strain loading cycles. As in the cyclic stress approach, a transient history, in this case of shear strain, must be converted to an equivalent series of uniform cycles. This leads to two primary difficulties in characterizing loading in the cyclic strain approach. First, an equivalent cyclic shear strain amplitude must be estimated. This can be accomplished by performing a ground response analyses, but it should be recognized ground response analy‑ ses predict strains with much higher variability than they predict stresses, particularly for highly ­nonlinear conditions. The increased uncertainty in the shear strain induced in the soil by earth‑ quake shaking reduces the benefits of decreased uncertainty in pore pressure generation given some level of cyclic shear strain. Dobry et al. (1982) proposed a simplified method for estimat‑ ing the amplitude of the uniform cyclic strain from the amplitude of the uniform cyclic stress of Equation (9.9): ° a r max v d γ = 0.65 (9.43) γ( ) cyc g G cyc Geotechnical Earthquake Engineering
+
+γ( ) is the secant shear modulus of the soil at γ = γ γ where G . Since appears on both sides cyc cyc cyc γ( ) must be obtained iteratively from a measured Gmax profile of Equation (9.43), the value of G cyc and appropriate modulus reduction curve (Section 6.6.3). At low strain levels, where the soil may exhibit relatively linear behavior, shear strains can be predicted more accurately when stiffnesses are obtained from measured shear wave velocities. The second difficulty relates to the determination of the number of equivalent loading cycles. The conversion procedure is analogous to that used in the cyclic stress approach. The equivalent num‑ ber of strain cycles, Neq, depends on the earthquake magnitude. The implied consistency between number of stress cycles and number of strain cycles, however, may not exist (Carter and Seed, 1988; Green and Terri, 2005).
+
+### 9.5.5.2 Characterization of Liquefaction Resistance
+
+Despite its difficulties in characterizing loading, the cyclic strain approach has two significant advantages in characterizing liquefaction resistance. First, the existence of the volumetric threshold shear strain provides a screening level (Section 9.5.3.2) of response below which no pore pressure generation should be anticipated (if strains are too small to produce volumetric strain under drained conditions, they will be too small to produce excess pore pressure under undrained conditions). Second, laboratory tests have shown excess pore pressure to be closely related to strain amplitude, and to be quite insensitive to many of the factors known to significantly affect the shear stress amplitude required to initiate liquefaction. Figure 9.55a shows the pore pressure ratio produced by ten cycles of strain‑controlled loading on two different sands prepared by three different meth‑ ods at three different initial effective confining stresses. Figure 9.55b shows pore pressure ratios following stress‑controlled loading cycles plotted against the peak shear strain produced by that loading; the different symbols represent different methods of specimen preparation, and the test conditions range from relative densities of 35%–100% and initial effective stresses of 40–400 kPa. The insensitivity of the generated pore pressure to factors other than cyclic strain amplitude illus‑ trated in Figure 9.50 is a hallmark of the cyclic strain approach. The distribution of pore pressure ratio for a given maximum strain amplitude is relatively narrow, again indicating a close relation‑ ship between pore pressure and strain amplitude. Cyclic simple shear tests (e.g., Bhatia, 1980; Finn, 1981, Dobry et al., 1982; Stamatopoulos et al., 1999) and centrifuge tests (Sharp et al., 2000; Adalier and Elgamal, 2005) have shown, however, that the cyclic strain amplitude required to initiate liq‑ uefaction in a given number of cycles increases with increasing overconsolidation ratio. Preshaking or prestraining, either under drained conditions or under undrained conditions followed by pore pressure dissipation, can cause effects similar to those of overconsolidation and also increase lique‑ faction resistance (Finn et al., 1970; Seed, 1979; Bhatia, 1980; Finn, 1981; El‑Sekelly et al., 2016). In the cyclic strain approach, laboratory‑based curves of the types shown in Figure 9.55 are used to characterize the liquefaction resistance of the soil. Note that initial liquefaction (ru = 1.0) is reached at shear strains ranging from about 0.5% to as much as 50% in the tests shown in Figure 9.55. Using a modulus reduction curve for sand, relationships between Gmax and Vs, and the definitions of secant shear modulus and cyclic stress‑based CSR, a relationship between CRR, Vs1, and cyclic γ , can be established (Dobry and Abdoun, 2011; 2015). By comparing these relation‑ shear strain, c ships to the Andrus and Stokoe (2000) shear wave velocity‑based CRR curve, the stress‑based γ ° 0.03% CRR curve was interpreted as a curve of approximately constant cyclic shear strain at c for Vs1 values less than about 160 m/sec. While a boundary curve drawn for that strain level was found to separate cases of liquefaction and non‑liquefaction for case histories of uncompacted clean and non‑plastic silty sand fills (FC up to about 34%) extracted from the Andrus and Stokoe (2000) database, the inferred triggering strain level is considerably lower than the strains corresponding to triggering in laboratory tests (e.g., in Figure 9.55). An investigation of natural silty sands with non‑plastic fines from the Imperial Valley of California suggested that liquefaction triggered at shear strains of 0.1%–0.2%. On that basis, Dobry et al. (2015) suggested that a strain‑based CRR of Liquefaction and Cyclic Softening
+
+FIGURE 9.55 Variation of pore pressure ratio with cyclic strain amplitude for (a) specimens prepared by different methods and subjected to strain‑controlled loading (after Dobry and Ladd, 1980), and (b) specimens prepared by different methods at different densities and effective stress levels and subjected to stress‑con‑ trolled loading (after Cetin and Bilge, 2012 with permission of ASCE). Geotechnical Earthquake Engineering
+
+Vs   = ° (9.44)
+
+### CRR
+
+a MSF   could be used at Vs1 < 200 m/sec with a = 0.033 for uncompacted fills and 0.065 for Imperial Valley silty sands. The differences in resistance were indicated as being at least partially explained by the preshaking of the silty sands in the highly active Imperial Valley area. The triggering strain corresponding to CRR = 0.3 (VS >~ 200 m/s ) for the Andrus and Stokoe (2000) CRR curve is much higher – on the order of 0.27% to 0.56% ‑ but still much lower than the values observed in laboratory tests (Dobry and Abdoun, 2015). These materials generally cor‑ respond to denser, overconsolidated, preshaken, or compacted sands. The large difference between the triggering strain levels measured in the laboratory and inferred from field case histories was attributed to differences in numbers of loading cycles (greater in the field than in the laboratory tests), two‑directional (field) vs. one‑directional (laboratory) shaking, and pore pressure redistribu‑ tion (exists in field but not in laboratory tests). Corrections for the first two of these factors indicated that the triggering strain level for uncompacted fills would increase from 0.03% to 0.06%–0.12%. The upward flow of porewater during shaking, as measured in six centrifuge tests, was postulated to explain the remainder of the difference. The apparent variability of the triggering strain level with Vs1, its inconsistency with laboratory data, and its dependence on hydraulic as well as ground motion parameters suggest that further research is required to better clarify its utility for the evaluation of liquefaction potential. It does, however, provide a useful link between penetration test‑based and shear wave velocity‑based trig‑ gering procedures, at least for very loose soils.
+
+### 9.5.5.3 Evaluation of Liquefaction Potential
+
+Liquefaction potential may be evaluated in the cyclic strain approach in a manner similar to that used in the cyclic stress approach. The cyclic loading imposed by the earthquake, characterized by the amplitude of a series of N uniform strain cycles, is compared with the liquefaction resis‑ tance, which is expressed in terms of the cyclic strain amplitude required to initiate liquefaction in the same number of cycles. Liquefaction can be expected at depths where the cyclic loading exceeds the liquefaction resistance. Since loading and resistance are characterized in terms of strains rather than stresses, the cyclic strain approach does not yield a stress‑based factor of safety against liquefaction, but the ratio of strain demand to strain at triggering of liquefac‑ tion can be viewed as a demand‑capacity ratio, or DCR, as often used in structural earthquake engineering. The primary advantage of the cyclic strain approach derives from the strong relationship between pore pressure generation and cyclic strain amplitude. For a given soil, excess pore pressure can be predicted more accurately from cyclic strains than from cyclic stresses. As previously stated, how‑ ever, cyclic strains are more difficult to predict accurately than cyclic stresses. The cyclic strain approach, at present, relies heavily on laboratory data and, more recently, high‑quality physical (centrifuge) modeling, but has not been validated against field case histories to the extent that the cyclic stress approach has been. As a result, the cyclic strain approach is not used as commonly as the cyclic stress approach in current geotechnical earthquake engineering practice.
+
+###### 9.5.6 Energy Dissipation Approach
+
+The use of dissipated energy as a measure of liquefaction resistance offers a number of potential advantages; it is related to both cyclic stresses and cyclic strains, it is a scalar quantity that reflects duration as well as amplitude, it can be related to fundamental earthquake parameters, and it can be related to inherently stochastic earthquake ground motions in a way that methods based on peak ground motion parameters alone cannot. Liquefaction and Cyclic Softening
+
+The densification of dry soil under cyclic loading involves rearrangement of grains under stress and hence the expenditure of energy. As a cyclically loaded dry soil densifies and approaches its minimum void ratio, the amount of energy required to further rearrange individual soil grains increases. If the soil is saturated, however, the tendency for densification causes the pore pressure to increase and the interparticle contact forces to decrease. As these contact forces decrease, the amount of energy needed to rearrange soil grains decreases. By combining these observations, Nemat‑Nasser and Shokooh (1979) developed a simple, unified theory that related densification under drained conditions and pore pressure generation under undrained conditions to dissipated energy. Davis and Berrill (1982) and Berrill and Davis (1985) built upon this idea, characterizing the energy density arriving at a particular site by means of the total energy released by the earthquake (Equation 2.4) adjusted for geometric spreading and crustal damping, and the rate of pore pressure generation as a function of SPT resistance. Calibration against field case history data yielded an expression for pore pressure ratio
+
+M 0.5 0.75 A = (9.45) r ( ) u 0.75 σ ′ 1.5 rN vo
+
+where A is a normalized attenuation function that accounts for material damping, M is earthquake magnitude, r is the distance to the center of energy release, N is average corrected SPT resistance, σ °0 is initial vertical effective stress in kPa. Equation (9.45) combines loading and resistance and v to provide a direct prediction of pore pressure ratio rather than the factor of safety most commonly used to characterize liquefaction potential. This simple fundamental procedure has been supplanted by more detailed recent procedures.
+
+### 9.5.6.1 Characterization of Earthquake Loading
+
+Kokusho (2013) developed an energy‑based procedure that explicitly characterized earthquake loading and liquefaction resistance. Two alternative procedures for estimating the energy density in a soil deposit were proposed. Both are based on the incoming energy, i.e., that associated with upward‑traveling shear waves, in order to eliminate the effects of destructive interference between upward‑ and downward‑traveling waves that can lead to the appearance of weak shaking at certain depths in a soil profile. The first procedure, which can be used when ground motions at the base (taken as approximately 100 m depth) are not known, estimates the upward‑traveling energy density in soil layer i using the Gutenberg‑Richter relationship for total energy release (Equation 2.4), a spherical geometric spreading relationship, and the ratio of soil layer to base layer impedance, i.e.,
+
+( ) 0.7   ρ + V M 1.5 1.8 s i =   (9.46) E ( ) , u i ρ 4π V R     s base where R is the distance to the center of energy release. The second approach, which assumes that base motions are known or estimated and can be used to perform site response analyses, computes the upward‑traveling energy density as t
+
+# ∫
+
+°( ) ( ) = (9.47) E t V u dt , , u z s z u z
+
+where (ρVs )z = specific impedance of soil at depth, z, and uu,z = particle velocity of upward‑traveling wave at depth, z. The upward‑traveling wave can be separated from the downward‑traveling wave by means of equivalent linear analyses (as half the outcrop motion at a particular depth). Geotechnical Earthquake Engineering
+
+### 9.5.6.2 Characterization of Liquefaction Resistance
+
+Soil specimens liquefied in cyclic triaxial tests show a consistent relationship between pore pres‑ sure ratio and normalized dissipated energy for a wide range of relative densities (Kokusho, 2013). Dissipated energy was computed by integration of stress‑strain data up to the point of triggering (and thus includes the softening effects of pore pressure generation). Combining triaxial test data with SPT correlations, Kokusho (2013) described the normalized energy corresponding to 5% dou‑ ble‑acting strain in 20 cycles of loading as
+
+∫ σ ε d ∆ W d a ′ = = − + 0.032 0.48 2.40 (9.48) R R L L ° ° ′ c c σ ° is the isotropic effective stress during consolidation and RL20 is the cyclic resistance ratio where c at 20 cycles of loading, which is related to SPT resistance by
+
+ < 0.0882 1.7 for N N  (9.49) = R L ( ) 4.5 − − ≥ + × 0.0882 1.7 1.6 for N N N  subject to a minimum value of RL20 = 0.1, where N1 is the effective stress‑adjusted SPT resistance. Figure 9.56a illustrates the variation of normalized dissipated energy with SPT resistance for three strain levels. Using the 253 case histories compiled by Boulanger and Idriss (2014) and a different procedure from Kokusho (2013) for defining ΔW and the triggering of liquefaction, Ulmer et al. (2023) devel‑ oped a probabilistic CPT‑ and energy‑based triggering model of the form ( )   − × ⋅ − − ∆ σ ′ 3.352 q 1.224 7.52 ln W vo c Ncs = −Φ   (9.50) P L 1.590     Dissipated energy was computed as the product of a total stress‑interpreted, single‑cycle work increment based on a representative shear stress amplitude and the number of equivalent cycles of loading (and consequently unaffected by pore pressure generation). The variation of normalized energy required to trigger liquefaction with CPT tip resistance is illustrated in Figure 9.56b.
+
+FIGURE 9.56 (a) Relationship between normalized dissipated energy to reach strain levels of 2%, 5%, and 10% and SPT resistance (after Kokusho, 2013 with permission of Canadian Science Publishing) and (b) per‑ centiles of normalized energy required to trigger liquefaction by method of Ulmer et al. (2023). Note that the normalized energies for the two relationships shown here are defined differently. Liquefaction and Cyclic Softening
+
+### TABLE 9.8
+
+Expressions for energy density (J/m3) required to trigger liquefaction in various laboratory
+
+### studies
+
+### Expression
+
+### Basis
+
+### Reference
+
+= + σ + ′ log 2.002 0.00477 0.0116 W D
+
+#### 27 strain‑controlled torsional shear
+
+Figueroa et al. (1994) m r tests on Reid Bedford sand = + σ + ′ log 2.4597 0.00448 0.0115 W D
+
+#### 30 centrifuge tests on Reid Bedford
+
+Dief and Figueroa (2001) m r sand = + σ + ′
+
+#### 284 cyclic triaxial, torsional, and
+
+Baziar and Jafarian (2007) log 2.1028 0.004566 0.005685 W D m r + − + simple shear tests on various sands 0.001821 0.02868 2.0214 FC C D u
+
+#### 283 cyclic triaxial, torsional, and
+
+Alavi and Gandomi (2012) + + σ ′  D D D m r r ⋅ = + ⋅ log 2 300 W  simple shear tests on various sands 0.5 plus 18 centrifuge tests  + σ σ ′ ′   D FC C m m u × + − − + 3 300    0.5 1.5 +  − 
+
+Source: After Alavi and Gandomi (2012). Cu, coefficient of uniformity; D50, mean grain size (mm); Dr, initial relative density (%); FC, fines content (%); σ °0 m , initial mean effective stress (kPa).
+
+Several investigators have used laboratory test results to determine the dissipated energy density required to trigger liquefaction in the soils that were tested. Several representative relationships are listed in Table 9.8. These relationships characterize the soil in terms of mean effective stress and relative density, so an empirical correlation between relative density and some form of measured in situ parameter (e.g., (N1)60, qc1, Vs1) would be required for practical application.
+
+### 9.5.6.3 Evaluation of Liquefaction Potential
+
+Liquefaction potential can be characterized in terms of an energy‑based factor of safety defined as the ratio of energy capacity to energy demand. While interesting from the standpoint of the theoreti‑ cal basis established by Nemat‑Nasser and Shokooh (1979), the dissipated energy approach suffers from the difficulty in predicting the energy demands imposed on a particular element of soil at some depth below the ground surface, and on the lack of a direct empirical correlation between liquefac‑ tion resistance (in terms of energy capacity) and commonly measured in situ test parameters.
+
+###### 9.5.7 Effective Stress Response Analysis Approach
+
+As discussed in Section 7.5.3.3, nonlinear effective stress site response models have the ability to predict pore pressure generation in potentially liquefiable layers within specific soil profiles sub‑ jected to specific input motions. In such analyses, the loading applied to the soil is computed on a site‑ and motion‑specific basis rather than characterizing site response by a parameter (rd) based on the average response of many different profiles, and the motion by relatively crude and simplistic parameters (amax and M). Thus, for sites with strong impedance contrasts, velocity inversions, or other atypical features, or for motions with atypical features such as directivity pulses or very long (or short) durations, effective stress analyses can provide insight into liquefaction behavior that empirical procedures cannot. The accuracy of an effective stress analysis, however, depends on how accurately pore pressure generation, redistribution, and dissipation can be modeled. Several approaches to the modeling of pore pressure generation have been proposed and imple‑ mented into nonlinear site response analyses. These range from relatively simple models in which Geotechnical Earthquake Engineering
+
+pore pressures increase monotonically to sophisticated constitutive models that account for phe‑ nomena such as phase transformation (PT) behavior that cause pore pressures and shear moduli to fluctuate even within individual loading cycles.
+
+### 9.5.7.1 Pore Pressure Models
+
+Cyclic nonlinear stress‑strain models (Section 6.4.5.2) use an empirical backbone curve and a series of unloading‑reloading rules that govern cyclic behavior. Pore pressure prediction is accomplished by pore pressure models (e.g., Martin et al., 1975; Ishihara and Towhata, 1980; Finn and Bhatia, 1981; Dobry et al., 1985; Vucetic and Dobry, 1988) that can predict the generation of pore pressure under irregular cyclic loading conditions. In these models, the computed pore pressure is used to degrade, or soften, the backbone curve as the effective stress (and soil stiffness) decreases. Pore pressure models based on cyclic stresses, cyclic strains, and dissipated energy have been proposed.
+
+Cyclic Stress‑Based Pore Pressure Models Based on cyclic simple shear data (De Alba et al., 1976), Seed et al. (1975) developed an expression for the pore pressure ratio produced by uniform amplitude harmonic loading
+
+α   1/   N − − = +   π sin (9.51) r   u N     L
+
+where N = number of loading cycles, NL = number of cycles to liquefaction, and α = parameter related to soil properties and test conditions with an average value of 0.7. Polito et al. (2008) proposed that α be determined as a function of relative density, fines content, and cyclic stress ratio, i.e.,
+
+α = + + + 0.5058 0.01166 0.007397 0.01034 (9.52)
+
+### FC
+
+D CSR r
+
+where FC and Dr are in percent. This type of model suffers from the need to convert actual, tran‑ sient loading histories to equivalent uniform loading histories, and the need to define the triggering of liquefaction in terms of a specific number of equivalent cycles. It predicts pore pressures that increase monotonically from the initial hydrostatic values. Martin et al. (1975) proposed that increments of vertical strain from dry sands could be related to increments of pore pressure in saturated sands when subject to undrained loading. In a drained test, slip at the soil grain contacts produces an increment of contractive vertical strain, Δεvd (Figure 6.111). Under undrained conditions, however, some of the vertical stress resisted by the soil skeleton is transferred to the more incompressible porewater, effectively unloading the soil skeleton and producing an increment of rebound volumetric strain, Δεvr. If the pore water is taken to be incompressible relative to the soil skeleton, the two volume change increments are equal in magnitude but opposite in sign,
+
+° ε = −° ε (9.53) vr vd
+
+= − σ ε ′ If the tangent constrained modulus in one‑dimensional rebound is taken as M , and d d r v = − dσ ° ε = ° ′, then / . This allows the pore pressure increment under undrained conditions du u M v r to be related to the vertical strain increment that would occur under drained conditions as:
+
+° = − ° ε (9.54) u Mr vd
+
+This approach was used to develop the first simple models that could predict pore pressure genera‑ tion under irregular cyclic loading. Liquefaction and Cyclic Softening
+
+Cyclic Strain‑Based Pore Pressure Models Dobry et al. (1982) used the results of cyclic torsional triaxial tests to predict the pore pressure ratio after N cycles of strain‑controlled loading ru N , . Vucetic and Dobry (1986) modified that work and proposed that
+
+( ) b γ γ − fpNF c tv = (9.55) r ( ) , u N b + − γ γ fpNF c tv
+
+where γc = cyclic strain amplitude, γtv = volumetric threshold shear strain (Section 6.4.3.1), f = 1 for uni‑directional shaking or 2 for bi‑directional shaking, and p, F, and b are coefficients obtained by fitting to the results of laboratory tests. Cetin and Bilge (2012) used a database of 99 cyclic simple shear and cyclic triaxial tests to relate pore pressure ratio to peak shear strain, relative density, and effective stress
+
+    γ   0.407 0.620 ( ) = max, N − −− ⋅ ln 1 exp ln (9.56) r     , u N + σ ′ − + γ 0.486 0.025ln /100 D     max, v r N
+
+γ max, = maximum shear strain in percent after N cycles, σ °0 = initial vertical effective where N v stress in kPa, and Dr = relative density in percent. Cetin and Bilge (2012) indicated that Equation (9.56) produced less biased and less uncertain pore pressure ratios than other stress‑, strain‑, and energy‑based pore pressure models.
+
+Dissipated Energy‑Based Pore Pressure Models Pore pressure generation can also be correlated to dissipated energy (Green et al., 2000). Laboratory tests have shown that pore pressure ratio increases linearly with the square root of normalized dis‑ sipated energy density, i.e.,
+
+W s = ° 1.0 r (9.57) u
+
+### PEC
+
+where Ws = dissipated energy per unit volume divided by initial effective confining stress and the pseudo energy capacity, PEC, is a calibration parameter obtained from the results of cyclic tests (cyclic triaxial or cyclic simple shear). The value of Ws can be computed as ∞ ∞ ∫ ∫ = σ ε = τ γ (9.58) W d d s d a ° ° ′ ′ m m
+
+for cyclic triaxial tests (σd = deviator stress and εa = axial strain) and cyclic simple shear tests (τ = shear stress and γ = shear strain), respectively; for both, σ °0 = initial mean effective stress. m Green et al. (2000) found that laboratory data suggested that the pseudo energy capacity, PEC, could be estimated as Ws ru = , 0.65 = (9.59)
+
+### PEC
+

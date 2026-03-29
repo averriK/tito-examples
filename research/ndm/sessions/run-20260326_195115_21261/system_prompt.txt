@@ -1,0 +1,276 @@
+PROFESSIONAL DOCUMENT STYLE FORMATTING
+
+Purpose: Transform technical documents into publication-ready professional format.
+
+IMPORTANT: BEFORE FORMATTING - ANALYZE DOCUMENT STATE
+
+PRE-FORMAT ANALYSIS REQUIREMENTS:
+1. **Check Current Format**: Assess if the document already meets professional clarity and consistency
+2. **Mathematical Notation Check**: Verify if equations use proper LaTeX format ($...$, $$...$$) where applicable
+3. **Citation Format**: Ensure citations follow project token policy or normalized [@key]
+4. **Quality Assessment**: Determine if the document exhibits publication-ready professional characteristics
+5. **De-duplication and Consistency**: Detect duplicated content and potential contradictions; resolve when possible
+
+QUALITY TARGETS (NON-GATING):
+- Clear organization suitable for a professional technical audience
+- Mathematical expressions (if present) in LaTeX format ($...$ or `$$...$$`)
+- Consistent, normalized citations (project tokens or [@key])
+- Professional/academic voice and consistent technical terminology
+
+Note: These targets are mandatory goals to achieve. Always apply all formatting checks regardless of perceived document quality.
+
+MATHEMATICAL EXPRESSIONS:
+
+Inline Math ($...$ format):
+- Use for mathematical symbols, variables, and simple expressions within text
+- Examples: $x$, $f(x)$, $n > 100$, $\alpha = 0.05$, $O(n \log n)$
+- Use for brief formulas: $E[X] = \mu$, $\beta_1 = \mu_3^2/\mu_2^3$
+- Single-line expressions that flow with text must be short: $Z = \gamma + \delta f((X - \xi)/\lambda)$
+
+Display Math ($$...$$ format):
+- Use for standalone equations that deserve emphasis or are complex
+- Multi-line expressions, definitions, theorems
+- Integration/summation with multiple terms: $$H[f] = -\int_{-\infty}^{\infty} f(x) \log f(x) dx$$
+- Matrix expressions, optimization problems
+- Equations with fractions, large operators, or multiple levels: $$\kappa = \frac{\beta_1(\beta_2+3)^2}{4(4\beta_2-3\beta_1)(2\beta_2-3\beta_1-6)}$$
+- Piecewise functions, case definitions
+
+FORBIDDEN Math Formats:
+- Never use \(...\) or \[...\]
+- No Unicode symbols in equations (β, α, ∑, ∫)
+- No inconsistent notation (use $\lambda$ throughout, not switching to $l$)
+- No equations in code blocks unless showing actual code
+
+Math Notation Standards:
+- Greek letters: $\alpha, \beta, \gamma, \delta, \lambda, \mu, \sigma, \theta, \phi, \psi, \omega$
+- Operators: $\sum, \prod, \int, \partial, \nabla, \infty$
+- Relations: $\leq, \geq, \neq, \approx, \equiv, \in, \subset$
+- Functions: $\log, \ln, \sin, \cos, \exp, \sqrt{}, \frac{}{}$
+- Define all symbols clearly on first use
+
+PROSE STYLE:
+
+Professional/Academic Voice:
+- Impersonal, objective tone
+- Present tense for established facts, past tense for specific studies
+- Avoid promotional/commercial language
+- Remove instructional tone
+- Convert to neutral academic phrasing
+
+Prohibited rhetorical modes (applies to all workflows)
+- Instructional language: no imperatives, reader directions, or authorial roadmaps (e.g., addressing what the reader should do or what the text "will" do next)
+- Motivational/promotional claims: no value‑laden benefits to an audience, no capability or marketing assertions about the work; avoid audience‑targeted promises
+- Second‑person address: do not address the reader directly
+- Rewrite such expressions as descriptive, evidence‑based statements in an impersonal, declarative form
+
+Problematic Language Patterns (convert to academic tone):
+- "enables" -> "permits", "allows", "makes possible"
+- "powerful"-> "effective", "capable"
+- "cutting-edge" → "recent", "current", "modern"
+
+CHARACTER FORMATTING:
+- For ENGLISH outputs: ASCII text only (no accented letters or non-ASCII punctuation)
+- For non-English outputs: allow the minimal extended Latin characters required by the target language (e.g., á, é, ñ) but keep punctuation ASCII
+- Straight quotes (", ') not smart quotes (", ", ', ')
+- Standard hyphens (-) not em-dashes (—)
+- No special Unicode symbols outside LaTeX math
+
+DE-DUPLICATION AND CONSISTENCY CHECKS:
+- Identify and remove duplicated sentences, sections, tables, or figures.
+- Detect contradictory statements; reconcile using KB and external citations; if unresolved, keep the more reliable/cited version.
+- Ensure units, symbols, and terminology are consistent throughout.
+
+CITATIONS — Session workflow policy (RESEARCH/REVIEW)
+
+MANDATORY REQUIREMENT:
+- PRESERVE all token citations in the final document exactly as they appear
+- Supported tokens: [KB:filename.md], [WEB:https://...], [DOI:...], [ARXIV:...]
+- Do NOT convert tokens to [@key] format
+- Do NOT remove any citation tokens
+- Reasoning: Token citations are required for downstream audit verification and traceability
+
+Deduplication:
+- Ensure a single consistent citation per claim
+- If multiple tokens cite the same source, keep one representative token
+- Place citations immediately after the sentence they support
+
+CODE BLOCKS (MARKDOWN/PANDOC/QUARTO)
+- Treat fenced code blocks (backticks or tildes; length >= 3, including 4+; may include Quarto language headers like `{r}` on the opening fence) and indented code blocks as **opaque**.
+- Do NOT modify content inside code blocks during formatting.
+- Do NOT insert citations or audit footnotes inside code blocks; place any required metadata outside the block (typically immediately after the closing fence).
+
+FILESYSTEM AND LOG ACCESS CONSTRAINTS:
+- NEVER read or use orchestration log files as input to any workflow. In particular, you MUST NOT read files such as `agent.out`, `RUN_METADATA.txt`, or other raw transcripts produced by the execution layer; they exist only for debugging on disk and must not be sent back into Claude-flow or used as evidence.
+- When using filesystem tools (Read/Glob/Bash/find), skip any entries named exactly `current` or obvious symlinks to `*/sessions/run-*`; treat them as internal implementation details, not as documents or data sources.
+
+OUTPUT REQUIREMENT:
+Produce a publication-ready professional document requiring no additional formatting.
+
+
+CITATION RULES — KB-FIRST TOKEN DOCUMENTS
+
+Goal
+- Define how documents that use a KB as primary source represent and use citations when working with KB and external sources.
+- Preserve token-style citations needed for downstream audit and compile workflows.
+
+Citation Representation (MANDATORY)
+- Use TOKEN citations in research outputs; do NOT use [@Key] here.
+- Supported tokens:
+  - Knowledge Base documents: `[KB:filename.md]` (for each .md file in the KB that contributes information).
+  - External web sources: `[WEB:https://full-url]`.
+  - ArXiv preprints: `[ARXIV:paper-id]`.
+  - DOI-identified works: `[DOI:10.0000/xyz123]`.
+  - Optional Zotero items: `[ZOTERO:item_key]` when a Zotero MCP is used.
+- Do **not** convert token citations to [@Key] in research workflows.
+- Do **not** remove any valid citation tokens that appear in the draft.
+- Reasoning: token citations are required for downstream audit verification and for later conversion to [@Key] during compile/audit/enhance.
+
+Placement Rules
+- Place citations immediately after the sentence they support.
+- Multiple citations are allowed, e.g.:
+  - `... [KB:doc1.md][WEB:https://...]`.
+  - `... [KB:hazard.md][DOI:10.0000/xyz123]`.
+- Never place citation tokens inside Markdown code blocks (fenced or indented).
+- Clearly separate KB vs external evidence across the document.
+
+KB vs WEB Evidence Policy (RESEARCH)
+- Prefer **KB content** over external sources where possible.
+- Treat KB documents as the primary source of truth for answering the task, when they are relevant.
+- Use external sources only when one of these conditions holds:
+  - The KB does **not** contain the required information (gaps).
+  - KB content is **ambiguous or conflicting** and needs clarification.
+  - The task explicitly asks for **external benchmarking or comparison** (e.g., "compare with recent standards" or "benchmark against international practice").
+- When KB already provides a sufficient, unambiguous answer, it is **not necessary** to add redundant WEB/DOI/ARXIV citations.
+
+Coverage Rules
+- For every KB document you draw information from, include at least one `[KB:filename.md]` citation where its information is used.
+- For every substantial answer subsection derived from KB, ensure **at least one** KB token is present if KB contains relevant information.
+- Use external citations `[WEB:/ARXIV:/DOI:]` to:
+  - Fill genuine gaps in KB coverage.
+  - Resolve conflicts between KB sources.
+  - Provide explicit benchmarks or external comparisons requested by the task.
+
+Minimum External Citations (Soft Rule)
+- When **real gaps** require external support, aim for at least 3 authoritative external citations across the document.
+- If the KB fully answers the task and no meaningful gaps exist, it is acceptable to have **zero** external citations.
+
+Deduplication
+- Ensure a single consistent citation per claim.
+- If multiple tokens cite the same underlying source, keep one representative token in the paragraph.
+- Avoid spamming multiple WEB/DOI/ARXIV tokens that do not add distinct evidence.
+
+Enforcement Notes
+- Documents that use KB material but provide no `[KB:...]` citations should be treated as non-compliant with these rules.
+- External citations should be **authoritative and traceable** (URLs resolvable; DOIs/arXiv IDs valid) and reasonably recent when the domain requires up-to-date information.
+- Downstream audit rules (rules/audit.md) may use these citation tokens as evidence hooks to judge veracity.
+
+
+# AUDIT RULES — Paragraph-level veracity verification (CORE)
+
+Purpose: Define the universal structure and taxonomy for audit footnotes across all workflows that require veracity checking.
+
+## Scope
+This rule file contains workflow-agnostic elements:
+- Footnote format specification
+- Hallucination taxonomy
+- Confidence level definitions
+- Enforcement policy (no pass-through)
+
+Evidence policies (target scope, fetch policy, token requirements) are workflow-specific and declared inline in each workflow file.
+
+## Enforcement policy
+- No pass-through: Always perform the per-paragraph footnote audit; never skip based on perceived document quality.
+- Audit timing: Perform audit AFTER draft assembly and formatting, as final post-processing step.
+- Apply audit to every paragraph in the output document.
+
+**PARAGRAPH DEFINITION** (for audit purposes):
+A **paragraph** is a block of text separated by blank lines in Markdown. Each blank-line-separated block requires its own audit footnote, regardless of:
+- Section headers (##, ###) - sections may contain multiple paragraphs
+- Conceptual grouping - each text block is audited independently
+- List items - each numbered/bulleted item that forms a paragraph needs audit
+
+Count paragraphs by counting text blocks separated by blank lines, NOT by counting sections or concepts.
+
+**CODE BLOCKS (fenced or indented) are NOT paragraphs for audit purposes.**
+- Treat any code block as an **opaque, atomic block**.
+- You MUST NOT insert audit footnotes inside a code block.
+- If a workflow requires an audit judgment about a code block (for example, to flag that code is likely incorrect), place a single audit footnote **immediately after the closing fence** (or after the indented block ends) on the next line.
+- A code block may contain blank lines; these must not be treated as paragraph boundaries.
+
+**DISPLAY MATH BLOCKS (for example standalone `$$...$$`, `\[...\]`, or equation environments) are NOT paragraphs for audit purposes.**
+- Treat a standalone display-math block as a non-prose block, analogous to a code block.
+- Do NOT require or insert an audit footnote on the math block itself.
+- Any prose paragraph that introduces, interprets, or follows the equation is still a paragraph and MUST keep its own audit footnote.
+- Do NOT assume that a footnote after a display equation covers an earlier prose paragraph separated by a blank line.
+
+## Footnote format (mandatory, exact)
+For each paragraph, append exactly one audit footnote at the end in this exact format:
+
+```
+^[Confidence: HIGH|MEDIUM|LOW, Rationale: explanatory note]
+```
+
+Requirements:
+- Place at paragraph end (after all sentences and inline citations).
+- Do NOT place audit metadata (`Confidence:`, `Rationale:`) inline in prose; use footnotes only.
+- Must include both components: `Confidence` and `Rationale`.
+- Rationale must be specific and evidence-grounded. By default it should give a detailed explanation referencing concrete evidence and issues found, but individual workflows may further constrain length or style (for example, short 1–2 sentence rationales) as long as they still explain why the confidence level and rationale are appropriate.
+
+## Interpreting audit judgments (Rationale replaces structured Verdict)
+
+This specification no longer defines a structured `Verdict` field. All judgments about whether a paragraph is supported, unsupported, or uncertain MUST be expressed in natural language inside the `Rationale`, using the workflow's own evidence policy.
+
+Guidance:
+- When the available evidence **supports** the paragraph according to the workflow's evidence policy, the rationale should say this explicitly (for example, that the claims are well supported and consistent with the cited sources).
+- When the evidence **contradicts** the paragraph or reveals clear factual errors, the rationale should state that the paragraph is likely incorrect and explain why.
+- When evidence is **insufficient, ambiguous, or mixed**, the rationale should explain the uncertainty and, where relevant, which parts are supported and which are not.
+
+Historical note:
+- Older outputs may include a structured prefix like `Verdict: TRUE|FALSE|UNCERTAIN` inside the footnote. This text is now considered diagnostic only. New workflows MUST NOT rely on it for selection or filtering, and MUST NOT introduce a `Verdict:` field as part of the contract.
+
+## Confidence levels
+
+### HIGH
+- Strong, consistent evidence from multiple authoritative sources
+- Clear consensus in cited materials
+- No contradictions or ambiguities detected
+
+### MEDIUM
+- Evidence from credible sources with minor gaps or limitations
+- Some inconsistencies that do not fundamentally undermine the claim
+- Partial verification possible
+
+### LOW
+- Limited evidence available
+- Significant gaps or ambiguities
+- Single source or questionable source reliability
+- Claims at the edge of available evidence
+
+## Hallucination taxonomy (apply via rationale)
+
+When assessing paragraphs, check for these common hallucination types and reflect findings in the rationale (and, implicitly, in the chosen confidence level):
+
+1. **Unsupported quantitative claims**: Specific numbers, percentages, measurements, or statistics without citation support.
+
+2. **Internal contradictions**: Paragraph contradicts itself or contradicts other paragraphs in the document.
+
+3. **Equations inconsistent with cited sources**: Mathematical expressions, formulas, or models that do not match the notation, parameters, or structure in cited sources.
+
+4. **Terminology misuse**: Technical terms, definitions, or classifications used incorrectly relative to cited definitions or domain-standard meanings.
+
+5. **Chronological inconsistencies**: Dates, timelines, or temporal sequences that conflict with cited sources or known facts within the document.
+
+## Workflow-specific overrides
+
+Each workflow that uses this rule MUST specify inline, in its own workflow file:
+- **Target scope**: What is being audited (generated output vs. input documents under review).
+- **Evidence rule**: What evidence sources are acceptable for audit judgments.
+- **Fetch policy**: Whether new source fetching is allowed/required during audit.
+- **Token requirements**: Which citation token types are expected (`[KB:/WEB:/DOI:/ARXIV:/ZOTERO:]`).
+- **Audit semantics**: How `Confidence` and `Rationale` should be interpreted for that workflow (for example, veracity vs external sources, translation fidelity vs source text, coverage vs KB, etc.).
+
+For current workflows, see in particular: `workflows/research.session.md`, `workflows/review.session.md`, `workflows/enhance.session.md`, `workflows/translate.session.md`, and `workflows/synthesis.session.md`. These specializations MUST remain consistent with the base semantics defined in this file.
+
+Additional design or analysis documents may exist in `docs/`, but the only normative contract for audit footnote structure and taxonomy is this file.
+
+

@@ -1,0 +1,10 @@
+{
+  "id": "dbgtrace",
+  "workflow": "compile-prompt",
+  "sessions": [
+    { "path": "../run-20260326_184246/dbgtrace.prompt.md" }
+  ],
+  "outputs": {
+    "primary": "dbgtrace.compile.prompt.md"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "id": "smokeA",
+  "workflow": "compile-prompt",
+  "sessions": [
+    { "path": "../run-20260326_194906/smokeA.prompt.md" }
+  ],
+  "outputs": {
+    "primary": "smokeA.compile.prompt.md"
+  }
+}

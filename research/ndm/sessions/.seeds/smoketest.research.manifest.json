@@ -1,0 +1,21 @@
+{
+  "id": "smoketest",
+  "workflow": "research",
+  "source": {
+    "kb_dir": "/home/averri/github/tools/tito-examples/research/ndm/kb/",
+    "documents": [
+      "newmark.qmd",
+      "newmark_model.qmd",
+      "pbkmax.qmd",
+      "site_model.qmd",
+      "uncertainty_model.qmd"
+    ]
+  },
+  "orchestration": {
+    "structured_prompt_spec": "structured_prompt_spec.json",
+    "slot_orchestration_plan": "slot_orchestration_plan.json"
+  },
+  "outputs": {
+    "primary": "smoketest.research.md"
+  }
+}

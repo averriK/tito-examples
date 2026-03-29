@@ -1,0 +1,270 @@
+{
+  "id": "kramer2024s",
+  "source": {
+    "basename": "Kramer and Stewart - 2024 - Geotechnical Earthquake Engineering"
+  },
+  "helper": {
+    "assets_json": "kramer2024s.retrieve.pdf.assets.json",
+    "tables": {
+      "detected_count": 0,
+      "markdown_path": "",
+      "audit_path": ""
+    }
+  },
+  "chunks": [
+    {
+      "id": "chunk-001",
+      "slice_path": "chunk-001.slice.txt",
+      "clean_md_path": "chunk-001.md"
+    },
+    {
+      "id": "chunk-002",
+      "slice_path": "chunk-002.slice.txt",
+      "clean_md_path": "chunk-002.md"
+    },
+    {
+      "id": "chunk-003",
+      "slice_path": "chunk-003.slice.txt",
+      "clean_md_path": "chunk-003.md"
+    },
+    {
+      "id": "chunk-004",
+      "slice_path": "chunk-004.slice.txt",
+      "clean_md_path": "chunk-004.md"
+    },
+    {
+      "id": "chunk-005",
+      "slice_path": "chunk-005.slice.txt",
+      "clean_md_path": "chunk-005.md"
+    },
+    {
+      "id": "chunk-006",
+      "slice_path": "chunk-006.slice.txt",
+      "clean_md_path": "chunk-006.md"
+    },
+    {
+      "id": "chunk-007",
+      "slice_path": "chunk-007.slice.txt",
+      "clean_md_path": "chunk-007.md"
+    },
+    {
+      "id": "chunk-008",
+      "slice_path": "chunk-008.slice.txt",
+      "clean_md_path": "chunk-008.md"
+    },
+    {
+      "id": "chunk-009",
+      "slice_path": "chunk-009.slice.txt",
+      "clean_md_path": "chunk-009.md"
+    },
+    {
+      "id": "chunk-010",
+      "slice_path": "chunk-010.slice.txt",
+      "clean_md_path": "chunk-010.md"
+    },
+    {
+      "id": "chunk-011",
+      "slice_path": "chunk-011.slice.txt",
+      "clean_md_path": "chunk-011.md"
+    },
+    {
+      "id": "chunk-012",
+      "slice_path": "chunk-012.slice.txt",
+      "clean_md_path": "chunk-012.md"
+    },
+    {
+      "id": "chunk-013",
+      "slice_path": "chunk-013.slice.txt",
+      "clean_md_path": "chunk-013.md"
+    },
+    {
+      "id": "chunk-014",
+      "slice_path": "chunk-014.slice.txt",
+      "clean_md_path": "chunk-014.md"
+    },
+    {
+      "id": "chunk-015",
+      "slice_path": "chunk-015.slice.txt",
+      "clean_md_path": "chunk-015.md"
+    },
+    {
+      "id": "chunk-016",
+      "slice_path": "chunk-016.slice.txt",
+      "clean_md_path": "chunk-016.md"
+    },
+    {
+      "id": "chunk-017",
+      "slice_path": "chunk-017.slice.txt",
+      "clean_md_path": "chunk-017.md"
+    },
+    {
+      "id": "chunk-018",
+      "slice_path": "chunk-018.slice.txt",
+      "clean_md_path": "chunk-018.md"
+    },
+    {
+      "id": "chunk-019",
+      "slice_path": "chunk-019.slice.txt",
+      "clean_md_path": "chunk-019.md"
+    },
+    {
+      "id": "chunk-020",
+      "slice_path": "chunk-020.slice.txt",
+      "clean_md_path": "chunk-020.md"
+    },
+    {
+      "id": "chunk-021",
+      "slice_path": "chunk-021.slice.txt",
+      "clean_md_path": "chunk-021.md"
+    },
+    {
+      "id": "chunk-022",
+      "slice_path": "chunk-022.slice.txt",
+      "clean_md_path": "chunk-022.md"
+    },
+    {
+      "id": "chunk-023",
+      "slice_path": "chunk-023.slice.txt",
+      "clean_md_path": "chunk-023.md"
+    },
+    {
+      "id": "chunk-024",
+      "slice_path": "chunk-024.slice.txt",
+      "clean_md_path": "chunk-024.md"
+    },
+    {
+      "id": "chunk-025",
+      "slice_path": "chunk-025.slice.txt",
+      "clean_md_path": "chunk-025.md"
+    },
+    {
+      "id": "chunk-026",
+      "slice_path": "chunk-026.slice.txt",
+      "clean_md_path": "chunk-026.md"
+    },
+    {
+      "id": "chunk-027",
+      "slice_path": "chunk-027.slice.txt",
+      "clean_md_path": "chunk-027.md"
+    },
+    {
+      "id": "chunk-028",
+      "slice_path": "chunk-028.slice.txt",
+      "clean_md_path": "chunk-028.md"
+    },
+    {
+      "id": "chunk-029",
+      "slice_path": "chunk-029.slice.txt",
+      "clean_md_path": "chunk-029.md"
+    },
+    {
+      "id": "chunk-030",
+      "slice_path": "chunk-030.slice.txt",
+      "clean_md_path": "chunk-030.md"
+    },
+    {
+      "id": "chunk-031",
+      "slice_path": "chunk-031.slice.txt",
+      "clean_md_path": "chunk-031.md"
+    },
+    {
+      "id": "chunk-032",
+      "slice_path": "chunk-032.slice.txt",
+      "clean_md_path": "chunk-032.md"
+    },
+    {
+      "id": "chunk-033",
+      "slice_path": "chunk-033.slice.txt",
+      "clean_md_path": "chunk-033.md"
+    },
+    {
+      "id": "chunk-034",
+      "slice_path": "chunk-034.slice.txt",
+      "clean_md_path": "chunk-034.md"
+    },
+    {
+      "id": "chunk-035",
+      "slice_path": "chunk-035.slice.txt",
+      "clean_md_path": "chunk-035.md"
+    },
+    {
+      "id": "chunk-036",
+      "slice_path": "chunk-036.slice.txt",
+      "clean_md_path": "chunk-036.md"
+    },
+    {
+      "id": "chunk-037",
+      "slice_path": "chunk-037.slice.txt",
+      "clean_md_path": "chunk-037.md"
+    },
+    {
+      "id": "chunk-038",
+      "slice_path": "chunk-038.slice.txt",
+      "clean_md_path": "chunk-038.md"
+    },
+    {
+      "id": "chunk-039",
+      "slice_path": "chunk-039.slice.txt",
+      "clean_md_path": "chunk-039.md"
+    },
+    {
+      "id": "chunk-040",
+      "slice_path": "chunk-040.slice.txt",
+      "clean_md_path": "chunk-040.md"
+    },
+    {
+      "id": "chunk-041",
+      "slice_path": "chunk-041.slice.txt",
+      "clean_md_path": "chunk-041.md"
+    },
+    {
+      "id": "chunk-042",
+      "slice_path": "chunk-042.slice.txt",
+      "clean_md_path": "chunk-042.md"
+    },
+    {
+      "id": "chunk-043",
+      "slice_path": "chunk-043.slice.txt",
+      "clean_md_path": "chunk-043.md"
+    },
+    {
+      "id": "chunk-044",
+      "slice_path": "chunk-044.slice.txt",
+      "clean_md_path": "chunk-044.md"
+    },
+    {
+      "id": "chunk-045",
+      "slice_path": "chunk-045.slice.txt",
+      "clean_md_path": "chunk-045.md"
+    },
+    {
+      "id": "chunk-046",
+      "slice_path": "chunk-046.slice.txt",
+      "clean_md_path": "chunk-046.md"
+    },
+    {
+      "id": "chunk-047",
+      "slice_path": "chunk-047.slice.txt",
+      "clean_md_path": "chunk-047.md"
+    },
+    {
+      "id": "chunk-048",
+      "slice_path": "chunk-048.slice.txt",
+      "clean_md_path": "chunk-048.md"
+    },
+    {
+      "id": "chunk-049",
+      "slice_path": "chunk-049.slice.txt",
+      "clean_md_path": "chunk-049.md"
+    },
+    {
+      "id": "chunk-050",
+      "slice_path": "chunk-050.slice.txt",
+      "clean_md_path": "chunk-050.md"
+    }
+  ],
+  "outputs": {
+    "primary": "kramer2024s.retrieve.md",
+    "biblatex": "biblatex.bib"
+  }
+}

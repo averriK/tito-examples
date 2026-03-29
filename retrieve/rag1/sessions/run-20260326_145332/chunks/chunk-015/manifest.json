@@ -1,0 +1,25 @@
+{
+  "id": "kramer2024",
+  "source": {
+    "basename": "Kramer and Stewart - 2024 - Geotechnical Earthquake Engineering"
+  },
+  "helper": {
+    "assets_json": "kramer2024.retrieve.pdf.assets.json",
+    "tables": {
+      "detected_count": 0,
+      "markdown_path": "",
+      "audit_path": ""
+    }
+  },
+  "chunks": [
+    {
+      "id": "chunk-015",
+      "slice_path": "chunk-015.slice.txt",
+      "clean_md_path": "chunk-015.md"
+    }
+  ],
+  "outputs": {
+    "primary": "kramer2024.retrieve.md",
+    "biblatex": "biblatex.bib"
+  }
+}

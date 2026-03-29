@@ -1,0 +1,400 @@
+
+1. Grouting techniques involve the injection of cementitious materials into the voids of the
+soil or into fractures in the soil so that the particle structure of the majority of the soil remains intact. In permeation grouting, very low viscosity grouts are injected into the voids of the soil without disturbing the soil structure. In intrusion grouting, thicker and more viscous grouts are injected under pressure to cause controlled fracturing of the soil. Grouting techniques can often be used where other techniques cannot, such as under exist‑ ing structures.
+
+1. Mixing techniques introduce cementitious materials by physically mixing them with the
+soil, completely disturbing its particle structure. The mixing can be accomplished mechan‑ ically (soil mixing) or hydraulically (jet grouting). Both soil mixing and jet grouting leave behind relatively uniform columns of mixed soil‑cement. By overlapping the columns, walls or cellular structures can be constructed below the ground surface.
+
+1. Drainage techniques minimize the buildup of porewater pressure during earthquakes by
+allowing horizontal drainage along shortened drainage paths in a soil deposit. The instal‑ lation of drains generally involves some degree of densification and the drains themselves may also provide some reinforcement.
+
+1. Biological techniques supply nutrients to microbes that either exist in or are injected into
+the ground to augment existing microbes. The microbes can be stimulated to produce biogeochemical reactions that can, in various cases, bond particles together, fill voids, desaturate the soil by forming gas, or produce biofilms.
+
+1. Verification of the effectiveness of soil improvement is an important part of seismic hazard
+mitigation. Direct or indirect measurement of stiffness, strength, or density characteris‑ tics both before and after improvement can allow reliable evaluation of soil improvement effectiveness. These characteristics may be measured by laboratory, in situ, or geophysical tests. The relative advantages and limitations of these types of tests, discussed in detail in Chapter 6, apply to their use in verification applications. Geotechnical Earthquake Engineering
+
+### REFERENCES
+
+Aboshi, H., Mizuno, Y., and Kuwabara, M. (1991). “Present state of sand compaction pile in Japan,” in M.I. Esrig and R. C. Bachus, eds., Deep Foundation Improvements: Design, Construction, and Testing, ASTM STP 1089, ASTM, Philadelphia, pp. 32–46. https://doi.org/10.1520/stp25049s. Adalier, K. and Elgamal, A.‑W. (2004). “Mitigation of liquefaction and associated ground deformations by stone columns,” Engineering Geology, Vol. 72, No. 3–4, pp. 275–291. https://doi.org/10.1016/j. enggeo.2003.11.001. Arslan, H., Baykal, G., and Ertas, O. (2007). “Influence of tamper weight shape on dynamic compaction.” Ground Improvement, Vol. 11, No. 2, pp. 61–66. https://doi.org/10.1680/grim.2007.11.2.61. Babasaki, R., Suzuki, K., Saitoh, S., Suzuki, Y., and Tokitoh, K. (1991). “Construction and testing of deep foun‑ dation improvement using the deep cement mixing method,” Deep Foundation Improvements: Design Construction and Testing, ASTM STP 1089, ASTM, pp. 224–233. https://doi.org/10.1520/stp25062s. Baez, J.I. and Henry, J.F. (1993). “Reduction of liquefaction potential by compaction grouting at Pinoplis Dam, South Carolina,” Geotechnical Practice in Dam Rehabilitation, Geotechnical Special Publication No. 35, ASCE, New York, pp. 430–466. Bell, F.G. (1993). Engineering Treatment of Soils, E & FN Spon, London, 302 pp. Bo, M.W., Chu, J. and Choa, V. 2005. “The Changi East reclamation project in Singapore,” in B. Indraratna & J. Chu, eds., Ground Improvement Case Histories, Elsevier, Amsterdam, pp. 247–276. Boulanger, R.W. and Hayden, R.F. (1995). “Aspects of compaction grouting of liquefiable soil.” Journal of Geotechnical Engineering, Vol. 121, No. 12, pp. 844–855. https://doi.org/10.1061/(asce)0733‑9410(19 95)121:12(844). Broms, B. (1991). “Deep compaction of granular soil,” in H.Y. Fang, ed., Foundation Engineering Handbook, 2nd edition, Van Nostrand Reinhold, New York, pp. 814–832. Bruce, D.A. (1992). “Progress and development in dam rehabilitation by grouting,” Grouting, Soil Improvement, and Geosynthetics, Geotechnical Special Publication No. 30, ASCE, Vol. 1, pp. 601–613. https://doi.org /10.1016/0886‑7798(92)90121‑w. Bruce, D.A. (2000). “An introduction to the deep soil mixing methods as used in geotechnical applications,” Report FHWA‑RD‑99‑138, Federal Highway Administration, U.S. Department of Transportation, 135 pp. Bruce, M.E.C., Berg, R.R., Collin, J.G., Filz, G.M., Terashi, M., and Yang, D.S. (2013). “Deep mixing for embank‑ ment and foundation support,” Federal Highway Administration Design Manual FHWA‑HRT‑13‑046, Federal Highway Administration, Washington, DC, 244 pp. Burbank, M.B., Weaver, T.J., Green, T.L., Williams, B.C., and Crawford, R.L. (2011). “Precipitation of calcite by indigenous microorganisms to strengthen liquefiable soils,” Geomicrobiology Journal, Vol. 28, No. 4, pp. 301–312. https://doi.org/10.1080/01490451.2010.499929. Camp, W.M., III, Camp, H.C., and Andrus, R.D. (2010). “Liquefaction mitigation using air injection,” Proceedings, Fifth International Conference on Recent Advances in Geotechnical Earthquake Engineering and Soil Dynamics., San Diego, CA, Paper No. 4.39a, 6 pp. Cedergren, H. (1989). Seepage, Drainage, and Flow Nets, 3rd edition, John Wiley & Sons, New York, 465 pp. Chaney, R. (1978). “Saturation effects on the cyclic strength of sands,” Proceedings, ASCE Specialty Conference on Earthquake Engineering and Soil Dynamics, New York, pp. 342–358. Charlie, W.A., Rwebyogo, M.F.J., and Doehring, D.O. (1992). “Time‑dependent cone penetration resistance due to blasting,” Journal of Geotechnical Engineering, Vol. 118, No. 8, pp. 1200–1215. https://doi. org/10.1061/(asce)0733‑9410(1992)118:8(1200). Chen, J.‑J., Zhang, L., Zhang, J.‑F., Zhu, Y.‑F., and Wang, J.‑H. (2013). “Field tests, modification, and application of deep soil mixing method in soft clay,” Journal of Geotechnical and Geoenvironmental Engineering, Vol. 139, No. 1, pp. 24–34. https://doi.org/10.1061/(asce)gt.1943‑5606.0000746. Chu, J., Varaksin, S., Klotz, U., and Menge, P. (2009). “Construction Processes, State of the Art Report.” Proceedings, 17th International Conference on Soil Mechanics and Geotechnical Engineering, Alexandria, Egypt, 5–9 October 2009, 130 pp. Degen, W. (1997). “56 m deep vibro‑compaction and German lignite mining area,” Proceedings, 3rd International Conference on Ground Improvement Systems, London, UK. DeJong, J.T. and Kavazanjian, E. (2019). “Bio‑mediated and Bio‑inspired Geotechnics,” in N. Lu and J.K. Mitchell, eds., Geotechnical Fundamentals for Addressing New World Challenges, Springer, Cambridge, pp. 193–207. DeJong, J.T., Mortensen, B.M., Martinez, B.C., and Nelson, D.C. (2010). “Bio‑mediated soil improvement,” Ecological Engineering, Elsevier, Vol. 36, pp. 197–210. https://doi.org/10.1016/j.ecoleng.2008.12.029. Soil Improvement for Mitigation of Seismic Hazards
+
+Dise, K., Stevens, M.G., and Von Thun, J.L. (1994). “Dynamic compaction to remediate liquefiable embank‑ ment foundation soils,” Geotechnical Specialty Publication No. 45, ASCE, New York, pp. 1–25. Dobson, T. (1987). “Case histories of the vibro systems to minimize the risk of liquefaction,” Soil Improvement ‑ A Ten Year Update, Geotechnical Special Publication No. 12, ASCE, New York, pp. 167–183. Dove, J.E., Boxill, L.E.C., and Jarrett, J.B. (2000). “A CPT‑based index for evaluating ground improvement,” Advances in Grouting and Ground Modification, Geotechnical Special Publication No. 104, ASCE, pp. 296–310. https://doi.org/10.1061/40516(292)20. Dowding, C.H. and Duplaine, H. (2004). “State of the art in blast densification or explosive compaction,” Proceedings, ASEP‑GI 2004, Vol. 2, Magnan (ed.), Presses de l’ENPC/LCPC, Paris, pp. 505–514. Durgunoglu, H.T., Kulac, H.F., Oruc, K., Yildiz, R., Sickling, J., Boys, I.E., Altugu, T., and Emrem, C. (2003). “A case history of ground treatment with jet grouting against liquefaction, for a cigarette fac‑ tory in Turkey,” Grouting and Ground Treatment, Geotechnical Special Publication No. 120, ASCE, pp. ­452–463. https://doi.org/10.1061/40663(2003)120. El‑Kelesh, A.M., Matsui, T., and Tokida, K.I. (2012) “Field investigation into effectiveness of compaction grouting.” Journal of Geotechnical and Geoenvironmental Engineering, Vol. 138, No. 4, pp. 451–460. https://doi.org/10.1061/(asce)gt.1943‑5606.0000540. Farrell, T.M., Wallace, K., and Ho, J. (2010). “Liquefaction mitigation of three projects in California,” Proceedings, 5th International Conference on Recent Advances in Geotechnical Earthquake Engineering and Soil Dynamics and Symposium in Honor of Professor I.M. Idriss, Paper No. 4.28a, San Diego, California, 8 pp. Feng, S.‑J., Tan, K., Shui, W.‑H., and Zhang, Y. (2013). “Densification of desert sands by high energy dynamic compaction,” Engineering Geology, Vol. 157, pp. 48–54. https://doi.org/10.1016/j. enggeo.2013.01.017. Finno, R.J., Gallant, A.P., and Sabatini, P.J. (2016), “Evaluating ground improvement after blast densifica‑ tion, Performance at the Oakridge landfill,” Journal of Geotechnical and Geoenvironmental Engineering, Vol. 142, No. 1, 13 pp. https://doi.org/10.1061/(asce)gt.1943‑5606.0001365. Fujita, Y., Ferris, F.G., Lawson, R.D., Colwell, F.S., and Smith, R.W. (2000). “Subscribed content calcium ­carbonate precipitation by ureolytic subsurface bacteria,” Geomicrobiology Journal, Vol. 17, No. 4, pp. 305–318. https://doi.org/10.1080/782198884. Fujita, Y., Taylor, J.L., Gresham, T.L., Delwiche, M.E., Colwell, F.S., McLing, T.L., … Smith, R. W. (2008). “Stimulation of microbial urea hydrolysis in groundwater to enhance calcite precipitation,” Environmental Science & Technology, Vol. 42, No. 8, pp. 3025–3032. https://doi.org/10.1021/es702643g. Gallagher, P.M., Conlee, C.T., and Rollins, K.M. (2007). “Full‑scale field testing of colloidal silica grouting for mitigation of liquefaction risk,” Journal of Geotechnical and Geoenvironmental Engineering, Vol. 133, No. 2, pp. 186–196. https://doi.org/10.1061/(asce)1090‑0241(2007)133:2(186). Gallagher, P.M. and Mitchell, J.K. (2002). “Influence of colloidal silica grout on liquefaction potential and cyclic undrained behavior of loose sand.” Soil Dynamics and Earthquake Engineering, Vol. 22, No. 9–12, pp. 1017–1026. https://doi.org/10.1016/s0267‑7261(02)00126‑4. Gandhi, S.R., Dey, A.K., and Selvam, S. (1999). “Densification of pond ash by blasting.” Journal of Geotechnical and Geoenvironmental Engineering, Vol. 125, No. 10, pp. 889–899. https://doi.org/10.1061/(asce)1090 ‑0241(1999)125:10(889). Gohl, W.B., Jefferies, M.G., Howie, J.A., and Diggle, D. (2000). “Explosive compaction: design, imple‑ mentation and effectiveness,” Geotechnique, Vol. 50, No. 6, pp. 657–665. https://doi.org/10.1680/ geot.2000.50.6.657. Gohl, W.B., Tsujino, S., Wu, G., Yoshida, N., Howie, J.A., and Everard, J. (1998). “Field applications of explo‑ sive compaction in silty soils and numerical analysis,” Geotechnical Earthquake Engineering & Soil Dynamics III, Geotechnical Special Publication 75, ASCE, New York, pp. 654–665. Gomez, M.G., Anderson, C.M., DeJong, J.T., Nelson, D.C., Graddy, C.M.R., and Ginn, T.R. (2016). “Large‑scale comparison of bioaugmentation and biostimulation approaches for bio‑cementation of sands,” Journal of Geotechnical and Geoenvironmental Engineering, https://doi.org/10.1061/(asce)gt.1943‑5606.0001640. Gomez, M.G., Graddy, C.M.R., DeJong, J.T., Nelson, D.C., and Tsesarsky, M. (2018). “Stimulation of native microorganisms for biocementation in samples recovered from field‑scale treatment depths,” Journal of Geotechnical and Geoenvironmental Engineering, https://doi.org/10.1061/(asce)gt.1943‑5606.0001804. Graf, E.D. (1992). “Earthquake support grouting in sands,” Grouting, Soil Improvement, and Geosynthetics, Geotechnical Special Publication No. 30, ASCE, Vol. 2, pp. 879–888. https://doi.org/10.1016/0886‑779 8(92)90121‑w. Geotechnical Earthquake Engineering
+
+Hachey, J.E., Plum, R.L., Byrne, R.J., Kilian, A.P., Jenkins, D.V. (1994). “Blast‑Densification of thick, loose debris flow at Mt. St. Helen’s, Washington.” Vertical and Horizontal Deformations of Foundations and Embankments, Geotechnical Specialty Publication 40, ASCE, pp. 502–512. Hamada, M., and Wakamatsu, K. (1997). “Liquefaction, ground deformation and their caused damage to struc‑ tures,” The 1995 Hyogoken‑Nambu Earthquake, Japan Society of Civil Engineers, Tokyo, pp. 45–92. Harder, L.F., Jr., Hammond, W.D., and Ross, P.S. (1984). “Vibroflotation compaction at Thermalito Afterbay,” Journal of Geotechnical Engineering, Vol. 110, No. 1, pp. 57–72. https://doi.org/10.1061/ (asce)0733‑9410(1984)110:1(57). Hausmann, M.R. (1990). Engineering Principles of Ground Modification, McGraw‑Hill Publishing Company, New York, 632 pp. Hayden, R.F. (1994). “Utilization of liquefaction countermeasures in North America,” Proceedings, 5th U.S. National Conference on Earthquake Engineering, Chicago, Vol. 4, pp. 149–158. Hayden, R.F. and Welch, J.P. (1991). “Design and installation of stone columns at naval air station,” in M.I. Esrig and R.C. Bachus, eds., Deep Foundation Improvement: Design, Construction, and Testing, ASTM STP 1089, American Society for Testing and Materials, pp. 172–184. https://doi.org/10.1520/stp25058s. Holtz, R.D., Kovacs, W.D., and Sheahan, T.C. (2011). An Introduction to Geotechnical Engineering, 2nd edi‑ tion, Prentice‑Hall, Englewood Cliffs, NJ. Hudson, M.B., Shao, L., Murphy, M.A., and Lew, M. (2014). “Sustainable Foundation Support of Community Memorial Hospital against Liquefaction Hazards,” Geo‑Characterization and Modeling for Sustainability, ASCE, pp. 3836–3850. https://doi.org/10.1061/9780784413272.372. Hussein, J.D. and Ali, S. (1987). “Soil improvement of the Trident submarine facility,” Soil Improvement ‑ A Ten Year Update, Geotechnical Special Publication No. 12, ASCE, New York, pp. 215–231. Iai, S., Matsunaga, Y., Morita, T., Miyoda, M., Sakurai, H., Oishi, H., Ogura, H., Ando, Y., Tanaka, Y., and Kato, M. (1994). “Effects of remedial measures against liquefaction at 1993 Kushiro‑Oki earthquake,” Proceedings, Fifth Japan‑U.S. Workshop on Earthquake Resistant Design of Lifeline Facilities and Countermeasures for Soil Liquefaction, Snowbird, Utah. Iai, S., Noda, S., and Tsuchida, H. (1988). “Basic consideration for designing the area of the ground compac‑ tion as a remedial measure against liquefaction,” Proceedings, U.S.‑Japan Joint Workshop on Remedial Measures for Liquefiable Soils, Jackson, WY. Indraratna, B. and Chu, J. (eds.) (2005). Ground Improvement ‑ Case Histories, Elsevier, Amsterdam, 1115 pp. Ishihara, K., Kawase, Y., and Nakajima, M. (1980). Liquefaction characteristics of sand deposits at an oil tank site during the 1978 Miyagiken‑Oki earthquake, Soils and Foundation, Vol. 20, No. 2, pp. 97–111. https://doi.org/10.3208/sandf1972.20.2_97. Ishihara, K. and Tsukamoto, Y. (2004). “Cyclic strength of imperfectly saturated sands and analysis of liquefac‑ tion.” Proceedings, Japan Academic Series B, Vol. 80, No. 8, pp. 372–391. Janes, H.W. (1973). “Densification of sand for drydock by Terra‑probe,” Journal of the Soil Mechanics and Foundations Division, ASCE, Vol. 99, No. SM6, pp. 451–470. https://doi.org/10.1061/jsfeaq.0001888. Karol, R.H. (2003). Chemical Grouting and Soil Stabilization, Marcel Dekker, New York, 457 pp. Keller, T.O., Castro, G., and Rogers, J.H. (1987). “Steel Creek Dam foundation densification,” Soil Improvement ‑ A Ten Year Update, Geotechnical Special Publication No. 12, ASCE, New York, pp. 136–166. Kirsch, K. and Kirsch, F. (2010). Ground Improvement by Deep Vibratory Methods, Taylor and Francis, Boca Raton, FL, 189 pp. Kishida, H. (1967). “Ultimate bearing capacity of piles driven into loose sand,” Soils and Foundations, Vol. 7, No. 3, pp. 20–29. https://doi.org/10.3208/sandf1960.7.3_20. Koutsoftas, D.C. and Kiefer, M.L. (1990). “Improvement of mine spoils in southern Illinois,” Geotechnics of Waste Fills, Special Technical Publication 1070, ASTM, pp. 153–167. https://doi.org/10.1520/stp25305s. Kramer, S.L. and Holtz, R.D. (1991). Soil Improvement and Foundation Remediation with Emphasis on Seismic Hazards, University of Washington, Seattle, Washington, DC, 106 pp. Kwon, T.H. and Ajo‑Franklin, J.B. (2013). “High‑frequency seismic response during permeability reduction due to biopolymer clogging in unconsolidated porous media,” Geophysics, Vol. 78, No. 6, pp. https://doi. org/10.1190/geo2012‑0392.1. Lawton, E.C. and Fox, N.S. (1994). “Settlement of structures supported on marginal or inadequate soils stiffened with short aggregate piers,” in A.T. Yeung and G.Y. Felio, eds., Vertical and Horizontal Deformations of Foundations and Embankments, American Society of Civil Engineers, New York, Vol. 2, pp. 962–974. Lawton, E.C., Fox, N.S., and Handy, R.L. (1994). “Control of settlement and uplift of structures using short aggregate piers.” Proceedings, In‑Situ Deep Soil Improvement, ASCE National Convention, Atlanta, Georgia, pp. 121–132. Soil Improvement for Mitigation of Seismic Hazards
+
+Ledbetter, R.H. (1985). “Improvement of liquefiable foundation conditions beneath existing structures,” Technical Report REMR‑GT‑2, U.S. Army Corps of Engineers, Waterways Experiment Station, Vicksburg, Mississippi, 51 pp. Lindqvist, L. and Petaja, J. (1981). “Experience in the evaluation of the bearing capacity of tapered friction piles in postglacial sand and silt strata,” Proceedings, 10th International Conference on Soil Mechanics and Foundation Engineering, Stockholm, Vol. 2, pp. 759–766. Liu, S., Zhang, D., and Zhu, Z. (2009). “On the uniformity of deep mixed soil‑cement columns with electri‑ cal resistivity method,” in J. Han, G. Zheng, V.R. Schaefer, and M. Huang, eds., Advances in Ground Improvement: Research to Practice in the United States and China, Geotechnical Special Publication No. 188, ASCE, New York, pp. 140–149. Lu, X., Filz, G., and Han, J. (2009). “Dynamic compaction of fill in a mountainous area,” in J. Han, G. Zheng, V.R. Schaefer, and M. Huang, eds., Advances in Ground Improvement: Research to Practice in the United States and China, Geotechnical Special Publication No. 188, ASCE, New York, pp. 281–289. Luehring, R., Snorteland, N., Mejia, L., and Stevens, M. (2001). “Liquefaction mitigation of a silty dam foun‑ dation using vibro‑stone columns and drainage wicks: a case history at salmon lake dam,” Proceedings, 21st USSD Annual Meeting and Lecture, Denver, CO. Lukas, R.G. (1995). “Dynamic compaction,” Geotechnical Engineering Circular No. 1, Publication No. FHWA‑SA‑95‑037, Federal Highway Administration, Office of Engineering, Office of Technology Applications, Washington, D.C., 97 pp. Mackiewicz, S.M. and Camp, W.M. (2007). “Ground modification: How much improvement?” Soil Improvement, Geotechnical Special Publication No. 172, ASCE, 9 pp. https://doi.org/10.1061/40916(235)14. Majchrzak, M., Lew, M., Sorenson, K., and Farrell, T. (2004). “Settlement of shallow foundations constructed over reinforced soil: Design estimates vs. measurements,” Proceedings, 5th International Conference on Case Histories in Geotechnical Engineering, Paper No. 1.64, New York, 10 pp. Marcuson, W.F. III, Cooper, S.S., and Bieganousky, W.A. (1977). “Laboratory sampling study conducted on fine sands,” Proceedings of Specialty Session 2, 9th International Conference on Soil Mechanics and Foundation Engineering, Tokyo, pp. 15–22. Marcuson, W.F. III, Hadala, P.F., and Ledbetter, R.H. (1991). “Seismic rehabilitation of earth dams,” Geotechnical Practice in Dam Rehabilitation, Geotechnical Special Publication No. 35, ASCE, pp. 430–
+
+1. https://doi.org/10.1061/(asce)0733‑9410(1996)122:1(7).
+Majdi, A., Soltani, A.S., and Litkouhi, S. (2007). “Mitigation of liquefaction hazard by dynamic compaction.” Ground Improvement, Vol. 11, No. 3, pp. 137–143. https://doi.org/10.1680/grim.2007.11.3.137. Martin, G.R., Arulmoli, K., Yang, L., Esrig, M.I., and Capelli, R.P. (1999). “Dry mix soil‑cement walls: An application for mitigation of earthquake ground deformations in soft or liquefiable soils,” Dry Deep Mix Methods for Deep Soil Stabilization, Proceedings, International Conference on Dry Deep Mix Methods for Deep Soil Stabilization, Stockholm, Sweden, pp. 27–44. Martin, J.R. and Olgun, C.G. (2006) “Liquefaction mitigation using jet‑grout columns ‑ 1999 Kocaeli earth‑ quake case history,” Ground Modification and Seismic Mitigation, Geotechnical Special Publication 152, ASCE, pp. 349–358. https://doi.org/10.1061/40864(196)47. Massarch, K.R. (1991). “Deep soil compaction using vibratory probes,” in M.I. Esrig and R.C. Bachus, eds., Deep Foundation Improvement: Design, Construction, and Testing, ASTM STP 1089, American Society for Testing and Materials, pp. 297–319. https://doi.org/10.1520/stp25067s. Mayne, P.W., Jones, J.S., and Dumas, J.C. (1984). “Ground Response to Dynamic Compaction,” Journal of Geotechnical Engineering, Vol. 110, No. 6, pp. 757–774. https://doi.org/10.1061/(asce)0733‑9410(198 4)110:6(757). Mejia, L.H. and Boulanger, R.W. (1995). “A long term test of compaction grouting for liquefaction mitiga‑ tion,” Earthquake‑Induced Movements and Seismic Remediation of Existing Foundations and Abutments, Geotechnical Special Publication No. 55, ASCE, New York, pp. 94–109. Miller, E.A. and Roycroft, G.A. (2004). “Compaction grouting test program for liquefaction control.” Journal of Geotechnical and Geoenvironmental Engineering, Vol. 130, No.4, pp. 355–361. https://doi.org/10.1061/ (asce)1090‑0241(2004)130:4(355). Mitchell, J.K. (1970). “In‑place treatment of foundation soils,” Journal of Soil Mechanics and Foundations Division, Vol. 97, No. SM1, pp. 73–110. https://doi.org/10.1061/jsfeaq.0001391. Mitchell, J.K. (1981). “Soil improvement: State‑of‑the‑art,” Proceedings, 10th International Conference on Soil Mechanics and Foundation Engineering, Stockholm, Sweden, June, Vol. 4, pp. 509–565. Mitchell, J.K. (1986). “Ground improvement evaluation by insitu tests,” Proceedings, Insitu ‘86, Geotechnical Special Publication No. 6, ASCE, pp. 221–236. Geotechnical Earthquake Engineering
+
+Mitchell, J.K. (2008), “Mitigation of liquefaction potential of silty sands,” From Research to Practice in Geotechnical Engineering, ASCE, New York, pp. 433–451. Mitchell, J.K. and Santamarina, J.C. (2005). “Biological considerations in geotechnical engineering.” Journal of Geotechnical and Geoenvironmental Engineering, Vol. 131, No. 10, pp. 1222–1233. https://doi. org/10.1061/(asce)1090‑0241(2005)131:10(1222). Mitchell, J.K. and Solymar, Z.V. (1984). “Time‑dependent strength gain in freshly deposited or densified sand,” Journal of Geotechnical Engineering, Vol. 104, No. GT7, pp. 995–1012. https://doi.org/10.1061/(asce)0 733‑9410(1984)110:11(1559). Mitchell, J.K., Baxter, C.D.P., and Munson, T.C. (1995). “Performance of improved ground during earth‑ quakes.” Soil Improvement for Earthquake Hazard Mitigation, Geotechnical Special Publication No. 49, ASCE, New York, pp. 1–36. Mitchell, J.K. and Wentz, F.L. (1991). “Performance of improved ground during the Loma Prieta earthquake,” Report No. UCB/EERC‑91/12, Earthquake Engineering Research Center, University of California, Berkeley. Moseley, M.P. and Kirsch, K. (2004). Ground Improvement, 2nd edition, Spon Press, New York. Munfakh, G.A. (1997a). “Ground improvement engineering‑the state practice: Part 1. Methods.” Ground Improvement, Vol. 1, No. 4, pp. 193–214. https://doi.org/10.1680/gi.1997.010402. Munfakh, G.A. (1997b). “Ground improvement engineering‑the practice: Part 2. Applications.” Ground Improvement, Vol. 1, No. 4, pp. 215–222. https://doi.org/10.1680/gi.1997.010403. Narsillo, G.A., Santamarina, J.C., Hebeler, T., and Bachus, R. (2009). “Blast densification: Multi‑instrumented case history,” Journal of Geotechnical and Geoenvironmental Engineering, Vol. 135, No. 6, pp. 723–734. https://doi.org/10.1061/(asce)gt.1943‑5606.0000023. Nagao, K., Azegami, Y., Yamada, S., Suemasa, N., and Katada, T. (2007). “A micro‑bubble injection method for a countermeasure against liquefaction,” Proceedings, 4th International Conference on Earthquake Geotechnical Engineering, Thessaloniki, Greece, Paper No. 1764, 12 pp. Neely, W.J. and Leroy, D.A. (1991). “Densification of sand using a variable frequency vibratory probe,” in M.I. Esrig and R.C. Bachus, eds., Deep Foundation Improvement: Design, Construction, and Testing, ASTM STP 1089, American Society for Testing and Materials, pp. 320–332. https://doi.org/10.1520/ stp25068s. Nguyen, T.V., Rayamajhi, D., Boulanger, R.W., Ashford, S.A., Lu, J., Elgamal, A., and Shao, L. (2013). “Design of DSM grids for liquefaction remediation,” Journal of Geotechnical and Geoenvironmental Engineering, Vol. 139, No. 11, pp. 1923–1933. https://doi.org/10.1061/(asce)gt.1943‑5606.0000921. O’Donnell, S.T., Rittmann, B.E., and Kavazanjian Jr, E. (2017). “MIDP: Liquefaction mitigation via microbial denitrification as a two‑stage process. I: Desaturation,” Journal of Geotechnical and Geoenvironmental Engineering, Vol. 143, No. 12, 12 pp. https://doi.org/10.1061/(asce)gt.1943‑5606.0001818. Okamura, M., Ishihara, M., and Oshita, T. (2003). “Liquefaction resistance of sand deposit improved with sand compaction piles,” Soils and Foundations, Vol. 43, No. 5, pp. 175–187. https://doi.org/10.3208/ sandf.43.5_175. Okamura, M., Ishihara, K., and Tamura, K. (2006). “Degree of saturation and liquefaction resistance of sand improved with sand compaction pile,” Journal of Geotechnical and Geoenvironmental Engineering, Vol. 132, No. 2, pp. 258–264. https://doi.org/10.1061/(asce)1090‑0241(2006)132:2(258). Pestana, J.M., Hunt, C.E., and Goughnour, R.R. (1997). “FEQDrain: A finite element computer program for the analysis of the earthquake generation and dissipation of pore water pressure in layered sand deposits with vertical drains,” Report No. EERC 97‑17, Earthquake Engineering Res. Ctr., UC‑Berkeley, CA. Porbaha, A., Weatherby, D., Macnab, A., Lambrechts, J., Burke, G., Yang, D., and Puppala, A.J. (2005). “American practice of deep mixing technology,” Proceedings, International Conference on Deep Mixing‑Best Practice and Recent Advances, Stockholm. Powers, J.P. (1992). Construction Dewatering ‑ New Methods and Applications, John Wiley & Sons, Inc., New York, 492 pp. Powers, P., Corwin, A.B., Herridge, C.J., Schmall, P.C., and Kaeck, W.E. (2007). Construction Dewatering and Groundwater Control: New Methods and Applications, 3rd edition, Wiley, Hoboken, NJ, 638 pp. Priebe, H.J. (1991). “The prevention of liquefaction by vibro replacement,” Proceedings, International Conference on Earthquake Resistant Construction, Berlin. Proto, C.J., DeJong, J.T., and Nelson, D.C. (2016). “Biomediated permeability reduction of saturated sands,” Journal of Geotechnical and Geoenvironmental Engineering, Vol. 142, No. 12, 11 pp. https://doi. org/10.1061/(asce)gt.1943‑5606.0001558. Robinsky, E.I. and Morrison, D.E. (1964). “Sand displacement and compaction around model friction piles,” Canadian Geotechnical Journal, Vol. 1, No. 2, pp. 81–91. https://doi.org/10.1139/t64‑002. Soil Improvement for Mitigation of Seismic Hazards
+
+Rollins, K., Anderson, J.K.S., Goughnour, R.R., and McCain, A.K. (2004). “Liquefaction hazard mitigation using vertical composite drains,” Proceedings, 13th World Conference on Earthquake Engineering, Vancouver, B.C., Paper No. 2880, 15 pp. Rollins, K.M., Price, B.E., Dibb, E., and Higbee, J.B. (2006). “Liquefaction mitigation of silty sands in utah using stone columns with wick drains,” Ground Modification and Seismic Mitigation, Geotechnical Special Publication 152, ASCE, pp. 343–348. https://doi.org/10.1061/40864(196)46. Rollins, K.M., Quimby, M., Hohnson, S.R., and Price, B. (2009). “Effectiveness of stone columns for liquefac‑ tion mitigation of silty sands with and without wick drains,” in J. Han, G. Zheng, V.R. Schaefer, and M. Huang, eds., Advances in Ground Improvement: Research to Practice in the United States and China, Geotechnical Special Publication No. 188, ASCE, pp. 160–169. https://doi.org/10.1061/41025(338)17. Ryan, C.R. and Jasperse, B.H. (1989). “Deep soil mixing at the Jackson Lake dam,” Proceedings, Foundation Engineering: Current Principles and Practices, ASCE Specialty Conference, Ithaca, New York, pp. 1–14. Salley, J.R., Foreman, B., Baker, W.H., and Henry, J.F. (1987). “Compaction grouting test program Pinopolis West Dam,” Soil Improvement ‑ A Ten Year Update, Geotechnical Special Publication No. 12, ASCE, New York, pp. 245–269. San Pablo, A.C.M, Lee, M., Graddy, C.M.R., Kolbus, C.M., Khan, M., Zamani, A., Martin, N., Acuff, C., DeJong, J.T., Gomez, M.G., and Nelson, D.C. (2020). “Meter‑scale bio‑cementation experiments to advance process control and reduce impacts: Examining spatial control, ammonium by‑product removal, and chemical reductions,” Journal of Geotechnical and Geoenvironmental Engineering, Vol. 146, No. 11, 14 pp. https://doi.org/10.1061/(asce)gt.1943‑5606.0002377. Santamarina, J.C., Kleinand, K.A., and Fam, M.A. (2001). Soils and Waves, John Wiley & Sons, New York, 488 pp. Schaefer, V., Abramson, L.W., Hussin, J.D., and Sharp, K.D. (1997). Ground Improvement, Ground Reinforcement, Ground Treatment: Developments 1987–1997, Geotechnical Special Publication No. 69, ASCE, New York. Schaefer, V.R., Berg, R.R., Collin, J.G., Christopher, B.R., DiMaggio, J.A., Filz, G.M., Bruce, D.A., and Ayala, D. (2017a). “Ground modification methods ‑ Reference manual, Volume 1,” Geotechnical Engineering Circular No. 13, Report No. FHWA‑NHI‑16‑027, Federal Highway Administration, Washington, DC, 386 pp. Schaefer, V.R., Berg, R.R., Collin, J.G., Christopher, B.R., DiMaggio, J.A., Filz, G.M., Bruce, D.A., and Ayala, D. (2017b). “Ground modification methods ‑ Reference manual, Volume 2,” Geotechnical Engineering Circular No. 13, Report No. FHWA‑NHI‑16‑027, Federal Highway Administration, Washington, DC, 542 pp. Schmertmann, J.H. (1986). “CPT/DMT QC of ground modification at a power plant,” Proceedings, In Situ ‘86, ASCE Specialty Conference, Blacksburg, Virginia, pp. 985–1001. https://doi.org/10.1016/0148‑9062 (88)90325‑7. Seed, H.B. and Booker, J.R. (1976). “Stabilization of potentially liquefiable sand deposits using gravel drain systems,” Report No. EERC‑76‑10, Earthquake Engineering Research Center, University of California, Berkeley, Seed, H.B. and Booker, J.R. (1977). “Stabilization of potentially liquefiable sand deposits using gravel drains, Journal of the Geotechnical Engineering Division, Vol. 103, No. GT7, pp. 757–768. https://doi. org/10.1061/ajgeb6.0000453. Seko, T. and Tobe, K. (1977). “An experimental investigation of sand sampling,” Proceedings of Specialty Session 2, 9th International Conference on Soil Mechanics and Foundation Engineering, Tokyo, pp. 37–42. Semprich, S. and Stadler, G. (2003). “Grouting in geotechnical engineering,” in Smoltczyk, U., ed., Geotechnical Engineering Handbook, 2: Procedures, Ernst & Sohn, Berlin, pp. 57–90. Senneset, K. and Nestvold, J. (1992). “Deep compaction by vibro wing technique and dynamic compaction,” Grouting, Soil Improvement, and Geosynthetics, Geotechnical Special Publication No. 30, ASCE, New York, Vol. 2, pp. 889–901. Serridge, C.J. and Synac, O. (2006). “Application of the Rapid Impact Compaction (RIC) technique for risk mitigation in problematic soil,” Proceedings, 10th IAEG International Congress, Nottingham, United Kingdom. Shanklin, D., Talbot, J., and Rademacher, K., eds. (2000). Constructing and Controlling Compaction of Earth Fills, Special Technical Publication 1384, ASTM International, Washington, DC, 341 pp. Shao, L. (2009). “Soil improvement to support a warehouse building over difficult soils,” in J. Han, G. Zheng, V.R. Schaefer, and M. Huang, eds., Advances in Ground Improvement: Research to Practice in the United States and China, Geotechnical Special Publication No. 188, ASCE, pp. 207–216. https://doi. org/10.1061/41025(338)22. Geotechnical Earthquake Engineering
+
+Shao, L., Taylor, D., and Koelling, M. (2013). “Stone columns and earthquake drain liquefaction mitiga‑ tion for federal center south in Seattle, Washington,” Proceedings, Stability and Performance of Slopes and Embankments III, Geotechnical Special Publication No. 231, pp. 864–878. https://doi. org/10.1061/9780784412787.089. Shuwang, Y., Wei, D., and Juan, C. (2009). “Use of explosion in improving highway foundation,” in J. Han, G. Zheng, V. R. Schaefer, and M. Huang, eds., Advances in Ground Improvement: Research to Practice in the United States and China, Geotechnical Special Publication No. 188, ASCE, pp. 290–297. https://doi. org/10.1061/41025(338)31. Siegel, T.C. (2013). “Liquefaction mitigation synthesis report,” Journal of the Deep Foundations Institute, Vol. 7, No. 1, pp. 13–31. https://doi.org/10.1179/dfi.2013.002. Singh, S., Seed, H.B., and Chan, C.K. (1979). “Undisturbed sampling and cyclic load testing of sands,” Report No. UCB/EERC‑79/33, Earthquake Engineering Research Center, University of California, Berkeley, 131 pp. Slocombe, B.C. (2012). “Dynamic compaction,” Ground Improvement, 3rd edition, K. Kirsch and A. Bell, eds., Taylor & Francis Group, Boca Raton, FL, pp. 57–85. Solymar, Z.V. and Reed, D.J. (1986). “A comparison of foundation compaction techniques,” Canadian Geotechnical Journal, Vol. 23, No. 3, pp. 271–280. https://doi.org/10.1139/t86‑040. Stark, T.D., Axtell, P.J., Lewis, J.R., Dillon, J.C., Empson, W.B., Topi, J.E., and Walberg, R.C. (2009). “Soil inclusions in jet grout columns,” DFI Journal, Deep Foundations Institute, Vol. 3, No. 1, pp. 33–44. https://doi.org/10.1179/dfi.2009.004. Stilley, A.N. (1982). “Compaction grouting for foundation stabilization,” Proceedings, ASCE Specialty Conference on Grouting in Geotechnical Engineering, New Orleans, pp. 923–937. Taki, D. and Yang, D.S. (1991). “Soil‑cement mixed wall technique,” Geotechnical Special Publication No. 27, ASCE, Vol. 1, pp. 298–309. Terashi, M. and Juran, I. (2000). “Ground improvement‑State of the art,” Proceedings, GeoEng 2000, 19–24 November 2000, Melbourne, Australia, Volume 1: Invited Papers, Technomic Publishing Company, Inc., Lancaster, PA, pp. 461–519. Tokimatsu, K., Mizuno, H., and Kakurai, M. (1996). “Building damage associated with geotechnical problems.” Soils and Foundations, Special Issue on Geotechnical Aspects of the January 17 1995 Hyogoken‑Nanbu Earthquake, pp. 219–234. https://doi.org/10.3208/sandf.36.special_219. Towhata, I. (2008). “Mitigation of liquefaction‑induced damage,” W. Wu and R. I. Borja, eds., Geotechnical Earthquake Engineering, Springer, Berlin, 684 pp. https://doi.org/10.1007/978‑3‑540‑35783‑4_26. Tsukamoto, Y., Ishihara, K., Nakazawa, H., Kamada, K., and Huang, Y.N. (2002). “Resistance of partly saturated sand to liquefaction with reference to longitudinal and shear wave velocities.” Soils and Foundations, Vol. 42, No. 6, pp. 93–104. https://doi.org/10.3208/sandf.42.6_93. Van Court, N.W.A. and Mitchell, J.K. (1995). “New insights into compaction of loose, saturated, cohesionless soils,” Soil Improvement for Earthquake Hazard Mitigation, ASCE, Geotechnical Special Publication No. 49, pp. 51–65. Van Impe, W.F. (1989). Soil Improvement Techniques and Their Evolution, A.A. Balkema, Rotterdam, 125 pp. van Paassen, L.A. (2011). “Bio‑mediated ground improvement: from laboratory experiment to pilot appli‑ cations,” Proceedings, Geo‑Frontiers 2011: Advances in Geotechnical Engineering, ASCE, pp. 4099–
+
+1. https://doi.org/10.1061/41165(397)419.
+van Paassen, L.A., Pham, V., Mahabadi, N., Hall, C.A., Stallings, E., and Kavazanjian, E. (2017). “Desaturation via biogenic gas formation as a ground improvement technique,” Proceedings, Pan‑American Conference on Unsaturated Soil Mechanics, Geotechnical Special Publication 300, ASCE, pp. 244–256. https://doi. org/10.1061/9780784481677.013. Wang, J.L., Wang, D.F., and Wang, J.W. (2009). “State of jet grouting in Shanghai,” in J. Han, G. Zheng, V.R. Schaefer, and M. Huang, eds., Advances in Ground Improvement: Research to Practice in the United States and China, Geotechnical Special Publication No. 188, ASCE, pp. 179–188. https://doi. org/10.1061/41025(338)19. Warner, J.A. (2003). “Fifty years of low mobility grouting. Grouting and ground treatment,” Proceedings, Third International Conference, L.F. Johnsen, D.A. Bruce, and M.J. Byle, eds., Geotechnical Special Publication No. 120, Geo‑Institute of ASCE, New Orleans, LA, pp. 1–24. https://doi.org/10.1061/40663(2003)1. Wehr, W.J. (2005). “Influence of the carbonate content of sand on vibrocompaction,” Proceedings, 6th International Conference on Ground Improvement Techniques, Coimbra, Portugal, July. Welsh, J.P. (1986). “Insitu testing for ground modification techniques,” Proceedings, Insitu ‘86, Geotechnical Special Publication No. 6, ASCE, pp. 322–335. Soil Improvement for Mitigation of Seismic Hazards
+
+Welsh, J.P. (1987). Soil Improvement ‑ A Ten Year Update, Geotechnical Special Publication No. 12, ASCE, New York, 331 pp. Wheeler, S.J. (1988). “A conceptual‑model for soils containing large gas bubbles.” Geotechnique, Vol. 38, No. 3, pp. 389–397. https://doi.org/10.1680/geot.1988.38.3.389. Whitman, W.B., Coleman, D.C., and Wiebe, W.J., (1998). “Prokaryotes: the unseen majority,” Proceedings of the National Academy of Sciences, Vol. 95, pp. 6578–6583. https://doi.org/10.1073/pnas.95.12.6578. Wissmann, K.J., van Ballegooy, S., Metcalfe, B.C., Dismuke, J.N., and Anderson, C.K. (2015). “Rammed aggre‑ gate pier ground improvement as a liquefaction mitigation method in sandy and silty soils,” Proceedings, 6th International Conference on Earthquake Geotechnical Engineering, Christchurch, NZ, 9 pp. Wu, G. (1995). “A dynamic response analysis of saturated granular soils to blast loads using a single phase model,” Research Report, Natural Sciences and Engineering Research Council (Canada), December, 1995. Xia, H., and Hu, T. (1991). “Effects of saturation and back pressure on sand liquefaction.” Journal of Geotechnical Engineering, Vol. 117, No. 9, pp. 1347–1362. https://doi.org/10.1061/(asce)0733‑9410(1 991)117:9(1347). Yang, D.S., Scheibel, L.L., Lobedan, F. and Nagata, C. (2001). “Oakland airport roadway project,” Soil Mixing Specialty Seminar, 26th DFI Annual Conference, St. Louis, MO, pp. 55–71. Yasui, S., Yokozawa, K., Yasuoka, N., and Kondo, H. (2005). “Recent technical trends in dry mixing (DJM) in Japan,” Proceedings, International Conference on Deep Mixing‑Best Practice and Recent Advances, Stockholm. Yegian, M.K., Eseller‑Bayat, E., Alshawabkeh, A. and Ali, S. (2007). “Induced partial saturation for liquefaction mitigation: Experimental investigation,” Journal of Geotechnical and Geoenvironmental Engineering, Vol. 133, No. 4, pp. 372–380. https://doi.org/10.1061/(asce)1090‑0241(2007)133:4(372). Yoshimi, Y., Tanaka, K., and Tokimatsu, K. (1989). “Liquefaction resistance of a partially saturated sand,” Soils and Foundations, Vol. 29, No. 3, pp. 157–162. https://doi.org/10.3208/sandf1972.29.3_157. Zacher, E.G. and Graf, E.D. (1979). “Chemical grouting of sand for earthquake resistance,” Civil Engineering, ASCE, New York, Vol. 49, No. 1, pp. 67–69.
+
+# Appendix A
+
+# Vibratory Motion
+
+### A.1 INTRODUCTION
+
+Many different types of dynamic loading can induce vibratory motion in soils and structures. To solve problems involving the dynamic response of soils and structures, it is necessary to be able to describe dynamic events. They can be described in different ways, and the geotechnical earthquake engineer must be familiar with each. This appendix provides a brief description of vibratory motion and introduces the nomenclature and mathematical forms by which it is usually described.
+
+### A.2 TYPES OF VIBRATORY MOTION
+
+Vibratory motion can be divided into two broad categories: periodic motion and nonperiodic motion. Periodic motions are those that repeat themselves at regular intervals of time. Mathematically, a motion, u(t), is periodic if there exists some period, Tf, for which u(t + Tf) = u(t) for all t. The simplest form of periodic motion is simple harmonic motion in which displacement varies sinusoidally with time. Nonperiodic motions, which do not repeat themselves at constant intervals, can result from impulsive loads (e.g., explosions or falling weights) or from longer‑duration transient loadings (e.g., earthquakes or traffic). Examples of periodic and nonperiodic motions are shown in Figure A.1. Some forms of periodic motion (e.g., Figure A.1b) may appear to be much more complex than simple harmonic motion, but with the use of mathematical techniques described later in this appen‑ dix, they can be expressed as the sum of a series of simple harmonic motions. Even transient, nonperiodic motions such as those of Figure A.1c and d can be represented as periodic motions by assuming that they repeat themselves after some “quiet” zone during which no motion occurs (Figure A.2). Using this technique, even a transient motion can also be expressed as a periodic motion. This becomes a very powerful tool for the dynamic analysis of linear systems, where the
+
+FIGURE A.1 Periodic and nonperiodic motions: (a) simple harmonic motion; (b) general periodic motion; (c) pulse‑like motion (response to impact loading); and (d) earthquake ground motion. Appendix A
+
+FIGURE A.2 Representation of a transient motion as a periodic motion using an artificial quiet zone. The motion repeats itself indefinitely at period Tf.
+
+principle of superposition allows the response to transient loading to be expressed as the sum of the responses to a series of simple harmonic loads.
+
+### A.2.1 Simple Harmonic Motion
+
+Simple harmonic motion can be characterized as a sinusoidal motion at constant frequency. Its most important features can be defined by three quantities: amplitude, frequency, and phase. Simple har‑ monic motion can be described in different ways, two of which will be presented in the following sections: using trigonometric notation or using complex notation. Both notations are equivalent, and both are commonly used in geotechnical earthquake engineering.
+
+### A.2.2 Trigonometric Notation for Simple Harmonic Motion
+
+In its simplest form, simple harmonic motion can be expressed in terms of a displacement, u(t), using trigonometric notation: for example,
+
+= ω + φ ( ) sin( )
+
+### (A.1)
+
+u t A t
+
+where A represents the displacement amplitude, ω the circular frequency, and ϕ the phase angle. The displacement history of this simple harmonic motion is shown in Figure A.3. The amplitude, A, is occasionally referred to as the single amplitude to distinguish it from the double amplitude (which represents the peak‑to‑peak displacement) referred to in some of the older geotechnical earthquake engineering literature. The circular frequency describes the rate of oscillation in terms of radians per unit time, where 2π radians correspond to one cycle of motion. The phase angle describes the amount of time by which the peaks (and zero points) are shifted from those of a pure sine function (i.e., a sine function with zero phase shift), as illustrated in Figure A.4. The displacement will be
+
+FIGURE A.3 Time history of simple harmonic displacement. Appendix A
+
+FIGURE A.4 Influence of phase angle on position of sinusoid.
+
+zero when ωt + ϕ = 0 or, consequently, when t = − ϕ/ω. A positive phase angle indicates that the motion leads the pure sine function; it lags the pure sine function if the phase angle is negative. The concept of circular frequency is more easily understood by considering the motion of the rotating vector of length A shown in Figure A.5. If the vector rotates counterclockwise about its origin at an angular speed, ω, from its initial horizontal position, the displacement, u(t), is given by the vertical component of the vector
+
+= ω ( ) sin
+
+### (A.2)
+
+u t A t
+
+The vertical component increases to a maximum value at ωt = π/2, then decreases through zero (at ωt = π) and reaches its maximum negative value at ωt= 3π/2. It continues back to its original posi‑ tion and then repeats the entire process. The time required for the rotating vector to make one full revolution is the time required for one cycle of the motion. This time is referred to as the period of vibration, T, and is related to the circular frequency by
+
+π angular change for one revolution = =
+
+### (A.3)
+
+T ω angular speed
+
+Another common measure of the frequency of oscillation is expressed in terms of the number of cycles that occur in a particular period of time: Since the period of vibration represents the time per cycle, the number of cycles per unit time must be its reciprocal, i.e.,
+
+FIGURE A.5 Rotating vector representation of simple harmonic motion with zero phase angle. Appendix A
+
+ω = = π
+
+### (A.4)
+
+f T which is usually expressed in cycles per second or hertz (abbreviated Hz). Simple harmonic motion can also be described as the sum of a sine function and a cosine func‑ tion, i.e.,
+
+= ω + ω ( ) cos sin
+
+### (A.5)
+
+u t a t b t
+
+As shown in Figure A.6, the sum of the sine and cosine functions is also a sinusoid that oscillates at circular frequency, ω. However, its amplitude is not the simple sum of the amplitudes of the sine and cosine functions, and its peaks do not occur at the same times as those of the sine or cosine functions. The rotating vector representation of this function is illustrated in Figure A.7. Since θ = θ + ° , the rotating vector of length, a, must be 90° ahead of the vector of length, b. cos sin( 90 ) ω and sin ω , respectively. As illustrated The vertical components of vectors, a and b, are cos a t b t in Figure A.7a, the total value of u(t) is given by Equation (A.5). The motion can be expressed in a different form by considering the resultant of vectors a and b, as shown in Figure A.7b. The length 1 a b − + φ = and it will lead b by an angle tan ( / ) . Accordingly, the of the resultant will be a b vertical component of the resultant is [Equation (A.1)]:
+
+= ω + φ ( ) sin( ) u t A t
+
+FIGURE A.6 Summation of sine and cosine functions of the dame frequency produces a sinusoid of the same frequency. Amplitude and phase of the sinusoid depends on the amplitudes of the sine and cosine functions.
+
+FIGURE A.7 Rotating vector representation of simple harmonic motion. Sum of vertical components of sine and cosine component in (a) is equal to vertical component of resultant of sine and cosine components in (b). Appendix A
+
+#### 1 a b
+
+− = + φ = where is the amplitude and tan ( / ) is the phase angle of the motion. A a b Accordingly, Equations (A.1) and (A.5) are equivalent representation of sinusoidal motion.
+
+### A.2.3 Complex Notation for Simple Harmonic Motion
+
+Trigonometric descriptions of simple harmonic motion use familiar functions that are easy to visu‑ alize. For many dynamic analyses, however, the use of trigonometric notation leads to very long and awkward equations. These analyses become much simpler when motions are described using com‑ plex notation (the word “complex” indicates that complex variables are used, not that the notation is particularly complicated). Complex notation can be derived directly from trigonometric notation using Euler’s law:
+
+α = α + α i cos sin
+
+### (A.6)
+
+e i
+
+i = −. The quantity ei𝛼 is a complex number; it has two parts, a where i is the imaginary number real part and an imaginary part, which can be written as ( ) = α α ei Re cos (A.7a)
+
+( ) = α α ei Im sin (A.7b)
+
+Euler’s law can be used to show that
+
+α − α α − α + − i i i i i e e e e α = α = − cos sin
+
+### (A.8)
+
+Substituting these expressions into the general expression for harmonic motion (Equation A.5) gives
+
+ω − ω ω − ω + − i t i t i t i t a e e bi e e = − ( ) u t
+
+### (A.9)
+
+− + a ib e a ib e − ω ω = + i t i t
+
+This form of the displacement may be visualized as a pair of rotating vectors in an Argand diagram. An Argand diagram represents a complex number graphically as a vector with orthogonal real and imaginary components. Although usually drawn with the real axis oriented horizontally, the rotated Argand diagram of Figure A.8a will help illustrate how this complex notation describes simple har‑ monic motion. In the Argand diagram, the term eiωt is represented by a vector of unit length rotating clockwise at an angular speed, ω. The term e−iωt = ei(−ω)t therefore can be represented by a unit vector rotating clockwise at angular speed, −ω, which is equivalent to rotating counterclockwise at angular speed, ω. Accordingly, the first term in Equation (A.9) can be represented by a vector of real part, a/2, and imaginary part, −b/2, rotating clockwise at ω, and the second term by another vector with the same real part, but an imaginary part, b/2, rotating counterclockwise at ω. The length of each + = + vector is ( / 2) ( / 2) . As shown in Figure A.8a, the sum of the vectors is real a b a b (the imaginary parts always cancel each other). Figure A.8b shows how the vector sum describes a and circular frequency ω. = + simple harmonic motion of amplitude A a b Appendix A
+
+FIGURE A.8 (a and b) Illustration of how counterrotating vectors of length A/2 produce simple harmonic motion. Note that the phase angles are measured from the horizontal axis in the direction of vector rotation.
+
+### A.2.4 Other Measures of Motion
+
+Displacement is not the only parameter that can be used to describe vibratory motion. In fact, other parameters are often of greater interest. If the variation of displacement with time is known, how‑ ever, the other parameters of interest can be determined. Differentiating the expression for simple harmonic displacement produces expressions for velocity and acceleration:
+
+= ω + φ ( ) sin( ) displacement (A.10a) u t A t
+
+du = = ω ω + °  ( ) cos( ) velocity (A.10b) u t A t dt
+
+d u = = − ω ω + φ = − ω  ( ) sin( ) acceleration (A.10c) u t A t u dt Note that when the displacement amplitude is A, the velocity amplitude is ωA, and the acceleration amplitude is ω2A. Thus, frequency and the displacement, velocity, and acceleration amplitudes of a harmonic motion are related in such a way that knowledge of the frequency and any one amplitude, or knowledge of any two amplitudes, allows calculation of all other quantities. This important and useful property of harmonic motions allows the use of tri­partite plots, in which a harmonic motion can be completely described in terms of frequency and displacement, velocity, and acceleration amplitudes by a single point. Since earthquake motions can be represented as the sum of a series of harmonic motions (Section A.3), tripartite plots, an example of which is shown in Figure A.9, can be used to describe earthquake ground motions. Examination of Equation (A.10) reveals that in addition to having different amplitudes, the dis‑ placement, velocity, and acceleration are out of phase with each other (Figures A.10 and A.11). The velocity can be seen to lead the displacement by π/2 radians, or 90°, and the acceleration to lead the velocity by the same amount. The relationships between displacement, velocity, and acceleration for harmonic motions, in both trigonometric and complex notation, are (Figure A.11) ω = ω = Aei t ( ) sin ( ) (A.11a) u t A t u t ω = ω ω = ω ω + π = ω Aei t   ( ) cos sin( / 2) ( ) (A.11b) u t A t A t u t i ω ω = − ω ω = ω ω + π = ω = − ω i t i t   ( ) sin sin( ) ( ) (A.11c) u t A t A t u t i Ae Ae Appendix A
+
+FIGURE A.9 Tripartite plot for harmonic motion. Point at center describes harmonic motion at a period of 0.65 sec with displacement amplitude of 0.8 in., velocity amplitude of 8.0 in./s, and acceleration amplitude of 0.20g. (After Richart et al., 1970). Appendix A
+
+FIGURE A.10 Displacement, velocity, and acceleration histories. Note that acceleration leads velocity by one‑quarter cycle and displacement by one‑half cycle.
+
+FIGURE A.11 Rotating vector representation of displacement, velocity, and acceleration Note how accelera‑ tion leads velocity by 90° and displacement by 180°.
+
+### A.3 FOURIER SERIES
+
+While studying heat flow problems in the early nineteenth century, the French mathematician J.B.J. Fourier showed that any periodic function that meets certain conditions can be expressed as the sum of a series of sinusoids of different amplitude, frequency, and phase. Since the conditions for existence of a Fourier series are nearly always met for functions that accurately describe physical processes, it is an extraordinarily useful tool in many branches of science and engineering. Appendix A
+
+FIGURE A.12 Process by which Fourier series representation of complicated loading can allow relatively simple solutions for harmonic loading to be used to produce the total response: (a) time series of loading, (b) representation of loading history as sum of series of harmonic loads, (c) calculation of response for each harmonic load, (d) representation of response as sum of series of harmonic responses, and (e) summation of harmonic responses to produce time series of response.
+
+Geotechnical earthquake engineering is no exception. By breaking down a complicated loading function such as that imposed by an earthquake ground motion into the sum of a series of simple harmonic loading functions, the principle of superposition allows available solutions for harmonic loading to be used to compute the total response (provided that the system is linear), as illustrated schematically in Figure A.12.
+
+### A.3.1 Trigonometric Form
+
+Since a Fourier series is simply a summation of simple harmonic functions, it can be expressed using either trigonometric notation or complex notation. The general trigonometric form of the Fourier series for a function of period, Tf, is
+
+∞
+
+# n∑
+
+( ) = + ° + ° ( ) cos sin
+
+### (A.12)
+
+x t a a t b t n n n n =
+
+where the Fourier coefficients are
+
+Tf ∫ = ( ) a x t dt T f
+
+Tf ∫ = ° ( )cos a x t t dt n n T f
+
+Tf ∫ = ° ( )sin b t dt x t n n T f
+
+ω = π . The term a0 represents the average value of x(t) over the range t = 0 to t = Tf; and / n T n f its value is zero in many geotechnical earthquake engineering applications. Note that the fre‑ ω , are not arbitrary; rather, they are evenly spaced at a constant frequency increment, quencies, n ° ω = π / Tf . Appendix A
+
+### Example A.1
+
+The Fourier coefficients are not difficult to calculate for simple functions. Consider the square wave function shown in Figure EA.1. Over its period, Tf, the square wave is described by  T f + < ≤  A t   T T f f = − < ≤ ( ) x t A t    T f + < ≤ A t T  f  Since the average value of x(t) is easily seen to be zero, the coefficient a0 = 0. The value of a1 can be computed as T f ∫ = ° ( )cos x t t dt a T f
+
+  /4 T T T /4 f f f ∫ ∫ ∫   = ° − ° + ° cos cos cos A t dt A t dt A t dt   T f   /4 T T / /4 / ° ° ° °   sin 3 sin 3     T T T T A f f f f ° = − − + − sin sin sin T      f ° T f
+
+Substituting 𝜔1Tf = 2π yields A A = ° + + = ° (1 1) 1a
+
+Repeating for all n yields
+
+ + A = … 1,5,9, n  π n  − A  = = … 3,7,11, a n  n π n  = even integers n  
+
+n = all b n
+
+### FIGURE EA.1 Square‑Wave function.
+
+Appendix A
+
+so the Fourier series is   A = π ω − ω + ω − ω +  ( ) cos
+
+#### 3 cos3
+
+#### 5 cos5
+
+7 cos 7  x t t t t t  where ω1 = 2π/Tf. The sine terms are all zero because the square wave, like the cosine function, is an even function [i.e., one for which f(t) = f(−t)]. For an odd function [f(t) = −f(−t)], the cosine terms are zero. For a function that is neither even nor odd, the Fourier series will contain both sine and cosine terms.
+
+The Fourier series represents a function exactly only for n = ° . If the series is truncated at some finite value of n, the Fourier series only approximates the function. For many functions, however, the approximation can be quite good even when n is relatively small. This characteristic is often used to great advantage in dynamic analyses of soils and structures. From the equivalence of Equations (A.1) and (A.5), it is apparent that the Fourier series can also be expressed as ∞
+
+# 1∑
+
+( ) = + ω + φ ( ) sin
+
+### (A.13)
+
+x t c c t n n n = n − . In this form, cn and ϕn are the amplitude and = + φ = tan ( / ) where c0 = a0, c , and a b a b n n n n n n phase, respectively, of the nth harmonic. A plot of cn versus ωn is known as a Fourier amplitude spectrum; a plot of ϕn versus ωn gives a Fourier phase spectrum. Fourier amplitude spectra are very useful in geotechnical earthquake engineering – as discussed in Chapter 3, they effectively describe the frequency content of an earthquake motion.
+
+### A.3.2 Exponential Form
+
+The Fourier series can also be expressed in exponential form. Substituting Equations (A.8) into (A.12a) for all n gives ∞ ∑ − + a ib e a ib e   ω − ω n n n n = + + i t i t ( )
+
+### (A.14)
+
+x t a   n n = n
+
+Defining new Fourier coefficients, = * c a − a ib n n = *c n
+
++ a ib n n = *c − n
+
+where the * indicates the complex nature of the coefficient, the Fourier series can be rewritten as ∞
+
+# ∑(
+
+) − ω ω = + + * * * i t i t ( )
+
+### (A.15)
+
+x t c c e c e n n − n n = n ω = − ω Since , the limits of summation can be changed to write the Fourier series in the more − n n compact form ∞ ∑ ω = + * * i t ( )
+
+### (A.16)
+
+x t c c e n n =−∞ n Appendix A
+
+The complex Fourier coefficients, *cn, can be determined directly from x(t) as
+
+T f ∫ − ω = * i t
+
+### (A.17)
+
+( ) c x t e dt n n T f
+
+### A.3.3 Discrete Fourier Transform
+
+In many geotechnical earthquake engineering applications, loading or motion parameters are described by a finite number of data points rather than by an analytical function. In such cases, the Fourier coefficients are obtained by summation rather than integration. For a variable x(tk), k = 1:N, where tk = k∆t, the discrete Fourier transform (DFT) is given by
+
+N ∑ − ° ° = ∆ i t ( ) ( ) (A.18a) X t x t e n k n k = k
+
+ω = ∆ ω = π ∆. Using Euler’s law, the DFT can also be written as where / n n N t n
+
+N ∑ [ ] ° = ∆ ° − ° ( ) ( )cos ( )sin (A.18b) X t x t t ix t t n k n k k n k = k
+
+Note that the Fourier coefficients of the DFT have units of the original variable multiplied by time. ( ) that are dependent on record ω The DFT computed using Equation (A.18) produces amplitudes X n ∆× length t ; i.e., increasing the length of the record increases amplitudes. Fourier coefficients N ∆ on the right side of Equation (A.18) independent of record length can be computed by replacing t N . This adjustment changes the units of X(ωn) to the units of the original variable with ∆ ∆× /t t multiplied by the square root of time. The DFT can also be inverted; i.e., a set of data spaced at equal frequency intervals, Δω, can be expressed as a function of time, using the inverse discrete Fourier transform (IDFT):
+
+N ∑ ° = ∆ ° ° i t ( ) ( ) (A.19a) x t X e n k k n π = n or N ∑ ° = ∆ [ ] ° ° ° ° + ( ) ( )cos ( )sin (A.19b) x t X t iX t k n n k n n k π = n Either of these expressions can easily be programmed on a computer; since n takes on N different values, the summation operation will be performed N times. The time required for computation of a DFT (or IDFT), therefore, is proportional to N2. If Fourier coefficients independent of record length are computed by dividing the right side of Eq. (18) by ∆t × N , then the right side of Eq. (19) would need to be multiplied by ∆t × N to recover the same time series.
+
+### a.3.4 FaSt FouRieR tRanSFoRm
+
+The DFT was developed long before computers were available, and its use, for even modest values of N, was extremely labor‑intensive. As early as 1805, the beginning of a more efficient approach to the DFT was described (Brigham, 1974). As digital computers were developed in the 1960s, Cooley and Tukey (1965) developed a computational algorithm for the case where N is a power of 2 that has Appendix A
+
+become known as the fast Fourier transform (FFT). By performing repeated operations on groups that start with a single number and increase in size by a factor of 2 at each of j stages (where N = 2j), the time required to complete the transform is proportional to N log 2N. Consequently, the FFT is much more efficient than the DFT. For example, at N = 2,048, the FFT is more than 180 times faster than the DFT. The inverse fast Fourier transform (IFFT) operates with equal speed.
+
+### A.3.5 Power Spectrum
+
+The Fourier amplitude spectrum illustrates how the amplitude of a quantity varies with frequency. This information can also be expressed in terms of power. The power of a signal, x(t), that can be expressed in the form of Equations (A.12) or (A.13), is defined as
+
+( ) ω = + = ( )
+
+### (A.20)
+
+P a c b n n n n
+
+Note that this definition of power can be applied to any signal (it is not related to mechanical pro‑ cesses in which force times velocity = power). Power can be plotted as a function of frequency to obtain a power spectrum. The total power of the signal is the same whether it is computed in the time domain or the frequency domain:
+
+T ω ∞ f n ° ∫ ∫ [ ] ω = = ω Total power = ( ) ( )
+
+### (A.21)
+
+P x t dt c d n n = n
+
+Power spectra can be used to describe earthquake‑induced ground motions.
+
+### A.4 TIME‑FREQUENCY REPRESENTATION OF VIBRATORY MOTION
+
+A Fourier amplitude spectrum illustrates how the amplitude of a ground motion is distributed with respect to frequency, just as a ground motion time series illustrates the variation of amplitude with time. Fourier‑based methods, however, operate on the entire time series and therefore represent the average frequency content over the entire motion. Earthquake ground motions, however, are generally non‑stationary, i.e., their amplitudes and frequency contents vary with time. For exam‑ ple, first‑arriving p‑waves are generally richer in high frequencies than s‑waves that arrive after p‑waves. Surface waves, which usually arrive somewhat after s‑waves, tend to be richer in low frequency motions. In some cases, it is useful to be able to track the evolving frequency content, as well as amplitude, of a ground motion. Time‑frequency analyses (Cohen, 1995; Smith, 1999) allow both to be quantified. A number of techniques for time‑frequency decomposition are available but three have most commonly been used to characterize earthquake ground motions. By multiplying a recorded motion by a window (in time) function that is non‑zero for only a short‑time interval, a Fourier transform can be computed on the windowed motion, and the frequency content of the motion within the win‑ dow can be determined. Plotting its amplitude vs. both frequency and the time corresponding to the center of the window produces a short‑time Fourier transform (STFT) spectrogram, which gener‑ ally provides very good resolution of frequency, but relatively poor resolution of time. A wavelet transform (Mallat, 1989; Gurley and Kareem, 1999) convolves a recorded motion with a wavelet function that is localized in time and centered about a particular frequency. The wavelet can be shifted in time and scaled in frequency by dilating (stretching) or compressing its width. The wave‑ let transform allows development of a wavelet scalogram that expresses wavelet amplitude as a func‑ tion of time and central frequency. The scalogram generally provides very good time resolution, but relatively poor frequency resolution. A more recent, alternative form of time‑frequency analysis is Appendix A
+
+provided by the Stockwell transform (Stockwell et al., 1996). The Stockwell transform uses a mov‑ ing window of frequency‑dependent width to achieve a balance between the resolutions of the STFT and the wavelet transforms – it provides better time resolution than the STFT spectrogram and bet‑ ter frequency resolution than the wavelet scalogram. Figure A.13 shows all three time‑frequency representations for an artificial signal with instantaneous changes in frequency. The width of the transitions, in both time and frequency, indicates the resolution of the different transforms. Stockwell spectra for ground motions recorded by instruments underlain by liquefiable soil can show dramatic changes in frequency content over time as the softening of the soil by generated pore pressures affects the frequencies that are amplified and de‑amplified by the soil profile (Ozener et al., 2020). To better illustrate the changing frequency content of a ground motion, variations in amplitude can be removed by normalizing the spectral amplitudes by the peak spectral amplitude at each time step. In some cases, such as the Kawagishi‑cho record shown in Figure A.14a, the change
+
+FIGURE A.13 Time‑frequency representation of three‑part function: (a) signal, (b) STFT spectrogram, (c) wavelet scalogram, and (d) Stockwell spectrum.
+
+FIGURE A.14 Normalized Stockwell spectrograms for (a) Kawagishi‑cho and (b) IBR014 records. Spectral values are normalized by peak Stockwell amplitude at each time step. Appendix A
+
+in frequency content is so drastic that it can be readily seen in the acceleration history. In other cases, such as the IBR014 record shown in Figure A.14b, the changes in frequency content are more subtle but readily distinguished using the Stockwell spectrum.
+
+### REFERENCES
+
+Brigham, E.O. (1974). The Fast Fourier Transform, Prentice Hall, Englewood Cliffs, NJ, 252 pp. Cohen, L. (1995). Time‑Frequency Analysis, Prentice Hall, Englewood Cliffs, NJ, 299 pp. Cooley, P.M. and Tukey, J.W. (1965). “An algorithm for the machine computation of complex Fourier series,” Mathematics of Computation, Vol. 19, No. 4, pp. 297–301. Gurley, K. and Kareem, A. (1999). “Applications of wavelet transforms in earthquake, wind and ocean ­engineering,” Engineering Structures, Vol. 21, pp. 149–167. Mallat, S. (1989). “A theory for multiresolution signal decomposition: the wavelet representation,” IEEE Transactions on Pattern Analysis and Machine Intelligence, Vol. 11, pp. 674–693. Ozener, P., Greenfield, M., Sideras, S., and Kramer, S. (2020). “Identification of time of liquefaction trigger‑ ing,” Soil Dynamics and Earthquake Engineering, Vol. 128, pp. 1–15. Richart, F.E., Hall, J.R., and Woods, R.D. (1970). Vibrations of Soils and Foundations, Prentice‑Hall, Inc., Englewood Cliffs, NJ, 401 pp. Smith, S.W. (1999). The Scientist & Engineer’s Guide to Digital Signal Processing, 2nd edition, California Technical Publishing, San Diego, CA, 628 pp. Stockwell, R.G., Mansinha, L., and Lowe, R.P. (1996). “Localization of the complex spectrum: the S ­transform,” IEEE Transactions on Signal Processing, Vol. 44, No. 4, pp. 998–1001.
+
+# Appendix B
+
+# Dynamics of Discrete Systems
+
+### B.1 INTRODUCTION
+
+Many vibrating systems consist of discrete elements such as masses and springs, or can at least be idealized as such. For most practical problems of structural dynamics, the structure is idealized as a system of rigid masses connected by massless springs. Even continuous systems such as soil deposits have been idealized as assemblages of many discrete elements. Since the geotechnical earthquake engineer often provides input to the structural engineer, a firm understanding of the dynamic response of discrete systems is required. Also, many of the concepts and terminologies used in geotechnical earthquake engineering analyses are analogous to those of discrete system dynamics and are more easily introduced in that framework. This appendix introduces the dynamics of discrete systems. It begins with very simple systems and then adds complicating factors such as damping, base motion, and nonlinearity. Analytical and numerical solutions in the time domain and frequency domain are presented. Finally, the response of multiple‑degree‑of‑freedom systems is introduced. While many of the basic concepts of structural dynamics are presented, much more complete treatments may be found in a number of structural dynamics texts (e.g., Berg, 1989; Clough and Penzien, 1993; Paz and Kim, 2019; Chopra, 2022).
+
+### B.2 VIBRATING SYSTEMS
+
+Vibrating systems can be divided into two broad categories: rigid systems and compliant systems. A rigid system is one in which no strains occur. All points within a rigid system move in phase with each other, and the description of rigid‑body motion is a relatively simple matter of kinematics. In compliant systems, however, different points within the system may move differently (and out of phase) from each other. A given physical system may behave very nearly as a rigid system under cer‑ tain conditions and as a compliant system under other conditions. Since neither soils nor structures are rigid, the dynamic response of compliant systems is central to the study of soil and structural dynamics and to earthquake engineering. Compliant systems can be characterized by the distribution of their mass. Discrete systems are those whose mass can be considered to be concentrated at a finite number of locations, where the mass of a continuous system is distributed throughout the system. The number of independent variables required to describe the position of all the significant masses of a system is the number of dynamic degrees of freedom (DOF) of the system. Systems of interest in earthquake engineering may have anywhere from 1 to an infinite number of DOF. Figure B.1 illustrates several commonly encountered systems with varying numbers of DOF. Parts (a)–(c) in Figure B.1 depict discrete sys‑ tems with finite numbers of DOF. Parts (d)–(e) depict continuous systems with infinite DOF. Certain types of analyses idealize continuous systems as discrete systems with large numbers of DOF, and other types represent discrete systems with many DOF as continuous systems.
+
+### B.3 SINGLE‑DEGREE‑OF‑FREEDOM SYSTEMS
+
+A discrete system whose position can be described completely by a single variable is known as a ­single‑degree‑of‑freedom (SDOF) system. That single degree of freedom may represent translational Appendix B
+
+FIGURE B.1 Vibrating systems with various numbers of degrees of freedom: (a) one degree of freedom, vertical translation; (b) two DOF, vertical translation and rocking; (c) three DOF, horizontal translation; (d) infinite DOF; (e) infinite DOF.
+
+FIGURE B.2 Various SDOF systems. The degrees of freedom are (a) vertical translation, (b) and (c) hori‑ zontal translation, and (d) rotation.
+
+displacement, as in the SDOF systems of Figure B.2a–c, or rotational displacement, as in the case of the pendulum of Figure B.2d. A typical SDOF system is one in which a rigid mass, m, is connected in parallel to a spring of stiffness, k, and a dashpot of viscous damping coefficient, c, and subjected to some external load, Q(t), as shown in Figure B.3. The spring and dashpot are assumed to be massless and the displace‑ ment origin to coincide with the static equilibrium position.
+
+### B.4 EQUATION OF MOTION FOR SDOF SYSTEM
+
+Many SDOF systems are acted upon by externally applied loads. In earthquake engineering, dynamic loading often results from movement of the supports of the system. The dynamic response of an SDOF system such as that shown in Figure B.3 is governed by an equation of motion. The equation of motion can be derived in a number of ways; a simple, force equilibrium approach will be used here.
+
+FIGURE B.3 Damped SDOF system subjected to external dynamic load, Q(t). Appendix B
+
+### B.4.1 Equation of Motion: External loading
+
+When a dynamic load is applied to the mass of an SDOF system (Figure B.3), the tendency for motion is resisted by the inertia of the mass and by forces that develop in the dashpot and spring. Thus the external load, Q(t), acting in the positive x‑direction is opposed by three forces (Figure B.4) that act in the negative x‑direction: the inertial force, fI, the viscous damping force, fD, and the elas‑ tic spring force, fS. The equation of motion can be expressed in terms of the dynamic equilibrium of these forces:
+
++ + = ( ) ( ) ( ) ( )
+
+### (B.1)
+
+f t f t f t Q t I D S
+
+These forces can also be expressed in terms of the motion of the mass. Newton’s second law states that the inertial force acting on a mass is equal to its rate of change of momentum, which for a sys‑ tem of constant mass produces
+
+( ) ( ) d m du t m d u t °  = = =  ( ) (B.2a) ( ) f t mu t  I dt dt dt
+
+For a viscous dashpot, the damping force is proportional to the velocity of the mass:
+
+( ) c du t = =  ( ) (B.2b) ( ) f t cu t D dt
+
+and the force provided by the spring is simply the product of its stiffness and the amount by which it is displaced
+
+= ( ) ( ) (B.2c) f t ku t S
+
+The behavior of these forces is illustrated graphically in Figure B.5. The inertial force is propor‑ tional to the acceleration and the constant of proportionality is the mass. Similarly, the viscous damping force and the elastic spring force are proportional to the velocity and displacement with the damping and spring coefficients serving as the respective constants of proportionality. Substituting Equations (B.2) into Equation (B.1), the equation of motion for the SDOF system can be written as
+
++ + =   Q t
+
+### (B.3)
+
+( ) ( ) ( ) ( ) mu t cu t ku t
+
+This second‑order differential equation is commonly used to describe the behavior of oscillating systems ranging from the mechanical systems considered in earthquake engineering problems to electrical circuits. The differential equation of motion is linear (i.e., all of its terms have constant coefficients). This linearity allows a closed‑form analytical solution to be readily obtained and, importantly, it allows the principle of superposition to be used. When any of the coefficients are not
+
+FIGURE B.4 Dynamic forces acting on mass from Figure B.3. Appendix B
+
+FIGURE B.5 Variation of (a) inertial, (b) viscous, and (c) elastic forces with acceleration, velocity, and dis‑ placement, respectively.
+
+constant, the behavior is not linear and the solution becomes considerably more difficult. In most cases, the response of nonlinear systems must be evaluated numerically (Section B.9).
+
+### B.4.2 Equation of Motion: Vibration of Supports (Base Shaking)
+
+For earthquake engineering problems, dynamic loading often results from vibration of the supports of a system rather than from dynamic external loads. To evaluate the response of such systems, it is necessary to develop an equation of motion for loading caused by base shaking. Consider the damped SDOF system shown in Figure B.6a. When subjected to dynamic base shaking, ub(t), it will deform into a configuration that might look like that shown in Figure B.6b at a particular time, t. The total displacement of the mass, ut(t), can be broken down as the sum of the base displacement, ub(t), and the displacement of the mass relative to the base, u(t). The inertial force will depend on the total acceleration of the mass, while the viscous damping and elastic spring forces will depend on the relative velocity and displacement, respectively. Using the notation shown in Figure B.6b, the equation of motion can be written as
+
++ + =  
+

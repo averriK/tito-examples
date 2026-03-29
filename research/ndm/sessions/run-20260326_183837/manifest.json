@@ -1,0 +1,7 @@
+{
+  "id": "dbgtest2",
+  "workflow": "prompt",
+  "outputs": {
+    "primary": "dbgtest2.prompt.md"
+  }
+}

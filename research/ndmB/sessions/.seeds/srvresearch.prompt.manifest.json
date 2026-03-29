@@ -1,0 +1,7 @@
+{
+  "id": "srvresearch",
+  "workflow": "prompt",
+  "outputs": {
+    "primary": "srvresearch.prompt.md"
+  }
+}

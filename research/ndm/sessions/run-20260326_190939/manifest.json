@@ -1,0 +1,10 @@
+{
+  "id": "smokefix2",
+  "workflow": "compile-prompt",
+  "sessions": [
+    { "path": "../run-20260326_190754/smokefix2.prompt.md" }
+  ],
+  "outputs": {
+    "primary": "smokefix2.compile.prompt.md"
+  }
+}

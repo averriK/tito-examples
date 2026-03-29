@@ -1,0 +1,55 @@
+soil liquefaction see liquefaction soil mixtures site effects 98, 103–107, 140, 428–441, 522–525 compressibility 295–296 correlation of damage 428–430 shearing behavior 308–309 generic prediction 433–441 soil model 834 on ground motion 98, 103–107, 140 soil sampling 353–354 incorporation into hazard analyses 522–525 soil–structure interaction (SSI) measured surface motions 430–432 direct analysis 539, 539 probabilistic seismic hazard analysis 524–525 embedded structures 599–624 site‑specific prediction 442–443
+
+site response model 112–113, 117–121, 119, 442
+
+inertial 538, 542–576, 619, 620 kinematic see kinematic interaction site‑specific approach structural analysis 589–599 analytical 442–443 substructure analysis incorporating SSI 589–599 empirical 442 source characterization 180–193 site term
+
+non‑ergodic 514, 515, 518, 518, 521, 524
+
+activity 182–183 location and geometry 180–182, 181 semi-stochastic simulations 134–135, 137, 137 earthquake size 183–186 site‑to‑site variability see epistemic uncertainty, recurrence see magnitude‑recurrence site‑to‑site variability magnitude distribution see probability density function sliding block analysis 810–832 for magnitude coupled compliant block analysis 817 rate of earthquakes see earthquake rate decoupled rigid block analyses 816–817 source depth 111–114 displacement‑related pseudostatic analyses 830–832 source effects, on ground motion 98–101, 107, 111, rigid block analysis 811–816 135–136, 136, 139 single block analysis 845–848 source inversion 50 sliding block‑based displacement predictions 817–830 source zones 180, 181, 183, 200 slip rate 50, 179, 182–183, 191, 193, 210 Southern California Seismic Network 80 slip velocity 98–101 spatially variable ground motions (SVGMs) 156–159 slope displacement, factors influencing amplitude variability 159, 159 directionality 827–828, 829 ground strains produced by 159–160 distributed deformations 827 lagged coherency 158–159, 158 non‑planar failure surfaces 829, 830 stochastic phase variations 158–159 rate effects 828–829 wave passage 156–158, 157 two‑way sliding 830 spatial variability 260–263, 489, 577, 738–739 variable sliding resistance 827, 828 specific impedance 105, 953, 973 vertical ground motion 829–830 specimen reconstitution 354–355, 654 slope stability 792–854
+
+earthquake‑induced landslide activity 795, 795–796
+
+spectral acceleration 75, 75–76, 78, 79, 91, 92, 95–96, 111–123, 547, 586–587, 939–940 earthquake‑induced landslide types 792–795, 793–794
+
+spectral analysis of surface waves (SASW) test 328, 328–329, 329, 891 empirical stability evaluation 845, 845 splay fault 783, 783 evaluation 799–800 spreading ridge 35–36, 36, 53 landslide activity 795–796
+
+Love waves 967–969 spreading rifts see spreading ridge magnitude 58, 58, 59 SPT see standard penetration test (SPT) Rayleigh waves 326–328, 962–967 square root impedance method 104, 137 susceptibility to liquefaction 641–646 square‑root‑sum‑of‑squares (SRSS) 96, 590 suspension logging test 332–333, 333 SSI see soil–structure interaction (SSI) stability analysis see slope stability Tall Buildings Initiative (TBI) guidelines 593 stable continental region 41 tectonic regimes 41 standardized CRR values three‑dimensional elastic solid 958–961 CPT‑based liquefaction resistance 684–685, 685 three‑dimensional wave propagation 955–961 SPT‑based cyclic resistance 686, 686 threshold shear strain 297, 298, 298, 667, 698, 705 Vs‑based procedure 686–687, 687 thrust fault 43, 45 standard penetration test (SPT) 303, 304, 337, 337–341, 338, 339, 340
+
+tieback walls 600 time‑averaged shear wave velocity (VS30) 106, 117–121, effect of soil improvement 891 372–373, 375, 375, 436–441, 490
+
+state parameter 310, 310–311, 395–396 static liquefaction 637, 646 time‑dependent source model 192–193, 192 static shear stress 296–311, 661, 690–691 time effects 376 static stability analysis 800–803 time‑independent source model 191–192 steady state of deformation 304–308, 393–394, time step 74, 470–474, 913
+
+Tohoku (Japan) earthquake 18, 22
+
+647–651 step‑over faulting 44, 46–47, 46–47 topographic effects 104, 428, 502–511 stiffness efficiency see efficiency factor toppling 844, 845–848, 849 stiffness intensity 561, 614 torsional waves 953–954 stochastic methods, of ground motion simulation Total Probability Theorem 200, 238, 241, 999 133–138 transfer function 444–460, 449, 450, 541, 577–580, Stockwell transform 915–916, 915 579–580, 582–583, 583–584, 584–588, 585, stone columns 878–880, 879 587, 931–932, 989 strain energy 51–53 transform fault 38–40, 40, 41, 53–54 strain‑softening behavior 647, 802 trench boundaries see subduction zone strength correction 385–386 triaxial seismometer 72; see also seismometer strength reduction analysis 803 triggering of liquefaction 646–713 stress‑deformation analyses 802–803, 832–838 tripartite plot 91, 907 stress drop see stress parameter truncated exponential model 188, 189, 191, 204, stress parameter, as used with source characterization 210–211, 211 100–101, 135–136 tsunami 15–19, 18 stress path 279–281, 279–282 tuning ratio 71, 925 stress‑strain behavior 288–323, 957–958 tunnel 620–623, 621 compressive stresses 291–296 two‑step regression procedure 129–130 cyclic loading 320–323 two‑way sliding 830 cyclic shear stresses 311–320 dilatancy 290–291 ultimate steady state 305 elasticity 289–290 uncertainty, propagation of 1017, 1017 linearity 288–289 undamped soil, on rigid bedrock 445 static shear stresses 296–311 undrained loading 284 stress waves undrained strength 301–303, 401–403, 404, 405, 405, attenuation of 979–986 406, 411 material damping 979–982 uniaxial loading 292 radiation damping 982–983 Unified Soil Classification System (USCS) 286, 287 scattering 983–986 uniform distribution 1008–1010 strike‑slip movement 44–47, 46 uniform hazard spectrum (UHS) 209, 209, 220, 221 strong ground motions see ground motion structural damage 3, 5–7, 23, 234, 236–237, 252–254 validation 133, 140–143 structure‑to‑soil stiffness ratio 544–546 vane shear test 351 subduction zone 35, 36–38, 38, 40, 41, 53, 121–122, variable sliding resistance 827 vector intensity measures 95–96, 821, 821, 825–826 122–123 substructure analysis, of soil‑structure system see vector PSHA 200, 207–208, 255–258 soil‑structure interaction velocity inversion 371 sufficient IM 84, 85, 87, 96–97, 248–249 Venn diagram 994, 995 Sumatra earthquake 18, 19 verification 133, 140, 141, 837
+
+surface networks 79–80, 81, 83
+
+verification of soil improvement 890–892
+
+vertical array 80, 83, 367, 442
+
+surface rupture 44–45, 783–784 surface waves 27, 28, 29 vertical drains 887–888 dispersion 970 vertical ground motion 86–87, 829–830 higher‑mode 969–970 vibrating systems 917, 918
+
+wave propagation 321, 539 vibratory motion one‑dimensional 951–955 Fourier series 909–914 three‑dimensional 955–961 nonperiodic 902, 902 waves periodic 902, 902 body see body waves time‑frequency 914–916 inclined 975–979 types 902–909
+
+vibro‑compaction 869–869, 869
+
+in layered body 971–979 seismic see seismic waves vibroflot 869–869, 870 surface see surface waves vibro‑rod 869, 871 in semi‑infinite body 961–971 viscous damping 935–937, 979
+
+Vision 2000 236, 236, 237, 249
+
+in unbounded media 951–961 wave scattering 103, 105, 156, 157, 484–486, 983–986 void redistribution 723, 725, 728, 730–731, 839–840 wave trapping 498–499 volcanic earthquakes 56
+
+volumetric strain 397–401, 398, 399, 400, 401
+
+Wegener's theory of continental drift 31–32, 32
+
+Wenchuan (China) earthquake 22
+
+volumetric stress 290 wet pluviation 354–355 volumetric threshold shear strain 297, 298 Whittier Narrows earthquake 67 VS30 see time‑averaged shear wave velocity Winkler springs see macro‑element models vulnerability 2, 23
+
+within‑event residual 127, 129, 518, 518, 518, 518
+
+within‑event variability 126–130, 130, 142 wave equation model 445, 471–474, 484–485, 494–495, within‑profile motion 481–482 581, 951–955, 958–961 Worldwide Standard Seismograph Network 71, 79 wavefront 975, 975 wavelength 103, 105, 107, 327–329, 551, 578, 581, 581, yield acceleration 812–815, 813, 815 582–585, 613, 613, 614–616, 806, 808, 954 Young's modulus 289, 292, 560, 565, 566, 572, 584, wavelet transform 914 951, 958 wave passage 156–158, 157, 577–580, 578–580, 620, 622–624

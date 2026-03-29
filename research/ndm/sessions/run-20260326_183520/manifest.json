@@ -1,0 +1,10 @@
+{
+  "id": "smoketest",
+  "workflow": "compile-prompt",
+  "sessions": [
+    { "path": "../run-20260326_183301/smoketest.prompt.md" }
+  ],
+  "outputs": {
+    "primary": "smoketest.compile.prompt.md"
+  }
+}

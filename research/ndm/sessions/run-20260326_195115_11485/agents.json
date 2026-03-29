@@ -1,0 +1,6 @@
+{
+  "workflow": "session-research",
+  "phase": "executor-finished",
+  "detail": "Dispatcher-managed session completed.",
+  "ts": "2026-03-26T22:53:47.677Z"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "smokedbg4",
+  "workflow": "prompt",
+  "outputs": {
+    "primary": "smokedbg4.prompt.md"
+  }
+}

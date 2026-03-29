@@ -1,0 +1,10 @@
+{
+  "id": "dbgtest2",
+  "workflow": "compile-prompt",
+  "sessions": [
+    { "path": "../run-20260326_183837/dbgtest2.prompt.md" }
+  ],
+  "outputs": {
+    "primary": "dbgtest2.compile.prompt.md"
+  }
+}

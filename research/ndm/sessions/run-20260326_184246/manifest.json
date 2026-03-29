@@ -1,0 +1,7 @@
+{
+  "id": "dbgtrace",
+  "workflow": "prompt",
+  "outputs": {
+    "primary": "dbgtrace.prompt.md"
+  }
+}

@@ -1,0 +1,400 @@
+
+Comparing Equations (B.81) and (B.83), it is apparent that
+
+= + ω *
+
+### (B.84)
+
+k k ic
+
+By the appropriate choice of k*, the displacement amplitude of Equation (B.83) can be made equal to that of Equation (B.81), (although a small phase difference between the two solutions will remain). To accomplish this, the complex stiffness is represented as ( ) = − ξ + ξ − ξ *
+
+### (B.85)
+
+k k i
+
+FIGURE B.18 SDOF system with spring of complex stiffness. Appendix B
+
+ξ ° . For the usual small damping ratios considered in earthquake engineering problems, where the ξ2 terms can be neglected so that * ° + ξ . Using this expression for k*, the error in phase (1 ) k k i ∆ θ = ξ + β angle between the responses given by Equations (B.81) and (B.83) is 2 / (1 ) . As a result, a viscously damped system can be represented as an undamped system with complex stiffness. The use of this approach, however, is restricted to cases of harmonic motion. For problems in which loading is characterized as periodic (and therefore as the sum as a series of harmonic loads), the use of complex stiffness greatly simplifies the calculation of the response of damped systems. For small damping ratios, the complex stiffness then consists of real and imaginary parts ( ) = * Re k k
+
+( ) = ξ * Im k
+
+### (B.86)
+
+k
+
+Consequently, the damping ratio can be expressed as ( ) * Im k ξ =
+
+### (B.87)
+
+( ) * 2Re k
+
+which is useful to remember in the interpretation of quantities such as complex impedance functions (Section 8.3), which are usually expressed in terms of their real and imaginary parts.
+
+### B.7 RESPONSE SPECTRA
+
+For earthquake‑resistant design, the entire time series of response may not be required. For many applications, earthquake‑resistant design may be based on the maximum (absolute) value of the response of a structure to a particular base motion. Obviously, the response will depend on the mass, stiffness, and damping characteristics of the structure and on the characteristics of the base motion. The response spectrum describes the maximum response of a SDOF system to a particular input motion as a function of the natural frequency (or natural period) and damping ratio of the SDOF system (Figure B.19). The response may be expressed in terms of acceleration, velocity, or displace‑ ment. For a given ground motion, the maximum values of each of these parameters depend only on the natural frequency and damping ratio of the SDOF system. The maximum values of acceleration, velocity, and displacement are referred to as the spectral acceleration (Sa), spectral velocity (Sv), and spectral displacement (Sd), respectively. Note that an SDOF system of zero natural period (infinite natural frequency) would be rigid, and its spectral acceleration would be equal to the peak ground acceleration. Application of the Duhamel integral to a linear elastic SDOF system produces expressions for the acceleration, velocity, and displacement time series that are proportional (by a factor of ω), except for a phase shift. Because the phase shift does not significantly influence the maximum response values, the spectral acceleration, velocity, and displacement can be approximately related to each other by the following simple expressions:
+
+= | |max S u (B.88a) d
+
+= ≠ ω =  | |
+
+### PSV
+
+S u S (B.88b) max v d
+
+= ≈ ω = ω ⋅ =  | |
+
+### PSV
+
+PSA S u S (B.88c) max a d Appendix B
+
+FIGURE B.19 Response spectrum. Spectral accelerations are the maximum absolute acceleration ampli‑ tudes of SDOF systems in response to the same input motion. The response spectrum is obtained by plotting the spectral accelerations against the periods of vibration of the SDOF systems.
+
+where u and ω0 are the displacement and natural frequency of the SDOF system, PSV is the pseu‑ dospectral velocity, and PSA is the pseudospectral acceleration. The PSV and PSA are not the true maximum values of velocity and acceleration, although in the case of PSA it is very close. In prac‑ tice, the pseudospectral acceleration is generally assumed to be equal to the spectral acceleration and is generally referred to as Sa in this text. Note that there is no pseudospectral displacement, only spectral displacement. In most of the text, pseudospectral acceleration is written more concisely as “spectral acceleration.”
+
+### B.8 DUCTILITY OF STRUCTURAL MATERIALS AND COMPONENTS
+
+The ideal way to prevent damage due to a structure during earthquake shaking would be to ensure that it responds in a linear, elastic manner throughout an earthquake – if no yielding occurs, the structure (and all of its components) will return to its original position following shaking and there will be no structural damage. This objective may be easily achieved for low levels of shaking, but could require massive, expensive structural components for strong shaking.
+
+FIGURE B.20 Schematic illustration of different types of force‑displacement behavior: (a) brittle, (b) duc‑ tile, and (c) ductile with removal of applied loading. Appendix B
+
+Consider an SDOF system with the force‑displacement behavior shown in Figure B.20a. The system exhibits linear elastic behavior up to the yield force, Fy (and also the yield displacement, uy), but the yield force is equal to the ultimate capacity, Fult, so complete failure (with loss of subsequent load‑resisting capability) occurs at that point. Such a system, in which load‑carrying capacity is lost at, or very shortly after, yielding is described as being brittle. If a load smaller than the yield force is applied to this structure and then removed, the displacement will go back to zero and no damage will have occurred. A brittle system can perform well during earthquake shaking, as long as its strength exceeds all loads applied to it. If a brittle system fails, however, damage will usually be rapid and catastrophic. Another SDOF system may have the force‑displacement behavior shown in Figure B.20b. The ultimate capacity of this system is the same as that of the previous system, but it yields at a lower force, Fy (and yield displacement, uy). After yielding, this system continues to pick up resistance (albeit with lower stiffness) with increasing displacement. At a larger displacement, up, the full plastic capacity of the system, Fult, is reached and the system continues to deform, while maintain‑ ing its load‑resisting capacity, until complete failure occurs at a larger failure displacement, uf. This system, which can continue to resist load while deforming well past its yield point, is described as being ductile. Structural engineers generally quantify ductility as the ratio of some measure of deformation (such as displacement, curvature, etc.) to its value at yield, e.g., in the form of ductil‑ ity demand, μ = umax/uy. The ductility at failure, or ductility capacity, is defined as μ = uf/uy. If the load applied to a ductile structure is released prior to failure (Figure B.20c), the displacement of the structure will decrease (usually nearly linearly) so that a residual displacement, ur, occurs. The area under the force‑displacement curve represents the energy dissipated by the plastic deforma‑ tion of the structure. The structure would then be considered to have suffered some damage from the applied loading; the significance of this damage would depend on the amount of residual dis‑ placement and its effect on the utility of the specific structure. A ductile system can perform well during earthquake shaking even if the induced forces exceed its yield strength because it maintains load‑carrying capacity and dissipates energy after yielding. There are, therefore, two basic approaches that can be taken in the seismic design of a structure. One is to allow brittle behavior but make the structure very strong so that yielding (which would be followed shortly by failure) never occurs. The other is to make the structure very ductile (and allow controlled yielding) so that failure doesn’t occur. The “strength vs. ductility” decision has a number of implications, both for design of new structures and retrofitting of existing structures. Designing a new structure to be stronger generally involves using more material – thicker columns, beams, girders, walls, etc. and/or more reinforcement – these increase the cost and mass of the structure and reduce the usable space within its boundaries. Designing a new structure to be ductile can gen‑ erally be achieved using less material, and thereby provide a less expensive structure. However, it also means that some level of damage will be accepted and requires more detailed analysis of the structure (and its components and connections) to ensure that failure does not occur. The design of retrofitting measures for existing structures can be particularly challenging because many older structures, due to materials and/or form, are both brittle and weak. Designing for ductility requires the ability to predict the seismic response of nonlinear systems. Nonlinear analyses are generally more complex and time‑consuming, both from the standpoint of material characterization and computational demand, than linear analyses, as described in the fol‑ lowing section.
+
+### B.9 RESPONSE OF NONLINEAR SDOF SYSTEMS TO GENERAL LOADING
+
+Numerical integration of the Duhamel integral is very useful for the calculation of the response of linear systems to general loading. Many systems for which the seismic response is to be calculated, however, exhibit nonlinear behavior. In such systems, the mass is usually constant, but the damp‑ ing coefficient and/or the stiffness may vary with time, deflection, or velocity. It will be useful to Appendix B
+
+FIGURE B.21 SDOF system with nonlinear damping and spring forces.
+
+develop methods for analysis of the response of nonlinear systems, recognizing that they will be appropriate for linear systems as well when damping and stiffness values are held constant. The most common approach to nonlinear analysis is the direct integration of incremental equa‑ tions of motion that govern the response of the system over small time increments. The response is calculated for each time increment after adjusting the stiffness and damping at the beginning of the increment. By using the conditions at the end of one time increment as the initial conditions for the next time increment, the nonlinear system is approximated as an incrementally changing linear system.
+
+### B.9.1 Incremental Equation of Motion
+
+Consider the SDOF system shown in Figure B.21, which has a nonlinear spring and dashpot (i.e., the spring force is not proportional to displacement and the dashpot force is not proportional to veloc‑ ity). Dynamic equilibrium at time τ requires that τ + τ + τ = τ ( ) ( ) ( ) ( )
+
+### (B.89)
+
+f f f Q I D S and that τ + ∆ τ + τ + ∆ τ + τ + ∆ τ = τ + ∆ τ ( ) ( ) ( ) ( )
+
+### (B.90)
+
+f f f Q I D S at time τ + Δτ. Defining
+
+° τ = τ + ° τ − τ ( ) ( ) ( ) (B.91a) f f f I I I
+
+° τ = τ + ° τ − τ ( ) ( ) ( ) (B.91b) f f f D D D
+
+° τ = τ + ° τ − τ ( ) ( ) ( ) (B.91c) f f f S S S
+
+° τ = τ + ° τ − τ ( ) ( ) ( ) (B.91d) Q Q Q
+
+and subtracting Equation (B.89) from Equation (B.90), the incremental equation of motion for the time interval from τ to τ + Δτ is
+
+° τ + ° τ + ° τ = ° τ ( ) ( ) ( ) ( )
+
+### (B.92)
+
+f f f Q I D S
+
+or expressing the incremental forces in terms of incremental displacements, velocities, and accelera‑ tions, as Appendix B
+
+FIGURE B.22 Stress‑strain behavior of (a) linear elastic, (b) nonlinear elastic, and (c) nonlinear, inelastic materials under cyclic loading conditions.
+
+° τ + τ ° τ + τ ° τ = ° τ  
+
+### (B.93)
+
+( ) ( ) ( ) ( ) ( ) ( ) m u c u k u Q
+
+By integrating this incremental equation of motion in a series of small time steps, the response of the nonlinear system can be obtained. It should be noted that this approach can be used to calculate the response of linear elastic, nonlinear elastic, or nonlinear inelastic materials with stress‑strain behaviors shown in Figure B.22. The third of these is particularly important because it allows rep‑ resentation of the hysteretic damping displayed by cyclically loaded soils.
+
+### B.9.2 Numerical Integration
+
+There are many ways to numerically integrate the incremental equation of motion. One of the simplest and most easily coded of these is the linear acceleration method. It is based on the assump‑ tion that the acceleration varies linearly within each time increment. If the acceleration in the time increment varies linearly, the velocity and displacement will vary quadratically and cubically, respectively.
+
+° t ° τ = τ ° + ° τ   
+
+### (B.94)
+
+( ) ( ) ( ) 2 u u t u
+
+° ° t t ° τ = τ ° + ° τ + ° τ    ( ) 6
+
+### (B.95)
+
+( ) ( ) ( ) 2 u u t u u
+
+Rearranging, the incremental acceleration and velocity can be expressed in terms of the incremental displacement
+
+° τ = ° ° τ −° τ − τ    ( ) ( ) 3 ( ) (B.96a) ( ) u u t u u t −° t u ° τ = ° ° τ − τ τ    ( )
+
+#### 3 ( )
+
+(B.96b) ( ) ( ) u u u t
+
+Substituting Equations (B.97) into the incremental equation of motion [Equation (B.93)] provides
+
+−° t u     ° τ −° τ − τ τ ° ° τ − τ τ τ τ τ + + ° = °     ( ) ( ) 3 ( ) ( ) ( )
+
+#### 3 ( )
+
+( ) ( ) ( ) ( ) m u t u u c u u k u Q   ° t t
+
+
+
+### (B.97)
+
+Appendix B
+
+FIGURE B.23 Variation of acceleration, velocity, and displacement over time increment when the time‑vari‑ ation of acceleration is linear.
+
+Rearranging terms and solving for incremental displacement provides
+
+τ τ τ τ τ τ = ∆ + ∆ + + + ∆     ( ) [(6 / ) ( )
+
+#### 3 ( )]
+
+( )[3 ( ) ( / 2) ( )] Q m t u u c u t u ∆ τ
+
+### (B.98)
+
+( ) u ( ) τ τ + ∆ + ∆ ( )
+
+#### 6 /
+
+(3 / ) ( ) k t m t c
+
+Equation (B.98) shows that if the displacement, velocity, and acceleration at time τ are known, the incremental displacement during the succeeding time increment ∆τ can be calculated based on the loading and the stiffness and damping during that time increment. From this incremental displacement, the incremental velocity and acceleration, and from these the displacement, velocity, and acceleration at the end of the time increment, can be determined. The conditions at the end of the time increment are then taken as the initial conditions for the next time increment and are used to calculate the appropriate stiffness and damping values for the next time increment. To prevent the accumulation of errors resulting from the assumptions of the linear acceleration method, the acceleration at the beginning of each time step should be calculated by subtracting the damping and spring forces from the total external load and dividing the result by the mass. This will ensure that total equilibrium is satisfied at each step of the analysis. For numerical stability, it is necessary that the time steps be relatively small, typically less than about 55% of the shortest undamped natural period of the system. These small time steps can lead to considerable computational effort when the linear acceleration method is applied to mul‑ tiple‑degree‑of‑freedom systems. A number of other numerical integration techniques, including some that are unconditionally stable, are available; Berg (1989) describes the application of several to structural dynamics problems.
+
+### B.10 MULTIPLE‑DEGREE‑OF‑FREEDOM SYSTEMS
+
+In most physical systems, the motion of the significant masses cannot be described by a single variable; such systems must be treated as multiple‑degree‑of‑freedom (MDOF) systems. With the exception of only the simplest cases, the types of buildings, bridges, and other structures that are of Appendix B
+
+interest in earthquake engineering have multiple DOF. Some structures can be idealized with only a few DOF; others may require hundreds or even thousands. In many respects, the response of MDOF systems is similar to the response of SDOF systems, and procedures for analysis are analogous to those described previously for SDOF systems. Although the additional DOF complicate the algebra, the procedures are conceptually quite similar. In fact, a very useful approach to the response of linear MDOF systems allows their response to be computed as the sum of the responses of a series of SDOF systems.
+
+### B.10.1 Equations of Motion
+
+In evaluating the response of an MDOF system, the dynamic equilibrium of all masses must be ensured simultaneously. Consider the idealized two‑story structure shown in Figure B.24. The structure has two DOF: horizontal translation of the upper mass and horizontal translation of the lower mass. For each mass the externally applied load must be balanced by the inertial, damping, and elastic forces that resist motion:
+
++ + = ( ) (B.99a) f f f q t I D S
+
++ + = ( ) (B.99b) f f f q t I D S
+
+or, in matrix form,
+
+f + + = f f q ( )
+
+### (B.100)
+
+t I D S
+
+Each of the terms on the left side of Equation (B.100) are vectors that depend on the structural properties given in Figure B.24. If the structure exhibits linear behavior, the principle of superposition is valid. Then the forces that resist motion at each level can be expressed in terms of coefficients by which the motion param‑ eter at all levels are multiplied. For example, the elastic force resisting motion at level 1 can be expressed as
+
+= +
+
+### (B.101)
+
+f k u k u
+
+#### 11 1
+
+S
+
+where the stiffness coefficients kij represent the force induced at level i due to a unit displacement at level j (with the displacements at all levels except j held equal to zero). In matrix form
+
+FIGURE B.24 Two‑degree‑of‑freedom system. Displacements of masses 1 and 2 from equilibrium positions are u1 and u2, respectively. Appendix B
+
+      f °  °  k k u S =  
+
+### (B.102)
+
+u f k k         S
+
+or
+
+### fS = ku
+
+### (B.103)
+
+in which k is the stiffness matrix of the structure and u is a displacement vector. Similarly, a damping matrix and a mass matrix can be developed in which the elements cij (or mij) represent the damping (or inertial) forces resisting motion at level i due to a unit velocity (or acceleration) of level j. Dynamic equilibrium of the MDOF system can then be described by a set of simultaneous equations of motion, which can be expressed in matrix form as
+
+### mu+ cu+ ku = q(t)
+
+### (B.104)
+
+MDOF systems also respond to base motions. The equation of motion for the case of base shak‑ ing is easily developed following the same procedure applied to the SDOF case in Section B.4.2. The resulting equation of motion is
+
+### mu+ cu+ ku = −m1ub (t)
+
+### (B.105)
+
+where 1 is a column vector of ones. Equation (B.105) indicates that the response of an N‑story struc‑ ture to base motion is equal to the response to equivalent external loads, where qi = −miub (t) is the load applied to the ith floor.
+
+### B.10.2 unDampeD FRee viBRationS
+
+For undamped free vibrations, all terms of the damping matrix are zero, so the equations of motion reduce to
+
+### mu+ ku = 0
+
+### (B.106)
+
+where 0 is a column vector of zeros. Assuming that the response of each mass (degree of freedom) is harmonic,
+
+### u(t) = U sin(ωt + θ)
+
+### (B.107)
+
+where U is a vector containing the displacement amplitudes, ω is an angular frequency of vibration, and θ is a phase angle (similar to Equation B.14). Differentiating Equation (B.107) twice gives
+
+### u(t) = −ω 2U sin(ωt + θ) = −ω 2u(t)
+
+### (B.108)
+
+Substituting the expressions for displacement [Equation (B.107)] and acceleration [Equation (B.108)] into the equation of motion [Equation (B.106)] yields
+
+### −mω 2U sin(ωt + θ) + kU sin(ωt + θ) = 0
+
+(B.109a)
+
+or
+
+### k −ω 2m U = 0
+
+(B.109b) Appendix B
+
+which is a set of linear algebraic equations with unknown U. Applying methods from linear algebra, a nontrivial solution (one that gives values other than U = 0) can be obtained only if ( ) − ω = − ω = k m k m det
+
+### (B.110)
+
+Equation (B.110) is the frequency equation (or characteristic equation) of the system, which for a system of N DOF, will give a polynomial of Nth degree in ω2. The N roots of the frequency equations ω ω ω ω { , , ,  , } represent the frequencies at which the undamped system can oscillate in free N vibration. These frequencies are called the natural circular frequencies of the system. Each natural frequency is associated with a mode of vibration of the system. At the natural fre‑ quencies, the amplitude of the displacement vector, U, is indeterminate [scaling the displacements up or down by a constant factor will still satisfy Equation (B.110)]. The vector U does describe the shape of the vibrating system, which is different at each natural frequency. This shape is often made dimensionless by dividing the elements of U by the displacement of one (often the first, sometimes the largest) element. The resulting vector describes the mode shape; the mode shape for the nth mode of vibration would be
+
+=  =   φ φ φ φ T  
+
+### (B.111)
+
+U U n n n Nn n n U Nn
+
+### All mode shapes (regardless of normalization) satisfy the relationship, k
+
+m − ° φ = for n = [l, n n N]. Example mode shapes for the structure in Figure B.24 are shown in Figure B.25. Note that in the first mode, both masses move in the same direction, whereas in the second mode, they move in opposite directions. Thus, a system of N degrees of freedom will have N natural frequencies cor‑ responding to N modes of vibration. Each mode of vibration occurs at a particular natural frequency and causes the structure to deform with a particular mode shape. The mode corresponding to the lowest natural frequency is called the first mode or fundamental mode, the second lowest natural frequency is called the second mode, and so on. The mode shapes can be shown to be orthogonal, ≠ i.e., for m n
+
+φ φ = T m (B.112a) m n φ φ = T k (B.112b) m n
+
+### B.10.3 Mode Superposition Method
+
+For linear structures with certain types of damping, the response in each mode of vibration can be determined independently of the response in the other modes. The independent modal responses can then be combined to determine the total response. This is the basis of the mode superposition method.
+
+FIGURE B.25 Two‑degree of freedom structure illustrating: (a) initial geometry and properties, (b) first mode shape with displacements normalized by top floor displacement, and (c) normalized second mode shape. Appendix B
+
+Recalling that the mode shape vector, ϕn, describes only the shape of the nth mode, the displace‑ ments can be expressed as the product of the mode shape and the modal amplitude, yn:
+
+= φ U ( ) ( )
+
+### (B.113)
+
+t y t n n n
+
+Then, by substituting Equation (B.113) into Equation (B.104) and pre‑multiplying each term by φ n T, the equation of motion can be written for the nth mode of vibration as
+
++ + =  
+
+### (B.114)
+
+( ) M y C y K y Q t n n n n n n n
+
+= φ φ = φ φ T T
+
+### m , generalized damping coefficient,
+
+### c ,
+
+where the generalized (or modal) mass, Mn Cn n n n n = φ φ = φ T
+
+### Tq
+
+### k , and generalized load,
+
+generalized stiffness, ( ) ( ) . This modal equation of Kn Q t t n n n n φ φ = T c motion is based on the assumption that the damping matrix is orthogonal (i.e., that for m n ≠ n. Rayleigh damping, in which the damping matrix can be broken into a component propor‑ m tional to the mass matrix and a component proportional to the stiffness matrix, satisfies the orthogo‑ nality requirement. Other procedures are described in structural dynamics texts. Alternatively, the equation of motion can be written as
+
+( ) Q t n + ξ ω + ° =  
+
+### (B.115)
+
+y y y n n n n n n M n ξ = C ° where / (2 n . For the case of base shaking, the equation of motion can be expressed as ) M n n n
+
+L n + ξ ω + ° = −    ( )
+
+### (B.116)
+
+y y y M u t n n n n n n b n
+
+N
+
+# 1∑
+
+= ° where jn. The quantity, Ln/Mn, often referred to as the modal participation factor, L m n j = j reflects the extent to which each mode contributes to the overall response. By this process, the system of N simultaneous equations (the original equations of motion) is transformed into a system of N independent equations. Each of these independent equations can be solved for yn(t) using the SDOF procedures described earlier in this appendix. Then the total displacement is obtained by superposition of the modal contributions:
+
+### u(t) = φ1y1(t) + φ2 y2 (t) + + φN yN (t)
+
+### (B.117)
+
+Once the displacements are known, they can be used to compute forces, stresses, and other param‑ eters of interest. The displacements can also be used to compute a set of equivalent lateral forces, f(t), which would produce the displacements u(t) if they were applied as static loads:
+
+### f(t) = kφ1y1(t) + kφ2 y2 (t) + + kφN yN (t)
+
+### (B.118)
+
+Internal forces and moments can be computed by static analysis of the structure subjected to the equivalent lateral forces. These internal forces can be used for design of the various elements of the structure.
+
+### B.10.4 ReSponSe SpectRum analySiS
+
+The mode superposition method produces the entire time series of structural response. For design purposes, however, the entire time series may not be needed; the maximum response values may be Appendix B
+
+sufficient. Because each mode of vibration can be treated as an independent SDOF system, maxi‑ mum values of modal responses can be obtained from the response spectrum. The modal maxima can then be combined to estimate the maximum total response.
+
+### B.10.4.1 Calculation of Modal Response Maxima
+
+Let Sdn, Svn, and San denote the spectral displacement, velocity, and acceleration associated with the nth mode of vibration, respectively (these values would be obtained from the response spectrum at a period, Tn = 2π/ωn). Then the maximum modal displacement is given by
+
+L
+
+### L T
+
+( ) n n n = = an
+
+### (B.119)
+
+y
+
+### M S
+
+### M S
+
+n dn π max n n Using Equation (B.113), the maximum displacement of the jth floor from vibration in the nth mode would be
+
+L
+
+### L T
+
+( ) n n n = φ = φ jn
+
+### (B.120)
+
+U
+
+### M S
+
+### M S
+
+jn dn jn an π max n n The maximum value of the equivalent lateral force at the jth floor from vibration in the nth mode is
+
+L ( ) n = φ an
+
+### (B.121)
+
+f M m S jn j jn max n Maximum values of the internal forces and moments can then be computed by static analysis of the structure subjected to the maximum equivalent lateral forces.
+
+### B.10.4.2 Combination of Modal Response Maxima
+
+Section B.10.4.1 showed how the response spectrum can be used to predict maximum values of various modal response parameters. The mode superposition method showed that time series of modal response can be combined by simple superposition to obtain the total time series of response. However, the combination of modal response maxima to obtain the maximum total response is not as straightforward. The exact value of the maximum total response cannot be obtained directly from the modal maxima because the modal maxima occur at different times. Direct superposition of the modal maxima, which implies that the maxima do occur simultaneously, produces an upper bound to the maximum total response; for any response parameter r(t),
