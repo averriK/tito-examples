@@ -1,0 +1,10 @@
+{
+  "id": "sm1_enh",
+  "workflow": "enhance",
+  "inputs": {
+    "sources": ["../run-20260330_175103/sm1.prompt.md, ../run-20260330_175309_7976/sm1.research.md, ../run-20260330_182313/sm1_rev.review.md"]
+  },
+  "outputs": {
+    "primary": "sm1_enh.enhance.md"
+  }
+}

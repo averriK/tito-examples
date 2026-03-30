@@ -1,0 +1,11 @@
+{
+  "id": "sm1",
+  "workflow": "compile-research",
+  "sessions": [
+    { "path": "../run-20260330_175309_7976/sm1.research.md" }
+  ],
+  "outputs": {
+    "primary": "sm1.compile.research.md",
+    "biblatex": "biblatex.bib"
+  }
+}

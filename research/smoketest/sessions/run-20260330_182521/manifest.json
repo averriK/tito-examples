@@ -1,0 +1,11 @@
+{
+  "id": "sm1_rev",
+  "workflow": "compile-review",
+  "sessions": [
+    { "path": "../run-20260330_182313/sm1_rev.review.md" }
+  ],
+  "outputs": {
+    "primary": "sm1_rev.compile.review.md",
+    "biblatex": "biblatex.bib"
+  }
+}

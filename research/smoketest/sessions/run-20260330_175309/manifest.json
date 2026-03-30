@@ -1,0 +1,10 @@
+{
+  "id": "sm1",
+  "workflow": "compile-prompt",
+  "sessions": [
+    { "path": "../run-20260330_175103/sm1.prompt.md" }
+  ],
+  "outputs": {
+    "primary": "sm1.compile.prompt.md"
+  }
+}
