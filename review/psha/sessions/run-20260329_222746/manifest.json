@@ -1,0 +1,10 @@
+{
+  "id": "psha_enh1",
+  "workflow": "enhance",
+  "inputs": {
+    "sources": ["../run-20260329_195849/psha_hive.review.md, ../run-20260329_214042/psha_hive2.review.md"]
+  },
+  "outputs": {
+    "primary": "psha_enh1.enhance.md"
+  }
+}

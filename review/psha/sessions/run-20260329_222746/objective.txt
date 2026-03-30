@@ -1,0 +1,16 @@
+MANIFEST:        /home/averri/github/tools/tito-examples/review/psha/sessions/run-20260329_222746/manifest.json
+TASK:            /home/averri/github/tools/tito-examples/review/psha/tasks/task.enhance.md
+OUTPUT:          /home/averri/github/tools/tito-examples/review/psha/sessions/run-20260329_222746/psha_enh1.enhance.md
+KB:              /home/averri/github/tools/tito-examples/review/psha/kb
+SOURCES:         ../run-20260329_195849/psha_hive.review.md, ../run-20260329_214042/psha_hive2.review.md
+WORKFLOW:        /usr/local/libexec/tito/workflows/enhance.session.md
+FORMAT_RULES:    /usr/local/libexec/tito/rules/format.session.md
+CITATIONS_RULES: /usr/local/libexec/tito/rules/citations.enhance.md
+AUDIT_RULES:     /usr/local/libexec/tito/rules/audit.md
+
+Read WORKFLOW, FORMAT_RULES, CITATIONS_RULES, and AUDIT_RULES.
+Read each file listed in SOURCES. These are audited sessions with
+per-paragraph audit footnotes (Confidence: HIGH/MEDIUM/LOW).
+Identify LOW and MEDIUM gaps. Research those gaps using web sources.
+Produce an improved manuscript with all paragraphs audited.
+Write the enhanced manuscript to OUTPUT.
