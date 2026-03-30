@@ -1,7 +1,0 @@
-{
-  "id": "srvprompt",
-  "workflow": "prompt",
-  "outputs": {
-    "primary": "srvprompt.prompt.md"
-  }
-}
