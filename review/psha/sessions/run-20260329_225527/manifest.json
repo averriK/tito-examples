@@ -1,0 +1,11 @@
+{
+  "id": "psha_enh1",
+  "workflow": "compile-research",
+  "sessions": [
+    { "path": "../run-20260329_222746/psha_enh1.enhance.md" }
+  ],
+  "outputs": {
+    "primary": "psha_enh1.compile.research.md",
+    "biblatex": "biblatex.bib"
+  }
+}
