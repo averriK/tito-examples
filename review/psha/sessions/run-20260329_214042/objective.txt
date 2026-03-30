@@ -1,0 +1,13 @@
+MANIFEST:        /home/averri/github/tools/tito-examples/review/psha/sessions/run-20260329_214042/manifest.json
+TASK:            /home/averri/github/tools/tito-examples/review/psha/tasks/task.md
+OUTPUT:          /home/averri/github/tools/tito-examples/review/psha/sessions/run-20260329_214042/psha_hive2.review.md
+KB:              /home/averri/github/tools/tito-examples/review/psha/sessions/psha_hive2.kb.prepared
+CHUNK_PLAN:      /tmp/tmp.yfFYjTwejl/chunks.json
+WORKFLOW:        /usr/local/libexec/tito/workflows/review.session.md
+FORMAT_RULES:    /usr/local/libexec/tito/rules/format.session.md
+CITATIONS_RULES: /usr/local/libexec/tito/rules/citations.review.md
+AUDIT_RULES:     /usr/local/libexec/tito/rules/audit.md
+
+Read WORKFLOW, FORMAT_RULES, CITATIONS_RULES, and AUDIT_RULES.
+Then execute the review workflow using TASK, KB, and CHUNK_PLAN.
+Write the full review manuscript to OUTPUT.

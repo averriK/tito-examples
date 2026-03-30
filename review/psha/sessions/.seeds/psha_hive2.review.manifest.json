@@ -1,0 +1,15 @@
+{
+  "id": "psha_hive2",
+  "workflow": "review",
+  "chunks": [
+    { "id": "chunk-001", "review_md_path": "psha_hive2.chunk-001.review.md" },
+    { "id": "chunk-002", "review_md_path": "psha_hive2.chunk-002.review.md" },
+    { "id": "chunk-003", "review_md_path": "psha_hive2.chunk-003.review.md" },
+    { "id": "chunk-004", "review_md_path": "psha_hive2.chunk-004.review.md" },
+    { "id": "chunk-005", "review_md_path": "psha_hive2.chunk-005.review.md" },
+    { "id": "chunk-006", "review_md_path": "psha_hive2.chunk-006.review.md" }
+  ],
+  "outputs": {
+    "primary": "psha_hive2.review.md"
+  }
+}
