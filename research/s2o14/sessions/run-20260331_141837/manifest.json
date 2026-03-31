@@ -1,0 +1,10 @@
+{
+  "id": "s2o14",
+  "workflow": "compile-prompt",
+  "sessions": [
+    { "path": "../run-20260331_141630/s2o14.prompt.md" }
+  ],
+  "outputs": {
+    "primary": "s2o14.compile.prompt.md"
+  }
+}

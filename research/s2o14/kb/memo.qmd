@@ -1,0 +1,49 @@
+---
+title: ""
+number-sections: false
+---
+
+```{r}
+#| include: true
+root <- normalizePath(here::here())
+source(file.path(root,"psha","R","setup.R"))
+```
+
+
+# Seismic Coefficient Selection
+
+{{< include _chapters/introduction.qmd >}}
+
+{{< include _chapters/standards.qmd >}}
+
+{{< include _chapters/pbsd.qmd >}}
+
+{{< include _chapters/model.qmd >}}
+
+{{< include _chapters/newmark.qmd >}}
+
+{{< include _chapters/periods.qmd >}}
+
+{{< include _chapters/ensemble.qmd >}}
+
+{{< include _chapters/summary.qmd >}}
+
+
+
+# Appendices
+
+
+## Appendix: Material Scenarios
+
+{{< include _tbl/IDm.qmd >}}
+
+## Appendix: Shear Module
+
+{{< include /psha/_tbl/SiteGo.qmd >}}
+
+
+# References {.unnumbered}
+
+::: {#refs .references}
+:::
+

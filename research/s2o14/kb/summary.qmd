@@ -1,0 +1,117 @@
+
+## Executive Summary
+
+```{r}
+#| include: false
+root <- here::here()
+PSA_Units <- "cm/s2"
+
+# --- Targets ---
+TR_TARGET   <- c(TR_gmdp[3], TR_gmdp[6])  # c(500, 2500)
+IDg_TARGET  <- IDg_gmdp[4]
+IDm_TARGET  <- IDm_gmdp
+ID_TARGET   <- "max"
+p_TARGET    <- "mean"
+Da_TARGET   <- sort(unique(kmaxTable$Da))
+Vs30_TARGET <- Vs30_gmdp
+
+# Slope geometry
+DT <- ShearTable[IDg == IDg_TARGET, .(s, lo, b, Hs)] |> unique()
+Hs_TARGET <- DT$Hs[1]
+s_TARGET  <- DT$s[1]
+lo_TARGET <- DT$lo[1]
+b_TARGET  <- DT$b[1]
+beta_deg  <- round(atan(1 / s_TARGET) * 180 / pi, 1)
+
+# Fundamental period
+DT <- ShearTable[IDg == IDg_TARGET & level == p_TARGET]
+Ts_range  <- range(DT$Ts, na.rm = TRUE)
+Go_range  <- range(DT$Go, na.rm = TRUE)
+VSo_range <- range(DT$VSo, na.rm = TRUE)
+Ts_med    <- median(DT$Ts, na.rm = TRUE)
+n_IDm     <- length(unique(DT$IDm))
+
+# PGA at reference rock (mean and p84)
+DT <- UHSTable[Vref == Vref_gmdp[1]][Tn == min(Tn)]
+PGA      <- DT[p == p_TARGET & TR %in% TR_TARGET, .(TR, Sa)]
+PGA.p84  <- DT[p == "0.84"  & TR %in% TR_TARGET, .(TR, Sa)]
+
+# Sa(Ts) at reference rock
+DT <- UHSTable[p == p_TARGET & Vref == Vref_gmdp[1]]
+Sa.Ts <- sapply(TR_TARGET, function(tr) {
+  approx(x = DT[TR == tr]$Tn, y = DT[TR == tr]$Sa, xout = Ts_med, rule = 2)$y
+})
+
+# Site-amplified PGA (all Vs30)
+DT <- UHSTable[p == p_TARGET & ID == ID_TARGET & Vs30 %in% Vs30_TARGET][Tn == min(Tn)]
+PGA.site <- sapply(TR_TARGET, function(tr) range(DT[TR == tr]$SaF, na.rm = TRUE))
+
+# --- kmax and Kh from kmaxTable ---
+DT <- kmaxTable[IDg == IDg_TARGET & p == p_TARGET & ID == ID_TARGET]
+
+# Full Da range
+kmax.all <- sapply(TR_TARGET, function(tr) range(DT[TR == tr]$kmax, na.rm = TRUE))
+Kh.all   <- sapply(TR_TARGET, function(tr) range(DT[TR == tr]$Kh, na.rm = TRUE))
+
+# Fixed scenarios: TR x Da
+scenarios <- data.frame(TR = c(500, 2500, 2500), Da = c(1, 10, 25))
+kmax.scenarios <- sapply(1:nrow(scenarios), function(i)
+  range(DT[TR == scenarios$TR[i] & Da == scenarios$Da[i]]$kmax, na.rm = TRUE))
+Kh.scenarios <- sapply(1:nrow(scenarios), function(i)
+  range(DT[TR == scenarios$TR[i] & Da == scenarios$Da[i]]$Kh, na.rm = TRUE))
+
+# Unit conversion (same logic as kmax.R)
+convert_kmax <- function(x) {
+  if (PSA_Units %in% c("cm", "cm/s2", "cm/s**2", "cm/s^2")) round(x * 988, 0)
+  else if (PSA_Units == "g") round(x, 3)
+  else x
+}
+kmax.all <- convert_kmax(kmax.all)
+kmax.scenarios <- convert_kmax(kmax.scenarios)
+Kh.all   <- round(Kh.all, 0)
+Kh.scenarios   <- round(Kh.scenarios, 0)
+
+# --- ANLA regulatory context ---
+TR_ANLA <- c(OBE = TR_gmdp[1], PC = TR_gmdp[3])  # c(100, 500)
+Kh.ANLA.OBE <- round(range(
+  DT[TR == TR_ANLA["OBE"] & Da == 1]$Kh, na.rm = TRUE), 0)
+
+# --- Ensemble ---
+W_active   <- Dn_weights[Dn_weights > 0]
+W_total    <- sum(W_active)
+W_labels   <- paste0(names(W_active), " (", W_active, "/", W_total, ")")
+n_rigid    <- sum(grepl("^(YG|AM|JB|SR)", names(W_active)))
+n_flexible <- sum(grepl("^(BT|BM)", names(W_active)))
+
+# --- Formatting ---
+fmt  <- function(x, d = 2) formatC(x, format = "f", digits = d)
+fmti <- function(x) formatC(x, format = "d", big.mark = ",")
+```
+
+This report provides an estimate of the performance-based horizontal seismic coefficient $k_{\max}$ applicable to `r params$site`, `r params$location`. Two reference service levels are reported: AEP 1/`r fmti(TR_TARGET[1])` and AEP 1/`r fmti(TR_TARGET[2])`.
+
+A probabilistic seismic hazard analysis (PSHA) was performed using the seismic sources and seismicity parameters from the Global Earthquake Model (GEM). Hazard values in terms of PGA and spectral ordinates were computed for `r length(TR_gmdp)` return periods (`r paste(fmti(TR_gmdp), collapse = ", ")` years) at reference-rock conditions ($v_{\mathrm{ref}}$ = `r Vref_gmdp[1]` m/s). The mean PGA at reference rock is `r fmt(PGA[TR == TR_TARGET[1]]$Sa)` g for AEP 1/`r fmti(TR_TARGET[1])` and `r fmt(PGA[TR == TR_TARGET[2]]$Sa)` g for AEP 1/`r fmti(TR_TARGET[2])` (`r fmt(PGA.p84[TR == TR_TARGET[1]]$Sa)` g and `r fmt(PGA.p84[TR == TR_TARGET[2]]$Sa)` g at the 84th percentile, respectively).
+
+Site amplification was estimated for site conditions with $v_{s,30}$ ranging from `r min(Vs30_TARGET)` to `r max(Vs30_TARGET)` m/s using the site-response model of Stewart et al. [-@Stewart2020] and Hashash et al. [-@Hashash2020]. The mean amplified PGA ranges from `r fmt(PGA.site[1,1])` to `r fmt(PGA.site[2,1])` g across site classes for AEP 1/`r fmti(TR_TARGET[1])`, and from `r fmt(PGA.site[1,2])` to `r fmt(PGA.site[2,2])` g for AEP 1/`r fmti(TR_TARGET[2])`. Design ground motions for all return periods and site conditions are tabulated in @tbl-pga1.
+
+{{< include _tbl/PGA.qmd >}}
+
+
+The horizontal seismic coefficient $k_{\max}$ was derived by inverting the Newmark sliding-block displacement framework: for a given target AEP and allowable displacement threshold $D_a$, $k_{\max}$ is the minimum yield acceleration for which the probability of the predicted permanent displacement exceeding $D_a$ is controlled at a specified exceedance level. Permanent displacements were estimated using an ensemble of `r length(W_active)` Newmark models -- `r n_rigid` rigid-block and `r n_flexible` flexible-block formulations -- with epistemic logic-tree weights: `r paste(W_labels, collapse = ", ")`. The reference moment magnitude adopted is $M_w$ = `r Mw_gmdp`. Ground-motion intensity measures for each model were sampled from the PSHA hazard fractiles with site amplification and inter-period correlation propagated jointly through `r NS` Monte Carlo realizations per scenario. Amplification model uncertainty is represented by an independent lognormal dispersion $\sigma_{\ln F}$.
+
+The fundamental period of the sliding mass, required as input by the flexible-block models, was estimated using the Ishihara [-@Ishihara1997] stiffness model. For the reference geometry class `r IDg_TARGET` ($H_s$ = `r Hs_TARGET` m, slope gradient $s$ = `r fmt(s_TARGET, 1)`, $\beta$ = `r fmt(beta_deg, 0)` degrees, truncation ratio $\lambda_o$ = `r fmt(lo_TARGET, 2)`, berm width $b$ = `r fmt(b_TARGET, 0)` m), the fundamental period ranges from `r fmt(Ts_range[1], 3)` to `r fmt(Ts_range[2], 3)` s across `r n_IDm` material scenarios (USCS classifications). The maximum shear modulus $G_o$ ranges from `r fmt(Go_range[1], 1)` to `r fmt(Go_range[2], 1)` MPa, with base shear-wave velocity $v_S^o$ from `r fmt(VSo_range[1], 0)` to `r fmt(VSo_range[2], 0)` m/s. At the representative fundamental period ($T_s$ = `r fmt(Ts_med, 3)` s), the spectral acceleration at reference rock is $S_a(T_s)$ = `r fmt(Sa.Ts[1])` g for AEP 1/`r fmti(TR_TARGET[1])` and `r fmt(Sa.Ts[2])` g for AEP 1/`r fmti(TR_TARGET[2])`.
+
+{{< include _tbl/Ts.qmd >}}
+
+
+For geometry class `r IDg_TARGET` (`r Hs_TARGET` m) at AEP 1/`r fmti(TR_TARGET[1])`, $k_{\max}$ ranges from `r kmax.all[1,1]` to `r kmax.all[2,1]` [`r PSA_Units`] across admissible displacements $D_a$ from `r min(Da_TARGET)` to `r max(Da_TARGET)` mm and across material scenarios, equivalent to $k_h$ from `r Kh.all[1,1]` to `r Kh.all[2,1]` [%PGA]. For AEP 1/`r fmti(TR_TARGET[2])`, $k_{\max}$ ranges from `r kmax.all[1,2]` to `r kmax.all[2,2]` [`r PSA_Units`], equivalent to $k_h$ from `r Kh.all[1,2]` to `r Kh.all[2,2]` [%PGA].
+
+For an admissible Newmark displacement $D_a$ = `r scenarios$Da[1]` mm and AEP 1/`r fmti(scenarios$TR[1])`, $k_{\max}$ ranges from `r kmax.scenarios[1,1]` to `r kmax.scenarios[2,1]` [`r PSA_Units`] across material scenarios, equivalent to $k_h$ from `r Kh.scenarios[1,1]` to `r Kh.scenarios[2,1]` [%PGA]. For $D_a$ = `r scenarios$Da[2]` mm and AEP 1/`r fmti(scenarios$TR[2])`, $k_{\max}$ ranges from `r kmax.scenarios[1,2]` to `r kmax.scenarios[2,2]` [`r PSA_Units`], equivalent to $k_h$ from `r Kh.scenarios[1,2]` to `r Kh.scenarios[2,2]` [%PGA]. For $D_a$ = `r scenarios$Da[3]` mm and AEP 1/`r fmti(scenarios$TR[3])`, $k_{\max}$ ranges from `r kmax.scenarios[1,3]` to `r kmax.scenarios[2,3]` [`r PSA_Units`], equivalent to $k_h$ from `r Kh.scenarios[1,3]` to `r Kh.scenarios[2,3]` [%PGA].  Tabulated $k_{\max}$ values in [`r PSA_Units`] and $k_h$ values in [%PGA] for all combinations of material scenario, geometry, and return period are provided in @tbl-kmax and @tbl-kh.
+
+{{< include _tbl/kmax.qmd >}}
+
+{{< include _tbl/kh.qmd >}}
+
+In the context of ANLA's TDR-13 requirements, the prescriptive pseudo-static coefficient for the OBE scenario corresponds to $k_h = 50$% PGA for $T_R > 50$ years, and for the SEE scenario $k_h = 100$% PGA for $T_R \geq 475$ years. For geometry class `r IDg_TARGET` (`r Hs_TARGET` m) with $D_a$ = `r scenarios$Da[1]` mm, the performance-based $k_h$ ranges from `r Kh.ANLA.OBE[1]` to `r Kh.ANLA.OBE[2]` [%PGA] at AEP 1/`r fmti(TR_ANLA["OBE"])` (OBE) and from `r Kh.scenarios[1,1]` to `r Kh.scenarios[2,1]` [%PGA] at AEP 1/`r fmti(TR_ANLA["PC"])` (PC). These values correspond to the minimum admissible displacement ($D_a$ = `r scenarios$Da[1]` mm) and are reported across all material scenarios.
+
+{{< include _tbl/kh_summary.qmd >}}

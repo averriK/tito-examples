@@ -1,0 +1,43 @@
+
+## Introduction
+
+```{r}
+#| include: false
+root <- here::here()
+TR_LABEL <- paste(prettyNum(TR_gmdp, big.mark = ",", scientific = FALSE), collapse = ", ")
+Hs_range <- range(as.numeric(sub("^S", "", IDg_gmdp)))
+n_IDg    <- length(IDg_gmdp)
+n_IDm    <- length(IDm_gmdp)
+n_TR     <- length(TR_gmdp)
+n_Da     <- length(Da_gmdp)
+n_models <- sum(Dn_weights > 0)
+n_rigid    <- sum(grepl("^(YG|AM|JB|SR)", names(Dn_weights[Dn_weights > 0])))
+n_flexible <- sum(grepl("^(BT|BM)", names(Dn_weights[Dn_weights > 0])))
+```
+
+### Background
+
+`r params$client$name` is advancing the designs of the Quebradona copper-gold project in `r params$location`. The project includes two compacted filtered tailings storage facilities (TSFs) -- a Non-Acid Generating (NAG) TSF and a Potentially Acid Generating (PAG) TSF -- designed to store approximately 45 Mm$^3$ and 9.1 Mm$^3$, respectively, of filtered tailings over the life of mine.
+
+As part of an integrated program of geotechnical analyses for the Quebradona TSFs, the present study (Task 500) addresses the determination of the horizontal seismic coefficient $k_h$ for pseudo-static slope stability assessment through a performance-based displacement approach, as an alternative to the prescriptive coefficients established in ANLA's Terms of Reference TDR-13 (2016).
+
+ANLA's TDR-13 requires pseudo-static analysis under seismic conditions with $k_h = 0.50 \times \mathrm{PGA}$ and a minimum factor of safety of 1.2. ANLA Concepto Tecnico 02268 (April 2022) specifies that for the operations and closure scenario the pseudo-static coefficient must satisfy $k_h \geq 0.50 \times \mathrm{PGA}$ for the operating earthquake ($T_R > 50$ years), and for the post-closure scenario the PGA from the maximum design earthquake ($T_R \geq 475$ years) is adopted at 100%. The TDR does not preclude alternative methodologies, provided they are technically substantiated: "different methodological procedures may be used in accordance with the variables to be measured, the application of which must be duly substantiated" (Compiled TdR, Methodology Section).
+
+The performance-based horizontal seismic coefficient $k_{\max}$ integrates site-specific PSHA with an ensemble of Newmark displacement models. The coefficient is defined as the minimum yield acceleration ratio for which the probability of exceeding a specified allowable displacement is controlled at a target exceedance level.
+
+### Scope
+
+The study comprises the estimation of $k_{\max}$ and the equivalent coefficient $k_h$ [%PGA] for `r params$site`, `r params$location`, across `r n_IDg` embankment geometry classes with heights from `r Hs_range[1]` to `r Hs_range[2]` m, `r n_IDm` material scenarios defined by USCS soil classifications, `r n_TR` return periods (`r TR_LABEL` years), and `r n_Da` admissible displacement thresholds.
+
+### Objectives
+
+**Seismic Hazard.** Computation of site-specific hazard curves, uniform hazard spectra, and peak ground acceleration values at reference-rock conditions ($v_{\mathrm{ref}}$ = `r Vref_gmdp[1]` m/s) for `r n_TR` return periods (`r TR_LABEL` years), using seismic sources and seismicity parameters from the Global Earthquake Model (GEM).
+
+**Site Response.** Estimation of site-amplified peak ground acceleration and spectral ordinates for site conditions with $v_{s,30}$ ranging from `r min(Vs30_gmdp)` to `r max(Vs30_gmdp)` m/s, with amplification model uncertainty propagated as an independent lognormal dispersion through Monte Carlo simulation.
+
+**Fundamental Period.** Estimation of the fundamental period $T_n$, the maximum shear modulus $G_o$, and the base shear-wave velocity $v_S^o$ for each combination of embankment geometry (`r n_IDg` classes, heights `r Hs_range[1]` to `r Hs_range[2]` m) and material scenario (`r n_IDm` USCS classifications), using the Ishihara stiffness model and the eigenvalue expression for laterally constrained embankments.
+
+**Newmark Displacement Model.** Estimation of permanent slope displacements using an ensemble of `r n_models` Newmark models -- `r n_rigid` rigid-block and `r n_flexible` flexible-block formulations -- aggregated through an epistemic logic-tree weighting scheme. Ground-motion intensity measures are sampled from the PSHA hazard fractiles with site amplification and inter-period correlation propagated jointly through `r NS` Monte Carlo realizations per scenario.
+
+**Seismic Coefficients.** Determination of $k_{\max}$ in pseudo-spectral acceleration units and $k_h$ in [%PGA] by inversion of the Newmark displacement framework, for each combination of return period, embankment geometry, material scenario, and admissible displacement threshold $D_a$. Tabulated values are reported for all `r n_TR` return periods, `r n_IDg` geometry classes, `r n_IDm` material scenarios, and `r n_Da` displacement thresholds.
+
