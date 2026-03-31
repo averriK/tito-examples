@@ -1,0 +1,138 @@
+ℹ️  hive: ruflo init
+
+Initializing RuFlo V3
+
+... Initializing...                         RuFlo V3 initialized successfully!
+
++-------- Summary --------+
+| Directories: 12 created |
+| Files: 115 created      |
++-------------------------+
+
++---------- Claude Code Integration -----------+
+| CLAUDE.md:   Swarm guidance & configuration  |
+| Settings:    .claude/settings.json           |
+| Skills:      .claude/skills/ (30 skills)     |
+| Commands:    .claude/commands/ (10 commands) |
+| Agents:      .claude/agents/ (98 agents)     |
+| Helpers:     .claude/helpers/                |
+| MCP:         .mcp.json                       |
++----------------------------------------------+
+
++------------- V3 Runtime --------------+
+| Config:      .claude-flow/config.yaml |
+| Data:        .claude-flow/data/       |
+| Logs:        .claude-flow/logs/       |
+| Sessions:    .claude-flow/sessions/   |
++---------------------------------------+
+
+[INFO] Hooks: 7 hook types enabled in settings.json
+
+Next steps:
+  - Run claude-flow daemon start to start background workers
+  - Run claude-flow memory init to initialize memory database
+  - Run claude-flow swarm init to initialize a swarm
+  - Or use claude-flow init --start-all to do all of the above
+  - Review .claude/settings.json for hook configurations
+ℹ️  hive: ruflo memory init
+
+Initializing Memory Database
+──────────────────────────────────────────────────
+... Initializing schema...... Initializing schema...                                Schema initialized
+
++------------------------------------------------------ Configuration ------------------------------------------------------+
+| Backend:           hybrid                                                                                                 |
+| Schema Version:    3.0.0                                                                                                  |
+| Database Path:     /data/github/tools/tito-examples/research/smoketest/sessions/run-20260330_211823_8503/.swarm/memory.db |
+|                                                                                                                           |
+| Features:                                                                                                                 |
+|   Vector Embeddings: ✓ Enabled                                                                                            |
+|   Pattern Learning:  ✓ Enabled                                                                                            |
+|   Temporal Decay:    ✓ Enabled                                                                                            |
+|   HNSW Indexing:     ✓ Enabled                                                                                            |
+|   Migration Tracking: ✓ Enabled                                                                                           |
++---------------------------------------------------------------------------------------------------------------------------+
+
++---- Controller Registry (ADR-053) ----+
+| AgentDB Controllers:                  |
+|   Activated: 4  Failed: 1  Init: 82ms |
++---------------------------------------+
+
+... Verifying initialization...... Verifying initialization.....: Verifying initialization....:: Verifying initialization...::: Verifying initialization...::. Verifying initialization...An error occurred while writing the file to cache: Error: EACCES: permission denied, mkdir '/usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/.cache'
+    at async Object.mkdir (node:internal/fs/promises:856:10)
+    at async FileCache.put (file:///usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/src/utils/hub.js:279:13)
+    at async getModelFile (file:///usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/src/utils/hub.js:541:9)
+    at async getModelJSON (file:///usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/src/utils/hub.js:572:18)
+    at async loadConfig (file:///usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/src/configs.js:46:16)
+    at async PretrainedConfig.from_pretrained (file:///usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/src/configs.js:85:30)
+    at async AutoModel.from_pretrained (file:///usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/src/models.js:5504:18)
+    at async Promise.all (index 1)
+    at async loadItems (file:///usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/src/pipelines.js:3279:5)
+    at async pipeline (file:///usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/src/pipelines.js:3219:21) {
+  errno: -13,
+  code: 'EACCES',
+  syscall: 'mkdir',
+  path: '/usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/.cache'
+}
+:.. Verifying initialization...An error occurred while writing the file to cache: Error: EACCES: permission denied, mkdir '/usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/.cache'
+    at async Object.mkdir (node:internal/fs/promises:856:10)
+    at async FileCache.put (file:///usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/src/utils/hub.js:279:13)
+    at async getModelFile (file:///usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/src/utils/hub.js:541:9)
+    at async getModelJSON (file:///usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/src/utils/hub.js:572:18)
+    at async Promise.all (index 1)
+    at async loadTokenizer (file:///usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/src/tokenizers.js:61:18)
+    at async AutoTokenizer.from_pretrained (file:///usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/src/tokenizers.js:4459:50)
+    at async Promise.all (index 0)
+    at async loadItems (file:///usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/src/pipelines.js:3279:5)
+    at async pipeline (file:///usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/src/pipelines.js:3219:21) {
+  errno: -13,
+  code: 'EACCES',
+  syscall: 'mkdir',
+  path: '/usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/.cache'
+}
+... Verifying initialization...An error occurred while writing the file to cache: Error: EACCES: permission denied, mkdir '/usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/.cache'
+    at async Object.mkdir (node:internal/fs/promises:856:10)
+    at async FileCache.put (file:///usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/src/utils/hub.js:279:13)
+    at async getModelFile (file:///usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/src/utils/hub.js:541:9)
+    at async getModelJSON (file:///usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/src/utils/hub.js:572:18)
+    at async Promise.all (index 0)
+    at async loadTokenizer (file:///usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/src/tokenizers.js:61:18)
+    at async AutoTokenizer.from_pretrained (file:///usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/src/tokenizers.js:4459:50)
+    at async Promise.all (index 0)
+    at async loadItems (file:///usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/src/pipelines.js:3279:5)
+    at async pipeline (file:///usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/src/pipelines.js:3219:21) {
+  errno: -13,
+  code: 'EACCES',
+  syscall: 'mkdir',
+  path: '/usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/.cache'
+}
+..: Verifying initialization....:: Verifying initialization...::: Verifying initialization...::. Verifying initialization...:.. Verifying initialization...... Verifying initialization.....: Verifying initialization....:: Verifying initialization...::: Verifying initialization...::. Verifying initialization...:.. Verifying initialization...... Verifying initialization.....: Verifying initialization....:: Verifying initialization...::: Verifying initialization...::. Verifying initialization...:.. Verifying initialization...... Verifying initialization.....: Verifying initialization....:: Verifying initialization...::: Verifying initialization...::. Verifying initialization...:.. Verifying initialization...An error occurred while writing the file to cache: Error: EACCES: permission denied, mkdir '/usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/.cache'
+    at async Object.mkdir (node:internal/fs/promises:856:10)
+    at async FileCache.put (file:///usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/src/utils/hub.js:279:13)
+    at async getModelFile (file:///usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/src/utils/hub.js:541:9)
+    at async constructSession (file:///usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/src/models.js:123:18)
+    at async Promise.all (index 1)
+    at async BertModel.from_pretrained (file:///usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/src/models.js:793:20)
+    at async AutoModel.from_pretrained (file:///usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/src/models.js:5519:20)
+    at async Promise.all (index 1)
+    at async loadItems (file:///usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/src/pipelines.js:3279:5)
+    at async pipeline (file:///usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/src/pipelines.js:3219:21) {
+  errno: -13,
+  code: 'EACCES',
+  syscall: 'mkdir',
+  path: '/usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/.cache'
+}
+                                     Verification passed (6/6 tests)
+
+Next Steps:
+  - Store data: claude-flow memory store -k "key" --value "data"
+  - Search: claude-flow memory search -q "query"
+  - Train patterns: claude-flow neural train -p coordination
+  - View stats: claude-flow memory stats
+
+Synced to: /data/github/tools/tito-examples/research/smoketest/sessions/run-20260330_211823_8503/.claude/memory.db
+ℹ️  hive: ruflo hive-mind init
+[ERROR] Invalid value for --topology: star. Must be one of: hierarchical, mesh, hierarchical-mesh, adaptive
+ℹ️  hive: ruflo hive-mind spawn (objective: 844 bytes)
+[INFO] Spawning 4 worker agent(s)...
+[ERROR] Hive-mind not initialized. Run hive-mind/init first.

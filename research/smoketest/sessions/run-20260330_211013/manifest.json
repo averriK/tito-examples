@@ -1,0 +1,7 @@
+{
+  "id": "topo_hier",
+  "workflow": "prompt",
+  "outputs": {
+    "primary": "topo_hier.prompt.md"
+  }
+}

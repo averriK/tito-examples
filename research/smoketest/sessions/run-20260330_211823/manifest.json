@@ -1,0 +1,10 @@
+{
+  "id": "topo_star",
+  "workflow": "compile-prompt",
+  "sessions": [
+    { "path": "../run-20260330_211711/topo_star.prompt.md" }
+  ],
+  "outputs": {
+    "primary": "topo_star.compile.prompt.md"
+  }
+}

@@ -1,0 +1,47 @@
+    {
+      "id": "slot-01",
+      "ordinal": 1,
+      "title": "Metals ranked by melting point",
+      "sources": [
+        { "path": "slot_sources/slot-01.run-20260330_175103.md" },
+        { "path": "slot_sources/slot-01.run-20260330_175309_7976.md" },
+        { "path": "slot_sources/slot-01.run-20260330_182313.md" },
+        { "path": "slot_sources/slot-01.run-20260330_182635.md" },
+        { "path": "slot_sources/slot-01.run-20260330_203150.md" },
+        { "path": "slot_sources/slot-01.run-20260330_203317_2509.md" },
+        { "path": "slot_sources/slot-01.run-20260330_211013.md" },
+        { "path": "slot_sources/slot-01.run-20260330_211059_12149.md" },
+        { "path": "slot_sources/slot-01.run-20260330_211711.md" }
+      ],
+      "output_path": "w2.compile.research.slot-01.md"
+    },
+    {
+      "id": "slot-02",
+      "ordinal": 2,
+      "title": "Highest-density metal and structural relevance",
+      "sources": [
+        { "path": "slot_sources/slot-02.run-20260330_175103.md" },
+        { "path": "slot_sources/slot-02.run-20260330_175309_7976.md" },
+        { "path": "slot_sources/slot-02.run-20260330_182313.md" },
+        { "path": "slot_sources/slot-02.run-20260330_182635.md" },
+        { "path": "slot_sources/slot-02.run-20260330_203150.md" },
+        { "path": "slot_sources/slot-02.run-20260330_203317_2509.md" },
+        { "path": "slot_sources/slot-02.run-20260330_211013.md" },
+        { "path": "slot_sources/slot-02.run-20260330_211059_12149.md" },
+        { "path": "slot_sources/slot-02.run-20260330_211711.md" }
+      ],
+      "output_path": "w2.compile.research.slot-02.md"
+    },
+    {
+      "id": "slot-03",
+      "ordinal": 3,
+      "title": "Iron versus aluminum comparison",
+      "sources": [
+        { "path": "slot_sources/slot-03.run-20260330_175309_7976.md" },
+        { "path": "slot_sources/slot-03.run-20260330_182313.md" },
+        { "path": "slot_sources/slot-03.run-20260330_182635.md" },
+        { "path": "slot_sources/slot-03.run-20260330_203317_2509.md" },
+        { "path": "slot_sources/slot-03.run-20260330_211059_12149.md" }
+      ],
+      "output_path": "w2.compile.research.slot-03.md"
+    }

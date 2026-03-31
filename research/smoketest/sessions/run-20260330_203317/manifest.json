@@ -1,0 +1,10 @@
+{
+  "id": "topo_mesh",
+  "workflow": "compile-prompt",
+  "sessions": [
+    { "path": "../run-20260330_203150/topo_mesh.prompt.md" }
+  ],
+  "outputs": {
+    "primary": "topo_mesh.compile.prompt.md"
+  }
+}

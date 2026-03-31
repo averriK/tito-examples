@@ -1,0 +1,17 @@
+{
+  "id": "topo_hier",
+  "workflow": "research",
+  "source": {
+    "kb_dir": "/home/averri/github/tools/tito-examples/research/smoketest/kb",
+    "documents": [
+      "metals.md"
+    ]
+  },
+  "orchestration": {
+    "structured_prompt_spec": "structured_prompt_spec.json",
+    "slot_orchestration_plan": "slot_orchestration_plan.json"
+  },
+  "outputs": {
+    "primary": "topo_hier.research.md"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "id": "topo_star",
+  "workflow": "prompt",
+  "outputs": {
+    "primary": "topo_star.prompt.md"
+  }
+}

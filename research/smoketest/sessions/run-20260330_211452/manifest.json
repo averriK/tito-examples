@@ -1,0 +1,11 @@
+{
+  "id": "topo_hier",
+  "workflow": "compile-research",
+  "sessions": [
+    { "path": "../run-20260330_211059_12149/topo_hier.research.md" }
+  ],
+  "outputs": {
+    "primary": "topo_hier.compile.research.md",
+    "biblatex": "biblatex.bib"
+  }
+}

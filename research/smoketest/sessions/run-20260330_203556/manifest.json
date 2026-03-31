@@ -1,0 +1,11 @@
+{
+  "id": "topo_mesh",
+  "workflow": "compile-research",
+  "sessions": [
+    { "path": "../run-20260330_203317_2509/topo_mesh.research.md" }
+  ],
+  "outputs": {
+    "primary": "topo_mesh.compile.research.md",
+    "biblatex": "biblatex.bib"
+  }
+}
