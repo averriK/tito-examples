@@ -1,7 +1,0 @@
-{
-  "id": "topo_mesh",
-  "workflow": "prompt",
-  "outputs": {
-    "primary": "topo_mesh.prompt.md"
-  }
-}

@@ -24,7 +24,9 @@ When a site-specific procedure is used to determine the design ground motion, th
 
 $$
 S_{DS} = 0.9 \max_{T\,\in\,[0.2,\,5\,\text{s}]} S_a(T)
-$$ $$
+$$ 
+
+$$
 S_{D1} = \max\!\left(0.9\max_{T\,\in\,[1,\,T^*]\,\text{s}} \left[T \cdot S_a(T)\right],\quad
 S_a(1\,\text{s})\right)
 \quad \text{where} \quad
@@ -67,11 +69,6 @@ After the cessation of operations, TSFs are expected to remain physically stable
 Closure design is typically more stringent than operational design for lower consequence facilities. Rehabilitation measures (flattened slopes, reinforcements, erosion protection) may be implemented to achieve maintenance-free performance. Permanent spillways are designed for probable maximum floods, eliminating reliance on operational water management. Post-closure stability analyses must explicitly account for the degradation of temporary features. Components not expected to persist (e.g., geomembranes) are excluded from the long-term stability evaluation; the residual embankment must independently resist seismic loading. Long-term factors of safety are typically higher, and materials (cemented tailings, stabilizing berms) may be specified to enhance seismic resilience.
 
 
----
-reference-location: section
-link-citations: true                   # make in-text cites clickable
----
-
 
 Probabilistic seismic hazard analysis (PSHA) aggregates the contributions of all plausible earthquake scenarios, obscuring the specific combinations of magnitude ($M$), source-to-site distance ($R$), and ground-motion residual ($\varepsilon$) that control site hazard. **Hazard disaggregation** quantifies the relative contribution of each scenario class---binned by magnitude $m_k$, distance $r_j$, and residual $\varepsilon_\ell$---to the annual frequency of exceedance at a specified ground-motion threshold $i^*$ [@Bazzurro1999].
 
@@ -112,9 +109,11 @@ $${#eq-disagg-prob}
 $$
 P\left[M \in m_k\mid I> i^{*}\right] = \sum_{j}\sum_{\ell}\theta_{k,j,\ell}
 $${#eq-disagg-marginal-M}
+
 $$
 P\left[R \in r_j\mid I> i^{*}\right] = \sum_{k}\sum_{\ell}\theta_{k,j,\ell}
 $${#eq-disagg-marginal-R}
+
 $$
 P\left[\varepsilon \in \varepsilon_\ell\mid I> i^{*}\right] = \sum_{k}\sum_{j}\theta_{k,j,\ell}
 $${#eq-disagg-marginal-eps}
@@ -153,12 +152,6 @@ P_{1\text{yr}}[I > i^*] = 1 - \exp[-\lambda_I(i^*)] = \text{AEP}
 $${#eq-aep}
 
 By extension, the probability of exceedance in $T$ years is $P_{T}(I > i^*) = 1 - \exp[-\lambda_I(i^*) T]$ assuming stationarity and independence year-to-year. This relation allows conversion between a mean annual rate and a probability over $T$ years^[A common case is $T=50$ years (an approximate lifespan of structures); for example, if $\lambda_I(i^*) = 0.0021$ per year, then $P_{50}(I>i^*) = 1 - \exp(-0.0021 \times 50) \approx 0.10$, i.e. a 10% probability in 50 years.]. The **return period** $T_R$ (or **mean return interval**) is a statistical average defined as the reciprocal of the annual frequency of exceedance, usually expressed in years $T_R = \frac{1}{\lambda_I(i^*)}$^[For low probabilities, return period is approximately the inverse of AEP as well, since $\text{AEP} \approx \lambda_{I}$ for small $\lambda_{I}$.]
-
-
----
-reference-location: section
-link-citations: true
----
 
 
 Near-surface geology modifies seismic waves as they propagate from bedrock to the ground surface. Soft soils amplify ground motion at intermediate-to-long periods while potentially deamplifying short-period motion through nonlinear strain effects; stiff rock sites transmit near-bedrock intensity levels with minimal modification [@Baker2021]. In probabilistic seismic hazard analysis, site effects can be incorporated through two mechanisms: (1) the site term embedded within ground-motion prediction equations (GMPEs), in which the median prediction and aleatory variability are functions of $V_{S30}$, or (2) an external amplification model applied to a reference-rock hazard curve [@Stewart2020]. The first mechanism is ergodic by construction---the empirical site term averages over many recording sites globally and may not capture conditions at a specific site or region. The second mechanism allows regionally calibrated amplification that accounts for nonlinear soil behavior as a function of shaking intensity. This assessment employs both approaches and selects the controlling (maximum) spectral ordinate for each period and hazard level to ensure that the design spectrum is not governed by whichever model happens to be less conservative at a given period.

@@ -1,7 +1,0 @@
-{
-  "id": "qt1",
-  "workflow": "prompt",
-  "outputs": {
-    "primary": "qt1.prompt.md"
-  }
-}

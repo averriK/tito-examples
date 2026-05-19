@@ -1,314 +1,0 @@
-ℹ️  compile: ruflo init
-
-Initializing RuFlo V3
-
-... Initializing...                         RuFlo V3 initialized successfully!
-
-+-------- Summary --------+
-| Directories: 12 created |
-| Files: 115 created      |
-+-------------------------+
-
-+---------- Claude Code Integration -----------+
-| CLAUDE.md:   Swarm guidance & configuration  |
-| Settings:    .claude/settings.json           |
-| Skills:      .claude/skills/ (30 skills)     |
-| Commands:    .claude/commands/ (10 commands) |
-| Agents:      .claude/agents/ (98 agents)     |
-| Helpers:     .claude/helpers/                |
-| MCP:         .mcp.json                       |
-+----------------------------------------------+
-
-+------------- V3 Runtime --------------+
-| Config:      .claude-flow/config.yaml |
-| Data:        .claude-flow/data/       |
-| Logs:        .claude-flow/logs/       |
-| Sessions:    .claude-flow/sessions/   |
-+---------------------------------------+
-
-[INFO] Hooks: 7 hook types enabled in settings.json
-
-Next steps:
-  - Run claude-flow daemon start to start background workers
-  - Run claude-flow memory init to initialize memory database
-  - Run claude-flow swarm init to initialize a swarm
-  - Or use claude-flow init --start-all to do all of the above
-  - Review .claude/settings.json for hook configurations
-ℹ️  compile: ruflo memory init
-
-Initializing Memory Database
-──────────────────────────────────────────────────
-... Initializing schema...... Initializing schema...                                Schema initialized
-
-+--------------------------------------------------- Configuration ----------------------------------------------------+
-| Backend:           hybrid                                                                                            |
-| Schema Version:    3.0.0                                                                                             |
-| Database Path:     /data/github/tools/tito-examples/research/smoketest/sessions/run-20260330_215709/.swarm/memory.db |
-|                                                                                                                      |
-| Features:                                                                                                            |
-|   Vector Embeddings: ✓ Enabled                                                                                       |
-|   Pattern Learning:  ✓ Enabled                                                                                       |
-|   Temporal Decay:    ✓ Enabled                                                                                       |
-|   HNSW Indexing:     ✓ Enabled                                                                                       |
-|   Migration Tracking: ✓ Enabled                                                                                      |
-+----------------------------------------------------------------------------------------------------------------------+
-
-+---- Controller Registry (ADR-053) ----+
-| AgentDB Controllers:                  |
-|   Activated: 4  Failed: 1  Init: 91ms |
-+---------------------------------------+
-
-... Verifying initialization...... Verifying initialization.....: Verifying initialization....:: Verifying initialization...::: Verifying initialization...::. Verifying initialization...An error occurred while writing the file to cache: Error: EACCES: permission denied, mkdir '/usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/.cache'
-    at async Object.mkdir (node:internal/fs/promises:856:10)
-    at async FileCache.put (file:///usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/src/utils/hub.js:279:13)
-    at async getModelFile (file:///usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/src/utils/hub.js:541:9)
-    at async getModelJSON (file:///usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/src/utils/hub.js:572:18)
-    at async Promise.all (index 1)
-    at async loadTokenizer (file:///usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/src/tokenizers.js:61:18)
-    at async AutoTokenizer.from_pretrained (file:///usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/src/tokenizers.js:4459:50)
-    at async Promise.all (index 0)
-    at async loadItems (file:///usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/src/pipelines.js:3279:5)
-    at async pipeline (file:///usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/src/pipelines.js:3219:21) {
-  errno: -13,
-  code: 'EACCES',
-  syscall: 'mkdir',
-  path: '/usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/.cache'
-}
-An error occurred while writing the file to cache: Error: EACCES: permission denied, mkdir '/usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/.cache'
-    at async Object.mkdir (node:internal/fs/promises:856:10)
-    at async FileCache.put (file:///usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/src/utils/hub.js:279:13)
-    at async getModelFile (file:///usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/src/utils/hub.js:541:9)
-    at async getModelJSON (file:///usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/src/utils/hub.js:572:18)
-    at async loadConfig (file:///usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/src/configs.js:46:16)
-    at async PretrainedConfig.from_pretrained (file:///usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/src/configs.js:85:30)
-    at async AutoModel.from_pretrained (file:///usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/src/models.js:5504:18)
-    at async Promise.all (index 1)
-    at async loadItems (file:///usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/src/pipelines.js:3279:5)
-    at async pipeline (file:///usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/src/pipelines.js:3219:21) {
-  errno: -13,
-  code: 'EACCES',
-  syscall: 'mkdir',
-  path: '/usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/.cache'
-}
-An error occurred while writing the file to cache: Error: EACCES: permission denied, mkdir '/usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/.cache'
-    at async Object.mkdir (node:internal/fs/promises:856:10)
-    at async FileCache.put (file:///usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/src/utils/hub.js:279:13)
-    at async getModelFile (file:///usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/src/utils/hub.js:541:9)
-    at async getModelJSON (file:///usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/src/utils/hub.js:572:18)
-    at async Promise.all (index 0)
-    at async loadTokenizer (file:///usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/src/tokenizers.js:61:18)
-    at async AutoTokenizer.from_pretrained (file:///usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/src/tokenizers.js:4459:50)
-    at async Promise.all (index 0)
-    at async loadItems (file:///usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/src/pipelines.js:3279:5)
-    at async pipeline (file:///usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/src/pipelines.js:3219:21) {
-  errno: -13,
-  code: 'EACCES',
-  syscall: 'mkdir',
-  path: '/usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/.cache'
-}
-:.. Verifying initialization...... Verifying initialization.....: Verifying initialization....:: Verifying initialization...::: Verifying initialization...::. Verifying initialization...:.. Verifying initialization...... Verifying initialization.....: Verifying initialization....:: Verifying initialization...::: Verifying initialization...::. Verifying initialization...:.. Verifying initialization...... Verifying initialization.....: Verifying initialization....:: Verifying initialization...::: Verifying initialization...::. Verifying initialization...:.. Verifying initialization...... Verifying initialization.....: Verifying initialization....:: Verifying initialization...::: Verifying initialization...::. Verifying initialization...:.. Verifying initialization...An error occurred while writing the file to cache: Error: EACCES: permission denied, mkdir '/usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/.cache'
-    at async Object.mkdir (node:internal/fs/promises:856:10)
-    at async FileCache.put (file:///usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/src/utils/hub.js:279:13)
-    at async getModelFile (file:///usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/src/utils/hub.js:541:9)
-    at async constructSession (file:///usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/src/models.js:123:18)
-    at async Promise.all (index 1)
-    at async BertModel.from_pretrained (file:///usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/src/models.js:793:20)
-    at async AutoModel.from_pretrained (file:///usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/src/models.js:5519:20)
-    at async Promise.all (index 1)
-    at async loadItems (file:///usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/src/pipelines.js:3279:5)
-    at async pipeline (file:///usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/src/pipelines.js:3219:21) {
-  errno: -13,
-  code: 'EACCES',
-  syscall: 'mkdir',
-  path: '/usr/lib/node_modules/ruflo/node_modules/@xenova/transformers/.cache'
-}
-                                     Verification passed (6/6 tests)
-
-Next Steps:
-  - Store data: claude-flow memory store -k "key" --value "data"
-  - Search: claude-flow memory search -q "query"
-  - Train patterns: claude-flow neural train -p coordination
-  - View stats: claude-flow memory stats
-
-Synced to: /data/github/tools/tito-examples/research/smoketest/sessions/run-20260330_215709/.claude/memory.db
-ℹ️  compile: ruflo hive-mind init
-
-Initializing Hive Mind
-... Setting up hive infrastructure...                                           Hive Mind initialized
-
-+----- Hive Mind Configuration ------+
-| Hive ID: hive-1774918634917-j1l52n |
-| Queen ID: queen-1774918634917      |
-| Topology: hierarchical             |
-| Consensus: byzantine               |
-| Max Agents: 15                     |
-| Memory: hybrid                     |
-| Status: initialized                |
-+------------------------------------+
-
-[INFO] Queen agent is ready to coordinate worker agents
-  Use "claude-flow hive-mind spawn" to add workers
-  Use "claude-flow hive-mind spawn --claude" to launch Claude Code
-ℹ️  compile: ruflo hive-mind spawn (objective: 9276 bytes)
-[INFO] Spawning 2 worker agent(s)...
-
-+--------------------------------+--------+--------+------------+
-| Agent ID                       | Role   | Status | Joined     |
-+--------------------------------+--------+--------+------------+
-| hive-worker-1774918635118-1mcs | worker | idle   | 9:57:15 PM |
-| hive-worker-1774918635118-ed0n | worker | idle   | 9:57:15 PM |
-+--------------------------------+--------+--------+------------+
-
-[OK] Spawned 2 agent(s)
-  Total workers in hive: 2
-
-🚀 Launching Claude Code with Hive Mind Coordination
-────────────────────────────────────────────────────────────
-... Preparing Hive Mind coordination prompt...                                                    Hive Mind coordination prompt ready!
-
-🧠 Hive Mind Configuration
-────────────────────────────────────────────────────────────
-  - Swarm ID: hive-1774918634917
-  - Objective: COMPILE RESEARCH WORKFLOW (SLOT-BASED VERIFIED MERGE)
-
-You will compile a clean final document from multiple research sessions by processing canonical SLOT units under the slot-aware orchestration plan. Do NOT perform any web research. Use only local slot sources with audit footnotes.
-
-Inputs (absolute paths provided):
-- TASK_FILE: /home/averri/github/tools/tito-examples/research/smoketest/md/task.prompt.md
-- SESSION_DIR: /home/averri/github/tools/tito-examples/research/smoketest/sessions/run-20260330_215709
-- SESSIONS_DIR: /home/averri/github/tools/tito-examples/research/smoketest/sessions
-- FORMAT_RULES: /usr/local/libexec/tito/rules/format.compile.md
-- CITATIONS_RULES: /usr/local/libexec/tito/rules/citations.compile.md
-- BIBLATEX_RULES: /usr/local/libexec/tito/rules/biblatex.md
-- MANIFEST: /home/averri/github/tools/tito-examples/research/smoketest/sessions/run-20260330_215709/manifest.json
-
-Data sources (local only):
-- Read MANIFEST first.
-- If MANIFEST.inputs.structured_prompt_spec is present, read ONLY that file to recover canonical slot order/titles.
-- In slot-based mode, read ONLY the files declared in `MANIFEST.slots[].sources[].path`.
-- You MUST NOT perform any additional Glob/ls over SESSIONS_DIR.
-
-Goal:
-Produce:
-- one compiled output per slot in canonical order; and
-- one final compiled document plus one consolidated BibLaTeX bibliography.
-
-Write the final results to the manifest-defined outputs:
-- Clean compiled document: /home/averri/github/tools/tito-examples/research/smoketest/sessions/run-20260330_215709/<MANIFEST.outputs.primary>
-- Bibliography: /home/averri/github/tools/tito-examples/research/smoketest/sessions/run-20260330_215709/<MANIFEST.outputs.biblatex>
-
-Policy (verification-based slot compilation):
-- SLOT COMPLETENESS (CRITICAL):
-  * If MANIFEST.slots[] is present, you MUST process every slot entry in order.
-  * You MUST emit one `## SLOT N: ...` section per slot.
-  * You MUST NOT silently drop slots.
-- SELECT content blocks based on the audit footnote `Confidence` field:
-  * Default: include ONLY `Confidence: HIGH`.
-  * Fallback: if a slot has ZERO `Confidence: HIGH` blocks across all of its sources, you MAY include `Confidence: MEDIUM` blocks for that slot.
-  * Structured-detail exception: if HIGH-confidence prose exists but an important list/table/code block exists only at MEDIUM, you MAY preserve that MEDIUM structured block for that slot, but you MUST emit the required `Confidence: MIXED` note immediately below the slot heading.
-  * Never include `Confidence: LOW` paragraphs.
-- EVIDENCE SIGNALING:
-  * If a slot uses only MEDIUM fallback material, insert:
-    > Confidence: MEDIUM — No HIGH-confidence evidence was available for this SLOT; content below is included with limited confidence.
-  * If a slot mixes HIGH-confidence prose with selected MEDIUM structured details, insert:
-    > Confidence: MIXED — This SLOT includes HIGH-confidence content plus selected MEDIUM-confidence structured details preserved to avoid dropping essential structure during compilation.
-  * If a slot has no HIGH and no MEDIUM evidence, still emit the slot heading and insert:
-    > Confidence: LOW — No HIGH/MEDIUM evidence was available for this SLOT; no reliable content could be compiled.
-- REMOVE all per-paragraph audit footnotes from compiled outputs.
-- CONVERT inline TOKEN citations to [@Key].
-- Treat the selected blocks as evidence, not as text to concatenate:
-  * Deduplicate aggressively inside the active slot.
-  * When multiple slot variants express the same conclusion with different wording, fuse them into one canonical slot answer.
-  * Preserve tables, lists, and code blocks when they carry unique structure.
-- OVERLAP CONTROL:
-  * Treat other slots' content only through the canonical slot map and the shared-memory coordination contract described in the orchestration preamble.
-  * Do NOT import other slots' evidence or claims from memory.
-  * Use shared memory only to avoid redundant definitions, repeated openings, and scope drift across similar slots.
-  * If another slot already “owns” a generic definition or introductory framing, compress any necessary repetition to the minimum bridge sentence needed for local readability.
-- If memory tools are available in your runtime, use the shared namespace described in the orchestration preamble as cache/handoff only. Never cite memory as evidence.
-- PROGRESS LOGGING:
-  * Emit plain-text progress markers while you work:
-    - `SLOT_PROGRESS: slot-XX :: reading_sources`
-    - `SLOT_PROGRESS: slot-XX :: writing_output`
-    - `PHASE_PROGRESS: assembly :: <phase>`
-  * Keep these progress markers concise and operational; do not emit long explanations.
-
-Method:
-1) Read MANIFEST and determine mode
-   - Read /home/averri/github/tools/tito-examples/research/smoketest/sessions/run-20260330_215709/manifest.json once.
-   - If `MANIFEST.slots[]` exists, treat it as the authoritative slot list.
-   - Use `MANIFEST.inputs.structured_prompt_spec` as the canonical slot order/title source when present.
-
-2) Read structured prompt spec (slot-based mode)
-   - Read the declared structured prompt spec once.
-   - Treat its slot ordinals/titles as authoritative.
-
-3) Process slots under slot-aware coordination
-   - Slot workers may run independently/parallel, but every emitted slot output must stay scoped to its own slot and respect the canonical slot order for final assembly.
-   - For EACH slot in `MANIFEST.slots[]`:
-     * Emit `SLOT_PROGRESS: slot-XX :: reading_sources` before reading evidence.
-     * Read ONLY that slot's declared `sources[].path` files.
-     * Consult shared-memory coordination notes (if present) only to see which definitions/openings were already claimed by sibling slots and what overlap handoffs they left behind.
-     * Parse audit footnotes and select content according to the policy above.
-     * Build one canonical answer for that slot only.
-     * Do NOT import content or evidence from other slots.
-     * Do NOT anchor the slot to a single session if the other variants contribute distinct supported details.
-     * Avoid repeating generic definitions or global framing that another slot already covered unless the slot would otherwise become unclear.
-     * Convert citations from TOKEN form to [@Key].
-     * Remove per-paragraph audit footnotes while preserving all supporting citations needed for bibliography generation.
-     * Self-check before writing: verify that every factual claim in the canonical answer can be traced to at least one selected source paragraph. If a claim cannot be traced, remove it.
-     * Emit `SLOT_PROGRESS: slot-XX :: writing_output` immediately before writing the slot result.
-     * Write the slot result to the slot's declared `output_path` under /home/averri/github/tools/tito-examples/research/smoketest/sessions/run-20260330_215709.
-     * After writing, store a concise shared-memory coordination note for this slot describing: scope actually covered, definitions introduced, repetition intentionally avoided, and any handoff needed for related slots.
-
-4) Assemble final document
-   - Emit `PHASE_PROGRESS: assembly :: reading_slot_outputs` before assembly.
-   - After all slot outputs exist, assemble the final compiled document in canonical slot order, incorporating each slot output exactly once as the basis for the final document.
-   - The `session_compiler` may read slot outputs plus shared-memory coordination notes to smooth transitions and trim redundant openings/definitions across adjacent or similar slots.
-   - Preserve evidence boundaries and canonical slot ownership while smoothing; do not fall back to whole-session concatenation.
-   - The final document must read like a single coherent chapter with no repeated slot answers and no whole-session concatenation.
-
-5) Generate bibliography
-   - Generate complete BibLaTeX entries for every cited `@Key` appearing in the compiled slot outputs.
-   - Extract metadata from the original TOKEN citations preserved in the selected slot evidence.
-   - Include citations referenced in audit Rationale when they support retained content.
-
-6) Post-process and write outputs
-   - Emit `PHASE_PROGRESS: assembly :: writing_final_outputs` before the final write.
-   - Apply FORMAT_RULES for professional voice, LaTeX math, and consistent structure.
-   - Save the assembled document to /home/averri/github/tools/tito-examples/research/smoketest/sessions/run-20260330_215709/<MANIFEST.outputs.primary>.
-   - Save the bibliography to /home/averri/github/tools/tito-examples/research/smoketest/sessions/run-20260330_215709/<MANIFEST.outputs.biblatex>.
-   - Confirm the exact file paths you wrote.
-
-Constraints:
-- No web access. Local inputs only.
-- Do NOT use MCP helpers/integrations other than optional shared memory cache/state under the predeclared namespace.
-- The compiled outputs must NOT contain any `^[Confidence: ...]` footnotes.
-- If code blocks are present in selected content, preserve them verbatim and never insert annotations inside them.
-- MUST emit the progress markers defined above so runtime logging can expose slot/fase activity.
-- MUST create the slot output files declared in `MANIFEST.slots[].output_path`.
-- MUST create both final output files (`outputs.primary` and `outputs.biblatex`).
-  - Queen Type: strategic
-  - Worker Count: 2
-  - Worker Types: worker
-  - Consensus: byzantine
-  - MCP Tools: Full Claude-Flow integration enabled
-
-[OK] Hive Mind prompt saved to: .hive-mind/sessions/hive-mind-prompt-hive-1774918634917.txt
-[INFO] Running in non-interactive mode
-
-[INFO] Launching Claude Code...
-Press Ctrl+C to pause the session
-
-[OK] Claude Code launched with Hive Mind coordination
-[INFO] The Queen coordinator will orchestrate all worker agents
-Prompt file saved at: .hive-mind/sessions/hive-mind-prompt-hive-1774918634917.txt
-{"type":"system","subtype":"hook_started","hook_id":"f2815a1c-22c8-46c3-acbf-859ab5d0a79c","hook_name":"SessionStart:startup","hook_event":"SessionStart","uuid":"a10a030b-6c92-45dd-b667-4ca1cd702d8c","session_id":"5ceafa22-658e-44fc-86f0-ad8a143e1dcc"}
-{"type":"system","subtype":"hook_started","hook_id":"d98f6501-2b82-4165-bc2d-ea6240b915be","hook_name":"SessionStart:startup","hook_event":"SessionStart","uuid":"ddc47ee0-56ed-4898-aaef-6aa430e5362e","session_id":"5ceafa22-658e-44fc-86f0-ad8a143e1dcc"}
-{"type":"system","subtype":"hook_response","hook_id":"d98f6501-2b82-4165-bc2d-ea6240b915be","hook_name":"SessionStart:startup","hook_event":"SessionStart","output":"\u001b[0;36m[AutoMemory] Importing auto memory files into bridge...\u001b[0m\n  \u001b[2mMemory package not available — skipping auto memory import\u001b[0m\n","stdout":"\u001b[0;36m[AutoMemory] Importing auto memory files into bridge...\u001b[0m\n  \u001b[2mMemory package not available — skipping auto memory import\u001b[0m\n","stderr":"","exit_code":0,"outcome":"success","uuid":"1921d812-502c-4cd3-9dc5-6e7f17fe7c2f","session_id":"5ceafa22-658e-44fc-86f0-ad8a143e1dcc"}
-{"type":"system","subtype":"hook_response","hook_id":"f2815a1c-22c8-46c3-acbf-859ab5d0a79c","hook_name":"SessionStart:startup","hook_event":"SessionStart","output":"No session to restore\nSession started: session-1774918635465\n[INTELLIGENCE] Loaded 2 patterns, 1 edges\n","stdout":"No session to restore\nSession started: session-1774918635465\n[INTELLIGENCE] Loaded 2 patterns, 1 edges\n","stderr":"","exit_code":0,"outcome":"success","uuid":"c01940bf-2ccd-45b8-bd0c-cb0e7e946ee5","session_id":"5ceafa22-658e-44fc-86f0-ad8a143e1dcc"}
-{"type":"system","subtype":"init","cwd":"/data/github/tools/tito-examples/research/smoketest/sessions/run-20260330_215709","session_id":"5ceafa22-658e-44fc-86f0-ad8a143e1dcc","tools":["Task","AskUserQuestion","Bash","CronCreate","CronDelete","CronList","Edit","EnterPlanMode","EnterWorktree","ExitPlanMode","ExitWorktree","Glob","Grep","ListMcpResourcesTool","NotebookEdit","Read","ReadMcpResourceTool","RemoteTrigger","SendMessage","Skill","TaskOutput","TaskStop","TeamCreate","TeamDelete","TodoWrite","ToolSearch","WebFetch","WebSearch","Write","mcp__claude-flow__agent_health","mcp__claude-flow__agent_list","mcp__claude-flow__agent_pool","mcp__claude-flow__agent_spawn","mcp__claude-flow__agent_status","mcp__claude-flow__agent_terminate","mcp__claude-flow__agent_update","mcp__claude-flow__agentdb_batch","mcp__claude-flow__agentdb_causal-edge","mcp__claude-flow__agentdb_consolidate","mcp__claude-flow__agentdb_context-synthesize","mcp__claude-flow__agentdb_controllers","mcp__claude-flow__agentdb_feedback","mcp__claude-flow__agentdb_health","mcp__claude-flow__agentdb_hierarchical-recall","mcp__claude-flow__agentdb_hierarchical-store","mcp__claude-flow__agentdb_pattern-search","mcp__claude-flow__agentdb_pattern-store","mcp__claude-flow__agentdb_route","mcp__claude-flow__agentdb_semantic-route","mcp__claude-flow__agentdb_session-end","mcp__claude-flow__agentdb_session-start","mcp__claude-flow__aidefence_analyze","mcp__claude-flow__aidefence_has_pii","mcp__claude-flow__aidefence_is_safe","mcp__claude-flow__aidefence_learn","mcp__claude-flow__aidefence_scan","mcp__claude-flow__aidefence_stats","mcp__claude-flow__analyze_diff","mcp__claude-flow__analyze_diff-classify","mcp__claude-flow__analyze_diff-reviewers","mcp__claude-flow__analyze_diff-risk","mcp__claude-flow__analyze_diff-stats","mcp__claude-flow__analyze_file-risk","mcp__claude-flow__autopilot_config","mcp__claude-flow__autopilot_disable","mcp__claude-flow__autopilot_enable","mcp__claude-flow__autopilot_history","mcp__claude-flow__autopilot_learn","mcp__claude-flow__autopilot_log","mcp__claude-flow__autopilot_predict","mcp__claude-flow__autopilot_progress","mcp__claude-flow__autopilot_reset","mcp__claude-flow__autopilot_status","mcp__claude-flow__browser_back","mcp__claude-flow__browser_check","mcp__claude-flow__browser_click","mcp__claude-flow__browser_close","mcp__claude-flow__browser_eval","mcp__claude-flow__browser_fill","mcp__claude-flow__browser_forward","mcp__claude-flow__browser_get-text","mcp__claude-flow__browser_get-title","mcp__claude-flow__browser_get-url","mcp__claude-flow__browser_get-value","mcp__claude-flow__browser_hover","mcp__claude-flow__browser_open","mcp__claude-flow__browser_press","mcp__claude-flow__browser_reload","mcp__claude-flow__browser_screenshot","mcp__claude-flow__browser_scroll","mcp__claude-flow__browser_select","mcp__claude-flow__browser_session-list","mcp__claude-flow__browser_snapshot","mcp__claude-flow__browser_type","mcp__claude-flow__browser_uncheck","mcp__claude-flow__browser_wait","mcp__claude-flow__claims_accept-handoff","mcp__claude-flow__claims_board","mcp__claude-flow__claims_claim","mcp__claude-flow__claims_handoff","mcp__claude-flow__claims_list","mcp__claude-flow__claims_load","mcp__claude-flow__claims_mark-stealable","mcp__claude-flow__claims_rebalance","mcp__claude-flow__claims_release","mcp__claude-flow__claims_status","mcp__claude-flow__claims_steal","mcp__claude-flow__claims_stealable","mcp__claude-flow__config_export","mcp__claude-flow__config_get","mcp__claude-flow__config_import","mcp__claude-flow__config_list","mcp__claude-flow__config_reset","mcp__claude-flow__config_set","mcp__claude-flow__coordination_consensus","mcp__claude-flow__coordination_load_balance","mcp__claude-flow__coordination_metrics","mcp__claude-flow__coordination_node","mcp__claude-flow__coordination_orchestrate","mcp__claude-flow__coordination_sync","mcp__claude-flow__coordination_topology","mcp__claude-flow__daa_agent_adapt","mcp__claude-flow__daa_agent_create","mcp__claude-flow__daa_cognitive_pattern","mcp__claude-flow__daa_knowledge_share","mcp__claude-flow__daa_learning_status","mcp__claude-flow__daa_performance_metrics","mcp__claude-flow__daa_workflow_create","mcp__claude-flow__daa_workflow_execute","mcp__claude-flow__embeddings_compare","mcp__claude-flow__embeddings_generate","mcp__claude-flow__embeddings_hyperbolic","mcp__claude-flow__embeddings_init","mcp__claude-flow__embeddings_neural","mcp__claude-flow__embeddings_search","mcp__claude-flow__embeddings_status","mcp__claude-flow__github_issue_track","mcp__claude-flow__github_metrics","mcp__claude-flow__github_pr_manage","mcp__claude-flow__github_repo_analyze","mcp__claude-flow__github_workflow","mcp__claude-flow__guidance_capabilities","mcp__claude-flow__guidance_discover","mcp__claude-flow__guidance_quickref","mcp__claude-flow__guidance_recommend","mcp__claude-flow__guidance_workflow","mcp__claude-flow__hive-mind_broadcast","mcp__claude-flow__hive-mind_consensus","mcp__claude-flow__hive-mind_init","mcp__claude-flow__hive-mind_join","mcp__claude-flow__hive-mind_leave","mcp__claude-flow__hive-mind_memory","mcp__claude-flow__hive-mind_shutdown","mcp__claude-flow__hive-mind_spawn","mcp__claude-flow__hive-mind_status","mcp__claude-flow__hooks_build-agents","mcp__claude-flow__hooks_explain","mcp__claude-flow__hooks_init","mcp__claude-flow__hooks_intelligence","mcp__claude-flow__hooks_intelligence_attention","mcp__claude-flow__hooks_intelligence_learn","mcp__claude-flow__hooks_intelligence_pattern-search","mcp__claude-flow__hooks_intelligence_pattern-store","mcp__claude-flow__hooks_intelligence_stats","mcp__claude-flow__hooks_intelligence_trajectory-end","mcp__claude-flow__hooks_intelligence_trajectory-start","mcp__claude-flow__hooks_intelligence_trajectory-step","mcp__claude-flow__hooks_intelligence-reset","mcp__claude-flow__hooks_list","mcp__claude-flow__hooks_metrics","mcp__claude-flow__hooks_model-outcome","mcp__claude-flow__hooks_model-route","mcp__claude-flow__hooks_model-stats","mcp__claude-flow__hooks_notify","mcp__claude-flow__hooks_post-command","mcp__claude-flow__hooks_post-edit","mcp__claude-flow__hooks_post-task","mcp__claude-flow__hooks_pre-command","mcp__claude-flow__hooks_pre-edit","mcp__claude-flow__hooks_pre-task","mcp__claude-flow__hooks_pretrain","mcp__claude-flow__hooks_route","mcp__claude-flow__hooks_session-end","mcp__claude-flow__hooks_session-restore","mcp__claude-flow__hooks_session-start","mcp__claude-flow__hooks_transfer","mcp__claude-flow__hooks_worker-cancel","mcp__claude-flow__hooks_worker-detect","mcp__claude-flow__hooks_worker-dispatch","mcp__claude-flow__hooks_worker-list","mcp__claude-flow__hooks_worker-status","mcp__claude-flow__mcp_status","mcp__claude-flow__memory_delete","mcp__claude-flow__memory_list","mcp__claude-flow__memory_migrate","mcp__claude-flow__memory_retrieve","mcp__claude-flow__memory_search","mcp__claude-flow__memory_stats","mcp__claude-flow__memory_store","mcp__claude-flow__neural_compress","mcp__claude-flow__neural_optimize","mcp__claude-flow__neural_patterns","mcp__claude-flow__neural_predict","mcp__claude-flow__neural_status","mcp__claude-flow__neural_train","mcp__claude-flow__performance_benchmark","mcp__claude-flow__performance_bottleneck","mcp__claude-flow__performance_metrics","mcp__claude-flow__performance_optimize","mcp__claude-flow__performance_profile","mcp__claude-flow__performance_report","mcp__claude-flow__progress_check","mcp__claude-flow__progress_summary","mcp__claude-flow__progress_sync","mcp__claude-flow__progress_watch","mcp__claude-flow__ruvllm_chat_format","mcp__claude-flow__ruvllm_generate_config","mcp__claude-flow__ruvllm_hnsw_add","mcp__claude-flow__ruvllm_hnsw_create","mcp__claude-flow__ruvllm_hnsw_route","mcp__claude-flow__ruvllm_microlora_adapt","mcp__claude-flow__ruvllm_microlora_create","mcp__claude-flow__ruvllm_sona_adapt","mcp__claude-flow__ruvllm_sona_create","mcp__claude-flow__ruvllm_status","mcp__claude-flow__session_delete","mcp__claude-flow__session_info","mcp__claude-flow__session_list","mcp__claude-flow__session_restore","mcp__claude-flow__session_save","mcp__claude-flow__swarm_health","mcp__claude-flow__swarm_init","mcp__claude-flow__swarm_shutdown","mcp__claude-flow__swarm_status","mcp__claude-flow__system_health","mcp__claude-flow__system_info","mcp__claude-flow__system_metrics","mcp__claude-flow__system_reset","mcp__claude-flow__system_status","mcp__claude-flow__task_assign","mcp__claude-flow__task_cancel","mcp__claude-flow__task_complete","mcp__claude-flow__task_create","mcp__claude-flow__task_list","mcp__claude-flow__task_status","mcp__claude-flow__task_summary","mcp__claude-flow__task_update","mcp__claude-flow__terminal_close","mcp__claude-flow__terminal_create","mcp__claude-flow__terminal_execute","mcp__claude-flow__terminal_history","mcp__claude-flow__terminal_list","mcp__claude-flow__transfer_detect-pii","mcp__claude-flow__transfer_ipfs-resolve","mcp__claude-flow__transfer_plugin-featured","mcp__claude-flow__transfer_plugin-info","mcp__claude-flow__transfer_plugin-official","mcp__claude-flow__transfer_plugin-search","mcp__claude-flow__transfer_store-download","mcp__claude-flow__transfer_store-featured","mcp__claude-flow__transfer_store-info","mcp__claude-flow__transfer_store-search","mcp__claude-flow__transfer_store-trending","mcp__claude-flow__wasm_agent_create","mcp__claude-flow__wasm_agent_export","mcp__claude-flow__wasm_agent_files","mcp__claude-flow__wasm_agent_list","mcp__claude-flow__wasm_agent_prompt","mcp__claude-flow__wasm_agent_terminate","mcp__claude-flow__wasm_agent_tool","mcp__claude-flow__wasm_gallery_create","mcp__claude-flow__wasm_gallery_list","mcp__claude-flow__wasm_gallery_search","mcp__claude-flow__workflow_cancel","mcp__claude-flow__workflow_create","mcp__claude-flow__workflow_delete","mcp__claude-flow__workflow_execute","mcp__claude-flow__workflow_list","mcp__claude-flow__workflow_pause","mcp__claude-flow__workflow_resume","mcp__claude-flow__workflow_run","mcp__claude-flow__workflow_status","mcp__claude-flow__workflow_template"],"mcp_servers":[{"name":"claude-flow","status":"connected"}],"model":"claude-sonnet-4-6","permissionMode":"bypassPermissions","slash_commands":["update-config","debug","simplify","batch","loop","schedule","claude-api","v3-integration-deep","v3-swarm-coordination","sparc-methodology","swarm-advanced","pair-programming","agentdb-advanced","stream-chain","v3-performance-optimization","github-release-management","github-multi-repo","agentdb-memory-patterns","v3-security-overhaul","verification-quality","agentdb-optimization","v3-core-implementation","agentdb-learning","github-workflow-automation","v3-mcp-optimization","hooks-automation","github-code-review","github-project-management","reasoningbank-agentdb","swarm-orchestration","browser","reasoningbank-intelligence","v3-cli-modernization","agentdb-vector-search","v3-ddd-architecture","v3-memory-unification","skill-builder","monitoring:real-time-view","monitoring:README","monitoring:agents","monitoring:swarm-monitor","monitoring:status","monitoring:agent-metrics","hooks:pre-edit","hooks:post-task","hooks:README","hooks:post-edit","hooks:session-end","hooks:setup","hooks:overview","hooks:pre-task","github:github-modes","github:code-review","github:README","github:issue-tracker","github:release-swarm","github:github-swarm","github:repo-architect","github:sync-coordinator","github:swarm-issue","github:repo-analyze","github:pr-enhance","github:project-board-sync","github:issue-triage","github:code-review-swarm","github:multi-repo-swarm","github:release-manager","github:swarm-pr","github:workflow-automation","github:pr-manager","optimization:README","optimization:parallel-execution","optimization:auto-topology","optimization:topology-optimize","optimization:cache-manage","optimization:parallel-execute","claude-flow-swarm","claude-flow-help","claude-flow-memory","automation:session-memory","automation:smart-spawn","automation:README","automation:smart-agents","automation:workflow-select","automation:auto-agent","automation:self-healing","analysis:bottleneck-detect","analysis:README","analysis:COMMAND_COMPLIANCE_REPORT","analysis:performance-report","analysis:token-efficiency","analysis:performance-bottlenecks","analysis:token-usage","sparc:debugger","sparc:code","sparc:docs-writer","sparc:memory-manager","sparc:tester","sparc:spec-pseudocode","sparc:supabase-admin","sparc:devops","sparc:integration","sparc:refinement-optimization-mode","sparc:designer","sparc:architect","sparc:batch-executor","sparc:security-review","sparc:innovator","sparc:sparc","sparc:coder","sparc:swarm-coordinator","sparc:workflow-manager","sparc:ask","sparc:optimizer","sparc:mcp","sparc:tdd","sparc:analyzer","sparc:tutorial","sparc:reviewer","sparc:orchestrator","sparc:debug","sparc:documenter","sparc:sparc-modes","sparc:researcher","sparc:post-deployment-monitoring-mode","compact","context","cost","heapdump","init","pr-comments","release-notes","review","security-review","insights"],"apiKeySource":"/login managed key","claude_code_version":"2.1.86","output_style":"default","agents":["general-purpose","statusline-setup","Explore","Plan","api-docs","task-orchestrator","pr-manager","perf-analyzer","memory-coordinator","smart-agent","sparc-coder","base-template-generator","sparc-coord","swarm-init","backend-dev","sona-learning-optimizer","performance-benchmarker","gossip-coordinator","byzantine-coordinator","security-manager","raft-manager","quorum-manager","crdt-synchronizer","sublinear-goal-planner","goal-planner","cicd-engineer","matrix-optimizer","trading-predictor","performance-optimizer","consensus-coordinator","pagerank-analyzer","github-modes","issue-tracker","release-swarm","repo-architect","sync-coordinator","swarm-issue","project-board-sync","code-review-swarm","multi-repo-swarm","release-manager","swarm-pr","workflow-automation","test-long-runner","Resource Allocator","Performance Monitor","Topology Optimizer","Benchmark Suite","Load Balancing Coordinator","tester","coder","reviewer","planner","researcher","adr-architect","security-architect","claims-authorizer","sparc-orchestrator","injection-analyst","security-auditor","reasoningbank-learner","memory-specialist","pii-detector","performance-engineer","security-architect-aidefence","aidefence-guardian","ddd-domain-expert","collective-intelligence-coordinator","v3-integration-architect","swarm-memory-manager","mobile-dev","hierarchical-coordinator","mesh-coordinator","adaptive-coordinator","ml-developer","flow-nexus-app-store","flow-nexus-payments","flow-nexus-auth","flow-nexus-neural","flow-nexus-workflow","flow-nexus-sandbox","flow-nexus-swarm","flow-nexus-user-tools","flow-nexus-challenges","agentic-payments","system-architect","production-validator","tdd-london-swarm","analyst","code-analyzer","pseudocode","specification","refinement","architecture"],"skills":["update-config","debug","simplify","batch","loop","schedule","claude-api","v3-integration-deep","v3-swarm-coordination","sparc-methodology","swarm-advanced","pair-programming","agentdb-advanced","stream-chain","v3-performance-optimization","github-release-management","github-multi-repo","agentdb-memory-patterns","v3-security-overhaul","verification-quality","agentdb-optimization","v3-core-implementation","agentdb-learning","github-workflow-automation","v3-mcp-optimization","hooks-automation","github-code-review","github-project-management","reasoningbank-agentdb","swarm-orchestration","browser","reasoningbank-intelligence","v3-cli-modernization","agentdb-vector-search","v3-ddd-architecture","v3-memory-unification","skill-builder"],"plugins":[],"uuid":"9fbd2a1e-76b5-4d52-9ee0-21bd6b3c6d93","fast_mode_state":"off"}
-{"type":"assistant","message":{"id":"12c5768a-262f-4b22-a34d-ef0eb3cc4f92","container":null,"model":"<synthetic>","role":"assistant","stop_reason":"stop_sequence","stop_sequence":"","type":"message","usage":{"input_tokens":0,"output_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":null,"cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0},"inference_geo":null,"iterations":null,"speed":null},"content":[{"type":"text","text":"Credit balance is too low"}],"context_management":null},"parent_tool_use_id":null,"session_id":"5ceafa22-658e-44fc-86f0-ad8a143e1dcc","uuid":"70e506b0-6c79-4d9d-8f1c-6964641a7bfb","error":"billing_error"}
-{"type":"result","subtype":"success","is_error":true,"duration_ms":451,"duration_api_ms":0,"num_turns":1,"result":"Credit balance is too low","stop_reason":"stop_sequence","session_id":"5ceafa22-658e-44fc-86f0-ad8a143e1dcc","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0},"inference_geo":"","iterations":[],"speed":"standard"},"modelUsage":{},"permission_denials":[],"fast_mode_state":"off","uuid":"5ec8b4ff-5f6e-46f1-b467-dd9245e7a5d7"}
-
-[ERROR] Claude Code exited with code 1
